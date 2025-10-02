@@ -7,6 +7,22 @@ from typing import Dict
 from networkx.algorithms import community
 
 
+import math
+import networkx as nx
+from typing import Dict
+
+def spiral_layout(G: nx.Graph, scale: float = 1.0, spacing: float = 0.5) -> Dict:
+    """Place nodes in a spiral layout (progressive outward circle)."""
+    pos = {}
+    n = len(G.nodes())
+    for i, node in enumerate(G.nodes()):
+        angle = i * spacing
+        radius = scale * (i / n)
+        x = radius * math.cos(angle)
+        y = radius * math.sin(angle)
+        pos[node] = (x, y)
+    return pos
+
 def create_layout_positions(G: nx.Graph, layout_type: str = "spring", group_assignments=None) -> Dict:
     """Generate node positions using a chosen NetworkX layout."""
     if layout_type == "spring":
@@ -19,9 +35,10 @@ def create_layout_positions(G: nx.Graph, layout_type: str = "spring", group_assi
         return nx.spectral_layout(G)
     elif layout_type == "community":
         return community_layout(G)
+    elif layout_type == "spiral":
+        return spiral_layout(G)
     else:
         return nx.spring_layout(G, seed=42)
-
 
 def community_layout(G: nx.Graph, offset: float = 4.0, k_inside: float = 0.8) -> Dict:
     """

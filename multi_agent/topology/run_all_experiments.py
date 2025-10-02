@@ -22,8 +22,9 @@ import pandas as pd
 from pathlib import Path
 
 # --- Configurations ---
-TASKS = ["coloring", "matching", "vertex_cover", "leader_election", "consensus"]
-SIZES = [4, 8, 16]
+# TASKS = ["coloring", "matching" ,"consensus", "leader_election", "vertex_cover"]
+TASKS = ["coloring", "matching" , "vertex_cover"]
+SIZES = [50,100]
 
 # TASKS = ["coloring"]
 # SIZES = [4]
@@ -33,8 +34,8 @@ FRAMEWORKS = {
     # "langgraph_ba": ("langgraph", "ba"),
     # "langgraph_dt": ("langgraph", "dt"),
     # "concordia": ("concordia", "ws"),   # HF graph, patched to all-connected inside concordia_runner
-    # "crewai_seq": ("crewai-sequential", None),   # sequential path
-    "crewai_hier": ("crewai-hierarchical", None), # 4-ary tree
+    "crewai_seq": ("crewai-sequential", None),   # sequential path
+    # "crewai_hier": ("crewai-hierarchical", None), # 4-ary tree
 }
 
 MODEL = "gpt-4o-mini"

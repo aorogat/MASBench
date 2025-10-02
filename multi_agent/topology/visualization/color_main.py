@@ -21,6 +21,19 @@ from plotly.colors import qualitative
 
 from .loader import load_result_file
 from .layouts import create_layout_positions
+import math
+
+def spiral_layout(G, scale=1.0, spacing=0.5):
+    """Place nodes in a spiral layout."""
+    pos = {}
+    n = len(G.nodes())
+    for i, node in enumerate(G.nodes()):
+        angle = i * spacing
+        radius = scale * (i / n)
+        x = radius * math.cos(angle)
+        y = radius * math.sin(angle)
+        pos[node] = (x, y)
+    return pos
 
 
 def pick_layout(result_data, user_layout: str) -> str:
@@ -30,14 +43,14 @@ def pick_layout(result_data, user_layout: str) -> str:
 
     topo = result_data.get("graph_generator", "").lower()
     if topo == "ws":  # Watts–Strogatz small-world
-        return "circular"
+        return "community"
     elif topo in ["ba", "scale-free"]:  # Barabási–Albert scale-free
-        return "spring"
+        return "community"
     elif topo in ["dt", "delaunay"]:  # geometric graphs
         return "kamada"
     elif topo in ["sequential", "crewai-sequential"]:
         # linear chain looks better in spectral layout
-        return "spectral"
+        return "spiral"
     elif topo in ["hierarchical", "crewai-hierarchical"]:
         # tree structure → use kamada or spring for readability
         return "kamada"

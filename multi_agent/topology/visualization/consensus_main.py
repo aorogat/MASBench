@@ -21,6 +21,21 @@ from .static_plot import visualize_network
 from .interactive_plot import create_interactive_network
 from .analysis import analyze_topology_properties
 
+import math
+
+def spiral_layout(G, scale=1.0, spacing=0.5):
+    """Place nodes in a spiral layout."""
+    pos = {}
+    n = len(G.nodes())
+    for i, node in enumerate(G.nodes()):
+        angle = i * spacing
+        radius = scale * (i / n)
+        x = radius * math.cos(angle)
+        y = radius * math.sin(angle)
+        pos[node] = (x, y)
+    return pos
+
+
 
 def pick_layout(result_data, user_layout: str) -> str:
     """Choose layout based on graph type if user selects 'auto'."""
@@ -36,7 +51,7 @@ def pick_layout(result_data, user_layout: str) -> str:
         return "kamada"
     elif topo in ["sequential", "crewai-sequential"]:
         # linear chain looks better in spectral layout
-        return "spectral"
+        return "spiral"
     elif topo in ["hierarchical", "crewai-hierarchical"]:
         # tree structure → use kamada or spring for readability
         return "kamada"
