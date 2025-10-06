@@ -14,6 +14,7 @@ class Question:
     correct: Optional[bool] = None
     time_used: Optional[float] = None     # ⏱ seconds for LLM response
     tokens_out: Optional[int] = None      # 🔤 number of output tokens
+    llm_response: Optional[str] = None  # 💬 full raw response from LLM (before normalization)
 
 
 class Benchmark(ABC):
@@ -37,7 +38,7 @@ class Benchmark(ABC):
         """Judge correctness of prediction vs gold."""
         pass
 
-    def set_pred(self, q: Question, pred: str, time_used: float = None, tokens_out: int = None):
+    def set_pred(self, q: Question, pred: str, time_used: float = None, tokens_out: int = None, llm_response: str = None):
         """
         Assign prediction and evaluate correctness with normalization on both sides.
         Also attach timing and token usage.
@@ -47,6 +48,7 @@ class Benchmark(ABC):
         q.correct = self.is_equiv(q.gold, q.pred)
         q.time_used = time_used
         q.tokens_out = tokens_out
+        q.llm_response = llm_response
 
     def evaluate(self):
         total = len(self.questions)

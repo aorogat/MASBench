@@ -101,11 +101,13 @@ def run_crewai_on_benchmark(benchmark, crew_cls, log_file, filename):
             task_key = f"{benchmark.name}_task"
             pred = (str(result.get(task_key)) if isinstance(result, dict) else str(result)).strip()
 
+            
+
             # Approximate output tokens by characters/4 (or replace with model usage stats if available)
-            tokens_out = max(1, len(pred) // 4)
+            tokens_out = max(1, len(str(result)) // 4)
 
             # ✅ store prediction, time, and tokens
-            benchmark.set_pred(q, pred, time_used=q_elapsed, tokens_out=tokens_out)
+            benchmark.set_pred(q, pred, time_used=q_elapsed, tokens_out=tokens_out, llm_response=str(result))
 
         except Exception as e:
             q_elapsed = time.perf_counter() - q_start
@@ -159,7 +161,7 @@ def run_all_benchmarks():
         )
 
 def main():
-    for planning in [True]:
+    for planning in [False, True]:
         CONFIG["planning"] = planning
         print(f"\n=== Running benchmarks with planning={planning} ===")
         run_all_benchmarks()
