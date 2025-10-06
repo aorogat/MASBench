@@ -43,9 +43,9 @@ def pick_layout(result_data, user_layout: str) -> str:
 
     topo = result_data.get("graph_generator", "").lower()
     if topo == "ws":  # Watts–Strogatz small-world
-        return "community"
+        return "circular"
     elif topo in ["ba", "scale-free"]:  # Barabási–Albert scale-free
-        return "community"
+        return "spring"
     elif topo in ["dt", "delaunay"]:  # geometric graphs
         return "kamada"
     elif topo in ["sequential", "crewai-sequential"]:
