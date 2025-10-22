@@ -96,6 +96,10 @@ def run_crewai_on_benchmark(benchmark, crew_cls, log_file, filename):
         q_start = time.perf_counter()
         try:
             result = crew.kickoff(inputs=inputs)
+            
+            # print(type(result))
+            # print(result.tasks_output)
+
             q_elapsed = time.perf_counter() - q_start   # ⏱ per-question runtime
 
             task_key = f"{benchmark.name}_task"
@@ -161,7 +165,7 @@ def run_all_benchmarks():
         )
 
 def main():
-    for planning in [False, True]:
+    for planning in [True]:
         CONFIG["planning"] = planning
         print(f"\n=== Running benchmarks with planning={planning} ===")
         run_all_benchmarks()
