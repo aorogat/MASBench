@@ -46,6 +46,17 @@ from benchmarks.math import MATHBenchmark
 import re, unicodedata
 from pathlib import Path
 
+
+
+# --- Add this near the top of your script ---
+from dotenv import load_dotenv
+
+load_dotenv()  # ensure .env is loaded
+
+
+
+
+
 # Windows-reserved basenames (case-insensitive)
 _RESERVED = { "CON","PRN","AUX","NUL", *[f"COM{i}" for i in range(1,10)], *[f"LPT{i}" for i in range(1,10)] }
 
@@ -140,14 +151,7 @@ def run_all_benchmarks():
     plan_tag = "planning" if CONFIG.get("planning") else "noplanning"
     llm_tag  = sanitize_filename_component(str(CONFIG.get("llm", "model")))
 
-    if "gsm8k" in CONFIG["benchmarks"]:
-        bench = GSM8KBenchmark(split="test", n=CONFIG.get("n_gsm8k"))
-        run_crewai_on_benchmark(
-            bench, SingleAgentCrewGSM8K,
-            "logs/SingleAgentCrewGSM8K.json",
-            f"crewai_gsm8k_{plan_tag}_{llm_tag}.json"
-        )
-
+    
     if "csqa" in CONFIG["benchmarks"]:
         bench = CSQABenchmark(split="validation", n=CONFIG.get("n_csqa"))
         run_crewai_on_benchmark(
@@ -163,9 +167,17 @@ def run_all_benchmarks():
             "logs/SingleAgentCrewMATH.json",
             f"crewai_math_{plan_tag}_{llm_tag}.json"
         )
+    
+    if "gsm8k" in CONFIG["benchmarks"]:
+        bench = GSM8KBenchmark(split="test", n=CONFIG.get("n_gsm8k"))
+        run_crewai_on_benchmark(
+            bench, SingleAgentCrewGSM8K,
+            "logs/SingleAgentCrewGSM8K.json",
+            f"crewai_gsm8k_{plan_tag}_{llm_tag}.json"
+        )
 
 def main():
-    for planning in [True]:
+    for planning in [False, True]:
         CONFIG["planning"] = planning
         print(f"\n=== Running benchmarks with planning={planning} ===")
         run_all_benchmarks()
