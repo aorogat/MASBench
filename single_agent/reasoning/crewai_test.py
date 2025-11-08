@@ -177,7 +177,7 @@ def run_all_benchmarks():
         )
 
 def main():
-    for planning in [False, True]:
+    for planning in [True]:
         CONFIG["planning"] = planning
         print(f"\n=== Running benchmarks with planning={planning} ===")
         run_all_benchmarks()
