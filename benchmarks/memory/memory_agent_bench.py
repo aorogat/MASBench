@@ -1,259 +1,253 @@
-# To test this file, run: python -m benchmarks.memory.memory_agent_bench
-
-
 """
 MemoryAgentBench Benchmark Loader and Evaluation Pipeline
 ==========================================================
 
-This module provides a unified interface to load, inspect, and evaluate
-multi-agent frameworks on the **MemoryAgentBench** benchmark
+Evaluates memory-centric agents on MemoryAgentBench
 (https://huggingface.co/datasets/ai-hyz/MemoryAgentBench).
 
-Purpose
--------
-MemoryAgentBench is a large-scale evaluation suite designed to test
-the *memory abilities* of LLM-based agents across four key competencies:
+This file is designed to be imported and used by external systems
+(e.g., CrewAI, RAG, etc.) that call:
 
-    1. Accurate Retrieval (AR)
-    2. Test-Time Learning (TTL)
-    3. Long-Range Understanding (LRU)
-    4. Selective Forgetting / Conflict Resolution (SF)
+    from benchmarks.memory.memory_agent_bench import MemoryAgentBench
 
-Each competency contains several fine-grained subtasks such as:
-    - SH-QA, MH-QA, LME(S*), EventQA, Bench-QA (AR)
-    - MCC, Recommendation (TTL)
-    - Summarization, Detective-QA (LRU)
-    - FactConsolidation-SH, FactConsolidation-MH (SF)
+Each benchmark split is evaluated on an agent, and results are saved as JSON
+in `results/memory/<system_name>_<split>_<timestamp>.json`.
 
-This file implements:
----------------------
-• A `MemoryAgentBench` class that:
-    - Loads each dataset split (AR / TTL / LRU / SF) from Hugging Face.
-    - Expands multi-question sessions into evaluable Question objects.
-    - Automatically infers the fine-grained subtask and category
-      from metadata (using `qa_pair_ids` prefixes such as
-      `ruler_qa1_`, `recsys_redial_`, `infbench_sum_`, etc.).
-    - Provides a standardized `evaluate_agent()` method
-      to test any agent framework (CrewAI, OpenAI Agent SDK, etc.)
-      using the same data and scoring logic as in the original paper
-      *"Evaluating Memory in LLM Agents via Incremental Multi-Turn Interactions"*
-      (arXiv:2507.05257).
-
-Evaluation Protocol
--------------------
-For each example, the benchmark follows an **incremental multi-turn** setup:
-    1. The agent ingests the long context (dialogue or document).
-    2. Multiple related questions are asked sequentially
-       without resetting memory between them.
-    3. The benchmark compares each predicted answer
-       with the corresponding gold answer.
-    4. Scores are aggregated per subtask, per competency, and overall.
-
-Developers can plug in any agent implementing the following interface:
-
-    class AgentAdapter:
-        def reset(self): ...
-        def ingest(self, text: str): ...
-        def query(self, question: str) -> str: ...
-        def is_equiv(self, gold: str, pred: str) -> bool: ...
-
-Usage Example
--------------
->>> from benchmarks.memory.memory_agent_bench import MemoryAgentBench, DummyAgent
->>> bench = MemoryAgentBench(split="Accurate_Retrieval", n=2)
->>> agent = DummyAgent()
->>> results = bench.evaluate_agent(agent, verbose=True)
->>> print(results["task_scores"], results["category_avg"], results["overall"])
-
-File Layout
------------
-- `infer_subtask()` and `category_of()` map dataset metadata to subtasks.
-- `MemoryAgentBench` handles dataset loading and evaluation logic.
-- `DummyAgent` provides a minimal example agent for smoke testing.
-- The `__main__` section runs quick tests across all four splits.
-
+Metrics per category:
+  - Accurate Retrieval (AR): Accuracy (semantic match per question)
+  - Test-Time Learning (TTL): Recall@5
+  - Long-Range Understanding (LRU): Summary consistency (semantic accuracy)
+  - Selective Forgetting (SF): F1-Score (from per-Q Precision/Recall)
 """
 
-import json, re
-from datasets import load_dataset
+import os
+import json
+import time
 from collections import defaultdict
-from benchmarks.base import Benchmark, Question
+from datasets import load_dataset
 
+from benchmarks.memory.metric_eval_gpt import (
+    evaluate_exact_matches_with_gpt,
+    evaluate_fact_consistency_with_gpt,
+    evaluate_correct_counts_with_gpt,
+    get_recall_at_5,
+)
 
+# ---------------------------------------------------------------------
+# 🔹 Subtask → Category Mapping
+# ---------------------------------------------------------------------
 def infer_subtask(meta):
     ids = meta.get("qa_pair_ids", [])
     if not ids:
         return "Unknown"
     name = ids[0].lower()
-    # Accurate Retrieval
     if "ruler_qa1" in name: return "SH-QA"
     if "ruler_qa2" in name: return "MH-QA"
     if "eventqa" in name: return "EventQA"
     if "longmemeval" in name: return "LME(S*)"
-    # Test-Time Learning
-    if "recsys_redial" in name: return "Recom."
-    if "icl_banking77" in name or "icl_clinic150" in name: return "MCC"
-    # Long-Range Understanding
+    if "recsys_redial" in name: return "MovieRec"
+    if any(x in name for x in ["icl_banking77", "icl_clinic150", "icl_nlu", "trec"]): return "IntentQA"
     if "infbench_sum" in name: return "Summ."
-    # Conflict Resolution / Selective Forgetting
     if "factconsolidation_sh" in name: return "FC-SH"
     if "factconsolidation_mh" in name: return "FC-MH"
     return "Unknown"
 
+
 def category_of(subtask):
     if subtask in ["SH-QA", "MH-QA", "EventQA", "LME(S*)"]:
-        return "AR"
-    if subtask in ["MCC", "Recom."]:
-        return "TTL"
+        return "AR"   # Accurate Retrieval
+    if subtask in ["IntentQA", "MovieRec"]:
+        return "TTL"  # Test-Time Learning
     if subtask in ["Summ."]:
-        return "LRU"
+        return "LRU"  # Long-Range Understanding
     if subtask in ["FC-SH", "FC-MH"]:
-        return "SF"
+        return "SF"   # Selective Forgetting
     return "Other"
 
-class MemoryAgentBench(Benchmark):
-    def __init__(self, split="Accurate_Retrieval", n=None):
-        super().__init__("MemoryAgentBench")
-        self.load_data(split, n)
 
-    def load_data(self, split: str, n=None):
+# ---------------------------------------------------------------------
+# 🧠 Core Benchmark Class
+# ---------------------------------------------------------------------
+class MemoryAgentBench:
+    def __init__(self, split="Accurate_Retrieval", n=None):
+        self.split = split
+        self.load_data(split, n)
+        self.results_dir = os.path.join("results", "memory")
+        os.makedirs(self.results_dir, exist_ok=True)
+
+    # --------------------------------------------------------------
+    def load_data(self, split, n=None):
         ds = load_dataset("ai-hyz/MemoryAgentBench", split=split)
         if n:
             ds = ds.select(range(min(n, len(ds))))
-        self.sessions = []  # each session holds context + list of Q&A
+        self.sessions = []
         for i, row in enumerate(ds):
-            context = row.get("context", "")
-            questions = row.get("questions", [])
-            answers = row.get("answers", [])
             meta = row.get("metadata", {})
             subtask = infer_subtask(meta)
             category = category_of(subtask)
-            session = {
-                "qid": f"{i+1}",
-                "context": context.strip(),
-                "questions": questions,
-                "answers": answers,
+            self.sessions.append({
+                "qid": str(i + 1),
+                "context": row.get("context", ""),
+                "questions": row.get("questions", []),
+                "answers": row.get("answers", []),
                 "subtask": subtask,
                 "category": category,
-                "meta": meta
-            }
-            self.sessions.append(session)
+                "meta": meta,
+            })
         print(f"✅ Loaded {len(self.sessions)} sessions from split '{split}'")
         subtasks = sorted({s["subtask"] for s in self.sessions})
         print("Detected subtasks:", subtasks)
 
-    def evaluate_agent(self, agent, verbose=False):
+    # --------------------------------------------------------------
+    def evaluate_agent(self, agent, system_name="unknown_system", verbose=False, max_sessions_per_task=1):
         """
-        Evaluate the given agent (implements our adapter interface:
-         agent.reset(), agent.ingest(text), agent.query(question) -> answer)
-        Returns per-session results and aggregates.
+        Runs the agent and computes metrics per-question using GPT-based functions.
+        Evaluates up to `max_sessions_per_task` sessions per subtask to reduce GPT calls.
+
+        Args:
+            agent: an object with methods reset(), ingest(context), and query(question)
+            system_name (str): name of the system being evaluated (e.g., "crewai", "rag")
+            verbose (bool): print session-level results and timings
+            max_sessions_per_task (int): max sessions to evaluate per subtask (default=1)
         """
-        results = []
+        category_scores = defaultdict(list)
+        detailed_results = []
+        subtask_session_count = defaultdict(int)
+        total_start_time = time.time()
+
         for sess in self.sessions:
+            # ✅ Limit evaluation to max_sessions_per_task per subtask
+            subtask = sess["subtask"]
+            if subtask_session_count[subtask] >= max_sessions_per_task:
+                continue
+            subtask_session_count[subtask] += 1
+
+            start_time = time.time()
             agent.reset()
-            # feed context
             agent.ingest(sess["context"])
-            # now ask each question
-            Qs = sess["questions"]
-            As = sess["answers"]
-            for qi, q in enumerate(Qs):
-                pred = agent.query(q)
-                gold = As[qi]
-                correct = agent.is_equiv(gold, pred)
-                results.append({
+            preds = [agent.query(q) for q in sess["questions"]]
+
+            # Normalize format
+            answers_pairs = [
+                {
+                    "system": [pred] if isinstance(pred, str) else pred,
+                    "gold": [g] if isinstance(g, str) else g
+                }
+                for pred, g in zip(preds, sess["answers"])
+            ]
+
+            cat = sess["category"]
+
+            # 🔹 Select metric type
+            if cat == "AR":
+                correctness = evaluate_exact_matches_with_gpt(answers_pairs)
+            elif cat == "TTL":
+                correctness = get_recall_at_5(answers_pairs)
+            elif cat == "LRU":
+                correctness = evaluate_fact_consistency_with_gpt(answers_pairs)
+            elif cat == "SF":
+                correct_counts = evaluate_correct_counts_with_gpt(answers_pairs)
+                correctness = []
+                for i, pair in enumerate(answers_pairs):
+                    sys_len = len(pair["system"])
+                    gold_len = len(pair["gold"])
+                    c = correct_counts[i]
+                    p = c / sys_len if sys_len else 0
+                    r = c / gold_len if gold_len else 0
+                    f1 = 2 * p * r / (p + r) if (p + r) else 0
+                    correctness.append(f1)
+            else:
+                correctness = [0.0] * len(answers_pairs)
+
+            # 🔸 Aggregate per-session and per-question
+            session_avg = sum(correctness) / len(correctness) if correctness else 0.0
+            category_scores[cat].append(session_avg)
+            duration = time.time() - start_time  # ⏱️ Runtime per session
+
+            if isinstance(correctness, (int, float)):
+                correctness = [correctness] * len(answers_pairs)
+
+
+            for q, pair, score in zip(sess["questions"], answers_pairs, correctness):
+                detailed_results.append({
+                    "system": system_name,
+                    "split": self.split,
                     "session_id": sess["qid"],
+                    "category": cat,
                     "subtask": sess["subtask"],
-                    "category": sess["category"],
-                    "question_id": f"{sess['qid']}_{qi+1}",
                     "question": q,
-                    "gold": gold,
-                    "pred": pred,
-                    "correct": correct
+                    "system_answer": pair["system"],
+                    "gold_answer": pair["gold"],
+                    "score": score,
+                    "session_time_sec": round(duration, 2)
                 })
-                if verbose:
-                    print(f"[{sess['qid']}_{qi+1}] {sess['subtask']} | Q: {q[:80]}... | Pred: {pred} | Gold: {gold} | Correct: {correct}")
-        # compute aggregates
-        task_stats = defaultdict(list)
-        for r in results:
-            task_stats[r["subtask"]].append(r["correct"])
-        task_scores = {t: sum(v)/len(v)*100.0 for t, v in task_stats.items()}
-        cat_map = defaultdict(list)
-        for t, score in task_scores.items():
-            cat = category_of(t)
-            cat_map[cat].append(score)
-        cat_avg = {cat: sum(v)/len(v) for cat, v in cat_map.items()}
-        overall = sum(cat_avg.values()) / len(cat_avg) if cat_avg else 0.0
+
+            if verbose:
+                print(f"[{cat}] Subtask: {sess['subtask']} | Session {sess['qid']} → "
+                    f"Avg Score: {session_avg:.3f} | ⏱️ {duration:.2f}s")
+
+            # 🔸 Save incremental progress
+            partial_path = os.path.join(
+                self.results_dir,
+                f"{system_name}_{self.split}_partial.json"
+            )
+            with open(partial_path, "w") as pf:
+                json.dump({
+                    "system": system_name,
+                    "split": self.split,
+                    "progress_session": sess["qid"],
+                    "category_avg_so_far": {
+                        c: sum(v) / len(v) for c, v in category_scores.items()
+                    },
+                    "results_so_far": detailed_results,
+                }, pf, indent=2, ensure_ascii=False)
+
+        # 🔹 Compute averages
+        category_avg = {c: sum(v) / len(v) for c, v in category_scores.items()}
+        overall = sum(category_avg.values()) / len(category_avg) if category_avg else 0.0
+        total_time = time.time() - total_start_time
+
+        # 🔹 Save detailed JSON
+        timestamp = time.strftime("%Y%m%d_%H%M%S")
+        filename = f"{system_name}_{self.split}_{timestamp}.json"
+        save_path = os.path.join(self.results_dir, filename)
+        with open(save_path, "w") as f:
+            json.dump({
+                "system": system_name,
+                "split": self.split,
+                "category_avg": category_avg,
+                "overall": overall,
+                "total_runtime_sec": round(total_time, 2),
+                "max_sessions_per_task": max_sessions_per_task,
+                "results": detailed_results
+            }, f, indent=2, ensure_ascii=False)
+
+        print(f"\n💾 Saved results to: {save_path}")
+        print("\n📊 Category Scores:")
+        for c, s in category_avg.items():
+            print(f"  {c}: {s:.3f}")
+        print(f"⭐ Overall Score: {overall:.3f}")
+        print(f"⏱️ Total Runtime: {total_time:.2f} sec")
+
         return {
-            "task_scores": task_scores,
-            "category_avg": cat_avg,
+            "system": system_name,
+            "category_avg": category_avg,
             "overall": overall,
-            "detailed": results
+            "total_runtime_sec": round(total_time, 2),
+            "path": save_path
         }
 
-    def normalize(self, text: str) -> str:
-        return text.strip().lower()
-
-    def is_equiv(self, gold: str, pred: str) -> bool:
-        return self.normalize(pred) == self.normalize(gold)
-
 
 # ------------------------------------------------------------------
-# 🔧 Simple dummy agent + main for quick testing
+# 🔍 Example CLI test (for sanity only)
 # ------------------------------------------------------------------
-class DummyAgent:
-    """
-    Minimal agent adapter for testing the benchmark pipeline.
-
-    - reset(): clears any internal state (we don't really use it here)
-    - ingest(text): receives context (we just store it)
-    - query(question): returns a fixed string
-    - is_equiv(gold, pred): simple string equality after stripping
-    """
-
-    def __init__(self):
-        self.context = None
-
-    def reset(self):
-        self.context = None
-
-    def ingest(self, text: str):
-        # In a real agent this would populate memory / context.
-        self.context = text
-
-    def query(self, question: str) -> str:
-        # For now just return a constant or echo part of the question.
-        return "dummy_answer"
-
-    def is_equiv(self, gold, pred) -> bool:
-        # Very simple equivalence check for testing.
-        return str(gold).strip().lower() == str(pred).strip().lower()
-
-
 if __name__ == "__main__":
-    # Quick smoke test across all four splits with the DummyAgent
-    splits = [
-        "Accurate_Retrieval",
-        "Test_Time_Learning",
-        "Long_Range_Understanding",
-        "Conflict_Resolution",
-    ]
+    class DummyAgent:
+        """Simple mock agent for testing pipeline."""
+        def reset(self): pass
+        def ingest(self, text): pass
+        def query(self, question): return "dummy_answer"
 
-    agent = DummyAgent()
-
-    for split in splits:
-        print("=" * 80)
-        print(f"🚀 Testing split: {split}")
-        bench = MemoryAgentBench(split=split, n=2)  # load only first 2 sessions for speed
-
-        # Use the bench's evaluate_agent with our dummy agent
-        results = bench.evaluate_agent(agent, verbose=True)
-
-        print("\n📊 Task-level scores:")
-        for task, score in sorted(results["task_scores"].items()):
-            print(f"  {task:10s}: {score:5.2f}%")
-
-        print("\n📂 Category averages:")
-        for cat, score in sorted(results["category_avg"].items()):
-            print(f"  {cat:3s}: {score:5.2f}%")
-
-        print(f"\n⭐ Overall score for {split}: {results['overall']:.2f}%\n")
+    bench = MemoryAgentBench(split="Accurate_Retrieval", n=2)
+    result = bench.evaluate_agent(DummyAgent(), system_name="dummy_system", verbose=True)
+    print("\n📈 Final:", result)

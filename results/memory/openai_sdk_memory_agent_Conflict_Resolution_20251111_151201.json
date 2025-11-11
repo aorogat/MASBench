@@ -1,0 +1,3212 @@
+{
+  "system": "openai_sdk_memory_agent",
+  "split": "Conflict_Resolution",
+  "category_avg": {
+    "SF": 0.12000000000000001
+  },
+  "overall": 0.12000000000000001,
+  "total_runtime_sec": 833.36,
+  "max_sessions_per_task": 1,
+  "results": [
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the country of citizenship of the spouse of the author of Our Mutual Friend?",
+      "system_answer": [
+        "The author of *Our Mutual Friend* is Charles Dickens, and his spouse, Catherine Dickens, was a citizen of the United Kingdom."
+      ],
+      "gold_answer": [
+        "Belgium"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "In which location did the spouse of Igor of Kiev pass away?",
+      "system_answer": [
+        "Olga of Kiev, the spouse of Igor of Kiev, passed away in the city of Kyiv."
+      ],
+      "gold_answer": [
+        "Rodez"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which country is the birthplace of the sport associated with Steve Sax?",
+      "system_answer": [
+        "Steve Sax is associated with the sport of baseball, which was created in the country of the United States of America."
+      ],
+      "gold_answer": [
+        "Italy"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which city serves as the capital of the country of origin for the sport of the Tunisia national football team?",
+      "system_answer": [
+        "The Tunisia national football team is associated with the sport of association football, and Tunisia's capital city is Tunis."
+      ],
+      "gold_answer": [
+        "Russellville"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the sport that Blair Walsh plays in which he is known for his position on the team?",
+      "system_answer": [
+        "Blair Walsh plays the sport of American football, and he is known for his position as a placekicker."
+      ],
+      "gold_answer": [
+        "rugby"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the name of the educational institution where the partner of Nicolae Ceaușescu was educated?",
+      "system_answer": [
+        "The partner of Nicolae Ceaușescu, Elena Ceaușescu, was educated at the University of Bucharest."
+      ],
+      "gold_answer": [
+        "Baldwin Wallace University"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which country does the current CEO of Twitter hold citizenship of?",
+      "system_answer": [
+        "The current CEO of Twitter, as per the information, holds citizenship of the United States of America."
+      ],
+      "gold_answer": [
+        "France"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "On which continent was the place of birth of Thomas Arne located?",
+      "system_answer": [
+        "Thomas Arne was born in the city of London, which is located on the continent of Europe."
+      ],
+      "gold_answer": [
+        "Oceania"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "To which continent does the country of citizenship of Colin Irwin pertain?",
+      "system_answer": [
+        "Colin Irwin is a citizen of Israel, which is located on the continent of Asia."
+      ],
+      "gold_answer": [
+        "North America"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the location of work of the founder of the religion to which John Walsh belongs?",
+      "system_answer": [
+        "John Walsh is affiliated with the religion of Methodism. The founder of Methodism is John Wesley. He worked primarily in England."
+      ],
+      "gold_answer": [
+        "Berlin"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the religious affiliation of the person who founded the Transcendental Meditation movement?",
+      "system_answer": [
+        "The Transcendental Meditation movement was founded by Maharishi Mahesh Yogi, who is affiliated with the religion of Hinduism."
+      ],
+      "gold_answer": [
+        "atheism"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What was the religion of the person with the citizenship of the country to which Edmund Burke belonged?",
+      "system_answer": [
+        "Edmund Burke was a citizen of the Kingdom of Ireland, and he was affiliated with the religion of Anglicanism."
+      ],
+      "gold_answer": [
+        "Zoroastrianism"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the capital city of the country where the sport associated with John Harkes has its origin?",
+      "system_answer": [
+        "John Harkes is associated with the sport of association football, which was created in the country of England. The capital city of England is London."
+      ],
+      "gold_answer": [
+        "Duluth"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which faith is the partner of Laura Bush associated with?",
+      "system_answer": [
+        "Laura Bush is affiliated with the religion of Christianity."
+      ],
+      "gold_answer": [
+        "Anglicanism"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What was the name of the head of state in the country where Andrew Carnegie was a citizen?",
+      "system_answer": [
+        "Andrew Carnegie was a citizen of the United States of America. The name of the head of state at the time he was active was typically referred to as the President, who was Donald Trump in the later years of his life, but earlier in his life, it was figures like William McKinley or Theodore Roosevelt, depending on the specific time period in question."
+      ],
+      "gold_answer": [
+        "Emmerson Mnangagwa"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "From which capital city did the Surrey Senior Cup, a sports competition, originate?",
+      "system_answer": [
+        "The Surrey Senior Cup is associated with the sport of association football, which originated in England. The capital city of England is London."
+      ],
+      "gold_answer": [
+        "Russellville"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "From which country does the sport, with which Carlos Gómez is associated, come from?",
+      "system_answer": [
+        "Carlos Gómez is associated with the sport of baseball, which originated in the United States of America."
+      ],
+      "gold_answer": [
+        "Soviet Union"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "In which city is the capital of the country where Madame du Barry held a citizenship?",
+      "system_answer": [
+        "Madame du Barry was a citizen of France. The capital city of France is Paris."
+      ],
+      "gold_answer": [
+        "London"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the job title of the chairperson of the political organization Fatah?",
+      "system_answer": [
+        "The chairperson of the political organization Fatah is Mahmoud Abbas."
+      ],
+      "gold_answer": [
+        "soldier"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which city is the capital of the country where the performer of \"Free as a Bird\"'s director/manager comes from?",
+      "system_answer": [
+        "The performer of \"Free as a Bird\" is The Beatles, and their director/manager was Brian Epstein. He was from the United Kingdom, and the capital city of the United Kingdom is London."
+      ],
+      "gold_answer": [
+        "Duluth"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the language of the work that was created by the individual who created Rand al'Thor?",
+      "system_answer": [
+        "Rand al'Thor was created by Robert Jordan. The language of Robert Jordan's works, including *The Wheel of Time* series, is English."
+      ],
+      "gold_answer": [
+        "Persian"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the work location of the person who founded the religion Karen Armstrong belongs to?",
+      "system_answer": [
+        "Karen Armstrong is affiliated with the religion of the Church of Scotland. The founder of Methodism, which she has written about, is John Wesley, who worked primarily in England."
+      ],
+      "gold_answer": [
+        "Edinburgh"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the name of the child category of \"Categories\" created by the author?",
+      "system_answer": [
+        "The author of *Categories* is Aristotle. The child category is known as \"The Categories,\" which refers to a classification system he developed for understanding different types of entities and their relationships."
+      ],
+      "gold_answer": [
+        "George Alexander Kohut"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Where is the country of origin of FC Vorskla Poltava?",
+      "system_answer": [
+        "FC Vorskla Poltava is a football club based in Ukraine. Therefore, the country of origin is Ukraine."
+      ],
+      "gold_answer": [
+        "Soviet Union"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which city is the capital of the country where the CEO of the developer of SteamOS holds a citizenship?",
+      "system_answer": [
+        "The CEO of Valve Corporation, the developer of SteamOS, is Gabe Newell, who holds citizenship in the United States of America. The capital city of the United States is Washington, D.C."
+      ],
+      "gold_answer": [
+        "Harare"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the name of the person who is the chief executive officer of the developer of F-22 Raptor?",
+      "system_answer": [
+        "The F-22 Raptor is developed by Lockheed Martin. As of my last knowledge update, the CEO of Lockheed Martin is Jim Taiclet."
+      ],
+      "gold_answer": [
+        "Adel al-Jubeir"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Who holds the position of chairperson in the organization where Joseph Story was employed?",
+      "system_answer": [
+        "Joseph Story was employed by the Supreme Court of the United States. The position of chairperson does not apply, as the Supreme Court does not have a chairperson but is led by the Chief Justice. The Chief Justice at the time Joseph Story served (from 1811 to 1845) was John Marshall."
+      ],
+      "gold_answer": [
+        "Peter Diamandis"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What city serves as the capital of the country where the performer who is the spouse of Derek Shepherd holds citizenship?",
+      "system_answer": [
+        "The performer who is the spouse of Derek Shepherd, a character from the television show *Grey's Anatomy*, is Ellen Pompeo. She holds citizenship in the United States. The capital city of the United States is Washington, D.C."
+      ],
+      "gold_answer": [
+        "Harrisville"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the name of the city that serves as the capital of the country to which Sable belongs?",
+      "system_answer": [
+        "Sable is a character from the video game series *Sable*. The game, created by Shedworks, is inspired by various cultures, but there isn't a specific country to which Sable belongs. However, if you meant Sable as in \"the Sable Island,\" it is associated with Canada. The capital of Canada is Ottawa.  Please clarify if you meant something else!"
+      ],
+      "gold_answer": [
+        "Prague"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "In which city serves as the capital of the country of citizenship of Country Joe McDonald?",
+      "system_answer": [
+        "Country Joe McDonald is a citizen of the United States. The capital city of the United States is Washington, D.C."
+      ],
+      "gold_answer": [
+        "Rajanpur"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What city or town is the headquarters of the educational institution, where the performer of the album \"Blood on the Tracks\" received education, located in?",
+      "system_answer": [
+        "The performer of the album \"Blood on the Tracks\" is Bob Dylan. He attended the University of Minnesota, which is located in Minneapolis, Minnesota. Therefore, the city where the university's headquarters is located is Minneapolis."
+      ],
+      "gold_answer": [
+        "New York City"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the name of the chief executive of the country where the sport associated with Bo Ryan was first developed?",
+      "system_answer": [
+        "Bo Ryan is associated with basketball. Basketball was first developed in the United States. As of my last knowledge update, the President of the United States is Joe Biden."
+      ],
+      "gold_answer": [
+        "Giuseppe Conte"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the continent of origin of the chief executive officer for the developer of Windows Phone?",
+      "system_answer": [
+        "The developer of Windows Phone is Microsoft, and the CEO is Satya Nadella. Microsoft is based in the United States, which is located on the continent of North America."
+      ],
+      "gold_answer": [
+        "North America"
+      ],
+      "score": 1.0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which continent does the country where the sport played by the Slovakia national football team originated come from?",
+      "system_answer": [
+        "The Slovakia national football team represents Slovakia, a country in Europe. The sport of football (soccer) originated in England, which is also in Europe. Therefore, the continent where the sport originated is Europe."
+      ],
+      "gold_answer": [
+        "South America"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which religion was the partner of Ferdinand Marcos associated with?",
+      "system_answer": [
+        "Ferdinand Marcos, the former president of the Philippines, was married to Imelda Marcos. She identified as Roman Catholic. Therefore, the religion associated with Ferdinand Marcos's partner is Roman Catholicism."
+      ],
+      "gold_answer": [
+        "atheism"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the name of the significant creation associated with the creator of Vito Corleone?",
+      "system_answer": [
+        "The character Vito Corleone was created by Mario Puzo. The significant creation associated with him is the novel *The Godfather*, which was published in 1969 and later adapted into a highly acclaimed film series."
+      ],
+      "gold_answer": [
+        "The Fairly OddParents"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "To which country does the performer who goes by the name Rocket Man hold citizenship?",
+      "system_answer": [
+        "The performer known as Rocket Man is Elton John. He holds citizenship in the United Kingdom."
+      ],
+      "gold_answer": [
+        "Japan"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which language does the performer of Hermione Granger know how to speak, write or sign?",
+      "system_answer": [
+        "The character Hermione Granger is portrayed by actress Emma Watson. Emma Watson is known to speak English fluently and has also studied French, and she has some proficiency in Spanish."
+      ],
+      "gold_answer": [
+        "German"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "From which country does the musical genre Michael Mantler is associated with come from?",
+      "system_answer": [
+        "Michael Mantler is associated with the jazz genre. Jazz originated in the United States, particularly in New Orleans, Louisiana. Therefore, the country associated with the musical genre is the United States."
+      ],
+      "gold_answer": [
+        "Canada"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which sport is associated with the position played by Robert Parish on a team or his specialty?",
+      "system_answer": [
+        "Robert Parish is associated with basketball, where he played as a center. He is well known for his time with the Boston Celtics in the NBA."
+      ],
+      "gold_answer": [
+        "Muay Thai"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the name of the person who founded the organization that Benjamin Mazar was part of?",
+      "system_answer": [
+        "Benjamin Mazar was a prominent Israeli archaeologist and served as the president of the Hebrew University of Jerusalem. He was associated with the American School of Classical Studies at Athens, which was founded by Charles Waldstein. If you were referring to a different organization, please provide additional context!"
+      ],
+      "gold_answer": [
+        "Philippe, Duke of Orléans"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which language is recognized as the official language of the place where Gennady Rozhdestvensky took his last breath?",
+      "system_answer": [
+        "Gennady Rozhdestvensky was a renowned Russian conductor, and he passed away in Russia. The official language of Russia is Russian."
+      ],
+      "gold_answer": [
+        "German"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the birthplace of the author of \"The Marriage of Figaro\"?",
+      "system_answer": [
+        "The author of \"The Marriage of Figaro\" is Pierre Beaumarchais. He was born in Paris, France."
+      ],
+      "gold_answer": [
+        "Leeds"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "In which country was Darryl Strawberry's sport developed, and who is the head of government in that nation?",
+      "system_answer": [
+        "Darryl Strawberry is a former professional baseball player, and the sport of baseball was developed in the United States. As of my last knowledge update, the head of government in the United States is the President, Joe Biden."
+      ],
+      "gold_answer": [
+        "Shinzō Abe"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which city serves as the capital of the country where the sport that Mike D'Antoni specialized in hails from?",
+      "system_answer": [
+        "Mike D'Antoni is known for his specialization in basketball. Basketball originated in the United States. Therefore, the capital city of the United States is Washington, D.C."
+      ],
+      "gold_answer": [
+        "London"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "At what location did the author of \"Sketches by Boz\" breathe his last?",
+      "system_answer": [
+        "The author of \"Sketches by Boz\" is Charles Dickens. He passed away at his home in Gad's Hill Place, located in Higham, Kent, England."
+      ],
+      "gold_answer": [
+        "London"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the capital city of the country from which the sport of Daniele De Rossi originated?",
+      "system_answer": [
+        "Daniele De Rossi is an Italian footballer, and the sport of football (soccer) originated in England. However, since De Rossi is Italian, the country associated with him is Italy, and its capital city is Rome."
+      ],
+      "gold_answer": [
+        "Tokyo"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "To which continent is the country of citizenship of Ferdinand von Richthofen located?",
+      "system_answer": [
+        "Ferdinand von Richthofen was a German geographer and geologist. Germany is located in Europe. Therefore, the continent of citizenship of Ferdinand von Richthofen is Europe."
+      ],
+      "gold_answer": [
+        "Asia"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "In which city is the capital of the country where the sport played by Galwegians RFC was originated?",
+      "system_answer": [
+        "Galwegians RFC is a rugby club based in Galway, Ireland. The sport of rugby originated in England. Therefore, the capital city of the country where rugby was originated is London."
+      ],
+      "gold_answer": [
+        "Grosseto"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What languages are spoken, written or signed by the founder of Shingon Buddhism?",
+      "system_answer": [
+        "The founder of Shingon Buddhism is Kūkai, also known as Kōbō Daishi. He was a Japanese monk, and the primary language he spoke and wrote in was Japanese. Additionally, during his time, he would have been familiar with Classical Chinese, as it was used in religious and scholarly contexts."
+      ],
+      "gold_answer": [
+        "Latin"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the place of death of the partner of the head of government of the Council of People's Commissars?",
+      "system_answer": [
+        "The head of government of the Council of People's Commissars was Vladimir Lenin, and his partner was Nadya Krupskaya. She died in Moscow, Russia."
+      ],
+      "gold_answer": [
+        "Mansourah, Algeria"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the professional role of the chairperson of the Congolese Party of Labour?",
+      "system_answer": [
+        "The chairperson of the Congolese Party of Labour (Parti du Travail du Congo, PTC) typically serves as the leader of the party, guiding its policies, strategies, and organizational structure. The role often involves significant political responsibilities, including representing the party in government and during elections. As of my last update, the chairperson was Pierre Moussa."
+      ],
+      "gold_answer": [
+        "journalist"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Where did the religion associated with the Bagratuni Dynasty come into existence?",
+      "system_answer": [
+        "The Bagratuni Dynasty is associated with the history of Armenia. The religion associated with the Bagratuni Dynasty is Armenian Apostolic Christianity, which is one of the oldest forms of Christianity. It came into existence in Armenia, specifically after the adoption of Christianity as the state religion in the early 4th century, particularly under King Tiridates III."
+      ],
+      "gold_answer": [
+        "Taipei"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What country does the genre of music associated with the spouse of Roy Rogers originate from?",
+      "system_answer": [
+        "The spouse of Roy Rogers was Dale Evans. They are both closely associated with country music. The country music genre originated in the United States, specifically in the Southern states in the early 20th century. Therefore, the country associated with this genre is the United States."
+      ],
+      "gold_answer": [
+        "Russian Empire"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "In which city is the capital located of the country where the director/producer of \"666 Park Avenue\" is a citizen?",
+      "system_answer": [
+        "The director/producer of \"666 Park Avenue\" is David Wilcox. He is a citizen of the United States, and the capital city of the United States is Washington, D.C."
+      ],
+      "gold_answer": [
+        "Beaumont"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "In what place was the organization that Ron Dennis works for, first established?",
+      "system_answer": [
+        "Ron Dennis is associated with McLaren, specifically McLaren Racing. The organization was first established in Woking, Surrey, England."
+      ],
+      "gold_answer": [
+        "Sweden"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "On which continent was Le Petit Parisien originally made?",
+      "system_answer": [
+        "Le Petit Parisien was a French newspaper, and it was originally published in Paris, France. Therefore, it was made in Europe."
+      ],
+      "gold_answer": [
+        "Africa"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which city serves as the capital city of the country where the sport played by the partner of Victoria Beckham originated?",
+      "system_answer": [
+        "Victoria Beckham's partner is David Beckham, who is a professional football (soccer) player. Football originated in England. Therefore, the capital city of the country where the sport originated is London."
+      ],
+      "gold_answer": [
+        "Oderzo"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the name of the political entity that was established from the successor of the Sasanian Empire?",
+      "system_answer": [
+        "The political entity that succeeded the Sasanian Empire is known as the Islamic Republic of Iran. Following the fall of the Sasanian Empire in the 7th century, the region underwent significant changes with the rise of Islamic rule, eventually leading to the establishment of modern-day Iran."
+      ],
+      "gold_answer": [
+        "Charles Frederick, Duke of Holstein-Gottorp"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "In which city is the capital of the country that FC Irtysh Omsk originates from located?",
+      "system_answer": [
+        "FC Irtysh Omsk is a football club based in Omsk, Russia. The capital of Russia is Moscow."
+      ],
+      "gold_answer": [
+        "Duluth"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the place of death of the performer of the song collection \"Back to Black\"?",
+      "system_answer": [
+        "The performer of the song collection \"Back to Black\" is Amy Winehouse. She passed away in London, England."
+      ],
+      "gold_answer": [
+        "Berlin"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What was the sport that Hines Ward competed in professionally?",
+      "system_answer": [
+        "Hines Ward competed professionally in American football. He played as a wide receiver in the NFL, primarily for the Pittsburgh Steelers."
+      ],
+      "gold_answer": [
+        "field hockey"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "In which position did the person related to the original broadcaster of \"The Brady Bunch\" serve?",
+      "system_answer": [
+        "\"The Brady Bunch\" was originally broadcast by ABC. The president of ABC during the time of the show's airing was Leonard Goldenson, who served as the President and CEO of the American Broadcasting Company. Therefore, he held the position of president at ABC."
+      ],
+      "gold_answer": [
+        "Ernst Heinkel"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "In what location did the person who founded Chanel pass away?",
+      "system_answer": [
+        "Coco Chanel, the founder of the Chanel brand, passed away in Paris, France."
+      ],
+      "gold_answer": [
+        "Montmélian"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the country of citizenship of the author of \"Starship Troopers\"?",
+      "system_answer": [
+        "The author of \"Starship Troopers\" is Robert A. Heinlein. He was an American and his country of citizenship is the United States."
+      ],
+      "gold_answer": [
+        "United Kingdom"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which individual holds the position of director/manager at the company that employs Dave Filoni?",
+      "system_answer": [
+        "Dave Filoni is known for his work with Lucasfilm, particularly in animation and as an executive producer on various Star Wars projects. The individual who holds a significant position at Lucasfilm is Kathleen Kennedy, who serves as the president of the company."
+      ],
+      "gold_answer": [
+        "Narendra Modi"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "In what language is the notable work associated with Hugh Hefner written?",
+      "system_answer": [
+        "Hugh Hefner is best known for founding *Playboy* magazine. The notable works associated with him, including the magazine itself, are primarily written in English."
+      ],
+      "gold_answer": [
+        "German"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which city serves as the capital of the country that gave rise to the sport played by Rogério Ceni?",
+      "system_answer": [
+        "Rogério Ceni is a Brazilian footballer and coach. The sport of football (soccer) is widely popular in Brazil. Therefore, the capital city of Brazil is Brasília."
+      ],
+      "gold_answer": [
+        "New Delhi"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "From which educational institution did the author of 'Sidereus Nuncius' receive their education?",
+      "system_answer": [
+        "The author of 'Sidereus Nuncius' is Galileo Galilei. He received his education at the University of Pisa, where he studied medicine and later became interested in mathematics and natural philosophy."
+      ],
+      "gold_answer": [
+        "University of Southern California"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the place of death of the author of Endymion?",
+      "system_answer": [
+        "The author of \"Endymion\" is John Keats. He died in Rome, Italy."
+      ],
+      "gold_answer": [
+        "Leipzig"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "In which city can the headquarters of the educational institution attended by the spouse of Sophia Hawthorne be found?",
+      "system_answer": [
+        "Sophia Hawthorne was married to Nathaniel Hawthorne. Nathaniel Hawthorne attended Bowdoin College in Brunswick, Maine. Therefore, the headquarters of that educational institution can be found in Brunswick."
+      ],
+      "gold_answer": [
+        "Botevgrad"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the name of the chief of state of the country where Leo Stein holds citizenship?",
+      "system_answer": [
+        "Leo Stein was an American writer and art collector. Therefore, his country of citizenship is the United States. As of my last update, the chief of state is Joe Biden, who serves as the President of the United States."
+      ],
+      "gold_answer": [
+        "Connachta"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the name of the chief of state of the country that Hal Needham belongs to?",
+      "system_answer": [
+        "Hal Needham was an American film and television director, and his country of citizenship is the United States. As of my last update, the chief of state is Joe Biden, who serves as the President of the United States."
+      ],
+      "gold_answer": [
+        "Connachta"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Who serves as the head of government in the location where the AP1000 was made by its manufacturer?",
+      "system_answer": [
+        "The AP1000 is a nuclear power plant design manufactured by Westinghouse Electric Company, which is based in the United States. The head of government of the United States is Joe Biden, who serves as President."
+      ],
+      "gold_answer": [
+        "Jonathan Rothschild"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "In what place did the author of \"A Wizard of Earthsea\" breathe his last?",
+      "system_answer": [
+        "The author of \"A Wizard of Earthsea\" is Ursula K. Le Guin. She passed away in Portland, Oregon, USA."
+      ],
+      "gold_answer": [
+        "Wolverhampton"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which religion does the partner of the performer of \"Aladdin Sane\" follow?",
+      "system_answer": [
+        "The performer of \"Aladdin Sane\" is David Bowie. His partner, Iman, practices Islam."
+      ],
+      "gold_answer": [
+        "interdenominational organization"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "At which location does the Prime Minister of Sweden spend most of their work hours?",
+      "system_answer": [
+        "The Prime Minister of Sweden typically spends most of their work hours at the Rosenbad, which is the government building in Stockholm where the Prime Minister's office is located."
+      ],
+      "gold_answer": [
+        "Washington, D.C."
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the capital city of the country whose citizenship is held by the CEO of the developer of AppleScript?",
+      "system_answer": [
+        "AppleScript was developed by Apple Inc. The CEO of Apple Inc. as of my last update is Tim Cook, who holds citizenship in the United States. Therefore, the capital city of the country he is a citizen of is Washington, D.C."
+      ],
+      "gold_answer": [
+        "Rome"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which continent is the country of origin for Gala RFC located in?",
+      "system_answer": [
+        "Gala RFC (Gala Athletic Rugby Football Club) is a rugby club based in Galashiels, Scotland. Scotland is part of the United Kingdom, which is located in Europe. Therefore, the country of origin for Gala RFC is in Europe."
+      ],
+      "gold_answer": [
+        "Africa"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What sport is associated with the position played by Irving Fryar on a team/specialty?",
+      "system_answer": [
+        "Irving Fryar is associated with American football. He played as a wide receiver in the NFL."
+      ],
+      "gold_answer": [
+        "rugby"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "In which continent is the country to which Cédric Klapisch holds citizenship located?",
+      "system_answer": [
+        "Cédric Klapisch is a French filmmaker, so he holds citizenship in France. France is located in Europe."
+      ],
+      "gold_answer": [
+        "Antarctica"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the location of the headquarters of the company where Leonte Răutu worked?",
+      "system_answer": [
+        "Leonte Răutu was associated with the Romanian publishing house \"Echinox.\" The headquarters of this company are located in Cluj-Napoca, Romania."
+      ],
+      "gold_answer": [
+        "Ankara"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "To whom does the head of government of the country of origin of Club Nouveau report to?",
+      "system_answer": [
+        "Club Nouveau is based in the United States. The head of government in the United States is the President. Therefore, the head of government reports to the President of the United States."
+      ],
+      "gold_answer": [
+        "Elizabeth II"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which individual is responsible for founding the organization that has its headquarters in the same location where Bill Frisell received his education?",
+      "system_answer": [
+        "Bill Frisell studied at the Berklee College of Music, which is located in Boston, Massachusetts. The Boston Foundation, a prominent organization founded in Boston, could be relevant here. However, if you're referring specifically to an organization directly linked to Bill Frisell's professional context, he is associated with various music-related foundations, but there isn't a widely known one directly attributed to him or founded by him that's headquartered in Boston. If you have a specific organization in mind, please clarify!"
+      ],
+      "gold_answer": [
+        "William Penn"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "In which city of the country where Charles Messier held citizenship is the capital located?",
+      "system_answer": [
+        "Charles Messier was a French astronomer, and he held citizenship in France. The capital city of France is Paris."
+      ],
+      "gold_answer": [
+        "Tehran"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which country does the sportsperson who specializes in Lisa Leslie's position originally come from?",
+      "system_answer": [
+        "Lisa Leslie is a former professional basketball player who played as a center. If you are referring to a sportsperson who specializes in the center position in basketball, one notable player is Yao Ming, who is originally from China."
+      ],
+      "gold_answer": [
+        "Philippines"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the name of the capital city of the country where the founder of the manufacturer of Ford F-Series hailed from?",
+      "system_answer": [
+        "The Ford F-Series is manufactured by Ford Motor Company, which was founded by Henry Ford. Henry Ford hailed from the United States. The capital city of the United States is Washington, D.C."
+      ],
+      "gold_answer": [
+        "New Delhi"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which city serves as the capital of the country where the sport that Sandy Alderson is associated with originated?",
+      "system_answer": [
+        "Sandy Alderson is associated with baseball. The sport of baseball originated in the United States. Therefore, the capital city of the United States is Washington, D.C."
+      ],
+      "gold_answer": [
+        "Duluth"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which language is the official language of the country whose citizenship is held by the director/manager of \"Past Masters\"?",
+      "system_answer": [
+        "\"Past Masters\" is a concept associated with the director/manager Alfred R. Kalinowski. He is known to work in the United States, where the official language is English. Therefore, the official language of the country whose citizenship he holds is English."
+      ],
+      "gold_answer": [
+        "Arabic"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which nation is the birthplace of the sport that features the split-finger fastball?",
+      "system_answer": [
+        "The split-finger fastball is a pitch commonly used in baseball. Baseball originated in the United States. Therefore, the nation that is the birthplace of the sport is the United States."
+      ],
+      "gold_answer": [
+        "Australia"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "In which languages can the author of \"The Witcher\" write, speak, or sign?",
+      "system_answer": [
+        "The author of \"The Witcher\" series is Andrzej Sapkowski. He is fluent in Polish, which is his native language, and he also speaks English. He may have some knowledge of other languages, but Polish and English are the primary ones associated with his work and communication."
+      ],
+      "gold_answer": [
+        "French"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "In which city is the capital of the country, where the book \"The Birth of Tragedy\" first came from, located?",
+      "system_answer": [
+        "\"The Birth of Tragedy\" was written by Friedrich Nietzsche, who was from Germany. The capital city of Germany is Berlin."
+      ],
+      "gold_answer": [
+        "Duluth"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "In what language are communications in the headquarters location of the manufacturer of Il-2 Shturmovik conducted officially?",
+      "system_answer": [
+        "The Il-2 Shturmovik was manufactured by the Soviet Union, specifically by the Ilyushin Design Bureau. The official language of communication in the headquarters location (Moscow, Russia) is Russian."
+      ],
+      "gold_answer": [
+        "German"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which city serves as the capital of the country where the spouse of the performer of \"Viva Las Vegas\" is a citizen?",
+      "system_answer": [
+        "The performer of \"Viva Las Vegas\" is Elvis Presley. His spouse, Priscilla Presley, is a citizen of the United States. Therefore, the capital city of the United States is Washington, D.C."
+      ],
+      "gold_answer": [
+        "Harare"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the country of origin of the sport that the New Firm is related to?",
+      "system_answer": [
+        "The New Firm is related to football (soccer) and refers to the rivalry between Aberdeen FC and Dundee United. Both clubs are based in Scotland; therefore, the country of origin of the sport is Scotland."
+      ],
+      "gold_answer": [
+        "Japan"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "Which religious leader is responsible for founding the religion to which Sarit Thanarat belongs?",
+      "system_answer": [
+        "Sarit Thanarat was a military leader and politician in Thailand, and he is associated with Buddhism, which is the predominant religion in Thailand. Buddhism was founded by Siddhartha Gautama, known as the Buddha. Therefore, the religious leader responsible for founding Buddhism is Siddhartha Gautama."
+      ],
+      "gold_answer": [
+        "Mekere Morauta"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "At which place did the creator of \"Lady Windermere's Fan\" breathe their last?",
+      "system_answer": [
+        "The creator of \"Lady Windermere's Fan,\" which is a play, is Oscar Wilde. He breathed his last in Paris, France, at the Hôtel d'Alsace on November 30, 1900."
+      ],
+      "gold_answer": [
+        "Guangzhou"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "what kind of music does \"Born in the U.S.A.\" fall under according to its performer?",
+      "system_answer": [
+        "\"Born in the U.S.A.\" is performed by Bruce Springsteen and is primarily categorized as rock music. The song also incorporates elements of folk rock and pop rock."
+      ],
+      "gold_answer": [
+        "Australian hip hop"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the capital city of the country where the founder of the manufacturer of Ford Transit Connect holds citizenship?",
+      "system_answer": [
+        "The Ford Transit Connect is manufactured by Ford Motor Company, which was founded by Henry Ford. Henry Ford held citizenship in the United States. Therefore, the capital city of the United States is Washington, D.C."
+      ],
+      "gold_answer": [
+        "Paris"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "In what language are the official documents of the country where Alta IF originates written?",
+      "system_answer": [
+        "Alta IF is a sports club based in Norway. The official language of Norway is Norwegian, so official documents in the country are written in Norwegian."
+      ],
+      "gold_answer": [
+        "Swedish"
+      ],
+      "score": 0,
+      "session_time_sec": 491.69
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which sport is goaltender associated with?",
+      "system_answer": [
+        "Goaltender is associated with the sport of ice hockey."
+      ],
+      "gold_answer": [
+        "pesäpallo"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is Nobuhiro Watsuki famous for?",
+      "system_answer": [
+        "Nobuhiro Watsuki is famous for \"Rurouni Kenshin.\""
+      ],
+      "gold_answer": [
+        "The Fairly OddParents"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which country was rugby union created in?",
+      "system_answer": [
+        "Rugby union was created in the country of England."
+      ],
+      "gold_answer": [
+        "India"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is Ferdowsi famous for?",
+      "system_answer": [
+        "Ferdowsi is famous for \"Shahnameh.\""
+      ],
+      "gold_answer": [
+        "Shahnameh"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which university was Joan Didion educated at?",
+      "system_answer": [
+        "Joan Didion was educated at the University of California, Berkeley."
+      ],
+      "gold_answer": [
+        "University of California, Berkeley"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who is the author of The Marriage of Figaro?",
+      "system_answer": [
+        "The author of \"The Marriage of Figaro\" is Pierre Beaumarchais."
+      ],
+      "gold_answer": [
+        "Thomas Kyd"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which sport is Tunisia national football team associated with?",
+      "system_answer": [
+        "The Tunisia national football team is associated with the sport of association football."
+      ],
+      "gold_answer": [
+        "basketball"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which sport is quarterback associated with?",
+      "system_answer": [
+        "Quarterback is associated with the sport of American football."
+      ],
+      "gold_answer": [
+        "Muay Thai"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the official language of Japan?",
+      "system_answer": [
+        "The official language of Japan is Japanese."
+      ],
+      "gold_answer": [
+        "Swedish"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the name of the current head of the Tucson government?",
+      "system_answer": [
+        "The name of the current head of the Tucson government is Jonathan Rothschild."
+      ],
+      "gold_answer": [
+        "Jonathan Rothschild"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the name of the current head of the Italy government?",
+      "system_answer": [
+        "The name of the current head of the Italy government is Giuseppe Conte."
+      ],
+      "gold_answer": [
+        "Giuseppe Conte"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who performed Meredith Grey?",
+      "system_answer": [
+        "Meredith Grey was performed by Ellen Pompeo."
+      ],
+      "gold_answer": [
+        "Ellen Pompeo"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What position does Robert Parish play?",
+      "system_answer": [
+        "Robert Parish plays the position of center."
+      ],
+      "gold_answer": [
+        "quarterback"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the country of citizenship of Cédric Klapisch?",
+      "system_answer": [
+        "Cédric Klapisch is a citizen of France."
+      ],
+      "gold_answer": [
+        "Malaysia"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who is the author of Sidereus Nuncius?",
+      "system_answer": [
+        "The author of \"Sidereus Nuncius\" is Galileo Galilei."
+      ],
+      "gold_answer": [
+        "Samuel Beckett"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which continent is Germany located in?",
+      "system_answer": [
+        "Germany is located in the continent of Europe."
+      ],
+      "gold_answer": [
+        "Africa"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which religion is Kingdom of Ireland affiliated with?",
+      "system_answer": [
+        "The Kingdom of Ireland is affiliated with the religion of the Catholic Church."
+      ],
+      "gold_answer": [
+        "Zoroastrianism"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which country was association football created in?",
+      "system_answer": [
+        "Association football was created in the country of England."
+      ],
+      "gold_answer": [
+        "Italy"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who is the developer of Windows Phone?",
+      "system_answer": [
+        "Windows Phone was developed by Microsoft."
+      ],
+      "gold_answer": [
+        "Microsoft"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who is the chief executive officer of Microsoft?",
+      "system_answer": [
+        "The chief executive officer of Microsoft is Satya Nadella."
+      ],
+      "gold_answer": [
+        "Steve Jobs"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who is the chairperson of Harvard University?",
+      "system_answer": [
+        "The chairperson of Harvard University is Lawrence S. Bacow."
+      ],
+      "gold_answer": [
+        "Peter Diamandis"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who founded Church of Scotland?",
+      "system_answer": [
+        "The Church of Scotland was founded by John Knox."
+      ],
+      "gold_answer": [
+        "John Knox"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which sport is Galwegians RFC associated with?",
+      "system_answer": [
+        "Galwegians RFC is associated with the sport of rugby."
+      ],
+      "gold_answer": [
+        "rugby union"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who is the director of American Broadcasting Company?",
+      "system_answer": [
+        "The director of American Broadcasting Company is not widely documented; it may vary over time. Please specify the context or timeframe for accurate information."
+      ],
+      "gold_answer": [
+        "Ernst Heinkel"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which city did Gennady Rozhdestvensky die in?",
+      "system_answer": [
+        "Gennady Rozhdestvensky died in the city of Moscow, Russia."
+      ],
+      "gold_answer": [
+        "United States of America"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the capital of Tang Empire?",
+      "system_answer": [
+        "The capital of the Tang Empire was Chang'an, which is present-day Xi'an."
+      ],
+      "gold_answer": [
+        "Beaumont"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who is the director of British Broadcasting Corporation?",
+      "system_answer": [
+        "As of my last update, the director-general of the British Broadcasting Corporation (BBC) is Tim Davie. However, leadership positions may change, so it’s advisable to verify for the most current information."
+      ],
+      "gold_answer": [
+        "Narendra Modi"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the country of citizenship of Benjamin Mazar?",
+      "system_answer": [
+        "Benjamin Mazar was an Israeli citizen."
+      ],
+      "gold_answer": [
+        "Israel"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What type of music does Michael Mantler play?",
+      "system_answer": [
+        "Michael Mantler is known for playing jazz music. He is a composer and musician who has worked in various styles, including jazz and avant-garde music."
+      ],
+      "gold_answer": [
+        "post-punk"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which city did Oscar Wilde die in?",
+      "system_answer": [
+        "Oscar Wilde died in Paris, France."
+      ],
+      "gold_answer": [
+        "Guangzhou"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which country was baseball created in?",
+      "system_answer": [
+        "Baseball was created in the United States."
+      ],
+      "gold_answer": [
+        "Japan"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the country of citizenship of Ernst Heinkel?",
+      "system_answer": [
+        "Ernst Heinkel was a German citizen."
+      ],
+      "gold_answer": [
+        "Tang Empire"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which city is the headquarter of The University of the Arts located in?",
+      "system_answer": [
+        "The headquarters of The University of the Arts is located in Philadelphia, Pennsylvania."
+      ],
+      "gold_answer": [
+        "Philadelphia"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which country was rap rock created in?",
+      "system_answer": [
+        "Rap rock was created in the United States."
+      ],
+      "gold_answer": [
+        "Russian Empire"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Where was Christianity founded?",
+      "system_answer": [
+        "Christianity was founded in the region of Judea, in modern-day Israel and Palestine."
+      ],
+      "gold_answer": [
+        "Taipei"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the official language of United States of America?",
+      "system_answer": [
+        "The United States does not have an official language at the federal level; however, English is the most widely spoken language and is used for government and legal purposes. Some states have declared English as their official language."
+      ],
+      "gold_answer": [
+        "German"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who performed Past Masters?",
+      "system_answer": [
+        "\"Past Masters\" is a compilation album by The Beatles. It was released in two volumes, with various tracks performed by the band."
+      ],
+      "gold_answer": [
+        "Madonna"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the capital of Japan?",
+      "system_answer": [
+        "The capital of Japan is Tokyo."
+      ],
+      "gold_answer": [
+        "Tokyo"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the capital of France?",
+      "system_answer": [
+        "The capital of France is Paris."
+      ],
+      "gold_answer": [
+        "Harare"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who is the developer of SteamOS?",
+      "system_answer": [
+        "SteamOS was developed by Valve Corporation."
+      ],
+      "gold_answer": [
+        "ABB Group"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which city is the headquarter of University of Bucharest located in?",
+      "system_answer": [
+        "The headquarters of the University of Bucharest is located in Bucharest, Romania."
+      ],
+      "gold_answer": [
+        "Ankara"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which sport is wide receiver associated with?",
+      "system_answer": [
+        "A wide receiver is associated with American football."
+      ],
+      "gold_answer": [
+        "rugby"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What position does Hines Ward play?",
+      "system_answer": [
+        "Hines Ward played as a wide receiver in American football. He is best known for his time with the Pittsburgh Steelers in the NFL."
+      ],
+      "gold_answer": [
+        "cornerback"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the capital of Australia?",
+      "system_answer": [
+        "The capital of Australia is Canberra."
+      ],
+      "gold_answer": [
+        "Oderzo"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which continent is Malaysia located in?",
+      "system_answer": [
+        "Malaysia is located in Asia."
+      ],
+      "gold_answer": [
+        "Antarctica"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who is the author of A Wizard of Earthsea?",
+      "system_answer": [
+        "The author of \"A Wizard of Earthsea\" is Ursula K. Le Guin."
+      ],
+      "gold_answer": [
+        "Pius XII"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who performed Free as a Bird?",
+      "system_answer": [
+        "\"Free as a Bird\" was performed by The Beatles. The song was released in 1995 and is one of the band's posthumous releases, featuring unreleased John Lennon vocals."
+      ],
+      "gold_answer": [
+        "The Beatles"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who is the author of Our Mutual Friend?",
+      "system_answer": [
+        "The author of \"Our Mutual Friend\" is Charles Dickens."
+      ],
+      "gold_answer": [
+        "Charles Darwin"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which country was basketball created in?",
+      "system_answer": [
+        "Basketball was created in the United States."
+      ],
+      "gold_answer": [
+        "Soviet Union"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the country of citizenship of Hal Needham?",
+      "system_answer": [
+        "Hal Needham was an American citizen."
+      ],
+      "gold_answer": [
+        "United States of America"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which continent is Bengaluru located in?",
+      "system_answer": [
+        "Bengaluru is located in Asia."
+      ],
+      "gold_answer": [
+        "Oceania"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which sport is Slovakia national football team associated with?",
+      "system_answer": [
+        "The Slovakia national football team is associated with soccer (football)."
+      ],
+      "gold_answer": [
+        "cricket"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the name of the current head of state in United States of America?",
+      "system_answer": [
+        "The current head of state in the United States is Joe Biden, who serves as the President."
+      ],
+      "gold_answer": [
+        "Connachta"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which religion is Imelda Marcos affiliated with?",
+      "system_answer": [
+        "Imelda Marcos is affiliated with Roman Catholicism."
+      ],
+      "gold_answer": [
+        "atheism"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What type of music does Dana International play?",
+      "system_answer": [
+        "Dana International is known for playing pop music, particularly in the genres of dance-pop and Eurodance. She is also recognized for her contributions to the Israeli music scene and her participation in the Eurovision Song Contest."
+      ],
+      "gold_answer": [
+        "Australian hip hop"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the country of citizenship of Sable?",
+      "system_answer": [
+        "Sable is an American citizen. She is a professional wrestler known for her time in WWE."
+      ],
+      "gold_answer": [
+        "Czech Republic"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which country was Charlie Hebdo created in?",
+      "system_answer": [
+        "Charlie Hebdo was created in France."
+      ],
+      "gold_answer": [
+        "Italy"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who is Elvis Presley married to?",
+      "system_answer": [
+        "Elvis Presley was married to Priscilla Presley. They were married in 1967 and divorced in 1973."
+      ],
+      "gold_answer": [
+        "Charles the Bold"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who performed Hermione Granger?",
+      "system_answer": [
+        "Hermione Granger was performed by actress Emma Watson in the \"Harry Potter\" film series."
+      ],
+      "gold_answer": [
+        "Kylie Minogue"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which sport is Bo Ryan associated with?",
+      "system_answer": [
+        "Bo Ryan is associated with basketball. He is a former college basketball coach, known for his time as the head coach of the University of Wisconsin-Madison men's basketball team."
+      ],
+      "gold_answer": [
+        "association football"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What type of music does John McVie play?",
+      "system_answer": [
+        "John McVie is known for playing rock music, particularly as a bassist for the iconic rock band Fleetwood Mac."
+      ],
+      "gold_answer": [
+        "rap rock"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What position does Rogério Ceni play?",
+      "system_answer": [
+        "Rogério Ceni is a former professional football player who played as a goalkeeper. He is particularly well-known for his long career at São Paulo FC in Brazil."
+      ],
+      "gold_answer": [
+        "flanker"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who is the chief executive officer of Twitter?",
+      "system_answer": [
+        "As of my last update, Elon Musk is the CEO of Twitter, having taken over in late 2022. However, leadership roles can change, so it's good to verify the current information."
+      ],
+      "gold_answer": [
+        "Bernard Arnault"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What language does Kylie Minogue speak?",
+      "system_answer": [
+        "Kylie Minogue primarily speaks English. She is an Australian singer and actress, and English is her native language."
+      ],
+      "gold_answer": [
+        "German"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which sport is Darryl Strawberry associated with?",
+      "system_answer": [
+        "Darryl Strawberry is associated with baseball. He is a former professional baseball player who played in Major League Baseball (MLB) for teams such as the New York Mets and the New York Yankees."
+      ],
+      "gold_answer": [
+        "baseball"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which sport is placekicker associated with?",
+      "system_answer": [
+        "A placekicker is associated with American football. They are responsible for kicking field goals and extra points."
+      ],
+      "gold_answer": [
+        "rugby"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What kind of work does Stephen McNeil do?",
+      "system_answer": [
+        "Stephen McNeil is a Canadian politician who served as the Premier of Nova Scotia from 2013 to 2021. He is a member of the Nova Scotia Liberal Party. Following his time as Premier, he has been involved in various roles, including consulting and speaking engagements."
+      ],
+      "gold_answer": [
+        "journalist"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who is the employer of Dave Filoni?",
+      "system_answer": [
+        "Dave Filoni is employed by Lucasfilm, where he is known for his work in the Star Wars franchise, including as a director and executive producer for animated series like \"Star Wars: The Clone Wars\" and \"Star Wars Rebels,\" as well as live-action series like \"The Mandalorian.\""
+      ],
+      "gold_answer": [
+        "British Broadcasting Corporation"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which continent is San Francisco located in?",
+      "system_answer": [
+        "San Francisco is located in North America."
+      ],
+      "gold_answer": [
+        "North America"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Where was Canadair founded?",
+      "system_answer": [
+        "Canadair was founded in Montreal, Canada. It was established in 1944 and became known for manufacturing various types of aircraft."
+      ],
+      "gold_answer": [
+        "Tucson"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which company is AP1000 produced by?",
+      "system_answer": [
+        "The AP1000 is produced by Westinghouse Electric Company. It is a type of pressurized water reactor designed for nuclear power generation."
+      ],
+      "gold_answer": [
+        "Canadair"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the country of citizenship of Ayumi Hamasaki?",
+      "system_answer": [
+        "Ayumi Hamasaki is a citizen of Japan. She is a popular singer-songwriter and is often referred to as the \"Empress of J-Pop.\""
+      ],
+      "gold_answer": [
+        "Japan"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What position does Blair Walsh play?",
+      "system_answer": [
+        "Blair Walsh is a former placekicker in American football. He played in the NFL for teams such as the Minnesota Vikings and the Seattle Seahawks."
+      ],
+      "gold_answer": [
+        "placekicker"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who is Tony Blair married to?",
+      "system_answer": [
+        "Tony Blair is married to Cherie Blair. They were married in 1980 and have four children together."
+      ],
+      "gold_answer": [
+        "Alan Jay Lerner"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who is the author of Endymion?",
+      "system_answer": [
+        "The author of \"Endymion\" is John Keats. It is a narrative poem published in 1818 and is one of his well-known works. If you are referring to a different \"Endymion,\" such as the science fiction novel by Dan Simmons, please let me know!"
+      ],
+      "gold_answer": [
+        "John Keats"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who is the author of Lady Windermere's Fan?",
+      "system_answer": [
+        "The author of \"Lady Windermere's Fan\" is Oscar Wilde. The play was first performed in 1892 and is one of his well-known comedic works."
+      ],
+      "gold_answer": [
+        "Oscar Wilde"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the name of the current head of the Japan government?",
+      "system_answer": [
+        "The current head of the Japanese government is Fumio Kishida, who serves as the Prime Minister of Japan."
+      ],
+      "gold_answer": [
+        "Shinzō Abe"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who is the chairperson of Congolese Party of Labour?",
+      "system_answer": [
+        "The chairperson of the Congolese Party of Labour (Parti congolais du travail, PCT) is Pierre Moussa. He has held this position in the political party of the Republic of the Congo."
+      ],
+      "gold_answer": [
+        "Stephen McNeil"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which sport is flanker associated with?",
+      "system_answer": [
+        "A flanker is associated with rugby, specifically rugby union and rugby league. In rugby union, flankers are positioned on the sides of the scrum and play a crucial role in both defense and attack."
+      ],
+      "gold_answer": [
+        "rugby union"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the capital of Czech Republic?",
+      "system_answer": [
+        "The capital of the Czech Republic is Prague."
+      ],
+      "gold_answer": [
+        "Prague"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What position does Lisa Leslie play?",
+      "system_answer": [
+        "Lisa Leslie played as a center in professional basketball. She is a former player in the Women's National Basketball Association (WNBA) and is known for her time with the Los Angeles Sparks."
+      ],
+      "gold_answer": [
+        "goaltender"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the name of the current head of state in Soviet Union?",
+      "system_answer": [
+        "The Soviet Union officially dissolved in 1991, and it no longer exists as a political entity. The last head of state was Mikhail Gorbachev, who served as the President of the Soviet Union until its dissolution."
+      ],
+      "gold_answer": [
+        "Elizabeth II"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the country of citizenship of Ferdinand von Richthofen?",
+      "system_answer": [
+        "Ferdinand von Richthofen was a German geographer and geologist, and his country of citizenship was Germany."
+      ],
+      "gold_answer": [
+        "Canada"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which religion is Karen Armstrong affiliated with?",
+      "system_answer": [
+        "Karen Armstrong is a writer and commentator known for her works on religion and spirituality. She was raised in the Church of England, but she later became a member of the Buddhist community. Armstrong often discusses and analyzes various religions, emphasizing interfaith dialogue and understanding. However, she does not strictly affiliate with any one religion, focusing instead on the broader themes and principles across them."
+      ],
+      "gold_answer": [
+        "Church of Scotland"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who was Vito Corleone created by?",
+      "system_answer": [
+        "Vito Corleone is a character created by author Mario Puzo. He is the central figure in Puzo's novel \"The Godfather,\" published in 1969, and is famously portrayed by Marlon Brando in the film adaptation directed by Francis Ford Coppola."
+      ],
+      "gold_answer": [
+        "Nobuhiro Watsuki"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the capital of Romania?",
+      "system_answer": [
+        "The capital of Romania is Bucharest."
+      ],
+      "gold_answer": [
+        "Rajanpur"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which continent is India located in?",
+      "system_answer": [
+        "India is located in Asia."
+      ],
+      "gold_answer": [
+        "Africa"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which city did Olga of Kiev die in?",
+      "system_answer": [
+        "Olga of Kiev died in the city of Kiev, which is now the capital of Ukraine."
+      ],
+      "gold_answer": [
+        "Rodez"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who founded Sasanian Empire?",
+      "system_answer": [
+        "The Sasanian Empire was founded by Ardashir I. He established the empire in 224 AD after defeating the last ruler of the Parthian Empire, and it lasted until the Muslim conquest in 651 AD."
+      ],
+      "gold_answer": [
+        "Walter Chrysler"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which city did Pedro Pierluisi work in?",
+      "system_answer": [
+        "Pedro Pierluisi works in San Juan, Puerto Rico, where he serves as the Governor. He has also held various roles in government and law in that city."
+      ],
+      "gold_answer": [
+        "Washington, D.C."
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which sport is Surrey Senior Cup associated with?",
+      "system_answer": [
+        "The Surrey Senior Cup is associated with football (soccer). It is a knockout competition for senior football clubs in Surrey, England."
+      ],
+      "gold_answer": [
+        "basketball"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the country of citizenship of Narendra Modi?",
+      "system_answer": [
+        "Narendra Modi is a citizen of India. He is the Prime Minister of India, having taken office in May 2014."
+      ],
+      "gold_answer": [
+        "Australia"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who is Victoria Beckham married to?",
+      "system_answer": [
+        "Victoria Beckham is married to David Beckham. They have been married since 1999 and are well-known as a celebrity couple."
+      ],
+      "gold_answer": [
+        "David Beckham"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the country of citizenship of Charles Messier?",
+      "system_answer": [
+        "Charles Messier was a French astronomer and his country of citizenship was France. He is best known for his catalog of nebulae and star clusters, known as the Messier Catalog."
+      ],
+      "gold_answer": [
+        "Iran"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who was Rand al'Thor created by?",
+      "system_answer": [
+        "Rand al'Thor is a character created by author Robert Jordan. He is one of the central characters in \"The Wheel of Time\" series, which is a popular high fantasy series."
+      ],
+      "gold_answer": [
+        "Ferdowsi"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What position does Mike D'Antoni play?",
+      "system_answer": [
+        "Mike D'Antoni is a former professional basketball player and coach. During his playing career, he played as a guard. He is best known for his coaching career, especially for his work with teams like the Phoenix Suns, where he implemented the \"Seven Seconds or Less\" offense."
+      ],
+      "gold_answer": [
+        "point guard"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What is the country of citizenship of Colin Irwin?",
+      "system_answer": [
+        "Colin Irwin is a British citizen, specifically from the United Kingdom. He is known for his work as a journalist and writer, particularly in the field of music."
+      ],
+      "gold_answer": [
+        "Israel"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who is Walter Chrysler's child?",
+      "system_answer": [
+        "Walter Chrysler, the founder of the Chrysler Corporation, had several children. One of his notable children was John Walter Chrysler, who was involved in the automobile industry and served in various roles within the Chrysler Corporation. He also had daughters, including Doris and Delia Chrysler."
+      ],
+      "gold_answer": [
+        "Charles Frederick, Duke of Holstein-Gottorp"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Who is Charles Darwin married to?",
+      "system_answer": [
+        "Charles Darwin was married to Emma Wedgwood. They married in 1839, and Emma was both his cousin and a supportive partner throughout his scientific career."
+      ],
+      "gold_answer": [
+        "Amala Paul"
+      ],
+      "score": 0,
+      "session_time_sec": 341.66
+    },
+    {
+      "system": "openai_sdk_memory_agent",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "What position does Irving Fryar play?",
+      "system_answer": [
+        "Irving Fryar is a former professional American football player who played as a wide receiver. He had a successful career in the NFL, playing for several teams, including the New England Patriots and the Miami Dolphins."
+      ],
+      "gold_answer": [
+        "wide receiver"
+      ],
+      "score": 1.0,
+      "session_time_sec": 341.66
+    }
+  ]
+}

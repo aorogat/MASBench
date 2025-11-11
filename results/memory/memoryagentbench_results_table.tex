@@ -1,0 +1,32 @@
+\setlength{\tabcolsep}{2pt}
+\begin{table*}[t]
+\centering
+\caption{Evaluation of memory competencies on MemoryAgentBench. Placeholder results (in \textcolor{red}{red}) will be replaced with empirical scores for CrewAI, the OpenAI Agent SDK, and other frameworks.}
+\footnotesize
+\begin{tabular}{
+    l|
+    *{5}{c}|  % AR (4 subtasks + Avg)
+    *{3}{c}|  % TTL (2 subtasks + Avg)
+    *{3}{c}|  % LRU (2 subtasks + Avg)
+    *{3}{c}|  % SF (2 subtasks + Avg)
+    c         % Overall
+}
+\toprule
+\textbf{Agent Framework} &
+\multicolumn{5}{c|}{\textbf{Accurate Retrieval (AR)}} &
+\multicolumn{3}{c|}{\textbf{Test-Time Learning (TTL)}} &
+\multicolumn{3}{c|}{\textbf{Long-Range Understanding (LRU)}} &
+\multicolumn{3}{c|}{\textbf{Selective Forgetting (SF)}} &
+\textbf{Overall} \\
+\midrule
+& SH-QA & MH-QA & LME(S*) & EventQA & Avg. &
+  MCC & Recom. & Avg. &
+  Summ. & DetQA & Avg. &
+  FC-SH & FC-MH & Avg. &
+  Score \\
+\midrule
+openai sdk memory agent & 0.47 & 0.38 & 0.03 & 0.29 & 0.29 & \textcolor{red}{--} & \textcolor{red}{--} & \textcolor{red}{--} & \textcolor{red}{--} & \textcolor{red}{--} & \textcolor{red}{--} & 0.23 & 0.01 & 0.12 & 0.21 \\
+
+\bottomrule
+\end{tabular}
+\end{table*}
