@@ -71,50 +71,6 @@ def category_of(subtask):
         return "SF"   # Selective Forgetting
     return "Other"
 
-def _save_session_result(self, system_name, sess, correctness, duration):
-    """
-    Saves an individual session result inside:
-    results/memory/<system_name>/<subtask>/session_<id>.json
-    """
-
-    subfolder = os.path.join(
-        self.results_dir,
-        system_name,
-        sess["subtask"]
-    )
-    os.makedirs(subfolder, exist_ok=True)
-
-    path = os.path.join(subfolder, f"session_{sess['qid']}.json")
-
-    # Per-question entries
-    per_q = []
-    for q, sys_ans, gold_ans, score in zip(
-        sess["questions"], 
-        [c["system"][0] if isinstance(c["system"], list) else c["system"] for c in correctness],
-        [c["gold"][0] if isinstance(c["gold"], list) else c["gold"] for c in correctness],
-        [c["score"] if "score" in c else c for c in correctness]
-    ):
-        per_q.append({
-            "question": q,
-            "system_answer": sys_ans,
-            "gold_answer": gold_ans,
-            "score": score
-        })
-
-    data = {
-        "system": system_name,
-        "split": self.split,
-        "session_id": sess["qid"],
-        "subtask": sess["subtask"],
-        "category": sess["category"],
-        "runtime_sec": round(duration, 2),
-        "questions": per_q
-    }
-
-    with open(path, "w") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-
-    return path
 
 # ---------------------------------------------------------------------
 # 🧠 Core Benchmark Class
@@ -322,6 +278,54 @@ class MemoryAgentBench:
             "total_runtime_sec": round(total_time, 2),
             "path": save_path
         }
+
+
+
+    def _save_session_result(self, system_name, sess, correctness, duration):
+        """
+        Saves an individual session result inside:
+        results/memory/<system_name>/<subtask>/session_<id>.json
+        """
+
+        subfolder = os.path.join(
+            self.results_dir,
+            system_name,
+            sess["subtask"]
+        )
+        os.makedirs(subfolder, exist_ok=True)
+
+        path = os.path.join(subfolder, f"session_{sess['qid']}.json")
+
+        # Per-question entries
+        per_q = []
+        for q, sys_ans, gold_ans, score in zip(
+            sess["questions"], 
+            [c["system"][0] if isinstance(c["system"], list) else c["system"] for c in correctness],
+            [c["gold"][0] if isinstance(c["gold"], list) else c["gold"] for c in correctness],
+            [c["score"] if "score" in c else c for c in correctness]
+        ):
+            per_q.append({
+                "question": q,
+                "system_answer": sys_ans,
+                "gold_answer": gold_ans,
+                "score": score
+            })
+
+        data = {
+            "system": system_name,
+            "split": self.split,
+            "session_id": sess["qid"],
+            "subtask": sess["subtask"],
+            "category": sess["category"],
+            "runtime_sec": round(duration, 2),
+            "questions": per_q
+        }
+
+        with open(path, "w") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+
+        return path
+
 
 # ------------------------------------------------------------------
 # 🔍 Example CLI test (for sanity only)
