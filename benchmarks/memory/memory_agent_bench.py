@@ -46,8 +46,9 @@ def infer_subtask(meta):
     if "eventqa" in name: return "EventQA"
     if "longmemeval" in name: return "LME(S*)"
     if "recsys_redial" in name: return "MovieRec"
-    if any(x in name for x in ["icl_banking77", "icl_clinic150", "icl_nlu", "trec"]): return "IntentQA"
+    if any(x in name for x in ["icl_banking77", "icl_clinic150", "icl_nlu", "trec"]): return "MCC"
     if "infbench_sum" in name: return "Summ."
+    if "detective_qa" in name: return "DetQA"
     if "factconsolidation_sh" in name: return "FC-SH"
     if "factconsolidation_mh" in name: return "FC-MH"
     return "Unknown"
@@ -56,9 +57,9 @@ def infer_subtask(meta):
 def category_of(subtask):
     if subtask in ["SH-QA", "MH-QA", "EventQA", "LME(S*)"]:
         return "AR"   # Accurate Retrieval
-    if subtask in ["IntentQA", "MovieRec"]:
+    if subtask in ["MCC", "MovieRec"]:
         return "TTL"  # Test-Time Learning
-    if subtask in ["Summ."]:
+    if subtask in ["Summ.", "DetQA"]:
         return "LRU"  # Long-Range Understanding
     if subtask in ["FC-SH", "FC-MH"]:
         return "SF"   # Selective Forgetting

@@ -17,28 +17,37 @@ Results are saved automatically in `results/memory/`.
 import os
 import time
 import shutil
-from crewai import Crew, Agent, Task, Process
-from benchmarks.memory.memory_agent_bench import MemoryAgentBench
-from crewai import LLM
-from dotenv import load_dotenv
+from crewai import Crew, Agent, Task, Process, LLM
 from crewai.utilities.paths import db_storage_path
+from dotenv import load_dotenv
+from benchmarks.memory.memory_agent_bench import MemoryAgentBench
+from single_agent.memory.config import (
+    llm_model,
+)
+from single_agent.memory.helpers.common_agent_utils import (
+    API_KEY,
+    chunk_text,
+    summarize_results,
+)
 
+# ---------------------------------------------------------------------
+# 🔧 CONFIGURATION
+# ---------------------------------------------------------------------
 load_dotenv()
-api_key = os.getenv("OPENAI_API_KEY")
+os.environ["OPENAI_API_KEY"] = API_KEY
 
-# ---------------------------------------------------------
+
+# ---------------------------------------------------------------------
 # 🧠 CrewAI Agent Builder
-# ---------------------------------------------------------
-
+# ---------------------------------------------------------------------
 def build_crewai_agent(storage_dir="/shared_mnt/crewai_memory"):
     os.environ["CREWAI_STORAGE_DIR"] = storage_dir
     print("🗂 CrewAI memory storage path:", db_storage_path())
 
-
     llm = LLM(
-        model="openai/gpt-4o-mini",
-        api_key=api_key,
-        max_tokens=3000
+        model=llm_model,
+        api_key=API_KEY,
+        max_tokens=3000,
     )
 
     agent_answer = Agent(
@@ -58,22 +67,21 @@ def build_crewai_agent(storage_dir="/shared_mnt/crewai_memory"):
             "You are a memory-augmented assistant capable of recalling and "
             "reasoning over previously seen information."
         ),
-        llm=llm, 
+        llm=llm,
     )
 
-    crew = Crew(
+    return Crew(
         agents=[agent_answer, agent_ingest],
         tasks=[],
         process=Process.sequential,
         memory=True,
         verbose=True,
     )
-    return crew
 
 
-# ---------------------------------------------------------
+# ---------------------------------------------------------------------
 # 🧩 Wrapper for Benchmark Compatibility
-# ---------------------------------------------------------
+# ---------------------------------------------------------------------
 class CrewAIMemoryAgent:
     """
     Adapts CrewAI crew to the interface expected by MemoryAgentBench:
@@ -82,7 +90,7 @@ class CrewAIMemoryAgent:
       - query(question)
     """
 
-    _session_counter = 0  # 🔁 Static counter to generate unique subfolders
+    _session_counter = 0  # 🔁 Static counter for unique subfolders
 
     def __init__(self):
         self.crew = self.build_crewai_agent()
@@ -104,10 +112,10 @@ class CrewAIMemoryAgent:
         print(f"🗂 CrewAI memory storage path: {memory_path}")
 
         llm = LLM(
-            model="openai/gpt-4o-mini",
-            api_key=os.getenv("OPENAI_API_KEY"),
+            model=llm_model,
+            api_key=API_KEY,
             temperature=0,
-            max_tokens=3000
+            max_tokens=3000,
         )
 
         agent_answer = Agent(
@@ -132,6 +140,7 @@ class CrewAIMemoryAgent:
             verbose=True,
         )
 
+    # -------------------------------------------------------------
     def reset(self):
         """Reset memories by creating a new crew with fresh DB."""
         try:
@@ -139,32 +148,19 @@ class CrewAIMemoryAgent:
         except Exception as e:
             print(f"⚠️ Memory reset failed: {e}")
 
+    # -------------------------------------------------------------
     def ingest(self, context: str, max_tokens: int = 1000, overlap: int = 50):
-        print("Ingesting current Context")
-
-        words = context.split()
-        n = len(words)
-        chunks = []
-
-        if n <= max_tokens:
-            chunks = [context]
-        else:
-            start = 0
-            while start < n:
-                end = min(start + max_tokens, n)
-                chunks.append(" ".join(words[start:end]))
-                if end >= n:
-                    break
-                start = end - overlap if end - overlap > start else end
-
-        print(f"🧠 Ingesting context in {len(chunks)} chunks (≤ {max_tokens} tokens each)")
+        """Feed benchmark context into the crew memory."""
+        print("🧠 Ingesting current Context")
+        chunks = chunk_text(context, max_tokens=max_tokens, overlap=overlap)
+        print(f"🧩 Total Chunks: {len(chunks)}")
 
         for i, chunk in enumerate(chunks, 1):
             print(f"\tChunk {i}/{len(chunks)}")
             task = Task(
                 description=(
                     f"Part {i}/{len(chunks)}:\n"
-                    f"Remember the following context for future questions:\n\n{chunk}.\n"
+                    f"Remember the following context for future questions:\n\n{chunk}\n"
                     f"Return only the message 'Context added to my memory.'"
                 ),
                 expected_output=f"Context chunk {i} memorized.",
@@ -172,11 +168,13 @@ class CrewAIMemoryAgent:
             )
             self.crew.tasks = [task]
             try:
-                result = self.crew.kickoff()
+                self.crew.kickoff()
             except Exception as e:
                 print(f"\t❌ Error processing chunk {i}: {e}")
 
+    # -------------------------------------------------------------
     def query(self, question: str) -> str:
+        """Ask a question using remembered context."""
         print(f"🔍 Querying: {question[:60]}{'...' if len(question) > 60 else ''}")
 
         task = Task(
@@ -196,28 +194,25 @@ class CrewAIMemoryAgent:
             return ""
 
 
-
-
-# ---------------------------------------------------------
+# ---------------------------------------------------------------------
 # 🚀 Run Benchmark for All Splits
-# ---------------------------------------------------------
+# ---------------------------------------------------------------------
 def main():
     splits = [
         "Accurate_Retrieval",
         "Test_Time_Learning",
         "Long_Range_Understanding",
-        "Selective_Forgetting",
+        "Conflict_Resolution",
     ]
 
     overall_summary = {}
-    timestamp = time.strftime("%Y%m%d_%H%M%S")
 
     for split in splits:
         print("\n" + "=" * 80)
         print(f"🧩 Running CrewAI Memory Agent on Split: {split}")
         print("=" * 80)
 
-        bench = MemoryAgentBench(split=split, n=None)  # Full dataset split
+        bench = MemoryAgentBench(split=split, n=None)
         agent = CrewAIMemoryAgent()
 
         result = bench.evaluate_agent(
@@ -225,36 +220,13 @@ def main():
             system_name="crewai_memory_agent",
             verbose=True,
         )
-
         overall_summary[split] = result["overall"]
 
-    # -----------------------------------------------------
-    # 📊 Summary Report
-    # -----------------------------------------------------
-    print("\n" + "=" * 80)
-    print("📊 FINAL SUMMARY – CrewAI Memory Agent")
-    print("=" * 80)
-    for split, score in overall_summary.items():
-        print(f"{split:30s} → {score:.3f}")
-    print("-" * 80)
-    avg_score = sum(overall_summary.values()) / len(overall_summary)
-    print(f"⭐ Average Overall Score: {avg_score:.3f}")
-    print("=" * 80)
-
-    # Save summary JSON
-    results_dir = os.path.join("results", "memory")
-    os.makedirs(results_dir, exist_ok=True)
-    summary_path = os.path.join(results_dir, f"crewai_memory_summary_{timestamp}.json")
-
-    import json
-    with open(summary_path, "w") as f:
-        json.dump(overall_summary, f, indent=2)
-
-    print(f"\n💾 Summary saved to {summary_path}")
+    summarize_results("crewai_memory_agent", overall_summary)
 
 
-# ---------------------------------------------------------
+# ---------------------------------------------------------------------
 # 🏁 Entry Point
-# ---------------------------------------------------------
+# ---------------------------------------------------------------------
 if __name__ == "__main__":
     main()

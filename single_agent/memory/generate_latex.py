@@ -6,10 +6,11 @@ from collections import defaultdict
 # 1. Subtasks per category
 CATEGORY_SUBTASKS = {
     "Accurate Retrieval": ["SH-QA", "MH-QA", "LME(S*)", "EventQA"],
-    "Test-Time Learning": ["MCC", "Recom."],
+    "Test-Time Learning": ["MovieRec", "MCC"], 
     "Long-Range Understanding": ["Summ.", "DetQA"],
     "Selective Forgetting": ["FC-SH", "FC-MH"],
 }
+
 
 SUBTASK_TO_CATEGORY = {
     st: cat for cat, lst in CATEGORY_SUBTASKS.items() for st in lst
@@ -29,6 +30,8 @@ def parse_result_file(file_path):
     for r in results:
         subtask = r.get("subtask")
         score = r.get("score")
+        subtask = r.get("subtask")
+
         if subtask not in SUBTASK_TO_CATEGORY or score is None:
             continue
         subtasks_scores[subtask].append(score)
@@ -45,7 +48,8 @@ def parse_result_file(file_path):
 
 
 def format_score(score):
-    return f"{score:.2f}" if score is not None else r"\textcolor{red}{--}"
+    return f"{score * 100:.1f}" if score is not None else r"\textcolor{red}{--}"
+
 
 
 def generate_latex_table(results_dir):
@@ -77,6 +81,7 @@ def generate_latex_table(results_dir):
 \begin{table*}[t]
 \centering
 \caption{Evaluation of memory competencies on MemoryAgentBench. Placeholder results (in \textcolor{red}{red}) will be replaced with empirical scores for CrewAI, the OpenAI Agent SDK, and other frameworks.}
+\label{tab:memorybench-results}
 \footnotesize
 \begin{tabular}{
     l|
@@ -114,7 +119,7 @@ def generate_latex_table(results_dir):
             format_score(score_map.get("Accurate Retrieval Avg.")),
             # TTL subtasks + avg
             format_score(score_map.get("MCC")),
-            format_score(score_map.get("Recom.")),
+            format_score(score_map.get("MovieRec")),
             format_score(score_map.get("Test-Time Learning Avg.")),
             # LRU subtasks + avg
             format_score(score_map.get("Summ.")),
