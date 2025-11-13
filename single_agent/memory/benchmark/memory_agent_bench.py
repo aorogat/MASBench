@@ -26,11 +26,17 @@ import time
 from collections import defaultdict
 from datasets import load_dataset
 
-from benchmarks.memory.metric_eval_gpt import (
-    evaluate_exact_matches_with_gpt,
-    evaluate_fact_consistency_with_gpt,
-    evaluate_correct_counts_with_gpt,
-    get_recall_at_5,
+from single_agent.memory.benchmark.metric_eval_gpt import (
+    evaluate_exact_match,
+    evaluate_summary_match,
+    evaluate_recall_at_5,
+)
+
+from single_agent.memory.config import (
+    max_sessions_per_subtask,
+    eval_llm_model,
+    eval_small_batch_size,
+    eval_summary_batch_size,
 )
 
 # ---------------------------------------------------------------------
@@ -65,22 +71,64 @@ def category_of(subtask):
         return "SF"   # Selective Forgetting
     return "Other"
 
+def _save_session_result(self, system_name, sess, correctness, duration):
+    """
+    Saves an individual session result inside:
+    results/memory/<system_name>/<subtask>/session_<id>.json
+    """
+
+    subfolder = os.path.join(
+        self.results_dir,
+        system_name,
+        sess["subtask"]
+    )
+    os.makedirs(subfolder, exist_ok=True)
+
+    path = os.path.join(subfolder, f"session_{sess['qid']}.json")
+
+    # Per-question entries
+    per_q = []
+    for q, sys_ans, gold_ans, score in zip(
+        sess["questions"], 
+        [c["system"][0] if isinstance(c["system"], list) else c["system"] for c in correctness],
+        [c["gold"][0] if isinstance(c["gold"], list) else c["gold"] for c in correctness],
+        [c["score"] if "score" in c else c for c in correctness]
+    ):
+        per_q.append({
+            "question": q,
+            "system_answer": sys_ans,
+            "gold_answer": gold_ans,
+            "score": score
+        })
+
+    data = {
+        "system": system_name,
+        "split": self.split,
+        "session_id": sess["qid"],
+        "subtask": sess["subtask"],
+        "category": sess["category"],
+        "runtime_sec": round(duration, 2),
+        "questions": per_q
+    }
+
+    with open(path, "w") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+    return path
 
 # ---------------------------------------------------------------------
 # 🧠 Core Benchmark Class
 # ---------------------------------------------------------------------
 class MemoryAgentBench:
-    def __init__(self, split="Accurate_Retrieval", n=None):
+    def __init__(self, split="Accurate_Retrieval"):
         self.split = split
-        self.load_data(split, n)
+        self.load_data(split)
         self.results_dir = os.path.join("results", "memory")
         os.makedirs(self.results_dir, exist_ok=True)
 
     # --------------------------------------------------------------
-    def load_data(self, split, n=None):
+    def load_data(self, split):
         ds = load_dataset("ai-hyz/MemoryAgentBench", split=split)
-        if n:
-            ds = ds.select(range(min(n, len(ds))))
         self.sessions = []
         for i, row in enumerate(ds):
             meta = row.get("metadata", {})
@@ -100,35 +148,40 @@ class MemoryAgentBench:
         print("Detected subtasks:", subtasks)
 
     # --------------------------------------------------------------
-    def evaluate_agent(self, agent, system_name="unknown_system", verbose=False, max_sessions_per_task=1):
+    def evaluate_agent(self, agent, system_name="unknown_system", verbose=False):
         """
         Runs the agent and computes metrics per-question using GPT-based functions.
-        Evaluates up to `max_sessions_per_task` sessions per subtask to reduce GPT calls.
-
-        Args:
-            agent: an object with methods reset(), ingest(context), and query(question)
-            system_name (str): name of the system being evaluated (e.g., "crewai", "rag")
-            verbose (bool): print session-level results and timings
-            max_sessions_per_task (int): max sessions to evaluate per subtask (default=1)
+        Uses max_sessions_per_subtask from config.
         """
+
         category_scores = defaultdict(list)
         detailed_results = []
         subtask_session_count = defaultdict(int)
         total_start_time = time.time()
 
         for sess in self.sessions:
-            # ✅ Limit evaluation to max_sessions_per_task per subtask
+
             subtask = sess["subtask"]
-            if subtask_session_count[subtask] >= max_sessions_per_task:
+
+            # ---------------------------------------------------------
+            # ✅ Limit evaluation PER SUBTASK (not per split)
+            # ---------------------------------------------------------
+            if subtask_session_count[subtask] >= max_sessions_per_subtask:
                 continue
+
             subtask_session_count[subtask] += 1
 
             start_time = time.time()
             agent.reset()
             agent.ingest(sess["context"])
-            preds = [agent.query(q) for q in sess["questions"]]
 
-            # Normalize format
+            preds = []
+            for idx, q in enumerate(sess["questions"], start=1):
+                print(f"🔍 Querying question {idx}/{len(sess['questions'])} ...")
+                preds.append(agent.query(q))
+
+
+            # Normalize pair format
             answers_pairs = [
                 {
                     "system": [pred] if isinstance(pred, str) else pred,
@@ -139,36 +192,65 @@ class MemoryAgentBench:
 
             cat = sess["category"]
 
-            # 🔹 Select metric type
+            # ---------------------------------------------------------
+            # 🧮 Run the correct evaluation metric according to category
+            # ---------------------------------------------------------
             if cat == "AR":
-                correctness = evaluate_exact_matches_with_gpt(answers_pairs)
+                correctness = evaluate_exact_match(
+                    answers_pairs,
+                    model=eval_llm_model,
+                    batch_size=eval_small_batch_size
+                )
+
+            elif cat == "TTL" and subtask == "MovieRec":
+                correctness = evaluate_recall_at_5(
+                    answers_pairs,
+                    model=eval_llm_model
+                )
+
             elif cat == "TTL":
-                correctness = get_recall_at_5(answers_pairs)
+                correctness = evaluate_exact_match(
+                    answers_pairs,
+                    model=eval_llm_model,
+                    batch_size=eval_small_batch_size
+                )
+
+            elif cat == "LRU" and subtask == "Summ.":
+                correctness = evaluate_summary_match(
+                    answers_pairs,
+                    model=eval_llm_model,
+                    batch_size=eval_summary_batch_size
+                )
+
             elif cat == "LRU":
-                correctness = evaluate_fact_consistency_with_gpt(answers_pairs)
+                correctness = evaluate_exact_match(
+                    answers_pairs,
+                    model=eval_llm_model,
+                    batch_size=eval_small_batch_size
+                )
+
+            # ---------------------------------------------------------
+            # SF = fact-level F1 score
+            # ---------------------------------------------------------
             elif cat == "SF":
-                correct_counts = evaluate_correct_counts_with_gpt(answers_pairs)
-                correctness = []
-                for i, pair in enumerate(answers_pairs):
-                    sys_len = len(pair["system"])
-                    gold_len = len(pair["gold"])
-                    c = correct_counts[i]
-                    p = c / sys_len if sys_len else 0
-                    r = c / gold_len if gold_len else 0
-                    f1 = 2 * p * r / (p + r) if (p + r) else 0
-                    correctness.append(f1)
+                correctness = evaluate_summary_match(
+                    answers_pairs,
+                    model=eval_llm_model,
+                    batch_size=eval_summary_batch_size
+                )
+
             else:
                 correctness = [0.0] * len(answers_pairs)
 
-            # 🔸 Aggregate per-session and per-question
+            # ---------------------------------------------------------
+            # 📊 Aggregate per-session
+            # ---------------------------------------------------------
             session_avg = sum(correctness) / len(correctness) if correctness else 0.0
             category_scores[cat].append(session_avg)
-            duration = time.time() - start_time  # ⏱️ Runtime per session
 
-            if isinstance(correctness, (int, float)):
-                correctness = [correctness] * len(answers_pairs)
+            duration = time.time() - start_time
 
-
+            # Save global detailed result
             for q, pair, score in zip(sess["questions"], answers_pairs, correctness):
                 detailed_results.append({
                     "system": system_name,
@@ -183,35 +265,38 @@ class MemoryAgentBench:
                     "session_time_sec": round(duration, 2)
                 })
 
-            if verbose:
-                print(f"[{cat}] Subtask: {sess['subtask']} | Session {sess['qid']} → "
-                    f"Avg Score: {session_avg:.3f} | ⏱️ {duration:.2f}s")
-
-            # 🔸 Save incremental progress
-            partial_path = os.path.join(
-                self.results_dir,
-                f"{system_name}_{self.split}_partial.json"
+            # Save individual session file
+            session_file_path = self._save_session_result(
+                system_name=system_name,
+                sess=sess,
+                correctness=[
+                    {"system": pair["system"], "gold": pair["gold"], "score": s}
+                    for pair, s in zip(answers_pairs, correctness)
+                ],
+                duration=duration
             )
-            with open(partial_path, "w") as pf:
-                json.dump({
-                    "system": system_name,
-                    "split": self.split,
-                    "progress_session": sess["qid"],
-                    "category_avg_so_far": {
-                        c: sum(v) / len(v) for c, v in category_scores.items()
-                    },
-                    "results_so_far": detailed_results,
-                }, pf, indent=2, ensure_ascii=False)
 
-        # 🔹 Compute averages
+            if verbose:
+                print(f"   💾 Session saved: {session_file_path}")
+
+
+            if verbose:
+                print(f"[{cat}] Subtask: {sess['subtask']} | Session {sess['qid']} "
+                    f"→ Avg Score: {session_avg:.3f} | ⏱️ {duration:.2f}s")
+
+        # ---------------------------------------------------------
+        # 📈 Final summary
+        # ---------------------------------------------------------
         category_avg = {c: sum(v) / len(v) for c, v in category_scores.items()}
         overall = sum(category_avg.values()) / len(category_avg) if category_avg else 0.0
         total_time = time.time() - total_start_time
 
-        # 🔹 Save detailed JSON
         timestamp = time.strftime("%Y%m%d_%H%M%S")
-        filename = f"{system_name}_{self.split}_{timestamp}.json"
-        save_path = os.path.join(self.results_dir, filename)
+        save_path = os.path.join(
+            self.results_dir,
+            f"{system_name}_{self.split}_{timestamp}.json"
+        )
+
         with open(save_path, "w") as f:
             json.dump({
                 "system": system_name,
@@ -219,7 +304,7 @@ class MemoryAgentBench:
                 "category_avg": category_avg,
                 "overall": overall,
                 "total_runtime_sec": round(total_time, 2),
-                "max_sessions_per_task": max_sessions_per_task,
+                "max_sessions_per_subtask": max_sessions_per_subtask,
                 "results": detailed_results
             }, f, indent=2, ensure_ascii=False)
 
@@ -237,7 +322,6 @@ class MemoryAgentBench:
             "total_runtime_sec": round(total_time, 2),
             "path": save_path
         }
-
 
 # ------------------------------------------------------------------
 # 🔍 Example CLI test (for sanity only)
