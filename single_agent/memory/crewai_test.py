@@ -4,30 +4,34 @@ Run MemoryAgentBench on All Splits using CrewAI Memory Agent
 
 This script evaluates a CrewAI agent with built-in memory
 (short-term, long-term, entity memory) across all splits of
-MemoryAgentBench:
+MemoryAgentBench.
 
-    - Accurate_Retrieval
-    - Test_Time_Learning
-    - Long_Range_Understanding
-    - Selective_Forgetting
-
-Results are saved automatically in `results/memory/`.
+To run:
+    python -m single_agent.memory.crewai_test
 """
 
 import os
-import time
 import shutil
+import time
 from crewai import Crew, Agent, Task, Process, LLM
 from crewai.utilities.paths import db_storage_path
 from dotenv import load_dotenv
-from benchmarks.memory.memory_agent_bench import MemoryAgentBench
-from single_agent.memory.config import (
-    llm_model,
-)
+from single_agent.memory.benchmark.memory_agent_bench import MemoryAgentBench
 from single_agent.memory.helpers.common_agent_utils import (
     API_KEY,
     chunk_text,
     summarize_results,
+)
+from single_agent.memory.config import (
+    crewai_llm_model,
+    llm_max_tokens,
+    llm_temperature,
+    storage_directory,
+    chunk_max_tokens,
+    chunk_overlap,
+    splits,
+    results_directory,
+    verbose,
 )
 
 # ---------------------------------------------------------------------
@@ -40,14 +44,16 @@ os.environ["OPENAI_API_KEY"] = API_KEY
 # ---------------------------------------------------------------------
 # 🧠 CrewAI Agent Builder
 # ---------------------------------------------------------------------
-def build_crewai_agent(storage_dir="/shared_mnt/crewai_memory"):
+def build_crewai_agent(storage_dir: str):
+    """Initialize a CrewAI crew with memory enabled."""
     os.environ["CREWAI_STORAGE_DIR"] = storage_dir
-    print("🗂 CrewAI memory storage path:", db_storage_path())
+    print(f"🗂 CrewAI memory storage path: {db_storage_path()}")
 
     llm = LLM(
-        model=llm_model,
+        model=crewai_llm_model,
         api_key=API_KEY,
-        max_tokens=3000,
+        temperature=llm_temperature,
+        max_tokens=llm_max_tokens,
     )
 
     agent_answer = Agent(
@@ -75,7 +81,7 @@ def build_crewai_agent(storage_dir="/shared_mnt/crewai_memory"):
         tasks=[],
         process=Process.sequential,
         memory=True,
-        verbose=True,
+        verbose=verbose,
     )
 
 
@@ -84,79 +90,46 @@ def build_crewai_agent(storage_dir="/shared_mnt/crewai_memory"):
 # ---------------------------------------------------------------------
 class CrewAIMemoryAgent:
     """
-    Adapts CrewAI crew to the interface expected by MemoryAgentBench:
-      - reset()
-      - ingest(context)
-      - query(question)
+    Adapter exposing reset(), ingest(), and query() for MemoryAgentBench.
+    Each run uses a unique subfolder for its persistent memory DB.
     """
 
-    _session_counter = 0  # 🔁 Static counter for unique subfolders
+    _session_counter = 0
 
     def __init__(self):
-        self.crew = self.build_crewai_agent()
+        self.crew = self._build_new_crewai_agent()
 
     @classmethod
-    def build_crewai_agent(cls):
-        # Increment and use unique subfolder
+    def _build_new_crewai_agent(cls):
         cls._session_counter += 1
         subfolder = f"session_{cls._session_counter}"
 
-        base_path = "/shared_mnt/crewai_memory"
-        memory_path = os.path.join(base_path, subfolder)
-
-        # Clean and prepare fresh memory folder
+        memory_path = os.path.join(storage_directory, subfolder)
         shutil.rmtree(memory_path, ignore_errors=True)
         os.makedirs(memory_path, exist_ok=True)
 
         os.environ["CREWAI_STORAGE_DIR"] = memory_path
-        print(f"🗂 CrewAI memory storage path: {memory_path}")
+        print(f"🧠 New CrewAI session: {memory_path}")
 
-        llm = LLM(
-            model=llm_model,
-            api_key=API_KEY,
-            temperature=0,
-            max_tokens=3000,
-        )
-
-        agent_answer = Agent(
-            role="MemoryQA",
-            goal="Answer questions accurately using remembered context.",
-            backstory="You are a memory-augmented assistant capable of recalling and reasoning over previously seen information.",
-            llm=llm,
-        )
-
-        agent_ingest = Agent(
-            role="Ingest",
-            goal="Read and remember the context for future questions.",
-            backstory="You are a memory-augmented assistant capable of recalling and reasoning over previously seen information.",
-            llm=llm,
-        )
-
-        return Crew(
-            agents=[agent_answer, agent_ingest],
-            tasks=[],
-            process=Process.sequential,
-            memory=True,
-            verbose=True,
-        )
+        return build_crewai_agent(memory_path)
 
     # -------------------------------------------------------------
     def reset(self):
-        """Reset memories by creating a new crew with fresh DB."""
+        """Reset memories by starting a new CrewAI instance."""
         try:
-            self.crew = self.build_crewai_agent()
+            self.crew = self._build_new_crewai_agent()
         except Exception as e:
             print(f"⚠️ Memory reset failed: {e}")
 
     # -------------------------------------------------------------
-    def ingest(self, context: str, max_tokens: int = 1000, overlap: int = 50):
-        """Feed benchmark context into the crew memory."""
-        print("🧠 Ingesting current Context")
-        chunks = chunk_text(context, max_tokens=max_tokens, overlap=overlap)
+    def ingest(self, context: str):
+        """Feed benchmark context into CrewAI memory."""
+        print("🧠 Ingesting context...")
+        chunks = chunk_text(context, max_tokens=chunk_max_tokens, overlap=chunk_overlap)
         print(f"🧩 Total Chunks: {len(chunks)}")
 
         for i, chunk in enumerate(chunks, 1):
-            print(f"\tChunk {i}/{len(chunks)}")
+            print(f"  Chunk {i}/{len(chunks)}")
             task = Task(
                 description=(
                     f"Part {i}/{len(chunks)}:\n"
@@ -170,7 +143,7 @@ class CrewAIMemoryAgent:
             try:
                 self.crew.kickoff()
             except Exception as e:
-                print(f"\t❌ Error processing chunk {i}: {e}")
+                print(f"❌ Error processing chunk {i}: {e}")
 
     # -------------------------------------------------------------
     def query(self, question: str) -> str:
@@ -182,8 +155,8 @@ class CrewAIMemoryAgent:
             expected_output="A factual and concise answer based on memory.",
             agent=self.crew.agents[0],
         )
-
         self.crew.tasks = [task]
+
         try:
             result = self.crew.kickoff()
             answer = str(result.output) if hasattr(result, "output") else str(result)
@@ -198,31 +171,37 @@ class CrewAIMemoryAgent:
 # 🚀 Run Benchmark for All Splits
 # ---------------------------------------------------------------------
 def main():
-    splits = [
-        "Accurate_Retrieval",
-        "Test_Time_Learning",
-        "Long_Range_Understanding",
-        "Conflict_Resolution",
-    ]
-
     overall_summary = {}
 
-    for split in splits:
-        print("\n" + "=" * 80)
-        print(f"🧩 Running CrewAI Memory Agent on Split: {split}")
-        print("=" * 80)
+    try:
+        for split in splits:
+            print("\n" + "=" * 80)
+            print(f"🧩 Running CrewAI Memory Agent on Split: {split}")
+            print("=" * 80)
 
-        bench = MemoryAgentBench(split=split, n=None)
-        agent = CrewAIMemoryAgent()
+            bench = MemoryAgentBench(split=split)
+            agent = CrewAIMemoryAgent()
 
-        result = bench.evaluate_agent(
-            agent,
-            system_name="crewai_memory_agent",
-            verbose=True,
-        )
-        overall_summary[split] = result["overall"]
+            result = bench.evaluate_agent(
+                agent,
+                system_name= "Crewai",
+                verbose=verbose,
+            )
+            overall_summary[split] = result["overall"]
 
-    summarize_results("crewai_memory_agent", overall_summary)
+        summarize_results("Crewai", overall_summary)
+
+    finally:
+        # -----------------------------------------------------------------
+        # 🧹 Clean up CrewAI memory folder after benchmark completion
+        # -----------------------------------------------------------------
+        try:
+            if os.path.exists(storage_directory):
+                print(f"\n🗑️  Cleaning up CrewAI memory folder: {storage_directory}")
+                shutil.rmtree(storage_directory)
+                print("✅ Memory folder deleted successfully.")
+        except Exception as e:
+            print(f"⚠️ Cleanup failed: {e}")
 
 
 # ---------------------------------------------------------------------
