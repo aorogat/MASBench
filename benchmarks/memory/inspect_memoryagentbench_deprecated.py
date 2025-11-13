@@ -10,11 +10,15 @@ splits = [
     "Conflict_Resolution"
 ]
 
-def preview_metadata(split_name, n=3):
+map= {}
+def preview_metadata(split_name, n=1000):
     print("="*80)
     print(f"🔍 SPLIT: {split_name}")
     ds = load_dataset("ai-hyz/MemoryAgentBench", split=split_name)
     print(f"Total rows: {len(ds)}")
+
+    
+    map[split] = set()
 
     # show a couple of random examples
     for i, row in enumerate(ds.select(range(min(n, len(ds))))):
@@ -22,6 +26,7 @@ def preview_metadata(split_name, n=3):
         print("Context snippet:", row.get("context", "")[:200].replace("\n", " "))
         print("Questions:", len(row.get("questions", [])), "Answers:", len(row.get("answers", [])))
         meta = row.get("metadata", {})
+        map[split].add(meta["source"])
         print("Metadata keys:", list(meta.keys()))
 
         # print partial metadata for inspection
@@ -42,7 +47,9 @@ def preview_metadata(split_name, n=3):
     else:
         print("⚠️ No qa_pair_ids found in metadata")
 
+    
+
 for split in splits:
     preview_metadata(split)
-
+print(map)
 

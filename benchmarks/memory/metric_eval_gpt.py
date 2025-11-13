@@ -45,6 +45,7 @@ def evaluate_exact_matches_with_gpt(answers_pairs, model="gpt-4o-mini"):
         "You are an expert evaluator.\n"
         "For each of the following pairs, determine if the System Answer conveys the same meaning as the Gold Answer.\n"
         "Reply ONLY with a numbered list (e.g., 1. Yes / No, 2. Yes / No, ...).\n"
+        "Sometimes the gold answer contains multiple synonymous values; in such cases, they are treated as a single equivalent answer.\n"
         "Strictly use 'Yes' if it matches semantically, otherwise 'No'.\n\n"
         f"{joined_prompt}"
     )
