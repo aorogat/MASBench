@@ -27,16 +27,13 @@ chunk_overlap = 200
 # ---------------------------------------------------------------------
 # All splits included in MemoryAgentBench evaluation
 splits = [
-    # "Accurate_Retrieval",
-    # "Test_Time_Learning",
-    # "Long_Range_Understanding",
+    "Accurate_Retrieval",
+    "Test_Time_Learning",
+    "Long_Range_Understanding",
     "Conflict_Resolution",
 ]
 # NEW — Maximum sessions to evaluate per task (per subtask)
 max_sessions_per_subtask = 1
-
-# Default name for experiment outputs
-system_name = "crewai_memory_agent"
 
 # Directory for saving results
 results_directory = "results/memory"

@@ -1,0 +1,44 @@
+{
+  "system": "Crewai",
+  "split": "Conflict_Resolution",
+  "category_avg": {
+    "SF": 0.0
+  },
+  "overall": 0.0,
+  "total_runtime_sec": 281.03,
+  "max_sessions_per_subtask": 1,
+  "results": [
+    {
+      "system": "Crewai",
+      "split": "Conflict_Resolution",
+      "session_id": "1",
+      "category": "SF",
+      "subtask": "FC-MH",
+      "question": "What is the country of citizenship of the spouse of the author of Our Mutual Friend?",
+      "system_answer": [
+        "The spouse of the author of \"Our Mutual Friend,\" Charles Dickens, is Catherine Dickens, who is a citizen of the United Kingdom."
+      ],
+      "gold_answer": [
+        "Belgium"
+      ],
+      "score": 0.0,
+      "session_time_sec": 131.18
+    },
+    {
+      "system": "Crewai",
+      "split": "Conflict_Resolution",
+      "session_id": "5",
+      "category": "SF",
+      "subtask": "FC-SH",
+      "question": "Which sport is goaltender associated with?",
+      "system_answer": [
+        "A goaltender is associated with the sport of ice hockey."
+      ],
+      "gold_answer": [
+        "pesäpallo"
+      ],
+      "score": 0.0,
+      "session_time_sec": 149.85
+    }
+  ]
+}
