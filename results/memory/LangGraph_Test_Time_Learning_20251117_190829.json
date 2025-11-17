@@ -1,0 +1,109 @@
+{
+  "system": "LangGraph",
+  "split": "Test_Time_Learning",
+  "category_avg": {
+    "TTL": 0.0
+  },
+  "overall": 0.0,
+  "total_runtime_sec": 10.78,
+  "max_sessions_per_subtask": 1,
+  "results": [
+    {
+      "system": "LangGraph",
+      "split": "Test_Time_Learning",
+      "session_id": "1",
+      "category": "TTL",
+      "subtask": "MovieRec",
+      "question": "\nUser: Hello How are you? What is your favorite movie?\nSystem: Hello, I'm good The Big Lebowski\nUser: The Big Lebowski was such a great film. Hilarious Have you checked out Kingpin (1996) with Woody Harrelson or Dumb and Dumber (1994) ? They are also funny comedies\nSystem: Oh yeah, haha I've seen both of those. Great. Can you think of anything else?\nSystem: ",
+      "system_answer": [
+        "Absolutely! Here are a few more comedy gems you might enjoy:\n\n| Film | Year | Why it’s worth watching |\n|------|------|--------------------------|\n| **Superbad** | 2007 | A hilarious coming‑of‑age story with sharp dialogue and unforgettable chemistry between Jonah Hill and Michael C. Hall. |\n| **Step Brothers** | 2008 | Will Ferrell and John C. Reilly as two middle‑aged, immature men forced to live together—pure absurdity. |\n| **Anchorman: The Legend of Ron Burgundy** | 2004 | A satirical take on 1970s news culture, with a stellar ensemble cast and quotable lines. |\n| **The Hangover** | 2009 | A wild, unpredictable night in Las Vegas that keeps you guessing—and laughing. |\n| **Bridesmaids** | 2011 | A fresh, female‑centric comedy that balances heartfelt moments with riotous humor. |\n| **Hot Fuzz** | 2007 | A British action‑comedy that parodies the genre while delivering clever jokes and solid pacing. |\n| **The Grand Budapest Hotel** | 2014 | Wes Anderson’s quirky visual style and witty script make this a delightful, off‑beat comedy. |\n| **Tropic Thunder** | 2008 | A satirical look at Hollywood filmmaking, with a star‑studded cast delivering memorable one‑liners. |\n| **The Nice Guys** | 2016 | A buddy‑cop comedy set in the 1970s, blending humor with a solid mystery plot. |\n| **Zoolander** | 2001 | A parody of the fashion industry that’s as absurd as it is funny. |\n\nIf you’re looking for something a bit different—maybe a dark comedy, a romantic comedy, or a comedy‑drama—just let me know! I can tailor the suggestions to your taste."
+      ],
+      "gold_answer": [
+        "7008"
+      ],
+      "score": 0.0,
+      "session_time_sec": 4.39
+    },
+    {
+      "system": "LangGraph",
+      "split": "Test_Time_Learning",
+      "session_id": "1",
+      "category": "TTL",
+      "subtask": "MovieRec",
+      "question": "\nUser: Hi! What sort of movies do you like?\nSystem: I really enjoy drama/biography. For example I enjoyed Phantom Thread (2017)\nUser: Oh, that's a movie I haven't seen. If you like Drama, I really enjoyed Allied (2016) recently.\nSystem: I think that's on my list to see. Did you see The Darkest Hour (2011) ?\nUser: Yes it was fab! I also really enjoyed Dunkirk (2017) - I haven't watched the original yet, but it is on my list. Have you seen Dunkirk (2017) ?\nSystem: That should have been Darkest Hour (2017)\nUser: Do you enjoy war movies?\nSystem: Yes, loved Dunkirk (2017) I really want to see 12 Strong (2018) I didn't see it in the theater because the reviews weren't all that great\nUser: I do like the classics.. I can recommend Ice Cold in Alex (1958) and Battle of Britain (1969) for a Sunday afternoon marathon. I've not seen 12 Strong (2018) - I will have to check it out.\nSystem: One of my favorite films was The Hurt Locker (2008)\nUser: Jodie Foster? I don't think I've seen it...\nSystem: Oh, you'd like it! Gotta go watch some movies now.\nSystem: ",
+      "system_answer": [
+        "Hey there!  \nIt looks like we got a little mixed‑up with the titles—no worries, it happens. 🎬\n\n**Quick recap:**\n- **Darkest Hour** (2017) – a gripping portrayal of Churchill’s early WWII leadership.  \n- **Dunkirk** (2017) – the intense evacuation drama from Christopher Nolan.  \n- **The Hurt Locker** (2008) – a tense, character‑driven look at a bomb‑disposal unit (Jodie Foster isn’t in that one, but it’s a great war‑drama).\n\n---\n\n### What’s next for you?\n\n1. **More war‑dramas?**  \n   - *Letters from Iwo Jima* (2006) – a Japanese perspective on WWII.  \n   - *The Thin Red Line* (1998) – a poetic take on the Guadalcanal campaign.  \n   - *The Imitation Game* (2014) – a biographical war film about Alan Turing.  \n   - *The Last Full Measure* (2020) – a story about the Medal of Honor.\n\n2. **Classic war films for a Sunday marathon?**  \n   - *The Bridge on the River Kwai* (1957) – a classic POW drama.  \n   - *The Great Escape* (1963) – a fun, action‑packed escape story.  \n   - *The Longest Day* (1962) – a sweeping depiction of D‑Day.\n\n3. **Biographical dramas you might enjoy (beyond the war genre):**  \n   - *The Imitation Game* (again, if you haven’t seen it).  \n   - *The Theory of Everything* (2014) – Stephen Hawking’s life.  \n   - *The Social Network* (2010) – Mark Zuckerberg’s rise.  \n   - *Hidden Figures* (2016) – the untold story of NASA’s African‑American women mathematicians.\n\n---\n\n### Quick question for you:\n- Which aspect of war movies do you find most compelling? (e.g., the strategic battles, the personal stories, the historical accuracy, or the emotional drama?)  \n- Or, if you’re looking for something a bit different, let me know and I’ll tailor a list just for you.\n\nLet me know what you’re in the mood for, and I’ll keep the recommendations coming!"
+      ],
+      "gold_answer": [
+        "4611"
+      ],
+      "score": 0.0,
+      "session_time_sec": 4.39
+    },
+    {
+      "system": "LangGraph",
+      "split": "Test_Time_Learning",
+      "session_id": "1",
+      "category": "TTL",
+      "subtask": "MovieRec",
+      "question": "\nUser: Hi\nSystem: Hello I love Deadpool (2016) can you recommend some movies like that one\nUser: Me too, I love superhero movies My fovorite is Batman Returns (1992)\nSystem: we are a like :D Its good!, but i have seen it maybe a lesser known movie that whould be grat\nSystem: ",
+      "system_answer": [
+        "Hey there! 👋  \nSounds like you’re into superhero flicks that mix action, humor, and a bit of edge—just like *Deadpool* and *Batman Returns*. Here are some lesser‑known gems that fit that vibe:\n\n| Film | Year | Why it’s a good fit |\n|------|------|---------------------|\n| **Kick-Ass** | 2010 | A dark‑comedy superhero movie that’s both over‑the‑top and surprisingly heartfelt. |\n| **The Boys** (TV series) | 2019‑ | If you’re open to a series, it’s a gritty, satirical take on superheroes that’s got a lot of the same irreverence as *Deadpool*. |\n| **The Dark Knight Returns** (animated) | 2012 | A stylized, darker Batman story that’s less mainstream but still iconic. |\n| **The Crow** | 1994 | A brooding, gothic superhero vibe with a strong visual style—think *Batman Returns* meets *The Crow*. |\n| **The Mask** | 1994 | A comedic, supernatural superhero film starring Jim Carrey—full of zany humor and visual gags. |\n| **The Tick** (TV series) | 1994‑ | A goofy, satirical superhero show that’s a cult classic. |\n| **The Adventures of the American Rabbit** | 2015 | A quirky, low‑budget superhero parody that’s surprisingly clever. |\n| **The Last Knight** (Marvel) | 2017 | A lesser‑known Marvel film that blends action with a bit of humor. |\n| **The Dark Knight Rises** (but skip the first two) | 2012 | If you haven’t seen the whole trilogy, the third film has a darker tone and some unexpected twists. |\n| **The Amazing Spider‑Man 2** | 2014 | A more grounded, character‑driven Spider‑Man that’s less flashy than the MCU but still fun. |\n\n### Quick Q for you:\n- Are you looking for movies that lean more into the comedic side (like *Deadpool*), or do you also enjoy the darker, more dramatic superhero stories (like *Batman Returns*)?  \n- Do you prefer big‑budget blockbusters or indie‑style superhero films?\n\nLet me know which direction you’re leaning toward, and I can fine‑tune the list!"
+      ],
+      "gold_answer": [
+        "23561",
+        "18170"
+      ],
+      "score": 0.0,
+      "session_time_sec": 4.39
+    },
+    {
+      "system": "LangGraph",
+      "split": "Test_Time_Learning",
+      "session_id": "2",
+      "category": "TTL",
+      "subtask": "MCC",
+      "question": "Are there restrictions for my disposable card since it does not seem to be working?",
+      "system_answer": [
+        "It’s frustrating when a disposable card just won’t go through. Let’s walk through the most common reasons it might be blocked and what you can do next.\n\n---\n\n## 1. **Disposable cards are *only* for one‑off online purchases**\n\n| What you can do | What you can’t do |\n|-----------------|-------------------|\n| • Pay for a single online order (e‑commerce, subscription‑free services, etc.) | • Use it in a physical store or ATM |\n| • Use it for a single transaction per card number | • Use it for recurring or subscription payments |\n| • Use it for any merchant that accepts virtual cards | • Use it for merchants that block virtual or disposable cards (e.g., gambling, crypto, certain travel sites) |\n\nIf you tried to use the card in a shop or for a subscription, it will be declined.\n\n---\n\n## 2. **Check the card’s status**\n\n1. **Open the app** (or website) and go to the “Cards” section.  \n2. Make sure the disposable card is **active** – it should say “Active” or “Ready to use.”  \n3. If it shows “Blocked” or “Expired,” you’ll need to generate a new disposable card.\n\n---\n\n## 3. **Transaction limits**\n\n- **Maximum per transaction**: Usually a fixed amount (e.g., $5,000 or $10,000).  \n- **Daily/weekly limits**: Some issuers cap how many disposable cards you can create or how many transactions you can make in a period.\n\nIf your purchase exceeds the limit, the transaction will be declined. Check the app’s “Limits” or “Disposable card settings” to see the exact numbers.\n\n---\n\n## 4. **Merchant restrictions**\n\n- **Certain merchant categories** (gambling, adult content, crypto exchanges, high‑risk travel sites) often block disposable cards.  \n- **Geographic restrictions**: Some merchants only accept cards issued in specific countries.\n\nIf you’re buying something that falls into a restricted category, the card will be declined.\n\n---\n\n## 5. **Technical hiccups**\n\n| Symptom | Likely cause | Fix |\n|---------|--------------|-----|\n| “Card declined” with no error code | Card not activated or already used | Re‑activate or create a new disposable card |\n| “Insufficient funds” | The underlying account balance is too low | Add funds or use a different card |\n| “Payment failed” | Network or merchant gateway issue | Try again later or use a different payment method |\n\n---\n\n## 6. **What to do next**\n\n1. **Generate a new disposable card** in the app.  \n2. **Try a different merchant** that you know accepts virtual cards (e.g., Amazon, eBay, Spotify).  \n3. **Check your account balance** – make sure you have enough funds.  \n4. **Look for any error codes** in the app or on the merchant’s site; they often give clues.  \n5. **Contact support** if the problem persists:\n   - **In‑app chat** or **email** (usually found under “Help” or “Support”).\n   - Provide the transaction ID, merchant name, and the exact error message.\n\n---\n\n### Quick FAQ\n\n| Question | Answer |\n|----------|--------|\n| **Can I use a disposable card for a subscription?** | No – disposable cards are single‑use only. |\n| **Do disposable cards have a daily limit?** | Yes, check your app for the exact limit. |\n| **What if my card is blocked?** | Generate a new disposable card; if it keeps blocking, contact support. |\n| **Can I use a disposable card for in‑store purchases?** | No – they’re only for online transactions. |\n\n---\n\nIf you let me know the exact error message or the merchant you’re trying to pay at, I can give you more tailored advice. Otherwise, try the steps above and you should be able to get it working in no time!"
+      ],
+      "gold_answer": [
+        "28"
+      ],
+      "score": 0,
+      "session_time_sec": 6.39
+    },
+    {
+      "system": "LangGraph",
+      "split": "Test_Time_Learning",
+      "session_id": "2",
+      "category": "TTL",
+      "subtask": "MCC",
+      "question": "I'm trying to transfer money to another country. It's just pending and not sending. My account details are correct. Please help me.",
+      "system_answer": [
+        "I’m sorry to hear that your international transfer is stuck in the “pending” state. Let’s try to pinpoint what’s going on and get it moving.\n\n---\n\n## 1. Quick Checklist\n\n| ✅ | Item | Why it matters |\n|----|------|----------------|\n| 1 | **Transfer ID / Reference** | Needed to look up the exact transaction in our system. |\n| 2 | **Recipient details** (IBAN/SWIFT, bank name, country) | A typo or missing field can trigger a hold. |\n| 3 | **Amount & Currency** | Some currencies or amounts trigger extra compliance checks. |\n| 4 | **Your account status** | Is your account fully verified? Are there any holds on it? |\n| 5 | **Recipient country** | Transfers to certain jurisdictions (e.g., high‑risk or sanctioned countries) are automatically reviewed. |\n| 6 | **Transfer type** | Is it a “standard” transfer, a “scheduled” transfer, or a “bulk” transfer? |\n\nIf you can confirm all of the above, we’ll have a clearer picture.\n\n---\n\n## 2. Common Reasons for a Pending International Transfer\n\n| Reason | What to Check | Typical Resolution |\n|--------|---------------|--------------------|\n| **Compliance / AML review** | Transfers to high‑risk countries or large amounts may be flagged. | Provide any requested documentation (e.g., source of funds). |\n| **Incorrect recipient details** | Wrong IBAN, SWIFT code, or missing account holder name. | Double‑check the details; correct and resubmit. |\n| **Currency mismatch** | Sending in a currency not supported by the recipient bank. | Convert to the recipient’s local currency or use a supported currency. |\n| **Recipient bank hold** | The receiving bank may have a temporary hold or is undergoing maintenance. | Wait 1–2 business days; contact the recipient bank if it’s been longer. |\n| **Transfer limit reached** | You’ve hit your daily/monthly transfer limit. | Wait until the limit resets or request a temporary increase. |\n| **Technical glitch** | System outage or processing delay. | Usually resolves within a few hours; check status in the app. |\n\n---\n\n## 3. What to Do Right Now\n\n1. **Open the app / website**  \n   - Go to **Transfers** → **Pending**.  \n   - Note the **Transfer ID** and any status message.\n\n2. **Verify recipient details**  \n   - IBAN, SWIFT/BIC, account holder name, and bank address.  \n   - If any field looks off, cancel the transfer (if possible) and create a new one.\n\n3. **Check your account status**  \n   - In **Profile** → **Verification**.  \n   - If you’re still in “Pending verification,” the transfer may be held until you complete it.\n\n4. **Look for an email or in‑app notification**  \n   - We often send a compliance notice asking for additional info.  \n   - Follow the link and upload the requested documents.\n\n5. **Contact Support**  \n   - If the transfer remains pending > 48 hrs, open a support ticket:  \n     - **In‑app chat** → “Help” → “Transfer Issues”  \n     - Or email: support@yourbank.com (replace with your actual bank’s email).  \n   - Include: Transfer ID, date, amount, currency, recipient country, and a screenshot of the pending status.\n\n---\n\n## 4. How Long Should It Take?\n\n| Transfer type | Typical processing time | Notes |\n|---------------|------------------------|-------|\n| **Standard SWIFT** | 1–3 business days | Depends on both banks’ cut‑off times. |\n| **SEPA (Euro)** | 1–2 business days | Usually faster. |\n| **Cross‑border to high‑risk country** | 3–5 business days | Extra compliance checks. |\n| **Scheduled transfer** | Same as above | If scheduled for a future date, it will only start then. |\n\nIf you’re past the upper bound of the typical window, that’s a good reason to reach out to support.\n\n---\n\n## 5. Quick Tips to Avoid Future Holds\n\n- **Double‑check IBAN/SWIFT** before confirming.  \n- **Keep your account verified** (upload ID, proof of address).  \n- **Stay within your transfer limits** or request an increase if you need larger amounts.  \n- **Use supported currencies** for the recipient’s country.  \n- **Avoid sending to restricted jurisdictions** unless you’re sure it’s compliant.\n\n---\n\n### Next Steps for You\n\n1. Pull up the transfer details and note the ID.  \n2. Verify all recipient info.  \n3. Check for any compliance emails.  \n4. If everything looks good and it’s still pending >48 hrs, open a support ticket with the details above.\n\nLet me know what you find, and I’ll help you troubleshoot further!"
+      ],
+      "gold_answer": [
+        "18"
+      ],
+      "score": 0,
+      "session_time_sec": 6.39
+    },
+    {
+      "system": "LangGraph",
+      "split": "Test_Time_Learning",
+      "session_id": "2",
+      "category": "TTL",
+      "subtask": "MCC",
+      "question": "What do I do if I notice a strange withdrawl in my statement?",
+      "system_answer": [
+        "If you spot a withdrawal you don’t recognize, act fast. Below is a step‑by‑step playbook that covers everything from double‑checking the transaction to protecting your account.\n\n---\n\n## 1️⃣ Verify the Transaction\n\n| What to Check | How to Check |\n|---------------|--------------|\n| **Date & Time** | Does it match a recent ATM visit or online purchase you remember? |\n| **Location** | Look at the merchant or ATM location. Is it a place you’ve been? |\n| **Amount** | Is it the exact amount you withdrew or a rounded figure? |\n| **Reference / Merchant Code** | Some banks show a short code (e.g., “ATM 1234”). Search online for that code. |\n| **Account Balance** | Compare the balance before and after the withdrawal. |\n\nIf you can’t match any of the above to a legitimate activity, it’s likely fraudulent.\n\n---\n\n## 2️⃣ Secure Your Account Immediately\n\n| Action | Why it matters |\n|--------|----------------|\n| **Freeze / Lock the Card** | Stops any further unauthorized use. |\n| **Change PIN** | If you suspect the PIN was compromised. |\n| **Update Passwords** | For your online banking, app, and any linked services. |\n| **Enable 2FA** | Adds an extra layer of protection. |\n\n**How to do it:**\n\n1. Open the app → **Cards** → tap the card → **Freeze / Unfreeze**.  \n2. Go to **Settings** → **Security** → **Change PIN**.  \n3. In **Settings** → **Security** → **Password** → **Change Password**.  \n4. Enable **Two‑Factor Authentication** if not already on.\n\n---\n\n## 3️⃣ Report the Unauthorized Withdrawal\n\n| Where to Report | What to Include |\n|-----------------|-----------------|\n| **In‑app chat / support ticket** | Transfer ID, date, amount, location, any screenshots. |\n| **Phone support** | Call the number on the back of your card or the “Contact Us” page. |\n| **Email** | If you prefer, send a detailed email to support@yourbank.com (replace with your bank’s actual email). |\n\n**Tip:** Keep a copy of the email or chat transcript for your records.\n\n---\n\n## 4️⃣ Check for Possible Causes\n\n| Cause | How to Identify |\n|-------|-----------------|\n| **Card skimming** | ATM or POS device that captured your card data. |\n| **Phishing / Social Engineering** | You may have inadvertently shared your PIN or login. |\n| **Account takeover** | Someone accessed your online banking. |\n| **Fraudulent merchant** | A merchant that pretends to be legitimate. |\n\nIf you suspect any of these, let the support team know—they’ll investigate and may request additional evidence.\n\n---\n\n## 5️⃣ Follow Up\n\n| Step | Timeline | What to Expect |\n|------|----------|----------------|\n| **Initial report** | 0 hrs | You’ll receive a confirmation ticket. |\n| **Investigation** | 24–48 hrs | Support will review the transaction and may contact you for more info. |\n| **Resolution** | 48–72 hrs | If fraudulent, the amount will be reversed and a new card issued if needed. |\n\nIf you don’t hear back within 48 hrs, ping support again with your ticket number.\n\n---\n\n## 6️⃣ Prevent Future Incidents\n\n| Prevention | How to Implement |\n|------------|------------------|\n| **Use contactless only** | Avoid swiping or inserting the card where possible. |\n| **Enable transaction alerts** | Get instant push/email notifications for every withdrawal. |\n| **Regularly review statements** | Spot anomalies early. |\n| **Keep card in a safe place** | Don’t leave it unattended. |\n| **Use virtual card numbers** | For online purchases, use a disposable virtual card. |\n\n---\n\n### Quick Checklist\n\n1. **Freeze the card** in the app.  \n2. **Change PIN & password**.  \n3. **Report the transaction** via chat/email/phone.  \n4. **Wait for investigation** (24–48 hrs).  \n5. **Follow up** if no response.  \n6. **Enable alerts** for future protection.\n\n---\n\nIf you need help locating the “Freeze” button or have any other questions, just let me know!"
+      ],
+      "gold_answer": [
+        "50"
+      ],
+      "score": 0,
+      "session_time_sec": 6.39
+    }
+  ]
+}

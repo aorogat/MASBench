@@ -1,0 +1,109 @@
+{
+  "system": "LangGraph",
+  "split": "Test_Time_Learning",
+  "category_avg": {
+    "TTL": 0.0
+  },
+  "overall": 0.0,
+  "total_runtime_sec": 3.53,
+  "max_sessions_per_subtask": 1,
+  "results": [
+    {
+      "system": "LangGraph",
+      "split": "Test_Time_Learning",
+      "session_id": "1",
+      "category": "TTL",
+      "subtask": "MovieRec",
+      "question": "\nUser: Hello How are you? What is your favorite movie?\nSystem: Hello, I'm good The Big Lebowski\nUser: The Big Lebowski was such a great film. Hilarious Have you checked out Kingpin (1996) with Woody Harrelson or Dumb and Dumber (1994) ? They are also funny comedies\nSystem: Oh yeah, haha I've seen both of those. Great. Can you think of anything else?\nSystem: ",
+      "system_answer": [
+        ""
+      ],
+      "gold_answer": [
+        "7008"
+      ],
+      "score": 0.0,
+      "session_time_sec": 1.64
+    },
+    {
+      "system": "LangGraph",
+      "split": "Test_Time_Learning",
+      "session_id": "1",
+      "category": "TTL",
+      "subtask": "MovieRec",
+      "question": "\nUser: Hi! What sort of movies do you like?\nSystem: I really enjoy drama/biography. For example I enjoyed Phantom Thread (2017)\nUser: Oh, that's a movie I haven't seen. If you like Drama, I really enjoyed Allied (2016) recently.\nSystem: I think that's on my list to see. Did you see The Darkest Hour (2011) ?\nUser: Yes it was fab! I also really enjoyed Dunkirk (2017) - I haven't watched the original yet, but it is on my list. Have you seen Dunkirk (2017) ?\nSystem: That should have been Darkest Hour (2017)\nUser: Do you enjoy war movies?\nSystem: Yes, loved Dunkirk (2017) I really want to see 12 Strong (2018) I didn't see it in the theater because the reviews weren't all that great\nUser: I do like the classics.. I can recommend Ice Cold in Alex (1958) and Battle of Britain (1969) for a Sunday afternoon marathon. I've not seen 12 Strong (2018) - I will have to check it out.\nSystem: One of my favorite films was The Hurt Locker (2008)\nUser: Jodie Foster? I don't think I've seen it...\nSystem: Oh, you'd like it! Gotta go watch some movies now.\nSystem: ",
+      "system_answer": [
+        ""
+      ],
+      "gold_answer": [
+        "4611"
+      ],
+      "score": 0.0,
+      "session_time_sec": 1.64
+    },
+    {
+      "system": "LangGraph",
+      "split": "Test_Time_Learning",
+      "session_id": "1",
+      "category": "TTL",
+      "subtask": "MovieRec",
+      "question": "\nUser: Hi\nSystem: Hello I love Deadpool (2016) can you recommend some movies like that one\nUser: Me too, I love superhero movies My fovorite is Batman Returns (1992)\nSystem: we are a like :D Its good!, but i have seen it maybe a lesser known movie that whould be grat\nSystem: ",
+      "system_answer": [
+        ""
+      ],
+      "gold_answer": [
+        "23561",
+        "18170"
+      ],
+      "score": 0.0,
+      "session_time_sec": 1.64
+    },
+    {
+      "system": "LangGraph",
+      "split": "Test_Time_Learning",
+      "session_id": "2",
+      "category": "TTL",
+      "subtask": "MCC",
+      "question": "Are there restrictions for my disposable card since it does not seem to be working?",
+      "system_answer": [
+        ""
+      ],
+      "gold_answer": [
+        "28"
+      ],
+      "score": 0,
+      "session_time_sec": 1.89
+    },
+    {
+      "system": "LangGraph",
+      "split": "Test_Time_Learning",
+      "session_id": "2",
+      "category": "TTL",
+      "subtask": "MCC",
+      "question": "I'm trying to transfer money to another country. It's just pending and not sending. My account details are correct. Please help me.",
+      "system_answer": [
+        ""
+      ],
+      "gold_answer": [
+        "18"
+      ],
+      "score": 0,
+      "session_time_sec": 1.89
+    },
+    {
+      "system": "LangGraph",
+      "split": "Test_Time_Learning",
+      "session_id": "2",
+      "category": "TTL",
+      "subtask": "MCC",
+      "question": "What do I do if I notice a strange withdrawl in my statement?",
+      "system_answer": [
+        ""
+      ],
+      "gold_answer": [
+        "50"
+      ],
+      "score": 0,
+      "session_time_sec": 1.89
+    }
+  ]
+}
