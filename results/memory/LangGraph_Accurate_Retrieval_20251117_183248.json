@@ -1,0 +1,213 @@
+{
+  "system": "LangGraph",
+  "split": "Accurate_Retrieval",
+  "category_avg": {
+    "AR": 0.0
+  },
+  "overall": 0.0,
+  "total_runtime_sec": 11.09,
+  "max_sessions_per_subtask": 1,
+  "results": [
+    {
+      "system": "LangGraph",
+      "split": "Accurate_Retrieval",
+      "session_id": "1",
+      "category": "AR",
+      "subtask": "SH-QA",
+      "question": "In what country is Normandy located?",
+      "system_answer": [
+        ""
+      ],
+      "gold_answer": [
+        "France",
+        "France",
+        "France",
+        "France"
+      ],
+      "score": 0,
+      "session_time_sec": 4.43
+    },
+    {
+      "system": "LangGraph",
+      "split": "Accurate_Retrieval",
+      "session_id": "1",
+      "category": "AR",
+      "subtask": "SH-QA",
+      "question": "When were the Normans in Normandy?",
+      "system_answer": [
+        ""
+      ],
+      "gold_answer": [
+        "10th and 11th centuries",
+        "in the 10th and 11th centuries",
+        "10th and 11th centuries",
+        "10th and 11th centuries"
+      ],
+      "score": 0,
+      "session_time_sec": 4.43
+    },
+    {
+      "system": "LangGraph",
+      "split": "Accurate_Retrieval",
+      "session_id": "1",
+      "category": "AR",
+      "subtask": "SH-QA",
+      "question": "From which countries did the Norse originate?",
+      "system_answer": [
+        ""
+      ],
+      "gold_answer": [
+        "Denmark, Iceland and Norway",
+        "Denmark, Iceland and Norway",
+        "Denmark, Iceland and Norway",
+        "Denmark, Iceland and Norway"
+      ],
+      "score": 0,
+      "session_time_sec": 4.43
+    },
+    {
+      "system": "LangGraph",
+      "split": "Accurate_Retrieval",
+      "session_id": "2",
+      "category": "AR",
+      "subtask": "MH-QA",
+      "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+      "system_answer": [
+        ""
+      ],
+      "gold_answer": [
+        "yes"
+      ],
+      "score": 0,
+      "session_time_sec": 2.76
+    },
+    {
+      "system": "LangGraph",
+      "split": "Accurate_Retrieval",
+      "session_id": "2",
+      "category": "AR",
+      "subtask": "MH-QA",
+      "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+      "system_answer": [
+        ""
+      ],
+      "gold_answer": [
+        "Chief of Protocol"
+      ],
+      "score": 0,
+      "session_time_sec": 2.76
+    },
+    {
+      "system": "LangGraph",
+      "split": "Accurate_Retrieval",
+      "session_id": "2",
+      "category": "AR",
+      "subtask": "MH-QA",
+      "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+      "system_answer": [
+        ""
+      ],
+      "gold_answer": [
+        "Animorphs"
+      ],
+      "score": 0,
+      "session_time_sec": 2.76
+    },
+    {
+      "system": "LangGraph",
+      "split": "Accurate_Retrieval",
+      "session_id": "3",
+      "category": "AR",
+      "subtask": "EventQA",
+      "question": "These are the events that have already occurred:\n\n1. Debbie sat with Stuart and Brent Tarleton on the porch of Tara.\n\n\nBelow is a list of possible subsequent events:\n\n['Debbie gazed out the window, eager to see her friend arrive from across the street.', 'Debbie paced in the garden, counting the minutes until her sister finally came home.', 'Debbie listened intently as her brother picked up his guitar, anticipating his new song.', 'Debbie sat on the porch swing, hoping her mother would return from the store.', \"Debbie leaned against the fence, excitedly watching for her neighbor's dog to come play.\", 'Debbie waited for her father at the end of the driveway.']\n\n Your task is to choose from the above events which event happens next based on the book excerpt. In your response to me, only include the answer without anything else. ",
+      "system_answer": [
+        ""
+      ],
+      "gold_answer": [
+        "Debbie waited for her father at the end of the driveway."
+      ],
+      "score": 0,
+      "session_time_sec": 2.1
+    },
+    {
+      "system": "LangGraph",
+      "split": "Accurate_Retrieval",
+      "session_id": "3",
+      "category": "AR",
+      "subtask": "EventQA",
+      "question": "These are the events that have already occurred:\n\n1. Debbie sat with Stuart and Brent Tarleton on the porch of Tara.\n2. Debbie waited for her father at the end of the driveway.\n\n\nBelow is a list of possible subsequent events:\n\n[\"Marianne revealed her disappointment regarding Lucian's plan to assist the Garcia family.\", \"Marianne voiced her anger at Lucian's choice to support the Thompson family.\", \"Marianne criticized Lucian's effort to sponsor the Martinez family.\", \"Marianne lamented over Lucian's insistence to aid the Patel family.\", \"Marianne expressed frustration about Lucian's decision to help the Claudia family.\", \"Marianne shared her concerns about Lucian's intention to back the Roberts family.\"]\n\n Your task is to choose from the above events which event happens next based on the book excerpt. In your response to me, only include the answer without anything else. ",
+      "system_answer": [
+        ""
+      ],
+      "gold_answer": [
+        "Marianne expressed frustration about Lucian's decision to help the Claudia family."
+      ],
+      "score": 0,
+      "session_time_sec": 2.1
+    },
+    {
+      "system": "LangGraph",
+      "split": "Accurate_Retrieval",
+      "session_id": "3",
+      "category": "AR",
+      "subtask": "EventQA",
+      "question": "These are the events that have already occurred:\n\n1. Debbie sat with Stuart and Brent Tarleton on the porch of Tara.\n2. Debbie waited for her father at the end of the driveway.\n3. Marianne expressed frustration about Lucian's decision to help the Claudia family.\n\n\nBelow is a list of possible subsequent events:\n\n['Marianne articulated his distaste for the Harrison relatives.', 'Marianne revealed his disdain for the Thompson household.', 'Marianne voiced his aversion to the Campbell clan.', 'Marianne expressed his dislike for the MacIntosh family.', 'Marianne disclosed his dislike for the Johnson lineage.', 'Marianne proclaimed his disapproval of the Fitzgerald family.']\n\n Your task is to choose from the above events which event happens next based on the book excerpt. In your response to me, only include the answer without anything else. ",
+      "system_answer": [
+        ""
+      ],
+      "gold_answer": [
+        "Marianne expressed his dislike for the MacIntosh family."
+      ],
+      "score": 0,
+      "session_time_sec": 2.1
+    },
+    {
+      "system": "LangGraph",
+      "split": "Accurate_Retrieval",
+      "session_id": "18",
+      "category": "AR",
+      "subtask": "LME(S*)",
+      "question": "Current Date: 2023/05/27 (Sat) 22:54,\n\n Now Answer the Question: How many hours do I work in a typical week during peak campaign seasons?",
+      "system_answer": [
+        ""
+      ],
+      "gold_answer": [
+        "50"
+      ],
+      "score": 0,
+      "session_time_sec": 1.8
+    },
+    {
+      "system": "LangGraph",
+      "split": "Accurate_Retrieval",
+      "session_id": "18",
+      "category": "AR",
+      "subtask": "LME(S*)",
+      "question": "Current Date: 2023/05/27 (Sat) 17:21,\n\n Now Answer the Question: How many fish are there in total in both of my aquariums?",
+      "system_answer": [
+        ""
+      ],
+      "gold_answer": [
+        "17"
+      ],
+      "score": 0,
+      "session_time_sec": 1.8
+    },
+    {
+      "system": "LangGraph",
+      "split": "Accurate_Retrieval",
+      "session_id": "18",
+      "category": "AR",
+      "subtask": "LME(S*)",
+      "question": "Current Date: 2023/06/23 (Fri) 07:47,\n\n Now Answer the Question: How many free night's stays can I redeem at any Hilton property with my accumulated points?",
+      "system_answer": [
+        ""
+      ],
+      "gold_answer": [
+        "Two"
+      ],
+      "score": 0,
+      "session_time_sec": 1.8
+    }
+  ]
+}

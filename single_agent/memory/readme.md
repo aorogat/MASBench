@@ -80,7 +80,7 @@ To make MemoryAgentBench **affordable**, we provide a custom **router server** (
    - MemoryAgentBench
    - OpenAI SDK
 
-This reduces cost dramatically — often **100× cheaper** — while remaining faithful to the OpenAI API schema.
+This reduces cost dramatically — often **10× cheaper** — while remaining faithful to the OpenAI API schema.
 
 ---
 

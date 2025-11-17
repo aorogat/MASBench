@@ -47,7 +47,7 @@ def evaluate_exact_match(answers_pairs, model="gpt-4o-mini", batch_size=10):
             gold_ans = " ".join(pair["gold"]).strip()
 
             blocks.append(
-                f"Pair {i}:\nGold: \"\"\"{gold_ans}\"\"\"\nSystem: \"\"\"{sys_ans}\"\"\""
+                f"Pair {i}:\nGold Answer (consider its meaning not as literal): \"\"\"{gold_ans}\"\"\"\nSystem Answer: \"\"\"{sys_ans}\"\"\""
             )
 
         # -----------------------------

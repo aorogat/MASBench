@@ -28,8 +28,8 @@ chunk_max_tokens = 4096
 chunk_overlap = 200
 max_context_tokens = 60000 #Change based on the LLM context window (depends on token size in the tokenizer)
 RETRIEVAL_LIMIT = max_context_tokens // chunk_max_tokens   # ≈ 29
-max_questions_per_session = 3 #Keep it None to cover all questions, use small number for debugging
-ignore_ingest = True # keep it False, use True for debugging issues only
+max_questions_per_session = None #Keep it None to cover all questions, use small number for debugging
+ignore_ingest = False # keep it False, use True for debugging issues only
 
 
 # ---------------------------------------------------------------------
@@ -38,9 +38,9 @@ ignore_ingest = True # keep it False, use True for debugging issues only
 # All splits included in MemoryAgentBench evaluation
 splits = [
     "Accurate_Retrieval",
-    "Test_Time_Learning",
-    "Long_Range_Understanding",
-    "Conflict_Resolution",
+    # "Test_Time_Learning",
+    # "Long_Range_Understanding",
+    # "Conflict_Resolution",
 ]
 # NEW — Maximum sessions to evaluate per task (per subtask)
 max_sessions_per_subtask = 1
