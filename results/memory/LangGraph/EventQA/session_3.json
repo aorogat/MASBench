@@ -1,0 +1,28 @@
+{
+  "system": "LangGraph",
+  "split": "Accurate_Retrieval",
+  "session_id": "3",
+  "subtask": "EventQA",
+  "category": "AR",
+  "runtime_sec": 6.0,
+  "questions": [
+    {
+      "question": "These are the events that have already occurred:\n\n1. Debbie sat with Stuart and Brent Tarleton on the porch of Tara.\n\n\nBelow is a list of possible subsequent events:\n\n['Debbie gazed out the window, eager to see her friend arrive from across the street.', 'Debbie paced in the garden, counting the minutes until her sister finally came home.', 'Debbie listened intently as her brother picked up his guitar, anticipating his new song.', 'Debbie sat on the porch swing, hoping her mother would return from the store.', \"Debbie leaned against the fence, excitedly watching for her neighbor's dog to come play.\", 'Debbie waited for her father at the end of the driveway.']\n\n Your task is to choose from the above events which event happens next based on the book excerpt. In your response to me, only include the answer without anything else. ",
+      "system_answer": "Debbie sat on the porch swing, hoping her mother would return from the store.",
+      "gold_answer": "Debbie waited for her father at the end of the driveway.",
+      "score": 0
+    },
+    {
+      "question": "These are the events that have already occurred:\n\n1. Debbie sat with Stuart and Brent Tarleton on the porch of Tara.\n2. Debbie waited for her father at the end of the driveway.\n\n\nBelow is a list of possible subsequent events:\n\n[\"Marianne revealed her disappointment regarding Lucian's plan to assist the Garcia family.\", \"Marianne voiced her anger at Lucian's choice to support the Thompson family.\", \"Marianne criticized Lucian's effort to sponsor the Martinez family.\", \"Marianne lamented over Lucian's insistence to aid the Patel family.\", \"Marianne expressed frustration about Lucian's decision to help the Claudia family.\", \"Marianne shared her concerns about Lucian's intention to back the Roberts family.\"]\n\n Your task is to choose from the above events which event happens next based on the book excerpt. In your response to me, only include the answer without anything else. ",
+      "system_answer": "Marianne expressed frustration about Lucian's decision to help the Roberts family.",
+      "gold_answer": "Marianne expressed frustration about Lucian's decision to help the Claudia family.",
+      "score": 0
+    },
+    {
+      "question": "These are the events that have already occurred:\n\n1. Debbie sat with Stuart and Brent Tarleton on the porch of Tara.\n2. Debbie waited for her father at the end of the driveway.\n3. Marianne expressed frustration about Lucian's decision to help the Claudia family.\n\n\nBelow is a list of possible subsequent events:\n\n['Marianne articulated his distaste for the Harrison relatives.', 'Marianne revealed his disdain for the Thompson household.', 'Marianne voiced his aversion to the Campbell clan.', 'Marianne expressed his dislike for the MacIntosh family.', 'Marianne disclosed his dislike for the Johnson lineage.', 'Marianne proclaimed his disapproval of the Fitzgerald family.']\n\n Your task is to choose from the above events which event happens next based on the book excerpt. In your response to me, only include the answer without anything else. ",
+      "system_answer": "Marianne revealed his disdain for the Thompson household.",
+      "gold_answer": "Marianne expressed his dislike for the MacIntosh family.",
+      "score": 0
+    }
+  ]
+}
