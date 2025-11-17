@@ -25,6 +25,7 @@ import json
 import time
 from collections import defaultdict
 from datasets import load_dataset
+import re
 
 from single_agent.memory.benchmark.metric_eval_gpt import (
     evaluate_exact_match,
@@ -37,6 +38,8 @@ from single_agent.memory.config import (
     eval_llm_model,
     eval_small_batch_size,
     eval_summary_batch_size,
+    max_questions_per_session,
+    ignore_ingest,
 )
 
 # ---------------------------------------------------------------------
@@ -72,17 +75,86 @@ def category_of(subtask):
     return "Other"
 
 
+def extract_from_dbpedia_uri(uri: str, keep_parentheses=False):
+    """
+    Extracts a human-readable label from a DBpedia entity URI.
+    
+    Examples:
+      '<http://dbpedia.org/resource/Aaron_Russo>' -> 'aaron russo'
+      '<http://dbpedia.org/resource/Water_(1985_film)>' -> 'water 1985 film'
+    """
+    if not uri:
+        return ""
+
+    # Strip < and >
+    uri = uri.strip().lstrip("<").rstrip(">")
+
+    # Get last path segment
+    name = uri.split("/")[-1]
+
+    # Replace underscores with spaces
+    name = name.replace("_", " ")
+
+    # Optionally remove parentheses content
+    if not keep_parentheses:
+        name = re.sub(r"\([^)]*\)", "", name)
+
+    # Remove double spaces, lowercase
+    name = re.sub(r"\s+", " ", name).strip().lower()
+
+    return name
+
+
 # ---------------------------------------------------------------------
 # 🧠 Core Benchmark Class
 # ---------------------------------------------------------------------
 class MemoryAgentBench:
     def __init__(self, split="Accurate_Retrieval"):
         self.split = split
+
+        # Load entity mapping if available (MovieRec TTL)
+        self.entity_mapping = self._load_entity_mapping()
+
         self.load_data(split)
         self.results_dir = os.path.join("results", "memory")
         os.makedirs(self.results_dir, exist_ok=True)
 
+
     # --------------------------------------------------------------
+    def _load_entity_mapping(self):
+        mapping_path = os.path.join(
+            os.path.dirname(__file__),
+            "entity2id.json"
+        )
+
+        if not os.path.exists(mapping_path):
+            print("⚠️  MovieRec mapping file not found: entity2id.json")
+            print("⚠️  MovieRec tasks will use raw text evaluation only.")
+            return None
+
+        try:
+            with open(mapping_path, "r", encoding="utf-8") as f:
+                raw_map = json.load(f)
+
+            name_to_id = {}
+            id_to_title = {}
+
+            for uri, entity_id in raw_map.items():
+                label = extract_from_dbpedia_uri(uri)
+                name_to_id[label] = str(entity_id)
+                id_to_title[str(entity_id)] = label
+
+            return {
+                "name_to_id": name_to_id,
+                "id_to_title": id_to_title
+            }
+
+        except Exception as e:
+            print("❌ Failed to load entity2id.json:", e)
+            return None
+
+
+
     def load_data(self, split):
         ds = load_dataset("ai-hyz/MemoryAgentBench", split=split)
         self.sessions = []
@@ -129,10 +201,15 @@ class MemoryAgentBench:
 
             start_time = time.time()
             agent.reset()
-            agent.ingest(sess["context"])
+            if not ignore_ingest:
+                agent.ingest(sess["context"])
 
             preds = []
             for idx, q in enumerate(sess["questions"], start=1):
+                
+                if max_questions_per_session and idx > max_questions_per_session:
+                    break
+                    
                 print(f"🔍 Querying question {idx}/{len(sess['questions'])} ...")
                 preds.append(agent.query(q))
 
@@ -161,8 +238,10 @@ class MemoryAgentBench:
             elif cat == "TTL" and subtask == "MovieRec":
                 correctness = evaluate_recall_at_5(
                     answers_pairs,
-                    model=eval_llm_model
+                    model=eval_llm_model,
+                    entity_mapping=self.entity_mapping 
                 )
+
 
             elif cat == "TTL":
                 correctness = evaluate_exact_match(

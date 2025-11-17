@@ -19,6 +19,71 @@ Every agent framework implements its own memory system, so this folder provides:
 
 ---
 
+## ⚠️ Important Notice About Token Usage & Cost
+
+The MemoryAgentBench experiments used in this folder process **very large documents**, with many sessions containing **50–100 lengthy context chunks**, and each question often prompts the LLM with **tens of thousands of tokens**.
+
+As a result:
+
+### 🚨 Running the full benchmark on OpenAI models — even small ones like `gpt-4o-mini` — can easily cost **hundreds or even thousands of dollars** in API usage.
+
+This is because the benchmark evaluates:
+- 6–200 sessions per split  
+- Each session contains 1–30 long questions  
+- Each question may require **50k–120k tokens** of context  
+- GPT-based evaluation doubles the calls (answer + scoring)
+
+To make MemoryAgentBench **affordable**, we provide a custom **router server** (`router.py`) which transparently forwards any OpenAI LLM API call to **Groq's extremely inexpensive high-speed model**:
+
+### 💸 `openai/gpt-oss-20b` (Groq)
+
+- ~1000+ tokens/sec  
+- Supports **131K context**  
+- Tiny fraction of GPT-4o-mini cost  
+- Works for memory ingestion, retrieval, and long-context reasoning  
+- Fully OpenAI-compatible when passed through our router  
+
+### 🧩 How the Router Works
+
+1. Your code (LangGraph, CrewAI, AGNO, MemoryAgentBench, etc.) continues to call:
+   ```
+   https://api.openai.com/v1/chat/completions
+   ```
+
+2. You set:
+   ```bash
+   export OPENAI_API_BASE="http://localhost:5001/v1"
+   ```
+
+3. Run the Router server: From the root folder, run
+   ```bash
+   python -m single_agent.memory.router
+   ```
+   The router automatically loads API keys from the .env file in the project root directory. Make sure your .env file includes the following entries:
+   ```bash
+   OPENAI_API_KEY=sk_XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+   GROQ_API_KEY=gsk_XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+   ```
+
+4. All OpenAI LLM requests are transparently captured by `router.py`.
+
+5. The router rewrites the request and sends it to Groq instead:
+   - `gpt-4o`, `gpt-4o-mini`, `gpt-3.5-turbo` → mapped to `openai/gpt-oss-20b`.
+
+6. Embeddings are NOT forwarded to Groq → The router sends embeddings to real OpenAI, since Groq does not support embeddings.
+
+7. The router returns a standard OpenAI-compatible JSON chunk, so all frameworks work without modification:
+   - LangGraph
+   - CrewAI
+   - AGNO
+   - LangChain
+   - MemoryAgentBench
+   - OpenAI SDK
+
+This reduces cost dramatically — often **100× cheaper** — while remaining faithful to the OpenAI API schema.
+
+---
+
 ## 📁 Folder Overview
 
 ```
@@ -105,7 +170,7 @@ Resets memory buffers, context windows, vector stores, or persistent memory stor
 Stores the long textual context in the framework's preferred memory system:
 
 - **CrewAI** → uses Crew Memory (short-term, long-term, entity memories)
-etc
+- etc
 
 Chunking strategies are shared through `helpers/common_agent_utils.py`.
 

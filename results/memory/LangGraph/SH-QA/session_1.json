@@ -1,0 +1,28 @@
+{
+  "system": "LangGraph",
+  "split": "Accurate_Retrieval",
+  "session_id": "1",
+  "subtask": "SH-QA",
+  "category": "AR",
+  "runtime_sec": 5.08,
+  "questions": [
+    {
+      "question": "In what country is Normandy located?",
+      "system_answer": "Normandy is a region in northwestern **France**.",
+      "gold_answer": "France",
+      "score": 1
+    },
+    {
+      "question": "When were the Normans in Normandy?",
+      "system_answer": "The Normans—descendants of the Viking raiders who settled in the area that became Normandy—were present there from the early 10th century onward.  \n\n| Key dates | What happened |\n|-----------|---------------|\n| **c. 911** | The Treaty of Saint‑Clair‑sur‑Epte granted the Viking leader Rollo land in the region that would become Normandy. This marks the beginning of the Norman presence. |\n| **10th–11th centuries** | The Viking settlers assimilated, adopted Christianity, and established the Duchy of Normandy under Rollo’s descendants. |\n| **1066** | William I of Normandy (the Conqueror) invades England, but he remains Duke of Normandy. |\n| **12th–13th centuries** | The duchy continues to thrive as a powerful feudal state. |\n| **1204** | King Philip II of France conquers Normandy’s mainland territories, ending the independent duchy. |\n| **1250** | The last surviving Norman duke, John IV, is forced to surrender the remaining Norman lands, fully integrating the region into the French crown. |\n\nSo, the Normans were in Normandy from roughly **c. 910 – 1250**, a span of about 340 years.",
+      "gold_answer": "10th and 11th centuries",
+      "score": 0
+    },
+    {
+      "question": "From which countries did the Norse originate?",
+      "system_answer": "The term **“Norse”** (or “Vikings”) refers to the seafaring peoples who lived in the **Scandinavian region** during the Viking Age (roughly 8th–11th centuries).  Their homeland was the area that today comprises:\n\n| Modern country | Historical Norse territory |\n|----------------|----------------------------|\n| **Norway** | The western and northern coasts, the fjords, and the interior highlands. |\n| **Sweden** | The eastern coast along the Baltic Sea, the archipelagos, and the inland provinces. |\n| **Denmark** | The Jutland peninsula, the islands of Zealand, Funen, and others. |\n\nThese three countries together formed the core of the Norse world.  In addition:\n\n* **Iceland** was settled by Norse colonists (mainly from Norway) in the 9th–10th centuries, so it is often considered part of the Norse cultural sphere.\n* **Faroe Islands** and **Greenland** were also colonized by Norse settlers, mainly from Norway and Denmark.\n\nThus, the Norse originated from the Scandinavian countries of **Norway, Sweden, and Denmark** (with Iceland, the Faroe Islands, and Greenland as later Norse settlements).",
+      "gold_answer": "Denmark, Iceland and Norway",
+      "score": 1
+    }
+  ]
+}
