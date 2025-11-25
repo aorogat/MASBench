@@ -1,0 +1,24 @@
+\setlength{\tabcolsep}{1pt}
+\begin{table}[t]
+\centering
+\footnotesize
+\caption{Accuracy results (\%) across CrewAI (no-planning vs planning) and Direct-LLM planning.}
+\label{tab:reasoning-accuracy}
+\begin{tabular}{l|ccc|ccc|ccc}
+\toprule
+\multirow{2}{*}{\textbf{LLM}} & \multicolumn{3}{c}{\textbf{GSM8K}} & \multicolumn{3}{c}{\textbf{CSQA}} & \multicolumn{3}{c}{\textbf{MATH-100}} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7} \cmidrule(lr){8-10}
+ & \xmark & \checkmark (crew) & \checkmark (LLM) & \xmark & \checkmark (crew) & \checkmark (LLM)& \xmark & \checkmark (crew) & \checkmark (LLM) \\
+\midrule
+\rowcolor{gray!20} \multicolumn{10}{c}{\textbf{Local Models}} \\
+GPT-OSS-20B & 94.6 & \accChange{94.6}{91.6} & \textcolor{red}{X} & 81.7 & \accChange{81.7}{81.4} & \textcolor{red}{X} & 80.0 & \accChange{80.0}{48.0} & \textcolor{red}{X} \\
+Phi-4-14B & 92.9 & \accChange{92.9}{86.1} & \textcolor{red}{X} & 75.7 & \accChange{75.7}{81.6} & \textcolor{red}{X} & 72.0 & \accChange{72.0}{50.0} & \textcolor{red}{X} \\
+Llama-3.1-8B & 65.1 & \accChange{65.1}{59.6} & \accChange{65.1}{70.1} & 68.1 & \accChange{68.1}{64.3} & \accChange{68.1}{64.7} & 25.0 & \accChange{25.0}{24.0} & \accChange{25.0}{37.0} \\
+DeepSeek-7B & 26.8 & \accChange{26.8}{17.8} & \accChange{26.8}{22.1} & 42.8 & \accChange{42.8}{34.0} & \accChange{42.8}{35.9} & 9.0 & \accChange{9.0}{3.0} & \accChange{9.0}{4.0} \\
+Qwen-7B & 13.1 & \accChange{13.1}{3.4} & \accChange{13.1}{29.2} & 25.9 & \accChange{25.9}{23.9} & \accChange{25.9}{58.6} & 9.0 & \accChange{9.0}{4.0} & \accChange{9.0}{13.0} \\
+\rowcolor{gray!20} \multicolumn{10}{c}{\textbf{Remote Models}} \\
+GPT-4.1 & 93.2 & \accChange{93.2}{80.1} & \textcolor{red}{X} & 87.1 & \accChange{87.1}{87.3} & \textcolor{red}{X} & 86.0 & \accChange{86.0}{60.0} & \textcolor{red}{X} \\
+GPT-4o-Mini & 86.5 & \accChange{86.5}{90.9} & \textcolor{red}{X} & 81.7 & \accChange{81.7}{81.3} & \textcolor{red}{X} & 60.0 & \accChange{60.0}{53.0} & \textcolor{red}{X} \\
+\bottomrule
+\end{tabular}
+\end{table}

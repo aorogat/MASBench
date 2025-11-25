@@ -1,0 +1,216 @@
+{
+  "benchmark": "math",
+  "model": "results/planning/analysis/crewai_math_gpt-4o-mini_analysis.json",
+  "differences_count": 19,
+  "differences": [
+    {
+      "qid": "intermediate_algebra-102.json",
+      "question": "Compute\n\\[\\sum_{n = 1}^\\infty \\frac{F_{n + 1}}{F_n F_{n + 2}},\\]where $F_n$ denotes the $n$th Fibonacci number, so $F_0 = 0$ and $F_1 = 1.$",
+      "gold": "2",
+      "noplan_pred": "2",
+      "noplan_correct": true,
+      "plan_pred": "1",
+      "plan_correct": false,
+      "llm_response_planning": "1",
+      "llm_response_noplanning": "2"
+    },
+    {
+      "qid": "intermediate_algebra-101.json",
+      "question": "Solve\n\\[\\sqrt{x + \\sqrt{3x + 6}} + \\sqrt{x - \\sqrt{3x + 6}} = 6.\\]",
+      "gold": "10",
+      "noplan_pred": "10",
+      "noplan_correct": true,
+      "plan_pred": "x = 12.",
+      "plan_correct": false,
+      "llm_response_planning": "x = 12.",
+      "llm_response_noplanning": "10"
+    },
+    {
+      "qid": "prealgebra-1003.json",
+      "question": "A square and a regular heptagon  are coplanar and share a common side $\\overline{AD}$, as shown. What is the degree measure of angle $BAC$?  Express your answer as a common fraction.\n\n[asy]\nfor(int i=0; i <=7; ++i) {\ndraw(dir(360*i/7+90)--dir(360*(i+1)/7+90));\n}\npair A = dir(360*3/7+90);\npair F = dir(360*4/7+90);\npair C = A+dir(90)*(F-A);\npair D = C+F-A;\npair B = dir(360*2/7+90);\n\ndraw(A--C--D--F);\n\nlabel(\"$A$\",A,S);\nlabel(\"$B$\",B,W);\nlabel(\"$C$\",C,SE);\nlabel(\"$D$\",F,S);\n\n[/asy]",
+      "gold": "\\frac{270}7\\text{ degrees}",
+      "noplan_pred": "\\(\\frac{270}{7}\\)",
+      "noplan_correct": true,
+      "plan_pred": "\\(\\frac{180}{7}\\)",
+      "plan_correct": false,
+      "llm_response_planning": "\\(\\frac{180}{7}\\)",
+      "llm_response_noplanning": "\\(\\frac{270}{7}\\)"
+    },
+    {
+      "qid": "prealgebra-1008.json",
+      "question": "The positive three-digit integer $N$ has a ones digit of $0$. What is the probability that $N$ is divisible by $4$? Express your answer as a common fraction.",
+      "gold": "\\frac{1}{2}",
+      "noplan_pred": "\\(\\frac{1}{10}\\)",
+      "noplan_correct": false,
+      "plan_pred": "\\(\\frac{1}{2}\\)",
+      "plan_correct": true,
+      "llm_response_planning": "\\(\\frac{1}{2}\\)",
+      "llm_response_noplanning": "\\(\\frac{1}{10}\\)"
+    },
+    {
+      "qid": "prealgebra-1000.json",
+      "question": "What is the smallest multiple of $5$ which is greater than $-32$?",
+      "gold": "-30",
+      "noplan_pred": "-30",
+      "noplan_correct": true,
+      "plan_pred": "0",
+      "plan_correct": false,
+      "llm_response_planning": "0",
+      "llm_response_noplanning": "-30"
+    },
+    {
+      "qid": "prealgebra-1033.json",
+      "question": "If a 12-hour analog clock reads 8:00, what is the degree measure of the smaller angle formed by the minute and hour hands?",
+      "gold": "120",
+      "noplan_pred": "120 degrees",
+      "noplan_correct": false,
+      "plan_pred": "120",
+      "plan_correct": true,
+      "llm_response_planning": "120",
+      "llm_response_noplanning": "120 degrees"
+    },
+    {
+      "qid": "prealgebra-1040.json",
+      "question": "The areas of squares $A_1$ and $A_2$ are 25 square centimeters and 49 square centimeters respectively. What is the number of square centimeters in the area of rectangle $A_3$?\n\n[asy]\ndraw((0,0)--(17,0)--(17,17)--(7,17)--(7,7)--(0,7)--cycle);\ndraw((7,0)--(7,7)--(17,7));\nlabel(\"$A_{1}$\",(3.5,5),S);\nlabel(\"$A_{2}$\",(12,14),S);\nlabel(\"$A_{3}$\",(12,5),S);\n[/asy]",
+      "gold": "35",
+      "noplan_pred": "245 square centimeters",
+      "noplan_correct": false,
+      "plan_pred": "35",
+      "plan_correct": true,
+      "llm_response_planning": "35",
+      "llm_response_noplanning": "245 square centimeters"
+    },
+    {
+      "qid": "prealgebra-1034.json",
+      "question": "Dave's sister baked $3$ dozen pies of which a third contained chocolate, a quarter contained marshmallows, a sixth contained cayenne, and one twelfth contained salted soy nuts.  What is the smallest possible number of pies that had none of these ingredients?",
+      "gold": "6",
+      "noplan_pred": "15",
+      "noplan_correct": false,
+      "plan_pred": "6",
+      "plan_correct": true,
+      "llm_response_planning": "6",
+      "llm_response_noplanning": "15"
+    },
+    {
+      "qid": "algebra-1034.json",
+      "question": "If $A$, $B$ and $C$ are positive integers such that $\\frac{A\\sqrt{B}}{C} = \\frac{9}{2\\sqrt{3}}$, what is the value of $A+B+C$ given that $A$ and $C$ have no common prime factors, and $B$ has no perfect-square factors other than 1?",
+      "gold": "8",
+      "noplan_pred": "8",
+      "noplan_correct": true,
+      "plan_pred": "14",
+      "plan_correct": false,
+      "llm_response_planning": "14",
+      "llm_response_noplanning": "8"
+    },
+    {
+      "qid": "algebra-1017.json",
+      "question": "Four distinct integers $a$, $b$, $c$ and $d$ have the property that when added in pairs, the sums 10, 18, 19, 20, 21, and 29 are obtained. What are the four integers in increasing order? (place a comma and then a space between each integer)",
+      "gold": "4,6,14,15",
+      "noplan_pred": "4, 6, 14, 15",
+      "noplan_correct": true,
+      "plan_pred": "1, 9, 10, 18",
+      "plan_correct": false,
+      "llm_response_planning": "1, 9, 10, 18",
+      "llm_response_noplanning": "4, 6, 14, 15"
+    },
+    {
+      "qid": "algebra-1043.json",
+      "question": "Mike paid $\\$1.25$ for a stamp three years ago. He was just offered double that amount for the stamp. Assuming the stamp's offer price doubles every three years, how many dollars will he be offered in 12 more years?",
+      "gold": "\\$40",
+      "noplan_pred": "40",
+      "noplan_correct": true,
+      "plan_pred": "$20.00",
+      "plan_correct": false,
+      "llm_response_planning": "$20.00",
+      "llm_response_noplanning": "40"
+    },
+    {
+      "qid": "algebra-1022.json",
+      "question": "Find the sum of all integers that satisfy these conditions: \\[\n|x|+1>7\\text{ and }|x+1|\\le7.\n\\]",
+      "gold": "-15",
+      "noplan_pred": "-15",
+      "noplan_correct": true,
+      "plan_pred": "-70",
+      "plan_correct": false,
+      "llm_response_planning": "-70",
+      "llm_response_noplanning": "-15"
+    },
+    {
+      "qid": "precalculus-1004.json",
+      "question": "Given $\\mathbf{a} = \\begin{pmatrix} 2 \\\\ 1 \\\\ 0 \\end{pmatrix},$ $\\mathbf{b} = \\begin{pmatrix} 0 \\\\ 0 \\\\ 1 \\end{pmatrix},$ and $\\mathbf{c} = \\begin{pmatrix} 1 \\\\ -2 \\\\ -3 \\end{pmatrix},$ compute\n\\[(\\mathbf{a} \\times \\mathbf{b}) \\times \\mathbf{c} - \\mathbf{a} \\times (\\mathbf{b} \\times \\mathbf{c}).\\]",
+      "gold": "\\begin{pmatrix} 6 \\\\ 3 \\\\ 0 \\end{pmatrix}",
+      "noplan_pred": "\\(\\begin{pmatrix} 6 \\\\ 3 \\\\ 0 \\end{pmatrix}\\)",
+      "noplan_correct": true,
+      "plan_pred": "\\begin{pmatrix} 6 \\\\ 3 \\\\ -1 \\end{pmatrix}",
+      "plan_correct": false,
+      "llm_response_planning": "\\begin{pmatrix} 6 \\\\ 3 \\\\ -1 \\end{pmatrix}",
+      "llm_response_noplanning": "\\(\\begin{pmatrix} 6 \\\\ 3 \\\\ 0 \\end{pmatrix}\\)"
+    },
+    {
+      "qid": "counting_and_probability-10.json",
+      "question": "$n$ fair 6-sided dice are simultaneously rolled. The probability that exactly two of them show a number other than 1 is $\\frac{25}{216}$. Find $n$.",
+      "gold": "4",
+      "noplan_pred": "4",
+      "noplan_correct": true,
+      "plan_pred": "9",
+      "plan_correct": false,
+      "llm_response_planning": "9",
+      "llm_response_noplanning": "4"
+    },
+    {
+      "qid": "counting_and_probability-1005.json",
+      "question": "Amy's grandmother gave her 3 identical chocolate chip cookies and 4 identical sugar cookies.  In how many different orders can Amy eat the cookies such that either she eats a chocolate chip cookie first, she eats a chocolate chip cookie last, or both?",
+      "gold": "25",
+      "noplan_pred": "5",
+      "noplan_correct": false,
+      "plan_pred": "25",
+      "plan_correct": true,
+      "llm_response_planning": "25",
+      "llm_response_noplanning": "5"
+    },
+    {
+      "qid": "geometry-10.json",
+      "question": "In $\\triangle{ABC}$, shown, $\\cos{B}=\\frac{3}{5}$.  What is $\\cos{C}$?\n\n[asy]\ndraw((0,0)--(4,0)--(0,3)--cycle,black+linewidth(1));\ndraw(rightanglemark((4,0),(0,0),(0,3),10),black+linewidth(1));\nlabel(\"$A$\",(0,0),W);\nlabel(\"$B$\",(0,3),W);\nlabel(\"$C$\",(4,0),E);\nlabel(\"9\",(0,0)--(0,3),W);\n[/asy]",
+      "gold": "\\frac{4}{5}",
+      "noplan_pred": "\\(\\frac{4}{5}\\)",
+      "noplan_correct": true,
+      "plan_pred": "0",
+      "plan_correct": false,
+      "llm_response_planning": "0",
+      "llm_response_noplanning": "\\(\\frac{4}{5}\\)"
+    },
+    {
+      "qid": "geometry-100.json",
+      "question": "Two right triangles share a side as follows: [asy]\npair pA, pB, pC, pD, pE;\npA = (0, 0);\npB = pA + 4 * dir(0);\npC = pA + 5 * dir(90);\npD = pB + 4 * dir(90);\npE = (4 * pA + 5 * pD) / 9;\ndraw(pA--pB--pC--pA);\ndraw(pA--pB--pD--pA);\nlabel(\"$A$\", pA, SW);\nlabel(\"$B$\", pB, SE);\nlabel(\"$C$\", pC, NW);\nlabel(\"$D$\", pD, NE);\nlabel(\"$E$\", pE, 2 * N);\nlabel(\"$4$\", pA--pB, S);\nlabel(\"$5$\", pA--pC, W);\nlabel(\"$4$\", pB--pD, E);\ndraw(rightanglemark(pB,pA,pC,8));\ndraw(rightanglemark(pD,pB,pA,8));\n[/asy] What is the area of $\\triangle ABE$?",
+      "gold": "\\frac{40}{9}",
+      "noplan_pred": "10",
+      "noplan_correct": false,
+      "plan_pred": "\\( \\frac{40}{9} \\)",
+      "plan_correct": true,
+      "llm_response_planning": "\\( \\frac{40}{9} \\)",
+      "llm_response_noplanning": "10"
+    },
+    {
+      "qid": "geometry-1002.json",
+      "question": "We have triangle $\\triangle ABC$ where $AB = AC$ and $AD$ is an altitude. Meanwhile, $E$ is a point on $AC$ such that $AB \\parallel DE.$ If $BC = 12$  and the area of $\\triangle ABC$ is $180,$ what is the area of $ABDE$?",
+      "gold": "135",
+      "noplan_pred": "135",
+      "noplan_correct": true,
+      "plan_pred": "90",
+      "plan_correct": false,
+      "llm_response_planning": "90",
+      "llm_response_noplanning": "135"
+    },
+    {
+      "qid": "geometry-134.json",
+      "question": "What is the angle of rotation in degrees about point $C$ that maps the darker figure to the lighter image? [asy]\nimport olympiad; defaultpen(linewidth(0.7));\ndraw((4,-1)--(4,1)--(-4,1)--(-4,3)--(-6,0)--(-4,-3)--(-4,-1)--(4,-1)--cycle,linewidth(2));\ndraw((-4,1)--(-4,3)--(4,3)--(4,5)--(6,2)--(4,-1)--(4,1)--(-4,1)--cycle);\ndot(\"$C$\",(0,1),N);\n[/asy]",
+      "gold": "180^{\\circ}",
+      "noplan_pred": "180 degrees",
+      "noplan_correct": true,
+      "plan_pred": "90 degrees",
+      "plan_correct": false,
+      "llm_response_planning": "90 degrees",
+      "llm_response_noplanning": "180 degrees"
+    }
+  ]
+}

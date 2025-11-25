@@ -150,6 +150,7 @@ def run_all_benchmarks():
 
     plan_tag = "planning" if CONFIG.get("planning") else "noplanning"
     llm_tag  = sanitize_filename_component(str(CONFIG.get("llm", "model")))
+    # llm_tag = "Groq_gpt_oss_20b" #Use only for groq
 
     
     if "csqa" in CONFIG["benchmarks"]:

@@ -1,0 +1,28 @@
+```json
+[
+    {
+        "insight": {
+            "reason": "The answer changed due to a miscalculation in identifying the smallest multiple of 5 greater than -32. The LLM incorrectly identified -30 instead of 35.",
+            "planning_effect": "hurt",
+            "failure_type": "math error",
+            "failure_explanation": null
+        }
+    },
+    {
+        "insight": {
+            "reason": "The answer changed because the planning mode provided a more structured approach to solving the problem, leading to the correct area calculation for triangle ABDE, while the no-planning response was overly verbose and convoluted.",
+            "planning_effect": "helped",
+            "failure_type": null,
+            "failure_explanation": null
+        }
+    },
+    {
+        "insight": {
+            "reason": "The answer did not change; however, the planning mode failed to provide a correct response despite the no-planning mode being correct. The planning response was overly simplified and did not include the necessary steps.",
+            "planning_effect": "failed entirely",
+            "failure_type": "logic error",
+            "failure_explanation": null
+        }
+    }
+]
+```

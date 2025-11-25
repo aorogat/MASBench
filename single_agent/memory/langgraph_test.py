@@ -2,9 +2,9 @@
 Run MemoryAgentBench on All Splits using LangGraph Memory Agent
 ===============================================================
 
-This script evaluates a LangGraph agent with both short-term and
+This script evaluates a LangGraph agent with the
 long-term memory, backed by an in-memory semantic store and optional
-checkpointer, on all splits of MemoryAgentBench.
+avoid short-term (checkpointer) becuase each messgae turn is huge and accumulating them with exceed the context window early, on all splits of MemoryAgentBench.
 
 To run:
     python -m single_agent.memory.langgraph_test
@@ -27,14 +27,12 @@ from single_agent.memory.helpers.common_agent_utils import (
 )
 from single_agent.memory.config import (
     langgraph_llm_model,
-    llm_max_tokens,
-    llm_temperature,
     storage_directory,
     chunk_max_tokens,
     RETRIEVAL_LIMIT,
+    max_context_tokens,
     chunk_overlap,
     splits,
-    results_directory,
     verbose,
 )
 
@@ -46,7 +44,7 @@ os.environ["OPENAI_API_KEY"] = API_KEY
 
 
 # ---------------------------------------------------------------------
-# 🧠 LangGraph Agent Builder
+# 🧠 LangGraph Agent Builder (NO STREAMING)
 # ---------------------------------------------------------------------
 def build_langgraph_agent(store_path: str):
     """
@@ -55,25 +53,20 @@ def build_langgraph_agent(store_path: str):
       - short-term message memory (InMemorySaver)
     """
 
-    # Semantic embedding-based store
     embeddings = init_embeddings("openai:text-embedding-3-small")
+
     store = InMemoryStore(
         index={"embed": embeddings, "dims": 1536}
     )
 
-    # Short-term checkpointing memory
-    checkpointer = InMemorySaver()
+    # Disable streaming entirely
+    model = init_chat_model(model=langgraph_llm_model, streaming=False)
 
-    # LLM model
-    model = init_chat_model(model=langgraph_llm_model)
-
-    # Define a simple message-processing node
     def chat(state: MessagesState, *, store: BaseStore):
         """Retrieve relevant stored facts and generate a response."""
         user_id = "benchmark_user"
         namespace = ("memories", user_id)
 
-        # Search relevant context from semantic memory
         items = store.search(namespace, query=state["messages"][-1].content, limit=RETRIEVAL_LIMIT)
         memories = "\n".join([item.value["text"] for item in items])
         mem_info = f"## Retrieved memories\n{memories}" if memories else ""
@@ -86,16 +79,16 @@ def build_langgraph_agent(store_path: str):
         )
         return {"messages": [response]}
 
-    # Build graph
     builder = StateGraph(MessagesState)
     builder.add_node(chat)
     builder.add_edge(START, "chat")
-    graph = builder.compile(store=store, checkpointer=checkpointer)
+
+    graph = builder.compile(store=store)
     return graph, store
 
 
 # ---------------------------------------------------------------------
-# 🧩 Adapter for Benchmark Compatibility
+# 🧩 Adapter for Benchmark Compatibility (NO STREAMING)
 # ---------------------------------------------------------------------
 class LangGraphMemoryAgent:
     """
@@ -108,22 +101,25 @@ class LangGraphMemoryAgent:
     def __init__(self):
         os.makedirs(storage_directory, exist_ok=True)
         LangGraphMemoryAgent._session_counter += 1
+
         self.session_id = f"langgraph_session_{LangGraphMemoryAgent._session_counter}"
         self.session_path = os.path.join(storage_directory, self.session_id)
         os.makedirs(self.session_path, exist_ok=True)
 
         self.graph, self.store = build_langgraph_agent(self.session_path)
         self.user_id = "benchmark_user"
+
         print(f"🧠 LangGraph session initialized: {self.session_path}")
 
     # -------------------------------------------------------------
     def reset(self):
-        """Reset memory by starting a new semantic store + checkpointer."""
+        """Reset memory completely."""
         try:
             LangGraphMemoryAgent._session_counter += 1
             self.session_id = f"langgraph_session_{LangGraphMemoryAgent._session_counter}"
             self.session_path = os.path.join(storage_directory, self.session_id)
             os.makedirs(self.session_path, exist_ok=True)
+
             self.graph, self.store = build_langgraph_agent(self.session_path)
             print(f"🧹 New LangGraph session started: {self.session_path}")
         except Exception as e:
@@ -131,7 +127,7 @@ class LangGraphMemoryAgent:
 
     # -------------------------------------------------------------
     def ingest(self, context: str):
-        """Embed and store benchmark context in the long-term memory store."""
+        """Store benchmark context in semantic memory."""
         print("🧠 Ingesting context into semantic memory...")
         chunks = chunk_text(context, max_tokens=chunk_max_tokens, overlap=chunk_overlap)
         namespace = ("memories", self.user_id)
@@ -145,34 +141,57 @@ class LangGraphMemoryAgent:
 
     # -------------------------------------------------------------
     def query(self, question: str) -> str:
-        """Ask a question and retrieve a response using the semantic store."""
         print(f"🔍 Querying: {question[:60]}{'...' if len(question) > 60 else ''}")
+
         try:
-            thread_id = f"{self.session_id}_thread"
-            answer_parts = []
+            # ------------------------------------------------------
+            # 1. Semantic memory search (NO short-term memory)
+            # ------------------------------------------------------
+            namespace = ("memories", self.user_id)
+            items = self.store.search(namespace, query=question, limit=RETRIEVAL_LIMIT)
 
-            # Stream the assistant’s response (token by token or message by message)
-            for msg, _ in self.graph.stream(
-                {"messages": [{"role": "user", "content": question}]},
-                config={"configurable": {"thread_id": thread_id}},
-                stream_mode="messages",
-            ):
-                # Accumulate both chunked and full message content
-                if hasattr(msg, "content") and msg.content:
-                    answer_parts.append(msg.content)
+            memories = "\n".join(item.value["text"] for item in items)
+            
+            # Cut memory to avoid overflow
+            mem_info = f"## Retrieved memories\n{memories}"
+            mem_info = mem_info[: max_context_tokens]
 
-            # Combine everything into the final answer
-            if answer_parts:
-                answer = "".join(answer_parts).strip()
-                print(f"🧾 Answer: {answer[:120]}{'...' if len(answer) > 120 else ''}")
-                return answer
-            else:
-                print("⚠️ No assistant response collected.")
+
+            # ------------------------------------------------------
+            # 2. Build stateless message list
+            # ------------------------------------------------------
+            messages = [
+                {"role": "system", "content": f"You are a helpful assistant.\n{mem_info}"},
+                {"role": "user", "content": question},
+            ]
+
+
+            # ------------------------------------------------------
+            # 3. Direct graph invoke (NO accumulation, NO thread_id)
+            # ------------------------------------------------------
+            result = self.graph.invoke(
+                {"messages": messages},
+                config={},            # no thread_id → stateless
+                store=self.store       # long-term memory only
+            )
+
+
+            # ------------------------------------------------------
+            # 4. Extract reply
+            # ------------------------------------------------------
+            msgs = result.get("messages", [])
+            if not msgs:
+                print("⚠️ No assistant response returned.")
                 return ""
+
+            answer = msgs[-1].content.strip()
+            print(f"🧾 Answer: {answer[:120]}{'...' if len(answer) > 120 else ''}")
+            return answer
 
         except Exception as e:
             print(f"❌ Query failed: {e}")
             return ""
+
 
 # ---------------------------------------------------------------------
 # 🚀 Run Benchmark for All Splits
@@ -204,10 +223,9 @@ def main():
         summarize_results("LangGraph", overall_summary)
 
     finally:
-        # 🧹 Clean up session folders
         try:
             if os.path.exists(storage_directory):
-                print(f"\n🗑️  Cleaning up LangGraph memory folder: {storage_directory}")
+                print(f"\n🗑️ Cleaning up LangGraph memory folder: {storage_directory}")
                 shutil.rmtree(storage_directory)
                 print("✅ Memory folder deleted successfully.")
         except Exception as e:

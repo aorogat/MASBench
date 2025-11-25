@@ -4,15 +4,38 @@ from .base import Benchmark, Question
 
 # To test this file: Run,  python -m benchmarks.gsm8k
 
+import re
+
 def extract_final_answer(ans: str) -> str:
-    """Extract the final answer from GSM8K string (after ####)."""
+    """Extract the final answer from GSM8K string (after ####), remove commas."""
     match = re.search(r"####\s*(\S+)", ans)
-    return match.group(1).strip() if match else ans.strip()
+    final = match.group(1).strip() if match else ans.strip()
+    return final.replace(",", "").replace(" ", "")
 
 def normalize_pred(pred: str) -> str:
-    """Normalize numeric prediction by extracting the last number."""
-    pred_norm = re.findall(r"-?\d+\.?\d*", pred)
-    return pred_norm[-1] if pred_norm else pred.strip()
+    """
+    Normalize numeric prediction by:
+      - extracting the last number
+      - allowing commas inside numbers
+      - removing commas/spaces
+      - dropping trailing .0 or .000
+    """
+    # find numbers like 50,000 or 20 000.50 or 70000
+    numbers = re.findall(r"-?\d[\d,\. ]*", pred)
+
+    if not numbers:
+        return pred.strip()
+
+    num = numbers[-1]
+
+    # clean formatting
+    num = num.replace(",", "").replace(" ", "")
+
+    # Remove trailing '.' or '.0', '.00', '.000'
+    num = re.sub(r"\.0+$", "", num)   # 20000.0 → 20000
+    num = re.sub(r"\.$", "", num)     # 20. → 20
+
+    return num
 
 
 class GSM8KBenchmark(Benchmark):
@@ -47,7 +70,7 @@ if __name__ == "__main__":
     bench.print_summary()
     # print the first few questions for clarity
     for q in bench.questions:
-        bench.set_pred(q, "20")  # Fake value
+        bench.set_pred(q, "20 000")  # Fake value
         print(
             f"Q{q.qid}: {q.question[:50]}... "
             f"| Pred: {q.pred} \t| Gold: {q.gold} \t| Correct: {q.correct}"

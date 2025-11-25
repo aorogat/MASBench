@@ -4,10 +4,24 @@ from .base import Benchmark, Question
 
 # To test this file: Run,  python -m benchmarks.csqa
 
+
 def normalize_pred(pred: str) -> str:
-    """Normalize letter prediction by extracting last a–e char."""
-    pred_letter = re.findall(r"[abcdefg]", pred.lower())
-    return pred_letter[-1] if pred_letter else pred.strip().lower()
+    """
+    Extract the LAST standalone choice letter (a–e).
+    Standalone means:
+      - appears as a single token OR
+      - appears at a word boundary
+    """
+    # Matches: a, b, c, d, e as whole tokens OR at boundaries
+    matches = re.findall(r"\b([abcde])\b", pred.lower())
+
+    if matches:
+        return matches[-1]  # last valid choice
+
+    # fallback: extremely defensive — last single a-e char (rarely needed)
+    fallback = re.findall(r"[abcde]", pred.lower())
+    return fallback[-1] if fallback else pred.strip().lower()
+
 
 
 class CSQABenchmark(Benchmark):

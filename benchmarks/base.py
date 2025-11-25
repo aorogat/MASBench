@@ -102,13 +102,18 @@ class Benchmark(ABC):
 
         if "time_total" in m:
             print(f"⏱ Total Time: {m['time_total']:.2f}s "
-                  f"(mean {m['time_mean']:.2f}, min {m['time_min']:.2f}, max {m['time_max']:.2f})")
+                f"(mean {m['time_mean']:.2f}, min {m['time_min']:.2f}, max {m['time_max']:.2f})")
 
         if "tokens_total" in m:
             print(f"🔤 Total Tokens: {m['tokens_total']} "
-                  f"(mean {m['tokens_mean']:.1f}, min {m['tokens_min']}, max {m['tokens_max']})")
+                f"(mean {m['tokens_mean']:.1f}, min {m['tokens_min']}, max {m['tokens_max']})")
 
         print()
         for q in self.questions:
             status = "✅" if q.correct else "❌"
-            print(f"Q{q.qid}: {status} | Time: {q.time_used:.3f}s | Tokens: {q.tokens_out}")
+
+            # Safe formatting
+            time_used = f"{q.time_used:.3f}s" if q.time_used is not None else "N/A"
+            tokens = q.tokens_out if q.tokens_out is not None else "N/A"
+
+            print(f"Q{q.qid}: {status} | Time: {time_used} | Tokens: {tokens}")

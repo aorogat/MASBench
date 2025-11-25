@@ -1,0 +1,24 @@
+\setlength{\tabcolsep}{2pt}
+\begin{table}[t]
+\centering
+\footnotesize
+\caption{Runtime multiplier (relative to NoPlan). Lower is faster.}
+\label{tab:reasoning-time-mult}
+\begin{tabular}{l|cc|cc|cc}
+\toprule
+\multirow{2}{*}{\textbf{LLM}} & \multicolumn{2}{c}{\textbf{GSM8K}} & \multicolumn{2}{c}{\textbf{CSQA}} & \multicolumn{2}{c}{\textbf{MATH}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+ & \Delta CrewAI & \Delta LLM & \Delta CrewAI & \Delta LLM & \Delta CrewAI & \Delta LLM \\
+\midrule
+\rowcolor{gray!20} \multicolumn{7}{c}{\textbf{Local Models}} \\
+GPT-OSS-20B & \times 7.4 & \textcolor{red}{X} & \times 18.51 & \textcolor{red}{X} & \times 11.43 & \textcolor{red}{X} \\
+Phi-4-14B & \times 3.5 & \textcolor{red}{X} & \times 4.1 & \times 1.6 & \times 3.0 & \times 1.7 \\
+Llama-3.1-8B & \times 6.3 & \times 1.3 & \times 31.34 & \times 4.2 & \times 4.4 & \times 1.3 \\
+Qwen-7B & \times 2.2 & \times 2.5 & \times 18.16 & \times 0.9 & \times 2.9 & \times 1.8 \\
+DeepSeek-7B & \times 3.1 & \times 2.6 & \times 13.29 & \times 6.6 & \times 2.8 & \times 1.2 \\
+\rowcolor{gray!20} \multicolumn{7}{c}{\textbf{Remote Models}} \\
+GPT-4.1 & \times 2.4 & \textcolor{red}{X} & \times 2.9 & \textcolor{red}{X} & \times 1.2 & \textcolor{red}{X} \\
+GPT-4o-Mini & \times 1.5 & \textcolor{red}{X} & \times 4.8 & \textcolor{red}{X} & \times 1.8 & \textcolor{red}{X} \\
+\bottomrule
+\end{tabular}
+\end{table}

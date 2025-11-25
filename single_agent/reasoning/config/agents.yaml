@@ -5,10 +5,10 @@ reasoner:
     Solve math and commonsense reasoning tasks step by step.
   backstory: >
     You're a reasoning agent that carefully works through each problem before answering.
-  # llm: gpt-4o-mini   # ✅ use OpenAI GPT-4o-mini model
+  llm: gpt-4o-mini   # ✅ use OpenAI GPT-4o-mini model
   # llm: gpt-4.1
   # llm: ollama/deepseek-llm:7b   # ✅ key: tells CrewAI to use Ollama model
   # llm: ollama/gpt-oss:20b   # ✅ key: tells CrewAI to use Ollama model
   # llm: ollama/llama3.1:8b
   # llm: ollama/qwen:7b
-  llm: ollama/phi4:14b
+  # llm: ollama/phi4:14b

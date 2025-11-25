@@ -4,9 +4,9 @@ CONFIG = {
     # "planning_llm": "ollama/gpt-oss:20b",
     # "math_judge_llm":  "gpt-4o-mini",
 
-    # "llm": "gpt-4o-mini",
-    # "planning_llm": "gpt-4o-mini",
-    # "math_judge_llm":  "gpt-4o-mini",
+    "llm": "gpt-4o-mini",
+    "planning_llm": "gpt-4o-mini",
+    "math_judge_llm":  "gpt-4o-mini",
 
     # "llm": "gpt-4.1",
     # "planning_llm": "gpt-4.1",
@@ -24,9 +24,9 @@ CONFIG = {
     # "planning_llm": "ollama/qwen:7b",
     # "math_judge_llm":  "gpt-4o-mini",
 
-    "llm": "ollama/phi4:14b",
-    "planning_llm": "ollama/phi4:14b",
-    "math_judge_llm":  "gpt-4o-mini",
+    # "llm": "ollama/phi4:14b",
+    # "planning_llm": "ollama/phi4:14b",
+    # "math_judge_llm":  "gpt-4o-mini",
 
     
 

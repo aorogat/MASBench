@@ -1,0 +1,227 @@
+{
+  "benchmark": "math",
+  "model": "results/planning/analysis/crewai_math_ollama_phi4_14b_analysis.json",
+  "differences_count": 20,
+  "differences": [
+    {
+      "qid": "number_theory-1032.json",
+      "question": "What is the least positive integer multiple of 30 that can be written with only the digits 0 and 2?",
+      "gold": "2220",
+      "noplan_pred": "2220",
+      "noplan_correct": true,
+      "plan_pred": "22020",
+      "plan_correct": false,
+      "llm_response_planning": "22020",
+      "llm_response_noplanning": "2220"
+    },
+    {
+      "qid": "prealgebra-10.json",
+      "question": "John and Gary are playing a game. John spins a spinner numbered with integers from 1 to 20. Gary then writes a list of all of the positive factors of the number spun except for the number itself. Gary then creates a new spinner with all of the numbers on his list. John then spins this spinner, and the process continues. The game is over when the spinner has no numbers on it. If John spins a 20 on his first spin, what is the maximum number of total spins (including the one he already made) that John can make before the game is over?",
+      "gold": "4",
+      "noplan_pred": "4",
+      "noplan_correct": true,
+      "plan_pred": "5",
+      "plan_correct": false,
+      "llm_response_planning": "5",
+      "llm_response_noplanning": "4"
+    },
+    {
+      "qid": "prealgebra-1030.json",
+      "question": "Patty ordered a pizza to be delivered. The bill was $\\$$12.00. Patty pays $\\$$15 and tells the delivery person to keep the change as a tip. What percent tip did she give?",
+      "gold": "25",
+      "noplan_pred": "\\(25\\%\\).",
+      "noplan_correct": false,
+      "plan_pred": "25",
+      "plan_correct": true,
+      "llm_response_planning": "25",
+      "llm_response_noplanning": "\\(25\\%\\)."
+    },
+    {
+      "qid": "prealgebra-1034.json",
+      "question": "Dave's sister baked $3$ dozen pies of which a third contained chocolate, a quarter contained marshmallows, a sixth contained cayenne, and one twelfth contained salted soy nuts.  What is the smallest possible number of pies that had none of these ingredients?",
+      "gold": "6",
+      "noplan_pred": "6",
+      "noplan_correct": true,
+      "plan_pred": "24",
+      "plan_correct": false,
+      "llm_response_planning": "24",
+      "llm_response_noplanning": "6"
+    },
+    {
+      "qid": "geometry-100.json",
+      "question": "Two right triangles share a side as follows: [asy]\npair pA, pB, pC, pD, pE;\npA = (0, 0);\npB = pA + 4 * dir(0);\npC = pA + 5 * dir(90);\npD = pB + 4 * dir(90);\npE = (4 * pA + 5 * pD) / 9;\ndraw(pA--pB--pC--pA);\ndraw(pA--pB--pD--pA);\nlabel(\"$A$\", pA, SW);\nlabel(\"$B$\", pB, SE);\nlabel(\"$C$\", pC, NW);\nlabel(\"$D$\", pD, NE);\nlabel(\"$E$\", pE, 2 * N);\nlabel(\"$4$\", pA--pB, S);\nlabel(\"$5$\", pA--pC, W);\nlabel(\"$4$\", pB--pD, E);\ndraw(rightanglemark(pB,pA,pC,8));\ndraw(rightanglemark(pD,pB,pA,8));\n[/asy] What is the area of $\\triangle ABE$?",
+      "gold": "\\frac{40}{9}",
+      "noplan_pred": "\\(\\frac{40}{9}\\)",
+      "noplan_correct": true,
+      "plan_pred": "\\(\\frac{50}{9}\\)",
+      "plan_correct": false,
+      "llm_response_planning": "\\(\\frac{50}{9}\\)",
+      "llm_response_noplanning": "\\(\\frac{40}{9}\\)"
+    },
+    {
+      "qid": "geometry-1004.json",
+      "question": "A regular tetrahedron is a triangular pyramid in which each face is an equilateral triangle.  If the height of a regular tetrahedron is 20 inches then what is the length of each edge of the tetrahedron? Express your answer in simplest radical form.",
+      "gold": "10\\sqrt{6}",
+      "noplan_pred": "\\( 10\\sqrt{6} \\) inches.",
+      "noplan_correct": true,
+      "plan_pred": "\\( 30\\sqrt{2} \\) inches.",
+      "plan_correct": false,
+      "llm_response_planning": "\\( 30\\sqrt{2} \\) inches.",
+      "llm_response_noplanning": "\\( 10\\sqrt{6} \\) inches."
+    },
+    {
+      "qid": "geometry-1002.json",
+      "question": "We have triangle $\\triangle ABC$ where $AB = AC$ and $AD$ is an altitude. Meanwhile, $E$ is a point on $AC$ such that $AB \\parallel DE.$ If $BC = 12$  and the area of $\\triangle ABC$ is $180,$ what is the area of $ABDE$?",
+      "gold": "135",
+      "noplan_pred": "\\(157.5\\)",
+      "noplan_correct": false,
+      "plan_pred": "135",
+      "plan_correct": true,
+      "llm_response_planning": "135",
+      "llm_response_noplanning": "\\(157.5\\)"
+    },
+    {
+      "qid": "intermediate_algebra-1050.json",
+      "question": "Let $a$ and $b$ be nonzero complex numbers such that\n\\[|a| = |b| = |a + b|.\\]Find the sum of all possible values of $\\frac{a}{b}.$",
+      "gold": "-1",
+      "noplan_pred": "\\(0\\)",
+      "noplan_correct": false,
+      "plan_pred": "\\(-1\\)",
+      "plan_correct": true,
+      "llm_response_planning": "\\(-1\\)",
+      "llm_response_noplanning": "\\(0\\)"
+    },
+    {
+      "qid": "intermediate_algebra-1022.json",
+      "question": "The function $f(n)$ satisfies $f(1) = 1$ and $f(2n + 1) = f(n) + 1$ for $n \\ge 0.$  Find $f(15).$",
+      "gold": "4",
+      "noplan_pred": "4",
+      "noplan_correct": true,
+      "plan_pred": "\\( f(15) = 4 \\).",
+      "plan_correct": false,
+      "llm_response_planning": "\\( f(15) = 4 \\).",
+      "llm_response_noplanning": "4"
+    },
+    {
+      "qid": "intermediate_algebra-1003.json",
+      "question": "Simplify\n\\[\\left( \\frac{3 + i \\sqrt{3}}{2} \\right)^8 + \\left( \\frac{3 - i \\sqrt{3}}{2} \\right)^8.\\]",
+      "gold": "-81",
+      "noplan_pred": "\\(-81\\)",
+      "noplan_correct": true,
+      "plan_pred": "\\( 162 \\)",
+      "plan_correct": false,
+      "llm_response_planning": "\\( 162 \\)",
+      "llm_response_noplanning": "\\(-81\\)"
+    },
+    {
+      "qid": "intermediate_algebra-1020.json",
+      "question": "Let $a = 4 + 3i,$ $b = 1 -2i,$ and $c = 8 - 5i.$  The complex number $d$ is such that $a,$ $b,$ $c,$ and $d$ form the vertices of a parallelogram, when plotted in the complex plane.  Enter all possible values of $d,$ separated by commas.",
+      "gold": "-3 + 6i",
+      "noplan_pred": "\\(5 - 10i, 5, -3 + 6i, 11\\)",
+      "noplan_correct": true,
+      "plan_pred": "The possible values of \\( d \\) are: \n\n\\[ 5 - 10i, 11, -3 + 6i \\]",
+      "plan_correct": false,
+      "llm_response_planning": "The possible values of \\( d \\) are: \n\n\\[ 5 - 10i, 11, -3 + 6i \\]",
+      "llm_response_noplanning": "\\(5 - 10i, 5, -3 + 6i, 11\\)"
+    },
+    {
+      "qid": "intermediate_algebra-1007.json",
+      "question": "What is the greatest integer less than or equal to \\[\\frac{3^{100}+2^{100}}{3^{96}+2^{96}}?\\]",
+      "gold": "80",
+      "noplan_pred": "\\(81\\)",
+      "noplan_correct": false,
+      "plan_pred": "\\( \\boxed{80} \\)",
+      "plan_correct": true,
+      "llm_response_planning": "\\( \\boxed{80} \\)",
+      "llm_response_noplanning": "\\(81\\)"
+    },
+    {
+      "qid": "intermediate_algebra-101.json",
+      "question": "Solve\n\\[\\sqrt{x + \\sqrt{3x + 6}} + \\sqrt{x - \\sqrt{3x + 6}} = 6.\\]",
+      "gold": "10",
+      "noplan_pred": "\\(x = 10\\).",
+      "noplan_correct": true,
+      "plan_pred": "\\(x = 15\\)",
+      "plan_correct": false,
+      "llm_response_planning": "\\(x = 15\\)",
+      "llm_response_noplanning": "\\(x = 10\\)."
+    },
+    {
+      "qid": "counting_and_probability-100.json",
+      "question": "Our club has 20 members, 10 boys and 10 girls.  In how many ways can we choose a president and a vice-president if we have no restrictions other than the same person can't hold both offices?",
+      "gold": "380",
+      "noplan_pred": "380",
+      "noplan_correct": true,
+      "plan_pred": "20",
+      "plan_correct": false,
+      "llm_response_planning": "20",
+      "llm_response_noplanning": "380"
+    },
+    {
+      "qid": "counting_and_probability-102.json",
+      "question": "How many prime numbers less than 100 have a units digit of 3?",
+      "gold": "7",
+      "noplan_pred": "8",
+      "noplan_correct": false,
+      "plan_pred": "7",
+      "plan_correct": true,
+      "llm_response_planning": "7",
+      "llm_response_noplanning": "8"
+    },
+    {
+      "qid": "counting_and_probability-1051.json",
+      "question": "Suppose that I have an unlimited supply of identical math books, history books, and physics books.  All are the same size, and I have room on a shelf for 8 books.  In how many ways can I arrange eight books on the shelf if no two books of the same type can be adjacent?",
+      "gold": "384",
+      "noplan_pred": "48",
+      "noplan_correct": false,
+      "plan_pred": "384",
+      "plan_correct": true,
+      "llm_response_planning": "384",
+      "llm_response_noplanning": "48"
+    },
+    {
+      "qid": "precalculus-0.json",
+      "question": "Let $\\mathbf{a}$ and $\\mathbf{b}$ be vectors such that\n\\[\\mathbf{v} = \\operatorname{proj}_{\\mathbf{a}} \\mathbf{v} + \\operatorname{proj}_{\\mathbf{b}} \\mathbf{v}\\]for all vectors $\\mathbf{v}.$  Enter all possible values of $\\mathbf{a} \\cdot \\mathbf{b},$ separated by commas.",
+      "gold": "0",
+      "noplan_pred": "0",
+      "noplan_correct": true,
+      "plan_pred": "\\(0, |\\mathbf{a}|^2\\)",
+      "plan_correct": false,
+      "llm_response_planning": "\\(0, |\\mathbf{a}|^2\\)",
+      "llm_response_noplanning": "0"
+    },
+    {
+      "qid": "precalculus-1064.json",
+      "question": "Suppose $\\cos V = \\frac{2}{3}$ in the diagram below.  What is $TV$?\n\n\n\n[asy]\npair T,U,V;\nV = (0,0);\nT = (0,16);\nU = (17.89,16);\ndraw(V--T--U--V);\ndraw(rightanglemark(V,T,U,23));\nlabel(\"$V$\",V,SW);\nlabel(\"$U$\",U,NE);\nlabel(\"$T$\",T,NW);\nlabel(\"$24$\",(U-V)/2,SE);\n[/asy]",
+      "gold": "16",
+      "noplan_pred": "\\( 16 \\)",
+      "noplan_correct": true,
+      "plan_pred": "\\(\\frac{48\\sqrt{5}}{5}\\)",
+      "plan_correct": false,
+      "llm_response_planning": "\\(\\frac{48\\sqrt{5}}{5}\\)",
+      "llm_response_noplanning": "\\( 16 \\)"
+    },
+    {
+      "qid": "algebra-1049.json",
+      "question": "At constant temperature, the pressure of a sample of gas is inversely proportional to its volume. I have some hydrogen in a 3.67 liter container with a pressure of 4 kPa. If I move all of it to a 1.835 liter container at the same temperature, what will the new pressure be in kPa?",
+      "gold": "8",
+      "noplan_pred": "8",
+      "noplan_correct": true,
+      "plan_pred": "8 kPa",
+      "plan_correct": false,
+      "llm_response_planning": "8 kPa",
+      "llm_response_noplanning": "8"
+    },
+    {
+      "qid": "algebra-1017.json",
+      "question": "Four distinct integers $a$, $b$, $c$ and $d$ have the property that when added in pairs, the sums 10, 18, 19, 20, 21, and 29 are obtained. What are the four integers in increasing order? (place a comma and then a space between each integer)",
+      "gold": "4,6,14,15",
+      "noplan_pred": "3, 7, 12, 19",
+      "noplan_correct": false,
+      "plan_pred": "4, 6, 14, 15",
+      "plan_correct": true,
+      "llm_response_planning": "4, 6, 14, 15",
+      "llm_response_noplanning": "3, 7, 12, 19"
+    }
+  ]
+}
