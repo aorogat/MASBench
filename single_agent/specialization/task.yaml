@@ -1,0 +1,273 @@
+### Utility 
+##No expertise
+#write_pipeline:
+ # description:
+  #  Load the dataset from 'Utility.csv' in the current working directory with the target column named CSRI.
+    
+   # Your job is to create a pipeline that predicts the value of the target column (CSRI) based on the other features in the dataset.
+    #The pipeline should include model training and evaluation on a test set.
+    #Make sure to encode categorical columns.
+
+  #expected_output:
+   # A single Python code block, runnable as-is, that loads 'Utility.csv',
+    #trains a regression models and predicts the value of the target column.
+    #After training, calculate and display the Mean Absolute Error (MAE) of the model on the test set and display the first
+    #10 predicted CSRI values alongside the actual values.
+
+  #agent: engineer
+
+  ##Expertise
+  #write_pipeline:
+ # description: >
+  #  Load the 'Utility.csv' dataset from the current working directory. The dataset contains a target column called CSRI.
+    
+   # Your job is to apply data-science expert workflows:
+    #  1) Clean column names
+     # 2) Drop rows with missing target.
+      #3) Separate target early: y='CSRI', x= remaining columns.
+      #4) On x only:
+       # - Identify numeric vs categorical columns
+        #- Impute missing values (mean for numeric, most_frequent for categorical)
+        #- Encode categoricals (OneHotEncoder)
+        #- Scale numeric features
+      #5) Split 80/20 and train a regression model
+       #  (RandomForestRegressor, GradientBoostingRegressor, or LinearRegression).
+      #6) Evaluate using MAE and print first 10 predicted vs actual values.
+
+  #expected_output: >
+   # A Python script runnable as-is that:
+    # - Loads & cleans 'Utility.csv'
+     #- Uses 'CSRI' as target
+     #- Separates target before detecting feature types
+     #- Preprocesses x (impute, encode, scale)
+     #- Trains a regression model and evaluates MAE
+     #- Prints first 10 predicted vs actual CSRI values
+
+  #agent: engineer
+
+
+### Wifi
+  ##No expertise
+  #write_pipeline:
+ # description: >
+  #  Load the dataset 'Wifi.csv' from the current working directory. The dataset contains a target column TechCenter.
+   # Your job is to create a complete machine learning pipeline to predict the target column value based on other features of the dataset.
+    #The pipeline should:
+     #- Handle both categorical and numerical data
+     #- Apply appropriate encoding and scaling
+     #- Train a classification model on a hold-out training set
+     #- Evaluate the model on the test set using Accuracy, Precision, Recall, F1-score
+  #expected_output: >
+   # A runnable Python code as-is that:
+    # - Loads 'Wifi.csv'
+     #- Trains a classification model
+     #- Evaluates it using Accuracy, Precision, recall, and F1-score
+     #- Prints a classification report and the first 10 predicted and actual TechCenter values
+
+  #agent: no_role
+
+  ##Expertise
+  #write_pipeline:
+ # description: >
+  #  Load the dataset 'Wifi.csv' from the current working directory. The dataset contains a target column called TechCenter.
+   # This target column is indicating if the TechCenter is available (Yes/No).
+    #Only TechCenter must be used as the classification target.
+    
+    #Your job is to apply data-scientist expert practices on the dataset:
+     # 1) Profile the data: inspect column types, summarize distinct values, and identify missing entries.
+      #2) Clean data: standardize column names.
+      #3) Feature engineering: convert 'TechCenter' to numeric labels (e.g., Yes=1 , No=0),
+       #  impute missing values for the target column,
+        # encode categorical features in X using OneHotEncoder
+         #and scale numeric features in X using StandardScaler.
+      #4) Model: split data into train/test (80/20) and train a binary classifier (e.g., andomForestClassifier, LogisticRegression, or GradientBoostingClassifier).
+      #5) Evaluate: compute Accuracy, Precision, Recall, F1-score and print the first 10 predicted values.
+
+  #expected_output: >
+   # A Python code script runnable as-is that:
+    # - Loads 'Wifi.csv'
+     #- Preprocesses the data
+     #- Trains a classification model
+     #- Evaluates it using accuracy, precision, recall, and f1-score
+     #- Prints a classification report and the first 10 predicted and actual 'TechCenter' values
+
+  #agent: no_role
+
+
+### EU-IT
+  ##No Expertise
+  #write_pipeline:
+ # description: >
+  #  Load the dataset 'EU-IT_cleaned.csv' from the current working directory. This dataset has a target column called Position.
+   # Your job is to create a complete machine learning pipeline to predict the target column based on other features of the dataset.
+    
+    #The pipeline should:
+     # - Handle both categorical and numerical data
+      #- Handle missing inputs and invalid values (drop the rows)
+      #- Apply appropriate encoding and scaling
+      #- Train a classification model on a hold-out training set
+      #- Evaluate the model on the test set using Accuracy, Precision, Recall, F1-score
+      #- The classification report MUST be generated exactly using: classification_report(y_test, y_pred, zero_division=0)
+    
+    #Finally, print the classification report and display the first 10 predicted vs actual values.
+
+  #expected_output: >
+   # A Python code runnable as-is that:
+    # - Loads 'EU-IT_cleaned.csv'
+     #- Splits data into features and target (Position)
+     #- Trains and evaluates a multiclass classifier
+     #- Prints classification metrics (Accuracy, Precision, Recall, F1-score)
+     #- Prints classification metrics using: classification_report(y_test, y_pred, zero_division=0)
+     #- Displays the first 10 predictions vs actual values
+
+  #agent: engineer
+
+  ##Expertise
+  #write_pipeline:
+ # description: >
+  #  Load the dataset EU-IT_cleaned.csv from the current working directory. The dataset contains a target column named Position.
+    
+   # Your job is to apply data-scientist expertise practices:
+    # 1) Profile data: verify delimiter, inspect column types, detect categorical vs numerical features, and check for missing values.
+     #2) Clean data: Handle missing inputs and invalid values (drop the rows).
+     #3) Engineer features: impute missing numeric values with the mean, impute categorical values with the most frequent value,
+      #    encode categorical using OneHotEncoder or LabelEncoder, and scale numerical features.
+     #4) Model: train a multiclass classifier (RandomForestClassifier, GradientBoostingClassifier, or multinomial LogisticRegression) to predict the target column.
+     #5) Evaluate: Perform the 80/20 train/test split and then compute Accuracy, Precision, Recall, f1-score and print a classification report.
+      #            Use zero_division=0 in precision/recall/f1 to prevent UndefinedMetricWarning.
+    
+
+  #expected_output: >
+   # A Python code runnable as-is that:
+    # - Loads and clean EU-IT_cleaned.csv with proper delimiter
+     #- Handles both categorical and numerical features via imputation, encoding, and scaling
+     #- Trains a multiclass classifier to predict the target column (Position)
+     #- Performs an 80/20 split
+     #- Prints performance metrics: Accuracy, Precision, Recall, f1-score
+     #- Displays the first 10 predictions vs actual labels
+    #The code should be reproducible, clearly structured, and aligned with professional ML workflow standards.
+
+  #agent: engineer
+
+
+###Yelp
+  ##No expertise
+  #write_pipeline:
+ # description: >
+  #  Load the dataset 'Yelp_Merged.csv' from the current working directory. The dataset has a target column named stars.
+   # The goal is to predict the target column as a multiclass classification task.
+    
+    #The pipeline should:
+     #  - Load the dataset.
+      # - Handle the missing data and drop non-numeric columns such as IDs and date fields
+       #          (e.g., business_id, user_id, review_date)
+       #- Apply appropriate encoding and scaling.
+       #- Train a classification model training set.
+       #- Evaluate the model on the test set using Accuracy, Precision, Recall, F1-score.
+
+  #expected_output: >
+   # A Python code runnable as-is that:
+    # - Loads the dataset 'Yelp_Merged.csv'
+     #- Trains a classification model
+     #- Evaluates it using Accuracy, Precision, recall, and F1-score
+     #- Prints a classification report and the first 10 predicted and actual stars values
+
+  #agent: engineer
+
+  ##Expertise
+  #write_pipeline:
+ # description: >
+  #  Load the dataset 'Yelp_Merged.csv' from the working directory. The dataset contains
+   # a target column named 'stars' (a multiclass classification problem).
+
+    #Apply advanced data-science best practices to build a robust ML pipeline:
+     # 1) Data Profiling:
+      #    - Inspect column names, data types, number of unique values.
+       #   - Detect numeric vs categorical.
+      #2) Data Cleaning:
+       #   - Drop non-predictive identifiers (e.g., business_id, user_id, review_date)
+        #    and timestamp or date fields.
+         # - Convert all numeric-like columns to numeric safely.
+          #- Drop or fix columns that contain missing data.
+          #- Remove rows where the target 'stars' is missing or invalid.
+      #3) Feature Engineering: keep only numeric columns for modeling; impute missing numeric values with the mean; optionally scale features
+      #4) Modeling:
+       #   - Train a multiclass classifier (RandomForestClassifier or GradientBoostingClassifier).
+        #  - Use an 80/20 train/test split.
+      #5) Evaluation:
+       #   - Compute Accuracy, Precision, Recall, and F1-Score
+        #  - Print a full classification report.
+
+  #expected_output: >
+   # A fully executable Python script that:
+    #  - Loads Yelp_Merged.csv.
+     # - Profiles and cleans the dataset following the rules above.
+      #- Builds a ColumnTransformer pipeline with numeric, categorical, and text processing.
+      #- Trains a multiclass classifier to predict stars.
+      #- Outputs accuracy, precision, recall, F1-score, and a classification report.
+
+  #agent: engineer
+
+###Volkert
+
+##No expertise
+#write_pipeline:
+ # description: >
+  #  Load the dataset 'volkert.csv' from the current working directory. The dataset contains a target column named class.
+   # The goal is to predict the target column as a multiclass classification task.
+    
+    #The pipeline should:
+     # - Load the dataset
+      #- Handle missing data and drop non-numeric columns
+      #- Apply appropriate scaling and encoding
+      #- Train a classification model training set.
+      #- Evaluate the model on the test set using Accuracy, Precision, Recall, F1-score.
+    
+
+  #expected_output: >
+   # A Python code runnable as-is that:
+    #    - Loads the dataset 'volkert.csv'
+     #   - Trains a classification model
+      #  - Evaluates it using Accuracy, Precision, recall, and F1-score
+       # - Prints a classification report and the first 10 predicted and actual stars values
+
+  #agent: engineer
+
+
+
+##Expertise
+#write_pipeline:
+ # description: >
+  #  Load the dataset 'volkert.csv' from the current working directory. The dataset
+   # contains a target column named 'class', which must be predicted as a multiclass
+    #classification task.
+
+    #Apply full data-scientist best practices:
+     # 1) Data Profiling:
+      #    - Inspect column names, data types, number of unique values.
+       #   - Detect numeric vs categorical.
+      #2) Data Cleaning:
+       #     - Convert all numeric-like columns to numeric safely.
+        #    - Drop or fix columns that contain missing data.
+         #   - Remove rows where the target 'class' is missing or invalid.
+      #3) Feature Engineering: keep only numeric columns for modeling; impute missing numeric values with the mean; optionally scale features
+      #4) Modeling:
+       #  - Train a multiclass classifier (RandomForestClassifier or GradientBoostingClassifier).
+        # - Use an 80/20 train/test split.
+      #5) Evaluation:
+       #   - Compute Accuracy, Precision, Recall, and F1-Score
+        #  - Print a full classification report.
+  
+
+  #expected_output: >
+   # A fully runnable Python script that:
+    #  - Loads and profiles 'volkert.csv'
+     # - Cleans and prepares the dataset following the steps above
+      #- Builds a ML Pipeline
+      #- Trains a multiclass classifier to predict 'class'
+      #- Produces evaluation metrics (accuracy, precision, recall, F1-score)
+      #- Prints a classification report
+
+  #agent: engineer
+  
+  
