@@ -23,14 +23,28 @@ import json
 import re
 import unicodedata
 from pathlib import Path
+from openai import OpenAI
 from dotenv import load_dotenv
 load_dotenv()
 
 # -----------------------
 # OpenAI Chat API Import
 # -----------------------
-from openai import OpenAI
-client = OpenAI()
+
+
+# # Point OpenAI client to the Groq router
+# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "dummy-key")  # router doesn't check it
+# OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "http://127.0.0.1:5001/v1")
+
+# client = OpenAI(
+#     api_key=OPENAI_API_KEY,
+#     base_url=OPENAI_BASE_URL,
+# )
+
+
+
+
+# client = OpenAI()
 
 # ------------------------------
 # Import Benchmark Implementations
@@ -128,18 +142,19 @@ def call_llm(model, messages):
         except Exception as e:
             return f"LLM_ERROR: Ollama subprocess failed → {e}"
 
-    # -------------------------------
-    # 2) OPENAI MODE (default)
+    # -------------------------------  
+    # 2) OPENAI MODE (default)  
     # -------------------------------
     try:
         response = client.chat.completions.create(
             model=model,
             messages=messages
         )
-        return response.choices[0].message["content"]
+        return response.choices[0].message.content  # ← FIXED
 
     except Exception as e:
         return f"LLM_ERROR: OpenAI API error → {e}"
+
 
 
 # ================================================================
@@ -325,6 +340,9 @@ def run_all_benchmarks_direct():
     Path(CONFIG["results_dir"]).mkdir(parents=True, exist_ok=True)
 
     llm_tag = sanitize_filename_component(str(CONFIG["llm"]))
+    llm_tag = "Groq_gpt_oss_20b" #Use only for groq
+
+
     plan_tag = "planning"
 
     # CSQA
@@ -359,36 +377,36 @@ def run_all_benchmarks_direct():
 # MODEL SWEEP CONFIGURATIONS
 # ================================================================
 MODEL_CONFIGS = [
-    # DeepSeek 7B
-    {
-        "llm": "ollama/deepseek-llm:7b",
-        "planning_llm": "ollama/deepseek-llm:7b",
-        "math_judge_llm": "gpt-4o-mini",
-    },
-    # Llama3.1 8B
-    {
-        "llm": "ollama/llama3.1:8b",
-        "planning_llm": "ollama/llama3.1:8b",
-        "math_judge_llm": "gpt-4o-mini",
-    },
-    # Qwen 7B
-    {
-        "llm": "ollama/qwen:7b",
-        "planning_llm": "ollama/qwen:7b",
-        "math_judge_llm": "gpt-4o-mini",
-    },
-    # Phi-4 14B
-    {
-        "llm": "ollama/phi4:14b",
-        "planning_llm": "ollama/phi4:14b",
-        "math_judge_llm": "gpt-4o-mini",
-    },
-    # GPT-OSS 20B
-    {
-        "llm": "ollama/gpt-oss:20b",
-        "planning_llm": "ollama/gpt-oss:20b",
-        "math_judge_llm": "gpt-4o-mini",
-    },
+    # # DeepSeek 7B
+    # {
+    #     "llm": "ollama/deepseek-llm:7b",
+    #     "planning_llm": "ollama/deepseek-llm:7b",
+    #     "math_judge_llm": "gpt-4o-mini",
+    # },
+    # # Llama3.1 8B
+    # {
+    #     "llm": "ollama/llama3.1:8b",
+    #     "planning_llm": "ollama/llama3.1:8b",
+    #     "math_judge_llm": "gpt-4o-mini",
+    # },
+    # # Qwen 7B
+    # {
+    #     "llm": "ollama/qwen:7b",
+    #     "planning_llm": "ollama/qwen:7b",
+    #     "math_judge_llm": "gpt-4o-mini",
+    # },
+    # # Phi-4 14B
+    # {
+    #     "llm": "ollama/phi4:14b",
+    #     "planning_llm": "ollama/phi4:14b",
+    #     "math_judge_llm": "gpt-4o-mini",
+    # },
+    # # GPT-OSS 20B
+    # {
+    #     "llm": "ollama/gpt-oss:20b",
+    #     "planning_llm": "ollama/gpt-oss:20b",
+    #     "math_judge_llm": "gpt-4o-mini",
+    # },
     # OpenAI Mini
     {
         "llm": "gpt-4o-mini",
@@ -396,11 +414,11 @@ MODEL_CONFIGS = [
         "math_judge_llm": "gpt-4o-mini",
     },
     # OpenAI 4.1
-    {
-        "llm": "gpt-4.1",
-        "planning_llm": "gpt-4.1",
-        "math_judge_llm": "gpt-4.1",
-    },
+    # {
+    #     "llm": "gpt-4.1",
+    #     "planning_llm": "gpt-4.1",
+    #     "math_judge_llm": "gpt-4.1",
+    # },
 ]
 
 # ================================================================

@@ -53,6 +53,8 @@ To make MemoryAgentBench **affordable**, we provide a custom **router server** (
 2. You set:
    ```bash
    export OPENAI_API_BASE="http://localhost:5001/v1"
+   -- Return back
+   export OPENAI_API_BASE="https://api.openai.com/v1"
    ```
 
 3. Run the Router server: From the root folder, run

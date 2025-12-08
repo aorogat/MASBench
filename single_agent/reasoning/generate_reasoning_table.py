@@ -27,7 +27,7 @@ OUTPUT_TIME = os.path.join(CREWAI_DIR, "reasoning_time_table.tex")
 
 MODEL_NAME_MAP = {
     "Groq:gpt:oss:20b": "GPT-OSS-20B",
-    "gpt:oss:20b": "GPT-OSS-20B",
+    "gpt-oss:20b": "GPT-OSS-20B",
     "phi4:14b": "Phi-4-14B",
     "llama3.1:8b": "Llama-3.1-8B",
     "llama3.1:70b": "Llama-3.1-70B",
@@ -146,7 +146,7 @@ def collect_results(*dirs):
 # === MODEL CLASSIFICATION ===
 def is_local_model(llm_name):
     """Classify as local or remote. Special case: gpt:oss is local."""
-    if "gpt:oss" in llm_name.lower():
+    if "gpt:oss" in llm_name.lower() or "gpt-oss" in llm_name.lower():
         return True
     return any(x in llm_name.lower() for x in ["llama", "deepseek", "qwen", "mistral", "phi"])
 
