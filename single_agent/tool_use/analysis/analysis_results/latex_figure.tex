@@ -1,0 +1,113 @@
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+
+% =========================================================
+% (a) Query Length – Top Left
+% =========================================================
+\begin{axis}[
+    name=qlen,
+    ybar,
+    bar width=6pt,
+    width=0.47\columnwidth,
+    height=3.0cm,
+    title={(a) Query Length Distribution},
+    title style={font=\scriptsize, yshift=-2pt},
+    xlabel={\scriptsize Query Length (words)},
+    ylabel={\scriptsize Count},
+    xlabel near ticks,
+    ylabel near ticks,
+    xtick={1,2,3,4,5},
+    xticklabels={0--20,20--40,40--60,60--80,80+},
+    xticklabel style={font=\scriptsize, rotate=40, anchor=east},
+    yticklabel style={font=\scriptsize},
+    ymin=0,
+    ymajorgrids=true,
+    grid style={gray!20},
+    enlarge x limits=0.15,
+    every axis plot/.append style={
+        fill=blue!65!white,
+        draw=black!60
+    },
+    nodes near coords,
+    nodes near coords style={font=\tiny, yshift=1.5pt}
+]
+\addplot coordinates { (1,6) (2,246) (3,458) (4,52) (5,3) };
+\end{axis}
+
+% =========================================================
+% (b) APIs per Tool – Top Right
+% =========================================================
+\begin{axis}[
+    name=apitools,
+    at={(qlen.east)}, anchor=west, xshift=10mm,
+    ybar,
+    bar width=5pt,
+    width=0.47\columnwidth,
+    height=3.0cm,
+    title={(b) API Endpoints per Tool},
+    title style={font=\scriptsize, yshift=-2pt},
+    xlabel={\scriptsize APIs per Tool},
+    ylabel={\scriptsize \# Tools},
+    xlabel near ticks,
+    ylabel near ticks,
+    xtick={1,2,3,4,5,6},
+    xticklabels={1,2--5,6--10,11--20,21--50,50+},
+    xticklabel style={font=\scriptsize, rotate=40, anchor=east},
+    yticklabel style={font=\scriptsize},
+    ymin=0,
+    ymajorgrids=true,
+    grid style={gray!20},
+    enlarge x limits=0.18,
+    every axis plot/.append style={
+        fill=teal!60!white,
+        draw=black!60
+    },
+    nodes near coords,
+    nodes near coords style={font=\tiny, yshift=1.5pt}
+]
+\addplot coordinates { (1,436) (2,182) (3,18) (4,13) (5,8) (6,1) };
+\end{axis}
+
+% =========================================================
+% (c) Categories – FULL WIDTH Bottom
+% =========================================================
+\begin{axis}[
+    at={(qlen.south west)}, anchor=north west, yshift=-18mm,
+    xbar,
+    bar width=4.2pt,
+    width=0.9\columnwidth,
+    height=4.0cm,
+    title={(c) Top API Categories},
+    title style={font=\scriptsize},
+    xlabel={\scriptsize Query Count},
+    xlabel near ticks,
+    symbolic y coords={ Tools,Movies,Finance,Data,Video_Images,Entertainment,Sports,Social,Media,Business },
+    ytick=data,
+    yticklabel style={font=\scriptsize},
+    xticklabel style={font=\scriptsize},
+    xmajorgrids=true,
+    grid style={gray!20},
+    every axis plot/.append style={
+        fill=orange!70!white,
+        draw=black!60
+    },
+    nodes near coords,
+    nodes near coords style={font=\tiny, xshift=4pt}
+]
+\addplot coordinates { (746,Tools) (413,Movies) (275,Finance) (272,Data) (244,Video_Images) (213,Entertainment) (183,Sports) (152,Social) (111,Media) (96,Business) };
+\end{axis}
+
+\end{tikzpicture}
+
+\vspace{-2mm}
+\caption{
+StableToolBench benchmark characteristics:
+(a) most queries are 20--60 words;
+(b) the majority of tools expose only 1--2 endpoints;
+(c) Tools and Movies dominate API categories.
+}
+\label{fig:stabletoolbench-overview}
+\vspace{-3mm}
+\end{figure}
