@@ -1,0 +1,610 @@
+{
+  "system": "LangGraph",
+  "split": "Test_Time_Learning",
+  "session_id": "5",
+  "subtask": "MCC",
+  "category": "TTL",
+  "runtime_sec": 450.63,
+  "questions": [
+    {
+      "question": "What is the population of Venezuela ?",
+      "system_answer": "The population of Venezuela is roughly **28 million people** (about 28.5 million as of the latest estimates).",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What does target heart rate mean ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What currency does Luxembourg use ?",
+      "system_answer": "",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "How long did Rip Van Winkle sleep ?",
+      "system_answer": "Rip Van Winkle slept for **about 20 years**.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Material called linen is made from what plant ?",
+      "system_answer": "Linen is made from the **flax** plant.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What is phenylalanine ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is a group of turkeys called ?",
+      "system_answer": "A group of turkeys is called a **gaggle**.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What are enzymes ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "Why is the sun yellow ?",
+      "system_answer": "The Sun’s surface actually emits a broad, nearly “white” spectrum of light.  Its effective temperature is about 5,800 K, which corresponds to a yellow‑white hue in the visible range.  When that light travels through Earth’s atmosphere, the shorter (blue) wavelengths are scattered by air molecules (Rayleigh scattering) more than the longer (red/yellow) wavelengths.  The result is that the light we see from the Sun is slightly shifted toward the yellow end of the spectrum, so the Sun appears yellow (or pale orange at sunrise/sunset).",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What state is the geographic center of the lower 48 states ?",
+      "system_answer": "The geographic center of the lower 48 states lies in **Kansas** (near Lebanon, Kansas).",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is foot and mouth disease ?",
+      "system_answer": "",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What is sonar ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "When was Thomas Jefferson born ?",
+      "system_answer": "",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is the Ohio state bird ?",
+      "system_answer": "label: 5",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What are the colors of the German flag ?",
+      "system_answer": "The German flag is **black, red, and gold** (the gold is often shown as a yellow stripe).",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "Who won Ms. American in 1989 ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "Where on the body is a mortarboard worn ?",
+      "system_answer": "A mortarboard is worn on the head—specifically on the top of the head.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is the width of a football field ?",
+      "system_answer": "A standard American football field is 160 feet wide, which is about 53 ⅓ yards (≈48.8 meters).",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Who is the Prime Minister of Canada ?",
+      "system_answer": "The current Prime Minister of Canada is **Justin Trudeau**.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the conversion rate between dollars and pounds ?",
+      "system_answer": "",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is fibromyalgia ?",
+      "system_answer": "Fibromyalgia is a chronic disorder characterized by widespread musculoskeletal pain, often accompanied by fatigue, sleep disturbances, and cognitive difficulties (sometimes called “fibro fog”). The exact cause is unknown, but it is thought to involve abnormal processing of pain signals in the brain and nervous system. Symptoms can be triggered or worsened by stress, physical injury, or illness, and they tend to fluctuate over time. Treatment typically focuses on a combination of medication (e.g., pain relievers, antidepressants, or anti‑seizure drugs), physical therapy, exercise, stress‑management techniques, and lifestyle changes to improve sleep and overall well‑being.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What are the spots on dominoes called ?",
+      "system_answer": "The individual dots on a domino are called **pips**.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What city is also known as `` The Gateway to the West '' ?",
+      "system_answer": "St. Louis, Missouri.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "Who discovered x-rays ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "How much does water weigh ?",
+      "system_answer": "Water’s weight is determined by its density, which is about **1 gram per cubic centimeter** (or 1 kg per liter).  \nSo:\n\n- 1 L of water ≈ **1 kg** (≈ 2.2 lb)  \n- 1 gal (US) ≈ **8.34 lb** (≈ 3.78 kg)  \n\nIn short, water weighs roughly 1 kg for every liter you have.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Mercury , what year was it discovered ?",
+      "system_answer": "",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Where do apple snails live ?",
+      "system_answer": "Apple snails are freshwater creatures.  They live in warm‑water bodies such as ponds, lakes, slow‑moving streams, marshes, rice paddies and other still or gently flowing freshwater habitats—especially in tropical and subtropical regions.  Native to South America, they have been introduced to many other parts of the world where similar freshwater environments exist.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is the rainiest place on Earth ?",
+      "system_answer": "The record‑setting spot is **Mawsynram in Meghalaya, India** (often paired with nearby Cherrapunji), which receives the highest average annual rainfall of any place on Earth.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "Who invented the hula hoop ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the longest suspension bridge in the U.S. ?",
+      "system_answer": "",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is plastic made of ?",
+      "system_answer": "",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "How far is it from Denver to Aspen ?",
+      "system_answer": "",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is the criterion for being legally blind ?",
+      "system_answer": "",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "Who invented the instant Polaroid camera ?",
+      "system_answer": "Edwin H. Land invented the instant Polaroid camera.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the distance in miles from the earth to the sun ?",
+      "system_answer": "",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "In which state would you find the Catskill Mountains ?",
+      "system_answer": "The Catskill Mountains are located in **New York**.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is a prism ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "How fast is sound ?",
+      "system_answer": "Sound travels at about **343 m/s (≈1,235 km/h or 767 mph)** in dry air at 20 °C (68 °F).  \n(The speed varies with temperature, humidity, and the medium—roughly 1,480 m/s in water and ~5,960 m/s in steel.)",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What does cc in engines mean ?",
+      "system_answer": "**CC** in engines stands for **cubic centimeters**.  \nIt’s a unit of measurement for the engine’s displacement—the total volume of all the cylinders. For example, a 2,000 cc (or 2 L) engine has a displacement of 2,000 cubic centimeters. The larger the cc rating, the larger the engine’s displacement and typically its power output.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is an ulcer ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is compounded interest ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What does CPR stand for ?",
+      "system_answer": "CPR stands for **Cardiopulmonary Resuscitation**.",
+      "gold_answer": "2",
+      "score": 0
+    },
+    {
+      "question": "What is hybridization ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "How fast is alcohol absorbed ?",
+      "system_answer": "Alcohol is taken up by the body very quickly—most of it enters the bloodstream within the first 30‑90 minutes after you start drinking.  \n\n* **Stomach**: Roughly 20–30 % of the alcohol is absorbed directly through the stomach lining.  \n* **Small intestine**: The bulk of the drink (70–80 %) is absorbed in the small intestine, where the rate is fastest.  \n\nIn practical terms, a typical adult will reach peak blood‑alcohol concentration (BAC) about 30–60 minutes after a standard drink (≈14 g of pure alcohol). The absorption rate can vary with factors such as the drink’s alcohol concentration, whether the stomach is empty or full, body weight, and individual metabolism, but the general rule is that alcohol is absorbed at a rate of roughly 0.1–0.2 g per minute under normal conditions.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Who was the first American to walk in space ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What are pediatricians ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is the sales tax rate in New York ?",
+      "system_answer": "label: 4",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is the money they use in Zambia ?",
+      "system_answer": "The currency used in Zambia is the **Zambian kwacha (ZMW)**.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What is acetic acid ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "When was Lyndon B. Johnson born ?",
+      "system_answer": "label: 4",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "In what spacecraft did U.S. astronaut Alan Shepard make his historic 1961 flight ?",
+      "system_answer": "Alan Shepard flew aboard the **Mercury‑Redstone 3 spacecraft, known as Freedom 7**.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "How cold should a refrigerator be ?",
+      "system_answer": "A refrigerator should be kept at **37–40 °F (3–4 °C)**.  \nThis temperature is cold enough to keep food safe and fresh, but not so cold that it freezes most foods. (For a freezer, aim for 0 °F, or –18 °C.)",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is another astronomic term for the Northern Lights ?",
+      "system_answer": "The Northern Lights are also called the **Aurora Borealis**.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "Where is the Shawnee National Forest ?",
+      "system_answer": "The Shawnee National Forest is located in southern Illinois, United States.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "How much of an apple is water ?",
+      "system_answer": "Apples are very juicy—roughly **84 % of an average apple’s weight is water** (the rest is sugars, fiber, vitamins, minerals, etc.).",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is strep throat ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is poliomyelitis ?",
+      "system_answer": "Poliomyelitis (commonly called polio) is an infectious disease caused by the poliovirus. The virus spreads mainly through contaminated food or water and can invade the nervous system, especially the spinal cord. In most cases it causes no symptoms, but in a small percentage it can lead to muscle weakness or paralysis, often affecting the legs. The disease is preventable with vaccination, and widespread immunization programs have virtually eliminated polio in most parts of the world.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is the temperature at the center of the earth ?",
+      "system_answer": "The temperature at the very center of the Earth (the inner core) is estimated to be on the order of **5,500 °C to 7,000 °C** (about 10,000 °F to 12,600 °F).",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Where is the Lourve ?",
+      "system_answer": "The Louvre is located in Paris, France—specifically on the right‑bank of the Seine in the 1st arrondissement, near the Palais Royal and the Tuileries Garden.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is the longest bone in the human body ?",
+      "system_answer": "The longest bone in the human body is the **femur** (thigh bone).",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What state has the least amount of rain per year ?",
+      "system_answer": "",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is neurology ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is the statue of liberty made of ?",
+      "system_answer": "",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What was W.C. Fields ' real name ?",
+      "system_answer": "W.C. Fields was born William Claude Dukenfield.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is solar wind ?",
+      "system_answer": "**Solar wind** is a continuous stream of charged particles—mostly electrons and protons—ejected from the outer layers of the Sun’s atmosphere (the corona). These particles travel outward through the solar system at speeds ranging from about 300 to 800 km/s (roughly 1–2 million km/h). \n\nKey points:\n\n- **Composition**: Mainly ionized hydrogen (protons) and helium nuclei, with trace amounts of heavier ions and electrons.\n- **Origin**: The Sun’s hot, ionized corona expands into space because its thermal pressure exceeds the Sun’s gravitational pull.\n- **Effects**: Solar wind interacts with planetary magnetospheres, creating auroras, shaping planetary atmospheres, and influencing space weather (e.g., geomagnetic storms that can affect satellites and power grids).\n- **Variability**: Its speed and density vary with the Sun’s 11‑year activity cycle and with solar events such as coronal mass ejections (CMEs) and solar flares.\n\nIn short, solar wind is the Sun’s “solar breeze” that permeates the entire solar system.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What position did Willie Davis play in baseball ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "Who was the abolitionist who led the raid on Harper 's Ferry in 1859 ?",
+      "system_answer": "John Brown.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "Who was the first woman governor in the U.S. ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What are solar cells ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "When was the telephone invented ?",
+      "system_answer": "The telephone was invented in 1876.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is another name for vitamin B1 ?",
+      "system_answer": "",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What is the major fault line near Kentucky ?",
+      "system_answer": "The major fault line that runs through Kentucky is the **New Madrid Fault** (part of the New Madrid Seismic Zone). This fault system lies along the Mississippi River valley and has produced some of the largest earthquakes in U.S. history, including the 1811‑1812 New Madrid earthquakes that affected Kentucky, Tennessee, Missouri, and Arkansas.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "Where is the Savannah River ?",
+      "system_answer": "The Savannah River is a major river in the southeastern United States. It rises in the Blue Ridge Mountains of western North Carolina, flows southward, and forms much of the border between South Carolina and Georgia before emptying into the Atlantic Ocean near the city of Savannah, Georgia.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What city 's newspaper is called `` The Star '' ?",
+      "system_answer": "Adelaide.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What planet has the strongest magnetic field of all the planets ?",
+      "system_answer": "",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is severance pay ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What breed of hunting dog did the Beverly Hillbillies own ?",
+      "system_answer": "",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What is the population of China ?",
+      "system_answer": "",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What are semiconductors ?",
+      "system_answer": "label: 3",
+      "gold_answer": "3",
+      "score": 1
+    },
+    {
+      "question": "What body of water are the Canary Islands in ?",
+      "system_answer": "The Canary Islands lie in the **Atlantic Ocean**.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What does the word fortnight mean ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What monastery was raided by Vikings in the late eighth century ?",
+      "system_answer": "The monastery raided by Vikings in the late eighth century was the **Monastery of Lindisfarne** (also known as Holy Island) in Northumberland, England.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What did Edward Binney and Howard Smith invent in 1903 ?",
+      "system_answer": "",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "When was President Kennedy shot ?",
+      "system_answer": "",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is a thermometer ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is the earth 's diameter ?",
+      "system_answer": "The Earth’s diameter is about **12,742 km** (approximately 7,918 miles) at the equator.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is mold ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What does `` Sitting Shiva '' mean ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is desktop publishing ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "Who discovered radium ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is mad cow disease ?",
+      "system_answer": "Mad cow disease, also known as bovine spongiform encephalopathy (BSE), is a fatal neurodegenerative disease that affects cattle. It is caused by an abnormal prion protein that accumulates in the brain, leading to spongy degeneration of brain tissue. Infected animals develop neurological symptoms such as loss of coordination, abnormal behavior, and eventually death. The disease can be transmitted to humans through consumption of infected beef products, causing a variant form of Creutzfeldt‑Jakob disease, a rare and fatal brain disorder. Control measures include strict feed bans, surveillance, and culling of infected or at‑risk animals.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is the location of Lake Champlain ?",
+      "system_answer": "Lake Champlain lies in the northeastern United States, stretching between Vermont and New York and extending northward into Quebec, Canada.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is the proper name for a female walrus ?",
+      "system_answer": "A female walrus is called a **cow**.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "When was Rosa Parks born ?",
+      "system_answer": "",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "When were William Shakespeare 's twins born ?",
+      "system_answer": "They were born in 1585.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is natural gas composed of ?",
+      "system_answer": "Natural gas is a mixture of hydrocarbons, with the vast majority being methane (CH₄).  It also contains small amounts of ethane, propane, butane, and heavier hydrocarbons, as well as trace gases such as nitrogen, carbon dioxide, hydrogen sulfide, and sometimes small amounts of other gases.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "How tall is the Gateway Arch in St. Louis , MO ?",
+      "system_answer": "The Gateway Arch in St. Louis, Missouri, stands **630 feet tall** (about **192 meters**).",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Who was the first governor of Alaska ?",
+      "system_answer": "The first governor of Alaska was **William A. Egan**.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "When was the first Wal-Mart store opened ?",
+      "system_answer": "",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What New York City structure is also known as the Twin Towers ?",
+      "system_answer": "",
+      "gold_answer": "5",
+      "score": 0
+    }
+  ]
+}

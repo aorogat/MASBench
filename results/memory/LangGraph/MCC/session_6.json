@@ -1,0 +1,610 @@
+{
+  "system": "LangGraph",
+  "split": "Test_Time_Learning",
+  "session_id": "6",
+  "subtask": "MCC",
+  "category": "TTL",
+  "runtime_sec": 437.48,
+  "questions": [
+    {
+      "question": "What is the population of Venezuela ?",
+      "system_answer": "The population of Venezuela is roughly **28 million people** (about 28.5 million as of the latest estimates in 2023).",
+      "gold_answer": "33",
+      "score": 0
+    },
+    {
+      "question": "What does target heart rate mean ?",
+      "system_answer": "**Target heart rate** is the range of heart‑beat speeds you aim for while exercising to get the most benefit for your cardiovascular fitness and health.  \n\n- **Why it matters** – Working out at a heart rate that’s too low won’t challenge your heart enough, while a rate that’s too high can be unsafe or lead to over‑exertion.  \n- **How it’s calculated** –  \n  1. Estimate your maximum heart rate: **220 – your age** (e.g., a 30‑year‑old → 190 beats per minute).  \n  2. Choose a target zone, usually 50–85 % of that maximum.  \n     * 50–60 %: light‑to‑moderate activity (e.g., brisk walking).  \n     * 60–70 %: moderate intensity (e.g., jogging).  \n     * 70–80 %: vigorous intensity (e.g., running).  \n     * 80–85 %: very vigorous, often used for short bursts or interval training.  \n- **How to monitor** – Use a heart‑rate monitor, smartwatch, or manually check your pulse (e.g., count beats for 15 seconds and multiply by 4).  \n\nIn short, the target heart rate is the “sweet spot” for your heart during exercise, helping you train safely and effectively.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What currency does Luxembourg use ?",
+      "system_answer": "label: 32",
+      "gold_answer": "32",
+      "score": 0
+    },
+    {
+      "question": "How long did Rip Van Winkle sleep ?",
+      "system_answer": "",
+      "gold_answer": "18",
+      "score": 0
+    },
+    {
+      "question": "Material called linen is made from what plant ?",
+      "system_answer": "label: 17",
+      "gold_answer": "17",
+      "score": 1
+    },
+    {
+      "question": "What is phenylalanine ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is a group of turkeys called ?",
+      "system_answer": "A group of turkeys is called a **gaggle**.",
+      "gold_answer": "16",
+      "score": 0
+    },
+    {
+      "question": "What are enzymes ?",
+      "system_answer": "Enzymes are biological molecules—typically proteins—that act as catalysts to accelerate chemical reactions in living organisms. They lower the activation energy required for a reaction, allowing processes such as digestion, metabolism, DNA replication, and many other cellular functions to occur efficiently and at the temperatures and conditions found in cells. Each enzyme is specific to a particular substrate or set of substrates and can be regulated by various factors (pH, temperature, inhibitors, activators, etc.).",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "Why is the sun yellow ?",
+      "system_answer": "The Sun isn’t actually yellow – it emits a broad, nearly “white” spectrum of light.  \nWhat makes it look yellow to us on Earth is the way that light travels through our atmosphere.\n\n1. **Rayleigh scattering** – The shorter‑wavelength blue and violet photons are scattered in all directions by the molecules and small particles in the air.  \n2. **Transmission of longer wavelengths** – The longer‑wavelength yellow, orange, and red photons pass through the atmosphere with less scattering, so they dominate the light that reaches our eyes.  \n3. **Human eye sensitivity** – Our eyes are most sensitive to yellow‑green light, so the Sun’s white light, after being filtered by the atmosphere, is perceived as yellow.\n\nAt sunrise or sunset the Sun’s light must travel through even more atmosphere, scattering out most of the blue and leaving a reddish‑orange hue. In space, where there is no atmosphere to scatter the light, the Sun appears white.",
+      "gold_answer": "43",
+      "score": 0
+    },
+    {
+      "question": "What state is the geographic center of the lower 48 states ?",
+      "system_answer": "The geographic center of the lower 48 states lies in **Kansas** (near Lebanon, Kansas).",
+      "gold_answer": "45",
+      "score": 0
+    },
+    {
+      "question": "What is foot and mouth disease ?",
+      "system_answer": "Foot‑and‑mouth disease (FMD) is a highly contagious viral illness that affects cloven‑hooved animals such as cattle, pigs, sheep, goats, and deer. The virus causes fever, blisters (or “mouths”) in the mouth and on the tongue, and vesicles (blisters) on the feet and around the hooves. Infected animals can spread the disease through direct contact, airborne droplets, contaminated feed, water, or equipment. While the disease is usually mild in adult animals, it can cause severe economic losses in livestock production due to decreased weight gain, milk production, and reproductive performance, as well as trade restrictions. The virus is not transmissible to humans, but it can be carried by people, animals, and objects, so strict biosecurity measures are essential to control outbreaks.",
+      "gold_answer": "7",
+      "score": 0
+    },
+    {
+      "question": "What is sonar ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "When was Thomas Jefferson born ?",
+      "system_answer": "Thomas Jefferson was born on **April 13, 1743**.",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "What is the Ohio state bird ?",
+      "system_answer": "The Ohio state bird is the **Northern Cardinal**.",
+      "gold_answer": "16",
+      "score": 0
+    },
+    {
+      "question": "What are the colors of the German flag ?",
+      "system_answer": "The German flag consists of three horizontal stripes in the colors **black, red, and gold (yellow)**.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "Who won Ms. American in 1989 ?",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "Where on the body is a mortarboard worn ?",
+      "system_answer": "A mortarboard is worn on the head—specifically, it sits on top of the skull.",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What is the width of a football field ?",
+      "system_answer": "A standard American football field is 160 feet wide, which is about 53.3 yards (≈48.8 meters).",
+      "gold_answer": "10",
+      "score": 0
+    },
+    {
+      "question": "Who is the Prime Minister of Canada ?",
+      "system_answer": "The current Prime Minister of Canada is **Justin Trudeau**.",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "What is the conversion rate between dollars and pounds ?",
+      "system_answer": "The rate fluctuates daily, but as of late 2025 it’s roughly **1 USD ≈ 0.78 GBP** (about £0.78 for every $1).  For the most accurate, up‑to‑date figure check a reliable currency‑converter site or your bank.",
+      "gold_answer": "34",
+      "score": 0
+    },
+    {
+      "question": "What is fibromyalgia ?",
+      "system_answer": "Fibromyalgia is a chronic disorder characterized by widespread musculoskeletal pain, fatigue, sleep disturbances, and often tender points on the body. People with fibromyalgia may also experience headaches, irritable bowel syndrome, mood swings, and difficulty concentrating (sometimes called “fibro fog”). The exact cause is unknown, but it is thought to involve abnormal pain processing in the brain and nervous system, possibly triggered by stress, injury, or genetics. Treatment typically focuses on a combination of medication, physical therapy, exercise, stress‑management techniques, and lifestyle changes to help reduce symptoms and improve quality of life.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What are the spots on dominoes called ?",
+      "system_answer": "",
+      "gold_answer": "19",
+      "score": 0
+    },
+    {
+      "question": "What city is also known as `` The Gateway to the West '' ?",
+      "system_answer": "St. Louis, Missouri.",
+      "gold_answer": "36",
+      "score": 0
+    },
+    {
+      "question": "Who discovered x-rays ?",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "How much does water weigh ?",
+      "system_answer": "A standard unit of water is about 1 kg per liter.  \n- 1 liter of water ≈ 1 kg (≈ 2.2 lb)  \n- 1 gallon of water ≈ 8.34 lb (≈ 3.78 kg)  \n- 1 m³ of water ≈ 1 000 kg (≈ 2 204 lb)",
+      "gold_answer": "39",
+      "score": 0
+    },
+    {
+      "question": "Mercury , what year was it discovered ?",
+      "system_answer": "Mercury has been known since antiquity—both the planet and the element were observed by ancient civilizations, so there isn’t a single “discovery” year.",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "Where do apple snails live ?",
+      "system_answer": "Apple snails are freshwater creatures.  They’re found in warm‑climate ponds, lakes, slow‑moving rivers, canals, rice paddies and other still or gently flowing freshwater habitats.  Native to Central and South America, they’ve since been introduced worldwide and are also common in aquarium settings.",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What is the rainiest place on Earth ?",
+      "system_answer": "",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "Who invented the hula hoop ?",
+      "system_answer": "The hula‑hoop was invented by Fred Henry, a toy designer at Wham‑O, in 1958.",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "What is the longest suspension bridge in the U.S. ?",
+      "system_answer": "The longest suspension bridge in the United States is the **Verrazzano‑Narrows Bridge** in New York City. Its main span measures 4,260 feet (1,298 meters), which is longer than any other U.S. suspension bridge (the Golden Gate Bridge follows with a 4,200‑foot span).",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What is plastic made of ?",
+      "system_answer": "Plastic is a synthetic material made from long‑chain polymers—essentially large molecules composed of repeating units.  Most common plastics are derived from petrochemicals (oil or natural gas) that are processed into basic monomers such as ethylene, propylene, vinyl chloride, or styrene.  These monomers are polymerized (often with catalysts and heat) to form polymers like polyethylene, polypropylene, PVC, PET, ABS, etc.  The resulting polymer is then molded, extruded, or otherwise shaped into the plastic products we use every day.",
+      "gold_answer": "42",
+      "score": 0
+    },
+    {
+      "question": "How far is it from Denver to Aspen ?",
+      "system_answer": "The drive from Denver to Aspen is roughly **200 miles** (about 320 km).",
+      "gold_answer": "10",
+      "score": 0
+    },
+    {
+      "question": "What is the criterion for being legally blind ?",
+      "system_answer": "Legally blind means that a person’s vision is so impaired that they are considered “blind” for the purposes of disability benefits, accommodations, and legal definitions, even if they are not completely blind.  \nIn the United States the standard (set by the Social Security Administration and used by most state agencies) is:\n\n| Criterion | Description |\n|-----------|-------------|\n| **Visual acuity** | 20/200 or worse in the better eye, even with the best possible correction (glasses or contact lenses). |\n| **Visual field** | A visual field of 20 degrees or less (i.e., a severe tunnel‑vision loss). |\n\nIf either of these conditions is met, the person is considered legally blind.  \n\nOther countries may use slightly different thresholds (e.g., 20/400 in the UK, 20/200 in Canada), but the general idea is the same: a significant loss of visual acuity or field that limits daily functioning.",
+      "gold_answer": "6",
+      "score": 0
+    },
+    {
+      "question": "Who invented the instant Polaroid camera ?",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "What is the distance in miles from the earth to the sun ?",
+      "system_answer": "The average distance from the Earth to the Sun is about **93 million miles** (≈149.6 million km).",
+      "gold_answer": "10",
+      "score": 0
+    },
+    {
+      "question": "In which state would you find the Catskill Mountains ?",
+      "system_answer": "The Catskill Mountains are located in the state of **New York**.",
+      "gold_answer": "45",
+      "score": 0
+    },
+    {
+      "question": "What is a prism ?",
+      "system_answer": "A prism is a solid, usually transparent, with at least two flat, polished surfaces that are not parallel to each other. When light enters a prism, it is refracted (bent) at each interface, and because the surfaces are angled, the light emerges at a different direction. This refraction causes the light to spread out into its component colors (spectrum) if the prism is made of a material with a wavelength‑dependent refractive index (like glass or clear plastic). In optics, prisms are used for dispersion, beam steering, and as basic elements in devices such as spectrometers, binoculars, and cameras.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "How fast is sound ?",
+      "system_answer": "",
+      "gold_answer": "15",
+      "score": 0
+    },
+    {
+      "question": "What does cc in engines mean ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is an ulcer ?",
+      "system_answer": "An ulcer is a sore that develops on the lining of an organ—most commonly the stomach (gastric ulcer) or the upper part of the small intestine (duodenal ulcer). It occurs when the protective mucus layer is damaged, allowing stomach acid to erode the tissue, leading to pain, bleeding, and sometimes complications if left untreated. Ulcers can be caused by factors such as Helicobacter pylori infection, prolonged use of non‑steroidal anti‑inflammatory drugs (NSAIDs), stress, smoking, or excessive alcohol consumption. Treatment typically involves medications to reduce stomach acid, antibiotics if H. pylori is present, and lifestyle changes.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is compounded interest ?",
+      "system_answer": "**Compound interest** is the process of earning interest on both the original amount of money (the principal) and on the interest that has previously accumulated. In other words, the interest is “compounded” or added to the principal, so that the next period’s interest is calculated on a larger base.\n\nMathematically, the future value \\(A\\) of an investment after \\(n\\) compounding periods at an interest rate \\(r\\) per period is:\n\n\\[\nA = P \\times (1 + r)^n\n\\]\n\nwhere:\n- \\(P\\) = initial principal\n- \\(r\\) = interest rate per compounding period (expressed as a decimal)\n- \\(n\\) = number of compounding periods\n\nThe key idea is that the interest itself earns interest over time, leading to exponential growth of the investment. This is in contrast to simple interest, where interest is calculated only on the original principal.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What does CPR stand for ?",
+      "system_answer": "37",
+      "gold_answer": "37",
+      "score": 1
+    },
+    {
+      "question": "What is hybridization ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "How fast is alcohol absorbed ?",
+      "system_answer": "Alcohol is absorbed very quickly once it reaches the stomach and small intestine.  \n- **Typical timing:** A standard drink (≈ 14 g of pure alcohol) will raise blood‑alcohol levels to a peak in about **30–90 minutes** after consumption.  \n- **Absorption rate:** Roughly **0.1 g of alcohol per minute** (about 6 g per hour) is a common estimate, though the exact rate can vary with factors such as food in the stomach, body weight, and drinking speed.  \n\nSo, in short, alcohol is absorbed rapidly—most of it is in the bloodstream within the first hour, with peak levels usually reached within the first 30–90 minutes.",
+      "gold_answer": "15",
+      "score": 0
+    },
+    {
+      "question": "Who was the first American to walk in space ?",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "What are pediatricians ?",
+      "system_answer": "Pediatricians are medical doctors who specialize in the health care of infants, children, and adolescents. They diagnose and treat a wide range of conditions—from common colds and injuries to chronic diseases—while also providing preventive care such as vaccinations, growth monitoring, and health education. Pediatricians work in hospitals, clinics, and private practices, and they often collaborate with parents, schools, and other health professionals to support a child’s overall well‑being.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the sales tax rate in New York ?",
+      "system_answer": "The base state sales‑tax rate in New York is **4 %**.  \nIn addition, most cities, counties, and special districts impose their own local sales‑taxes, so the **combined rate** you actually pay varies by location:\n\n| Location | Combined rate (state + local) |\n|----------|------------------------------|\n| New York City | ~8.875 % |\n| Long Island (NYC suburbs) | 8.75 % |\n| Buffalo & Rochester | 8.75 % |\n| Albany & surrounding counties | 8.75 % |\n| Other parts of the state | 8.0 % – 8.75 % (depending on local add‑ons) |\n\nIf you’re looking for the **state‑wide** rate, it’s 4 %. If you need the exact rate for a specific city or county, you’ll have to add that locality’s local tax to the 4 %.",
+      "gold_answer": "33",
+      "score": 0
+    },
+    {
+      "question": "What is the money they use in Zambia ?",
+      "system_answer": "The currency used in Zambia is the **Zambian kwacha (ZMW)**.",
+      "gold_answer": "32",
+      "score": 0
+    },
+    {
+      "question": "What is acetic acid ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "When was Lyndon B. Johnson born ?",
+      "system_answer": "Lyndon B. Johnson was born on **August 27, 1908**.",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "In what spacecraft did U.S. astronaut Alan Shepard make his historic 1961 flight ?",
+      "system_answer": "Alan Shepard’s historic 1961 flight was aboard the **Mercury spacecraft “Freedom 7.”**",
+      "gold_answer": "44",
+      "score": 0
+    },
+    {
+      "question": "How cold should a refrigerator be ?",
+      "system_answer": "A refrigerator should be kept at **40 °F (4 °C) or lower**.  \nThis temperature keeps food safely chilled, slows bacterial growth, and prevents spoilage.  \n(For reference, a freezer should be set at 0 °F (–18 °C).)",
+      "gold_answer": "2",
+      "score": 0
+    },
+    {
+      "question": "What is another astronomic term for the Northern Lights ?",
+      "system_answer": "The Northern Lights are also called the **Aurora Borealis**.",
+      "gold_answer": "19",
+      "score": 0
+    },
+    {
+      "question": "Where is the Shawnee National Forest ?",
+      "system_answer": "The Shawnee National Forest is located in southern Illinois, United States.",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "How much of an apple is water ?",
+      "system_answer": "An average apple is made up of roughly **84 % water** (the rest is sugars, fiber, vitamins, minerals, etc.).",
+      "gold_answer": "9",
+      "score": 0
+    },
+    {
+      "question": "What is strep throat ?",
+      "system_answer": "**Strep throat** is a bacterial infection of the throat and tonsils caused by *Streptococcus pyogenes* (group A streptococcus). It is characterized by:\n\n- Sudden onset of sore throat\n- Painful swallowing\n- Red, swollen tonsils (often with white patches or streaks of pus)\n- Fever, headache, and body aches\n- Swollen lymph nodes in the neck\n- Sometimes a rash (scarlet fever)\n\nIt is spread through respiratory droplets or by touching contaminated surfaces. Diagnosis is usually confirmed with a rapid strep test or throat culture. Treatment involves antibiotics (typically penicillin or amoxicillin) to reduce symptoms, prevent complications, and limit spread. Rest, fluids, and over‑the‑counter pain relievers help relieve discomfort.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is poliomyelitis ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the temperature at the center of the earth ?",
+      "system_answer": "label: 2",
+      "gold_answer": "2",
+      "score": 1
+    },
+    {
+      "question": "Where is the Lourve ?",
+      "system_answer": "The Louvre is in Paris, France. It sits on the right‑bank of the Seine in the 1st arrondissement, near the Palais Royal and the Tuileries Garden.",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What is the longest bone in the human body ?",
+      "system_answer": "The longest bone in the human body is the **femur** (thigh bone).",
+      "gold_answer": "13",
+      "score": 0
+    },
+    {
+      "question": "What state has the least amount of rain per year ?",
+      "system_answer": "The U.S. state with the lowest average annual rainfall is **Nevada**.",
+      "gold_answer": "45",
+      "score": 0
+    },
+    {
+      "question": "What is neurology ?",
+      "system_answer": "Neurology is the branch of medicine that focuses on the nervous system—its structure, function, disorders, and diseases. It deals with conditions affecting the brain, spinal cord, peripheral nerves, and muscles, and it encompasses both clinical practice (diagnosing and treating neurological disorders) and research into the biology and pathology of the nervous system.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the statue of liberty made of ?",
+      "system_answer": "The Statue of Liberty’s outer skin is made of **copper**—thin sheets hammered into the statue’s shape.  Inside, a skeletal framework of **steel (originally iron, later reinforced with steel)** supports the copper cladding.",
+      "gold_answer": "42",
+      "score": 0
+    },
+    {
+      "question": "What was W.C. Fields ' real name ?",
+      "system_answer": "W.C. Fields’ birth name was **William Claude Dukenfield**.",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "What is solar wind ?",
+      "system_answer": "**Solar wind** is a continuous outflow of charged particles—primarily electrons and protons—from the Sun’s outer atmosphere (the corona).  \n- It streams outward at speeds ranging from about 300 km/s in the slow solar wind to over 800 km/s in the fast wind.  \n- The particles carry the Sun’s magnetic field with them, forming the heliospheric magnetic field that permeates the entire solar system.  \n- When the solar wind encounters a planet’s magnetic field or atmosphere, it can compress the magnetosphere, generate auroras, and drive space‑weather effects such as geomagnetic storms.  \n- Solar wind is a key driver of the dynamic environment of the heliosphere and influences everything from satellite operations to radio communications on Earth.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What position did Willie Davis play in baseball ?",
+      "system_answer": "Willie Davis was a **catcher** in Major League Baseball.",
+      "gold_answer": "14",
+      "score": 0
+    },
+    {
+      "question": "Who was the abolitionist who led the raid on Harper 's Ferry in 1859 ?",
+      "system_answer": "The raid on Harpers Ferry in 1859 was led by the abolitionist **John Brown**.",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "Who was the first woman governor in the U.S. ?",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "What are solar cells ?",
+      "system_answer": "Solar cells, also called photovoltaic (PV) cells, are semiconductor devices that convert sunlight directly into electricity. When photons from the sun hit the cell, they excite electrons in the semiconductor material (usually silicon), creating electron‑hole pairs. An internal electric field—created by doping the semiconductor with different impurities—drives the electrons toward one side and the holes toward the other, producing a flow of electric current. By connecting many cells in series or parallel, they form solar panels that can power homes, businesses, or feed electricity into the grid.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "When was the telephone invented ?",
+      "system_answer": "",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "What is another name for vitamin B1 ?",
+      "system_answer": "",
+      "gold_answer": "19",
+      "score": 0
+    },
+    {
+      "question": "What is the major fault line near Kentucky ?",
+      "system_answer": "The major fault line that runs through the region near Kentucky is the **New Madrid fault zone** (often simply called the New Madrid fault). It is part of the larger New Madrid Seismic Zone that stretches across the Mississippi River valley and has produced some of the most powerful earthquakes in U.S. history.",
+      "gold_answer": "6",
+      "score": 0
+    },
+    {
+      "question": "Where is the Savannah River ?",
+      "system_answer": "The Savannah River is a major river in the southeastern United States. It rises in the Blue Ridge Mountains of western North Carolina, flows southward, and forms much of the border between South Carolina and Georgia before emptying into the Atlantic Ocean near the city of Savannah, Georgia.",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What city 's newspaper is called `` The Star '' ?",
+      "system_answer": "",
+      "gold_answer": "36",
+      "score": 0
+    },
+    {
+      "question": "What planet has the strongest magnetic field of all the planets ?",
+      "system_answer": "",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What is severance pay ?",
+      "system_answer": "**Severance pay** is a financial benefit that an employer may provide to an employee when the employment relationship is terminated—whether the employee is laid off, let go, or resigns under certain circumstances. It is intended to help the employee transition to new employment or to cover living expenses while they search for a new job.\n\nKey points:\n\n| Feature | Typical Details |\n|---------|-----------------|\n| **Purpose** | Cushion the employee’s loss of income and provide a smoother transition. |\n| **Eligibility** | Often tied to length of service, position, or a specific termination reason (e.g., company downsizing). |\n| **Amount** | Can be a fixed sum, a multiple of the employee’s regular salary (e.g., one or two weeks’ pay per year of service), or a negotiated figure. |\n| **Duration** | Usually covers a set period (e.g., a few weeks or months) and may be paid in a lump sum or installments. |\n| **Taxation** | In many jurisdictions, severance pay is treated as taxable income. |\n| **Legal Requirements** | Some countries or states have laws mandating severance under certain conditions; otherwise it’s often a contractual or discretionary benefit. |\n| **Other Benefits** | May be bundled with continued health insurance, outplacement services, or other support. |\n\nIn short, severance pay is a form of compensation that helps employees manage the financial impact of losing their job.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What breed of hunting dog did the Beverly Hillbillies own ?",
+      "system_answer": "",
+      "gold_answer": "16",
+      "score": 0
+    },
+    {
+      "question": "What is the population of China ?",
+      "system_answer": "label: 33",
+      "gold_answer": "33",
+      "score": 0
+    },
+    {
+      "question": "What are semiconductors ?",
+      "system_answer": "Semiconductors are materials whose electrical conductivity lies between that of conductors (like metals) and insulators (like glass). They can conduct electricity under certain conditions—such as when they are doped with impurities, exposed to light, or subjected to an electric field—but not as readily as metals. This controllable conductivity makes them essential for modern electronics: they form the basis of diodes, transistors, integrated circuits, solar cells, and many other devices that power computers, smartphones, LED lighting, and countless other technologies.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What body of water are the Canary Islands in ?",
+      "system_answer": "The Canary Islands lie in the **Atlantic Ocean** (specifically the North Atlantic).",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What does the word fortnight mean ?",
+      "system_answer": "A **fortnight** is a period of **two weeks** (14 days). It’s a common term in British English for a fourteen‑day span.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What monastery was raided by Vikings in the late eighth century ?",
+      "system_answer": "The raid was on the **monastery of Lindisfarne** (also known as Holy Island) in 793 AD.",
+      "gold_answer": "6",
+      "score": 0
+    },
+    {
+      "question": "What did Edward Binney and Howard Smith invent in 1903 ?",
+      "system_answer": "Edward Binney and Howard Smith invented the first automatic telephone exchange (the Binney‑Smith automatic switching system) in 1903.",
+      "gold_answer": "6",
+      "score": 0
+    },
+    {
+      "question": "When was President Kennedy shot ?",
+      "system_answer": "President John F. Kennedy was shot on **November 22, 1963**.",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "What is a thermometer ?",
+      "system_answer": "A thermometer is a device that measures temperature, typically by using a material that expands or contracts with heat (such as mercury, alcohol, or a gas) or by detecting changes in electrical resistance or voltage. The change is displayed on a scale, allowing the user to read the temperature of a substance or environment.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the earth 's diameter ?",
+      "system_answer": "",
+      "gold_answer": "10",
+      "score": 0
+    },
+    {
+      "question": "What is mold ?",
+      "system_answer": "**Mold** is a type of fungus that grows in the form of multicellular filaments called hyphae. It thrives in damp, warm, and poorly ventilated environments, feeding on organic materials such as wood, paper, food, and even skin. Mold reproduces by releasing spores that can spread through the air, water, or on surfaces. While some molds are harmless or even useful (e.g., in cheese or bioremediation), many can cause health problems—especially respiratory issues, allergies, and skin irritation—and can damage building materials and food.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What does `` Sitting Shiva '' mean ?",
+      "system_answer": "**Sitting Shiva** is a Jewish mourning custom that marks the first week after a death.  \nDuring this period, close relatives of the deceased gather in a home, sit on low stools or cushions, and observe a set of rituals—such as refraining from work, turning off lights, and avoiding celebratory activities—to honor the dead and support one another in grief. The term “Shiva” comes from the Hebrew word for “seven,” reflecting the seven‑day duration of the observance.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is desktop publishing ?",
+      "system_answer": "Desktop publishing is the process of using computer software to design, layout, and produce documents that combine text, images, and other visual elements—usually for printing or digital distribution. It allows individuals and businesses to create professional‑looking flyers, brochures, books, newsletters, and more without needing a traditional typesetting or printing studio. The key components are a word processor or layout program (like Adobe InDesign, QuarkXPress, or Microsoft Publisher), a graphics editor (such as Adobe Photoshop or Illustrator), and a printer or publishing service that can handle the final output.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "Who discovered radium ?",
+      "system_answer": "Radium was discovered by Marie Curie (along with her husband Pierre Curie) in 1898.",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "What is mad cow disease ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the location of Lake Champlain ?",
+      "system_answer": "Lake Champlain lies in the northeastern United States, forming a long, narrow lake that runs between Vermont and New York and extends northward into Quebec, Canada.",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What is the proper name for a female walrus ?",
+      "system_answer": "A female walrus is called a **cow**.",
+      "gold_answer": "16",
+      "score": 0
+    },
+    {
+      "question": "When was Rosa Parks born ?",
+      "system_answer": "label: 38",
+      "gold_answer": "38",
+      "score": 1
+    },
+    {
+      "question": "When were William Shakespeare 's twins born ?",
+      "system_answer": "William Shakespeare didn’t have any twins—he had a son (Henry) and a daughter (Judith), but no twins were born.",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "What is natural gas composed of ?",
+      "system_answer": "Natural gas is a fossil‑fuel gas that is mainly a mixture of hydrocarbons.  The bulk of it is methane (CH₄) – usually 70 % to 90 % of the volume – with smaller amounts of ethane (C₂H₆), propane (C₃H₈), butanes (C₄H₁₀) and higher‑molecular‑weight hydrocarbons.  Trace gases such as carbon dioxide (CO₂), nitrogen (N₂), hydrogen sulfide (H₂S), and sometimes small amounts of water vapor, helium, or other gases are also present.  The exact composition varies with the source field, but methane is by far the dominant component.",
+      "gold_answer": "42",
+      "score": 0
+    },
+    {
+      "question": "How tall is the Gateway Arch in St. Louis , MO ?",
+      "system_answer": "The Gateway Arch in St. Louis, Missouri, stands **630 feet tall** (about **192 meters**).",
+      "gold_answer": "10",
+      "score": 0
+    },
+    {
+      "question": "Who was the first governor of Alaska ?",
+      "system_answer": "label: 12",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "When was the first Wal-Mart store opened ?",
+      "system_answer": "",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "What New York City structure is also known as the Twin Towers ?",
+      "system_answer": "The Twin Towers were the original **World Trade Center** towers in New York City.",
+      "gold_answer": "24",
+      "score": 0
+    }
+  ]
+}

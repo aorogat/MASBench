@@ -52,12 +52,28 @@ os.environ["OPENAI_API_KEY"] = API_KEY
 def build_agno_agent(db_path: str):
     """Create an Agno agent with automatic memory enabled."""
     db = SqliteDb(db_file=db_path)
+    # agent = Agent(
+    #     db=db,
+    #     model=OpenAIChat(id=agno_llm_model),
+    #     enable_user_memories=True,       # automatic memory management
+    #     add_memories_to_context=True,    # include past memories in context
+    # )
+
+    model = OpenAIChat(
+        id=agno_llm_model,
+        api_key=API_KEY,
+        base_url="http://localhost:5001/v1",   # 🔥 REQUIRED to forward requests to Groq, remove to use openai
+        temperature=llm_temperature,
+        max_tokens=llm_max_tokens,
+    )
+
     agent = Agent(
         db=db,
-        model=OpenAIChat(id=agno_llm_model),
-        enable_user_memories=True,       # automatic memory management
-        add_memories_to_context=True,    # include past memories in context
+        model=model,
+        enable_user_memories=True,
+        add_memories_to_context=True,
     )
+
     return agent
 
 

@@ -1,0 +1,610 @@
+{
+  "system": "Crewai",
+  "split": "Conflict_Resolution",
+  "session_id": "7",
+  "subtask": "FC-SH",
+  "category": "SF",
+  "runtime_sec": 1293.59,
+  "questions": [
+    {
+      "question": "Which language was The New York Times written in?",
+      "system_answer": "English",
+      "gold_answer": "Ancient Greek",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of Hard Times?",
+      "system_answer": "Charles Dickens",
+      "gold_answer": "Martin Luther King Jr.",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of David Farragut?",
+      "system_answer": "United States of America",
+      "gold_answer": "Denmark",
+      "score": 0.0
+    },
+    {
+      "question": "Who founded Death Eater?",
+      "system_answer": "Charles Dickens",
+      "gold_answer": "Lord Voldemort",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Joseph Mitchell?",
+      "system_answer": "United States of America",
+      "gold_answer": "United Kingdom",
+      "score": 0.0
+    },
+    {
+      "question": "What type of music does Aki Takase play?",
+      "system_answer": "Aki Takase plays jazz piano.",
+      "gold_answer": "Carnatic music",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was Shaman King created in?",
+      "system_answer": "Japan",
+      "gold_answer": "Greece",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Henry of Blois affiliated with?",
+      "system_answer": "Henry of Blois was affiliated with Christianity, specifically the Roman Catholic Church.",
+      "gold_answer": "Church of Scotland",
+      "score": 0.0
+    },
+    {
+      "question": "What is the original language of The Sky at Night?",
+      "system_answer": "English",
+      "gold_answer": "Filipino",
+      "score": 0.0
+    },
+    {
+      "question": "Who was Kermit the Frog created by?",
+      "system_answer": "Jim Henson",
+      "gold_answer": "Hiroshige",
+      "score": 0.0
+    },
+    {
+      "question": "Which city was Monty Norman born in?",
+      "system_answer": "London",
+      "gold_answer": "London",
+      "score": 1.0
+    },
+    {
+      "question": "Who is Prince Andrew, Duke of York married to?",
+      "system_answer": "Prince Andrew, Duke of York, is married to Sarah, Duchess of York (Sarah Ferguson).",
+      "gold_answer": "Mahidol Adulyadej",
+      "score": 0.0
+    },
+    {
+      "question": "Who performed Day Tripper?",
+      "system_answer": "The Beatles performed Day Tripper.",
+      "gold_answer": "Madonna",
+      "score": 0.0
+    },
+    {
+      "question": "Which city did Pablo Picasso work in?",
+      "system_answer": "London",
+      "gold_answer": "Paris",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the director of CERN?",
+      "system_answer": "The Director-General of CERN is Fabiola Gianotti.",
+      "gold_answer": "Giorgio Armani",
+      "score": 0.0
+    },
+    {
+      "question": "Who performed Jane Foster?",
+      "system_answer": "Natalie Portman",
+      "gold_answer": "Natalie Portman",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the head coach of Burnley F.C.?",
+      "system_answer": "Vincent Kompany",
+      "gold_answer": "Jeff Hornacek",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the original broadcaster of One Life to Live?",
+      "system_answer": "ABC (American Broadcasting Company) was the original broadcaster of *One Life to Live*.",
+      "gold_answer": "American Broadcasting Company",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the author of Red Storm Rising?",
+      "system_answer": "Tom Clancy and Larry Bond",
+      "gold_answer": "Tom Clancy",
+      "score": 1.0
+    },
+    {
+      "question": "What is the official language of Soviet Union?",
+      "system_answer": "Russian",
+      "gold_answer": "French",
+      "score": 0.0
+    },
+    {
+      "question": "Which continent is Great Britain located in?",
+      "system_answer": "Europe",
+      "gold_answer": "Europe",
+      "score": 1.0
+    },
+    {
+      "question": "Who founded Sōtō?",
+      "system_answer": "Dōgen Zenji",
+      "gold_answer": "Dōgen",
+      "score": 1.0
+    },
+    {
+      "question": "Which country was The Orange County Register created in?",
+      "system_answer": "United States of America",
+      "gold_answer": "United Kingdom",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is racing video game associated with?",
+      "system_answer": "Racing video games are associated with motorsports.",
+      "gold_answer": "Australian rules football",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Philip II of Spain?",
+      "system_answer": "Spain",
+      "gold_answer": "United Kingdom",
+      "score": 0.0
+    },
+    {
+      "question": "What is Luís de Camões famous for?",
+      "system_answer": "Luís de Camões is famous for writing the epic poem *Os Lusíadas*, Portugal’s national epic.",
+      "gold_answer": "Os Lusíadas",
+      "score": 1.0
+    },
+    {
+      "question": "Who is Wilma Flintstone's child?",
+      "system_answer": "Pebbles Flintstone",
+      "gold_answer": "Eric Garcetti",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the original broadcaster of General Hospital?",
+      "system_answer": "ABC (American Broadcasting Company) was the original broadcaster of *General Hospital*.",
+      "gold_answer": "American Broadcasting Company",
+      "score": 1.0
+    },
+    {
+      "question": "Which sport is Erik Spoelstra associated with?",
+      "system_answer": "Basketball",
+      "gold_answer": "basketball",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the developer of PowerBook G4?",
+      "system_answer": "Apple Inc.",
+      "gold_answer": "Microsoft",
+      "score": 0.0
+    },
+    {
+      "question": "Which language was Os Lusíadas written in?",
+      "system_answer": "Portuguese",
+      "gold_answer": "English",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was Die Gartenlaube created in?",
+      "system_answer": "Germany",
+      "gold_answer": "Austrian Empire",
+      "score": 0.0
+    },
+    {
+      "question": "Which city did Martin Luther King Jr. die in?",
+      "system_answer": "Memphis, Tennessee",
+      "gold_answer": "St Leonards-on-Sea",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Sher Bahadur Deuba?",
+      "system_answer": "Nepal",
+      "gold_answer": "Nepal",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the chief executive officer of Toshiba?",
+      "system_answer": "",
+      "gold_answer": "Nobuaki Kurumatani",
+      "score": 0.0
+    },
+    {
+      "question": "Which university was Ilir Meta educated at?",
+      "system_answer": "Ilir Meta was educated at the University of Tirana.",
+      "gold_answer": "Montana State University - Bozeman",
+      "score": 0.0
+    },
+    {
+      "question": "What is Richard Adams famous for?",
+      "system_answer": "Richard Adams is famous for writing the classic novel *Watership Down*.",
+      "gold_answer": "Watership Down",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the chairperson of General Motors?",
+      "system_answer": "Mary Barra is the chairperson of General Motors.",
+      "gold_answer": "Yoweri Kaguta Museveni",
+      "score": 0.0
+    },
+    {
+      "question": "Which continent is Zürich located in?",
+      "system_answer": "Europe",
+      "gold_answer": "Antarctica",
+      "score": 0.0
+    },
+    {
+      "question": "What language does Daphne du Maurier speak?",
+      "system_answer": "English",
+      "gold_answer": "Arabic",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of The Andromeda Strain?",
+      "system_answer": "The author of *The Andromeda Strain* is Michael Crichton.",
+      "gold_answer": "Multatuli",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the current head of the India government?",
+      "system_answer": "Narendra Modi",
+      "gold_answer": "Narendra Modi",
+      "score": 1.0
+    },
+    {
+      "question": "What is the country of citizenship of Bibi Andersson?",
+      "system_answer": "Sweden",
+      "gold_answer": "United Kingdom",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Felix Aylmer?",
+      "system_answer": "United Kingdom",
+      "gold_answer": "Denmark",
+      "score": 0.0
+    },
+    {
+      "question": "Where was Finnair founded?",
+      "system_answer": "",
+      "gold_answer": "Helsinki",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the developer of Mortal Kombat X?",
+      "system_answer": "NetherRealm Studios",
+      "gold_answer": "Blizzard Entertainment",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Kim Tae-hee?",
+      "system_answer": "South Korea",
+      "gold_answer": "United States of America",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the developer of Windows Server 2008?",
+      "system_answer": "Microsoft",
+      "gold_answer": "BlackBerry",
+      "score": 0.0
+    },
+    {
+      "question": "What is the official language of Kingdom of the Netherlands?",
+      "system_answer": "Dutch",
+      "gold_answer": "Old Turkic",
+      "score": 0.0
+    },
+    {
+      "question": "What is Colleen McCullough famous for?",
+      "system_answer": "Colleen McCullough is an Australian novelist best known for her epic novel *The Thorn Birds*.",
+      "gold_answer": "The Thorn Birds",
+      "score": 1.0
+    },
+    {
+      "question": "Which religion is John Paul I affiliated with?",
+      "system_answer": "John Paul I was affiliated with Christianity, specifically the Roman Catholic Church.",
+      "gold_answer": "Church of Scotland",
+      "score": 0.0
+    },
+    {
+      "question": "Who performed Taxman?",
+      "system_answer": "The Beatles performed Taxman.",
+      "gold_answer": "Madonna",
+      "score": 0.0
+    },
+    {
+      "question": "Which city is the headquarter of University of Manchester located in?",
+      "system_answer": "Manchester",
+      "gold_answer": "Manchester",
+      "score": 1.0
+    },
+    {
+      "question": "Which sport is Texas Legends associated with?",
+      "system_answer": "Basketball",
+      "gold_answer": "cricket",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Jaime Alguersuari?",
+      "system_answer": "Spain",
+      "gold_answer": "Brazil",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Alassane Dramane Ouattara affiliated with?",
+      "system_answer": "Alassane Dramane Ouattara is affiliated with Christianity, specifically the Protestant faith.",
+      "gold_answer": "Catholic Church",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Andrea Pirlo play?",
+      "system_answer": "Andrea Pirlo plays as a midfielder.",
+      "gold_answer": "midfielder",
+      "score": 1.0
+    },
+    {
+      "question": "Which country was association football created in?",
+      "system_answer": "England",
+      "gold_answer": "Italy",
+      "score": 0.0
+    },
+    {
+      "question": "What type of music does Big Sean play?",
+      "system_answer": "Big Sean is a hip‑hop/rap artist.",
+      "gold_answer": "country rock",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was bluegrass music created in?",
+      "system_answer": "United States",
+      "gold_answer": "Indonesia",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is North East Stars associated with?",
+      "system_answer": "North East Stars is associated with football (soccer).",
+      "gold_answer": "cricket",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the chief executive officer of Tesla?",
+      "system_answer": "Elon Musk",
+      "gold_answer": "Adam Sandler",
+      "score": 0.0
+    },
+    {
+      "question": "Who founded Omidyar Network?",
+      "system_answer": "Pierre Omidyar",
+      "gold_answer": "Pierre Omidyar",
+      "score": 1.0
+    },
+    {
+      "question": "Which city is the headquarter of Berklee College of Music located in?",
+      "system_answer": "Boston",
+      "gold_answer": "Boston",
+      "score": 1.0
+    },
+    {
+      "question": "What is the capital of Czechoslovakia?",
+      "system_answer": "Prague",
+      "gold_answer": "Przeworsk",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Ellen Pompeo?",
+      "system_answer": "United States of America",
+      "gold_answer": "United States of America",
+      "score": 1.0
+    },
+    {
+      "question": "What is the country of citizenship of Alan Blyth?",
+      "system_answer": "United Kingdom",
+      "gold_answer": "United Kingdom",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the author of Satyricon?",
+      "system_answer": "The author of *Satyricon* is Petronius.",
+      "gold_answer": "William Blake",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the original broadcaster of Revenge?",
+      "system_answer": "ABC (American Broadcasting Company) was the original broadcaster of *Revenge*.",
+      "gold_answer": "British Broadcasting Corporation",
+      "score": 0.0
+    },
+    {
+      "question": "Which university was Stewart Udall educated at?",
+      "system_answer": "Stewart Udall was educated at the University of California, Berkeley.",
+      "gold_answer": "California State University, Long Beach",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the chairperson of Aam Aadmi Party?",
+      "system_answer": "Arvind Kejriwal",
+      "gold_answer": "Lamar Alexander",
+      "score": 0.0
+    },
+    {
+      "question": "Who performed Beatles for Sale?",
+      "system_answer": "The Beatles performed \"Beatles for Sale.\"",
+      "gold_answer": "Madonna",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Philippine Basketball Association Draft associated with?",
+      "system_answer": "Basketball",
+      "gold_answer": "basketball",
+      "score": 1.0
+    },
+    {
+      "question": "What type of music does Archie Shepp play?",
+      "system_answer": "Archie Shepp plays avant‑garde/free jazz.",
+      "gold_answer": "J-pop",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital of El Salvador?",
+      "system_answer": "San Salvador",
+      "gold_answer": "San Salvador",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the employer of Larry Page?",
+      "system_answer": "Alphabet Inc.",
+      "gold_answer": "University of Edinburgh",
+      "score": 0.0
+    },
+    {
+      "question": "Which university was James Dashner educated at?",
+      "system_answer": "James Dashner was educated at the University of Illinois at Urbana‑Champaign.",
+      "gold_answer": "Brigham Young University",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of Areopagitica?",
+      "system_answer": "The author of *Areopagitica* is John Milton.",
+      "gold_answer": "John Milton",
+      "score": 1.0
+    },
+    {
+      "question": "Who performed Dear Prudence?",
+      "system_answer": "The Beatles performed Dear Prudence.",
+      "gold_answer": "Madonna",
+      "score": 0.0
+    },
+    {
+      "question": "What language does George Boole speak?",
+      "system_answer": "English",
+      "gold_answer": "Spanish",
+      "score": 0.0
+    },
+    {
+      "question": "Which language was Shahnameh written in?",
+      "system_answer": "Persian",
+      "gold_answer": "Persian",
+      "score": 1.0
+    },
+    {
+      "question": "Which sport is Altrincham F.C. associated with?",
+      "system_answer": "Altrincham F.C. is associated with football (soccer).",
+      "gold_answer": "association football",
+      "score": 1.0
+    },
+    {
+      "question": "Which continent is São Paulo located in?",
+      "system_answer": "South America",
+      "gold_answer": "South America",
+      "score": 1.0
+    },
+    {
+      "question": "Which sport is three-point field goal associated with?",
+      "system_answer": "Basketball",
+      "gold_answer": "basketball",
+      "score": 1.0
+    },
+    {
+      "question": "What is the country of citizenship of Paul Morley?",
+      "system_answer": "United Kingdom",
+      "gold_answer": "Ireland",
+      "score": 0.0
+    },
+    {
+      "question": "Who is Reese Witherspoon's child?",
+      "system_answer": "",
+      "gold_answer": "James Badge Dale",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Lisbon Lions associated with?",
+      "system_answer": "The Lisbon Lions are associated with football (soccer).",
+      "gold_answer": "baseball",
+      "score": 0.0
+    },
+    {
+      "question": "Who performed Born This Way Ball?",
+      "system_answer": "Lady Gaga performed the Born This Way Ball.",
+      "gold_answer": "Lady Gaga",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Denis Thatcher affiliated with?",
+      "system_answer": "Denis Thatcher was affiliated with Christianity, specifically the Roman Catholic Church.",
+      "gold_answer": "Lutheranism",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of Rerum Novarum?",
+      "system_answer": "The author of *Rerum Novarum* is Pope Leo XIII.",
+      "gold_answer": "Leo XIII",
+      "score": 1.0
+    },
+    {
+      "question": "What position does Manuel Neuer play?",
+      "system_answer": "Goalkeeper",
+      "gold_answer": "linebacker",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of Lonesome Dove?",
+      "system_answer": "Larry McMurtry",
+      "gold_answer": "Robert A. Heinlein",
+      "score": 0.0
+    },
+    {
+      "question": "Which city did Allan Pinkerton die in?",
+      "system_answer": "Memphis, Tennessee",
+      "gold_answer": "Pune",
+      "score": 0.0
+    },
+    {
+      "question": "What is the official language of Helsinki?",
+      "system_answer": "Finnish and Swedish",
+      "gold_answer": "Esperanto",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Mads Mikkelsen?",
+      "system_answer": "Denmark",
+      "gold_answer": "Denmark",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the developer of iPad Pro?",
+      "system_answer": "Apple Inc.",
+      "gold_answer": "Google",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of The Vagina Monologues?",
+      "system_answer": "The Vagina Monologues was written by Eve Ensler.",
+      "gold_answer": "Eve Ensler",
+      "score": 1.0
+    },
+    {
+      "question": "Which sport is Montreal Royals associated with?",
+      "system_answer": "Montreal Royals is associated with baseball.",
+      "gold_answer": "field hockey",
+      "score": 0.0
+    },
+    {
+      "question": "Where was The Kinks founded?",
+      "system_answer": "The Kinks were founded in London, England.",
+      "gold_answer": "England",
+      "score": 1.0
+    },
+    {
+      "question": "What is the country of citizenship of Estelle Getty?",
+      "system_answer": "United States of America",
+      "gold_answer": "United States of America",
+      "score": 1.0
+    }
+  ]
+}

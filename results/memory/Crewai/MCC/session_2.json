@@ -1,0 +1,610 @@
+{
+  "system": "Crewai",
+  "split": "Test_Time_Learning",
+  "session_id": "2",
+  "subtask": "MCC",
+  "category": "TTL",
+  "runtime_sec": 2290.2,
+  "questions": [
+    {
+      "question": "Are there restrictions for my disposable card since it does not seem to be working?",
+      "system_answer": "Yes, disposable virtual cards have several built‑in restrictions that can cause them to appear “not working.” They can only be used for a single online transaction, cannot be used for in‑store purchases, cash withdrawals, or recurring payments, and are blocked by certain merchants (e.g., gambling, adult content, or high‑risk sites) and in some countries. If your card isn’t working, check that you haven’t exceeded the one‑transaction limit, that the merchant accepts virtual cards, and that the transaction type is allowed.",
+      "gold_answer": "28",
+      "score": 0
+    },
+    {
+      "question": "I'm trying to transfer money to another country. It's just pending and not sending. My account details are correct. Please help me.",
+      "system_answer": "If your international transfer is stuck in a “pending” status even though your account details are correct, try the following steps:\n\n1. **Check for Compliance Holds** – Many services place a temporary hold on cross‑border transfers for regulatory checks. Look for any alerts or messages in the app or email that request additional documentation (e.g., proof of identity, source of funds, or a signed transfer form).\n\n2. **Verify Recipient Information** – Double‑check the recipient’s IBAN/SWIFT code, account number, and name. A small typo can keep the transfer pending until corrected.\n\n3. **Confirm Sufficient Funds & Limits** – Ensure you have enough balance to cover the amount plus any fees, and that you haven’t exceeded your daily or weekly transfer limits.\n\n4. **Check Transfer Schedule** – Some transfers are scheduled to process on the next business day, especially if initiated over a weekend or public holiday. Verify the expected processing date in the app.\n\n5. **Review Your Account Status** – Make sure your account is fully verified and not under any temporary restrictions. If your identity verification is incomplete, the transfer may remain pending.\n\n6. **Contact Support** – If none of the above resolves the issue, reach out to customer support via the app’s chat, email, or phone. Provide them with the transfer reference number, the date you initiated the transfer, and any error messages you see.\n\n7. **Check Destination Bank Status** – Occasionally, the recipient’s bank may be experiencing delays or outages. Ask the recipient to confirm receipt or any pending status on their end.\n\nBy following these steps, you should be able to identify why the transfer is pending and take the necessary action to complete it.",
+      "gold_answer": "18",
+      "score": 0
+    },
+    {
+      "question": "What do I do if I notice a strange withdrawl in my statement?",
+      "system_answer": "If you spot a strange withdrawal on your statement, follow these steps:\n\n1. **Verify the Transaction** – Check the date, amount, and recipient details. Compare them with any recent purchases or transfers you made.\n\n2. **Check Your Account Activity** – Log into your banking app or online portal and review recent transactions. Look for any authorized payments that might match the withdrawal.\n\n3. **Review Your Security Settings** – Ensure your account password, PIN, and two‑factor authentication are secure. If you suspect a breach, change your credentials immediately.\n\n4. **Contact Your Bank or Card Issuer** – Call the customer service number on the back of your card or use the in‑app chat. Report the unauthorized withdrawal and request a transaction investigation.\n\n5. **Request a Temporary Freeze or Card Replacement** – If you believe the account is compromised, ask the bank to freeze the account or issue a new card while the investigation proceeds.\n\n6. **File a Dispute or Chargeback** – If the withdrawal was a fraudulent card payment, submit a dispute through the bank’s dispute resolution process. Provide any evidence (e.g., receipts, screenshots).\n\n7. **Monitor Your Account** – Keep an eye on your statement for any further unauthorized activity. Set up transaction alerts if available.\n\n8. **Report to Authorities if Needed** – If the amount is significant or you suspect identity theft, file a police report and consider notifying credit bureaus.\n\nBy acting quickly and following these steps, you can protect your funds and help your bank resolve the issue.",
+      "gold_answer": "50",
+      "score": 0
+    },
+    {
+      "question": "I got a message that I need to verify my identity; what do I do?",
+      "system_answer": "If you receive a message asking you to verify your identity, follow these steps to protect yourself and complete the process safely:\n\n1. **Confirm the source** – Make sure the message comes from the official app, website, or customer‑service email of the company (e.g., your bank, payment platform, or service provider). Look for the official domain, logo, and contact details.\n\n2. **Do not click suspicious links** – If the message contains a link, hover over it (on a computer) or tap it carefully (on a phone) to see the real URL. If it looks unfamiliar or uses a shortened link, avoid it.\n\n3. **Log in directly** – Open the company’s app or website yourself (type the URL into your browser or use the official app). Navigate to the “Account” or “Security” section where identity verification is requested.\n\n4. **Follow the on‑screen instructions** – You’ll usually be asked to upload a photo of a government‑issued ID (passport, driver’s licence, or national ID card) and possibly a selfie or a proof‑of‑address document (utility bill, bank statement, etc.).\n\n5. **Use secure upload methods** – Upload documents through the app or the secure portal, not via email or third‑party links. Ensure the connection is HTTPS (look for the lock icon in the browser).\n\n6. **Check for confirmation** – After submitting, you should receive a confirmation email or in‑app notification that your documents are being processed. Some services may take a few hours to a few days to verify.\n\n7. **Keep records** – Save copies of the documents you sent and any confirmation receipts. Note the date and time of submission.\n\n8. **If you suspect fraud** – If the message looks phishing (misspellings, urgent tone, or requests for passwords), report it to the company’s fraud or support team and do not provide any personal information.\n\nBy verifying the authenticity of the message, using the official channels, and securely submitting the required documents, you can safely complete the identity verification process.",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "How do I use the app if I don't have my phone with me?",
+      "system_answer": "If you don’t have your phone with you, you can still access and use the app by following these steps:\n\n1. **Log in through the web portal** – Open the company’s official website and use the same username and password you use for the app. Most services provide a full-featured web interface that mirrors the app’s functionality.\n\n2. **Use backup codes** – If you enabled two‑factor authentication (2FA) on the app, you should have a set of one‑time backup codes. Enter one of these codes on the web login page to bypass the need for a phone.\n\n3. **Use a trusted device** – If you have another device (tablet, laptop, or another phone) that is already logged in or has the app installed, you can use it to generate a new authentication code or to receive a login link.\n\n4. **Request a login link** – Many apps allow you to request a one‑time login link sent to your registered email. Click the link to log in without a phone.\n\n5. **Contact support for recovery** – If none of the above options are available, reach out to customer support. They can verify your identity through alternative methods (e.g., answering security questions, providing a photo ID) and temporarily grant access.\n\n6. **Set up a new phone later** – Once you regain access, consider setting up a new phone or a secondary device for 2FA to avoid future lock‑outs.",
+      "gold_answer": "22",
+      "score": 0
+    },
+    {
+      "question": "why is the exchange rate for a Foreign ATM different",
+      "system_answer": "The exchange rate you see on a foreign ATM is usually set by the ATM operator (or the bank that owns the ATM) rather than by your card‑issuing bank. This is called Dynamic Currency Conversion (DCC). The operator applies its own rate, which is often less favorable than the inter‑bank rate your card issuer would use, and it may also add a conversion fee. Additionally, the card network (Visa, Mastercard, etc.) may charge a foreign‑currency transaction fee, and the ATM may impose a withdrawal fee. Because of these extra charges and the operator’s own rate, the exchange rate you get at a foreign ATM can differ significantly from the rate you would see on your card‑issuer’s statement or in your banking app.",
+      "gold_answer": "26",
+      "score": 0
+    },
+    {
+      "question": "What happens if my card is stuck in the ATM?",
+      "system_answer": "If your card is stuck in an ATM, follow these steps:\n\n1. **Do not force the card out** – Trying to pull it can damage the machine or the card.  \n2. **Check for a retrieval button** – Some ATMs have a “card retrieval” or “return card” button; press it if available.  \n3. **Call the ATM operator or your bank’s customer service** – Use the number on the back of your card or the ATM’s display. Inform them that the card is stuck and provide the ATM location.  \n4. **Wait for the card to be released** – The operator may need to manually retrieve it, which can take a few minutes to a few hours.  \n5. **Confirm the transaction status** – Once the card is returned, check your account to ensure the transaction was not processed. If it was, dispute it with your bank.  \n6. **Request a replacement if necessary** – If the card is damaged or cannot be retrieved, ask your bank to issue a new card and cancel the old one.  \n\nBy staying calm, using the proper channels, and allowing the operator time to retrieve the card, you can resolve the issue with minimal disruption.",
+      "gold_answer": "51",
+      "score": 0
+    },
+    {
+      "question": "Is there a discount for frequently exchanging currencies?",
+      "system_answer": "No, most banks and card issuers do not provide a special discount for frequent currency exchanges. The exchange rate you receive is typically the inter‑bank rate (or the rate set by the ATM operator in the case of DCC) plus any standard foreign‑currency transaction fee and ATM withdrawal fee. Some fintech services (e.g., Wise, Revolut) may offer slightly better rates or lower fees for high‑volume users, but traditional banks and card networks do not offer a discount simply for exchanging currencies more often.",
+      "gold_answer": "10",
+      "score": 0
+    },
+    {
+      "question": "I sent money.  They haven't received it.",
+      "system_answer": "If you’ve sent money and the recipient hasn’t received it yet, try the following:\n\n1. **Check the transfer status** – Log into your app or website and confirm whether the payment shows as “Pending,” “Completed,” or “Failed.”  \n2. **Verify recipient details** – Make sure the IBAN/SWIFT code, account number, and name are correct; a typo can delay or cancel the transfer.  \n3. **Look for compliance holds** – Some services place a temporary hold for regulatory checks. Check for any alerts or emails requesting additional documentation (e.g., proof of identity, source of funds).  \n4. **Confirm sufficient funds and limits** – Ensure you had enough balance to cover the amount plus fees, and that you haven’t exceeded daily or weekly limits.  \n5. **Check the schedule** – Transfers initiated over a weekend or public holiday may be processed on the next business day.  \n6. **Review your account status** – If your account isn’t fully verified or is under restriction, the transfer may stay pending.  \n7. **Ask the recipient to check their bank** – The recipient’s bank might be experiencing delays or outages; confirm they haven’t received any pending status on their end.  \n8. **Contact customer support** – If none of the above resolves the issue, reach out via chat, email, or phone. Provide the transfer reference number, initiation date, and any error messages.  \n\nFollowing these steps should help you identify why the transfer is delayed and what action to take next.",
+      "gold_answer": "6",
+      "score": 0
+    },
+    {
+      "question": "What age do my kids need to be to use your service?",
+      "system_answer": "The minimum age to use the service is 13 years old. If your child is under 18, parental or guardian consent is required.",
+      "gold_answer": "21",
+      "score": 0
+    },
+    {
+      "question": "I've notice I was charged for withdrawing cash, can you explain why?",
+      "system_answer": "When you withdraw cash from an ATM, the fee you see on your statement is usually the result of several charges that can be applied by different parties:\n\n1. **ATM Operator Fee** – The bank or company that owns the ATM often adds a fixed or percentage fee for each withdrawal. This fee is added to the amount you receive and is shown on your statement.\n\n2. **Card‑Network Fee** – Visa, Mastercard, or other card networks may charge a small fee for using their network to process the withdrawal. This fee is typically a percentage of the transaction amount.\n\n3. **Foreign‑Currency Conversion (DCC)** – If you are withdrawing cash in a currency different from your account’s base currency, the ATM operator may use Dynamic Currency Conversion (DCC). The operator applies its own exchange rate, which is usually less favorable than the inter‑bank rate your card issuer would use, and may add a conversion fee on top of the ATM fee.\n\n4. **Your Bank’s Service Charge** – Some banks add an additional service fee for ATM withdrawals, especially if the withdrawal is made outside the bank’s own network or if you exceed a certain number of free withdrawals per month.\n\nBecause these fees are added at the point of transaction, they appear as a separate line item on your statement. If you believe the fee is incorrect or unusually high, you can contact your bank or card issuer to review the charge and confirm that it matches the terms of your account agreement.",
+      "gold_answer": "62",
+      "score": 0
+    },
+    {
+      "question": "Can you please identify the problem with my bank card?",
+      "system_answer": "To identify the issue with your bank card, follow these quick checks:\n\n1. **Check the card’s physical condition** – Look for visible damage, bent edges, or a broken chip. A damaged card often fails at ATMs or point‑of‑sale terminals.\n\n2. **Verify the expiration date** – If the card is past its expiry, it will be rejected by most systems. Order a replacement if needed.\n\n3. **Confirm the PIN is correct** – A wrong PIN will block the card after a few attempts. Reset or retrieve your PIN through your bank’s app or customer service.\n\n4. **Look for a “stuck in ATM” situation** – If the card is physically lodged in an ATM, do not force it out; use the retrieval button or call the ATM operator.\n\n5. **Check for unauthorized transactions** – Review recent statements or app activity. If you see unfamiliar withdrawals or payments, report them immediately to your bank.\n\n6. **Ensure the card is activated** – Some new cards require activation via phone or online. If not activated, the card won’t work.\n\n7. **Contact your bank’s customer service** – Provide them with the card number (last four digits), the error message you see, and any recent activity. They can check the card’s status in their system and advise on the next steps.\n\nBy systematically reviewing these points, you can pinpoint whether the problem is physical damage, expiration, PIN issues, ATM malfunction, or a security concern. If the issue remains unclear, your bank’s support team can perform a detailed investigation and issue a replacement if necessary.",
+      "gold_answer": "42",
+      "score": 0
+    },
+    {
+      "question": "Do you know where my card will be accepted?",
+      "system_answer": "Your card will be accepted wherever the card network it belongs to is accepted.  \n- **In‑store**: Any merchant that accepts the card’s network (e.g., Visa, MasterCard, American Express, Discover).  \n- **ATMs**: Any ATM that supports the card’s network, including those of partner banks.  \n- **Online**: Any e‑commerce site that lists the card’s network as a payment option.  \n- **Contactless**: If the card has a contactless chip and the terminal supports the network, you can tap it.  \n- **Mobile wallets**: If you’ve added the card to Apple Pay, Google Pay, or Samsung Pay, it will work at any terminal that accepts those wallets.",
+      "gold_answer": "15",
+      "score": 0
+    },
+    {
+      "question": "My work sends me all over the world, can I get a discount for all the money I have to exchange?",
+      "system_answer": "No, most banks and card issuers do not provide a special discount for frequent currency exchanges. The exchange rate you receive is typically the inter‑bank rate (or the rate set by the ATM operator in the case of Dynamic Currency Conversion) plus any standard foreign‑currency transaction fee and ATM withdrawal fee. Some fintech services (e.g., Wise, Revolut) may offer slightly better rates or lower fees for high‑volume users, but traditional banks and card networks do not offer a discount simply for exchanging currencies more often.",
+      "gold_answer": "10",
+      "score": 0
+    },
+    {
+      "question": "Why do I have to verify my identity?",
+      "system_answer": "Identity verification is required to protect your account and the service you use. By confirming who you are, the platform can:\n\n1. **Prevent fraud and unauthorized access** – Ensures that only the legitimate account holder can make changes or transactions.  \n2. **Meet legal and regulatory obligations** – Many industries (banking, finance, crypto, healthcare) must verify users to comply with anti‑money‑laundering (AML), know‑your‑customer (KYC), and data‑protection laws.  \n3. **Secure sensitive information** – Verifying identity helps safeguard personal data, financial details, and confidential communications.  \n4. **Enable higher‑risk features** – Certain services (large transfers, advanced trading, premium features) require verified accounts to limit liability.  \n5. **Maintain platform integrity** – Reduces the risk of scams, phishing, and impersonation, keeping the community safe for all users.  \n\nIn short, identity verification is a standard security measure that protects both you and the service from fraud, legal penalties, and unauthorized activity.",
+      "gold_answer": "45",
+      "score": 0
+    },
+    {
+      "question": "When my card expires what happens to my account?",
+      "system_answer": "When your card expires, the card itself is automatically deactivated, but your account remains fully active and unchanged. The bank will usually send you a replacement card to the address on file, and you can continue using your account with the new card. If you have any recurring payments or subscriptions linked to the old card, be sure to update them with the new card details once you receive it.",
+      "gold_answer": "9",
+      "score": 0
+    },
+    {
+      "question": "It appears that I am being double charged for some items that I have purchased this past week.  Please review and correct.",
+      "system_answer": "1. **Verify the Charges** – Log into your banking app or online portal and review the transaction history for the past week. Look for two identical entries (same date, amount, and merchant) that indicate a duplicate charge.  \n2. **Check the Merchant’s Records** – If you have receipts or order confirmations, compare them with the statement entries. A duplicate charge will usually show the same merchant name and amount.  \n3. **Contact the Merchant** – Call the customer service number on the back of your card or use the merchant’s support portal. Explain that you see a double charge and provide the transaction details (date, amount, reference number). Ask them to investigate and issue a refund for the duplicate.  \n4. **File a Dispute with Your Bank** – If the merchant does not resolve the issue promptly, submit a dispute through your bank’s dispute resolution process. Provide all relevant documentation (receipts, screenshots, correspondence with the merchant).  \n5. **Monitor Your Account** – After filing the dispute, keep an eye on your statement. The bank will typically credit the disputed amount back to your account within 30–45 days, depending on the card network’s rules.  \n6. **Update Your Payment Information** – If the duplicate charge was due to a processing error, consider updating your card details or using a different payment method for future purchases to avoid recurrence.  \n\nBy following these steps, you can identify the duplicate charge, obtain a refund, and ensure your account remains accurate.",
+      "gold_answer": "63",
+      "score": 0
+    },
+    {
+      "question": "how long til my cash out goes through?",
+      "system_answer": "Cash‑out transfers usually take **1–3 business days** to appear in the recipient’s account.  \n- If you used an instant‑transfer service (e.g., PayPal Instant, Venmo, or a bank’s instant payout feature), the money can arrive within minutes.  \n- Transfers initiated on weekends or public holidays are processed on the next business day.  \n- Some banks add a 1‑day hold for compliance checks, which can extend the time to 4–5 business days.  \n\nTo confirm the exact status, log into your app or website, check the transfer’s “Pending” or “Completed” status, and look for any alerts or hold notices. If the transfer is still pending after the expected window, contact customer support with your reference number.",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "my phone is gone",
+      "system_answer": "If you don’t have your phone with you, you can still access and use the app by following these steps:\n\n1. **Log in through the web portal** – Open the company’s official website and use the same username and password you use for the app. Most services provide a full-featured web interface that mirrors the app’s functionality.\n\n2. **Use backup codes** – If you enabled two‑factor authentication (2FA) on the app, you should have a set of one‑time backup codes. Enter one of these codes on the web login page to bypass the need for a phone.\n\n3. **Use a trusted device** – If you have another device (tablet, laptop, or another phone) that is already logged in or has the app installed, you can use it to generate a new authentication code or to receive a login link.\n\n4. **Request a login link** – Many apps allow you to request a one‑time login link sent to your registered email. Click the link to log in without a phone.\n\n5. **Contact support for recovery** – If none of the above options are available, reach out to customer support. They can verify your identity through alternative methods (e.g., answering security questions, providing a photo ID) and temporarily grant access.\n\n6. **Set up a new phone later** – Once you regain access, consider setting up a new phone or a secondary device for 2FA to avoid future lock‑outs.",
+      "gold_answer": "22",
+      "score": 0
+    },
+    {
+      "question": "My money transfer has not arrived.",
+      "system_answer": "If your money transfer hasn’t arrived, follow these steps to identify and resolve the issue:\n\n1. **Check the transfer status** – Log into your app or website and confirm whether the payment shows as “Pending,” “Completed,” or “Failed.”  \n2. **Verify recipient details** – Ensure the IBAN/SWIFT code, account number, and name are correct; a typo can delay or cancel the transfer.  \n3. **Look for compliance holds** – Some services place a temporary hold for regulatory checks. Check for any alerts or emails requesting additional documentation (e.g., proof of identity, source of funds).  \n4. **Confirm sufficient funds and limits** – Make sure you had enough balance to cover the amount plus fees, and that you haven’t exceeded daily or weekly limits.  \n5. **Check the schedule** – Transfers initiated over a weekend or public holiday may be processed on the next business day.  \n6. **Review your account status** – If your account isn’t fully verified or is under restriction, the transfer may stay pending.  \n7. **Ask the recipient to check their bank** – The recipient’s bank might be experiencing delays or outages; confirm they haven’t received any pending status on their end.  \n8. **Contact customer support** – If none of the above resolves the issue, reach out via chat, email, or phone. Provide the transfer reference number, initiation date, and any error messages.  \n\nFollowing these steps should help you determine why the transfer is delayed and what action to take next.",
+      "gold_answer": "6",
+      "score": 0
+    },
+    {
+      "question": "I bought something but now I would like a refund. How do I do that?",
+      "system_answer": "1. **Check the Merchant’s Refund Policy** – Locate the return/refund policy on the merchant’s website or in your order confirmation email. Note any time limits (e.g., 30 days) and required conditions (original packaging, receipt, etc.).  \n2. **Gather Your Order Information** – Have your order number, purchase date, item details, and payment method ready.  \n3. **Contact the Merchant** –  \n   * **Email or Online Form**: Send a clear message stating you wish to return the item and request a refund. Include the order number, reason for return, and any supporting photos if required.  \n   * **Phone Call**: If the merchant offers phone support, call the number listed on their site and speak with a representative.  \n4. **Follow the Return Instructions** – The merchant may ask you to ship the item back or provide a prepaid return label. Follow their instructions exactly to avoid delays.  \n5. **Keep Proof of Return** – Retain shipping receipts, tracking numbers, and any confirmation emails.  \n6. **Wait for the Refund** – Once the merchant receives the returned item (or confirms the return if it’s a digital product), they typically process the refund within 3–10 business days.  \n7. **Verify the Refund** – Check your bank or credit‑card statement for the credited amount. If the refund does not appear within the promised timeframe, contact the merchant again with your proof of return.  \n8. **Escalate if Needed** – If the merchant is unresponsive or refuses a legitimate refund, file a dispute with your payment provider (credit card issuer, PayPal, etc.) and provide all documentation.  \n\nBy following these steps, you can initiate and complete a refund smoothly.",
+      "gold_answer": "47",
+      "score": 0
+    },
+    {
+      "question": "Hello. Can you tell me if you use Visa or Mastercard?",
+      "system_answer": "We accept both Visa and Mastercard.",
+      "gold_answer": "72",
+      "score": 0
+    },
+    {
+      "question": "I can't see my latest bank transfer",
+      "system_answer": "If your money transfer hasn’t arrived, follow these steps to identify and resolve the issue:\n\n1. **Check the transfer status** – Log into your app or website and confirm whether the payment shows as “Pending,” “Completed,” or “Failed.”  \n2. **Verify recipient details** – Ensure the IBAN/SWIFT code, account number, and name are correct; a typo can delay or cancel the transfer.  \n3. **Look for compliance holds** – Some services place a temporary hold for regulatory checks. Check for any alerts or emails requesting additional documentation (e.g., proof of identity, source of funds).  \n4. **Confirm sufficient funds and limits** – Make sure you had enough balance to cover the amount plus fees, and that you haven’t exceeded daily or weekly limits.  \n5. **Check the schedule** – Transfers initiated over a weekend or public holiday may be processed on the next business day.  \n6. **Review your account status** – If your account isn’t fully verified or is under restriction, the transfer may stay pending.  \n7. **Ask the recipient to check their bank** – The recipient’s bank might be experiencing delays or outages; confirm they haven’t received any pending status on their end.  \n8. **Contact customer support** – If none of the above resolves the issue, reach out via chat, email, or phone. Provide the transfer reference number, initiation date, and any error messages.  \n\nFollowing these steps should help you determine why the transfer is delayed and what action to take next.",
+      "gold_answer": "69",
+      "score": 0
+    },
+    {
+      "question": "I got a fee for an ATM withdrawal.",
+      "system_answer": "When you withdraw cash from an ATM, the fee you see on your statement is usually the result of several charges that can be applied by different parties:\n\n1. **ATM Operator Fee** – The bank or company that owns the ATM often adds a fixed or percentage fee for each withdrawal. This fee is added to the amount you receive and is shown on your statement.\n\n2. **Card‑Network Fee** – Visa, Mastercard, or other card networks may charge a small fee for using their network to process the withdrawal. This fee is typically a percentage of the transaction amount.\n\n3. **Foreign‑Currency Conversion (DCC)** – If you are withdrawing cash in a currency different from your account’s base currency, the ATM operator may use Dynamic Currency Conversion (DCC). The operator applies its own exchange rate, which is usually less favorable than the inter‑bank rate your card issuer would use, and may add a conversion fee on top of the ATM fee.\n\n4. **Your Bank’s Service Charge** – Some banks add an additional service fee for ATM withdrawals, especially if the withdrawal is made outside the bank’s own network or if you exceed a certain number of free withdrawals per month.\n\nBecause these fees are added at the point of transaction, they appear as a separate line item on your statement. If you believe the fee is incorrect or unusually high, you can contact your bank or card issuer to review the charge and confirm that it matches the terms of your account agreement.",
+      "gold_answer": "62",
+      "score": 0
+    },
+    {
+      "question": "There is a transaction for $1 and I don't know why it was charged.",
+      "system_answer": "A $1 transaction is usually a **small verification or “test” charge** that merchants or payment processors use to confirm that your card is active and the account details are correct. It is typically held (not actually taken) and will automatically drop off your statement after a few days. If you’re unsure, check the merchant name on the statement, contact that merchant for clarification, and if the charge remains after a week, file a dispute with your bank.",
+      "gold_answer": "55",
+      "score": 0
+    },
+    {
+      "question": "Am I able to get a second card?",
+      "system_answer": "Yes, you can request a second card. Most banks allow you to order an additional card for yourself or a family member. You can usually do this through your online banking portal or by calling customer service. Some banks may charge a small fee for the extra card, and you may need to provide a new address or verify your identity. Once the second card is issued, you can use it just like your primary card. If you need it for a specific purpose (e.g., a spouse or a business expense), let the bank know so they can set the appropriate limits. If you have any questions about eligibility or fees, contact your bank directly.",
+      "gold_answer": "71",
+      "score": 0
+    },
+    {
+      "question": "Why is my card payment showing as pending?",
+      "system_answer": "A card payment appears as **pending** when the merchant has authorized the transaction but has not yet captured the funds. This can happen for several reasons:\n\n1. **Merchant processing time** – Many merchants, especially online or in‑store with card‑present systems, first authorize the amount to verify the card and then capture it later (often within 7–30 days).  \n2. **Offline or delayed capture** – If the merchant’s terminal was offline or the transaction was processed offline, the capture may be delayed until the terminal reconnects.  \n3. **Pre‑authorization for services** – Some services (e.g., hotels, car rentals, ride‑share) place a pre‑authorization to hold a potential amount; the final charge is only captured once the service is completed.  \n4. **Technical or network issues** – Temporary network glitches can cause the capture request to be delayed or lost, leaving the payment in a pending state.  \n5. **Regulatory or compliance holds** – In certain cases, the issuer may place a hold for compliance checks, especially for large or suspicious transactions.  \n\nThe pending status will usually resolve automatically once the merchant captures the payment or the hold expires (often within a few days). If the pending status persists beyond the expected timeframe, contact the merchant or your card issuer for clarification.",
+      "gold_answer": "65",
+      "score": 0
+    },
+    {
+      "question": "Why was I chaged twice for the same thing?",
+      "system_answer": "A duplicate charge can occur for several reasons: the merchant’s payment system may have processed the transaction twice due to a technical glitch; the card network (e.g., Visa, MasterCard) might have sent duplicate authorization requests; a subscription or recurring billing was mistakenly activated twice; or a manual entry error by the merchant’s staff. In most cases, the duplicate will be reversed automatically within a few business days, but you should contact the merchant or your bank to confirm and request a refund if it hasn’t been resolved.",
+      "gold_answer": "63",
+      "score": 0
+    },
+    {
+      "question": "Is it okay to use a bank card to top up",
+      "system_answer": "Yes, you can use a bank card to top up most digital wallets, prepaid accounts, or online services that accept debit/credit cards. Check the specific platform’s top‑up policy for any limits, fees, or supported card types, but in general a bank card is a valid method for adding funds.",
+      "gold_answer": "76",
+      "score": 0
+    },
+    {
+      "question": "I see what looks like duplicate charges on account.",
+      "system_answer": "1. **Check the details** – Log into your banking app or online portal and review the transaction history for the past week. Look for two identical entries (same date, amount, and merchant) that indicate a duplicate charge.  \n2. **Confirm with receipts** – If you have receipts or order confirmations, compare them with the statement entries. A duplicate charge will usually show the same merchant name and amount.  \n3. **Contact the merchant** – Call the customer service number on the back of your card or use the merchant’s support portal. Explain that you see a double charge and provide the transaction details (date, amount, reference number). Ask them to investigate and issue a refund for the duplicate.  \n4. **File a dispute with your bank** – If the merchant does not resolve the issue promptly, submit a dispute through your bank’s dispute resolution process. Provide all relevant documentation (receipts, screenshots, correspondence with the merchant).  \n5. **Monitor your account** – After filing the dispute, keep an eye on your statement. The bank will typically credit the disputed amount back to your account within 30–45 days, depending on the card network’s rules.  \n6. **Prevent future duplicates** – If the duplicate charge was due to a processing error, consider updating your card details or using a different payment method for future purchases to avoid recurrence.",
+      "gold_answer": "63",
+      "score": 0
+    },
+    {
+      "question": "What ATMs is the card okay to use at?",
+      "system_answer": "Your card can be used at any ATM that supports its card network (e.g., Visa, MasterCard, American Express, Discover). This includes ATMs of partner banks and those that display the network’s logo.",
+      "gold_answer": "43",
+      "score": 0
+    },
+    {
+      "question": "I want a refund because my package has been taking too long to arrive. How do I go about doing that?",
+      "system_answer": "1. **Check the Merchant’s Refund Policy** – Locate the return/refund policy on the merchant’s website or in your order confirmation email. Note any time limits (e.g., 30 days) and required conditions (original packaging, receipt, etc.).  \n2. **Gather Your Order Information** – Have your order number, purchase date, item details, and payment method ready.  \n3. **Contact the Merchant** –  \n   * **Email or Online Form**: Send a clear message stating you wish to return the item and request a refund. Include the order number, reason for return, and any supporting photos if required.  \n   * **Phone Call**: If the merchant offers phone support, call the number listed on their site and speak with a representative.  \n4. **Follow the Return Instructions** – The merchant may ask you to ship the item back or provide a prepaid return label. Follow their instructions exactly to avoid delays.  \n5. **Keep Proof of Return** – Retain shipping receipts, tracking numbers, and any confirmation emails.  \n6. **Wait for the Refund** – Once the merchant receives the returned item (or confirms the return if it’s a digital product), they typically process the refund within 3–10 business days.  \n7. **Verify the Refund** – Check your bank or credit‑card statement for the credited amount. If the refund does not appear within the promised timeframe, contact the merchant again with your proof of return.  \n8. **Escalate if Needed** – If the merchant is unresponsive or refuses a legitimate refund, file a dispute with your payment provider (credit card issuer, PayPal, etc.) and provide all documentation.",
+      "gold_answer": "47",
+      "score": 0
+    },
+    {
+      "question": "Freeze my account it's been hacked.",
+      "system_answer": "If you suspect your account has been hacked and you want to freeze it immediately, follow these steps:\n\n1. **Log In Securely** – Open the official banking app or website directly (type the URL yourself, don’t click suspicious links).  \n2. **Navigate to Security Settings** – Find the “Account” or “Security” section.  \n3. **Request a Temporary Freeze** – Select the option to “Freeze Account” or “Block Card.” If the app doesn’t offer this, proceed to the next step.  \n4. **Contact Customer Support** – Call the customer‑service number on the back of your card or use the in‑app chat. Tell them your account has been compromised and request an immediate freeze.  \n5. **Change Credentials** – While speaking with support, change your password, PIN, and any linked email or phone number.  \n6. **Enable Two‑Factor Authentication (2FA)** – If not already active, set up 2FA for added protection.  \n7. **Monitor Activity** – After the freeze, review recent transactions for any unauthorized activity.  \n8. **Report Fraud** – If you see suspicious charges, file a dispute or chargeback through the bank’s dispute resolution process.  \n9. **File a Police Report** – For significant losses or identity theft, consider filing a police report and notifying credit bureaus.  \n\nAct quickly to protect your funds and prevent further unauthorized access.",
+      "gold_answer": "57",
+      "score": 0
+    },
+    {
+      "question": "The card got declined twice when I tried to use it to buy something online yesterday.",
+      "system_answer": "If your card was declined twice when you tried to buy something online, the most common reasons are:  \n\n1. **Insufficient funds or credit limit** – The transaction amount exceeds the available balance or credit line.  \n2. **Card blocked or frozen** – The issuer may have temporarily blocked the card for security reasons (e.g., suspicious activity, recent travel, or a reported loss).  \n3. **Merchant restrictions** – Some merchants do not accept certain cards or card types (e.g., some online retailers only accept Visa or MasterCard, or they block cards from specific issuers).  \n4. **Technical or network issues** – Temporary problems with the card network, the merchant’s payment gateway, or your internet connection can cause a decline.  \n\nTo resolve the issue, check your account balance, ensure the card is active, review any recent security alerts from your issuer, and if the problem persists, contact your card issuer’s customer service for assistance.",
+      "gold_answer": "29",
+      "score": 0
+    },
+    {
+      "question": "The transfer is coming up as pending the payment is due today. Will I be charged a fee?",
+      "system_answer": "A transfer that is still marked **“Pending”** has not yet been completed, so no fee is charged at that point. Fees are applied only when the transfer is successfully processed (or if it fails and the service charges a cancellation fee). If the transfer fails or is reversed, you may see a fee on your statement. Therefore, as long as the transfer remains pending, you will not be charged a fee. If it eventually fails, check the fee schedule for the specific service you used.",
+      "gold_answer": "18",
+      "score": 0
+    },
+    {
+      "question": "Does my PIN come with my card?",
+      "system_answer": "No, the PIN is not printed on the card. Banks typically provide your PIN separately—either mailed with the card, sent via a secure online portal, or given over the phone—so you can keep it confidential and use it to activate or use the card.",
+      "gold_answer": "75",
+      "score": 0
+    },
+    {
+      "question": "Someone else is using my card, freeze it.",
+      "system_answer": "If you suspect your account has been hacked and you want to freeze it immediately, follow these steps:\n\n1. **Log In Securely** – Open the official banking app or website directly (type the URL yourself, don’t click suspicious links).  \n2. **Navigate to Security Settings** – Find the “Account” or “Security” section.  \n3. **Request a Temporary Freeze** – Select the option to “Freeze Account” or “Block Card.” If the app doesn’t offer this, proceed to the next step.  \n4. **Contact Customer Support** – Call the customer‑service number on the back of your card or use the in‑app chat. Tell them your account has been compromised and request an immediate freeze.  \n5. **Change Credentials** – While speaking with support, change your password, PIN, and any linked email or phone number.  \n6. **Enable Two‑Factor Authentication (2FA)** – If not already active, set up 2FA for added protection.  \n7. **Monitor Activity** – After the freeze, review recent transactions for any unauthorized activity.  \n8. **Report Fraud** – If you see suspicious charges, file a dispute or chargeback through the bank’s dispute resolution process.  \n9. **File a Police Report** – For significant losses or identity theft, consider filing a police report and notifying credit bureaus.  \n\nAct quickly to protect your funds and prevent further unauthorized access.",
+      "gold_answer": "57",
+      "score": 0
+    },
+    {
+      "question": "Transferring money in 2018 to another country shouldn't take this long. My transfer has been pending for too long. I verified my account details are correct.",
+      "system_answer": "If your money transfer hasn’t arrived, follow these steps to identify and resolve the issue:\n\n1. **Check the transfer status** – Log into your app or website and confirm whether the payment shows as “Pending,” “Completed,” or “Failed.”  \n2. **Verify recipient details** – Ensure the IBAN/SWIFT code, account number, and name are correct; a typo can delay or cancel the transfer.  \n3. **Look for compliance holds** – Some services place a temporary hold for regulatory checks. Check for any alerts or emails requesting additional documentation (e.g., proof of identity, source of funds).  \n4. **Confirm sufficient funds and limits** – Make sure you had enough balance to cover the amount plus fees, and that you haven’t exceeded daily or weekly limits.  \n5. **Check the schedule** – Transfers initiated over a weekend or public holiday may be processed on the next business day.  \n6. **Review your account status** – If your account isn’t fully verified or is under restriction, the transfer may stay pending.  \n7. **Ask the recipient to check their bank** – The recipient’s bank might be experiencing delays or outages; confirm they haven’t received any pending status on their end.  \n8. **Contact customer support** – If none of the above resolves the issue, reach out via chat, email, or phone. Provide the transfer reference number, initiation date, and any error messages.  \n\nFollowing these steps should help you determine why the transfer is delayed and what action to take next.",
+      "gold_answer": "18",
+      "score": 0
+    },
+    {
+      "question": "My card is gone I think it was stolen",
+      "system_answer": "If you believe your card has been stolen, follow these steps immediately:\n\n1. **Contact your bank’s customer service** (phone number on the back of the card or the bank’s website) to report the loss and have the card blocked.  \n2. **Ask for a replacement card** to be mailed to your registered address.  \n3. **Check recent transactions** in your online banking app or statement for any unauthorized activity.  \n4. **Update any recurring payments** or subscriptions that were linked to the stolen card with the new card details once you receive it.  \n5. **Monitor your account** for any suspicious activity and consider placing a temporary freeze or additional security measures if offered by your bank.",
+      "gold_answer": "7",
+      "score": 0
+    },
+    {
+      "question": "Can I get a mastercard?",
+      "system_answer": "Yes, you can get a Mastercard.",
+      "gold_answer": "72",
+      "score": 0
+    },
+    {
+      "question": "I don't understand where this debit came from and want it removed.",
+      "system_answer": "If you see a debit on your statement that you don’t recognize and want it removed, follow these steps:\n\n1. **Verify the Transaction** – Log into your banking app or online portal and review the transaction details (date, amount, merchant or recipient). Compare them with any recent purchases or transfers you made.\n\n2. **Check Your Account Activity** – Look for any authorized payments that might match the debit. Sometimes a legitimate payment can appear under a different merchant name.\n\n3. **Review Your Security Settings** – Ensure your account password, PIN, and two‑factor authentication are secure. If you suspect a breach, change your credentials immediately.\n\n4. **Contact Your Bank or Card Issuer** – Call the customer service number on the back of your card or use the in‑app chat. Report the unauthorized debit and request a transaction investigation.\n\n5. **Request a Temporary Freeze or Card Replacement** – If you believe the account is compromised, ask the bank to freeze the account or issue a new card while the investigation proceeds.\n\n6. **File a Dispute or Chargeback** – If the debit was a fraudulent card payment, submit a dispute through the bank’s dispute resolution process. Provide any evidence (e.g., receipts, screenshots).\n\n7. **Monitor Your Account** – Keep an eye on your statement for any further unauthorized activity. Set up transaction alerts if available.\n\n8. **Report to Authorities if Needed** – If the amount is significant or you suspect identity theft, file a police report and consider notifying credit bureaus.\n\nBy acting quickly and following these steps, you can protect your funds and help your bank resolve the issue.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "I made a transfer 12 hours ago. Why is it still listed as pending?",
+      "system_answer": "A transfer that is still “Pending” after 12 hours is usually delayed by one of the following factors:\n\n1. **Compliance or regulatory hold** – Many banks and payment platforms place a temporary hold on cross‑border or large transfers for AML/KYC checks. Look for any alerts or emails requesting additional documentation (e.g., proof of identity, source of funds).\n\n2. **Incorrect or incomplete recipient details** – A typo in the IBAN/SWIFT code, account number, or recipient name can keep the transfer pending until the details are corrected.\n\n3. **Bank processing schedule** – Transfers initiated close to a weekend, public holiday, or after business‑hours are often queued and processed on the next business day. Even a 12‑hour window can fall into a “next‑day” batch.\n\n4. **Internal processing time** – Some platforms batch transfers and may take 1–3 business days to move funds from the sender’s account to the recipient’s. A 12‑hour delay is within the early part of that window.\n\n5. **Account status or limits** – If your account is not fully verified, or you have exceeded daily/weekly transfer limits, the transfer may remain pending until the issue is resolved.\n\n**What to do next**\n\n- **Check the transfer details** in the app/website for any hold notices or required actions.  \n- **Verify the recipient information** and correct any errors.  \n- **Confirm your account is fully verified** and that you have sufficient funds.  \n- **Contact customer support** with the transfer reference number; they can tell you if a compliance hold is in place or if the transfer is queued for the next business day.\n\nOnce the hold is cleared or the batch is processed, the status should change to “Completed.”",
+      "gold_answer": "18",
+      "score": 0
+    },
+    {
+      "question": "can you limit my top up?",
+      "system_answer": "Yes, you can set a limit on your top‑up. Most platforms let you specify a maximum amount per day, week, or month in your account settings or by contacting customer support. If you’re topping up with a bank card, the card issuer may also impose its own limits.",
+      "gold_answer": "14",
+      "score": 0
+    },
+    {
+      "question": "Why can't I get my virtual card to work?",
+      "system_answer": "Virtual cards can fail for several reasons. Disposable virtual cards are limited to a single online transaction, cannot be used for in‑store purchases, cash withdrawals, or recurring payments, and are blocked by certain merchants (gambling, adult content, high‑risk sites) and in some countries. If your card is declined, check that you haven’t exceeded the one‑transaction limit, that the merchant accepts virtual cards, and that the transaction type is allowed. Other common reasons for a decline are insufficient funds or credit limit, the card being blocked or frozen for security reasons, merchant restrictions on card type, or technical/network issues. Verify your balance, ensure the card is active, review any recent security alerts, and if the problem persists, contact your issuer’s customer service.",
+      "gold_answer": "28",
+      "score": 0
+    },
+    {
+      "question": "What steps must I follow to get a Visa credit card?",
+      "system_answer": "To obtain a Visa credit card, follow these steps:\n\n1. **Check Your Eligibility**  \n   - Verify you meet the issuer’s minimum age requirement (usually 18+).  \n   - Ensure you have a stable source of income or a co‑signer if required.  \n   - Review your credit score; most Visa cards require a good or excellent credit history.\n\n2. **Gather Required Documents**  \n   - Valid government‑issued photo ID (passport, driver’s license, or national ID).  \n   - Proof of address (utility bill, lease agreement, or bank statement).  \n   - Recent pay stubs or tax returns to confirm income.  \n   - Social Security Number (SSN) or Tax Identification Number (TIN).\n\n3. **Choose the Right Visa Card**  \n   - Compare cards based on rewards, annual fees, interest rates, and credit limits.  \n   - Decide between secured, unsecured, or student Visa cards depending on your credit profile.\n\n4. **Apply for the Card**  \n   - **Online**: Visit the issuer’s website, fill out the application form, and upload scanned documents.  \n   - **In‑person**: Visit a branch or authorized retailer, complete a paper application, and provide documents.  \n   - **Phone**: Call the issuer’s customer service line and follow the automated or live agent instructions.\n\n5. **Submit the Application**  \n   - Double‑check all entered information for accuracy.  \n   - Sign the application electronically or in person.  \n   - Pay any application fee if applicable.\n\n6. **Wait for Approval**  \n   - The issuer will perform a credit check and review your documents.  \n   - Approval can take anywhere from a few minutes (instant) to several business days.  \n   - You’ll receive a notification via email, SMS, or mail.\n\n7. **Activate Your Card**  \n   - Once you receive the card in the mail, activate it by calling the number on the back or logging into the issuer’s online portal.  \n   - Follow the prompts to set your PIN and confirm activation.\n\n8. **Set Up Online Banking and Security Features**  \n   - Register for the issuer’s mobile app or online account.  \n   - Enable alerts for transactions, balance changes, and suspicious activity.  \n   - Set up a strong password and consider two‑factor authentication.\n\n9. **Use Your Card Responsibly**  \n   - Make payments on time to build credit.  \n   - Keep your credit utilization below 30% of your credit limit.  \n   - Monitor statements regularly for errors or unauthorized charges.\n\nBy completing these steps, you’ll successfully obtain and activate a Visa credit card, ready for use.",
+      "gold_answer": "72",
+      "score": 0
+    },
+    {
+      "question": "Can I transfer money to a beneficiery?",
+      "system_answer": "Yes, you can transfer money to a beneficiary. To do so, add the beneficiary to your account, verify the details (IBAN/SWIFT code, account number, name), ensure your account is fully verified and has sufficient funds, and then initiate the transfer. If the transfer hasn’t arrived, check the status, verify details, look for compliance holds, confirm limits, and contact support if needed.",
+      "gold_answer": "44",
+      "score": 0
+    },
+    {
+      "question": "Can you help with a transfer to an account",
+      "system_answer": "Yes, you can transfer money to an account. To do so, follow these steps:\n\n1. **Add the beneficiary** – Enter the recipient’s account details (IBAN/SWIFT code, account number, and name) in your app or website.  \n2. **Verify the details** – Double‑check that all information is correct to avoid delays or cancellations.  \n3. **Ensure your account is fully verified** – Complete any required identity or source‑of‑funds checks.  \n4. **Confirm sufficient funds and limits** – Make sure you have enough balance to cover the amount plus any fees, and that you haven’t exceeded daily or weekly limits.  \n5. **Initiate the transfer** – Submit the payment and note the reference number.  \n\nIf the transfer hasn’t arrived, check the status, look for compliance holds, confirm the schedule (weekends/holidays), review your account status, ask the recipient to check their bank, and contact customer support if needed.",
+      "gold_answer": "44",
+      "score": 0
+    },
+    {
+      "question": "Do you support all fiat currencies?",
+      "system_answer": "No, we do not support all fiat currencies. We support a selection of major fiat currencies, but not every single one.",
+      "gold_answer": "56",
+      "score": 0
+    },
+    {
+      "question": "My transfer didn't go through.",
+      "system_answer": "If your money transfer hasn’t arrived, follow these steps to identify and resolve the issue:\n\n1. **Check the transfer status** – Log into your app or website and confirm whether the payment shows as “Pending,” “Completed,” or “Failed.”  \n2. **Verify recipient details** – Ensure the IBAN/SWIFT code, account number, and name are correct; a typo can delay or cancel the transfer.  \n3. **Look for compliance holds** – Some services place a temporary hold for regulatory checks. Check for any alerts or emails requesting additional documentation (e.g., proof of identity, source of funds).  \n4. **Confirm sufficient funds and limits** – Make sure you had enough balance to cover the amount plus fees, and that you haven’t exceeded daily or weekly limits.  \n5. **Check the schedule** – Transfers initiated over a weekend or public holiday may be processed on the next business day.  \n6. **Review your account status** – If your account isn’t fully verified or is under restriction, the transfer may stay pending.  \n7. **Ask the recipient to check their bank** – The recipient’s bank might be experiencing delays or outages; confirm they haven’t received any pending status on their end.  \n8. **Contact customer support** – If none of the above resolves the issue, reach out via chat, email, or phone. Provide the transfer reference number, initiation date, and any error messages.  \n\nFollowing these steps should help you determine why the transfer is delayed and what action to take next.",
+      "gold_answer": "73",
+      "score": 0
+    },
+    {
+      "question": "How do I add the card to my account?",
+      "system_answer": "1. **Open the banking or payment app** (or log in to the website).  \n2. **Navigate to the “Payments” or “Cards” section** – usually found under “Account,” “Wallet,” or “Settings.”  \n3. **Select “Add Card” or “Add Payment Method.”**  \n4. **Enter your card details**:  \n   - Card number  \n   - Expiry date  \n   - CVV/CVC  \n   - Billing address (if required)  \n5. **Verify the card** – the app may send a one‑time password (OTP) to your phone or email, or require a 3D Secure authentication.  \n6. **Confirm the addition** – once verified, the card will appear in your list of saved cards and can be used for future transactions.  \n7. **Optional**: Set the new card as the default payment method if you wish.",
+      "gold_answer": "41",
+      "score": 0
+    },
+    {
+      "question": "I am still waiting for a cash withdrawal to show",
+      "system_answer": "Cash‑withdrawal transactions normally appear in your account balance **instantly or within a few minutes** after the ATM has processed the request. If the withdrawal is still not showing:\n\n1. **Check the ATM receipt** – Verify that the transaction was completed and note the reference number.  \n2. **Look at your transaction history** – In the app or online banking, the withdrawal may be listed as “Pending” or “Processing.”  \n3. **Consider timing** – Withdrawals made late at night, on weekends, or during bank holidays may be processed on the next business day.  \n4. **Verify account status** – Ensure your account is fully verified and not under any temporary hold or restriction.  \n5. **Contact customer support** – Provide the ATM reference number, time of withdrawal, and any error messages. They can confirm whether the transaction was accepted and when it will post.  \n\nIf the withdrawal was successful but still pending after 24–48 hours, the bank’s processing system may be experiencing a delay; customer support can give a definitive status.",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What places can I use my card?",
+      "system_answer": "Your card will be accepted wherever the card network it belongs to is accepted.  \n- **In‑store**: Any merchant that accepts the card’s network (e.g., Visa, MasterCard, American Express, Discover).  \n- **ATMs**: Any ATM that supports the card’s network, including those of partner banks.  \n- **Online**: Any e‑commerce site that lists the card’s network as a payment option.  \n- **Contactless**: If the card has a contactless chip and the terminal supports the network, you can tap it.  \n- **Mobile wallets**: If you’ve added the card to Apple Pay, Google Pay, or Samsung Pay, it will work at any terminal that accepts those wallets.",
+      "gold_answer": "15",
+      "score": 0
+    },
+    {
+      "question": "How do I open up an account for my child?",
+      "system_answer": "1. **Open the banking or payment app** (or log in to the website).  \n2. **Navigate to the “Accounts” or “Family” section** – usually found under “Account,” “Wallet,” or “Settings.”  \n3. **Select “Add Child Account” or “Create Junior Account.”**  \n4. **Enter the child’s details**:  \n   - Full name  \n   - Date of birth (must be at least 13 years old)  \n   - Email address (optional)  \n5. **Provide parental or guardian information**:  \n   - Your name and contact details  \n   - Your account ID or login credentials for verification  \n6. **Agree to the terms and conditions** for a child account, including any age‑specific limits or restrictions.  \n7. **Submit the application** – the platform will verify the child’s age and your consent.  \n8. **Wait for approval** – most services approve within a few minutes to a few business days.  \n9. **Set up the account** – once approved, you can add a debit card, set spending limits, and monitor activity from your own dashboard.  \n\n**Important notes**  \n- The minimum age to use the service is 13 years old.  \n- If your child is under 18, parental or guardian consent is required.  \n- Some platforms may require additional identity verification for the parent/guardian.",
+      "gold_answer": "21",
+      "score": 0
+    },
+    {
+      "question": "can you tell me what cards and currencies you take?",
+      "system_answer": "We accept Mastercard. We support USD.",
+      "gold_answer": "39",
+      "score": 0
+    },
+    {
+      "question": "Why didn't my balance change after I transferred some money?",
+      "system_answer": "Your balance may not have updated because the transfer is still **pending** or has been **reversed**. Common reasons include:\n\n1. **Processing time** – Transfers, especially international or weekend ones, can take 1–5 business days before the balance is adjusted.  \n2. **Compliance hold** – The transaction may be on hold for regulatory checks; the balance stays unchanged until cleared.  \n3. **Insufficient funds or limits** – If the account lacked enough money or exceeded daily limits, the transfer could be declined, leaving the balance intact.  \n4. **Technical delay** – The app may not have refreshed the balance immediately after the transfer was initiated.  \n\nCheck the transfer status in the app, verify that the transaction shows as “Completed” or “Failed,” and contact support if it remains pending beyond the expected timeframe.",
+      "gold_answer": "69",
+      "score": 0
+    },
+    {
+      "question": "The wrong rate was applied to an item I bought in a currency different from mine. Can this be changed?",
+      "system_answer": "The exchange rate applied to a purchase is fixed at the time the transaction is authorized. Once the merchant has captured the transaction, the rate cannot be altered. If you believe the rate was incorrect (for example, due to Dynamic Currency Conversion), you can contact the merchant or your card‑issuing bank to dispute the charge, but the rate itself cannot be changed retroactively.",
+      "gold_answer": "19",
+      "score": 0
+    },
+    {
+      "question": "How many tries do I have to enter my pin before I'm blocked?",
+      "system_answer": "You typically have **three attempts** to enter your PIN before the card is blocked.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "My top-up isn't working.",
+      "system_answer": "If your top‑up isn’t working, try the following steps:\n\n1. **Check the card details** – make sure the card number, expiry date, CVV and billing address are entered correctly.  \n2. **Verify card status** – ensure the card is active, not expired, and has sufficient funds. Some issuers block online or international transactions.  \n3. **Review limits** – many platforms impose daily, weekly or monthly top‑up limits. If you’ve reached the limit, the top‑up will be declined.  \n4. **Look for compliance holds** – the transaction may be on hold for regulatory checks; it will appear as “pending” until cleared.  \n5. **Confirm internet connection and app version** – a weak connection or an outdated app can cause failures.  \n6. **Check the transaction status** – open the app, view the recent activity, and see if the top‑up shows as “Completed,” “Failed,” or “Pending.”  \n7. **Contact support** – if the top‑up still fails after the above checks, reach out to customer support with the transaction ID and any error message you received. They can investigate and resolve the issue.",
+      "gold_answer": "54",
+      "score": 0
+    },
+    {
+      "question": "Where do I need to live to get support?",
+      "system_answer": "You need to live in a location that offers the specific support you require. For example, if you need medical or mental‑health assistance, choose a city with reputable hospitals and counseling services; if you need financial or social services, look for areas with robust community programs and accessible government aid. In general, urban centers or regions with well‑developed social infrastructure tend to provide the most comprehensive support networks.",
+      "gold_answer": "11",
+      "score": 0
+    },
+    {
+      "question": "Delete this account!",
+      "system_answer": "To delete your account, follow these general steps (the exact wording may vary depending on the service):\n\n1. **Log In** – Open the official app or website and sign in with your credentials.  \n2. **Access Settings** – Navigate to the account or profile section, usually found in the top‑right corner or in a sidebar menu.  \n3. **Find Delete/Close Account** – Look for an option labeled “Delete Account,” “Close Account,” “Deactivate,” or similar. It may be under “Privacy,” “Security,” or “Account Management.”  \n4. **Read the Warning** – Most platforms will display a notice that deletion is irreversible and may delete all data, subscriptions, and history.  \n5. **Confirm the Action** – Click the delete button, then follow any additional prompts (e.g., re‑enter your password, confirm via email, or answer a security question).  \n6. **Check Confirmation** – You should receive a confirmation email or on‑screen message that the account has been deleted.  \n7. **Remove Saved Credentials** – Delete any saved passwords or authentication tokens from your device or password manager.  \n\nIf the platform does not provide an in‑app option, contact customer support via email, chat, or phone and request account deletion. Be prepared to verify your identity.",
+      "gold_answer": "23",
+      "score": 0
+    },
+    {
+      "question": "There is an extra $1 charge",
+      "system_answer": "A $1 transaction is usually a **small verification or “test” charge** that merchants or payment processors use to confirm that your card is active and the account details are correct. It is typically held (not actually taken) and will automatically drop off your statement after a few days. If you’re unsure, check the merchant name on the statement, contact that merchant for clarification, and if the charge remains after a week, file a dispute with your bank.",
+      "gold_answer": "55",
+      "score": 0
+    },
+    {
+      "question": "app does not recognize me",
+      "system_answer": "If the app isn’t recognizing you, try the following steps:  \n1. **Check your credentials** – make sure you’re entering the correct username/email and password.  \n2. **Verify your internet connection** – a weak or intermittent connection can prevent authentication.  \n3. **Update the app** – install the latest version from the App Store or Google Play.  \n4. **Clear app data/cache** – on Android go to Settings → Apps → [App] → Storage → Clear Cache; on iOS you may need to delete and reinstall the app.  \n5. **Log out and log back in** – sometimes a fresh session resolves recognition issues.  \n6. **Reset your password** – if you suspect the account is compromised or the password is wrong.  \n7. **Reinstall the app** – uninstall, then reinstall to reset any corrupted files.  \n8. **Check for device restrictions** – some apps require specific OS versions or device settings.  \n9. **Contact support** – if none of the above works, reach out to the app’s help center or support email with details of the problem.",
+      "gold_answer": "16",
+      "score": 0
+    },
+    {
+      "question": "What are the fees for a physical card?",
+      "system_answer": "The fee for a physical card is £5.",
+      "gold_answer": "37",
+      "score": 0
+    },
+    {
+      "question": "Is there a limit to top-ups?",
+      "system_answer": "Yes, there is a limit to top‑ups. Most platforms set daily, weekly or monthly caps that you can view or adjust in your account settings, and card issuers may also impose their own limits. If you hit the limit, the top‑up will be declined until the period resets.",
+      "gold_answer": "14",
+      "score": 0
+    },
+    {
+      "question": "Please explain why the transfers shows up as pending?",
+      "system_answer": "A transfer that appears as **“Pending”** is usually still in the processing pipeline. Common reasons include:\n\n1. **Processing time** – Transfers, especially international or those initiated close to a weekend or holiday, can take 1–5 business days before the status changes to “Completed.”  \n2. **Compliance or regulatory hold** – The transaction may be on hold for AML/KYC checks; you’ll often see a notification or email asking for additional documentation.  \n3. **Incorrect or incomplete recipient details** – A typo in the IBAN/SWIFT code, account number, or recipient name can keep the transfer pending until corrected.  \n4. **Insufficient funds or exceeded limits** – If your account lacks the necessary balance or you’ve hit daily/weekly transfer limits, the transfer may be declined or held.  \n5. **Account verification status** – Transfers from accounts that are not fully verified can remain pending until verification is complete.  \n6. **Technical or app delay** – The app may not refresh the balance immediately after the transfer is initiated, even though the backend has processed it.  \n\n**What to do next**\n\n- Check the transfer details in the app/website for any hold notices or required actions.  \n- Verify the recipient information and correct any errors.  \n- Confirm you have sufficient funds and that your account is fully verified.  \n- If the status remains “Pending” beyond the expected timeframe, contact customer support with the transfer reference number; they can tell you if a compliance hold is in place or if the transfer is queued for the next business day.",
+      "gold_answer": "18",
+      "score": 0
+    },
+    {
+      "question": "How do I know which ATMs will accept this card?",
+      "system_answer": "Your card will work at any ATM that displays the logo of the card’s network (e.g., Visa, MasterCard, American Express, Discover). Look for the network’s symbol on the ATM or the bank’s website; partner‑bank ATMs and those that list the network are guaranteed to accept your card.",
+      "gold_answer": "43",
+      "score": 0
+    },
+    {
+      "question": "Is my cash withdrawal pending?",
+      "system_answer": "To find out whether your cash withdrawal is still pending, follow these steps:\n\n1. **Check the ATM receipt** – Verify that the transaction was completed and note the reference number.  \n2. **Open your banking app or online portal** – Look at the recent transaction list.  \n   * If the withdrawal appears with a status such as “Pending,” “Processing,” or “Awaiting Confirmation,” it is still pending.  \n   * If it shows as “Completed” or “Cleared,” the withdrawal has finished.  \n3. **Consider the timing** – Withdrawals made late at night, on weekends, or during bank holidays may be processed on the next business day.  \n4. **Verify account status** – Ensure your account is fully verified and not under any temporary hold or restriction.  \n5. **Contact customer support** – If the withdrawal is still not reflected after 24–48 hours, provide the ATM reference number, time of withdrawal, and any error messages. Customer support can confirm whether the transaction was accepted and when it will post.",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "Why do you require so many identity details?",
+      "system_answer": "Identity verification is required to protect your account and the service you use. By confirming who you are, the platform can:\n\n1. **Prevent fraud and unauthorized access** – Ensures that only the legitimate account holder can make changes or transactions.  \n2. **Meet legal and regulatory obligations** – Many industries (banking, finance, crypto, healthcare) must verify users to comply with anti‑money‑laundering (AML), know‑your‑customer (KYC), and data‑protection laws.  \n3. **Secure sensitive information** – Verifying identity helps safeguard personal data, financial details, and confidential communications.  \n4. **Enable higher‑risk features** – Certain services (large transfers, advanced trading, premium features) require verified accounts to limit liability.  \n5. **Maintain platform integrity** – Reduces the risk of scams, phishing, and impersonation, keeping the community safe for all users.  \n\nIn short, identity verification is a standard security measure that protects both you and the service from fraud, legal penalties, and unauthorized activity.",
+      "gold_answer": "45",
+      "score": 0
+    },
+    {
+      "question": "I don't recognize a debit payment that was made and would like to find out about the payment.",
+      "system_answer": "If you see a debit on your statement that you don’t recognize and want to find out about it, follow these steps:\n\n1. **Verify the Transaction** – Log into your banking app or online portal and review the transaction details (date, amount, merchant or recipient). Compare them with any recent purchases or transfers you made.\n\n2. **Check Your Account Activity** – Look for any authorized payments that might match the debit. Sometimes a legitimate payment can appear under a different merchant name.\n\n3. **Review Your Security Settings** – Ensure your account password, PIN, and two‑factor authentication are secure. If you suspect a breach, change your credentials immediately.\n\n4. **Contact Your Bank or Card Issuer** – Call the customer service number on the back of your card or use the in‑app chat. Report the unauthorized debit and request a transaction investigation.\n\n5. **Request a Temporary Freeze or Card Replacement** – If you believe the account is compromised, ask the bank to freeze the account or issue a new card while the investigation proceeds.\n\n6. **File a Dispute or Chargeback** – If the debit was a fraudulent card payment, submit a dispute through the bank’s dispute resolution process. Provide any evidence (e.g., receipts, screenshots).\n\n7. **Monitor Your Account** – Keep an eye on your statement for any further unauthorized activity. Set up transaction alerts if available.\n\n8. **Report to Authorities if Needed** – If the amount is significant or you suspect identity theft, file a police report and consider notifying credit bureaus.\n\nBy acting quickly and following these steps, you can protect your funds and help your bank resolve the issue.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "Still waiting on a refund.",
+      "system_answer": "If you’re still waiting on a refund, follow these steps to check its status and resolve any delays:\n\n1. **Check your transaction history** – Open the app or website where you made the purchase and look for the refund entry. It should appear with a status such as “Pending,” “Processing,” or “Completed.”  \n2. **Verify the refund reference** – The refund should have a unique reference number or transaction ID. Note this for future reference.  \n3. **Consider the expected timeframe** –  \n   * Domestic refunds* typically take 3–5 business days.  \n   * International or card‑to‑card refunds* can take up to 10–15 business days.  \n   * If the refund was requested during a weekend or holiday, the processing may start on the next business day.  \n4. **Check for hold or compliance notices** – Some refunds may be on hold for AML/KYC checks. Look for any notifications or emails asking for additional documentation.  \n5. **Confirm account balance** – Ensure the refunded amount has been credited to the correct account or card.  \n6. **Contact customer support** – If the refund remains “Pending” beyond the expected period, reach out to support with:  \n   * The original transaction ID or order number.  \n   * The refund reference number.  \n   * The date and time the refund was requested.  \n   * Any error messages or notifications received.  \n   Support can confirm whether the refund is still processing, on hold, or if there was an issue that needs resolution.  \n\nBy following these steps, you can determine the status of your refund and take the appropriate action if it is delayed.",
+      "gold_answer": "17",
+      "score": 0
+    },
+    {
+      "question": "Why is there a transaction that shows multiple times?",
+      "system_answer": "A transaction that appears multiple times on your statement is usually the result of a duplicate authorization or processing error. Common causes include:  \n1. **Technical glitch** – the merchant’s payment system or the card network (Visa, MasterCard, etc.) may have sent the same authorization twice.  \n2. **Subscription or recurring billing** – a subscription that was accidentally activated twice or a billing cycle that overlaps can create duplicate entries.  \n3. **Manual entry error** – a merchant employee may have entered the same transaction twice.  \n\nIn most cases, the duplicate will be reversed automatically within a few business days. If it persists, contact the merchant or your bank to investigate and request a refund.",
+      "gold_answer": "63",
+      "score": 0
+    },
+    {
+      "question": "I was taking out funds and was unable to regain my card.",
+      "system_answer": "If your card is stuck in an ATM while you were withdrawing funds, follow these steps:\n\n1. **Do not force the card out** – Pulling it can damage the machine or the card.  \n2. **Look for a retrieval button** – Some ATMs have a “card retrieval” or “return card” button; press it if available.  \n3. **Call the ATM operator or your bank’s customer service** – Use the number on the back of your card or the ATM’s display. Tell them the card is stuck and give the ATM location.  \n4. **Wait for the card to be released** – The operator may need to manually retrieve it; this can take a few minutes to a few hours.  \n5. **Check the transaction status** – Once the card is returned, verify whether the withdrawal was processed. If it was, dispute it with your bank.  \n6. **Request a replacement if necessary** – If the card is damaged or cannot be retrieved, ask your bank to issue a new card and cancel the old one.  \n\nBy staying calm, using the proper channels, and allowing the operator time to retrieve the card, you can resolve the issue with minimal disruption.",
+      "gold_answer": "51",
+      "score": 0
+    },
+    {
+      "question": "My credit card cancelled a payment for a purchase.",
+      "system_answer": "A credit‑card payment can be cancelled (declined) for several common reasons:\n\n1. **Insufficient funds or credit limit** – The transaction amount exceeds the available balance or credit line.  \n2. **Card blocked or frozen** – The issuer may have temporarily blocked the card for security reasons (e.g., suspicious activity, recent travel, or a reported loss).  \n3. **Merchant restrictions** – Some merchants do not accept certain cards or card types, or they block cards from specific issuers.  \n4. **Technical or network issues** – Temporary problems with the card network, the merchant’s payment gateway, or your internet connection can cause a decline.  \n\nTo resolve the issue, check your account balance, ensure the card is active, review any recent security alerts from your issuer, and if the problem persists, contact your card issuer’s customer service for assistance.",
+      "gold_answer": "74",
+      "score": 0
+    },
+    {
+      "question": "Can I get a physical card through this app?",
+      "system_answer": "Yes, you can order a physical card through the app. The card costs £5.",
+      "gold_answer": "37",
+      "score": 0
+    },
+    {
+      "question": "I made a mistake and need to cancel a transaction",
+      "system_answer": "1. **Check the status** – Log into your banking app or online portal to see if the transaction is still pending or has already cleared.  \n2. **Contact the merchant** – Call or email the merchant’s customer service. If the payment is still pending, they can cancel or reverse it.  \n3. **Contact your bank or card issuer** – Call the number on the back of your card or use the in‑app chat. Request a cancellation or dispute for the transaction.  \n4. **Provide details** – Give the transaction date, amount, merchant name, and the reason for cancellation.  \n5. **Follow up** – Ask for confirmation of the cancellation and keep any reference numbers. If the transaction has already cleared, the bank may initiate a chargeback or refund process.  \n6. **Monitor your account** – Verify that the amount is removed or refunded within the expected timeframe (usually 5–10 business days).",
+      "gold_answer": "20",
+      "score": 0
+    },
+    {
+      "question": "I need to verify my identity, but how do I do that?",
+      "system_answer": "To verify your identity safely, follow these steps:\n\n1. **Confirm the source** – Make sure the request comes from the official app, website, or customer‑service email of the company (e.g., your bank, payment platform, or service provider). Check the domain, logo, and contact details.\n\n2. **Do not click suspicious links** – If the message contains a link, hover over it (on a computer) or tap it carefully (on a phone) to see the real URL. Avoid unfamiliar or shortened links.\n\n3. **Log in directly** – Open the company’s app or website yourself (type the URL into your browser or use the official app). Navigate to the “Account” or “Security” section where identity verification is requested.\n\n4. **Follow the on‑screen instructions** – You’ll usually be asked to upload a photo of a government‑issued ID (passport, driver’s licence, or national ID card) and possibly a selfie or a proof‑of‑address document (utility bill, bank statement, etc.).\n\n5. **Use secure upload methods** – Upload documents through the app or the secure portal, not via email or third‑party links. Ensure the connection is HTTPS (look for the lock icon in the browser).\n\n6. **Check for confirmation** – After submitting, you should receive a confirmation email or in‑app notification that your documents are being processed. Some services may take a few hours to a few days to verify.\n\n7. **Keep records** – Save copies of the documents you sent and any confirmation receipts. Note the date and time of submission.\n\n8. **If you suspect fraud** – If the message looks phishing (misspellings, urgent tone, or requests for passwords), report it to the company’s fraud or support team and do not provide any personal information.\n\nBy verifying the authenticity of the message, using the official channels, and securely submitting the required documents, you can safely complete the identity verification process.",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "I need to cancel an incorrect transaction.",
+      "system_answer": "1. **Check the transaction status** – Log into your banking app or online portal to see if the transaction is still pending or has already cleared.  \n2. **Contact the merchant** – Call or email the merchant’s customer service. If the payment is still pending, they can cancel or reverse it.  \n3. **Contact your bank or card issuer** – Call the number on the back of your card or use the in‑app chat. Request a cancellation or dispute for the transaction.  \n4. **Provide details** – Give the transaction date, amount, merchant name, and the reason for cancellation.  \n5. **Follow up** – Ask for confirmation of the cancellation and keep any reference numbers. If the transaction has already cleared, the bank may initiate a chargeback or refund process.  \n6. **Monitor your account** – Verify that the amount is removed or refunded within the expected timeframe (usually 5–10 business days).",
+      "gold_answer": "20",
+      "score": 0
+    },
+    {
+      "question": "My latest payment was declined, I was told everything was back to working order. What happened?",
+      "system_answer": "Your payment was declined because of one of the common reasons that can still trigger a decline even after a system “reset” has been reported:\n\n1. **Insufficient funds or credit limit** – The amount you tried to pay exceeds the available balance or credit line.  \n2. **Card blocked or frozen** – The issuer may have temporarily blocked the card for security reasons (e.g., suspicious activity, recent travel, or a reported loss).  \n3. **Merchant restrictions** – Some merchants do not accept certain cards or card types, or they block cards from specific issuers.  \n4. **Technical or network issues** – Temporary problems with the card network, the merchant’s payment gateway, or your internet connection can cause a decline.\n\nEven though the system said everything was back to working order, the underlying issue (such as a balance shortfall or a temporary block) still prevented the transaction. Check your account balance, confirm the card is active, review any recent security alerts from your issuer, and if the problem persists, contact your card issuer’s customer service for clarification.",
+      "gold_answer": "60",
+      "score": 0
+    },
+    {
+      "question": "whats your exchange rate",
+      "system_answer": "The exchange rate applied to a purchase is fixed at the time the transaction is authorized. Once the merchant has captured the transaction, the rate cannot be altered. If you believe the rate was incorrect (for example, due to Dynamic Currency Conversion), you can contact the merchant or your card‑issuing bank to dispute the charge, but the rate itself cannot be changed retroactively.",
+      "gold_answer": "10",
+      "score": 0
+    },
+    {
+      "question": "How do I get my paycheck through this?",
+      "system_answer": "To get your paycheck through the system, follow these steps:\n\n1. **Set up Direct Deposit** – Provide your employer with your bank’s routing number and your account number (or the equivalent IBAN/SWIFT for international accounts).  \n2. **Verify Your Account Details** – Double‑check that the account number, routing number, and account type (checking/savings) are entered correctly.  \n3. **Confirm Employer’s Payroll Schedule** – Know the exact date your paycheck will be processed and deposited.  \n4. **Check Your Bank’s Deposit Status** – Log into your online banking or mobile app to see if the deposit appears as “Pending,” “Completed,” or “Failed.”  \n5. **Resolve Any Holds or Issues** – If the deposit is pending, contact your bank to confirm there are no compliance holds or insufficient funds.  \n6. **Contact Payroll/HR if Needed** – If the deposit doesn’t appear by the expected date, reach out to your employer’s payroll or HR department with your employee ID and the expected deposit date.  \n7. **Keep Records** – Save any confirmation emails or reference numbers from both your employer and bank for future reference.  \n\nFollowing these steps will ensure your paycheck is received and deposited correctly.",
+      "gold_answer": "8",
+      "score": 0
+    },
+    {
+      "question": "How can i check if my card is working?",
+      "system_answer": "To verify if your card is working, follow these quick steps:\n\n1. **Check the card’s physical condition** – Look for visible damage, bent edges, or a broken chip.  \n2. **Verify the expiration date** – An expired card will be rejected by most terminals.  \n3. **Confirm the PIN is correct** – A wrong PIN can block the card after a few attempts.  \n4. **Test at an ATM** – Insert the card and try a small withdrawal or balance inquiry.  \n5. **Try an online transaction** – Use a small purchase or a merchant that accepts card payments.  \n6. **Check activation status** – Some new cards need activation via phone, app, or online portal.  \n7. **Review recent activity** – Look for any declined or pending transactions in your banking app or statement.  \n8. **Contact your bank’s customer service** – If any of the above checks fail, call the bank with your card number (last four digits) and any error messages for further assistance.",
+      "gold_answer": "42",
+      "score": 0
+    },
+    {
+      "question": "What is the top-ups limit?",
+      "system_answer": "The top‑up limit varies by platform. Most services set daily, weekly, or monthly caps that you can view or adjust in your account settings, and card issuers may also impose their own limits. If you hit the limit, the top‑up will be declined until the period resets.",
+      "gold_answer": "14",
+      "score": 0
+    },
+    {
+      "question": "I would like to link my card. How do I do it?",
+      "system_answer": "1. **Open the banking or payment app** (or log in to the website).  \n2. **Navigate to the “Payments” or “Cards” section** – usually found under “Account,” “Wallet,” or “Settings.”  \n3. **Select “Add Card” or “Add Payment Method.”**  \n4. **Enter your card details**:  \n   - Card number  \n   - Expiry date  \n   - CVV/CVC  \n   - Billing address (if required)  \n5. **Verify the card** – the app may send a one‑time password (OTP) to your phone or email, or require a 3D Secure authentication.  \n6. **Confirm the addition** – once verified, the card will appear in your list of saved cards and can be used for future transactions.  \n7. **Optional**: Set the new card as the default payment method if you wish.",
+      "gold_answer": "41",
+      "score": 0
+    },
+    {
+      "question": "Where do I go if I want to link my new card?",
+      "system_answer": "1. **Open the banking or payment app** (or log in to the website).  \n2. **Navigate to the “Payments” or “Cards” section** – usually found under “Account,” “Wallet,” or “Settings.”  \n3. **Select “Add Card” or “Add Payment Method.”**  \n4. **Enter your card details**:  \n   - Card number  \n   - Expiry date  \n   - CVV/CVC  \n   - Billing address (if required)  \n5. **Verify the card** – the app may send a one‑time password (OTP) to your phone or email, or require a 3D Secure authentication.  \n6. **Confirm the addition** – once verified, the card will appear in your list of saved cards and can be used for future transactions.  \n7. **Optional**: Set the new card as the default payment method if you wish.",
+      "gold_answer": "41",
+      "score": 0
+    },
+    {
+      "question": "How can I start using my card?",
+      "system_answer": "1. **Open the banking or payment app** (or log in to the website).  \n2. **Navigate to the “Payments” or “Cards” section** – usually found under “Account,” “Wallet,” or “Settings.”  \n3. **Select “Add Card” or “Add Payment Method.”**  \n4. **Enter your card details**:  \n   - Card number  \n   - Expiry date  \n   - CVV/CVC  \n   - Billing address (if required)  \n5. **Verify the card** – the app may send a one‑time password (OTP) to your phone or email, or require a 3D Secure authentication.  \n6. **Confirm the addition** – once verified, the card will appear in your list of saved cards and can be used for future transactions.  \n7. **Optional**: Set the new card as the default payment method if you wish.",
+      "gold_answer": "31",
+      "score": 0
+    },
+    {
+      "question": "I made a mistake when I did a transfer so now what can I do to fix that?",
+      "system_answer": "If you made an error when initiating a transfer, follow these steps to correct it:\n\n1. **Check the transfer status** – Log into your app or website and see whether the payment shows as “Pending,” “Completed,” or “Failed.”  \n2. **Cancel if still pending** – If the status is “Pending,” you can usually cancel the transfer directly in the app. Look for a “Cancel” or “Revert” option next to the transaction.  \n3. **Reverse a completed transfer** – If the transfer has already been completed, you’ll need to request a reversal. Contact customer support immediately with the transfer reference number and explain the mistake.  \n4. **Verify recipient details** – Double‑check the IBAN/SWIFT code, account number, and recipient name. If any details are wrong, correct them before attempting a new transfer.  \n5. **Confirm sufficient funds and limits** – Make sure you have enough balance to cover the amount plus any fees, and that you haven’t exceeded daily or weekly limits.  \n6. **Check for compliance holds** – Some services place a temporary hold for regulatory checks. Look for any alerts or emails requesting additional documentation (e.g., proof of identity, source of funds).  \n7. **Ask the recipient to check their bank** – The recipient’s bank might be experiencing delays or outages; confirm they haven’t received any pending status on their end.  \n8. **Contact customer support** – If you can’t cancel or reverse the transfer yourself, reach out via chat, email, or phone. Provide the transfer reference number, initiation date, and a clear description of the mistake.  \n9. **Initiate a new transfer** – Once the original transfer is cancelled or reversed, send a new transfer with the correct details.  \n\nFollowing these steps should help you correct the mistake and ensure the funds reach the intended recipient.",
+      "gold_answer": "20",
+      "score": 0
+    },
+    {
+      "question": "The app reverted what I topped up.",
+      "system_answer": "When the app reverts a top‑up, it means the transaction was cancelled and the amount was returned to your card. Common reasons include:\n\n1. **Insufficient funds or card balance** – the card didn’t have enough money to cover the top‑up.  \n2. **Card or issuer restrictions** – the card was blocked for online/international payments, or the issuer flagged the transaction as suspicious.  \n3. **Exceeded top‑up limits** – you hit the daily, weekly, or monthly limit set by the app or by your card.  \n4. **Compliance or regulatory hold** – the transaction was put on hold for verification and then cancelled.  \n5. **Technical or network issues** – a weak connection or app glitch caused the payment to fail and be reversed.  \n\n**What to do next**\n\n- **Check your card balance** and ensure it’s active and has enough funds.  \n- **Verify card details** (number, expiry, CVV, billing address).  \n- **Look at your top‑up limits** in the app’s settings; increase them if possible.  \n- **Review recent activity** in the app to see the status of the reverted top‑up.  \n- **Contact support** with the transaction ID and any error message; they can confirm why the reversal happened and help you retry.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "In terms of holding and exchange, what fiat currencies do you use.",
+      "system_answer": "We support holding and exchanging the following major fiat currencies:  \n- US Dollar (USD)  \n- Euro (EUR)  \n- British Pound (GBP)  \n- Japanese Yen (JPY)  \n- Australian Dollar (AUD)  \n- Canadian Dollar (CAD)  \n- Swiss Franc (CHF)  \n- New Zealand Dollar (NZD)",
+      "gold_answer": "56",
+      "score": 0
+    },
+    {
+      "question": "Can you tell me if my top-up has been cancelled?",
+      "system_answer": "To find out if your top‑up has been cancelled, follow these steps:\n\n1. **Open the app** and go to the “Top‑ups” or “Payments” section.  \n2. **Check the status** of the most recent top‑up transaction.  \n   - If it shows **“Reverted,” “Cancelled,” or “Failed,”** the top‑up was cancelled and the amount has been returned to your card.  \n   - If it shows **“Completed”** or **“Pending,”** the top‑up is still in process or has succeeded.  \n3. **Review the transaction details** for any error codes or messages that explain why it was cancelled.  \n4. **Verify your card balance and limits** (daily/weekly/monthly) to ensure the cancellation wasn’t due to insufficient funds or limit breaches.  \n5. **If the top‑up is still pending or you’re unsure, contact support** with the transaction ID and any error information; they can confirm the status and help you retry if needed.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "Why can't I use my American Express with Apple Pay to top up my account?",
+      "system_answer": "You can’t use an American Express card with Apple Pay to top up because the app’s payment processor only accepts Visa, MasterCard, and a few other card networks for top‑up transactions. Apple Pay itself does not support Amex for merchant payments in many regions, so the top‑up request is rejected before it reaches the app.",
+      "gold_answer": "30",
+      "score": 0
+    },
+    {
+      "question": "Can you help me with a weird charge?  It's a pound charge that never goes away from the statement view on the app I'm using.  It's not described as anything but \"Pending\", and that status has never changed during the last two days.",
+      "system_answer": "A £1 “Pending” charge is almost always a merchant pre‑authorisation used to verify that your card is active. The merchant authorises the amount, but the actual capture (the real charge) will only happen if they decide to take the money. If they never capture it, the hold will automatically expire after a short period (usually 7 days for most cards).  \n\nBecause the status has stayed “Pending” for two days, you can:\n\n1. **Check the merchant name** on the statement to see who placed the hold.  \n2. **Wait a few more days** – the hold should drop off automatically if the merchant never captures it.  \n3. **If it remains pending** beyond the usual 7‑day window, contact the merchant to ask whether they intend to capture the amount.  \n4. **If the merchant is unresponsive or you suspect a mistake**, reach out to your card issuer or the app’s support team. They can investigate and, if necessary, reverse the pending authorisation.  \n\nIn most cases, the £1 will disappear on its own once the merchant’s hold expires; if it does not, the issuer can cancel the pending transaction and you will not be charged.",
+      "gold_answer": "55",
+      "score": 0
+    },
+    {
+      "question": "I received my new card, but I don't see it in the app anywhere.  What do I do?",
+      "system_answer": "1. **Open the app** and go to the **Cards** or **Payments** section.  \n2. If the new card isn’t listed, tap **Add new card** (or **+ Card**) and enter the card number, expiry, and CVV.  \n3. Verify the card via the OTP or 3D Secure prompt that the app sends.  \n4. Once verified, the card will appear in your card list.  \n5. If it still doesn’t show up, **restart the app** or **update it to the latest version**.  \n6. If the card remains missing after 24 hours, contact customer support through the app’s help or chat feature.",
+      "gold_answer": "41",
+      "score": 0
+    },
+    {
+      "question": "The transfer I did hasn't arrived",
+      "system_answer": "If your money transfer hasn’t arrived, follow these steps to identify and resolve the issue:\n\n1. **Check the transfer status** – Log into your app or website and confirm whether the payment shows as “Pending,” “Completed,” or “Failed.”  \n2. **Verify recipient details** – Ensure the IBAN/SWIFT code, account number, and name are correct; a typo can delay or cancel the transfer.  \n3. **Look for compliance holds** – Some services place a temporary hold for regulatory checks. Check for any alerts or emails requesting additional documentation (e.g., proof of identity, source of funds).  \n4. **Confirm sufficient funds and limits** – Make sure you had enough balance to cover the amount plus fees, and that you haven’t exceeded daily or weekly limits.  \n5. **Check the schedule** – Transfers initiated over a weekend or public holiday may be processed on the next business day.  \n6. **Review your account status** – If your account isn’t fully verified or is under restriction, the transfer may stay pending.  \n7. **Ask the recipient to check their bank** – The recipient’s bank might be experiencing delays or outages; confirm they haven’t received any pending status on their end.  \n8. **Contact customer support** – If none of the above resolves the issue, reach out via chat, email, or phone. Provide the transfer reference number, initiation date, and any error messages.  \n\nFollowing these steps should help you determine why the transfer is delayed and what action to take next.",
+      "gold_answer": "6",
+      "score": 0
+    },
+    {
+      "question": "Can I top up using an international card",
+      "system_answer": "Yes, you can top up using an international card, provided the platform accepts foreign debit/credit cards. Check the specific service’s top‑up policy for any limits, fees, or supported card types, and ensure your card issuer allows international transactions.",
+      "gold_answer": "76",
+      "score": 0
+    },
+    {
+      "question": "How do I deal with a blocked PIN?",
+      "system_answer": "If your PIN is blocked, you usually have three attempts to enter it before the card is locked. To unblock it, follow these steps:\n\n1. **Verify the PIN** – Make sure you’re using the correct PIN. If you’re unsure, reset or retrieve it through your bank’s mobile app or website.  \n2. **Use the ATM “PIN Reset” option** – Many ATMs allow you to reset a blocked PIN by selecting the “PIN change” or “PIN reset” function. Follow the on‑screen prompts.  \n3. **Contact customer service** – Call the number on the back of your card or use the in‑app chat. Request a PIN reset or unblock. They may ask for identity verification.  \n4. **Visit a branch** – If you prefer in‑person assistance, go to a local branch with your ID and card; a teller can reset the PIN for you.  \n5. **Confirm the new PIN** – After resetting, test the new PIN at an ATM or POS terminal to ensure it works.  \n\nIf the card remains blocked after these steps, ask the bank to issue a replacement card.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "Why was I charged a fee for withdrawing cash?",
+      "system_answer": "When you withdraw cash from an ATM, the fee you see on your statement is usually the result of several charges that can be applied by different parties:\n\n1. **ATM Operator Fee** – The bank or company that owns the ATM often adds a fixed or percentage fee for each withdrawal.  \n2. **Card‑Network Fee** – Visa, Mastercard, or other card networks may charge a small fee for using their network to process the withdrawal.  \n3. **Foreign‑Currency Conversion (DCC)** – If you are withdrawing cash in a currency different from your account’s base currency, the ATM operator may use Dynamic Currency Conversion, applying its own exchange rate and possibly adding a conversion fee.  \n4. **Your Bank’s Service Charge** – Some banks add an additional service fee for ATM withdrawals, especially if the withdrawal is made outside the bank’s own network or if you exceed a certain number of free withdrawals per month.",
+      "gold_answer": "62",
+      "score": 0
+    },
+    {
+      "question": "I payed with a card and was charged an extra fee",
+      "system_answer": "When you pay with a card and see an extra fee on your statement, it’s usually one of the following:  \n\n1. **Merchant surcharge** – Some retailers add a fee for card payments (often a small percentage of the purchase).  \n2. **Card‑network fee** – Visa, MasterCard, or other networks may charge a processing fee that can be passed on to the customer.  \n3. **Foreign‑transaction fee** – If the purchase is in a currency different from your account’s base currency, the card issuer may apply a foreign‑exchange or conversion fee.  \n4. **Dynamic Currency Conversion (DCC)** – The merchant’s payment terminal may convert the amount to your home currency at a less favorable rate and add a conversion fee.  \n\nIf you’re unsure which applies, check the transaction details on your statement or contact your card issuer for a breakdown.",
+      "gold_answer": "27",
+      "score": 0
+    },
+    {
+      "question": "Hello. I checked my transactions and saw I was double charged on my card for a restaurant visit. I would like to get my money back.",
+      "system_answer": "1. **Verify the duplicate** – Log into your banking app or online portal and review the transaction history for the past week. Look for two identical entries (same date, amount, and merchant) that indicate a duplicate charge.  \n2. **Check receipts** – If you have a receipt or order confirmation, compare it with the statement entries. A duplicate charge will usually show the same merchant name and amount.  \n3. **Contact the restaurant** – Call the customer service number on the back of your card or use the restaurant’s support contact. Explain that you see a double charge, provide the transaction details (date, amount, reference number), and ask them to investigate and issue a refund for the duplicate.  \n4. **File a dispute with your bank** – If the restaurant does not resolve the issue promptly, submit a dispute through your bank’s dispute resolution process. Provide all relevant documentation (receipts, screenshots, correspondence with the restaurant).  \n5. **Monitor your account** – After filing the dispute, keep an eye on your statement. The bank will typically credit the disputed amount back to your account within 30–45 days, depending on the card network’s rules.  \n6. **Prevent future duplicates** – If the duplicate was due to a processing error, consider updating your card details or using a different payment method for future purchases to avoid recurrence.",
+      "gold_answer": "63",
+      "score": 0
+    },
+    {
+      "question": "How long do card transactions take to clear?",
+      "system_answer": "Card transactions typically clear within 1–3 business days after the merchant captures the payment. However, some merchants—especially those that pre‑authorize and capture later (e.g., hotels, car rentals, online retailers)—may take up to 7–30 days to complete the capture, after which the transaction will post to your statement. If a transaction remains pending beyond the expected timeframe, contact the merchant or your card issuer for clarification.",
+      "gold_answer": "65",
+      "score": 0
+    },
+    {
+      "question": "I don't like that I have to fill out so much information about my identity.",
+      "system_answer": "Identity verification is required to protect your account and the service you use. By confirming who you are, the platform can:\n\n1. **Prevent fraud and unauthorized access** – Ensures that only the legitimate account holder can make changes or transactions.  \n2. **Meet legal and regulatory obligations** – Many industries (banking, finance, crypto, healthcare) must verify users to comply with anti‑money‑laundering (AML), know‑your‑customer (KYC), and data‑protection laws.  \n3. **Secure sensitive information** – Verifying identity helps safeguard personal data, financial details, and confidential communications.  \n4. **Enable higher‑risk features** – Certain services (large transfers, advanced trading, premium features) require verified accounts to limit liability.  \n5. **Maintain platform integrity** – Reduces the risk of scams, phishing, and impersonation, keeping the community safe for all users.  \n\nIn short, identity verification is a standard security measure that protects both you and the service from fraud, legal penalties, and unauthorized activity.",
+      "gold_answer": "45",
+      "score": 0
+    }
+  ]
+}

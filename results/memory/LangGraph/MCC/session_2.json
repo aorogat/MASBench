@@ -4,24 +4,606 @@
   "session_id": "2",
   "subtask": "MCC",
   "category": "TTL",
-  "runtime_sec": 6.39,
+  "runtime_sec": 475.36,
   "questions": [
     {
       "question": "Are there restrictions for my disposable card since it does not seem to be working?",
-      "system_answer": "It’s frustrating when a disposable card just won’t go through. Let’s walk through the most common reasons it might be blocked and what you can do next.\n\n---\n\n## 1. **Disposable cards are *only* for one‑off online purchases**\n\n| What you can do | What you can’t do |\n|-----------------|-------------------|\n| • Pay for a single online order (e‑commerce, subscription‑free services, etc.) | • Use it in a physical store or ATM |\n| • Use it for a single transaction per card number | • Use it for recurring or subscription payments |\n| • Use it for any merchant that accepts virtual cards | • Use it for merchants that block virtual or disposable cards (e.g., gambling, crypto, certain travel sites) |\n\nIf you tried to use the card in a shop or for a subscription, it will be declined.\n\n---\n\n## 2. **Check the card’s status**\n\n1. **Open the app** (or website) and go to the “Cards” section.  \n2. Make sure the disposable card is **active** – it should say “Active” or “Ready to use.”  \n3. If it shows “Blocked” or “Expired,” you’ll need to generate a new disposable card.\n\n---\n\n## 3. **Transaction limits**\n\n- **Maximum per transaction**: Usually a fixed amount (e.g., $5,000 or $10,000).  \n- **Daily/weekly limits**: Some issuers cap how many disposable cards you can create or how many transactions you can make in a period.\n\nIf your purchase exceeds the limit, the transaction will be declined. Check the app’s “Limits” or “Disposable card settings” to see the exact numbers.\n\n---\n\n## 4. **Merchant restrictions**\n\n- **Certain merchant categories** (gambling, adult content, crypto exchanges, high‑risk travel sites) often block disposable cards.  \n- **Geographic restrictions**: Some merchants only accept cards issued in specific countries.\n\nIf you’re buying something that falls into a restricted category, the card will be declined.\n\n---\n\n## 5. **Technical hiccups**\n\n| Symptom | Likely cause | Fix |\n|---------|--------------|-----|\n| “Card declined” with no error code | Card not activated or already used | Re‑activate or create a new disposable card |\n| “Insufficient funds” | The underlying account balance is too low | Add funds or use a different card |\n| “Payment failed” | Network or merchant gateway issue | Try again later or use a different payment method |\n\n---\n\n## 6. **What to do next**\n\n1. **Generate a new disposable card** in the app.  \n2. **Try a different merchant** that you know accepts virtual cards (e.g., Amazon, eBay, Spotify).  \n3. **Check your account balance** – make sure you have enough funds.  \n4. **Look for any error codes** in the app or on the merchant’s site; they often give clues.  \n5. **Contact support** if the problem persists:\n   - **In‑app chat** or **email** (usually found under “Help” or “Support”).\n   - Provide the transaction ID, merchant name, and the exact error message.\n\n---\n\n### Quick FAQ\n\n| Question | Answer |\n|----------|--------|\n| **Can I use a disposable card for a subscription?** | No – disposable cards are single‑use only. |\n| **Do disposable cards have a daily limit?** | Yes, check your app for the exact limit. |\n| **What if my card is blocked?** | Generate a new disposable card; if it keeps blocking, contact support. |\n| **Can I use a disposable card for in‑store purchases?** | No – they’re only for online transactions. |\n\n---\n\nIf you let me know the exact error message or the merchant you’re trying to pay at, I can give you more tailored advice. Otherwise, try the steps above and you should be able to get it working in no time!",
+      "system_answer": "label: 67",
       "gold_answer": "28",
       "score": 0
     },
     {
       "question": "I'm trying to transfer money to another country. It's just pending and not sending. My account details are correct. Please help me.",
-      "system_answer": "I’m sorry to hear that your international transfer is stuck in the “pending” state. Let’s try to pinpoint what’s going on and get it moving.\n\n---\n\n## 1. Quick Checklist\n\n| ✅ | Item | Why it matters |\n|----|------|----------------|\n| 1 | **Transfer ID / Reference** | Needed to look up the exact transaction in our system. |\n| 2 | **Recipient details** (IBAN/SWIFT, bank name, country) | A typo or missing field can trigger a hold. |\n| 3 | **Amount & Currency** | Some currencies or amounts trigger extra compliance checks. |\n| 4 | **Your account status** | Is your account fully verified? Are there any holds on it? |\n| 5 | **Recipient country** | Transfers to certain jurisdictions (e.g., high‑risk or sanctioned countries) are automatically reviewed. |\n| 6 | **Transfer type** | Is it a “standard” transfer, a “scheduled” transfer, or a “bulk” transfer? |\n\nIf you can confirm all of the above, we’ll have a clearer picture.\n\n---\n\n## 2. Common Reasons for a Pending International Transfer\n\n| Reason | What to Check | Typical Resolution |\n|--------|---------------|--------------------|\n| **Compliance / AML review** | Transfers to high‑risk countries or large amounts may be flagged. | Provide any requested documentation (e.g., source of funds). |\n| **Incorrect recipient details** | Wrong IBAN, SWIFT code, or missing account holder name. | Double‑check the details; correct and resubmit. |\n| **Currency mismatch** | Sending in a currency not supported by the recipient bank. | Convert to the recipient’s local currency or use a supported currency. |\n| **Recipient bank hold** | The receiving bank may have a temporary hold or is undergoing maintenance. | Wait 1–2 business days; contact the recipient bank if it’s been longer. |\n| **Transfer limit reached** | You’ve hit your daily/monthly transfer limit. | Wait until the limit resets or request a temporary increase. |\n| **Technical glitch** | System outage or processing delay. | Usually resolves within a few hours; check status in the app. |\n\n---\n\n## 3. What to Do Right Now\n\n1. **Open the app / website**  \n   - Go to **Transfers** → **Pending**.  \n   - Note the **Transfer ID** and any status message.\n\n2. **Verify recipient details**  \n   - IBAN, SWIFT/BIC, account holder name, and bank address.  \n   - If any field looks off, cancel the transfer (if possible) and create a new one.\n\n3. **Check your account status**  \n   - In **Profile** → **Verification**.  \n   - If you’re still in “Pending verification,” the transfer may be held until you complete it.\n\n4. **Look for an email or in‑app notification**  \n   - We often send a compliance notice asking for additional info.  \n   - Follow the link and upload the requested documents.\n\n5. **Contact Support**  \n   - If the transfer remains pending > 48 hrs, open a support ticket:  \n     - **In‑app chat** → “Help” → “Transfer Issues”  \n     - Or email: support@yourbank.com (replace with your actual bank’s email).  \n   - Include: Transfer ID, date, amount, currency, recipient country, and a screenshot of the pending status.\n\n---\n\n## 4. How Long Should It Take?\n\n| Transfer type | Typical processing time | Notes |\n|---------------|------------------------|-------|\n| **Standard SWIFT** | 1–3 business days | Depends on both banks’ cut‑off times. |\n| **SEPA (Euro)** | 1–2 business days | Usually faster. |\n| **Cross‑border to high‑risk country** | 3–5 business days | Extra compliance checks. |\n| **Scheduled transfer** | Same as above | If scheduled for a future date, it will only start then. |\n\nIf you’re past the upper bound of the typical window, that’s a good reason to reach out to support.\n\n---\n\n## 5. Quick Tips to Avoid Future Holds\n\n- **Double‑check IBAN/SWIFT** before confirming.  \n- **Keep your account verified** (upload ID, proof of address).  \n- **Stay within your transfer limits** or request an increase if you need larger amounts.  \n- **Use supported currencies** for the recipient’s country.  \n- **Avoid sending to restricted jurisdictions** unless you’re sure it’s compliant.\n\n---\n\n### Next Steps for You\n\n1. Pull up the transfer details and note the ID.  \n2. Verify all recipient info.  \n3. Check for any compliance emails.  \n4. If everything looks good and it’s still pending >48 hrs, open a support ticket with the details above.\n\nLet me know what you find, and I’ll help you troubleshoot further!",
+      "system_answer": "label: 18",
+      "gold_answer": "18",
+      "score": 1
+    },
+    {
+      "question": "What do I do if I notice a strange withdrawl in my statement?",
+      "system_answer": "label: 50",
+      "gold_answer": "50",
+      "score": 0
+    },
+    {
+      "question": "I got a message that I need to verify my identity; what do I do?",
+      "system_answer": "label: 38",
+      "gold_answer": "38",
+      "score": 1
+    },
+    {
+      "question": "How do I use the app if I don't have my phone with me?",
+      "system_answer": "label: 22",
+      "gold_answer": "22",
+      "score": 1
+    },
+    {
+      "question": "why is the exchange rate for a Foreign ATM different",
+      "system_answer": "label: 26",
+      "gold_answer": "26",
+      "score": 1
+    },
+    {
+      "question": "What happens if my card is stuck in the ATM?",
+      "system_answer": "label: 51",
+      "gold_answer": "51",
+      "score": 1
+    },
+    {
+      "question": "Is there a discount for frequently exchanging currencies?",
+      "system_answer": "label: 18",
+      "gold_answer": "10",
+      "score": 0
+    },
+    {
+      "question": "I sent money.  They haven't received it.",
+      "system_answer": "['label 6']",
+      "gold_answer": "6",
+      "score": 0
+    },
+    {
+      "question": "What age do my kids need to be to use your service?",
+      "system_answer": "label: 21",
+      "gold_answer": "21",
+      "score": 0
+    },
+    {
+      "question": "I've notice I was charged for withdrawing cash, can you explain why?",
+      "system_answer": "label: 62",
+      "gold_answer": "62",
+      "score": 1
+    },
+    {
+      "question": "Can you please identify the problem with my bank card?",
+      "system_answer": "label: 42",
+      "gold_answer": "42",
+      "score": 0
+    },
+    {
+      "question": "Do you know where my card will be accepted?",
+      "system_answer": "label: 15",
+      "gold_answer": "15",
+      "score": 0
+    },
+    {
+      "question": "My work sends me all over the world, can I get a discount for all the money I have to exchange?",
+      "system_answer": "label: 10",
+      "gold_answer": "10",
+      "score": 0
+    },
+    {
+      "question": "Why do I have to verify my identity?",
+      "system_answer": "label: 45",
+      "gold_answer": "45",
+      "score": 0
+    },
+    {
+      "question": "When my card expires what happens to my account?",
+      "system_answer": "label: 9",
+      "gold_answer": "9",
+      "score": 0
+    },
+    {
+      "question": "It appears that I am being double charged for some items that I have purchased this past week.  Please review and correct.",
+      "system_answer": "",
+      "gold_answer": "63",
+      "score": 0
+    },
+    {
+      "question": "how long til my cash out goes through?",
+      "system_answer": "label: 24",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "my phone is gone",
+      "system_answer": "I’m sorry to hear that! Here’s what you can do right away to keep your account safe:\n\n1. **Log out of the app**  \n   • If you still have access to the app on another device, log out from all devices.  \n   • If you can’t log in, go to the *Forgot passcode* or *Reset passcode* option on the login screen and follow the instructions.\n\n2. **Change your passcode**  \n   • Once you’re logged in on a new device, go to *Settings → Security → Passcode* and set a new, strong passcode.\n\n3. **Block or freeze your card**  \n   • In the app, tap the card you want to block and select *Freeze card* (or *Block card*).  \n   • If you can’t access the app, you can also call our support line or use the *Help & Support* chat in the app to request a card freeze.\n\n4. **Enable two‑factor authentication (2FA)**  \n   • If you haven’t already, enable 2FA in *Settings → Security*. This adds an extra layer of protection even if someone gets hold of your passcode.\n\n5. **Check recent activity**  \n   • Review recent transactions and top‑ups. If you see anything suspicious, report it immediately through the app’s *Report a problem* or *Help & Support* section.\n\n6. **Contact support**  \n   • If you’re unable to log in or need further assistance, reach out to our support team via the app or by calling the number on the back of your card. They can help you secure your account and, if necessary, issue a new card.\n\n7. **Keep your recovery email and phone number up to date**  \n   • Make sure the email address and phone number on file are current so we can reach you if anything unusual happens.\n\nIf you need any more help or have questions about a specific step, just let me know!",
+      "gold_answer": "22",
+      "score": 0
+    },
+    {
+      "question": "My money transfer has not arrived.",
+      "system_answer": "",
+      "gold_answer": "6",
+      "score": 0
+    },
+    {
+      "question": "I bought something but now I would like a refund. How do I do that?",
+      "system_answer": "label: 47",
+      "gold_answer": "47",
+      "score": 0
+    },
+    {
+      "question": "Hello. Can you tell me if you use Visa or Mastercard?",
+      "system_answer": "label: 72",
+      "gold_answer": "72",
+      "score": 0
+    },
+    {
+      "question": "I can't see my latest bank transfer",
+      "system_answer": "label: 69",
+      "gold_answer": "69",
+      "score": 0
+    },
+    {
+      "question": "I got a fee for an ATM withdrawal.",
+      "system_answer": "label: 62",
+      "gold_answer": "62",
+      "score": 1
+    },
+    {
+      "question": "There is a transaction for $1 and I don't know why it was charged.",
+      "system_answer": "label: 55",
+      "gold_answer": "55",
+      "score": 0
+    },
+    {
+      "question": "Am I able to get a second card?",
+      "system_answer": "label: 71",
+      "gold_answer": "71",
+      "score": 1
+    },
+    {
+      "question": "Why is my card payment showing as pending?",
+      "system_answer": "label: 65",
+      "gold_answer": "65",
+      "score": 1
+    },
+    {
+      "question": "Why was I chaged twice for the same thing?",
+      "system_answer": "label: 63",
+      "gold_answer": "63",
+      "score": 1
+    },
+    {
+      "question": "Is it okay to use a bank card to top up",
+      "system_answer": "",
+      "gold_answer": "76",
+      "score": 0
+    },
+    {
+      "question": "I see what looks like duplicate charges on account.",
+      "system_answer": "label: 63",
+      "gold_answer": "63",
+      "score": 1
+    },
+    {
+      "question": "What ATMs is the card okay to use at?",
+      "system_answer": "label: 43",
+      "gold_answer": "43",
+      "score": 1
+    },
+    {
+      "question": "I want a refund because my package has been taking too long to arrive. How do I go about doing that?",
+      "system_answer": "label: 47",
+      "gold_answer": "47",
+      "score": 0
+    },
+    {
+      "question": "Freeze my account it's been hacked.",
+      "system_answer": "label: 57",
+      "gold_answer": "57",
+      "score": 1
+    },
+    {
+      "question": "The card got declined twice when I tried to use it to buy something online yesterday.",
+      "system_answer": "label: 60",
+      "gold_answer": "29",
+      "score": 0
+    },
+    {
+      "question": "The transfer is coming up as pending the payment is due today. Will I be charged a fee?",
+      "system_answer": "label: 18",
       "gold_answer": "18",
       "score": 0
     },
     {
-      "question": "What do I do if I notice a strange withdrawl in my statement?",
-      "system_answer": "If you spot a withdrawal you don’t recognize, act fast. Below is a step‑by‑step playbook that covers everything from double‑checking the transaction to protecting your account.\n\n---\n\n## 1️⃣ Verify the Transaction\n\n| What to Check | How to Check |\n|---------------|--------------|\n| **Date & Time** | Does it match a recent ATM visit or online purchase you remember? |\n| **Location** | Look at the merchant or ATM location. Is it a place you’ve been? |\n| **Amount** | Is it the exact amount you withdrew or a rounded figure? |\n| **Reference / Merchant Code** | Some banks show a short code (e.g., “ATM 1234”). Search online for that code. |\n| **Account Balance** | Compare the balance before and after the withdrawal. |\n\nIf you can’t match any of the above to a legitimate activity, it’s likely fraudulent.\n\n---\n\n## 2️⃣ Secure Your Account Immediately\n\n| Action | Why it matters |\n|--------|----------------|\n| **Freeze / Lock the Card** | Stops any further unauthorized use. |\n| **Change PIN** | If you suspect the PIN was compromised. |\n| **Update Passwords** | For your online banking, app, and any linked services. |\n| **Enable 2FA** | Adds an extra layer of protection. |\n\n**How to do it:**\n\n1. Open the app → **Cards** → tap the card → **Freeze / Unfreeze**.  \n2. Go to **Settings** → **Security** → **Change PIN**.  \n3. In **Settings** → **Security** → **Password** → **Change Password**.  \n4. Enable **Two‑Factor Authentication** if not already on.\n\n---\n\n## 3️⃣ Report the Unauthorized Withdrawal\n\n| Where to Report | What to Include |\n|-----------------|-----------------|\n| **In‑app chat / support ticket** | Transfer ID, date, amount, location, any screenshots. |\n| **Phone support** | Call the number on the back of your card or the “Contact Us” page. |\n| **Email** | If you prefer, send a detailed email to support@yourbank.com (replace with your bank’s actual email). |\n\n**Tip:** Keep a copy of the email or chat transcript for your records.\n\n---\n\n## 4️⃣ Check for Possible Causes\n\n| Cause | How to Identify |\n|-------|-----------------|\n| **Card skimming** | ATM or POS device that captured your card data. |\n| **Phishing / Social Engineering** | You may have inadvertently shared your PIN or login. |\n| **Account takeover** | Someone accessed your online banking. |\n| **Fraudulent merchant** | A merchant that pretends to be legitimate. |\n\nIf you suspect any of these, let the support team know—they’ll investigate and may request additional evidence.\n\n---\n\n## 5️⃣ Follow Up\n\n| Step | Timeline | What to Expect |\n|------|----------|----------------|\n| **Initial report** | 0 hrs | You’ll receive a confirmation ticket. |\n| **Investigation** | 24–48 hrs | Support will review the transaction and may contact you for more info. |\n| **Resolution** | 48–72 hrs | If fraudulent, the amount will be reversed and a new card issued if needed. |\n\nIf you don’t hear back within 48 hrs, ping support again with your ticket number.\n\n---\n\n## 6️⃣ Prevent Future Incidents\n\n| Prevention | How to Implement |\n|------------|------------------|\n| **Use contactless only** | Avoid swiping or inserting the card where possible. |\n| **Enable transaction alerts** | Get instant push/email notifications for every withdrawal. |\n| **Regularly review statements** | Spot anomalies early. |\n| **Keep card in a safe place** | Don’t leave it unattended. |\n| **Use virtual card numbers** | For online purchases, use a disposable virtual card. |\n\n---\n\n### Quick Checklist\n\n1. **Freeze the card** in the app.  \n2. **Change PIN & password**.  \n3. **Report the transaction** via chat/email/phone.  \n4. **Wait for investigation** (24–48 hrs).  \n5. **Follow up** if no response.  \n6. **Enable alerts** for future protection.\n\n---\n\nIf you need help locating the “Freeze” button or have any other questions, just let me know!",
-      "gold_answer": "50",
+      "question": "Does my PIN come with my card?",
+      "system_answer": "label: 75",
+      "gold_answer": "75",
+      "score": 0
+    },
+    {
+      "question": "Someone else is using my card, freeze it.",
+      "system_answer": "label: 7",
+      "gold_answer": "57",
+      "score": 0
+    },
+    {
+      "question": "Transferring money in 2018 to another country shouldn't take this long. My transfer has been pending for too long. I verified my account details are correct.",
+      "system_answer": "label: 18",
+      "gold_answer": "18",
+      "score": 0
+    },
+    {
+      "question": "My card is gone I think it was stolen",
+      "system_answer": "label: 7",
+      "gold_answer": "7",
+      "score": 0
+    },
+    {
+      "question": "Can I get a mastercard?",
+      "system_answer": "label: 72",
+      "gold_answer": "72",
+      "score": 0
+    },
+    {
+      "question": "I don't understand where this debit came from and want it removed.",
+      "system_answer": "label: 5",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "I made a transfer 12 hours ago. Why is it still listed as pending?",
+      "system_answer": "label: 18",
+      "gold_answer": "18",
+      "score": 0
+    },
+    {
+      "question": "can you limit my top up?",
+      "system_answer": "label: 14",
+      "gold_answer": "14",
+      "score": 0
+    },
+    {
+      "question": "Why can't I get my virtual card to work?",
+      "system_answer": "label: 28",
+      "gold_answer": "28",
+      "score": 0
+    },
+    {
+      "question": "What steps must I follow to get a Visa credit card?",
+      "system_answer": "label: 72",
+      "gold_answer": "72",
+      "score": 0
+    },
+    {
+      "question": "Can I transfer money to a beneficiery?",
+      "system_answer": "label: 44",
+      "gold_answer": "44",
+      "score": 0
+    },
+    {
+      "question": "Can you help with a transfer to an account",
+      "system_answer": "",
+      "gold_answer": "44",
+      "score": 0
+    },
+    {
+      "question": "Do you support all fiat currencies?",
+      "system_answer": "label: 56",
+      "gold_answer": "56",
+      "score": 1
+    },
+    {
+      "question": "My transfer didn't go through.",
+      "system_answer": "label: 73",
+      "gold_answer": "73",
+      "score": 1
+    },
+    {
+      "question": "How do I add the card to my account?",
+      "system_answer": "label: 41",
+      "gold_answer": "41",
+      "score": 1
+    },
+    {
+      "question": "I am still waiting for a cash withdrawal to show",
+      "system_answer": "label: 24",
+      "gold_answer": "24",
+      "score": 1
+    },
+    {
+      "question": "What places can I use my card?",
+      "system_answer": "label: 15",
+      "gold_answer": "15",
+      "score": 0
+    },
+    {
+      "question": "How do I open up an account for my child?",
+      "system_answer": "label: 21",
+      "gold_answer": "21",
+      "score": 1
+    },
+    {
+      "question": "can you tell me what cards and currencies you take?",
+      "system_answer": "label: 39",
+      "gold_answer": "39",
+      "score": 1
+    },
+    {
+      "question": "Why didn't my balance change after I transferred some money?",
+      "system_answer": "",
+      "gold_answer": "69",
+      "score": 0
+    },
+    {
+      "question": "The wrong rate was applied to an item I bought in a currency different from mine. Can this be changed?",
+      "system_answer": "label: 19",
+      "gold_answer": "19",
+      "score": 0
+    },
+    {
+      "question": "How many tries do I have to enter my pin before I'm blocked?",
+      "system_answer": "label: 0",
+      "gold_answer": "0",
+      "score": 1
+    },
+    {
+      "question": "My top-up isn't working.",
+      "system_answer": "label: 54",
+      "gold_answer": "54",
+      "score": 0
+    },
+    {
+      "question": "Where do I need to live to get support?",
+      "system_answer": "",
+      "gold_answer": "11",
+      "score": 0
+    },
+    {
+      "question": "Delete this account!",
+      "system_answer": "label: 23",
+      "gold_answer": "23",
+      "score": 0
+    },
+    {
+      "question": "There is an extra $1 charge",
+      "system_answer": "label: 55",
+      "gold_answer": "55",
+      "score": 0
+    },
+    {
+      "question": "app does not recognize me",
+      "system_answer": "",
+      "gold_answer": "16",
+      "score": 0
+    },
+    {
+      "question": "What are the fees for a physical card?",
+      "system_answer": "label: 37",
+      "gold_answer": "37",
+      "score": 1
+    },
+    {
+      "question": "Is there a limit to top-ups?",
+      "system_answer": "label: 14",
+      "gold_answer": "14",
+      "score": 1
+    },
+    {
+      "question": "Please explain why the transfers shows up as pending?",
+      "system_answer": "label: 18",
+      "gold_answer": "18",
+      "score": 0
+    },
+    {
+      "question": "How do I know which ATMs will accept this card?",
+      "system_answer": "label: 43",
+      "gold_answer": "43",
+      "score": 1
+    },
+    {
+      "question": "Is my cash withdrawal pending?",
+      "system_answer": "label: 24",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "Why do you require so many identity details?",
+      "system_answer": "label: 45",
+      "gold_answer": "45",
+      "score": 0
+    },
+    {
+      "question": "I don't recognize a debit payment that was made and would like to find out about the payment.",
+      "system_answer": "label: 5",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "Still waiting on a refund.",
+      "system_answer": "label: 17",
+      "gold_answer": "17",
+      "score": 1
+    },
+    {
+      "question": "Why is there a transaction that shows multiple times?",
+      "system_answer": "label: 63",
+      "gold_answer": "63",
+      "score": 1
+    },
+    {
+      "question": "I was taking out funds and was unable to regain my card.",
+      "system_answer": "label: 51",
+      "gold_answer": "51",
+      "score": 1
+    },
+    {
+      "question": "My credit card cancelled a payment for a purchase.",
+      "system_answer": "label: 74",
+      "gold_answer": "74",
+      "score": 1
+    },
+    {
+      "question": "Can I get a physical card through this app?",
+      "system_answer": "label: 37",
+      "gold_answer": "37",
+      "score": 1
+    },
+    {
+      "question": "I made a mistake and need to cancel a transaction",
+      "system_answer": "label: 20",
+      "gold_answer": "20",
+      "score": 0
+    },
+    {
+      "question": "I need to verify my identity, but how do I do that?",
+      "system_answer": "label: 38",
+      "gold_answer": "38",
+      "score": 1
+    },
+    {
+      "question": "I need to cancel an incorrect transaction.",
+      "system_answer": "label: 20",
+      "gold_answer": "20",
+      "score": 0
+    },
+    {
+      "question": "My latest payment was declined, I was told everything was back to working order. What happened?",
+      "system_answer": "",
+      "gold_answer": "60",
+      "score": 0
+    },
+    {
+      "question": "whats your exchange rate",
+      "system_answer": "label: 53",
+      "gold_answer": "10",
+      "score": 0
+    },
+    {
+      "question": "How do I get my paycheck through this?",
+      "system_answer": "",
+      "gold_answer": "8",
+      "score": 0
+    },
+    {
+      "question": "How can i check if my card is working?",
+      "system_answer": "label: 42",
+      "gold_answer": "42",
+      "score": 0
+    },
+    {
+      "question": "What is the top-ups limit?",
+      "system_answer": "label: 14",
+      "gold_answer": "14",
+      "score": 0
+    },
+    {
+      "question": "I would like to link my card. How do I do it?",
+      "system_answer": "label: 41",
+      "gold_answer": "41",
+      "score": 1
+    },
+    {
+      "question": "Where do I go if I want to link my new card?",
+      "system_answer": "label: 41",
+      "gold_answer": "41",
+      "score": 1
+    },
+    {
+      "question": "How can I start using my card?",
+      "system_answer": "label: 31",
+      "gold_answer": "31",
+      "score": 1
+    },
+    {
+      "question": "I made a mistake when I did a transfer so now what can I do to fix that?",
+      "system_answer": "label: 20",
+      "gold_answer": "20",
+      "score": 0
+    },
+    {
+      "question": "The app reverted what I topped up.",
+      "system_answer": "label: 3",
+      "gold_answer": "3",
+      "score": 1
+    },
+    {
+      "question": "In terms of holding and exchange, what fiat currencies do you use.",
+      "system_answer": "label: 56",
+      "gold_answer": "56",
+      "score": 0
+    },
+    {
+      "question": "Can you tell me if my top-up has been cancelled?",
+      "system_answer": "label: 3",
+      "gold_answer": "3",
+      "score": 1
+    },
+    {
+      "question": "Why can't I use my American Express with Apple Pay to top up my account?",
+      "system_answer": "label: 30",
+      "gold_answer": "30",
+      "score": 1
+    },
+    {
+      "question": "Can you help me with a weird charge?  It's a pound charge that never goes away from the statement view on the app I'm using.  It's not described as anything but \"Pending\", and that status has never changed during the last two days.",
+      "system_answer": "",
+      "gold_answer": "55",
+      "score": 0
+    },
+    {
+      "question": "I received my new card, but I don't see it in the app anywhere.  What do I do?",
+      "system_answer": "",
+      "gold_answer": "41",
+      "score": 0
+    },
+    {
+      "question": "The transfer I did hasn't arrived",
+      "system_answer": "",
+      "gold_answer": "6",
+      "score": 0
+    },
+    {
+      "question": "Can I top up using an international card",
+      "system_answer": "label: 76",
+      "gold_answer": "76",
+      "score": 1
+    },
+    {
+      "question": "How do I deal with a blocked PIN?",
+      "system_answer": "label: 0",
+      "gold_answer": "0",
+      "score": 1
+    },
+    {
+      "question": "Why was I charged a fee for withdrawing cash?",
+      "system_answer": "label: 62",
+      "gold_answer": "62",
+      "score": 1
+    },
+    {
+      "question": "I payed with a card and was charged an extra fee",
+      "system_answer": "label: 27",
+      "gold_answer": "27",
+      "score": 1
+    },
+    {
+      "question": "Hello. I checked my transactions and saw I was double charged on my card for a restaurant visit. I would like to get my money back.",
+      "system_answer": "label: 63",
+      "gold_answer": "63",
+      "score": 1
+    },
+    {
+      "question": "How long do card transactions take to clear?",
+      "system_answer": "label: 65",
+      "gold_answer": "65",
+      "score": 1
+    },
+    {
+      "question": "I don't like that I have to fill out so much information about my identity.",
+      "system_answer": "label: 45",
+      "gold_answer": "45",
       "score": 0
     }
   ]

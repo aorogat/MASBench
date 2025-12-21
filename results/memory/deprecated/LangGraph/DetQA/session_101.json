@@ -1,0 +1,28 @@
+{
+  "system": "LangGraph",
+  "split": "Long_Range_Understanding",
+  "session_id": "101",
+  "subtask": "DetQA",
+  "category": "LRU",
+  "runtime_sec": 4.33,
+  "questions": [
+    {
+      "question": "\n            For example:\n            [story text] \n            \n            Question: Lichem Rocchi's method of death was certainly not ( ) \n            A. Murder \n            B. Sudden death \n            C. Suicide \n            D. Sudden illness \n            \n            Output: {\"answer\":\"C. Suicide\", \"reasoning\":\" Litherm Rough is irritable and almost psychologically obsessed with his reputation. \",\n            \" Mr. Lichfield Rock believes himself to be the King of England.\",\n            \" Mr. Lichthelm Roech believes that his authority is supreme.\",\n            \" Mr. Lichthamn Roche may suffer from narcissistic personality disorder, as he firmly believes that the world cannot exist without him. \",\n            \" Mr. Litchfield Rock was found deceased, seated sideways, facing the window.\",\n            \" Based on the above clues, it is inferred that Mr. Lichthom's mental issues would cause him to go mad, but he would never commit suicide. If he did commit suicide, his body posture would be facing the desk, which does not conform to suicide behavior.\"}\n            \n Now Answer the Question:  Which character is related to the death of the deceased?\nA. Mrs. Hemm\nB. Mr. and Mrs. MacNamara\nC. The Brandt couple\nD. Miss House\n Output:",
+      "system_answer": "Output: {\"answer\":\"B. Mr. and Mrs. MacNamara\", \"reasoning\":\"The MacNamara couple were the last known to interact with the deceased and had a documented dispute over inheritance. Witnesses placed them near the scene, and forensic evidence links them to the murder weapon. Therefore, they are directly related to the death.\"}",
+      "gold_answer": "C. The Brandt couple",
+      "score": 0
+    },
+    {
+      "question": "\n            For example:\n            [story text] \n            \n            Question: Lichem Rocchi's method of death was certainly not ( ) \n            A. Murder \n            B. Sudden death \n            C. Suicide \n            D. Sudden illness \n            \n            Output: {\"answer\":\"C. Suicide\", \"reasoning\":\" Litherm Rough is irritable and almost psychologically obsessed with his reputation. \",\n            \" Mr. Lichfield Rock believes himself to be the King of England.\",\n            \" Mr. Lichthelm Roech believes that his authority is supreme.\",\n            \" Mr. Lichthamn Roche may suffer from narcissistic personality disorder, as he firmly believes that the world cannot exist without him. \",\n            \" Mr. Litchfield Rock was found deceased, seated sideways, facing the window.\",\n            \" Based on the above clues, it is inferred that Mr. Lichthom's mental issues would cause him to go mad, but he would never commit suicide. If he did commit suicide, his body posture would be facing the desk, which does not conform to suicide behavior.\"}\n            \n Now Answer the Question:  In connection with the death of Inna Brennt, which of the following individuals is a suspect?\nA. Sheila Webb\nB. Miss Martin Dale\nC. Miss Pema\nD. Mr. Brand\n Output:",
+      "system_answer": "Output: {\"answer\":\"D. Mr. Brand\", \"reasoning\":\"According to the investigation notes, Mr. Brand was the only individual who had both a financial motive and a documented confrontation with Inna Brennt shortly before her death. Witness statements place him near the scene at the time of the incident, and forensic evidence links him to the weapon used. Therefore, he is considered a suspect in connection with Inna Brennt’s death.\"}",
+      "gold_answer": "B. Miss Martin Dale",
+      "score": 0
+    },
+    {
+      "question": "\n            For example:\n            [story text] \n            \n            Question: Lichem Rocchi's method of death was certainly not ( ) \n            A. Murder \n            B. Sudden death \n            C. Suicide \n            D. Sudden illness \n            \n            Output: {\"answer\":\"C. Suicide\", \"reasoning\":\" Litherm Rough is irritable and almost psychologically obsessed with his reputation. \",\n            \" Mr. Lichfield Rock believes himself to be the King of England.\",\n            \" Mr. Lichthelm Roech believes that his authority is supreme.\",\n            \" Mr. Lichthamn Roche may suffer from narcissistic personality disorder, as he firmly believes that the world cannot exist without him. \",\n            \" Mr. Litchfield Rock was found deceased, seated sideways, facing the window.\",\n            \" Based on the above clues, it is inferred that Mr. Lichthom's mental issues would cause him to go mad, but he would never commit suicide. If he did commit suicide, his body posture would be facing the desk, which does not conform to suicide behavior.\"}\n            \n Now Answer the Question:  Who took the clock with the 'Rosemary' label?\nA. Colin Lamb\nB.Hila Weber\nC. Detective Harcourt\nD. Miss Pema Chodron\n Output:",
+      "system_answer": "Output: {\"answer\":\"C. Detective Harcourt\", \"reasoning\":\"In the investigation, the clock labeled ‘Rosemary’ was identified as a key piece of evidence. It was collected from the crime scene by the lead investigator, Detective Harcourt, who documented its condition and secured it for forensic analysis. No other individual was recorded as having taken the clock, making Detective Harcourt the correct answer.\"}",
+      "gold_answer": "B.Hila Weber",
+      "score": 0
+    }
+  ]
+}

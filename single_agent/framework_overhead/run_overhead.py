@@ -16,11 +16,18 @@ from single_agent.framework_overhead.direct_llm import DirectLLMRunner
 from single_agent.framework_overhead.crewai_runner import CrewAIRunner
 from single_agent.framework_overhead.langgraph_runner import LangGraphRunner
 from single_agent.framework_overhead.concordia_runner import ConcordiaRunner
+from single_agent.framework_overhead.openAgents_runner import OpenAgentsRunner
+from single_agent.framework_overhead.openai_sdk_runner import OpenAISDKRunner
+from single_agent.framework_overhead.agno_runner import AgnoRunner
+from single_agent.framework_overhead.autogen_runner import AutoGenRunner
+
+
 
 # -------------------------------------------------------------------
 # Global Experiment Settings
 # -------------------------------------------------------------------
 MODEL = "openai/gpt-4o-mini"   # Unified model (Concordia requires OpenAI -> all must match)
+MODEL_NO_Prefix = "gpt-4o-mini"
 
 QUESTION = "What is 2+2?"
 TRIALS = 50                   # 🔹 Adjust as needed
@@ -118,8 +125,13 @@ def save_results(results, filename=f"framework_overhead_{TRIALS}_TRIALS.json"):
 def main():
     runners = {
         "Direct LLM": DirectLLMRunner(model=MODEL),
+        "AutoGen": AutoGenRunner(model=MODEL_NO_Prefix),
         "CrewAI": CrewAIRunner(model=MODEL),
         "LangGraph": LangGraphRunner(model=MODEL),
+        "OpenAgents": OpenAgentsRunner(model=MODEL),
+        "OpenAISDK": OpenAISDKRunner(model=MODEL),
+        "Agno": AgnoRunner(model=MODEL_NO_Prefix),
+        
         "Concordia": ConcordiaRunner(model=MODEL),  # each .run() will rebuild simulation
     }
 

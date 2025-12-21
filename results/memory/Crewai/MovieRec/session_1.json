@@ -1,0 +1,1210 @@
+{
+  "system": "Crewai",
+  "split": "Test_Time_Learning",
+  "session_id": "1",
+  "subtask": "MovieRec",
+  "category": "TTL",
+  "runtime_sec": 9017.95,
+  "questions": [
+    {
+      "question": "\nUser: Hello How are you? What is your favorite movie?\nSystem: Hello, I'm good The Big Lebowski\nUser: The Big Lebowski was such a great film. Hilarious Have you checked out Kingpin (1996) with Woody Harrelson or Dumb and Dumber (1994) ? They are also funny comedies\nSystem: Oh yeah, haha I've seen both of those. Great. Can you think of anything else?\nSystem: ",
+      "system_answer": "I'm good, and my favorite movie is The Big Lebowski.",
+      "gold_answer": "7008",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi! What sort of movies do you like?\nSystem: I really enjoy drama/biography. For example I enjoyed Phantom Thread (2017)\nUser: Oh, that's a movie I haven't seen. If you like Drama, I really enjoyed Allied (2016) recently.\nSystem: I think that's on my list to see. Did you see The Darkest Hour (2011) ?\nUser: Yes it was fab! I also really enjoyed Dunkirk (2017) - I haven't watched the original yet, but it is on my list. Have you seen Dunkirk (2017) ?\nSystem: That should have been Darkest Hour (2017)\nUser: Do you enjoy war movies?\nSystem: Yes, loved Dunkirk (2017) I really want to see 12 Strong (2018) I didn't see it in the theater because the reviews weren't all that great\nUser: I do like the classics.. I can recommend Ice Cold in Alex (1958) and Battle of Britain (1969) for a Sunday afternoon marathon. I've not seen 12 Strong (2018) - I will have to check it out.\nSystem: One of my favorite films was The Hurt Locker (2008)\nUser: Jodie Foster? I don't think I've seen it...\nSystem: Oh, you'd like it! Gotta go watch some movies now.\nSystem: ",
+      "system_answer": "I enjoy drama and biographical films, for example Phantom Thread (2017).",
+      "gold_answer": "4611",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi\nSystem: Hello I love Deadpool (2016) can you recommend some movies like that one\nUser: Me too, I love superhero movies My fovorite is Batman Returns (1992)\nSystem: we are a like :D Its good!, but i have seen it maybe a lesser known movie that whould be grat\nSystem: ",
+      "system_answer": "**Movies you might enjoy (similar to Deadpool and Batman Returns):**\n\n- **Kick‑Ass (2010)** – A comic‑book‑style action film with irreverent humor and over‑the‑top violence.  \n- **The Dark Knight (2008)** – A darker, more serious take on a superhero, with strong character depth.  \n- **The Crow (1994)** – Gothic tone and a brooding anti‑hero, echoing Batman Returns’ atmosphere.  \n- **Hellboy (2004)** – Supernatural action with a mix of humor and dark themes.  \n- **The Mask (1994)** – A comedic, supernatural superhero film that shares Deadpool’s playful tone.",
+      "gold_answer": "23561",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello there\nSystem: Hello!\nUser: How is everything\nSystem: everything is fine here thanks for asking i just have one problem\nUser: Anytime ! What type of movie do you prefer watching What’s your problem ?!\nSystem: i need a good crime movie :D i dont know what to watch i really liked Mystic River (2003)\nUser: Some of my favorite is Takers (2010)\nSystem: i have seen it its nice\nUser: And The Departed (2006)\nSystem: Ah The Departed (2006) is a classic by now everybody have seen it :D\nUser: Training Day (2001) was pretty good as well\nSystem: i like it tho\nSystem: ",
+      "system_answer": "You might also enjoy **Heat** (1995) – a classic crime thriller directed by Michael Mann, featuring Al Pacino and Robert De Niro in a tense cat‑and‑mouse showdown.",
+      "gold_answer": "14688",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello What movie have you seen recently?\nSystem: I have seen recently Action movies like Get Out (2017) and Black Panther (2018)\nUser: How did you like them\nSystem: Of course, i loved them\nUser: That's good anything new out that you want to see?\nSystem: I also watched I Now Pronounce You Chuck & Larry (2007) and Click (2006), I spent all my afternoon with my family laughing I'm open to any suggestion What would you recommend?\nSystem: ",
+      "system_answer": "You might enjoy *Black Panther: Wakanda Forever* (2022) – a recent action-packed Marvel film that builds on the world of the original Black Panther.",
+      "gold_answer": "14740",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello, what type of movies are you interested in?\nSystem: movies for kids\nUser: Coco (2017) Is a great movie Something for you and the children\nSystem: for watch with my kids how Finding Nemo (2003)\nUser: Fantasia (1940) is also great for adults and kids to watch together.\nSystem: good great movie\nUser: Did you like Finding Nemo (2003) ? Finding Dory (2016) is also a great follow up.\nSystem: yes is very great more please ok\nSystem: ",
+      "system_answer": "movies for kids",
+      "gold_answer": "509",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello, how are you?\nSystem: Hi, I'm fine thank you. I'm kind of bored and need an upbeat movie to keep me entertained. You know of any good musicals?\nUser: Got any ideas for a funny movie?\nSystem: I love Anchorman: The Legend of Ron Burgundy (2004)\nUser: Well, a musical in a way is Moana (2016) Otherwise there is La La Land (2016) I do like anchorman\nSystem: ",
+      "system_answer": "The Grand Budapest Hotel (2014) – a quirky, upbeat comedy with a whimsical tone.",
+      "gold_answer": "23379",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi! How’s it going !\nSystem: Hi How are you?\nUser: I’m doing great! And yourself ?\nSystem: Good! Enjoying the sun!\nUser: Ahhh I wish it was sun here lol!!\nSystem: Im open to any movie\nUser: What was the latest movie you seen?\nSystem: Avengers: Infinity War (2018) I saw it twice!\nSystem: ",
+      "system_answer": "Avengers: Infinity War (2018) I saw it twice!",
+      "gold_answer": "21999",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Good Afternoon\nSystem: Hello whats your favorite movie?\nUser: Batman (1989) . what's yours?\nSystem: A batman fan I see. I don't have one Whats new that you have seen?\nUser: Deadpool 2 (2018) The Avengers (2012)\nSystem: Yes awesome movies\nSystem: ",
+      "system_answer": "If you enjoyed *Deadpool 2* and *The Avengers*, you might like *Guardians of the Galaxy Vol. 2* (2017) for its humor and action, or *Spider‑Man: Homecoming* (2017) for a lighter Marvel adventure.",
+      "gold_answer": "19537",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello What is your favorite movie?\nSystem: Hi Ya! My favorite movie is Fargo (1996)\nUser: Good call\nSystem: I also enjoy Pulp Fiction (1994)\nSystem: ",
+      "system_answer": "Fargo (1996)",
+      "gold_answer": "22364",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello\nSystem: Hi. Ocean's 8 (2018) comes out tomorrow.\nUser: I know I just might check it out I only saw the first one but I am interested in what an all female cast will bring to it\nSystem: ",
+      "system_answer": "Ocean's 8 is a 2018 heist comedy directed by Steven Soderbergh that features an all‑female ensemble cast, including Sandra Bullock, Cate Blanchett, Anne Hathaway, Melissa McCarthy, Mindy Kaling, Awkwafina, Rihanna, and others. The film showcases female camaraderie, sharp wit, and a fresh take on the heist genre, highlighting empowerment and diverse comedic styles.",
+      "gold_answer": "2336",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello, what kinds of movies do you like?\nSystem: i'm open to any suggestion What would you recommend?\nUser: For family movies Finding Dory (2016) or Trolls (2016) ?\nSystem: I could try them I liked Man of Steel (2013)\nUser: Have you seen either? Or, if you are looking more for action or adventure, I also liked Deadpool (2016) .\nSystem: I'm interesting in your first suggestions, yeah i liked Deadpool 2 (2018) too\nSystem: ",
+      "system_answer": "I enjoy a mix of genres:  \n- **Family/animation** – e.g., *Finding Dory*, *Trolls*  \n- **Action & adventure** – e.g., *Man of Steel*, *Deadpool*, *The Matrix*, *Blade Runner*, *Wonder Woman*, *Logan*  \n- **Romantic comedy** – e.g., *The Proposal*, *27 Dresses*, *The Wedding Planner*  \n- **Marvel / superhero** – e.g., *Black Panther*, *X‑Men*, *The Avengers*, *Ant‑Man*  \n- **Driving/action thrillers** – e.g., *Fast & Furious 6*, *Transporter 3*  \n- **Comedy‑drama** – e.g., *Clueless*, *I Love You, Man*, *Role Models*",
+      "gold_answer": "19875",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello there! How are you?\nSystem: Hi! What type of movie do you enjoy/\nUser: I enjoy watching comedy and action movies\nSystem: Deadpool 2 (2018) is a new one I loved.\nUser: Like Click (2010) by Adan Sandler and Black Panther (2018) I liked more the old one Deadpool (2016)\nSystem: Have you see Logan (2017) ?\nUser: Anything else? i have heard it is a good movie But i haven't seen it\nSystem: ",
+      "system_answer": "Guardians of the Galaxy (2014) – a fun action‑comedy with a strong ensemble cast.",
+      "gold_answer": "26902",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi!\nSystem: Hi there\nUser: How are you\nSystem: How are you?\nUser: Movies ?!\nSystem: I'm awesome and you?\nUser: I’m great!\nSystem: Of course!!\nUser: Thanks for asking ?! I like comedy and action Black Panther (2018) was great\nSystem: I can recommend you Deadpool (2016) the old one and the new one Deadpool 2 (2018)\nUser: Which one is your favorite?!\nSystem: You can also try Click (2006) by Adan Sandler who is really funny Comedy movies\nSystem: ",
+      "system_answer": "I don’t have a personal preference, but many fans consider *Deadpool 2* (2018) to be the stronger of the two Deadpool films.",
+      "gold_answer": "20875",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello How are you?\nSystem: Hello! I'm good. Do you know of any movies similar to Mean Girls (2004) that I might like? I'm not so much into teenage movies unless they are smart. Like, Election (2005) , for example.\nUser: That's a good movie. You might want to check out Easy A (2010) . It's a very good movie.\nSystem: I've never heard of it! I'll look that one up. Oh, it has Emma Stone. I would love that.\nSystem: ",
+      "system_answer": "Thanks! Easy A is a smart teen comedy. You might also enjoy *The Edge of Seventeen* (2016) and *The Duff* (2015). If you’re looking for more Emma Stone, try *La La Land* (2016).",
+      "gold_answer": "17261",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi! How are you I like action and comedy any recommendations\nSystem: Hi, i am looking for good romantic movie I don't like action and comedy\nUser: A good romantic is. Classic Pretty Woman (1990) Also August Rush (2007)\nSystem: I love Malèna (2000) I have not seen those movies\nUser: Have you seen 50 First Dates (2004) ?!\nSystem: But i will\nUser: It’s really good !\nSystem: Oh, yes! i love tath movie\nSystem: ",
+      "system_answer": "Here are a few romantic movies you might enjoy:\n\n- **Pretty Woman** (1990)  \n- **August Rush** (2007)  \n- **Malèna** (2000)  \n- **50 First Dates** (2004)  \n- **The Proposal** (2009)  \n- **The Wedding Planner** (2001)  \n- **27 Dresses** (2008)  \n- **You Were Sleeping** (1995)  \n- **There's Something About Mary** (1998)",
+      "gold_answer": "27528",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hi\nSystem: Hello I need a good comedy my friends are coming for the night Do you know some good ones?\nUser: Game Night (2018) is fun\nSystem: The Hangover (2010) Was great\nSystem: ",
+      "system_answer": "**Great comedy picks for a night with friends**\n\n- **Game Night (2018)** – A fast‑paced, mystery‑filled comedy that keeps everyone laughing.  \n- **The Hangover (2010)** – Classic party‑comedy with outrageous twists.  \n- **There's Something About Mary (1998)** – Timeless humor and outrageous gags.  \n- **Superbad (2007)** – A coming‑of‑age comedy that’s both raunchy and heartfelt.  \n- **Step Brothers (2008)** – Over‑the‑top antics from Will Ferrell and John C. Reilly.  \n- **Bridesmaids (2011)** – A female‑led comedy with sharp wit and plenty of laughs.",
+      "gold_answer": "7201",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi how are you?\nSystem: Hello Im good and you?\nUser: I'm great- thanks! What kind of movies do you like?\nSystem: I like Rachel McAdams. Do you know any good ones with her in them?\nUser: Yes! She's a great actress! A new one is Game Night (2018) And also The Notebook (2004) and About Time (2013) are a couple of good ones she's in Sherlock Holmes (2009) series are fun ones to watch with her in them, too! Have you seen any of those?\nSystem: I saw the Notebook and loved it! But not Game Night, About Time, or Sherlock Holmes.\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "31060",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: how are you?\nSystem: Hey there, can I recommend a movie for you? I'm doing well.\nUser: I like action and war movies\nSystem: Hmmm. Have you seen Black Hawk Down (2002) ?\nUser: I have, excellent movie\nSystem: Another good one is Inglourious Basterds (2009) rds\nUser: I like Saving Private Ryan (1998) type stuff I've seen, it was great!\nSystem: ",
+      "system_answer": "I'm doing well.",
+      "gold_answer": "16099",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello there!\nSystem: Hi.\nUser: Tell me what kind of movies would you like to watch?\nSystem: I like all types of movies. Especially comedy nd family\nUser: I can recommend you Get Out (2017)\nSystem: Have not seen that one yet.\nUser: Have you seen I Now Pronounce You Chuck & Larry (2007) ?\nSystem: Yes. That was very funny. Also enjoied Ted (2012)\nSystem: ",
+      "system_answer": "I like all types of movies. Especially comedy and family.",
+      "gold_answer": "22755",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi! Have you seen any good comedies lately?\nSystem: No I really haven't. Do you recommend any?\nUser: Well, let's see. I was hoping to get reccomendations from you, but I might have some. There are some classics, like The Jerk (1979) or Ghostbusters (1984) Or more modern films like Horrible Bosses (2011) Dark comedies like World's Greatest Dad (2009) Seen any of those?\nSystem: I'm trying to use the list and I'm having a hard time. Yes, I really liked Ghostbusters (1984)\nUser: No worries. Chatting can be tricky.\nSystem: Did you like There's Something About Mary (1998)\nUser: Ghostbusters II (1989) was not as good, and I did not see the remake.\nSystem: ",
+      "system_answer": "Here are some solid comedy picks you might enjoy:  \n\n- **Ghostbusters (1984)** – Classic supernatural comedy with a stellar cast.  \n- **The Jerk (1979)** – Steve Martin’s goofy, absurd humor.  \n- **Horrible Bosses (2011)** – Dark workplace comedy with a great ensemble.  \n- **World’s Greatest Dad (2009)** – A sharp, bittersweet dark comedy.  \n- **There’s Something About Mary (1998)** – Timeless raunchy humor.  \n- **Game Night (2018)** – Fast‑paced, mystery‑filled comedy.  \n- **The Hangover (2010)** – Classic party‑comedy with outrageous twists.  \n- **Superbad (2007)** – Coming‑of‑age comedy that’s both raunchy and heartfelt.  \n- **Step Brothers (2008)** – Over‑the‑top antics from Will Ferrell and John C. Reilly.  \n- **Bridesmaids (2011)** – Female‑led comedy with sharp wit.  \n- **The Proposal (2009)** – Light romantic comedy with a fun premise.",
+      "gold_answer": "20190",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello, how are you this afternoon? What kind of movies are you interested in?\nSystem: Hi, sorry. I'm great, thanks for asking. I love a good animated movie like Coco (2017) which I recently seen.\nUser: That is a great movie! Let me put on my thinking cap.\nSystem: I also love The Incredibles (2004) and can't wait for the new Incredibles 2 (2018)\nUser: How about Brave (2012) ?\nSystem: It's out on the 15th of this month I believe.\nUser: That is a great movie if you like animated movies.\nSystem: OMG! Yes, I loved that movie! I am Merida! lol\nUser: Yes, I'm excited to see Incredibles 2 (2018) as well.\nSystem: I also can't wait to see Ralph Breaks the Internet (2018) I loved the first one Wreck-It Ralph (2012) I'm sure it will be just as great!\nSystem: ",
+      "system_answer": "I’m doing well, thanks! I’m into animated movies—my favorites include *Coco* (2017), *The Incredibles* (2004), *Incredibles 2* (2018), *Brave* (2012) (released on the 15th of this month), *Wreck‑It Ralph* (2012), and *Ralph Breaks the Internet* (2018).",
+      "gold_answer": "21638",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello What are you looking to see?\nSystem: Hello how are you A great action or comedy\nUser: Oh excellent How about The Other Guys (2010) or Get Hard (2015)\nSystem: I saw them nice movie though\nSystem: ",
+      "system_answer": "You might enjoy **“21 Jump Street” (2012)**.",
+      "gold_answer": "9942",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi are you looking for a movie?\nSystem: Yeah Yeah What would you recommend me?\nUser: What types of movies do you like?\nSystem: I like Action and Comedy movies\nUser: Have you seen Thor: Ragnarok (2017) it has action and is very funny.\nSystem: No, i haven't seen that one but i have heard it is pretty interesting\nUser: I liked it alot. An older movie that was very funny was Rat Race (2001)\nSystem: It sounds really funny\nUser: It was I think you would like it. I hope these suggestion were helpful!\nSystem: I would have to try, what else would you recommend? You need to make two more You need to make two more\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "16093",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello\nSystem: Hi!\nUser: How are you?\nSystem: I’m great and you?\nUser: Tell me what kind of movies would you like to watch? i'm awesome\nSystem: I like comedy and action\nUser: i just watched Click (2010) by Adan Sandler and i loved, have you seen it?\nSystem: Omg I love that movie I love Adam Sandler! That movie is funny and hasn’t a great lesson too!\nUser: What about You Don't Mess with the Zohan (2008) ? It was made by Adan Sandler too\nSystem: No I didn’t see that one ! Have you seen Mr. Deeds (2002)\nSystem: ",
+      "system_answer": "I haven’t seen *Mr. Deeds* (2002), but it’s a comedy starring Adam Sandler that many fans enjoy.",
+      "gold_answer": "20222",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello!\nSystem: hello\nUser: What kind of films do you enjoy?\nSystem: i am in the mood for something like Drive (2011) or Half Baked (1998) I enjoy a wide variety of movies so anything would be helpful\nUser: Yeah that's a pretty big spectrum Pineapple Express (2008) is comparable to Half Baked\nSystem: I have seen it and loved it\nUser: If you liked Drive maybe try Nightcrawler (2014)\nSystem: I have seen that too and enjoyed it very much\nSystem: ",
+      "system_answer": "You might enjoy **“The Nice Guys” (2016)**.",
+      "gold_answer": "4417",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: how are you tonight? what kind of movies do you like?\nSystem: Hi!! Can you recommend me some movie?? I like movies like The Purge (2013)\nUser: we'll have to be patient with each other, the chat can be buggy Fight Club (1999) From Dusk till Dawn (1996) I love that one because I love juliette lewis Natural Born Killers (1994) That's one I hold close to my heart here we go\nSystem: I already saw Fight Club (1999) I love that movie\nUser: yeah it's an excellent movie\nSystem: I didn't see Natural Born Killers (1994) I think I'm going to give it a chance\nSystem: ",
+      "system_answer": "I'm fine tonight. I enjoy action, thriller, horror, and some romantic comedies. I like movies such as The Purge (2013), Fight Club (1999), Dusk till Dawn (1996), Natural Born Killers (1994), The Warriors (1979), Rambo (2012), Black Panther (2018), X‑Men (2000), The Wolverine (2013), Thor: Ragnarok (2017), Hulk (2003), and others.",
+      "gold_answer": "14042",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hi\nSystem: Hey, how's it going?\nUser: how are you? good\nSystem: I'M GREAT THANKS.\nUser: What kind of movies are you into?\nSystem: I like a little bit of everything. But how about some action movies, you anything good?\nUser: I like action.\nSystem: I love movies like X-Men (2000) and The Dark Knight (2008) .\nSystem: ",
+      "system_answer": "I recommend action movies such as **Die Hard (1988)**, **The Warriors (1979)**, **Rambo (2012)**, **The Matrix (1999)**, **Blade Runner (1982)**, **Wonder Woman (2017)**, and **Logan (2017)**.",
+      "gold_answer": "7416",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello how is it going\nSystem: Hey I'm great\nUser: The Avengers (2012) is a awesome movie you should watch it\nSystem: I love The Silence of the Hams (1994) , what can you recommend?\nUser: Or even Game Night (2018) ht its super funny\nSystem: Oh cool, I've seen those both Anything else?\nSystem: ",
+      "system_answer": "Here are a few movies you might enjoy if you liked *The Avengers* and *Game Night*:  \n- **Guardians of the Galaxy** (2014) – action‑comedy superhero film  \n- **Deadpool** (2016) – irreverent superhero action comedy  \n- **The Nice Guys** (2016) – comedic crime‑thriller with a fun tone  \n- **Kick‑Ass** (2010) – action‑comedy with over‑the‑top fights  \n- **The Hangover** (2009) – raunchy comedy with a chaotic plot  \n- **Spider‑Man: Homecoming** (2017) – light‑hearted superhero adventure  \n- **The Big Short** (2015) – comedic drama about the 2008 financial crisis (if you want something a bit different but still engaging)",
+      "gold_answer": "20966",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hey, how's it going?\nSystem: Hey it's great\nUser: What kind of movies do you like?\nSystem: I am looking for a scary movie I don't normally watch them so I am open to lots of suggestions\nUser: I really like A Quiet Place (2018)\nSystem: Oh I have never seen it I like the old school ones, like Halloween\nUser: it was very good. and not too scary or gruesome for someone who doesn't normally watch them\nSystem: Halloween (1978)\nUser: great classic\nSystem: or the silly ones like Scream (1996) What about Get Out (2017) ? Did you see that? Is it good?\nSystem: ",
+      "system_answer": "Get Out (2017) is a horror‑thriller directed by Jordan Peele. It premiered at the Sundance Film Festival and won the Academy Award for Best Original Screenplay. The film received widespread critical acclaim for its social commentary, suspense, and performances, particularly by Daniel Kaluuya. It holds a high rating on Rotten Tomatoes (≈98%) and is widely regarded as a must‑watch in the modern horror genre.",
+      "gold_answer": "27851",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi!\nSystem: hi\nUser: How are you?!\nSystem: I like various movies, I am fine! Can you recommend me fun movies ?\nUser: Have you seen The Commuter (2017)\nSystem: I like The Dawns Here Are Quiet (1972) I also like Jurassic Park\nUser: Fun movies Jumanji (2017) was funny !\nSystem: I even like the sequel Jurassic Park III (2001) Yes Jumangi is great! I will watch it\nUser: I haven’t seen Jurassic Park\nSystem: Thanks for telling me about it I like Disney films too\nUser: Vacation (2015) is funny too!!!\nSystem: Anything really fun is good Ok I will watch vacation. I like The Waterboy (1998)\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "21999",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello\nSystem: Hi\nUser: How are you today\nSystem: I am going well doing*\nUser: Whats kind of movies you like\nSystem: Right now I'm looking for a good bunch of superhero movies Animated movies would be great as well\nUser: Have you seen the new The Avengers (2012) I like Ant-Man (2015) can't wait until Ant-Man and the Wasp (2018) come out\nSystem: Well that was my top priority this year so of course I saw the Avengers. Loved it I watch Ant man as well and I am in anticipation of the sequel\nSystem: ",
+      "system_answer": "Here are some superhero and animated movies you might enjoy based on your interests:\n\n**Superhero (Marvel & DC)**  \n- *Guardians of the Galaxy* (2014) – a fun, space‑adventure team film.  \n- *Spider‑Man: Homecoming* (2017) – a fresh take on the web‑slinger.  \n- *Black Panther* (2018) – a critically acclaimed Marvel film with strong cultural impact.  \n- *The Dark Knight* (2008) – a classic DC superhero film with a gripping story.  \n- *Wonder Woman* (2017) – a powerful DC action‑adventure.  \n- *Thor: Ragnarok* (2017) – a humorous and visually striking Marvel film.  \n\n**Animated**  \n- *The Incredibles* (2004) – a superhero family adventure.  \n- *Incredibles 2* (2018) – the sequel with more action and humor.  \n- *Coco* (2017) – a heartfelt Pixar story about family and music.  \n- *Brave* (2012) – a Pixar film about a Scottish princess and her courage.  \n- *Wreck‑It Ralph* (2012) – a fun Pixar adventure about a video‑game character.  \n- *Ralph Breaks the Internet* (2018) – the sequel to *Wreck‑It Ralph*.  \n\nThese titles should give you a good mix of superhero excitement and animated storytelling. Enjoy!",
+      "gold_answer": "23792",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hey! How are ya?\nSystem: hi, i am good thanks for asking how are you?\nUser: I'm great, thanks!\nSystem: I enjoy movies like Dumb and Dumber (1994) and Van Wilder (2002)\nSystem: ",
+      "system_answer": "hi, i am good thanks for asking how are you?",
+      "gold_answer": "28929",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello\nSystem: Hello!\nUser: Do you like comedy movies?\nSystem: I do. I'm in the mood for a comedy from the 80's. Do you have any suggestions?\nUser: Juno (2007) is a great movie from the 80's? Let me think\nSystem: That is a good movie. I like movies like Stripes (1981) .\nUser: Big (1988) is a great movie with Tom Hanks\nSystem: Any comedy from the 80's is probably something I would like. I'm in a nostalgic mood. Oh, that is a great movie!\nUser: Yes, it is nice to rewatch old movies\nSystem: Of course, Ghostbusters (1984) was my favorite forever. I think I saw it 3 times when it was in the theater. I guess I love Bill Murray.\nSystem: ",
+      "system_answer": "Here are some classic 1980s comedy films you might enjoy:\n\n- **Ghostbusters (1984)** – A supernatural comedy with Bill Murray, Dan Aykroyd, and Harold Ramis.  \n- **Stripes (1981)** – A military‑driven comedy starring Bill Murray and Harold Ramis.  \n- **Big (1988)** – Tom Hanks stars as a kid who turns into an adult.  \n- **The Jerk (1979)** – Steve Martin’s absurd humor (just outside the 80s but often grouped with the era).  \n- **Hills Cop (1984)** – Eddie Murphy’s breakout role in a cop‑comedy.  \n- **The Naked Gun: From the Files of Police Squad! (1988)** – Leslie Nielsen’s slapstick comedy.  \n- **Back to the Future (1985)** – A sci‑fi adventure with comedic moments.  \n- **Ferris Bueller’s Day Off (1986)** – A light‑hearted teen comedy.  \n- **The Princess Bride (1987)** – A fairy‑tale adventure with witty humor.  \n- **The Blues Brothers (1980)** – Musical comedy with John Belushi and Dan Aykroyd.",
+      "gold_answer": "5256",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hello do you like movies to watch that are funny? or that are scary? I can be flexible in recommending\nSystem: Scary for sure. I loved I Know What You Did Last Summer (1997)\nUser: I would recommend fun movies. ok let me think you can watch The Conjuring ing the Descent (2005) is another one\nSystem: Yes The Conjuring (2013) was great I liked that too\nUser: how about something like The Babadook (2014) those are freaky!! you like to watch them?\nSystem: Oh nope, I saw it was on Netflix I'll check it out, thanks! Bye for now\nSystem: ",
+      "system_answer": "Scary for sure. I loved I Know What You Did Last Summer (1997)",
+      "gold_answer": "7935",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello! What kind of movie are you in the mood for today? Anything in particular that you like? Favorite actor or actress?\nSystem: Hello i love tom cruse\nUser: Oh, yes. He's great!\nSystem: The Minority oh Minority Report (2002) was my favorite\nUser: I loved the movie Magnolia (1999) . I loved his bad boy type of character dealing with personal issues. Oh, and Interview with the Vampire (1994) . Scary fun!\nSystem: i have watched those two i really love them im a big fan so i hava watched a lot of movies with him :D\nUser: Cool! I love the music from Top Gun (1986) . Of course, that movie catapulted him to success. And, you can't leave out Risky Business (1983) . Sexy fun. Have you seen those two? I'm sure you've seen Top Gun (1986) at the very least.\nSystem: I havent seen the second one, but Top Gun (1986) of course its a classic Thanks i will try Risky Business (1983)\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "19904",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi how aren’t you\nSystem: Hello!\nUser: Are*\nSystem: I'm not bad\nUser: What kindness of movies do you like I like comedy and action\nSystem: I love movies like Guardians of the Galaxy (2014) and The Avengers (2012). Have you seen those?\nUser: I have not seen guardians of the galaxy ! But I seen the Avengers . Have you seen Avengers: Infinity War (2018)\nSystem: I haven't seen that one yet but I've heard it is really good!\nUser: Super goood! What about Black Panther (2018) ?! I seen it 3 times ! Lol\nSystem: I haven't seen that one. I need to.\nUser: Yes it will be worth it\nSystem: ",
+      "system_answer": "If you enjoyed *Black Panther*, you might also like *Captain America: Civil War* (2016) and *Thor: Ragnarok* (2017), both Marvel films that combine action, humor, and strong character moments.",
+      "gold_answer": "10062",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi there How are you doing?\nSystem: Hello Do you like horror movies?\nUser: I do. I really like the Saw (2004) movies Also like classics like Halloween (1978)\nSystem: Have your ever seen wrong turn\nUser: Wrong Turn (2003) sounds familiar but no sounds good!\nSystem: Wrong Turn (2003) turn Silent Hill (2006) hill\nUser: Oh that sounds good too!\nSystem: ",
+      "system_answer": "Silent Hill (2006) is a psychological horror film based on the video game series. It stars Radha Mitchell as a woman who travels to the town of Silent Hill to find her missing husband, only to discover a nightmarish world filled with supernatural creatures and psychological terror. The movie blends atmospheric dread with supernatural elements, making it a good follow‑up if you enjoyed Saw (2004) and Halloween (1978). Let me know if you’d like more horror recommendations.",
+      "gold_answer": "19211",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello How are you What kind of movies do you like\nSystem: Hi, I'm great thanks for asking. I love a good drama like Fight Club (1999) Also American Beauty (1999) is one of my favorites and The Orphanage (2007) Oh and I also like A Beautiful Mind (2001) What would you recommend?\nUser: I see you have them down pack\nSystem: Yes, lol I watch a lot of movies.\nUser: I havent seen none of them\nSystem: Oh wow. That's a shocker, those are all classic films\nUser: Maybe I should add them to my list\nSystem: What would you recommend then? You should. You know any good movies like Scarface (1983)\nSystem: ",
+      "system_answer": "If you’re looking for films that capture the same gritty, crime‑drama vibe as *Scarface* (1983), consider the following titles:\n\n- **The Godfather** (1972) & **The Godfather Part II** (1974) – classic mafia epics.  \n- **Goodfellas** (1990) – a raw look at the rise and fall of a gangster.  \n- **Heat** (1995) – a tense cat‑and‑mouse thriller between a cop and a thief.  \n- **Casino** (1995) – the inside story of Las Vegas mob operations.  \n- **The Departed** (2006) – an undercover cop vs. a crime boss in Boston.  \n- **American Gangster** (2007) – the true story of a Harlem drug lord.  \n- **The Untouchables** (1987) – Eliot Ness’s battle against Al Capone.  \n- **The Wolf of Wall Street** (2013) – a modern, high‑stakes crime saga.  \n- **The Irishman** (2019) – a long‑form look at mob life over decades.  \n\nThese films share *Scarface*’s themes of ambition, power, and the dark side of the American dream. Enjoy adding them to your list!",
+      "gold_answer": "23508",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi! How are you today? It is nice to meet you. Do you need help finding a movie?\nSystem: Hello Yes do you have any drama reccomendations? What types of movies do you like?\nUser: Sure, I love dramas. What is your favorite drama? I like comedies, but I love all kinds of movies.\nSystem: I really like The Shawshank Redemption (1994) Have you seen Thor: Ragnarok (2017) it was a superhero movie but very funny.\nUser: I haven't seen Thor: Ragnarok (2017) . Have you seen Me Before You ? It is a drama, but it has some romance in it too.\nSystem: Yes I have. I loved the book and the movie was very good too.\nUser: La La Land (2016) was actually pretty good too. It was very dramatic, because it was a musical. I know, Me Before You made me cry!\nSystem: I acutually have not seen La La Land (2016) yet\nSystem: ",
+      "system_answer": "La La Land (2016) is a musical romantic drama starring Ryan Gosling and Emma Stone, directed by Damien Chazelle, and it won six Oscars—including Best Director.",
+      "gold_answer": "550",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: helle hello sorry\nSystem: Hello, How are you?\nUser: fine thanks and you\nSystem: I'm great.\nUser: can i help you with a movie\nSystem: Sure can you suggest some super hero action movies?\nUser: whath tipe or movie do you like watch\nSystem: One I always loved was X-Men (2000) and X-Men: Apocalypse (2016) .\nUser: great you search Avenger (2006) Avengers: Infinity War (2018)\nSystem: Yes I've seen that one. Very good movie.\nSystem: ",
+      "system_answer": "**Recommended Movies Based on Your Interests**\n\n- **Superhero Action**  \n  - *X‑Men* (2000)  \n  - *X‑Men: Apocalypse* (2016)  \n  - *The Avengers* (2012)  \n  - *Avengers: Infinity War* (2018)  \n  - *Iron Man* (2008)  \n  - *Black Panther* (2018)  \n  - *Thor: Ragnarok* (2017)  \n  - *The Dark Knight* (2008)  \n\n- **Classic Action / Cop Movies**  \n  - *Die Hard* (1988)  \n  - *Rambo* (2012)  \n  - *The Warriors* (1979)  \n  - *The Matrix* (1999)  \n  - *Blade Runner* (1982)  \n\n- **High‑Energy Driving / Action**  \n  - *Fast & Furious 6* (2013)  \n  - *Transporter 3* (2008)  \n  - *Herbie: Fully Loaded* (2005)  \n\n- **Romantic Comedies**  \n  - *The Proposal* (2009)  \n  - *The Wedding Planner* (2001)  \n  - *27 Dresses* (2008)  \n  - *There's Something About Mary* (1998)  \n\n- **Other Notable Mentions**  \n  - *Suicide Squad* (2016)  \n  - *Justice League* (2017)  \n  - *Clueless* (1995)  \n  - *I Love You, Man* (2009)  \n  - *Role Models* (2008)  \n\nThese titles align with the superhero, action, and romantic comedy themes you’ve shown interest in. Enjoy!",
+      "gold_answer": "4435",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello i like crime movies i like crime movies you?\nSystem: Hello! I'm not a huge fan of crime movies, but I do like superhero movies. I guess you could call a superhero movie a crime movie.\nUser: yes its similar\nSystem: I love Superman (1978) and my favorite superhero is Iron Man (2008)\nUser: Have you seen Wonder Woman (2017) or the new The Avengers (2012) Iron man is the most common favorite superhero :D\nSystem: I have seen both. My husband loved Wonder Woman (2017) but I wasn't as impressed. I like The Avengers (2012) Well, Superman (1978) will always hold a special place in my heart as it was my first superhero movie that I loved. But, Robert Downey, Jr. is great.\nSystem: ",
+      "system_answer": "Hello! I'm not a huge fan of crime movies, but I do like superhero movies. I guess you could call a superhero movie a crime movie.",
+      "gold_answer": "22755",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi\nSystem: Hello\nUser: How are you?\nSystem: I'm awesome what about you? I'm open to any movie\nUser: Pretty good.\nSystem: What would you recommend?\nUser: Have you seen The Wiz (1978)\nSystem: No, that sounds old, is it a good one? i like old movies like The Mask (1994)\nUser: Yes it is! It has Micheal Jackson in it Okay. Have you seen Liar, Liar (1993)\nSystem: or It (1990) the old one, i do not why but i enjoy watching old movies more than the new ones Yeah, i have!\nUser: I do as well. Some of my favorites are old movies.\nSystem: But i think i will try the another one which i have not seen Thank you for helping me Have a great day See you later\nSystem: ",
+      "system_answer": "Since you enjoy classic films like *The Wiz* (1978) and *Liar Liar* (1993), you might enjoy the classic crime drama *The Godfather* (1972). If you prefer a romantic classic, *Casablanca* (1942) is a timeless choice. Both are highly regarded and likely to be new to you.",
+      "gold_answer": "16763",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello!\nSystem: Good day! I have been thinking about seeing Titanic (1997) again. Have you ever seen it?\nUser: Haha, yeah way back. It was good. I love My Cousin Vinny (1992) , can you recommend a mob movie?\nSystem: Would like to know a comedy or something more serious like the Godfather (1991)?\nUser: Serious please. I never saw The Godfather (1972)\nSystem: Really? It\nUser: I never saw 1991's Godfather (1991) either, whatever that is, haha\nSystem: ",
+      "system_answer": "Since you’re looking for a serious mob movie and haven’t seen *The Godfather* (1972) yet, that’s a perfect starting point. It’s a classic crime drama that sets the standard for the genre. If you’d like additional options, consider *Goodfellas* (1990) for a gritty, realistic look at the mob, or *The Departed* (2006) for a tense, modern take on crime and betrayal.",
+      "gold_answer": "23802",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hello\nSystem: Hi,\nUser: How are you?\nSystem: fine, you\nUser: fine Jurassic World (2015)\nSystem: If I've seen it, it's an excellent movie\nUser: The Infinite Man (2014) It is very good movie I recommend it\nSystem: it's okay, I'll see it\nUser: Deadpool 2 (2018)\nSystem: ",
+      "system_answer": "Deadpool 2 is a 2018 American superhero film directed by David Leitch and written by Rhett Reese and Paul Wernick. It is the sequel to the 2016 film *Deadpool* and the second installment in the X‑Men film series. The film stars Ryan Reynolds as Wade Wilson / Deadpool, alongside Josh Brolin, Morena Baccarin, Tessa Thompson, and Zachary Levi. The plot follows Deadpool as he forms a team of mutants, the X‑Force, to protect a young mutant named Russell from the villain Cable, played by Josh Brolin. The movie was released on May 18, 2018, and received generally positive reviews for its humor, action, and the performances of Reynolds and Levi. It grossed over $785 million worldwide.",
+      "gold_answer": "19875",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hi how are you?\nSystem: Hi! How's it going? Great, thanks! What kind of movies are you looking for?\nUser: I am looking for something scary, similar to The Possession (2012) or Evil Dead (2013)\nSystem: awesome! I love scary movies! Have you seen The Exorcism of Emily Rose (2005) or Insidious (2011) ?\nUser: I love Insidious (2011) !! I have not seen The Exorcism of Emily Rose (2005) I am going to check that out! Thanks!\nSystem: ",
+      "system_answer": "Great to hear you enjoyed *Insidious*! *The Exorcism of Emily Rose* (2005) is a compelling supernatural thriller that blends courtroom drama with horror. If you like that style, you might also enjoy *The Conjuring* (2013), *Sinister* (2012), or *The Ring* (2002). Enjoy your watch!",
+      "gold_answer": "22530",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi, how are you?\nSystem: im great how are you\nUser: I'm awesome, thanks for asking.\nSystem: what kinds of movies are you into?\nUser: I love crime movies like Goodfellas (1990) , Casino (1995) , Scarface (1983) What would you suggest?\nSystem: I love all of those movies\nUser: I know, they're such classics!\nSystem: ",
+      "system_answer": "You might also enjoy these crime classics:  \n- *The Godfather* (1972) & *The Godfather Part II* (1974)  \n- *Heat* (1995)  \n- *The Departed* (2006)  \n- *The Untouchables* (1987)  \n- *American Gangster* (2007)  \n- *The Irishman* (2019)",
+      "gold_answer": "23802",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: HI\nSystem: Hello can you suggest a good kid movie?\nUser: How are you? Sure! What about The Incredibles (2004) Are you thinking for older kids?\nSystem: ",
+      "system_answer": "The Incredibles (2004) is a great animated superhero film that’s well‑suited for older kids. If you’re looking for another solid choice, consider Toy Story 3 (2010) or Finding Nemo (2003).",
+      "gold_answer": "14740",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello!\nSystem: hello how are you?\nUser: whats your favorite genre\nSystem: horror and comedy!\nUser: ah then the combination is perfect for you! :D\nSystem: it does make searching easy haha\nUser: have you seen Shaun of the Dead (2004) or Zombieland (2009)\nSystem: I have and LOVED both! I really liked Tucker & Dale vs. Evil (2010)\nSystem: ",
+      "system_answer": "The system’s favorite genre is horror and comedy.  \nIt has seen and loved the following films:  \n- **Shaun of the Dead** (2004)  \n- **Zombieland** (2009)  \n- **Tucker & Dale vs. Evil** (2010)",
+      "gold_answer": "22275",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello. What kind of movie are you seeking?\nSystem: action\nUser: May I recommend The Fast and the Furious? Or how about Avatar (2009)?\nSystem: Sure. The Fast and the Furious, is better.\nUser: Well Avatar (2009) really isn't action. Sorry about that.\nSystem: no problem\nUser: Ever heard of Die Hard (1988)?\nSystem: Yes, it's a good movie What kind of movie are you seeking? you.\nUser: Well have you seen Taken (2008)? They're similar.\nSystem: I really do not remember\nUser: Ever seen Taken (2008)? They're similar.\nSystem: John Wick (2014) for my part I recommend that\nUser: I haven't seen that one.\nSystem: It's very good, I recommend it I know you'll like it\nSystem: ",
+      "system_answer": "John Wick (2014)",
+      "gold_answer": "26067",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello How are you?\nSystem: im great how are you\nUser: I'm good.\nSystem: im looking for some great horror and comedies any suggestions\nUser: Well when it comes to horror I always think of the classics like A Nightmare on Elm Street (1984) or Friday the 13th (1980). Have you seen either of these movies?\nSystem: I saw both and enjoyed both\nUser: Yes they are great movies.\nSystem: last horror i saw was Jigsaw (2017) really likd it\nUser: I will have to check that one out.\nSystem: last comedy was Girls Trip (2017) also great\nSystem: ",
+      "system_answer": "last horror i saw was Jigsaw (2017) really likd it  \nlast comedy was Girls Trip (2017) also great",
+      "gold_answer": "6759",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi, how are you?\nSystem: Hi can you please recommend a detective moovie? I liked Sherlock Holmes (2009) . This is classic .\nUser: Yes. The ones that come to mind are Zodiac (2007), Seven (1995) , and Murder on the Orient Express (2017)\nSystem: I watched Zodiac (2007) . I also watched Murder on the Orient Express (2017) . I loved it. I've never seen Seven (1995) Can you recommend anything else?\nSystem: ",
+      "system_answer": "Here are some detective‑style films you might enjoy:\n\n- **Knives Out** (2019) – A modern whodunnit with a sharp, witty mystery.  \n- **The Girl with the Dragon Tattoo** (2011) – A gripping investigative thriller.  \n- **Chinatown** (1974) – A classic noir detective story with a twist.  \n- **L.A. Confidential** (1997) – A stylish crime‑detective drama set in 1950s Los Angeles.  \n- **The Maltese Falcon** (1941) – A quintessential film‑noir detective tale.  \n- **The Big Sleep** (1946) – Another noir classic featuring a private eye.  \n- **The Departed** (2006) – A crime thriller with detective elements and a tense plot.  \n- **The Usual Suspects** (1995) – A mystery thriller with a memorable twist.  \n- **Gone Girl** (2014) – A psychological thriller that follows a detective’s investigation.  \n\nIf you’re interested in a thriller that’s not strictly detective, you might also want to check out **Seven** (1995), which you haven’t seen yet.",
+      "gold_answer": "25851",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hello\nSystem: Hello how are you Do you like horror movies\nUser: I am fine ty for asking yes i do\nSystem: Have your seen the new Winchester (2018)\nUser: I liked It (1990) and Halloween (1978) I have not seen it. I look forward to watching it\nSystem: Wrong Turn (2003) It was really great\nUser: I have seen that and enjoyed it I agree Thanks for your help I appreciate the suggestions You have a great day and good bye!\nSystem: ",
+      "system_answer": "You're welcome! Glad you enjoyed Wrong Turn. Have a great day!",
+      "gold_answer": "18499",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: What kind of movies do you like?\nSystem: Hi, I'm looking for a good movie to watch tonight. Any suggestions? I enjoy Adventure movies.\nUser: Fight Club (1999) is my fav of all time Adventures in Babysitting (1987) is a classic\nSystem: I have seen that, but I don't remember a lot about it.\nUser: but it's kind of a comedy too\nSystem: I've never seen Adventures in Babysitting (1987) I might enjoy it, though. It looks like a classic 80's movie.\nUser: The Goonies (1985) is a classic adventure funny too\nSystem: I love The Goonies (1985) I like Sean Astin a lot.\nUser: Lego Indiana Jones and the Raiders of the Lost Brick is a great classic adventure Indiana Jones and the Temple of Doom (1984) is just as good\nSystem: I've never seen that or Indiana Jones and the Temple of Doom (1984)\nSystem: ",
+      "system_answer": "I enjoy adventure movies, such as *The Goonies* (1985), *Indiana Jones* (1984), and *Lego Indiana Jones and the Raiders of the Lost Brick*.",
+      "gold_answer": "22095",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi there. How are you?\nSystem: Hello I am well. how are you?\nUser: I'm good.\nSystem: I would like to watch a good action movie tonight. any recommendations?\nUser: I love action movies. Have you seen Die Hard (1988)\nSystem: Yes I have. Great Movie! Any other suggestions along those lines would be welcome :)\nUser: I know. How bout The Last Boy Scout (1991)\nSystem: Oh wow good one! Forgot about that movie! Thanks for the great action movie recommendations :)\nUser: That's like a good favorite of mine Have you seen Looper (2012)\nSystem: Yes, I have. I am a super Bruce Willis Fan!\nUser: I can tell, so I am I lol\nSystem: Haha, Nice That should do it for the recommendations. Thanks for your help :)\nUser: You're more than welcome\nSystem: I am trying to advance the chat but am having problems haha!\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "2537",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hello how are you\nSystem: I'm great! Thanks\nUser: what kinds fo movies are you into\nSystem: What do you know about movies like The Human Centipede (2009) ?\nUser: The Human Centipede 2 (2011) and The Human Centipede 3 (2015) were just as good as the first and The Strange Thing About the Johnsons is equally as disturbing\nSystem: Yeah, I watched them all. Just got crazier and crazier. Can you think of anything else?\nUser: no, im not into movies like that\nSystem: Anything else then\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "23792",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello can you tell me what kind of movies you like best?\nSystem: hello i'm the seeker now you should recommend me any movie I just watched Avengers: Infinity War (2018) and i liked\nUser: I could recommend Donnie Darko (2001) .\nSystem: That's great\nUser: I also enjoy classic horror movies like A Nightmare on Elm Street (1984) and A Nightmare on Elm Street 2: Freddy's Revenge (1985)\nSystem: i have not seen them but i could try them those sounds very interesting i just watched It (2017) the new one Are those Scary movies too?\nSystem: ",
+      "system_answer": "I enjoy action, superhero, romantic comedy, horror, and thriller movies.",
+      "gold_answer": "16528",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hello how are you?\nSystem: Hi- I'm great! and you? What are your favorite movies/\nUser: I enjoy movies like Deadpool (2016) and Dumb and Dumber (1994) Im good thanks for asking\nSystem: Those are some good ones! Have you seen Van Wilder (2002) or Super Troopers (2001) ?\nUser: I have seen both and loved them.\nSystem: ",
+      "system_answer": "I'm glad you enjoyed Van Wilder and Super Troopers! If you like that blend of comedy and raunchy humor, you might also enjoy movies like *The Hangover* (2009), *Step Brothers* (2008), *Anchorman* (2004), or *Superbad* (2007).",
+      "gold_answer": "29601",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi there You like movies too?\nSystem: Hello, how are you? Yes, I like sports and comedy movies.\nUser: I just checked out Bad Moms (2016) from the library. It's a comedy. I haven't watched it yet. Have you seen The Waterboy (1998) ? It has sports and its funny. Or The Sandlot (1993), its older, but sort of a classic.\nSystem: I haven't seen Bad Moms (2016) yet. I have seen The Waterboy (1998).\nUser: Did you like it?\nSystem: I love The Waterboy (1998) and The Sandlot (1993) .\nUser: Do you like movies about sports that are more of a drama? Jerry Maguire (1996) ? I don't know if that's considered a sports movie\nSystem: I have seen and liked Jerry Maguire (1996) . He's an agent for a football player so I would say so.\nSystem: ",
+      "system_answer": "I love The Waterboy (1998).",
+      "gold_answer": "26304",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello, how are you? What kind of movies do you like to see?\nSystem: Hi there. I am doing well Thank you for asking. And you?\nUser: If you're into romantic comedies I'd recommend Bridget Jones's Diary (2001) Oh I'm well, thanks for asking.\nSystem: I love that movie. How did you know?\nSystem: ",
+      "system_answer": "I know because you just recommended Bridget Jones’s Diary.",
+      "gold_answer": "8537",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: how are you doing?\nSystem: Hi I'm in the mood for horror\nUser: what kind of movies do you like? The Shining (1980) is a classic\nSystem: I liked The Witch (2015)\nUser: Carrie (1976) is also a classic\nSystem: Loved The Shining (1980) also liked The Birds (1963) and The Hills Have Eyes (2006)\nSystem: ",
+      "system_answer": "I'm doing well, thanks for asking! I'm in the mood for horror movies.",
+      "gold_answer": "8546",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi! Do you like to watch action movies? I just watched Thor and enjoyed it. If you like dumb cult classic movies, you can't get better/worse than The Pirate Movie (1982)\nSystem: Hi there sorry I'm here\nUser: Great! What type of movies do you like?\nSystem: I am into action movies like Thor but my boyfriend always gets to pick. Can you recommend like a 90s classic? Something to the effect of Cruel Intentions (1999)\nUser: I loved Cruel Intentions (1999) You might like Election (1999) which had Matthew Broderick and Reese Witherspoon.\nSystem: Do you think the Reese Witherspoon one called Fear (1990) ? haha thats great you brought those up! Thank you very much for the recommendations. I might make him watch Clueless (1995) too haha\nUser: I've never seen Fear (1990) . Even though it's more 80s you might like Heathers (1988) if you liked Cruel Intentions (1999) . Yes, or Legally Blonde (2001) . He would love that Ha!\nSystem: LOVED Heathers (1988) Winona forever\nUser: Yes!\nSystem: Do you think he'd like Encino Man (1992) ?\nSystem: ",
+      "system_answer": "Encino Man (1992) is a light‑hearted 90s comedy that blends mild action with humor. If he enjoys 90s classics and enjoys a mix of adventure and laughs, it’s a good fit.",
+      "gold_answer": "6132",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hello!\nSystem: Hello I love action movies Do you know any good ones?\nUser: Me too! I am a big fan of Die Hard (1988)\nSystem: WOW that is also one of my most favorite action movies\nUser: It's a classic\nSystem: My favorite is probably Terminator 2: Judgment Day (1991)\nUser: That is also a solid choice! The best of the terminator films\nSystem: Oh yea for sure easily\nUser: Do you watch any international action films?\nSystem: Yes Korean action movies are my favorite Such as Oldboy (2003) and I Saw the Devil (2010)\nUser: have you seen The Man from Nowhere (2010) I love both of those!!\nSystem: No that is the one action movie from Korea that I have not seen surprisingly I just could not find a good quality version of that movie\nUser: It used to be on netflix\nSystem: Dang I would have checked it out for sure. I have heard great things about that Have you seen The Chaser (2008) Another solid korean action movie\nUser: Train to Busan (2016) is also excellent No I'll look into that for sure\nSystem: Yea but I felt that movie was too melodramatic but I still enjoyed it a lot\nUser: The ending really got me\nSystem: Yea I saw it coming but it was still sad to see Hated the businessman so much in that movie\nUser: Yeah I was just waiting for him to die, he lived longer than I thought he would\nSystem: Well do you know any good thrillers ? Like Gone Girl (2014)\nSystem: ",
+      "system_answer": "Here are some thriller films you might enjoy that share the suspense, mystery, and psychological depth of *Gone Girl* (2014):\n\n- **The Girl with the Dragon Tattoo** (2011) – A gripping investigative thriller with complex characters.  \n- **Zodiac** (2007) – A tense, procedural mystery about the hunt for a serial killer.  \n- **Prisoners** (2013) – A dark, emotionally charged story of a father's desperate search for his missing daughter.  \n- **Shutter Island** (2010) – A psychological thriller that keeps you guessing until the very end.  \n- **The Silence of the Lambs** (1991) – A classic thriller featuring a cat‑and‑mouse game with a serial killer.  \n- **Se7en** (1995) – A gritty, atmospheric crime thriller with a shocking twist.  \n- **The Departed** (2006) – A crime thriller with undercover intrigue and moral ambiguity.  \n- **Gone Baby Gone** (2007) – A tense, morally complex investigation into a missing child.  \n- **The Sixth Sense** (1999) – A psychological thriller that blends supernatural elements with a compelling mystery.  \n\nThese films should satisfy your craving for suspenseful, character‑driven thrillers similar to *Gone Girl*.",
+      "gold_answer": "22168",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi there\nSystem: Hey! I just watched Clerks (1994) and Chasing Amy (1997) so I'm in a comedy mood\nUser: Oh nice I loved those movies. Let me see... Have you seen Mallrats (1995)?\nSystem: Kevin Smith is a genius\nUser: I also personally enjoyed Dogma (1999).\nSystem: I have and loved it actually just visited that mall! Dogma might be my favorite\nUser: Oh that's cool. Same here!\nSystem: Well I might just make it a Kevin Smith trilogy tonight. Thank you!\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "21480",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello.\nSystem: Hi. Wanna see a war movie like Black Hawk Down (2002)\nUser: Nope. I want to see an animation. I like The Boxtrolls (2014), but I'm up for suggestions.\nSystem: OK I really liked Ferdinand (2017) and I don't normally watch animated stuff!\nUser: Then go back to your childhood! What's Ferdinand (2017) about?\nSystem: Oh, no, I am selective as an adult for example I loved The Secret Life of Pets (2016) ! Ferdinand was a peaceful bull who didn't want to fight and of course in Spain all bulls fight\nUser: The Secret Life of Pets (2016) sounds more interesting than Ferdinand (2017).\nSystem: Different vibe! Both are good. I also liked Finding Nemo (2003) and Shreck (1990)\nUser: The Boxtrolls (2014) was released when I was an adult, of course. I want to see it because it was stop-motion.\nSystem: ",
+      "system_answer": "Ferdinand (2017) is a Pixar animated film about a gentle, flower‑loving bull who prefers to spend his days smelling roses and making friends rather than fighting. When he is mistakenly taken to a bullfighting arena, he must decide whether to follow the crowd’s expectations or stay true to his peaceful nature, ultimately proving that kindness and compassion can triumph over violence.",
+      "gold_answer": "19715",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi how are you? Did you see The Last Airbender (2010)?\nSystem: HI. Im good! Yes I have. It was okay.\nUser: It's not for everyone, do you like fantasy/sci-fi?\nSystem: Not really. I do like action though.\nUser: Ali (2001) - is a good action film with nice acting.\nSystem: Yeah, I am a big Will Smith fan it was a good movie. My favorite was The Pursuit of Happyness (2006) Even though there were some sad parts, there was a happy ending\nUser: Do you like a good old classic Men in Black (1997)\nSystem: Yes i did!\nUser: Absolutely, The Pursuit of Happyness (2006) hit all the right spots, i like it too. Did you watch Men in Black II (2002)?\nSystem: Yes I did. Wasnt as good as the first but I will watch anything with him in it!\nSystem: ",
+      "system_answer": "I'm good, yes I saw The Last Airbender (2010), it was okay.",
+      "gold_answer": "26808",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi\nSystem: Hi, what is the best horror zou have seen\nUser: Whell World War Z or Psycho (1960) are both great movies\nSystem: I have seen them, i liked it\nUser: then i think that The Cabin in the Woods is a great choice for you its newer\nSystem: I have not seen it. I will watch it.\nSystem: ",
+      "system_answer": "Hi, I have seen World War Z and Psycho, and I'm planning to watch The Cabin in the Woods. My favorite horror movies are Shaun of the Dead, Zombieland, and Tucker & Dale vs. Evil.",
+      "gold_answer": "23497",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: How are you today? What's your favorite movie? Mine is Empire Records, have you heard of it? Empire Records (1995)\nSystem: I haven't seen that. I have seen Forgetting Sarah Marshall (2008) and that was pretty good. Can you recommend more movies like that?\nUser: I just rewatched that a few weeks ago, so funny! Did you ever see Get Him to the Greek (2010) ?\nSystem: I've never seen that one. I'll have to watch it! Do you know of any others?\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "5032",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi\nSystem: hey\nUser: What kind of movies do you like ?!\nSystem: I need some movies to watch anything really make some suggestions\nUser: Okay, If you enjoy action I would suggest The Commuter (2017) if you haven’t seen it yet it actually came out this year List of accolades received by Inception is a personal favorite of mine with Leonardo DiCaprio\nSystem: that sounds interesting I love that movie\nUser: It’s really good ! I also enjoyed Takers (2010) and Enough (2002) cause JLO was just too fierce in that movie lol\nSystem: . I ahven't seen them those sound good\nUser: Comedy, I would say Jumanji (2017)\nSystem: I'll check them out thanks for the suggestions\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "23792",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello! How are you doing today?\nSystem: hello I am good thanks for asking how are you?\nUser: I'm well. What kind of movies are you looking to watch?\nSystem: I am in the mood for something funny like Ace Ventura: Pet Detective (1994) or Superbad (2007)\nUser: How about The Waterboy (1998) ? It's a silly comedy along the same lines as those.\nSystem: I have seen it and loved it\nSystem: ",
+      "system_answer": "hello I am good thanks for asking how are you?",
+      "gold_answer": "27321",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello, how are you? Looking for a good movie?\nSystem: Yes please\nUser: Well, what kinds of movies do you like?\nSystem: I love The Matrix (1999) , do you know more sci fi?\nUser: Sure, have you seen Cloud Atlas (2012) ? Or Arrival (2016) ?\nSystem: Yes I love both of those movies! Anything else?\nSystem: ",
+      "system_answer": "Here are a few sci‑fi movies you might enjoy:  \n- **Interstellar** (2014)  \n- **Blade Runner 2049** (2017)  \n- **Inception** (2010)  \n- **Ex Machina** (2014)  \n- **The Prestige** (2006)",
+      "gold_answer": "9436",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello! How are you?\nSystem: Hello. I'm great, How are you?\nUser: I'm doing well, thanks! What kind of movies are you into?\nSystem: I like everything. You have any good action super hero movies?\nUser: Sure! I really loved Guardians of the Galaxy (2014) , and the sequel, Guardians of the Galaxy Vol. 2 (2017)\nSystem: I haven't watched either of those yet.\nUser: The Dark Knight (2008) never disappoints either.\nSystem: I am going to have to check them out for sure. Oh i just watched that one yesterday. I love Batman.\nUser: My favorite superhero movie of all time is Superman (1978) . So sad that Margot Kidder died recently.\nSystem: That is so sad. It's been years since I've watched that one.\nUser: I've been wanting to watch it again after I heard of her death. I think I liked Superman II (1980) even better, though.\nSystem: I will have to watch them both. It has been so long. Well thank you.\nSystem: ",
+      "system_answer": "I like everything. You have any good action super hero movies?",
+      "gold_answer": "16293",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi, what movies do you like?\nSystem: Hi how are you? I like anything action, comedy, click flicks\nUser: Good. Have you seen The Revenant (2015) or Baby Driver (2017)\nSystem: Yes I have seen Baby Driver (2017) It was different\nUser: Have you seen Hot Fuzz (2007) or Blade Runner 2049 (2017) ?\nSystem: No neither. Are they good\nUser: Yes. Hot Fuzz (2007) is a VERY clever action/comedy.\nSystem: Nice! I will have to check it out Im always up for a new comedy\nSystem: ",
+      "system_answer": "Hi how are you? I like anything action, comedy, click flicks",
+      "gold_answer": "2192",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi, how are you today? What kind of movies do you like? I recently watched Deadpool 2 (2018) it was hilarious!\nSystem: I'm fine how are you?\nUser: I'm great, thanks for asking!\nSystem: I did too!! I also really liked Black Panther (2018). Got any other recommendations?\nSystem: ",
+      "system_answer": "If you enjoyed *Deadpool 2* and *Black Panther*, you might like these Marvel and action‑comedy titles:  \n\n- *Thor: Ragnarok* (2017) – a fun, irreverent take on the Norse hero  \n- *Avengers: Infinity War* (2018) – a high‑energy team‑up with plenty of humor  \n- *Guardians of the Galaxy Vol. 2* (2017) – quirky space adventure with a comedic tone  \n- *X‑Men: Days of Future Past* (2014) – a blend of sci‑fi action and witty dialogue  \n- *The Suicide Squad* (2016) – a darker, but still funny, superhero ensemble  \n- *Kick‑Ass* (2010) – a stylized, comic‑book‑style action comedy  \n- *The Dark Knight* (2008) – a darker superhero film with sharp dialogue  \n- *The Nice Guys* (2016) – a buddy‑cop comedy with a sharp script  \n- *Iron Man 3* (2013) – a mix of action and humor in the Marvel universe  \n\nThese films share the blend of action, humor, and superhero elements that made *Deadpool 2* and *Black Panther* enjoyable.",
+      "gold_answer": "20331",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello! What kind of movie are you looking for today?\nSystem: Hello I guess I am not sure what I am looking for. Do you know of any good romance movies?\nUser: I love Ever After (1998) . Its an older fairy tale romance with Drew Barrmore Stardust (2007) is also a good action adventure romance.\nSystem: I've never really watched these types of movies and I don't know where to start. I haven't seen either of these I will have to check them out.\nUser: What else would you like in the movie? comedy, fairy tales?\nSystem: I always like True Romance (1993) I think that is the name of it.\nUser: What movies outs die of the romance genre do you like?\nSystem: And not really that romantic but totally hilarious Love Stinks (1999). I love comedies like Little Nicky (2000). This movie never fails to crack me up.\nUser: So True Romance (1993) is a crime movie with some romance\nSystem: And there is another I don't know what you would call the genre but the name is Donnie Darko (2001) .\nUser: Have you seen Kill Bill? Some romance and action\nSystem: Yes but True Romance (1993) the love was so real it strikes me as a great romance, I have never gotten through all of Kill Bill. Well I am definitely going to look in to your recommendations. Thank you, have a great day.\nSystem: ",
+      "system_answer": "The system likes the following romance movies:  \n- **Ever After** (1998)  \n- **Stardust** (2007)  \n- **True Romance** (1993)  \n- **Love Stinks** (1999)  \n\nIt has also mentioned the romantic‑comedy titles **The Proposal** (2009), **The Wedding Planner** (2001), **27 Dresses** (2008), and **There’s Something About Mary** (1998).",
+      "gold_answer": "1628",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello! HOw are you? I am ooking for some good comedies. Any ideas?\nSystem: Hi I really liked The Other Woman (2014)\nUser: I don't think I have heard of that one,\nSystem: Oh, it was hysterical - these gals all had been played by the same guy and they got together to teach him a lesson\nUser: I will check that out! I keep hearing that Bridesmaids (2011) is funny. Have you seen it?\nSystem: Bridesmaids (2011) was very entertaining. I also enjoyed What About Bob%3F (1991)\nUser: OH my God! What About Bob%3F (1991) is one of my favorite Bill Murray movies! With his little fish !\nSystem: Yeah! What About Bob%3F (1991) is a total classic.\nUser: ANy other Bill Murray films you would suggest?\nSystem: Caddyshack II (1988) is a popular one!\nUser: I love the original but have not seen the sequel. I wll check it out. Does he play the same groundskeeper guy?\nSystem: Yes, he is typical Bill Murray. How about Stripes (1981) ? That's another Murray classic.\nUser: Lighten up, Francis !!!! yes! I love Stripes (1981) Thanks for the ideas. i am gonna go have a Murray marathon now!\nSystem: St. Vincent (2014) was a bit different.\nUser: HIs newer films definitely have a different tone. I really liked The Life Aquatic with Steve Zissou (2004) Which is no longer \"new\" now that I think about it...\nSystem: The Life Aquatic with Steve Zissou (2004) is one I haven't seen yet. I am putting it on my list!\nUser: It is one of my favorite films.\nSystem: Thanks for the recommendation!\nUser: If you have seen other films Wes Anderson has directed, like The Royal Tenenbaums (2001) or Rushmore (1998) you will like it.\nSystem: ",
+      "system_answer": "Here are some well‑received comedy films you might enjoy:\n\n- **The Other Woman (2014)** – A raunchy rom‑com with a strong female cast.  \n- **Bridesmaids (2011)** – A female‑led comedy with sharp humor.  \n- **What About Bob? (1991)** – Bill Murray’s classic comedy about a neurotic patient.  \n- **Stripes (1981)** – Bill Murray’s military‑driven comedy.  \n- **Caddyshack II (1988)** – Bill Murray returns as the groundskeeper in the sequel.  \n- **The Life Aquatic with Steve Zissou (2004)** – Wes Anderson’s quirky adventure‑comedy.  \n- **The Royal Tenenbaums (2001)** – Wes Anderson’s dark‑humor family drama.  \n- **Rushmore (1998)** – Wes Anderson’s coming‑of‑age comedy.  \n- **The Grand Budapest Hotel (2014)** – Wes Anderson’s visually‑stylish comedy‑drama.  \n- **The Proposal (2009)** – A light romantic comedy with a fun premise.  \n- **The Wedding Planner (2001)** – A romantic comedy about a wedding planner’s mishaps.  \n- **27 Dresses (2008)** – A romantic comedy featuring Katherine Heigl.  \n- **There's Something About Mary (1998)** – Tim‑Bert‑Miller’s raunchy comedy.  \n- **Groundhog Day (1993)** – Bill Murray’s time‑loop comedy.  \n- **Ghostbusters (1984)** – Classic supernatural comedy with Bill Murray.  \n- **The Big Lebowski (1998)** – Coen brothers’ cult comedy.  \n- **Superbad (2007)** – Coming‑of‑age comedy with raunchy humor.  \n- **Step Brothers (2008)** – Over‑the‑top comedy starring Will Ferrell and John C. Reilly.  \n- **The Hangover (2010)** – Party‑comedy with outrageous twists.  \n- **Anchorman: The Legend of Ron Burgundy (2004)** – Satirical comedy about a news team.  \n\nThese titles cover a range of comedy styles—from romantic and slapstick to dark humor and quirky indie films—so you should find something that fits your taste. Enjoy your movie marathon!",
+      "gold_answer": "780",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi how are you? Can I help you find a movie?\nSystem: I'm good yes I would love to see some action adventure. I like the movie Shooter (2007).\nUser: Have you seen Raiders of the Lost Ark (1981) ? That is a classic. I've never seen that.\nSystem: Oh and this one called Eagle Eye (2008), such a good movie.\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "5820",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hey there What do you like for movies?\nSystem: Hello, I like movies like Love Actually (2003) Do you know anymore like those?\nUser: Of course! Have you seen Serendipity (2001) or When Harry Met Sally... (1989) ?\nSystem: I never seen them but I am up for a movie night\nUser: Very cool How about Titanic (1997) ?\nSystem: I haven't seen it but I don't want to but thanks\nSystem: ",
+      "system_answer": "I like romantic‑comedy films such as:\n- **Love Actually** (2003)  \n- **The Proposal** (2009)  \n- **The Wedding Planner** (2001)  \n- **27 Dresses** (2008)  \n- **There’s Something About Mary** (1998)",
+      "gold_answer": "25257",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi hi\nSystem: Hello\nUser: How are you today?\nSystem: I'm good and you?\nUser: Fine thanks\nSystem: what kind of movies do you like?\nUser: I really like action films but not super hero movies The Terminator (1984) is one of my favorite movies\nSystem: That is a good movie. Have you ever seen Shooter (2007) ?\nUser: No I haven't I will now thank you\nSystem: It has Mark Walhberg in it, great movie.\nUser: Oh nice\nSystem: ",
+      "system_answer": "Glad you liked it! Have you seen *Die Hard* (1988)? It’s a classic action film that’s definitely worth checking out.",
+      "gold_answer": "10373",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: what kind of movies do you like?\nSystem: Hello! What kind of epic movies can you request? The Lord of the Rings is my favorite of all time\nUser: Yes! I love that movie! have you seen Harry Potter and the Half-Blood Prince (2009) ?\nSystem: I haven't, I've only seen the first Harry Potter and the Philosopher's Stone (2001)\nUser: It is my favourite fantasy movie. that one is ok too.\nSystem: Okay, thank you\nSystem: ",
+      "system_answer": "I enjoy a mix of genres, including:\n\n- **Epic fantasy** – e.g., *The Lord of the Rings* and *Harry Potter* (especially *Philosopher’s Stone*).  \n- **Cop/action** – *Die Hard*, *The Warriors*, *Rambo* (2012).  \n- **Sci‑fi/action** – *The Matrix*, *Blade Runner*, *Wonder Woman*, *Logan*.  \n- **Superhero/Marvel** – *Black Panther*, *X‑Men*, *The Wolverine*, *Thor: Ragnarok*, *Hulk*.  \n- **Romantic comedy** – *The Proposal*, *The Wedding Planner*, *27 Dresses*, *There’s Something About Mary*.  \n- **Driving/action** – *Transporter 3*, *Fast & Furious 6*, *Herbie: Fully Loaded*.  \n- **Thriller** – *The Birds*.",
+      "gold_answer": "27596",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hello i'm open to any movie\nSystem: Hi there. I would like to suggest some comedies you could watch, have you seen The Wedding Singer (1998) ?\nUser: i just watched Avengers: Infinity War (2018) and i liked it i have not seen it but i watched American Pie 2 (2001) and it was great i also watched American Pie (1999)\nSystem: It has Adam Sandler in it. I like so many of his movies like Billy Madison (1995) and Big Daddy (1999) and Little Nicky (2000)\nUser: So have you watched Click (2006) ?\nSystem: I didn't think the American Pie (1999) movies were that great I always felt like the were super overrated.\nUser: he also made a movie where he is gay but i don't remember the name\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "20875",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hello how are you\nSystem: Hi, I'd like to see something like Toy Story That Time Forgot\nUser: good fine Finding Dory (2016) or The Incredibles (2004)\nSystem: Oh, Finding Dory (2016) and The Incredibles (2004) were great! I liked The Secret Life of Pets (2016) too!\nUser: thas movies are very good\nSystem: Have you seen Ferdinand (2017)\nSystem: ",
+      "system_answer": "I'm fine, thanks! How can I help you with movie recommendations?",
+      "gold_answer": "1807",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello! How are you?\nSystem: Fine thanks. Do you know of any good comedies? Recent ones? I saw Hot Tub Time Machine a while back. Maybe something like that?\nUser: Have you seen Girls Trip (2017)\nSystem: No, but looking for something to maybe watch with my guy buddies.\nUser: Okay what about Jumanji (2017)\nSystem: Like a more modern Harold & Kumar\nUser: I thought it was hilarious!\nSystem: Do you think it would be appropriate for a group of 40 year old men?\nSystem: ",
+      "system_answer": "Yes – Jumanji: Welcome to the Jungle (2017) is a PG‑13 adventure/comedy that’s geared toward families but is perfectly fine for a group of 40‑year‑old men. It contains action, mild violence, some mild language, and a few brief sexual references, but no content that would be inappropriate for adults. The humor is light‑hearted and the film is designed to be entertaining for a broad audience, so it should work well for a casual movie night with friends.",
+      "gold_answer": "15061",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello whats your favorite movie\nSystem: Hhi My favourite is the Hangover (2010) if we are talking comedies :D\nUser: Okay cool movie\nSystem: Do you have a good comedy movie recommendation?\nUser: try Game Night (2018)\nSystem: I have seen it its okay\nUser: Or Life of the Party (2018)\nSystem: maybe something else? have seen it too :D i like it try again we have the same taste :D\nSystem: ",
+      "system_answer": "If you enjoyed *The Hangover*, *Game Night*, and *Life of the Party*, you might like **Superbad** (2007). It’s a raunchy, coming‑of‑age comedy with a fast‑paced plot, memorable characters, and plenty of humor that fits the same vibe as the movies you’ve already seen.",
+      "gold_answer": "20331",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello! How are you today?\nSystem: Hi there. I am well and yourself?\nUser: I'm doing good. What kind of movies are you into?\nSystem: I'm looking to watch a movie like The Goonies (1985). Know of any good ones?\nUser: Sure. You have great taste. That is a classic. If you like the Corey's, one of my favorites is The Lost Boys (1987) . It's not exactly like The Goonies (1985) but it has funny moments.\nSystem: Okay, I've heard of it but I will take your recommendation. Thank you I also really enjoyed Stand by Me (1986)\nUser: Gremlins (1984) is a good campy movie from that period. It is silly but fun.\nSystem: Oh another one I've heard of. Thanks a lot for your help Much appreciated\nUser: If you like movies about kids, I'd recommend The Sandlot (1993) .\nSystem: Yes I loved that movie actually\nSystem: ",
+      "system_answer": "- **The Princess Bride** (1987) – adventure, romance, and comedy  \n- **Back to the Future** (1985) – sci‑fi adventure with humor  \n- **E.T. the Extra‑Terrestrial** (1982) – family adventure  \n- **The Karate Kid** (1984) – coming‑of‑age sports drama  \n- **The Neverending Story** (1984) – fantasy adventure",
+      "gold_answer": "10801",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello How are you? Would you like to discuss the type of movies that you like? I am sure I can recommend something for you to watch.\nSystem: hey great! I am looking for scary movies like Rosemary's Baby (1968) and The Exorcist (1973) I also really liked The Exorcism of Emily Rose (2005)\nSystem: ",
+      "system_answer": "Here are some scary movies you might enjoy based on your interest in *Rosemary’s Baby*, *The Exorcist*, and *The Exorcism of Emily Rose*:\n\n- **The Conjuring** (2013) – A chilling supernatural horror grounded in real‑life paranormal investigations.  \n- **Sinister** (2012) – A dark, atmospheric film about a true crime writer uncovering a series of gruesome murders.  \n- **The Ring** (2002) – A haunting tale of a cursed videotape that kills anyone who watches it.  \n- **Insidious** (2010) – A supernatural thriller that follows a family dealing with a malevolent spirit.  \n- **The Others** (2001) – A psychological ghost story with a twist ending.  \n- **The Babadook** (2014) – A psychological horror about a mother and her son confronting a sinister presence.  \n- **Hereditary** (2018) – A disturbing family drama that escalates into supernatural terror.  \n- **The Witch** (2015) – A slow‑burning, atmospheric horror set in 17th‑century New England.  \n\nEnjoy your watch!",
+      "gold_answer": "25267",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hey, hey! How are ya?\nSystem: hello I am good thanks for asking. how are you?\nUser: Great- thanks!\nSystem: I enjoy movies like Deadpool (2016) and Superbad (2007)\nSystem: ",
+      "system_answer": "Glad to hear that! Let me know if you need any movie recommendations.",
+      "gold_answer": "18433",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi!\nSystem: Hi How are you?\nUser: How are you?!\nSystem: Good!\nUser: I’m great! What type of movies are you into?!\nSystem: I like 90's movies. Know of any?\nUser: Mhm favorite is Pretty Woman (1990)\nSystem: I like She's All That (1999) That one is good too!\nUser: Oh yeah that’s. Great one too\nSystem: For some reason I like those high school movies!\nUser: I know something about it, it’s nostalgic\nSystem: Like John Tucker Must Die (2006) I really dont know what it is!!\nUser: Hahah John tucker was funny especially when he took pms pills\nSystem: Oh yeah!!\nSystem: ",
+      "system_answer": "**Recommended 90",
+      "gold_answer": "6719",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello! How are you\nSystem: Hey, I'm good. I'm looking for 80s movies\nUser: Have you seen Footloose (1984)\nSystem: No, but I should!\nUser: Omg yesss!!!!! That’s a classic! What about The Breakfast Club (1985) Or Ghostbusters (1984)\nSystem: Yeah, I like The Breakfast Club (1985)\nUser: Yes it’s good! What movie have you seen recently\nSystem: I actually haven't seen Ghostbusters but I should. I just saw Fast Times at Ridgemont High which is an 80s movie I really liked. I also saw Avengers: Infinity War (2018) which I liked\nSystem: ",
+      "system_answer": "I'm good, thanks! How can I help you with 80s movies?",
+      "gold_answer": "26337",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello there, how are you?\nSystem: Hi I am good Had a long day Looking for a movie to relax and enjoy What are some of your favorite go to movies\nUser: I like comedies to relax with\nSystem: What are some good comedies you watch?\nUser: Favorites include Talladega Nights: The Ballad of Ricky Bobby (2006) and Anchorman\nSystem: Oh those bring back good memories I can watch those again How about a few more?\nUser: There is cult classic Napoleon Dynamite (2004) and Happy Gilmore (1996)\nSystem: I love Adam Sandler movies\nSystem: ",
+      "system_answer": "I'm good, thanks. I see you enjoy comedies like *Talladega Nights*, *Anchorman*, *Napoleon Dynamite*, *Happy Gilmore*, and Adam Sandler movies.",
+      "gold_answer": "17030",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: HI!\nSystem: Hi !\nUser: How is it going?\nSystem: It’s going good and yourself ?!\nUser: Good!\nSystem: What kind of movies do you like?\nUser: I like musicals and comedy Have you seen Hairspray (2007)\nSystem: Have you seen Oliver! (1968) That’s a good musical! Yessss I love hairspray !!!\nUser: No I havent. Good?\nSystem: It’s super good! I recommend it :)\nUser: Ok! Ill check it out!\nSystem: ",
+      "system_answer": "If you enjoyed *Hairspray* and *Oliver!*, you might also like *The Greatest Showman* (2017) and *La La Land* (2016), both musical comedies that blend humor with memorable music.",
+      "gold_answer": "27139",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello!\nSystem: Good Morning Could you help me with a recommendation for a good musical?\nUser: Have you by any chance seen Avengers: Infinity War (2018) ? Ohh . A musical I would always say La La Land (2016) It is a new movie and It is just fabulous.\nSystem: I really like classics like Rent (2005) , Grease (1978) I haven't seen much of the newer ones. I might give La La Land (2016) a try\nSystem: ",
+      "system_answer": "If you enjoyed *La La Land* (2016), you might also like *The Greatest Showman* (2017), a musical featuring strong performances and memorable songs.",
+      "gold_answer": "5193",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hey how's it going?\nSystem: Hello Going good. How are you?\nUser: I'm great. Can you suggest some good horror movies for me to watch?\nSystem: There are some great classics like The Exorcist (1973) and The Shining (1980)\nUser: Oh yes those are both great movies. I also used to love watching A Nightmare on Elm Street (1984) .\nSystem: That is a great one.\nUser: Yes I always love my classic horror movies.\nSystem: ",
+      "system_answer": "Here are some classic horror movies you might enjoy:  \n- **The Exorcist** (1973)  \n- **The Shining** (1980)  \n- **A Nightmare on Elm Street** (1984)  \n- **Halloween** (1978)  \n- **Psycho** (1960)  \n- **The Texas Chain Saw Massacre** (1974)  \n- **The Omen** (1976)  \n- **Poltergeist** (1982)  \n- **The Thing** (1982)  \n- **The Silence of the Lambs** (1991)",
+      "gold_answer": "5886",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hello\nSystem: Hi, how are you?\nUser: im in the mood for a movie like Dumb and Dumber (1994) and Superbad (2007) I also enjoyed Van Wilder (2002) and Super Troopers (2001)\nSystem: ",
+      "system_answer": "If you enjoyed *Dumb and Dumber*, *Superbad*, *Van Wilder*, and *Super Troopers*, you might like these raunchy, buddy‑style comedies:  \n\n- **The Hangover** (2009) – a wild bachelor‑party adventure with plenty of absurd humor.  \n- **Step Brothers** (2008) – two middle‑aged men forced to live together, creating chaos and laughs.  \n- **Anchorman: The Legend of Ron Burgundy** (2004) – a satirical take on 1970s news with over‑the‑top comedy.  \n- **Tropic Thunder** (2008) – a film‑within‑a‑film that turns into a hilarious action‑comedy.  \n- **21 Jump Street** (2012) – a buddy cop movie with a comedic twist.  \n- **The 40‑Year‑Old Virgin** (2005) – a coming‑of‑age comedy with a mix of awkward and funny moments.  \n- **Bridesmaids** (2011) – a female‑centric comedy that balances heartfelt moments with outrageous humor.  \n\nThese films share the same blend of slapstick, witty dialogue, and outrageous situations that you enjoyed in the movies you mentioned.",
+      "gold_answer": "1032",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi, what kind of movie are you looking for?\nSystem: hi mystery or action\nUser: Do you like superhero movies?\nSystem: Yes! Avengers: Infinity War (2018) was great! Cant wait for Ant-Man and the Wasp (2018)\nUser: Have you seen Black Panther (2018)?\nSystem: Of course! Loved it! I need to see it again!\nSystem: ",
+      "system_answer": "Rambo (2012) is also a movie with a strong macho type dude you might like.",
+      "gold_answer": "23792",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello there\nSystem: Hi How are you? I like anything really\nUser: I'm doing pretty good\nSystem: Musicals, comedy, action\nUser: Do you like the Marvel movies, like Avengers: Infinity War (2018)\nSystem: Like Dreamgirls (2006) have you seen it? Yes I have and it is amazing!\nUser: I actually haven;t\nSystem: You should!\nUser: I can't wait to see it I hear the next Marvel movie is Ant-Man and the Wasp (2018) I'm not that into Marvel but it's interesting\nSystem: Yes! Ant-Man (2015) was pretty good! Oh I am!\nUser: Oh okay, good What do you want to see in theaters?\nSystem: Nothing really on my list maybe Incredibles 2 (2018)\nUser: Oh, I'd love to see the Incredibles 2 (2018)\nSystem: Should be good! Thanks for chatting Bye!\nSystem: ",
+      "system_answer": "Hello! I’m doing well, thanks. I enjoy action and comedy movies, especially Marvel titles like *Ant‑Man* and *Incredibles 2*.",
+      "gold_answer": "23592",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hey how are you? I'm looking for some movies to watch.\nSystem: Like comedy? Animation?\nUser: I can wtach anything\nSystem: I can recommend a great war movie Black Hawk Down (2002)\nUser: as long as it's good! Lol ok. I've seen it but I liked it\nSystem: I liked the comedy Lars and the Real Girl (2007)\nUser: what else? I haven't seen that\nSystem: I like Never Let Me Go (2010) it's kinda a psych sci fi\nUser: I've never seen that. or heard of it I'll put it on the list\nSystem: ",
+      "system_answer": "- Black Hawk Down (2002) – war drama  \n- Lars and the Real Girl (2007) – comedy‑drama  \n- Never Let Me Go (2010) – sci‑fi/psychological drama  \n- Hills Cop (1984) – classic comedy  \n- Die Hard (1988) – action‑cop thriller  \n- The Warriors (1979) – cult action  \n- Rambo (2012) – action‑war  \n- The Matrix (1999) – sci‑fi action  \n- Blade Runner (1982) – sci‑fi noir  \n- Wonder Woman (2017) – superhero  \n- Logan (2017) – superhero  \n- Black Panther (2018) – superhero  \n- Thor: Ragnarok (2017) – superhero  \n- Fast & Furious 6 (2013) – action‑driving  \n- Herbie: Fully Loaded (2005) – comedy‑driving  \n- Justice League (2017) – superhero  \n- Clueless (1995) – romantic comedy  \n- I Love You, Man (2009) – romantic comedy  \n- 27 Dresses (2008) – romantic comedy  \n- There's Something About Mary (1998) – romantic comedy",
+      "gold_answer": "6374",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi! How are you?\nSystem: I'm good and you? Just looking for some good movies to watch.\nUser: I am looking for a comedy. I really like The Wedding Singer (1998) . Oh I see. What do you like?\nSystem: I love that movie. Have you seen Billy Madison (1995)\nUser: Yes that is great. Would you like Shallow Hal (2001) . It's old but pretty funny.\nSystem: I have seen that movie and I really like it. It's funny and heartwarming.\nSystem: ",
+      "system_answer": "Here are some comedy films you might enjoy, based on your interest in *The Wedding Singer* and the movies you’ve already seen:  \n\n- **There's Something About Mary** (1998) – a raunchy romantic comedy with a similar light‑hearted tone.  \n- **27 Dresses** (2008) – a romantic comedy featuring Katherine Heigl, with plenty of humor and heart.  \n- **The Proposal** (2009) – a feel‑good rom‑com with a fun premise and comedic moments.  \n- **The Wedding Planner** (2001) – another romantic comedy that plays on wedding‑related mishaps.  \n- **Groundhog Day** (1993) – a classic comedy that blends humor with a unique time‑loop concept.  \n- **Superbad** (2007) – a coming‑of‑age comedy with sharp, witty dialogue.  \n- **Bridesmaids** (2011) – a female‑led comedy that delivers both laughs and heart.",
+      "gold_answer": "5843",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hey\nSystem: Hello there!\nUser: How are you?\nSystem: I am doing great! How are you?\nUser: I'm well\nSystem: Can I recommend any movies for you? What kind do you like?\nUser: Please do! Horror, action or comedy? I just watched Step Brothers (2008) recently Oh and Boiler Room (2000)\nSystem: Comedy then? I have a few ideas. The Other Guys (2010) also has Will Ferrell and is pretty good.\nUser: I loved that one!\nSystem: ",
+      "system_answer": "You might enjoy **The Hangover** (2009) – a comedy about a wild bachelor party that turns into a chaotic adventure.",
+      "gold_answer": "8092",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello What is your favorite movie?\nSystem: Hi. Can you please recommend a movie with Jennifer Aniston. And my favorite movie is Love Happens I also absolutely love Friends (1993)\nUser: Oh cool! Yes let me think How about Serendipity (2001) ? Oh I'm sorry Aniston\nSystem: Yes please )\nSystem: ",
+      "system_answer": "My favorite movie is *Love Happens*. A Jennifer Aniston movie you might enjoy is *Just Go With It* (2011), a romantic comedy starring Aniston, Adam Sandler, and Drew Barrymore. Another good option is *The Good Girl* (2002), a dark romantic comedy with Aniston and Ben Affleck.",
+      "gold_answer": "7912",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Good morning how are you Whats the last movie you seen?\nSystem: Hi, I haven't seen a new movie in a while but was thinking of revisiting a classic like Romeo & Juliet (2013). Do you like romance films?\nUser: I wouldn't be interested in that but thanks Whats your favorite movie The Breaking In (2018) seem like a cool have you seen it\nSystem: ",
+      "system_answer": "I haven’t seen *The Breaking In* (2018) yet. My favorite movie is *Romeo & Juliet* (2013).",
+      "gold_answer": "19820",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi\nSystem: Hello there!\nUser: How are you?\nSystem: I'm awesome and you?\nUser: Pretty good.\nSystem: Tell me what kind of movies would you like to watch?\nUser: I like action, comedy, and click flicks.\nSystem: Have you seen The Texas Chain Saw Massacre (1974) ? it is a horror movie\nUser: No! and No! Not my kind of movie at all!\nSystem: What about American Pie (1999) and Scary Movie (2000) ?\nUser: Yes I have seen both.\nSystem: You can also try You Don't Mess with the Zohan (2008) and Click (2010) by Adan Sandler\nUser: They are okay.\nSystem: ",
+      "system_answer": "**Recommended Movies (Action, Comedy, Click‑Flicks)**  \n- *Click* (2010) – comedy with time‑travel twist  \n- *The Hangover* (2009) – action‑comedy  \n- *Fast & Furious 6* (2013) – action‑comedy  \n- *Deadpool* (2016) – action‑comedy  \n- *Guardians of the Galaxy* (2014) – action‑comedy  \n- *The Avengers* (2012) – action‑comedy  \n- *The Matrix* (1999) – action  \n",
+      "gold_answer": "19796",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Good morning\nSystem: Hello!\nUser: I really enjoy a great action movie know of any ?\nSystem: I love action movies and would be in the mood for that any time. :) Something like Indiana Jones and the Temple of Doom (1984) Do you have any suggestions?\nUser: Omg ! Indiana Jones is my favorite !!! Die Hard (1988) is a classic\nSystem: I also liked Romancing the Stone (1984) .\nSystem: ",
+      "system_answer": "Here are a few action‑movie suggestions that fit the style you enjoy:\n\n- **Lethal Weapon** (1987) – Bruce Willis & Mel Gibson team up for gritty, high‑energy cop action.  \n- **Terminator 2: Judgment Day** (1991) – Arnold Schwarzenegger delivers relentless sci‑fi action.  \n- **The Bourne Identity** (2002) – Matt Damon’s spy thriller blends intense combat with a fast‑paced plot.  \n- **Mad Max: Fury Road** (2015) – High‑octane chase sequences and stunning visuals.  \n- **John Wick** (2014) – Keanu Reeves leads a stylish, choreographed gun‑fueled revenge saga.  \n- **The Dark Knight** (2008) – Christopher Nolan’s superhero film offers dramatic action and complex characters.  \n- **The Raid: Redemption** (2011) – Indonesian martial‑arts action with relentless fight choreography.  \n- **The Matrix** (1999) – Groundbreaking visual effects and philosophical sci‑fi action.",
+      "gold_answer": "5971",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi How are you?\nSystem: Hi. I am good, thanks for asking. How about you?\nUser: I really love movies like Training Day (2001) and Lethal Weapon (1987)\nSystem: Any plans for today? Should I recommend you something?\nUser: I'm great, yes... something along those line, please. No plans for today, already completed my day for the most part. But thanks for asking.\nSystem: Sorry I am not familiar with Training Day (2001) or Lethal Weapon (1987) . What Genres those movies are? Thriller?\nUser: Hmm, I would say action and crime and maybe suspense. I enjoy thriller movies as well so you can recommend that too.\nSystem: Well as for crime I would obviously recommend you the classic of all times The Godfather (1972) . bUT i AM PRETTY SURE YOU'VE SEEN IT\nUser: Oh no! I wasn't a fan of any of the Godfather (1991) movies, sorry. Too long and drawn out. I love Scarface (1983) and Goodfellas (1990)\nSystem: How about Shutter Island (2010) ?\nUser: Never seen it, I'll check it out. Thank you very much for the recommendation. Have a great day!\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "22778",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hello\nSystem: hello I really like romantic comedies. Know of any good ones? I liked 50 First Dates (2004)\nUser: May I recommend Waiting to Exhale (1995) and 50 First Dates (2004) oh nice good choices\nSystem: do you know of any more recent ones?\nSystem: ",
+      "system_answer": "Here are some recent romantic‑comedy titles you might enjoy:  \n\n- **Crazy Rich Asians** (2018)  \n- **The Big Sick** (2017)  \n- **Love, Simon** (2018)  \n- **To All the Boys I’ve Loved Before** (2018)  \n- **Set It Up** (2018)  \n- **The Perfect Date** (2019)  \n- **The Lovebirds** (2020)  \n- **The Proposal** (2009) – already liked, but still a solid recent pick  \n- **27 Dresses** (2008) – another recent favorite you mentioned  \n\nThese films are all within the last decade and fit the romantic‑comedy style you enjoy.",
+      "gold_answer": "16036",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello, how are ou?\nSystem: Hi how are you? I'm great thank you!\nUser: I am well, looking for a good movie?\nSystem: Yes I am... I love Leonardo Dicaprio movies like The Basketball Diaries (1995) Also The Good Son (1993) I believe that was with him and Robert Dinero\nUser: Have you seen Inception (2010) ?\nSystem: I think he can do no wrong lol\nUser: Have you seen Inception (2010)\nSystem: Also really enjoyed The Wolf of Wall Street (2013) Omg yes! I love that movie!\nSystem: ",
+      "system_answer": "You might enjoy *The Basketball Diaries* (1995) starring Leonardo DiCaprio, or *Inception* (2010) if you prefer a mind‑bending thriller.",
+      "gold_answer": "19820",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hi\nSystem: Hello!\nUser: how are you\nSystem: Do you like horror movies\nUser: i do\nSystem: i am fine thanks, you? Have you seen Sinister (2012) or Sinister 2 (2015)\nUser: i have\nSystem: One of the best horrors, i think\nUser: i enjoyed that series i also liked Cabin Fever (2000)\nSystem: ",
+      "system_answer": "If you enjoyed *Sinister* and *Cabin Fever*, you might also like *The Descent* (2005), *The Others* (2001), *The Ring* (2002), or *The Conjuring* (2013).",
+      "gold_answer": "22275",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: how are you tonight? what kind of movies do you like?\nSystem: Hi!! Can you recommend me some movie?? I like movies like The Purge (2013)? Fine and you?\nUser: oh geez you mean like Fight Club (1999) or Natural Born Killers (1994) lol deja vu there's always Inception (2010) that's an excellent movie\nSystem: Those movies are great hahah\nUser: The Dark Knight (2008) is my fav out of that trilogy\nSystem: Well I think I'm going to add Inception (2010) to my list of movies\nSystem: ",
+      "system_answer": "I'm fine tonight. I enjoy action, thriller, sci‑fi, and romantic comedies. Some movies I like include The Purge (2013), Fight Club (1999), Inception (2010), The Dark Knight (2008), The Warriors (1979), Rambo (2012), Black Panther (2018), X‑Men (2000), The Wolverine (2013), Thor: Ragnarok (2017), and Hulk (2003).",
+      "gold_answer": "1960",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello\nSystem: hi\nUser: What gender do you look for to help you?\nSystem: I need you to recommend something that has to do with heroes\nUser: Avengers: Infinity War (2018) has been the best for me in movies of this genre\nSystem: it's new, I saw a trailer it looks interesting anything else?\nUser: Batman Revealed (2012) is good movie\nSystem: something old but it is one of the best\nUser: yess Deadpool 2 (2018) This is a new and very good I recommend it\nSystem: that's funny something else, just one more?\nSystem: ",
+      "system_answer": "I look for male heroes.",
+      "gold_answer": "16234",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello, how are you today?\nSystem: Hello I'm good How about something like Highlander: Endgame (2000) ?\nUser: What type of movies do you like?\nSystem: Fantasy and action\nUser: Oh, I love superhero movies like The Avengers (2012) can't wait to see The Avengers (2012)\nSystem: I saw both of those! Both awesome\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "26902",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Tell me what would you like to watch?\nSystem: Easy A (2010)\nUser: Did you watch Avengers: Infinity War (2018) ? Or The Black Panthers: Vanguard of the Revolution (2015) ? i really liked it\nSystem: No , I think I would like to watch Easy A (2010) It's funny\nSystem: ",
+      "system_answer": "Easy A (2010)",
+      "gold_answer": "20875",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi\nSystem: HI. Can you recommend a good musical?\nUser: I know a few! Dr. Horrible's Sing-Along Blog is wonderul so it Newsies (1992) The Greatest Showman (2017) gets in your head too haha\nSystem: I really wanted to see that. Hugh Jackman is amazing\nSystem: ",
+      "system_answer": "If you enjoyed *The Greatest Showman*, you might also like *Mamma Mia!* (2008), a feel‑good musical featuring ABBA songs, or *Les Miserables* (2012), a powerful adaptation of the classic stage musical.",
+      "gold_answer": "11360",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello What do u suggest today\nSystem: Hello what about a crime movie\nUser: Sounds good\nSystem: The Silence of the Lambs (1991) its a very nice movie\nUser: What is it about\nSystem: or The Usual Suspects (1995) Its about a serial killer its kinda psyco\nUser: I haven't seen neither of them\nSystem: Get Out (2017) is a really nice movie crime aslo\nUser: Okay yea I saw that one. I was a cool movie\nSystem: ",
+      "system_answer": "I suggest **Heat (1995)** – a crime thriller that follows a group of professional bank robbers and the detective determined to bring them down.",
+      "gold_answer": "18531",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Greetings\nSystem: Hey, how are you?\nUser: I love Sherlock Holmes (2010) , can you recommend something like a mystery? I'm great\nSystem: Kiss Kiss Bang Bang (2005) is one of my favorite mystery movies, I think you would like it, it also has Robert Downey Jr.\nUser: Oh cool, I've only heard of that Thanks\nSystem: You're welcome! I've been wanting to see a good comedy lately, is there anything you'd recommend? I really enjoy movies like Superbad (2007)\nUser: Yeah that was good. Can you think of any other mystery or action movies?\nSystem: ",
+      "system_answer": "**Mystery / Action Recommendations**\n\n- **Knives Out (2019)** – A modern whodunnit with sharp humor and a twisty plot.  \n- **The Girl with the Dragon Tattoo (2011)** – A gripping investigative thriller with strong mystery elements.  \n- **Murder on the Orient Express (2017)** – Classic detective story set aboard a luxurious train.  \n- **The Bourne Identity (2002)** – Action‑packed spy thriller with a mystery‑driven narrative.  \n- **John Wick (2014)** – High‑octane action with a revenge‑driven plot.  \n- **Die Hard (1988)** – Iconic cop action film with suspenseful moments.  \n- **The Nice Guys (2016)** – Combines comedy, action, and a detective mystery in 1970s Los Angeles.  \n- **The Usual Suspects (1995)** – Mystery thriller with a memorable twist.  \n- **Mission: Impossible – Fallout (2018)** – Fast‑paced action with espionage and intrigue.",
+      "gold_answer": "22168",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello my friend!\nSystem: Hi I looking for good drama movies\nUser: i like dramas! Have you seen The Pianist (2002) or The Untouchables (1987)\nSystem: Yes, i like those movies. have you seen Whiplash (2014)\nUser: Yes i have! A really great movie\nSystem: I have not seen it. Thanks, I will watch it.\nSystem: ",
+      "system_answer": "Here are a few drama films you might enjoy:  \n- The King's Speech (2010)  \n- Schindler's List (1993)  \n- A Beautiful Mind (2001)  \n- The Social Network (2010)  \n- The Imitation Game (2014)  \n- The Revenant (2015)  \n- The Godfather (1972)  \n- The Shawshank Redemption (1994)",
+      "gold_answer": "25233",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Howdy\nSystem: Hello How are you doing today I like comedy movies\nUser: I am looking for a great Hitchcock movie. Know of any? Oh I do! Do you prefer a decade?\nSystem: like Game Night (2018) do you know anything\nUser: Dumb and Dumber (1994) is great from the 90s I also thought Pineapple Express (2008) was really funny\nSystem: I have seen that one its like a stupid funny movie\nSystem: ",
+      "system_answer": "A great Hitchcock film to start with is **“Rear Window” (1954)**. If you’d rather go a bit later, **“Psycho” (1960)** is another classic that’s widely regarded as one of his best.",
+      "gold_answer": "6305",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello What kind of movies do you like?\nSystem: I don't particularly care for animation, but I did like Ferdinand (2017)\nUser: Do you like thrillers?\nSystem: Yes, I like Fatal Attraction (1987)\nUser: Have you seen anything from this century like Gone Girl (2014) and The Girl with the Dragon Tattoo (2011)\nSystem: Yes, I believe Ferdinand (2017) is from this century!\nUser: I meant for thrillers not animation\nSystem: No, I didn't see Gone Girl (2014) though the book was good and I didn't see The Girl with the Dragon Tattoo (2011) though that book was good too! I did like Red Sparrow (2018) somewhat\nUser: Huh thats interesting because I only heard negative things about red sparrow\nSystem: No accounting for taste! Did you see Phantom Thread (2017)\nUser: yea i did. I love daniel day lewis and his movies but that was not something that I enjoyed it was a very well made movie for whats its worth\nSystem: It was depressing. Did you like A Beautiful Mind (2001)\nSystem: ",
+      "system_answer": "I don't particularly care for animation, but I liked Ferdinand (2017). I enjoy thrillers such as Fatal Attraction (1987) and Red Sparrow (2018). I also appreciate dramas like Phantom Thread (2017) and A Beautiful Mind (2001).",
+      "gold_answer": "23796",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: how are you\nSystem: Hi how about some recommends for romantic comedies?\nUser: what kind of movies do you like? ok. 50 First Dates (2004) Wedding Crashers (2005) is my favorite\nSystem: Yep, loved that and Lars and the Real Girl (2007) Didn't see Wedding Crashers (2005) but I liked The Other Woman (2014)\nSystem: ",
+      "system_answer": "I'm fine, thanks for asking.",
+      "gold_answer": "8440",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hi\nSystem: Good evening\nUser: have you seen Deadpool 2 (2018) ?\nSystem: Yes I hit the theater as soon as it was out Such a funny movie\nUser: What are your favorite movies? It was a great film. Have you watched either Guardians of the Galaxy (2014) or Guardians of the Galaxy Vol. 2 (2017) ?\nSystem: I have seen the both of them. Marvel kind of has me by the short and curlies since I watch every movie they drop\nSystem: ",
+      "system_answer": "My favorite movies are Marvel titles like *Deadpool 2*, *Guardians of the Galaxy* (2014), *Guardians of the Galaxy Vol. 2* (2017), *Black Panther* (2018), and *Iron Man* (2008). I also enjoy action classics such as *The Matrix* (1999), *Blade Runner* (1982), and *The Avengers* (2012).",
+      "gold_answer": "5256",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hello how are you I would like to show you some good movies\nSystem: fine, what about you\nUser: fine Avengers: Infinity War (2018) is good movie\nSystem: a very good movie appears\nUser: Deadpool 2 (2018) very funny\nSystem: It is one of my favorite movies\nUser: Blackhat (2015)\nSystem: you have very good taste for the movies\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "16234",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi there\nSystem: Hello\nUser: I\"m looking for movies that have like brain twists? I enjoy movies such as Vanilla Sky (2001) I also like Being John Malkovich (1999)\nSystem: I can honestly say I have never seen Vanilla Sky (2001) i believe it does have Tom Cruise right?\nUser: yeah it does... just any weird twisty films\nSystem: I have never seen that one either.\nUser: I could go for a romantic comedy instead maybe.\nSystem: have you ever seen Monster (2003) with Charlize Theron?\nUser: Yes! that is a freaky one. haha she did so well I couldn't believe it was her\nSystem: Valentine's Day (2010) is a good Romantic comedy movie right??? and she looked exactly like her too it was freaky oh another weird and one is Flight (2012) with Denzel\nUser: I haven't seen Valentine's Day (2010) . Do you know of anything similar to Bridget Jones's Diary (2001)\nSystem: how about Maid in Manhattan\nUser: Awesome! I'll put those down for another night. I like your suggestion of Maid in Manhattan I think I'll go with that one. Thank you so much for your help!\nSystem: ",
+      "system_answer": "**Brain‑twist / mind‑bending films (similar to Vanilla Sky & Being John Malkovich)**  \n- Eternal Sunshine of the Spotless Mind (2004)  \n- Memento (2000)  \n- Inception (2010)  \n- Shutter Island (2010)  \n- The Prestige (2006)  \n- The Truman Show (1998)  \n- The Matrix (1999)  \n- Donnie Darko (2001)  \n\n**Romantic comedy suggestions (including Maid in Manhattan)**  \n- Maid in Manhattan (2002)  \n- The Proposal (2009)  \n- The Wedding Planner (2001)  \n- 27 Dresses (2008)  \n- There's Something About Mary (1998)  \n- Notting Hill (1999)  \n- Love Actually (2003)  \n- The Princess Diaries (2001)",
+      "gold_answer": "3362",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hey how are you?\nSystem: hello good ty how are you?\nUser: I'm great! What movies are you looking for?\nSystem: I like movies like Dumb and Dumber (1994)\nUser: Dumb and Dumber (1994) is a great movie! So funny! Have you seen Superbad (2007) or Dumb and Dumberer: When Harry Met Lloyd (2003) ?\nSystem: I also liked Super Troopers (2001) I loved all those movies! Great choices Thanks so much for your help\nSystem: ",
+      "system_answer": "If you enjoyed *Dumb and Dumber*, *Superbad*, and *Super Troopers*, you might also like:\n\n- *The Hangover* (2009)  \n- *Step Brothers* (2008)  \n- *Anchorman: The Legend of Ron Burgundy* (2004)  \n- *Tropic Thunder* (2008)  \n- *21 Jump Street* (2012)  \n- *The 40‑Year‑Old Virgin* (2005)  \n- *Bridesmaids* (2011)",
+      "gold_answer": "18433",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello! What is your favorite right now?\nSystem: Hello, I like action or romance. what would you suggest?\nUser: Rambo III (1988) or Rambo (2012) are top notch I also love Rocky V (1990) and Twins (1988) , have you seen those?\nSystem: I haven't seen any of them I have a long list ahead of me\nSystem: ",
+      "system_answer": "My favorite right now is **Rambo (2012)**.",
+      "gold_answer": "13114",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Heyyy What type of movies are you into?!\nSystem: I'm here I'm into Horror movies like The Texas Chain Saw Massacre (1974)\nUser: Ohhh I never seen that any other movies ?!\nSystem: Also movies like Get Out (2017)\nSystem: ",
+      "system_answer": "I'm into horror movies, such as The Texas Chain Saw Massacre (1974) and Get Out (2017).",
+      "gold_answer": "8962",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello How are you? Looking for any good movies to watch?\nSystem: Hello! I'm good. I am in the mood for some sort of end of the world type movie. Do you have any ideas? This Is the End (2013) was crazy but a good one.\nUser: If you're looking for a comedy I'd suggest This Is the End (2013)\nSystem: Oh, that's too funny. Just what I was thinking of.\nUser: Oh Ha! I was just going to recommend that one Have you seen Deep Impact (1998)\nSystem: Yes, that's a good one! Like it. Another one would be Night of the Comet (1984) . Nostalgic fun.\nUser: I thought The Day After Tomorrow (2004) was also really good\nSystem: Oh, yes. I haven't seen that one in awhile. I think I'll look it up again! Thank you for the suggestion!\nSystem: ",
+      "system_answer": "**End‑of‑the‑world movie suggestions**\n\n- *This Is the End* (2013)  \n- *Deep Impact* (1998)  \n- *Night of the Comet* (1984)  \n- *The Day After Tomorrow* (2004)  \n- *Armageddon* (1998)  \n- *2012* (2009)  \n- *Mad Max: Fury Road* (2015)  \n- *World War Z* (2013)  \n- *The Book of Eli* (2010)  \n- *The Road* (2009)",
+      "gold_answer": "27553",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: holi Hello\nSystem: Hi I like action movies, what recoment?\nUser: I recommend you see Black Panther (2018)\nSystem: Woow, is very good movie, i prefer The Avengers (2012)\nUser: If you like to see avenguer then you will like to see more Justice League (2017)\nSystem: Dc is my favorite comic, I like that I recommend this movie, which other do you recommend? I want to see an old movie\nSystem: ",
+      "system_answer": "Since you’re looking for an older film and you enjoy DC‑based action, you might like the classic **“Batman” (1989)** starring Michael Keaton and Jack Nicholson, or the 1978 **“Superman”** with Christopher Reeve. Both are iconic, early‑era superhero movies that capture the feel of the comics and offer the action you enjoy.",
+      "gold_answer": "18699",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Good evening\nSystem: Good evening\nUser: I really dig The Shawshank Redemption (1994) , can you recommend some more?\nSystem: I have never seen that movie but I hear it is good Have you seen Life (1999)\nUser: I have not, I'll look into it Can you recommend more?\nSystem: What's your favorite kind of movie? If you like comedies you can check out Anchorman: The Legend of Ron Burgundy (2004)\nUser: Haha yeah, that's a classic Comedies are good\nSystem: I love that movie and can quote it all day every day.\nUser: How about one more?\nSystem: ",
+      "system_answer": "You might enjoy **The Green Mile (1999)** – a powerful prison drama with strong performances and a compelling story that complements *The Shawshank Redemption*.",
+      "gold_answer": "14813",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hello\nSystem: Hi how are you?\nUser: how are you\nSystem: I'm great. thanks for asking.\nUser: can i help you with a movie\nSystem: Looking for good comedy movie... like Pineapple Express (2008) or Girls Trip (2017)\nUser: what tipe of movies do you like watch\nSystem: I also really enjoyed Super Troopers (2001) can't wait for Super Troopers 2 (2018) I love all kinds of movies, mostly comedies and stoner films. I also like action like Bad Boys (1995)\nUser: Pitch Perfect or Scary Movie\nSystem: Oh, what are those about? I don't believe I've seen those.\nUser: yes is good thase movie and It (2017) is of horror do you like\nSystem: Hmm, I'm over hearing about the new one I prefer the old It (1990) I heard the new one was lame.\nSystem: ",
+      "system_answer": "The system’s movie preferences are:  \n- **Genres**: comedies (especially stoner and slapstick), action, and classic cop/action films.  \n- **Specific likes**: *Hills Cop* (1984), *Die Hard* (1988), *The Warriors* (1979), *Rambo* (2012).  \n- **Horror preference**: prefers the 1990 version of *It* over the 2017 remake.",
+      "gold_answer": "16411",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hello\nSystem: Hi! I like A Goofy Movie (1995) Really any Disney\nUser: may i suggest some rom coms such as The Wedding Singer (1998) ok, great choices!\nSystem: Loved it! Steve Buscemi is A+ #1\nSystem: ",
+      "system_answer": "Hello! I see you like *A Goofy Movie* (1995) and are interested in rom‑coms like *The Wedding Singer* (1998). Steve Buscemi is a great actor.",
+      "gold_answer": "14133",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi How are you\nSystem: good how are you? got any movies to recommend?\nUser: Yes what movies are you into?\nSystem: doesn't matter what genre doesn't matter what genre\nUser: Well my favorite action movie is The Fast and the Furious: Tokyo Drift (2006)\nSystem: doesn't matter what genre\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "21344",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi! How are you\nSystem: Hi. How are you? Can I recommend you something? I am good thanks, how about you?\nUser: Yess please go for it!! I’m good thanks for asking\nSystem: What kind of movies do you like? Maybe a good comedy?\nUser: I like anything that’s good to Ben honest I love comedy and action\nSystem: Did you watch The Mask (1994) ? It's classic and really funny\nUser: Omg yesss I love that movie !!\nSystem: I would also recommend you Mr. & Mrs. Smith (2005)\nUser: Great movie as well ! You have awesome taste :)!\nSystem: Thank you. I am happy that you like it ) How about Friends (1993) ? This is absolutely my favorite. I watched it 100 times\nUser: Yesss I watched it. Million time soon I actually might watch it today\nSystem: How about Home Alone (1990) ? I watch it every year\nUser: Have you seen The Break-Up (2006) ?\nSystem: You can try Borat (2006) . I personally didn't like it, but most people do\nUser: BorAt was ehh ok I couldn’t really not get into it\nSystem: Yes I watched The Break-Up (2006) . I liked it. Great acting\nUser: Yes it was ! Awesome talking to you ! Bye !! Thank you\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "9867",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello\nSystem: Hey, how are you? What kinds of movies are you looking for?\nUser: im looking for a good drama to watch.\nSystem: Hmm, have you seen The Reader (2008) ? It pretty dramatic\nUser: No I have not. I have heard it was good thought.\nSystem: I also enjoy A River Runs Through It (1992) . Older, but a favorite\nUser: I'm not familar with that do you have any more recent movies?\nSystem: Well, I don’t know about newer dramas, but A Quiet Place (2018) was certainly dramatic, and scary\nUser: I have seen that. i was very good. I will give your other suggestions a try.\nSystem: ",
+      "system_answer": "- **The Social Network** (2010) – A biographical drama about the founding of Facebook.  \n- **Spotlight** (2015) – A journalistic drama that won the Oscar for Best Picture.  \n- **Moonlight** (2016) – A coming‑of‑age drama that won Best Picture.  \n- **Parasite** (2019) – A Korean drama‑thriller that won Best Picture.  \n- **1917** (2019) – A war drama filmed in a single continuous shot.  \n- **The Father** (2020) – A psychological drama about dementia.  \n- **Nomadland** (2020) – A contemplative drama about modern nomads.  \n- **The Power of the Dog** (2021) – A psychological drama set in the American West.  \n- **CODA** (2021) – A heartfelt drama about a hearing‑impaired family.  \n- **The Last Duel** (2021) – A historical drama based on a medieval French duel.",
+      "gold_answer": "26324",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hi there I love watching movies\nSystem: hello how are you\nUser: I am such a movie fanatic\nSystem: what movies do you like\nUser: I even eat popcorn! yes I am good I like comedu I love to laugh Waterboys (2001) was so funny so was Fun with Dick and Jane (2005) I cracked up I even like Deadpool (2016) its silly and funny at the same time\nSystem: ",
+      "system_answer": "Here are some comedy‑heavy films you might enjoy, especially if you liked *Deadpool* and *Waterboys*:\n\n- **Deadpool 2** (2018) – a sequel that keeps the irreverent humor and action.  \n- **Guardians of the Galaxy** (2014) – space adventure with a comedic tone.  \n- **Kick‑Ass** (2010) – stylized comic‑book action with plenty of jokes.  \n- **The Nice Guys** (2016) – buddy‑cop comedy with sharp dialogue.  \n- **The Hangover** (2009) – outrageous comedy about a bachelor party gone wrong.  \n- **Superbad** (2007) – coming‑of‑age comedy with a lot of laughs.  \n- **Step Brothers** (2008) – absurd comedy about two grown‑up brothers.  \n- **The Grand Budapest Hotel** (2014) – Wes Anderson’s quirky, visually striking comedy.  \n- **The Big Lebowski** (1998) – cult classic with dry humor and memorable characters.",
+      "gold_answer": "5544",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi what king of movies you want to watch tonight?\nSystem: I would love to see anything with Julia Roberts in it! She's great!\nUser: I love her too. What about Pretty Woman (1990) it is classic I know\nSystem: I've seen it and love it which is why I am looking for another film with her in it\nUser: Erin Brockovich (2000) is a good movie\nSystem: Oh great! Is it sad?\nUser: an Mona Lisa Smile (2003) too Yes! a little\nSystem: Awesome suggestions! I'll buy tissues haha Got one more?\nSystem: ",
+      "system_answer": "Notting Hill (1999) – a romantic‑comedy starring Julia Roberts and Hugh Grant.",
+      "gold_answer": "24463",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hey how are you\nSystem: hi there\nUser: what kinds of movies are you into? I like horror and thrillers?\nSystem: I'm watching Bad Moms (2016) and its pretty funny. Do you know anything similar?\nUser: I Think I Love My Wife (2007) was a really good movie i think theyre similar\nSystem: oh yeah, maybe.\nUser: have you seen Girls Trip (2017) ?\nSystem: I have not What's a good horror/thriller?\nUser: you should check it out, I'm a big fan of the Jeepers Creepers (2001) series\nSystem: oh, I think I've seen Jeepers Creepers (2001) but not any of the other ones what about Insidious (2010) ?\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "11317",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Greetings What is your favorite movie?\nSystem: Hi how are you!\nUser: I'm great\nSystem: My all time favorite would be Goodfellas (1990)\nUser: Oh cool, have you seen Casino (1995) or Gone Fishin' (1997) ? Great Pesci movies\nSystem: I also loved Casino (1995) Married to the Mob (1988) I don't think I've seen Gone Fishing (2008) I'll have to check it out.\nSystem: ",
+      "system_answer": "Goodfellas (1990)",
+      "gold_answer": "2730",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello how is it going\nSystem: Hi I'm goo *Good I'd like to see something like Casino (1995) The gangster action movie\nUser: Thats a good movie So that mean you like Scarface (1983)\nSystem: Yeah! I love that movie Anything else?\nSystem: ",
+      "system_answer": "Hi! I'm doing well, thanks for asking. How about you? Are you looking for more gangster‑action movies like *Casino* or *Scarface*?",
+      "gold_answer": "2730",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello, how are you?\nSystem: i'm fine and you? I'm open to any option, what would you recommend? i just watched Black Panther (2018) and i loved it\nUser: Good. Would you like to watch some old horror movies like Night of Terror (1933), or Frankenstein (1931)\nSystem: Even though sometimes i prefer watching old movies like It (1990) Yeah, i want to!\nUser: The old ones are my favorite.\nSystem: those are my favorite too like The Mask (1994) by Jean Carrey i could smile a lot!\nSystem: ",
+      "system_answer": "I'm fine, thanks. Since you enjoy old horror movies, you might like classics such as *Night of Terror* (1933) and *Frankenstein* (1931). You also mentioned enjoying the 1990 version of *It*, and *The Mask* (1994) is a fun older film you might enjoy.",
+      "gold_answer": "14957",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hello\nSystem: Hello there. Do you have a genre in mind?\nUser: I want to see something like Dumb and Dumber (1994) and Zombieland (2009)\nSystem: Oh yes I haven't seen Zombieland (2009) in forever I really enjoyed that movie a lot.\nUser: I enjoyed them both\nSystem: ",
+      "system_answer": "If you enjoyed *Dumb and Dumber* and *Zombieland*, you might like these comedies that blend humor with adventure or a bit of horror:  \n\n- **The Hangover** (2009) – a wild bachelor‑party adventure full of absurd humor.  \n- **Step Brothers** (2008) – two middle‑aged men forced to live together, creating chaos and laughs.  \n- **Anchorman: The Legend of Ron Burgundy** (2004) – a satirical take on 1970s news with over‑the‑top comedy.  \n- **Tropic Thunder** (2008) – a film‑within‑a‑film that turns into a hilarious action‑comedy.  \n- **21 Jump Street** (2012) – a buddy cop movie with a comedic twist.  \n- **The 40‑Year‑Old Virgin** (2005) – a coming‑of‑age comedy with a mix of awkward and funny moments.  \n- **Bridesmaids** (2011) – a female‑centric comedy that balances heartfelt moments with outrageous humor.  \n- **Shaun of the Dead** (2004) – a comedy‑horror that mixes zombie action with witty banter.  \n- **Tucker & Dale vs. Evil** (2010) – a horror‑comedy that flips the classic slasher trope.  \n- **The World's End** (2013) – a comedy‑adventure with a group of friends revisiting their youth.",
+      "gold_answer": "30453",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hi\nSystem: Hello can you recommend movies for someone who grew up with A Nightmare on Elm Street (1984) ?\nUser: i hope you like comedies because i would like to recommend Dumb and Dumber (1994) and The Big Lebowski horror films good choice how about try Halloween (1978) or It (2017)\nSystem: I have seen both of those movies and I love them both.\nUser: awesome, glad to hear that\nSystem: Oh those are some good horror flicks too.\nSystem: ",
+      "system_answer": "**Movies to watch if you grew up with *A Nightmare on Elm Street* (1984)**  \n\n- **Horror classics**: *Friday the 13th* (1980), *The Texas Chainsaw Massacre* (1974), *The Shining* (1980), *The Exorcist* (1973).  \n- **Modern horror**: *Scream* (1996), *The Cabin in the Woods* (2012), *It* (2017).  \n- **Comedy‑horror mix**: *The Big Lebowski* (1998), *Dumb and Dumber* (1994).  \n- **Other fun picks**: *Superbad* (2007), *The Hangover* (2009).",
+      "gold_answer": "25267",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi, what are you into for movies?\nSystem: Hey, I'm looking for horror/thriller movies from 2016 or 2017\nUser: Great! Have you seen Jigsaw (2017) or A Quiet Place (2018) ?\nSystem: Yes, I liked both of those!\nUser: Oh that's awesome, let me think of some more Insidious: Chapter 4 (2018) was recent as well\nSystem: Oh, I haven't seen that\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "9198",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi\nSystem: Hi\nUser: How are you? Im open to any movie\nSystem: I’m good how are you ?!\nUser: Im good! What kind of movies do you like?\nSystem: Have you seen Black Panther (2018) ??\nUser: Yes I have It was good!\nSystem: Yess I loved it I seen it 3 times I think I’m done lol What about Avengers: Infinity War (2018)\nUser: Lol its that good though! Ive seen Avengers: Infinity War (2018) twice now!\nSystem: Really! I want to see it . I heard from so many people that they were disappointment :(\nUser: So good! Yea just in the ending but it was overall really good! There will be another one next summer so we can see what happens! Deadpool 2 (2018) should be good also!\nSystem: ",
+      "system_answer": "Based on your interest in Black Panther, Avengers Infinity War, and Deadpool 2, you might enjoy the following Marvel titles:  \n- *Guardians of the Galaxy* (2014)  \n- *Thor: Ragnarok* (2017)  \n- *The Avengers* (2012)  \n- *Captain America: Civil War* (2016)  \n- *Spider‑Man: Homecoming* (2017)  \n- *Doctor Strange* (2016)  \n\nIf you’re looking for newer releases, try *Black Panther: Wakanda Forever* (2022) or *Spider‑Man: No Way Home* (2021).",
+      "gold_answer": "23792",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi. What kind of movies do you like?\nSystem: Hi!! Can you recommend me some movie?? I like movies like The Purge (2013)\nUser: Have you seen Hereditary (2018) yet?\nSystem: Yes!! I've seen that movie is pretty good, do you have another recommendation?\nUser: You might like The Hitcher (1986) Or the classics, like The Texas Chain Saw Massacre (1974)\nSystem: I didn't see those movies I think I'm going to give it a chance\nSystem: ",
+      "system_answer": "I enjoy horror and thriller movies, especially dark, violent, and suspenseful ones like *The Purge* (2013), *The Hitcher* (1986), and *The Texas Chain Saw Massacre* (1974).",
+      "gold_answer": "30321",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello\nSystem: Hi, do have some movies recommendations?\nUser: Have you seen The Godfather (1972) or S (2012) I like crime movies\nSystem: I have seen that movie. i like crime movies too.\nSystem: ",
+      "system_answer": "Sure! Since you enjoy crime films like *The Godfather*, you might also like these highly regarded crime dramas:\n\n- *Goodfellas* (1990)  \n- *The Departed* (2006)  \n- *Pulp Fiction* (1994)  \n- *The Irishman* (2019)  \n- *Heat* (1995)  \n- *The Usual Suspects* (1995)  \n- *City of God* (2002)  \n- *The Town* (2010)  \n- *Sicario* (2015)",
+      "gold_answer": "4130",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi, I am looking for a suggeston for a good romatic comedy.\nSystem: Hi, I think bridesmaid is pretty cool! Have you seen it? Bridesmaids (2011)\nUser: No, I haven't seen Bridesmaids (2011)\nSystem: There is also Sixteen Candles (1984) that is endearing\nUser: I really liked Sixteen Candles (1984) and Pretty in Pink (1986) was good too.\nSystem: Yes, I love Pretty in Pink (1986) too!\nUser: Anything with Meg Ryan is good, like Sleepless in Seattle (1993) and While You Were Sleeping (1995) . Oh wait Meg Ryan wasn't in While You Were Sleeping (1995) that was Sandra Bulock\nSystem: Yes, you may have a point there Sleepless in Seattle (1993) is most definitely a classic to cherish\nUser: Well thank you for the suggestions.\nSystem: ",
+      "system_answer": "Here are a few romantic‑comedy suggestions you might enjoy:  \n- **The Proposal** (2009) – a fun, light‑hearted story with Sandra Bullock and Ryan Reynolds.  \n- **The Wedding Planner** (2001) – a charming romance starring Jennifer Lopez and Matthew McConaughey.  \n- **27 Dresses** (2008) – a witty, feel‑good film featuring Katherine Heigl and James Marsden.",
+      "gold_answer": "6265",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi, what kind of movies are you into?\nSystem: Hello! I love The Greatest Showman (2017) . Do you know any movies like it?\nUser: If you like Hugh Jackman in a performance role, you might like The Prestige (2006) or you might also like The Great Buck Howard (2008) with Colin Hanks.\nSystem: I have seen The Prestige (2006) but not the other one. I do like Hugh Jackman a lot, but I like that The Greatest Showman (2017) is a musical. Do you know any more musicals like it?\nSystem: ",
+      "system_answer": "If you enjoy *The Greatest Showman* (2017) as a musical, you might also like *La La Land* (2016), *Mamma Mia!* (2008), *The Sound of Music* (1965), *Chicago* (2002), *Singin’ in the Rain* (1952), and *The Book of Mormon* (2012). These films combine strong performances with memorable music in a similar style.",
+      "gold_answer": "1506",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi how are you\nSystem: Hello there! i'm pretty good and you?\nUser: Great! What kind of movies are you into?\nSystem: I like horror movies, what would you recommend?\nUser: How about Scary Movie (2000) Not really horror but funny.\nSystem: Hahaha, it is a comedy movie but if you mean it in another way maybe, haha Yeah, i have watched it\nUser: Yes I have! What about It (2017)\nSystem: I also watched Get Out (2017) have you seen it?\nUser: Yes I have I dont think I would consider that horror though. But it was good.\nSystem: I have not seen the new one but the old one It (1990) Is it interesting?\nSystem: ",
+      "system_answer": "The 1990 TV miniseries *It* is a cult classic adaptation of Stephen King’s novel. It stars Tim Curry as Pennywise and is known for its atmospheric horror and strong performances. While it received mixed reviews, many fans appreciate its eerie tone and the iconic portrayal of Pennywise.",
+      "gold_answer": "7935",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi, how are you? Hope you're having a great day, like me! :D\nSystem: I sure am thanks for asking.\nUser: Any type of movies you're in the mood for?\nSystem: What would you suggest for like, a movie night line-up?\nUser: Hmm, lets see... A good start would be Girls Trip (2017) and then maybe Game Night (2018) After that I'd say, Pineapple Express (2008) or Half Baked (1998)\nSystem: I heard they are both hilarious. Oh I love both of those movies.\nUser: Also Horrible Bosses (2011) and Horrible Bosses 2 (2014) were hilarious too. Nice, me too!\nSystem: Oh yes!\nSystem: ",
+      "system_answer": "Here’s a concise movie‑night lineup that matches the style of the films you already enjoy:\n\n- **Girls Trip** (2017) – the original, a raunchy, friendship‑driven comedy.  \n- **Game Night** (2018) – a fast‑paced mystery‑comedy with plenty of laughs.  \n- **Pineapple Express** (2008) – stoner action‑comedy with a solid buddy dynamic.  \n- **Half Baked** (1998) – classic stoner comedy with a cult following.  \n- **Horrible Bosses** (2011) – dark workplace humor with a stellar ensemble.  \n- **Horrible Bosses 2** (2014) – the sequel’s equally outrageous antics.  \n- **Superbad** (2007) – coming‑of‑age raunch comedy that’s become a staple.  \n- **Step Brothers** (2008) – over‑the‑top buddy comedy featuring Will Ferrell and John C. Reilly.  \n- **The Hangover** (2009) – a wild bachelor‑party adventure full of absurd humor.  \n- **Anchorman: The Legend of Ron Burgundy** (2004) – satirical 1970s news parody.  \n- **Tropic Thunder** (2008) – a film‑within‑a‑film action‑comedy with sharp wit.  \n- **21 Jump Street** (2012) – a buddy cop movie with a comedic twist.  \n- **The 40‑Year‑Old Virgin** (2005) – awkward, heartfelt humor with a raunchy edge.  \n- **Bridesmaids** (2011) – female‑centric comedy balancing heartfelt moments and outrageous jokes.  \n\nEnjoy your movie night!",
+      "gold_answer": "6120",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: I like scary movies, can you make a suggestion?\nSystem: Have you ever seen The Conjuring (2013)\nUser: not yet is it good\nSystem: Yes very much so! It is about paranormal activities but it was definitely scary\nUser: Can you make other paranoramal suggestions or slasher films like Jason X (2001) are good to\nSystem: ",
+      "system_answer": "**Paranormal / Supernatural**  \n- *The Ring* (2002) – a cursed videotape that kills viewers after seven days.  \n- *Insidious* (2010) – a family battles malevolent spirits in a house.  \n- *Paranormal Activity* (2007) – found‑footage horror of a haunted home.  \n- *The Others* (2001) – a mother suspects her house is inhabited by ghosts.  \n\n**Slasher / Classic Horror**  \n- *Friday the 13th* (1980) – the iconic camp‑grounds killer.  \n- *A Nightmare on Elm Street* (1984) – Freddy Krueger stalks teens in their dreams.  \n- *Halloween* (1978) – Michael Myers stalks a babysitter.  \n- *The Texas Chain Saw Massacre* (1974) – a group of friends encounter a cannibalistic family.  \n- *Scream* (1996) – a meta‑slasher that riffs on horror tropes.  \n- *The Cabin in the Woods* (2012) – a modern twist on the slasher formula.  \n\nThese films should satisfy your craving for both paranormal chills and classic slasher thrills.",
+      "gold_answer": "16007",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi! What movies do you like ?!\nSystem: Hi. I love animation movies, trying to get ready for Incredibles 2 (2018) so I will be watching The Incredibles (2004) and other animated movies this weekend. Any suggestions? I loved Zootopia Finding Dory (2016)\nUser: Ok I see have you seen A Bug's Life (1998)\nSystem: My nephew and I are going to be watching movies all weekend. Omg, yes... I loved it! That would be a great one to show the nephew.\nSystem: ",
+      "system_answer": "Hi. I love animation movies, trying to get ready for Incredibles 2 (2018) so I will be watching The Incredibles (2004) and other animated movies this weekend. Any suggestions? I loved Zootopia Finding Dory (2016)",
+      "gold_answer": "28714",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi, what movies do you like?\nSystem: Hi, I love a good drama. Like Cast Away (2000) one of my favorites!\nUser: Phantom Thread (2017) and Lady Bird (2017) were good dramas from last year.\nSystem: I also enjoy mind benders, like Requiem for a Dream (2000) and A Beautiful Mind (2001) Oh, I haven't seen those but will check them out.\nSystem: ",
+      "system_answer": "Hi, I love a good drama. Like Cast Away (2000) one of my favorites!",
+      "gold_answer": "25851",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello there!\nSystem: Hello whats a good movie to see\nUser: Tell me what kind of movies would you like to watch?\nSystem: I like all movies\nUser: You can watch Click (2010) and The Mask (1994) if you like old movies and comedy movies\nSystem: I have seen those 2 my fave is action\nUser: You can also watch Avengers: Infinity War (2018) and Black Panther (2018) if you like Marvel movies as Action movies\nSystem: okay cool\nSystem: ",
+      "system_answer": "Here are some action‑film suggestions you might enjoy:\n\n- Die Hard (1988)  \n- The Warriors (1979)  \n- Rambo (2012)  \n- The Matrix (1999)  \n- Blade Runner (1982)  \n- Wonder Woman (2017)  \n- Logan (2017)  \n- Avengers: Infinity War (2018)  \n- Black Panther (2018)  \n- The Dark Knight (2008)  \n- John Wick (2014)  \n- Mad Max: Fury Road (2015)",
+      "gold_answer": "27851",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello!\nSystem: Hey there, i'm looking for movies like The Village (2004) age or Red (2010) because I loved those. Do you know of any other good fairy tail movies?\nUser: I'm in the mood for a movie about summertime. Something like Meatballs (1979) , or maybe even Dirty Dancing\nSystem: Oooh! Dirty Dancing: Havana Nights\nUser: Oh, yes, I liked The Village (2004) . That sounds good.\nSystem: Both the dirty dancing movies were good.\nUser: Did you see The Witch (2015) ? It reminds me of The Village (2004) just because of the setting.\nSystem: ",
+      "system_answer": "I haven’t seen *The Witch* (2015), but it’s a period horror film set in 17th‑century New England, which gives it a similar historical atmosphere to *The Village* (2004).",
+      "gold_answer": "4571",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hey there, I'm looking for some good animated film recommendations. Have you seen any in the past year?\nSystem: Hi there. How are you?\nUser: I'm doing well.\nSystem: Coco (2017) was a great movie\nUser: I've seen that one! It was awesome. One of my faves is Frozen (2013)\nSystem: ",
+      "system_answer": "Here are some animated films released in the past year that you might enjoy:  \n- *Spider‑Man: Across the Spider‑Verse* (2023)  \n- *Elemental* (2023)  \n- *The Little Mermaid* (2023)  \n- *Wish* (2023)  \n- *The Super Mario Bros. Movie* (2023)  \n\nIf you’re open to slightly older releases that are still fresh, consider:  \n- *Turning Red* (2022)  \n- *Lightyear* (2022)  \n- *Puss in Boots: The Last Wish* (2022)  \n- *The Mitchells vs. the Machines* (2021)  \n\nThese titles cover a range of styles from superhero adventures to heartfelt family stories, all produced in the last couple of years.",
+      "gold_answer": "3197",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hi\nSystem: HI how are you? I really liked the movies Inception (2010) and Doctor Strange (2016) .\nUser: yeah Inception (2010) was great movie\nSystem: Can you help me find movies like those?\nUser: oh well all marvels movies maybe like you as Doctor Strange (2016) do\nSystem: Can you suggest any particular ones?\nUser: yes The Avengers (2012) and Thor: Ragnarok (2017)\nSystem: I've seen The Avengers (2012) but I haven't seen Thor: Ragnarok (2017). The Avengers (2012) was great! Have you seen the sequels?\nSystem: ",
+      "system_answer": "You haven’t seen *Thor: Ragnarok* yet, but the next Thor film is *Thor: Love and Thunder* (2022). In the MCU the Avengers sequels are *Avengers: Infinity War* (2018) and *Avengers: Endgame* (2019). If you enjoy *Thor: Ragnarok*, you might also like *Guardians of the Galaxy Vol. 2* (2017), *Doctor Strange in the Multiverse of Madness* (2022), and *Black Panther: Wakanda Forever* (2022).",
+      "gold_answer": "7416",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello how are you tonight?\nSystem: I'm great. You?\nUser: Doing great. Looking for some great movies to watch.\nSystem: What kind of movies do you like?\nUser: I like everything but I'd like to watch some action movies something like X-Men (2000) .\nSystem: The Wolverine (2013) is a great one. There is also Logan (2017)\nUser: I've seen The Wolverine (2013) but I haven't watched Logan (2017) yet. Guess I'm going to have to finally check it out.\nSystem: ",
+      "system_answer": "Logan (2017) is a great action movie you should definitely check out.",
+      "gold_answer": "20331",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi, what kind of movies do you like?\nSystem: Hi, I'm looking for horror or thriller movies\nUser: Have you seen the Saw (2003) movies?\nSystem: Especially alien movies like Aliens (1986) Life (2017) and District 9 (2009) . No I haven't\nUser: Those are classic horror films, you should check them out, if you don't mind a little gore.\nSystem: Cool. I will.\nUser: How about Scream (1996)\nSystem: No, but I should!\nSystem: ",
+      "system_answer": "The system likes horror or thriller movies.",
+      "gold_answer": "20716",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hey there\nSystem: Hey\nUser: I really liked Escape from Alcatraz (1979) any suggestions to similar things?\nSystem: The Shawshank Redemption (1994) Or maybe The Rock (1996) . Nicholas Cage is in that, so it's kind of campy sometimes.\nUser: Loved both of those never opposed to good ol camp!\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "14957",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello! What kind of movies do you like?\nSystem: Hello, I am looking for comedy movies like Juno (2007)\nUser: Great! Juno (2007) was a good movie. How about something older like 9 to 5 (1980) ?\nSystem: I havent seen that\nUser: Or, if you want to see something newer, you might like Daddy's Home (2015) .\nSystem: I'll check forit\nUser: 9 to 5 (1980) is a classic. Very funny, and it has Dolly Parton.\nSystem: That is a great movie, I like Daddy's Home 2 (2017) also I hope you have a nice day my friend\nSystem: ",
+      "system_answer": "Hello, I am looking for comedy movies like Juno (2007)",
+      "gold_answer": "15061",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi, how are you today?\nSystem: hello how are yo today can i help yo\nUser: I really enjoy a good comedy and stoner flick, like Super Troopers (2001) and can't wait for Super Troopers 2 (2018)\nSystem: can i help you\nUser: I'm great! Thanks for asking.\nSystem: good Clip (2012)\nUser: Yes, do you know any other good movies like Girls Trip (2017) Pineapple Express (2008) or Hangover (2010)\nSystem: or horror It (2017)\nUser: Oh, I've never seen that. what's it about? I've only seen the original It (1990) not the new one.\nSystem: ",
+      "system_answer": "**Movies similar to Girls Trip, Pineapple Express, and The Hangover**  \n- **Step Brothers (2008)** – Two middle‑aged men become step‑brothers and wreak havoc in a comedic, over‑the‑top style.  \n- **Superbad (2007)** – A coming‑of‑age raunch comedy about two high‑school friends trying to enjoy one last night before graduation.  \n- **The 40‑Year‑Old Virgin (2005)** – A heartfelt, awkward comedy about a middle‑aged man’s quest for romance and humor.  \n- **Anchorman: The Legend of Ron Burgundy (2004)** – Satirical 1970s news parody with absurd humor and ensemble cast.  \n- **Tropic Thunder (2008)** – A film‑within‑a‑film action‑comedy that blends satire, stunts, and outrageous jokes.  \n- **Game Night (2018)** – A mystery‑comedy where a game night turns into a real adventure, mixing laughs with suspense.  \n- **The Hangover Part II (2009)** – The sequel to The Hangover, continuing the wild, chaotic bachelor‑party adventure in Thailand.  \n- **The Hangover Part III (2010)** – The final chapter of the trilogy, with the trio’s misadventures escalating to new heights.  \n- **The World's End (2013)** – A stoner comedy about a group of friends attempting a pub crawl that turns into a sci‑fi adventure.  \n- **The Big Lebowski (1998)** – A cult classic stoner comedy featuring a laid‑back protagonist embroiled in a case of mistaken identity.",
+      "gold_answer": "21850",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello there\nSystem: Hi!\nUser: I love good movies i know a lot of them what is you favorite genre\nSystem: I do too! I l really liked Wonder Woman (2017) . What other movies like that do you recommend?\nUser: Spider-Man (2002) and Batman (1989) are good, but you have probably seen them i like them very much\nSystem: I have seen both of those! I've probably seen most super-hero movies!\nUser: Then you should try Dr. Strange its not so popular i like it very much\nSystem: I've actually seen that one too. It was very good! Do you have any other ideas?\nSystem: ",
+      "system_answer": "**Action‑Superhero Movies to Watch**\n\n- *The Avengers* (2012)  \n- *Iron Man* (2008)  \n- *Captain America: Civil War* (2016)  \n- *Black Panther* (2018)  \n- *Guardians of the Galaxy* (2014)  \n- *Spider‑Man: Homecoming* (2017)  \n- *The Dark Knight* (2008)  \n- *X‑Men: Days of Future Past* (2014)  \n- *The Wolverine* (2013)  \n- *Thor: Ragnarok* (2017)",
+      "gold_answer": "29248",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi there What are you looking to see?\nSystem: I would love to watch an action movie. Do you have any suggestions?\nSystem: ",
+      "system_answer": "Here are some action‑movie suggestions you might enjoy:  \n- **Die Hard** (1988) – classic Bruce Willis cop thriller  \n- **Rambo: Last Blood** (2019) – the latest in the Rambo series  \n- **The Matrix** (1999) – high‑concept sci‑fi action  \n- **Blade Runner** (1982) – neo‑noir action‑drama  \n- **Wonder Woman** (2017) – superhero action with a strong female lead  \n- **Logan** (2017) – gritty superhero action‑drama  \n- **John Wick** (2014) – stylized, high‑energy action  \n- **Mad Max: Fury Road** (2015) – relentless post‑apocalyptic action  \n- **The Dark Knight** (2008) – superhero action with a dark tone  \n\nThese films cover a range of action styles, from classic cop thrillers to modern superhero epics. Enjoy!",
+      "gold_answer": "9257",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi, how are you today?\nSystem: Hi. I'm good. How are you?\nUser: I'm good. What kind of movies are you looking for?\nSystem: I like family movies like The Greatest Showman (2017)\nUser: Do you like older Disney films like The Shaggy Dog (1959)? Or Escape to Witch Mountain (1975)?\nSystem: I've seen those. They are pretty good!\nSystem: ",
+      "system_answer": "I've seen those. They are pretty good!",
+      "gold_answer": "18148",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi, what kind of movies do you like?\nSystem: Hello How are you today\nUser: I'm great and yourself?\nSystem: I like movies like Game Night (2018) I am great thankx\nUser: Oh, I just watched that, it was hilarious. Have you seen Girls Trip (2017) that movie was hilarious\nSystem: Yes I loved that movie\nUser: Have you seen any of the Hangover (2010) movies like The Hangover (2009) or Hangover (2014) If not you should check them out! Another good comedy is Super Troopers (2001)\nSystem: What are they about\nSystem: ",
+      "system_answer": "I like light‑hearted, comedic films such as *Game Night* (2018), *Girls Trip* (2017), the *Hangover* series (*The Hangover* 2009, *The Hangover Part II* 2010, *The Hangover Part III* 2014), and *Super Troopers* (2001).",
+      "gold_answer": "16018",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi, I'm looking for a good old school Disney animated movie. I enjoyed Robin Hood (1991) . Do you know of any good ones?\nSystem: How about Frozen (2013) and/or Ferdinand (2017)\nUser: I saw Frozen (2013) , but have not yet seen Ferdinand (2017) . It looks good, though.\nSystem: Ferdinand (2017) was TERRIFIC! If you like old school there is always Bambi (1942) and Snow White (1995)\nUser: I might ultimately watch Beauty and the Beast (1992) , but I've seen both Bambi (1942) and Snow White (1987) I've also seen the older version of Snow White (1916)\nSystem: ",
+      "system_answer": "Here are some classic Disney animated films that fit the “old‑school” vibe you’re looking for:\n\n- **The Lion King** (1994) – A sweeping musical about a young lion’s journey to the throne.  \n- **The Little Mermaid** (1989) – A charming tale of a mermaid who dreams of life on land.  \n- **Aladdin** (1992) – A street‑smart hero, a genie, and a magic carpet adventure.  \n- **Beauty and the Beast** (1991) – The beloved story you mentioned you might watch.  \n- **Hercules** (1997) – A fun retelling of the Greek hero’s early years.  \n- **Pocahontas** (1995) – A lyrical story of friendship and cultural understanding.  \n- **Tarzan** (1999) – A jungle‑based adventure with a memorable soundtrack.  \n- **Mulan** (1998) – A strong heroine who disguises herself to save her family.  \n- **The Hunchback of Notre Dame** (1996) – A darker, yet beautifully animated, tale.  \n- **The Rescuers** (1977) – Two mice on a daring rescue mission.  \n- **The Rescuers Down Under** (1990) – A sequel that expands the adventure to Australia.  \n- **The Fox and the Hound** (1981) – A touching friendship between a fox and a hound.  \n- **The Aristocats** (1970) – A musical romp with a family of cats in Paris.  \n- **The Jungle Book** (1967) – The classic story of Mowgli growing up in the jungle.  \n- **The Sword in the Stone** (1963) – A whimsical look at young Arthur’s training.  \n- **The Many Adventures of Winnie the Pooh** (1977) – A collection of Pooh’s gentle escapades.  \n- **The Adventures of Ichabod and Mr. Toad",
+      "gold_answer": "26568",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi there\nSystem: Howdy ho neighbor!\nUser: Do you like crime movies? Somthing like The Godfather (1972) ?\nSystem: Not so much. I'm more into animation\nUser: Oh, Have you watched Princess Mononoke (1997) ? It is great movie\nSystem: No haven't heard of it. If it's animation I would love it!\nUser: Yes it is do you like Disney movies? I recently saw Coco (2017) It is so beautiful movie\nSystem: I do! I haven't seen that. Have you seen Frozen (2013)? I still can't believe I haven't seen it.\nSystem: ",
+      "system_answer": "Frozen is a 2013 Disney animated musical film released on November 27, 2013. It was directed by Chris Buck and Jennifer Lee, features songs written by Kristen Anderson‑Lopez and Robert Lopez, and stars the voices of Idina Menzel (Elsa), Kristen Bell (Anna), and Jonathan Groff (Kristoff). The film was a commercial success, grossing over $1.2 billion worldwide, and received critical acclaim for its animation, music, and themes of sisterhood and self‑acceptance.",
+      "gold_answer": "3796",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi are you looking for a specific type of movie?\nSystem: Hello\nUser: I am trying to find a movie based on a book to watch.\nSystem: I like action movies\nUser: Have you seen the new Avengers: Infinity War (2018) movie?\nSystem: Yes I have Have you seen Fifty Shades of Grey (2015)\nUser: yes I have.\nSystem: How did you like it?\nUser: It was okay but I was interested in somehitng more serious.\nSystem: What other types of movies do you like?\nUser: I like historical movies. I watched The Post (2017) recently and liked it\nSystem: ",
+      "system_answer": "**Schindler’s List (1993)** – a historical drama based on Thomas Keneally’s book *Schindler’s Ark*, depicting Oskar Schindler’s efforts to save Jewish workers during World War II.",
+      "gold_answer": "6205",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hi\nSystem: Hi!! Can you recommend me some movies? I like movies like The Purge (2013)\nUser: yes like Jigsaw (2017) is a good movie or The Purge: Election Year (2016) is actuality\nSystem: I saw those movies do you have another one?\nUser: yes like Scream 4 (2011) is very good thas movie\nSystem: I haven't seen that movie I'm going to give it a chance Thanks!!\nSystem: ",
+      "system_answer": "**Movies similar to The Purge, Jigsaw, and Scream 4**\n\n| Title | Year | Why it fits |\n|-------|------|-------------|\n| **The Purge: Anarchy** | 2014 | Direct sequel to the original, with the same dystopian, high‑stakes violence. |\n| **The Purge: Election Year** | 2016 | Continues the series’ premise of a one‑night lawless purge, adding political intrigue. |\n| **Saw II** | 2005 | Part of the *Saw* franchise, featuring intricate traps and moral dilemmas like *Jigsaw*. |\n| **Saw III** | 2006 | Builds on the *Saw* series’ psychological horror and complex plot twists. |\n| **Scream (2000)** | 2000 | The first film in the *Scream* series, blending slasher tropes with meta‑commentary. |\n| **Scream 2** | 1997 | Continues the franchise’s mix of horror and self‑aware humor. |\n| **The Cabin in the Woods** | 2011 | A horror film that subverts expectations, similar to the twisty nature of *Scream 4*. |\n| **The Descent** | 2005 | A claustrophobic, gore‑heavy thriller that keeps viewers on edge, like *The Purge*. |\n| **The Ring** | 2002 | A supernatural horror with a relentless, suspenseful atmosphere. |\n| **The Conjuring** | 2013 | A modern classic that delivers tension and scares in a straightforward horror style. |\n\nThese titles share the high‑intensity, suspenseful, or meta‑horror elements you enjoyed in *The Purge*, *Jigsaw*, and *Scream 4*.",
+      "gold_answer": "5886",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Good evening What do you like?\nSystem: Hi there! Let's see, I like weird foreign films, you know, like Cinema Paradiso (1988)\nUser: Oh nice, have you seen Subway (1985) or La Vie en rose (2007) ?\nSystem: I have not seen those, I will have to check them out. I also like Pan's Labyrinth (2006) do you know any like that?\nUser: Excellent taste Have fun watching! Take care\nSystem: Thank you!\nSystem: ",
+      "system_answer": "Hi there! Let's see, I like weird foreign films, you know, like Cinema Paradiso (1988)",
+      "gold_answer": "18304",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi. Lots of new movies coming out today. Would you prefer Hotel Artemis (2018) or Ocean's 8 (2018)\nSystem: Hi, sorry for my delay. I haven't seen them but I'm looking for a good animated movie like The Incredibles (2004) I hear Incredibles 2 (2018) is in theaters June 15th! I can't wait.\nUser: Incredibles 2 (2018) comes out in a few weeks\nSystem: Have you seen any of those? Yes, I'm so excited.\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "15930",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: What genre of movie do you like?\nSystem: I like comedies\nUser: Have you seen Talladega Nights: The Ballad of Ricky Bobby (2006) or The Hangover (2009) ?\nSystem: I have seen and enjoyed both of them.\nUser: Did you see that new Will Ferrel movie The House (2017) ?\nSystem: I did see it. I did not like it very much.\nUser: Me too, buddy. Have you seen Little Miss Sunshine (2006) ?\nSystem: Yes, I love a dark comedy like that\nSystem: ",
+      "system_answer": "The system’s movie preferences are:  \n- **Genres**: comedies (especially stoner and slapstick), action, and classic cop/action films.  \n- **Specific likes**: *Hills Cop* (1984), *Die Hard* (1988), *The Warriors* (1979), *Rambo* (2012).  \n- **Horror preference**: prefers the 1990 version of *It* over the 2017 remake.",
+      "gold_answer": "5256",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hey how are you?\nSystem: I'm great and you?\nUser: I'm super- thanks! I love watching movies! What kind of movies are you looking for?\nSystem: I love a little bit of everything, but how about a couple action movies. Something fun for a movie night with friends.\nUser: I love action movies- I really like martial arts movies! Rush Hour (1998) is always a good one - funny and full of action!\nSystem: I love that movie. I love action as well I am obsessed with X-Men (2000) and have always wished I was a mutant, Haha!\nUser: Me too! Jackie Chan has always been one of my favorites! His newer one The Foreigner (2016) was a little darker, but good! I LOVE comic movies! Have you seen Avengers: Infinity War (2018) yet?\nSystem: No I haven't seen it yet. I usually end up waiting til movies are on DVD. Or on my Hulu.\nSystem: ",
+      "system_answer": "Here are some action/martial‑arts and comic‑book movies you might enjoy:  \n- Rush Hour (1998)  \n- The Foreigner (2016)  \n- X‑Men (2000)  \n- Avengers: Infinity War (2018)  \n- Die Hard (1988)  \n- The Warriors (1979)  \n- Rambo (2012)  \n- The Matrix (1999)  \n- Blade Runner (1982)  \n- Wonder Woman (2017)  \n- Logan (2017)  \n- Black Panther (2018)  \n- Thor: Ragnarok (2017)  \n- Hulk (2003)  \n- The Wolverine (2013)",
+      "gold_answer": "23792",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello. How are you?\nSystem: I am quite fine\nUser: Looking for some good movies?\nSystem: Yes please Want a nice romantic comedy Like Along Came Polly\nUser: I can recommend Pretty Woman (1990)\nSystem: Classic I love that\nSystem: ",
+      "system_answer": "The system likes the following romance movies:  \n- **Ever After** (1998)  \n- **Stardust** (2007)  \n- **True Romance** (1993)  \n- **Love Stinks** (1999)  \n- **The Proposal** (2009)  \n- **The Wedding Planner** (2001)  \n- **27 Dresses** (2008)  \n- **There’s Something About Mary** (1998)  \n- **Maid in Manhattan** (2002)  \n- **Notting Hill** (1999)  \n- **Love Actually** (2003)  \n- **The Princess Diaries** (2001)",
+      "gold_answer": "7641",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hi I am in a funny mood\nSystem: Hello! I can definitely think of some good funny movies.\nUser: I like movies such as Superbad (2007) and Ace Ventura: Pet Detective (1994)\nSystem: How about The Other Guys (2010) ? Will Ferril is a hoot.\nUser: I have not seen that yet I will add it to my list Do you have 1 more?\nSystem: ",
+      "system_answer": "Step Brothers (2008)",
+      "gold_answer": "22803",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello.\nSystem: Good night\nUser: Know any good movies?\nSystem: Off the top of my head the movie Shrek (2001) comes to mind. Only because alot of lines from it are stuck in my head If you dont like animated stuff I rewatched John Wick (2014) recently have you seen it?\nUser: No I haven't. Know something a little more mature but not so crude with humor? I'm okay with animated though.\nSystem: I saw The Usual Suspects (1995) for the first time last week, it wasn't half bad\nUser: It took you 23 years to see it?\nSystem: 0_0 never was a fan of action movies. Didn;t think I HAD to watch it lol\nUser: You didn't HAVE to do so. I'm joking.\nSystem: There are probably many classics that I've never seen but I'll check em out eventually. But this is not about me. Whats one of your favs?\nUser: Seen Law Abiding Citizen (2009). The Usual Suspects (1995) sounds similar.\nSystem: :) Ok cool\nUser: I like The Boxtrolls (2014), Rush Hour (1998), and Life (1996) just to name a few.\nSystem: Awesome. Hope you choose one of these to enjoy. I might check out a few of them myself\nUser: I'm feeling childish, so I think I will check out Shrek (2001). There's not too many fart jokes in it, is it? Eddie Murphy better be worth it.\nSystem: ",
+      "system_answer": "Shrek (2001) contains a handful of fart‑related jokes, but they are not the main focus of the film. The humor is more centered on wordplay, pop‑culture references, and the characters’ personalities. Eddie Murphy voices Donkey, and his performance is widely praised for its energy, comedic timing, and the chemistry he shares with Mike Myers’ Shrek. Most viewers find his contribution to be a highlight of the movie.",
+      "gold_answer": "28072",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hello how are you\nSystem: I'm so great What can you recommend that's like Eraserhead (1977) ? I love Lynch\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "7600",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hello how are you?\nSystem: Hi! I'm great! What kind of movies do you like?\nUser: I like movies similar to Dumb and Dumber (1994) and Superbad (2007) I also like Deadpool (2016) and Fargo (1996)\nSystem: Have you seen Knocked Up (2007) or This Is the End (2013) ?\nUser: I have seen both and found them both to be hilarious I have seen those as well and loved them Thanks for your help\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "22364",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: I saw a great movie last week.\nSystem: Really, what movie was that?\nUser: Breaking In (2018) with Gabrielle Union. It was a lot like Panic Room (2002) with Jodie Foster\nSystem: Oh really, I haven't seen either of them? Are they more in the genre of horror or suspense?\nUser: Suspense. Both are about mothers protecting kids during a home invasion. But nothing gory like The Purge (2013)\nSystem: I don't do well with gory moves, but I love suspense movies! I may have to check those out!\nSystem: ",
+      "system_answer": "You might enjoy *The Others* (2001) and *The Sixth Sense* (1999). Both are suspenseful films about mothers and children in a house, with minimal gore.",
+      "gold_answer": "27851",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Good day to you!\nSystem: thanks and to you too i liked Dumb and Dumber (1994) and Superbad (2007) I also enjoyed The Terminator (1984) and Terminator 2: Judgment Day (1991)\nUser: Okay, I think I have some suggestions. Some goofy - and very good - comedies you might like are Horrible Bosses (2011) and Super Troopers (2001)\nSystem: those are 2 great choices.\nUser: Thanks!\nSystem: I have seen both and enjoyed them Thanks so much for your help Have a great day and goodbye!\nSystem: ",
+      "system_answer": "You're welcome! I'm glad you enjoyed *Horrible Bosses* and *Super Troopers*. If you liked those, you might also enjoy other raunchy comedies like *The Hangover*, *Step Brothers*, or *Anchorman*. Have a great day!",
+      "gold_answer": "18829",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hey there. How are you?\nSystem: Fine, thank you\nUser: Looking for a good movie?\nSystem: I have a movie night tonight my friends are coming I need good mystery movies\nUser: Well, Wind River (2017) is a good mystery.\nSystem: I have seen that one\nUser: How about Memento (2000) ?\nSystem: I have not seen it thanks My favorites are Seven (1995) and Prestige (1932)\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "22168",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi, how are you?\nSystem: Hi, I am fine, and you?\nUser: Fine thanks. What are your top favorite three movies?\nSystem: ",
+      "system_answer": "My top three favorite movies are:  \n1. **Hills Cop (1984)** – a classic Eddie Murphy action‑comedy.  \n2. **Die Hard (1988)** – an iconic cop action film starring Bruce Willis.  \n3. **The Warriors (1979)** – a cult classic about street gangs.",
+      "gold_answer": "1453",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi\nSystem: Hi! I loved What About Bob%3F (1991) Looking for something like that now\nUser: Well there's a lot of movies like that one is Trading Places (1983), The Man Who Knew Too Much (1956) and Stripes (1981) is pretty good too!!\nSystem: Ive not seen Trading Places (1983) but I saw the other two! They were great. I really liked Lars and the Real Girl (2007) too!\nSystem: ",
+      "system_answer": "Here are a few more comedy‑drama films that share the light‑hearted, character‑driven style of *What About Bob?* (1991) and the movies you mentioned:\n\n- **The Naked Gun: From the Files of Police Squad!** (1988) – a slapstick buddy‑cop comedy with Leslie Nielsen.  \n- **Planes, Trains & Automobiles** (1987) – a road‑trip comedy‑drama starring Steve Martin and John Candy.  \n- **The Big Chill** (1983) – a comedy‑drama about a group of college friends reuniting after a funeral.  \n- **The Odd Couple** (1968) – a classic comedy about two mismatched roommates.  \n- **The Princess Bride** (1987) – a whimsical adventure‑comedy with a mix of romance and humor.  \n- **The Wedding Singer** (1998) – a romantic comedy set in the 1980s with Adam Sandler and Drew Barrymore.  \n- **The Proposal** (2009) – a romantic comedy about a boss and her assistant who fake a marriage.  \n\nThese films should appeal to fans of *What About Bob?*, *Trading Places*, *The Man Who Knew Too Much*, and *Stripes*.",
+      "gold_answer": "17541",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello!\nSystem: Hello! How are you today?\nUser: I'm good! I'm looking for an adventure film, something like Indiana Jones and the Last Crusade (1989) Do you have any ideas?\nSystem: That's a good one! have a few ideas.\nUser: Cool! I'm all ears.\nSystem: There's the newer movie in the series Indiana Jones and the Kingdom of the Crystal Skull (2008). Have you seen that one yet?\nUser: I haven't seen that one yet. Is it good? Wait, is that the one where they show him as a kid?\nSystem: I thought it was great!\nUser: I'll put that on my list. I also like adventure movies like Back to the Future (1985) .\nSystem: I don't think he was a kid in that one. Back to the Future (1985) is an awesome movie! Have you seen Jurassic Park (1993)?\nUser: Oh, yes. We love Jurassic Park and we are looking forward to the new one this summer!\nSystem: Another movie you might like is The Adventures of Tintin (2011). It was also directed by Steven Spielberg\nUser: I'm definitely going to look for Indiana Jones and the Kingdom of the Crystal Skull (2008) . Thank you for the suggestion! Now, it's bugging me to remember which one had a young Indiana Jones in the movie. Haha! Yes, that is a great one, too. I remember seeing that one with my son. Thank you for the suggestions! You have a great day!\nSystem: ",
+      "system_answer": "The only Indiana Jones film that features a young Indiana Jones is **“Indiana Jones and the Kingdom of the Crystal Skull” (2008)**, which includes a flash‑back scene of a young Indy. The TV series **“The Young Indiana Jones Chronicles”** also depicts his early years.",
+      "gold_answer": "8992",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello, How are you doing?\nSystem: hello nothing how are you can you help me\nUser: I'm good. What kind of movies are you into?\nSystem: i need a movie for watch with my family for my kids Finding Dory (2016)\nUser: Oh have you seen The Incredibles (2004) it is a great movie and a new one is coming to theaters soon Incredibles 2 (2018) .\nSystem: things for kids my kids love it movie\nSystem: ",
+      "system_answer": "I’m doing well, thanks! For a family‑friendly movie you might enjoy *Finding Dory* (2016) or *The Incredibles* (2004) and its sequel *Incredibles 2* (2018).",
+      "gold_answer": "14742",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello\nSystem: Good morning! I'm in the mood for a movie with Mel Gibson. Any suggestions?\nUser: Do you like comed movies? Braveheart (1995) is the best movie of Mel Gibson, he also directed\nSystem: I do! I really loved him in that movie Forever Young (1992) which was a comedy. Believe it or not, I don't believe I've seen Braveheart (1995) . I've heard it's good.\nUser: Other good movie of Mel is Mad Max (1979) You have to see it\nSystem: Yes, I love Mad Max (1979) . I will have to queue up Braveheart (1995) .\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "22110",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello!\nSystem: Hi\nUser: I'm in the mood to see a fantasy movie, something that my 11-year old can watch with me. Do you have any ideas? We've seen Harry Potter and the Chamber of Secrets (2002) together and liked it.\nSystem: Have you seen The Lord of the Rings?\nUser: I have, but I don't believe he has seen it. That's a good one to put on my list.\nSystem: Also The Hobbit: An Unexpected Journey (2012) is also great to see as well.\nUser: It's been several years since I've seen The Lord of the Rings . I loved The Hobbit: An Unexpected Journey (2012) . That's a good choice.\nSystem: ",
+      "system_answer": "- **The Chronicles of Narnia: The Lion, the Witch and the Wardrobe** (2005) – PG, a classic fantasy adventure that’s perfect for an 11‑year‑old.  \n- **The Hobbit: An Unexpected Journey** (2012) – PG‑13, already liked by you, and a great follow‑up for the series.  \n- **The Spiderwick Chronicles** (2008) – PG, a fun, family‑friendly fantasy with magic and adventure.  \n- **The Princess Bride** (1987) – PG, a beloved fantasy‑romance‑comedy that appeals to all ages.  \n- **The Golden Compass** (2007) – PG‑13, a visually rich fantasy adventure that’s suitable for a pre‑teen.",
+      "gold_answer": "25800",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hello how are you\nSystem: Good! How are you?\nUser: im great\nSystem: I am looking for movies with a great story, like Captain Phillips (2013) and Sully (2016) - any suggestions?\nUser: Inside Man (2006) and the Avatar (2009) both had great stories\nSystem: I've seen those both- those are good ones!\nSystem: ",
+      "system_answer": "Here are some movies known for their compelling stories that you might enjoy:  \n- **The Imitation Game** (2014) – a biographical drama about Alan Turing and WWII code‑breaking.  \n- **The Social Network** (2010) – the rise of Facebook and the legal battles that followed.  \n- **The Theory of Everything** (2014) – a biopic of physicist Stephen Hawking.  \n- **The Revenant** (2015) – a survival drama set in the 1820s American frontier.  \n- **The Martian** (2015) – a gripping tale of survival on Mars.  \n- **The Pursuit of Happyness** (2006) – an inspirational story of perseverance and family.  \n- **The Big Short** (2015) – a sharp, narrative-driven look at the 2008 financial crisis.",
+      "gold_answer": "14584",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hiii How are you\nSystem: Hello there! I'm pretty good What about you?\nUser: I’m good !\nSystem: In this moment you are the recommender and i'm the seeker\nUser: What type of movies you enjoy watching\nSystem: So, i like Action, comedy and Marvel movies\nUser: Ok well I recommend The Commuter (2017) if you like action and Black Panther (2018) was good Click (2010) is great with Adam sandler\nSystem: Oh, those are very good suggestions\nUser: Elf (2003) is a funny Christmas movie will ferrel is hilarious !!\nSystem: Would you recommend anything else?\nUser: Have you seen Jumanji (2017)\nSystem: Wow, those sound really interesting Thank you for helping me out\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "16716",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello\nSystem: Good morning! I'm in the mood to see a movie. Any suggestions?\nUser: Do you like comedy movies?\nSystem: I do like comedy movies as well as others. We really enjoyed Daddy's Home (2015) .\nUser: Of course, you have to see The Dark Knight (2008)\nSystem: Yes, that is a good movie. We really love Will Ferrill here.\nUser: In comedy, Juno (2007) is a very good movie, with a profond message\nSystem: Juno (2007) is good. I like silly comedies like Airplane! (1980) , also.\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "15061",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello. How are you today? I'm having a fantastic day, hope you are as well. What kind of movies do you like?\nSystem: I'm in the mood for funny. I really enjoyed The Other Woman (2014)\nUser: Oh nice! Have you seen Girls Trip (2017) or Game Night (2018) ? Both were hilarious! I also love Super Troopers (2001) can't wait for Super Troopers 2 (2018)\nSystem: Nope, but I am taking notes, so they go on my list. Oh, and glad you're having a good day!\nUser: Hah. Thank you! I'd also recommend Deadpool 2 (2018) Even if you haven't seen Deadpool (2016)\nSystem: Super Troopers (2001) I've not delved into. Is it a comedy Sci-Fi kinda like Ghostbusters (2016)\nUser: No, it's more of a stoner movie. lol\nSystem: Nope, I'm not into the Marvel stuff. How about Bridesmaids (2011) ?\nSystem: ",
+      "system_answer": "I'm in the mood for funny. I really enjoyed The Other Woman (2014).",
+      "gold_answer": "26112",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hello\nSystem: Hello I would like some recommendations.\nUser: have you seen Superbad (2007) or Office Space (1999) ?\nSystem: Yes I have seen both.\nSystem: ",
+      "system_answer": "Yes, I have seen both Superbad (2007) and Office Space (1999).",
+      "gold_answer": "8335",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello!\nSystem: Hi! Do you know of any good comedies?\nUser: I loved Jumanji (2017)\nSystem: I saw Jumanji (1995), but not the new one.\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "11173",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hey there What's your favorite movie?\nSystem: Jurassic Park. The original. All those sequels are crap\nSystem: ",
+      "system_answer": "Jurassic Park. The original. All those sequels are crap",
+      "gold_answer": "15255",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: hi how are you?\nSystem: I'm great. How are you?\nUser: awesome what kind of movies are you into?\nSystem: I'm really interested in watching a dramatic movie, like The Martian (2015) . Can you make any suggestions?\nUser: That was a really good movie. Have you seen Downsizing (2017) ?\nSystem: No I haven't seen that one.\nUser: Red Sparrow (2018) is also supposed to be amazing!\nSystem: I haven't seen that one either! I need to watch these! Do you know any others?\nSystem: ",
+      "system_answer": "Here are some dramatic movies you might enjoy:  \n- **Arrival** (2016) – a sci‑fi drama about first contact and communication.  \n- **Interstellar** (2014) – a space‑exploration drama with emotional stakes.  \n- **The Imitation Game** (2014) – a biographical drama about Alan Turing.  \n- **The Social Network** (2010) – a drama about the founding of Facebook.  \n- **The Big Short** (2015) – a drama that explores the 2008 financial crisis.  \n- **The Revenant** (2015) – a survival drama set in the 1820s American frontier.  \n- **The Theory of Everything** (2014) – a biographical drama about Stephen Hawking.",
+      "gold_answer": "9436",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello! i know a lot of great movies What is you favorite genre?\nSystem: Hmm. I like action movies like The Fast and the Furious (2001)\nUser: oh great i know a few great ones\nSystem: Awesome!\nUser: Have you heard of Lethal Weapon (1987) and Die Hard (1988) both really great classics\nSystem: Hmm they are good but not quite right I like cars a lot too\nSystem: ",
+      "system_answer": "Action movies.",
+      "gold_answer": "5971",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi!\nSystem: Good morning!\nUser: How are you doing today ?!\nSystem: I'm doing great! I hope you are, too.\nUser: I am thank you :) what type of movies do You enjoy watching\nSystem: I was thinking of putting on a classic movie. We love anything, really. I was thinking of something along the lines of North by Northwest (1959) . It was a thrilling action movie. Hitchcock never disappoints.\nUser: Don’t think I’ve seen it is it an action movie ?! One of my favorite classic movie is Pretty Woman (1990) im a julia roberts fan Have you seen San Andreas (2015) ?!\nSystem: I remember that one. I remember seeing it when it came out and being in love with it. I had the soundtrack on a cassette and played it in my car. I don't believe I've seen San Andreas (2015) yet. You liked it?\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "21344",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hi\nSystem: Hello, how are you? I'm looking for a funny movie to watch. My favorite is Super Troopers (2001)\nUser: What kind of movies do you like? I really liked The Big Sick (2017)\nSystem: I've heard of that, thank you. Is that serious like The Wolf of Wall Street (2013) ? I've heard of that, thank you. Is that serious like The Wolf of Wall Street (2013) ?\nUser: If you're into animated movies, The Lego Batman Movie (2017) was also very funny\nSystem: I like animated movies too. I'll have to check that out.\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "13267",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello\nSystem: hello\nUser: How are you? What kind of movies are you looking for?\nSystem: fine and you\nUser: Fine, thanks\nSystem: what tipe of movie do you like watc have you heard about Clip (2012) or you prefer more like horror and those things\nUser: I love comedy movies I love comedy movies I love comedy movies I love comedy movies I love comedy movies yes, it's good yes, it's good yes, it's good yes, it's good yes, it's good yes, it's good yes, it's good yes, it's good yes, it's good yes, it's good yes, it's good\nSystem: watch Deadpool (2016) is so funny\nUser: Up (2009) is very good too\nSystem: and Scary Movie\nSystem: ",
+      "system_answer": "",
+      "gold_answer": "15749",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: HI! Can you reccomend any good comedies?\nSystem: Hi. How are you? I sure can How about American Pie (1999) . It's classic. Have you ever watched it?\nUser: Of course! It IS a classic!\nSystem: You can also watch American Pie 2 (2001)\nUser: I haven't seen any of the sequels. Are they as good?\nSystem: Yes I loved American Pie 2 (2001)\nUser: i will have to check it out!\nSystem: If you want a movie that was released recently I would recommend you Game Night (2018) Game Night (2018) is really funny , I laughed a lot\nUser: Have not heard of that, but will take a look at it. I heard they put out a sequel to Super Troopers (2001) . Have you heard anything about it?\nSystem: I have never watched Super Troopers (2001) to be honest. Is it a good comefy?\nUser: I thought so, yes. I didn't think I would be in to it, but it was much funnier than I expected.\nSystem: ",
+      "system_answer": "Here are some well‑received comedies you might enjoy:\n\n- **American Pie** (1999) – classic college‑life humor.  \n- **Game Night** (2018) – a fast‑paced mystery‑comedy with plenty of laughs.  \n- **Super Troopers** (2001) – a goofy cop‑buddy film.  \n- **Superbad** (2007) – raunchy coming‑of‑age comedy.  \n- **Step Brothers** (2008) – over‑the‑top buddy comedy.  \n- **The Hangover** (2009) – wild bachelor‑party adventure.  \n- **Anchorman: The Legend of Ron Burgundy** (2004) – satirical news parody.  \n- **Tropic Thunder** (2008) – film‑within‑a‑film action‑comedy.  \n- **21 Jump Street** (2012) – buddy cop comedy.  \n- **The 40‑Year‑Old Virgin** (2005) – awkward, heartfelt humor.  \n- **Bridesmaids** (2011) – female‑centric comedy with outrageous jokes.",
+      "gold_answer": "18433",
+      "score": 0.0
+    },
+    {
+      "question": "\nUser: Hello What's your favorite movie?\nSystem: Hello My favorite movie would be Terminator 2: Judgment Day (1991) Any movies similar? I would like to relax with some robot apocalypse-type movies\nUser: So relaxing\nSystem: have any recommendations?\nUser: How about I, Robot (2004) or Ex Machina (2015) ?\nSystem: I saw both and enjoyed them thoroughly\nUser: Surrogates (2009) was okay too\nSystem: Ex Machina (2015) that ending really threw me off. I kind of predicted it but was still kinda disappointed I have never seen Surrogates (2009)\nUser: I thought it was a little boring, too much style and not enough substance It's Bruce Willis actiony, but with a futuristic twist\nSystem: Yea, i agree. how about a kids movie to end the night? any kids movie will do\nSystem: ",
+      "system_answer": "Here are a few kid‑friendly movies you might enjoy to end the night:  \n\n- **Toy Story 3** (2010) – a heartfelt Pixar adventure that appeals to all ages.  \n- **Finding Nemo** (2003) – an animated undersea journey with humor and emotion.  \n- **The Incredibles** (2004) – a superhero family film that blends action and family values.",
+      "gold_answer": "8605",
+      "score": 0.0
+    }
+  ]
+}
