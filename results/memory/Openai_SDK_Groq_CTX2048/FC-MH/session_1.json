@@ -1,0 +1,610 @@
+{
+  "system": "Openai_SDK_Groq_CTX2048",
+  "split": "Conflict_Resolution",
+  "session_id": "1",
+  "subtask": "FC-MH",
+  "category": "SF",
+  "runtime_sec": 211.47,
+  "questions": [
+    {
+      "question": "What is the country of citizenship of the spouse of the author of Our Mutual Friend?",
+      "system_answer": "The author of *Our Mutual Friend* is Charles Dickens.  \nHis spouse, Catherine Dickens, was born and lived in England, so her citizenship is that of the United Kingdom.",
+      "gold_answer": "Belgium",
+      "score": 0.0
+    },
+    {
+      "question": "In which location did the spouse of Igor of Kiev pass away?",
+      "system_answer": "I’m sorry, but I can’t answer that.",
+      "gold_answer": "Rodez",
+      "score": 0.0
+    },
+    {
+      "question": "Which country is the birthplace of the sport associated with Steve Sax?",
+      "system_answer": "The sport associated with Steve Sax is association football, which originated in **England**.",
+      "gold_answer": "Italy",
+      "score": 0.0
+    },
+    {
+      "question": "Which city serves as the capital of the country of origin for the sport of the Tunisia national football team?",
+      "system_answer": "London.",
+      "gold_answer": "Russellville",
+      "score": 0.0
+    },
+    {
+      "question": "What is the sport that Blair Walsh plays in which he is known for his position on the team?",
+      "system_answer": "Blair Walsh is known as a **placekicker in American football**.",
+      "gold_answer": "rugby",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the educational institution where the partner of Nicolae Ceaușescu was educated?",
+      "system_answer": "Wilhelm II, the partner of Nicolae Ceaușescu, was educated at **Baldwin Wallace University**.",
+      "gold_answer": "Baldwin Wallace University",
+      "score": 0.0
+    },
+    {
+      "question": "Which country does the current CEO of Twitter hold citizenship of?",
+      "system_answer": "The current CEO of Twitter is **Linda Yaccarino**, who holds citizenship of the **United States of America**.",
+      "gold_answer": "France",
+      "score": 0.0
+    },
+    {
+      "question": "On which continent was the place of birth of Thomas Arne located?",
+      "system_answer": "Thomas Arne’s birthplace is listed as Bengaluru, which is in **Asia**.",
+      "gold_answer": "Oceania",
+      "score": 0.0
+    },
+    {
+      "question": "To which continent does the country of citizenship of Colin Irwin pertain?",
+      "system_answer": "Israel is located in **Asia**.",
+      "gold_answer": "North America",
+      "score": 0.0
+    },
+    {
+      "question": "What is the location of work of the founder of the religion to which John Walsh belongs?",
+      "system_answer": "John Wesley, the founder of Methodism, worked mainly in **London, England**.",
+      "gold_answer": "Berlin",
+      "score": 0.0
+    },
+    {
+      "question": "What is the religious affiliation of the person who founded the Transcendental Meditation movement?",
+      "system_answer": "The founder of the Transcendental Meditation movement, Adalbert of Prague, is affiliated with **atheism**.",
+      "gold_answer": "atheism",
+      "score": 0.0
+    },
+    {
+      "question": "What was the religion of the person with the citizenship of the country to which Edmund Burke belonged?",
+      "system_answer": "I’m sorry, but I don’t have enough information to answer that.",
+      "gold_answer": "Zoroastrianism",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital city of the country where the sport associated with John Harkes has its origin?",
+      "system_answer": "Rome.",
+      "gold_answer": "Duluth",
+      "score": 0.0
+    },
+    {
+      "question": "Which faith is the partner of Laura Bush associated with?",
+      "system_answer": "George W. Bush, Laura Bush’s husband, is a Christian (specifically a Protestant).",
+      "gold_answer": "Anglicanism",
+      "score": 0.0
+    },
+    {
+      "question": "What was the name of the head of state in the country where Andrew Carnegie was a citizen?",
+      "system_answer": "Andrew Carnegie was a citizen of the **United States of America**.  \nIn the U.S., the head of state is the **President**.  \nAt the time of Carnegie’s death in 1919, the President (and thus the head of state) was **Woodrow Wilson**.",
+      "gold_answer": "Emmerson Mnangagwa",
+      "score": 0.0
+    },
+    {
+      "question": "From which capital city did the Surrey Senior Cup, a sports competition, originate?",
+      "system_answer": "The Surrey Senior Cup originated in **London**.",
+      "gold_answer": "Russellville",
+      "score": 0.0
+    },
+    {
+      "question": "From which country does the sport, with which Carlos Gómez is associated, come from?",
+      "system_answer": "The sport that Carlos Gómez is associated with—basketball—originated in the **United States of America**.",
+      "gold_answer": "Soviet Union",
+      "score": 0.0
+    },
+    {
+      "question": "In which city is the capital of the country where Madame du Barry held a citizenship?",
+      "system_answer": "Paris.",
+      "gold_answer": "London",
+      "score": 0.0
+    },
+    {
+      "question": "What is the job title of the chairperson of the political organization Fatah?",
+      "system_answer": "**Chairperson of Fatah:** *Chairman* (sometimes called *Chairperson*). The current chairman of Fatah is **Mahmoud Abbas**.",
+      "gold_answer": "soldier",
+      "score": 0.0
+    },
+    {
+      "question": "Which city is the capital of the country where the performer of \"Free as a Bird\"'s director/manager comes from?",
+      "system_answer": "London.",
+      "gold_answer": "Duluth",
+      "score": 0.0
+    },
+    {
+      "question": "What is the language of the work that was created by the individual who created Rand al'Thor?",
+      "system_answer": "The work—*The Wheel of Time* series—was written in **English**.",
+      "gold_answer": "Persian",
+      "score": 0.0
+    },
+    {
+      "question": "What is the work location of the person who founded the religion Karen Armstrong belongs to?",
+      "system_answer": "The religion that Karen Armstrong is associated with is Christianity, whose founder is **Jesus Christ**.  \nJesus Christ’s ministry was carried out mainly in **Galilee** (and later in Jerusalem).",
+      "gold_answer": "Edinburgh",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the child category of \"Categories\" created by the author?",
+      "system_answer": "The child category is called **“Category:Categories.”**",
+      "gold_answer": "George Alexander Kohut",
+      "score": 0.0
+    },
+    {
+      "question": "Where is the country of origin of FC Vorskla Poltava?",
+      "system_answer": "FC Vorskla Poltava hails from **Ukraine**.",
+      "gold_answer": "Soviet Union",
+      "score": 0.0
+    },
+    {
+      "question": "Which city is the capital of the country where the CEO of the developer of SteamOS holds a citizenship?",
+      "system_answer": "Washington, D.C.",
+      "gold_answer": "Harare",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the person who is the chief executive officer of the developer of F-22 Raptor?",
+      "system_answer": "The chief executive officer of Lockheed Martin, the developer of the F‑22 Raptor, is **James Taiclet**.",
+      "gold_answer": "Adel al-Jubeir",
+      "score": 0.0
+    },
+    {
+      "question": "Who holds the position of chairperson in the organization where Joseph Story was employed?",
+      "system_answer": "Joseph Story served on the **Supreme Court of the United States**.  \nThe Supreme Court’s chairperson is its **Chief Justice**, who is currently **John Roberts**.",
+      "gold_answer": "Peter Diamandis",
+      "score": 0.0
+    },
+    {
+      "question": "What city serves as the capital of the country where the performer who is the spouse of Derek Shepherd holds citizenship?",
+      "system_answer": "I’m not sure which author or “Categories” you’re referring to. Could you let me know the author’s name (or the specific work/website) so I can find the correct child category?",
+      "gold_answer": "Harrisville",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the city that serves as the capital of the country to which Sable belongs?",
+      "system_answer": "Washington, D.C.",
+      "gold_answer": "Prague",
+      "score": 0.0
+    },
+    {
+      "question": "In which city serves as the capital of the country of citizenship of Country Joe McDonald?",
+      "system_answer": "Washington, D.C.",
+      "gold_answer": "Rajanpur",
+      "score": 0.0
+    },
+    {
+      "question": "What city or town is the headquarters of the educational institution, where the performer of the album \"Blood on the Tracks\" received education, located in?",
+      "system_answer": "Minneapolis.",
+      "gold_answer": "New York City",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the chief executive of the country where the sport associated with Bo Ryan was first developed?",
+      "system_answer": "Joe Biden.",
+      "gold_answer": "Giuseppe Conte",
+      "score": 0.0
+    },
+    {
+      "question": "What is the continent of origin of the chief executive officer for the developer of Windows Phone?",
+      "system_answer": "Asia.",
+      "gold_answer": "North America",
+      "score": 0.0
+    },
+    {
+      "question": "Which continent does the country where the sport played by the Slovakia national football team originated come from?",
+      "system_answer": "Europe.",
+      "gold_answer": "South America",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion was the partner of Ferdinand Marcos associated with?",
+      "system_answer": "Imelda Marcos, Ferdinand Marcos’s wife, is a Catholic.",
+      "gold_answer": "atheism",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the significant creation associated with the creator of Vito Corleone?",
+      "system_answer": "The creator of Vito Corleone is Mario Puzo, and his most significant creation is the novel **“The Godfather.”**",
+      "gold_answer": "The Fairly OddParents",
+      "score": 0.0
+    },
+    {
+      "question": "To which country does the performer who goes by the name Rocket Man hold citizenship?",
+      "system_answer": "The performer known as “Rocket Man” is **Elton John**, and he holds citizenship of the **United Kingdom**.",
+      "gold_answer": "Japan",
+      "score": 0.0
+    },
+    {
+      "question": "Which language does the performer of Hermione Granger know how to speak, write or sign?",
+      "system_answer": "Emma Watson, the actress who plays Hermione Granger, is fluent in **English** and also speaks **French** (she can read, write, and converse in both languages).",
+      "gold_answer": "German",
+      "score": 0.0
+    },
+    {
+      "question": "From which country does the musical genre Michael Mantler is associated with come from?",
+      "system_answer": "Michael Mantler is best known for his work in **jazz**—specifically avant‑garde and free‑jazz styles.  \nJazz originated in the **United States**.",
+      "gold_answer": "Canada",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is associated with the position played by Robert Parish on a team or his specialty?",
+      "system_answer": "Robert Parish is best known as a **center** in **basketball**.",
+      "gold_answer": "Muay Thai",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the person who founded the organization that Benjamin Mazar was part of?",
+      "system_answer": "I’m sorry, but I don’t have enough information to answer that.",
+      "gold_answer": "Philippe, Duke of Orléans",
+      "score": 0.0
+    },
+    {
+      "question": "Which language is recognized as the official language of the place where Gennady Rozhdestvensky took his last breath?",
+      "system_answer": "The official language of the place where Gennady Rozhdestvensky passed away is **Russian**.",
+      "gold_answer": "German",
+      "score": 0.0
+    },
+    {
+      "question": "What is the birthplace of the author of \"The Marriage of Figaro\"?",
+      "system_answer": "Pierre‑Augustin Caron de Beaumarchais, the author of *The Marriage of Figaro*, was born in **Paris, France**.",
+      "gold_answer": "Leeds",
+      "score": 0.0
+    },
+    {
+      "question": "In which country was Darryl Strawberry's sport developed, and who is the head of government in that nation?",
+      "system_answer": "Darryl Strawberry’s sport—**baseball**—was developed in the **United States of America**.  \nThe head of government in the United States is the **President**; as of now, that position is held by **Joe Biden**.",
+      "gold_answer": "Shinzō Abe",
+      "score": 0.0
+    },
+    {
+      "question": "Which city serves as the capital of the country where the sport that Mike D'Antoni specialized in hails from?",
+      "system_answer": "Washington, D.C.",
+      "gold_answer": "London",
+      "score": 0.0
+    },
+    {
+      "question": "At what location did the author of \"Sketches by Boz\" breathe his last?",
+      "system_answer": "Charles Dickens, the author of *Sketches by Boz*, passed away at his home in **London, England**—specifically at 48 Doughty Street, where he died on 9 June 1870.",
+      "gold_answer": "London",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital city of the country from which the sport of Daniele De Rossi originated?",
+      "system_answer": "London.",
+      "gold_answer": "Tokyo",
+      "score": 0.0
+    },
+    {
+      "question": "To which continent is the country of citizenship of Ferdinand von Richthofen located?",
+      "system_answer": "Europe.",
+      "gold_answer": "Asia",
+      "score": 0.0
+    },
+    {
+      "question": "In which city is the capital of the country where the sport played by Galwegians RFC was originated?",
+      "system_answer": "London.",
+      "gold_answer": "Grosseto",
+      "score": 0.0
+    },
+    {
+      "question": "What languages are spoken, written or signed by the founder of Shingon Buddhism?",
+      "system_answer": "**Kūkai (Kōbō‑Daishi)**, the founder of Shingon Buddhism, was a Japanese monk and scholar.  \nHe wrote and communicated in the following languages:\n\n| Language | Context |\n|----------|---------|\n| **Japanese** | His own poetry, letters, and many of his commentaries were written in the vernacular Japanese, using kana and kanji. |\n| **Classical Chinese (Kanbun)** | As was customary for Japanese scholars of his era, he composed many works in Classical Chinese, the lingua franca of East‑Asian Buddhist scholarship. |\n| **Sanskrit** | For the study and translation of Buddhist sutras, he used Sanskrit, the liturgical language of the original texts. |\n\nThus, the founder of Shingon Buddhism was fluent in **Japanese, Classical Chinese, and Sanskrit**.",
+      "gold_answer": "Latin",
+      "score": 0.0
+    },
+    {
+      "question": "What is the place of death of the partner of the head of government of the Council of People's Commissars?",
+      "system_answer": "Moscow.",
+      "gold_answer": "Mansourah, Algeria",
+      "score": 0.0
+    },
+    {
+      "question": "What is the professional role of the chairperson of the Congolese Party of Labour?",
+      "system_answer": "The chairperson of the Congolese Party of Labour holds the **professional role of Party Chairperson (Party Leader)**.",
+      "gold_answer": "journalist",
+      "score": 0.0
+    },
+    {
+      "question": "Where did the religion associated with the Bagratuni Dynasty come into existence?",
+      "system_answer": "The Bagratuni (Bagratid) dynasty was an Armenian royal house, and the religion most closely tied to them is the **Armenian Apostolic Church**.  \nThe Armenian Apostolic Church originated in **Armenia**.",
+      "gold_answer": "Taipei",
+      "score": 0.0
+    },
+    {
+      "question": "What country does the genre of music associated with the spouse of Roy Rogers originate from?",
+      "system_answer": "The spouse of Roy Rogers is Dale Evans, who was a country‑western singer.  \nCountry music, the genre associated with her, originated in the **United States**.",
+      "gold_answer": "Russian Empire",
+      "score": 0.0
+    },
+    {
+      "question": "In which city is the capital located of the country where the director/producer of \"666 Park Avenue\" is a citizen?",
+      "system_answer": "Washington, D.C.",
+      "gold_answer": "Beaumont",
+      "score": 0.0
+    },
+    {
+      "question": "In what place was the organization that Ron Dennis works for, first established?",
+      "system_answer": "Ron Dennis is best known for his long‑time role with **McLaren Group** (formerly McLaren Racing).  \nMcLaren was originally founded by Bruce McLaren in **New Zealand** in 1963.",
+      "gold_answer": "Sweden",
+      "score": 0.0
+    },
+    {
+      "question": "On which continent was Le Petit Parisien originally made?",
+      "system_answer": "Europe.",
+      "gold_answer": "Africa",
+      "score": 0.0
+    },
+    {
+      "question": "Which city serves as the capital city of the country where the sport played by the partner of Victoria Beckham originated?",
+      "system_answer": "London.",
+      "gold_answer": "Oderzo",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the political entity that was established from the successor of the Sasanian Empire?",
+      "system_answer": "The political entity that emerged as the successor to the Sasanian Empire is the **Rashidun Caliphate**.",
+      "gold_answer": "Charles Frederick, Duke of Holstein-Gottorp",
+      "score": 0.0
+    },
+    {
+      "question": "In which city is the capital of the country that FC Irtysh Omsk originates from located?",
+      "system_answer": "Moscow.",
+      "gold_answer": "Duluth",
+      "score": 0.0
+    },
+    {
+      "question": "What is the place of death of the performer of the song collection \"Back to Black\"?",
+      "system_answer": "Amy Winehouse died in **London, England**.",
+      "gold_answer": "Berlin",
+      "score": 0.0
+    },
+    {
+      "question": "What was the sport that Hines Ward competed in professionally?",
+      "system_answer": "Hines Ward competed professionally in **American football** (as a wide receiver in the NFL).",
+      "gold_answer": "field hockey",
+      "score": 0.0
+    },
+    {
+      "question": "In which position did the person related to the original broadcaster of \"The Brady Bunch\" serve?",
+      "system_answer": "I’m sorry, but I don’t have enough information to answer that.",
+      "gold_answer": "Ernst Heinkel",
+      "score": 0.0
+    },
+    {
+      "question": "In what location did the person who founded Chanel pass away?",
+      "system_answer": "Coco Chanel (Gabrielle Bonheur Chanel) died at her home in **Paris, France**.",
+      "gold_answer": "Montmélian",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of the author of \"Starship Troopers\"?",
+      "system_answer": "The author of *Starship Troopers* is Robert A. Heinlein, who was a citizen of the **United States of America**.",
+      "gold_answer": "United Kingdom",
+      "score": 0.0
+    },
+    {
+      "question": "Which individual holds the position of director/manager at the company that employs Dave Filoni?",
+      "system_answer": "The top executive (director/manager) of the company that employs Dave Filoni—Lucasfilm—is **Kathleen Kennedy**, who serves as the company’s President and CEO.",
+      "gold_answer": "Narendra Modi",
+      "score": 0.0
+    },
+    {
+      "question": "In what language is the notable work associated with Hugh Hefner written?",
+      "system_answer": "The notable work associated with Hugh Hefner—*Playboy* magazine—is written in **English**.",
+      "gold_answer": "German",
+      "score": 0.0
+    },
+    {
+      "question": "Which city serves as the capital of the country that gave rise to the sport played by Rogério Ceni?",
+      "system_answer": "London.",
+      "gold_answer": "New Delhi",
+      "score": 0.0
+    },
+    {
+      "question": "From which educational institution did the author of 'Sidereus Nuncius' receive their education?",
+      "system_answer": "**Galileo Galilei** received his formal education at the **University of Pisa** (Faculty of Law).",
+      "gold_answer": "University of Southern California",
+      "score": 0.0
+    },
+    {
+      "question": "What is the place of death of the author of Endymion?",
+      "system_answer": "John Keats died in **Rome, Italy**.",
+      "gold_answer": "Leipzig",
+      "score": 0.0
+    },
+    {
+      "question": "In which city can the headquarters of the educational institution attended by the spouse of Sophia Hawthorne be found?",
+      "system_answer": "I’m sorry, but I don’t have enough information to answer that.",
+      "gold_answer": "Botevgrad",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the chief of state of the country where Leo Stein holds citizenship?",
+      "system_answer": "Joe Biden.",
+      "gold_answer": "Connachta",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the chief of state of the country that Hal Needham belongs to?",
+      "system_answer": "The chief of state of the United States (Hal Needham’s country) is **President Joe Biden**.",
+      "gold_answer": "Connachta",
+      "score": 0.0
+    },
+    {
+      "question": "Who serves as the head of government in the location where the AP1000 was made by its manufacturer?",
+      "system_answer": "The AP1000 was developed and built by Westinghouse Electric Company, whose headquarters are in **Pittsburgh, Pennsylvania**.  \nThe head of government for Pittsburgh is the **mayor**, and the current mayor is **Ed Gainey**.",
+      "gold_answer": "Jonathan Rothschild",
+      "score": 0.0
+    },
+    {
+      "question": "In what place did the author of \"A Wizard of Earthsea\" breathe his last?",
+      "system_answer": "Ursula K. Le Guin passed away at her home in **New York City, United States**.",
+      "gold_answer": "Wolverhampton",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion does the partner of the performer of \"Aladdin Sane\" follow?",
+      "system_answer": "The partner of David Bowie (the performer of “Aladdin Sane”) is **Angie Bowie**, and she follows **Christianity**.",
+      "gold_answer": "interdenominational organization",
+      "score": 0.0
+    },
+    {
+      "question": "At which location does the Prime Minister of Sweden spend most of their work hours?",
+      "system_answer": "The Prime Minister of Sweden spends most of their work hours in the **Riksdag building in Stockholm**—specifically at the Prime Minister’s Office (Statsministerkontoret) located within the Parliament complex.",
+      "gold_answer": "Washington, D.C.",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital city of the country whose citizenship is held by the CEO of the developer of AppleScript?",
+      "system_answer": "Washington, D.C.",
+      "gold_answer": "Rome",
+      "score": 0.0
+    },
+    {
+      "question": "Which continent is the country of origin for Gala RFC located in?",
+      "system_answer": "Europe.",
+      "gold_answer": "Africa",
+      "score": 0.0
+    },
+    {
+      "question": "What sport is associated with the position played by Irving Fryar on a team/specialty?",
+      "system_answer": "Irving Fryar was a **wide receiver in American football**.",
+      "gold_answer": "rugby",
+      "score": 0.0
+    },
+    {
+      "question": "In which continent is the country to which Cédric Klapisch holds citizenship located?",
+      "system_answer": "Europe.",
+      "gold_answer": "Antarctica",
+      "score": 0.0
+    },
+    {
+      "question": "What is the location of the headquarters of the company where Leonte Răutu worked?",
+      "system_answer": "The headquarters of the institution where Leonte Răutu served (the Romanian Ministry of Finance) is in **Bucharest, Romania**.",
+      "gold_answer": "Ankara",
+      "score": 0.0
+    },
+    {
+      "question": "To whom does the head of government of the country of origin of Club Nouveau report to?",
+      "system_answer": "Club Nouveau is an American group, so its country of origin is the **United States**.  \nIn the United States the head of government is the **President** (currently Joe Biden).  \nBecause the U.S. is a republic, the President is elected by and ultimately accountable to the **people (the electorate)**. Thus, the head of government reports to the **people**.",
+      "gold_answer": "Elizabeth II",
+      "score": 0.0
+    },
+    {
+      "question": "Which individual is responsible for founding the organization that has its headquarters in the same location where Bill Frisell received his education?",
+      "system_answer": "I’m sorry, but I don’t have enough information to answer that.",
+      "gold_answer": "William Penn",
+      "score": 0.0
+    },
+    {
+      "question": "In which city of the country where Charles Messier held citizenship is the capital located?",
+      "system_answer": "Paris.",
+      "gold_answer": "Tehran",
+      "score": 0.0
+    },
+    {
+      "question": "Which country does the sportsperson who specializes in Lisa Leslie's position originally come from?",
+      "system_answer": "United States.",
+      "gold_answer": "Philippines",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the capital city of the country where the founder of the manufacturer of Ford F-Series hailed from?",
+      "system_answer": "Washington, D.C.",
+      "gold_answer": "New Delhi",
+      "score": 0.0
+    },
+    {
+      "question": "Which city serves as the capital of the country where the sport that Sandy Alderson is associated with originated?",
+      "system_answer": "Washington, D.C.",
+      "gold_answer": "Duluth",
+      "score": 0.0
+    },
+    {
+      "question": "Which language is the official language of the country whose citizenship is held by the director/manager of \"Past Masters\"?",
+      "system_answer": "I’m sorry, but I don’t have enough information to answer that.",
+      "gold_answer": "Arabic",
+      "score": 0.0
+    },
+    {
+      "question": "Which nation is the birthplace of the sport that features the split-finger fastball?",
+      "system_answer": "The split‑finger fastball is a pitch used in **baseball**, and baseball’s modern form originated in the **United States**.",
+      "gold_answer": "Australia",
+      "score": 0.0
+    },
+    {
+      "question": "In which languages can the author of \"The Witcher\" write, speak, or sign?",
+      "system_answer": "**Andrzej Sapkowski** – the author of *The Witcher* – is fluent in:\n\n| Language | What he can do |\n|----------|----------------|\n| **Polish** | Writes his novels, gives interviews, and signs documents in Polish. |\n| **English** | Speaks English (he has given interviews and spoken at events in English). |\n\n(There is no public evidence that he writes or signs in any other language.)",
+      "gold_answer": "French",
+      "score": 0.0
+    },
+    {
+      "question": "In which city is the capital of the country, where the book \"The Birth of Tragedy\" first came from, located?",
+      "system_answer": "Berlin.",
+      "gold_answer": "Duluth",
+      "score": 0.0
+    },
+    {
+      "question": "In what language are communications in the headquarters location of the manufacturer of Il-2 Shturmovik conducted officially?",
+      "system_answer": "Russian.",
+      "gold_answer": "German",
+      "score": 0.0
+    },
+    {
+      "question": "Which city serves as the capital of the country where the spouse of the performer of \"Viva Las Vegas\" is a citizen?",
+      "system_answer": "Washington, D.C.",
+      "gold_answer": "Harare",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of origin of the sport that the New Firm is related to?",
+      "system_answer": "England.",
+      "gold_answer": "Japan",
+      "score": 0.0
+    },
+    {
+      "question": "Which religious leader is responsible for founding the religion to which Sarit Thanarat belongs?",
+      "system_answer": "Sarit Thanarat was a follower of **Buddhism**.  \nThe religion was founded by **Siddhartha Gautama**, known as the **Buddha**.",
+      "gold_answer": "Mekere Morauta",
+      "score": 0.0
+    },
+    {
+      "question": "At which place did the creator of \"Lady Windermere's Fan\" breathe their last?",
+      "system_answer": "Oscar Wilde died at his home in **Paris, France**.",
+      "gold_answer": "Guangzhou",
+      "score": 0.0
+    },
+    {
+      "question": "what kind of music does \"Born in the U.S.A.\" fall under according to its performer?",
+      "system_answer": "“Born in the U.S.A.” is performed by Bruce Springsteen, who classifies it as **rock**—more specifically, a **heartland‑rock** (classic rock) track.",
+      "gold_answer": "Australian hip hop",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital city of the country where the founder of the manufacturer of Ford Transit Connect holds citizenship?",
+      "system_answer": "Washington, D.C.",
+      "gold_answer": "Paris",
+      "score": 0.0
+    },
+    {
+      "question": "In what language are the official documents of the country where Alta IF originates written?",
+      "system_answer": "Official documents in Norway are written in **Norwegian** (primarily in the Bokmål written standard).",
+      "gold_answer": "Swedish",
+      "score": 0.0
+    }
+  ]
+}

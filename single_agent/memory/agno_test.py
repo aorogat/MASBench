@@ -52,12 +52,6 @@ os.environ["OPENAI_API_KEY"] = API_KEY
 def build_agno_agent(db_path: str):
     """Create an Agno agent with automatic memory enabled."""
     db = SqliteDb(db_file=db_path)
-    # agent = Agent(
-    #     db=db,
-    #     model=OpenAIChat(id=agno_llm_model),
-    #     enable_user_memories=True,       # automatic memory management
-    #     add_memories_to_context=True,    # include past memories in context
-    # )
 
     model = OpenAIChat(
         id=agno_llm_model,

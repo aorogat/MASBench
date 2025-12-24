@@ -5,97 +5,43 @@ The .tex file is saved in the SAME directory as the JSON input.
 
 Usage:
     python single_agent/framework_overhead/latex_plot_framework_overhead.py \
-        --input results/framework_overhead/framework_overhead_50_TRIALS.json \
-        [--order DL,LG,CR,OA,CO]
+        --input results/framework_overhead/framework_overhead_50_TRIALS.json
 """
 
 import json
 import argparse
 import os
+import math
 
 
 # ------------------------------------------------------------
-# Preferred display order (soft hint for stable visual ordering)
-# ------------------------------------------------------------
-PREFERRED_ORDER = ["DL", "LG", "CR", "OA", "CO"]
-
-
-# ------------------------------------------------------------
-# Auto-generate abbreviation from framework name
-# ------------------------------------------------------------
-def generate_abbreviation(name):
-    """
-    Generate a stable abbreviation from a framework name.
-
-    Priority:
-    1) Capital letters (OpenAgents -> OA, CrewAI -> CR)
-    2) Initials of words (Multi Agent Flow -> MAF)
-    3) First 2 letters fallback
-    """
-    # Normalize
-    clean = name.replace("-", " ").replace("_", " ").strip()
-    words = clean.split()
-
-    # Case 1: CamelCase / caps inside word
-    caps = [c for c in name if c.isupper()]
-    if len(caps) >= 2:
-        return "".join(caps[:2])
-
-    # Case 2: Multi-word name
-    if len(words) > 1:
-        return "".join(w[0].upper() for w in words if w)
-
-    # Case 3: Fallback
-    return name[:2].upper()
-
-
-# ------------------------------------------------------------
-# Load & normalize results with automatic abbreviations
+# Load results
 # ------------------------------------------------------------
 def load_results(path):
     with open(path, "r", encoding="utf-8") as f:
         raw = json.load(f)
 
     data = {}
-    used_abbrevs = set()
-    
     for r in raw:
-        full_name = r["name"]
-        abbrev = generate_abbreviation(full_name)
-        
-        # Enforce uniqueness
-        base = abbrev
-        i = 2
-        while abbrev in used_abbrevs:
-            abbrev = f"{base}{i}"
-            i += 1
-        
-        used_abbrevs.add(abbrev)
-        
-        # Attach metadata
-        r["_abbr"] = abbrev
-        r["_full_name"] = full_name
-        
-        data[abbrev] = r
-    
+        name = r["name"]
+        r["_full_name"] = name
+        data[name] = r
+
     return data
 
 
 # ------------------------------------------------------------
-# LaTeX generation
+# LaTeX generation (SORTED BY p50 LATENCY)
 # ------------------------------------------------------------
-def generate_latex(data, custom_order=None):
-    # Dynamically detect frameworks from data
-    if custom_order:
-        # Use custom order if provided
-        frameworks = [f for f in custom_order if f in data]
-    else:
-        # Use preferred order as soft hint, filtering to only those in data
-        frameworks = [f for f in PREFERRED_ORDER if f in data]
-        # Add any new frameworks not in preferred order
-        frameworks += [f for f in data if f not in frameworks]
+def generate_latex(data):
+    # --------------------------------------------------------
+    # Sort frameworks by FIRST FIGURE: p50 latency (small → big)
+    # --------------------------------------------------------
+    frameworks = sorted(
+        data.keys(),
+        key=lambda f: data[f]["p50_latency"]
+    )
 
-    # Generate symbolic x coords for PGFPlots
     xcoords = ",".join(frameworks)
 
     # ---- Metrics ----
@@ -107,15 +53,20 @@ def generate_latex(data, custom_order=None):
     out_max = {f: data[f]["output_chars_max"] for f in frameworks}
     out_total = {f: data[f]["output_chars_total"] for f in frameworks}
 
-    coords = lambda d: " ".join(f"({k},{v:.3f})" for k, v in d.items())
-
-    # Generate caption definitions dynamically from actual data
-    caption_defs = ", ".join(
-        rf"\textbf{{{k}}} = {data[k]['_full_name']}"
-        for k in frameworks
+    # ---- Dynamic ymax (+15%) ----
+    ymax_latency = 1.15 * max(max(p50.values()), max(p95.values()))
+    ymax_throughput = 1.15 * max(throughput.values())
+    ymax_mean_out = 1.15 * max(out_mean.values())
+    ymax_out_summary = 1.15 * max(
+        max(out_min.values()),
+        max(out_max.values()),
+        max(out_total.values())
     )
 
-    # Common axis styling
+    coords = lambda d: " ".join(f"({k},{v:.3f})" for k, v in d.items())
+
+    caption_defs = ", ".join(rf"\textbf{{{k}}}" for k in frameworks)
+
     axis_common = r"""tick label style={font=\scriptsize},
     ylabel style={font=\scriptsize},
     xlabel style={font=\scriptsize},
@@ -143,11 +94,13 @@ def generate_latex(data, custom_order=None):
 \centering
 \begin{{tikzpicture}}
 \begin{{axis}}[
-    width=1.2\linewidth,
+    width=1.25\linewidth,
     height=4cm,
     ymin=0,
+    ymax={ymax_latency:.3f},
     symbolic x coords={{{xcoords}}},
     xtick=data,
+    xticklabel style={{rotate=30, anchor=east, font=\scriptsize}},
     ylabel={{Latency (s)}},
     ylabel style={{at={{(axis description cs:1.08,0.2)}}, anchor=west}},
     legend style={{at={{(0.02,0.98)}}, anchor=north west, font=\scriptsize}},
@@ -167,11 +120,13 @@ def generate_latex(data, custom_order=None):
 \centering
 \begin{{tikzpicture}}
 \begin{{axis}}[
-    width=1.1\linewidth,
+    width=1.15\linewidth,
     height=4cm,
     ymin=0,
+    ymax={ymax_throughput:.3f},
     symbolic x coords={{{xcoords}}},
     xtick=data,
+    xticklabel style={{rotate=30, anchor=east, font=\scriptsize}},
     ylabel={{Throughput (req/s)}},
     ylabel style={{at={{(axis description cs:1.08,-0.05)}}, anchor=west}},
     {axis_common}
@@ -189,12 +144,15 @@ def generate_latex(data, custom_order=None):
 \centering
 \begin{{tikzpicture}}
 \begin{{axis}}[
-    width=1.0\linewidth,
+    width=1.05\linewidth,
     height=4cm,
     ymode=log,
     log basis y=10,
+    ymin=1,
+    ymax={ymax_mean_out:.3f},
     symbolic x coords={{{xcoords}}},
     xtick=data,
+    xticklabel style={{rotate=30, anchor=east, font=\scriptsize}},
     ylabel={{Output size (chars)}},
     ylabel style={{at={{(axis description cs:1.08,0.2)}}, anchor=west}},
     {axis_common}
@@ -211,12 +169,15 @@ def generate_latex(data, custom_order=None):
 \centering
 \begin{{tikzpicture}}
 \begin{{axis}}[
-    width=1.2\linewidth,
+    width=1.25\linewidth,
     height=4cm,
     ymode=log,
     log basis y=10,
+    ymin=1,
+    ymax={ymax_out_summary:.3f},
     symbolic x coords={{{xcoords}}},
     xtick=data,
+    xticklabel style={{rotate=30, anchor=east, font=\scriptsize}},
     ylabel={{Output size (chars)}},
     ylabel style={{at={{(axis description cs:1.08,0.2)}}, anchor=west}},
     legend style={{at={{(0.02,0.98)}}, anchor=north west, font=\scriptsize}},
@@ -232,6 +193,7 @@ def generate_latex(data, custom_order=None):
 \end{{subfigure}}
 
 \caption{{Framework overhead results for 50 trials of the trivial task (``What is 2+2?''). 
+Frameworks are ordered by increasing p50 latency.
 {caption_defs}.}}
 \label{{fig:framework-overhead}}
 \end{{figure}}
@@ -245,36 +207,20 @@ def generate_latex(data, custom_order=None):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", required=True, help="JSON results file")
-    parser.add_argument("--order", help="Custom framework order (comma-separated, e.g., DL,LG,CR)")
     args = parser.parse_args()
 
     json_path = args.input
     out_dir = os.path.dirname(json_path)
     out_tex = os.path.join(out_dir, "framework_overhead.tex")
 
-    # Parse custom order if provided
-    custom_order = None
-    if args.order:
-        custom_order = [f.strip() for f in args.order.split(",")]
-
     data = load_results(json_path)
-    
-    # Validation: ensure consistency
-    if len(data) != len(set(data.keys())):
-        raise ValueError("Duplicate abbreviations detected!")
-    
-    latex_code = generate_latex(data, custom_order)
+    latex_code = generate_latex(data)
 
     with open(out_tex, "w", encoding="utf-8") as f:
         f.write(latex_code)
 
     print(f"📄 LaTeX figure saved to: {out_tex}")
-    
-    # Show detected frameworks and abbreviations
-    frameworks = custom_order if custom_order else [f for f in PREFERRED_ORDER if f in data]
-    frameworks += [f for f in data if f not in frameworks]
-    
-    print(f"📊 Frameworks detected: {len(frameworks)}")
-    for abbrev in frameworks:
-        full_name = data[abbrev]['_full_name']
-        print(f"   {abbrev:4s} = {full_name}")
+
+    print("📊 Framework order (sorted by p50 latency):")
+    for f in sorted(data.keys(), key=lambda x: data[x]["p50_latency"]):
+        print(f"  {f}")

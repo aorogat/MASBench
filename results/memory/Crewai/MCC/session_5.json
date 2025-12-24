@@ -1,0 +1,610 @@
+{
+  "system": "Crewai",
+  "split": "Test_Time_Learning",
+  "session_id": "5",
+  "subtask": "MCC",
+  "category": "TTL",
+  "runtime_sec": 1379.76,
+  "questions": [
+    {
+      "question": "What is the population of Venezuela ?",
+      "system_answer": "The population of Venezuela is approximately 28 million people.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What does target heart rate mean ?",
+      "system_answer": "Target heart rate is the specific range of heartbeats per minute that an individual aims to maintain during physical activity. It is usually expressed as a percentage (often 50–85%) of a person's maximum heart rate, calculated as 220 minus age. This range helps guide exercise intensity to achieve fitness goals such as cardiovascular conditioning, fat burning, or endurance training.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What currency does Luxembourg use ?",
+      "system_answer": "Luxembourg uses the Euro (€).",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "How long did Rip Van Winkle sleep ?",
+      "system_answer": "He slept for 20 years.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Material called linen is made from what plant ?",
+      "system_answer": "Linen is made from the flax plant.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What is phenylalanine ?",
+      "system_answer": "Phenylalanine is an essential aromatic amino acid (C9H11NO2) that humans must obtain from the diet. It is a building block of proteins and is a precursor to the neurotransmitters dopamine, norepinephrine, and epinephrine. In the body, phenylalanine is converted to tyrosine by the enzyme phenylalanine hydroxylase; a deficiency in this enzyme causes phenylketonuria (PKU). Phenylalanine is also used in the synthesis of the drug L-DOPA for Parkinson’s disease treatment.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is a group of turkeys called ?",
+      "system_answer": "A group of turkeys is called a **gobble** or a **rafter**.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What are enzymes ?",
+      "system_answer": "Enzymes are biological catalysts—typically proteins or RNA molecules—that accelerate chemical reactions in living organisms by lowering the activation energy required for the reaction to proceed. They bind to specific substrates, convert them into products, and are not consumed in the process, allowing them to act repeatedly. Enzymes are highly specific, often regulated, and essential for processes such as metabolism, DNA replication, and cellular signaling.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "Why is the sun yellow ?",
+      "system_answer": "The Sun emits nearly white light, but the Earth's atmosphere scatters shorter‑wavelength (blue) light more efficiently than longer wavelengths. This Rayleigh scattering removes much of the blue component from the sunlight that reaches the surface, leaving a light that appears yellowish to the human eye. Additionally, the Sun’s surface temperature (~5,800 K) produces a spectral peak in the yellow‑green part of the spectrum, reinforcing the yellow appearance.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What state is the geographic center of the lower 48 states ?",
+      "system_answer": "Kansas.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is foot and mouth disease ?",
+      "system_answer": "Foot-and-mouth disease (FMD) is a highly contagious viral disease that affects cloven‑hooved animals such as cattle, sheep, goats, and pigs. It is caused by an aphthovirus of the Picornaviridae family, with seven serotypes (O, A, C, SAT1, SAT2, SAT3, and Asia1). The disease is characterized by fever, vesicular lesions on the mouth, feet, teats, and hooves, and can lead to lameness, decreased milk production, and reproductive losses. FMD spreads rapidly through direct contact, aerosols, contaminated feed, and fomites. Control measures include vaccination, movement restrictions, culling of infected and exposed animals, and strict biosecurity protocols. The disease has significant economic impacts on livestock production and trade, and outbreaks are monitored and reported to international bodies such as the World Organisation for Animal Health (OIE).",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What is sonar ?",
+      "system_answer": "Sonar (Sound Navigation and Ranging) is a technique that uses sound waves to detect, locate, and map objects or features, typically underwater, by emitting acoustic pulses and analyzing the echoes that return.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "When was Thomas Jefferson born ?",
+      "system_answer": "Thomas Jefferson was born on April 13, 1743.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is the Ohio state bird ?",
+      "system_answer": "The Ohio state bird is the Northern Cardinal.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What are the colors of the German flag ?",
+      "system_answer": "The German flag consists of three horizontal stripes: black on top, red in the middle, and gold (yellow) on the bottom.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "Who won Ms. American in 1989 ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "Where on the body is a mortarboard worn ?",
+      "system_answer": "A mortarboard is worn on the head, resting on top of the head.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is the width of a football field ?",
+      "system_answer": "The width of a standard American football field is 160 feet (53 ⅓ yards).",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Who is the Prime Minister of Canada ?",
+      "system_answer": "Justin Trudeau.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the conversion rate between dollars and pounds ?",
+      "system_answer": "The U.S. dollar to British pound exchange rate fluctuates daily. As of recent data, 1 USD is roughly equivalent to 0.75 GBP, but you should check a reliable financial source for the current rate.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is fibromyalgia ?",
+      "system_answer": "Fibromyalgia is a chronic disorder characterized by widespread musculoskeletal pain, fatigue, sleep disturbances, cognitive difficulties (often called “fibro fog”), and tender points on the body. It is considered a central sensitization syndrome, meaning the nervous system amplifies pain signals, and its exact cause remains unclear, though genetics, stress, and injury are thought to play roles.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What are the spots on dominoes called ?",
+      "system_answer": "The spots on dominoes are called **pips**.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What city is also known as `` The Gateway to the West '' ?",
+      "system_answer": "St. Louis, Missouri.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "Who discovered x-rays ?",
+      "system_answer": "Wilhelm Conrad Röntgen discovered X-rays.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "How much does water weigh ?",
+      "system_answer": "Water has a density of about 1 gram per cubic centimeter (1 kg per liter) at standard temperature and pressure, so 1 liter of water weighs roughly 1 kilogram.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Mercury , what year was it discovered ?",
+      "system_answer": "Mercury has been known since antiquity; the earliest documented discovery dates to around 400 BC by the ancient Greeks.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Where do apple snails live ?",
+      "system_answer": "Apple snails live in freshwater habitats such as ponds, lakes, slow‑moving streams, rice paddies, and other warm, tropical or subtropical bodies of water. They prefer calm, vegetated, and often slightly brackish or alkaline waters where they can burrow into mud or leaf litter.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is the rainiest place on Earth ?",
+      "system_answer": "Mawsynram, Meghalaya, India.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "Who invented the hula hoop ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the longest suspension bridge in the U.S. ?",
+      "system_answer": "The Verrazzano‑Narrows Bridge in New York is the longest suspension bridge in the United States.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is plastic made of ?",
+      "system_answer": "Plastic is made from long-chain polymers—typically derived from petroleum or natural gas—such as polyethylene, polypropylene, PVC, PET, and polystyrene, which are composed of repeating hydrocarbon units.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "How far is it from Denver to Aspen ?",
+      "system_answer": "Approximately 200 miles (about a 3½‑hour drive).",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is the criterion for being legally blind ?",
+      "system_answer": "Legally blind is defined as having a visual acuity of 20/200 or worse in the better eye with best possible correction, or a visual field of 20 degrees or less (i.e., a tunnel vision of 20 degrees or less).",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "Who invented the instant Polaroid camera ?",
+      "system_answer": "Edwin H. Land invented the instant Polaroid camera.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the distance in miles from the earth to the sun ?",
+      "system_answer": "The average distance from the Earth to the Sun is about 93 million miles (approximately 150 million kilometers).",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "In which state would you find the Catskill Mountains ?",
+      "system_answer": "New York",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is a prism ?",
+      "system_answer": "A prism is a transparent optical element with flat, polished surfaces that refract light. It typically has at least two non-parallel faces, and when light passes through it, the prism bends the light and can separate it into its constituent spectral colors (dispersion).",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "How fast is sound ?",
+      "system_answer": "The speed of sound in dry air at 20 °C (68 °F) and standard atmospheric pressure is approximately 343 m s⁻¹ (about 1,125 ft s⁻¹). In water at 20 °C it travels around 1,482 m s⁻¹ (about 4,860 ft s⁻¹).",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What does cc in engines mean ?",
+      "system_answer": "In automotive terms, “cc” stands for cubic centimeters, the unit used to measure an engine’s displacement (the total volume of all its cylinders).",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is an ulcer ?",
+      "system_answer": "An ulcer is a sore that develops on the lining of an organ—most commonly the stomach (gastric ulcer) or the upper part of the small intestine (duodenal ulcer)—caused by erosion of tissue due to factors such as excess stomach acid, infection with Helicobacter pylori, or prolonged use of nonsteroidal anti‑inflammatory drugs.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is compounded interest ?",
+      "system_answer": "Compounded interest is the interest calculated on the initial principal amount as well as on the interest that has previously accumulated. In other words, each period’s interest is added to the principal, and the next period’s interest is calculated on this larger amount. The formula for compound interest is A = P(1 + r/n)^(nt), where A is the final amount, P is the principal, r is the annual interest rate, n is the number of compounding periods per year, and t is the number of years.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What does CPR stand for ?",
+      "system_answer": "CPR stands for Cardiopulmonary Resuscitation.",
+      "gold_answer": "2",
+      "score": 0
+    },
+    {
+      "question": "What is hybridization ?",
+      "system_answer": "Hybridization is the process in chemistry by which atomic orbitals mix to form new, equivalent hybrid orbitals that can better explain the geometry and bonding of molecules. For example, in sp³ hybridization, one s and three p orbitals combine to produce four equivalent sp³ orbitals arranged tetrahedrally, as seen in methane (CH₄). Hybridization also refers to the combination of genetic material from different species or strains in biology, but in the context of chemistry it specifically describes the orbital mixing that underlies molecular shape and bonding.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "How fast is alcohol absorbed ?",
+      "system_answer": "Alcohol is absorbed very rapidly—about 90 % of the dose is taken up within 30–60 minutes after drinking. Peak blood‑alcohol concentration typically occurs 30–90 minutes after ingestion, and the absorption rate is influenced by the beverage’s alcohol concentration, the presence of food in the stomach, and individual factors such as body weight and metabolism.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Who was the first American to walk in space ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What are pediatricians ?",
+      "system_answer": "Pediatricians are medical doctors who specialize in the health care of infants, children, and adolescents. They diagnose and treat a wide range of acute and chronic illnesses, provide preventive care such as vaccinations and routine check‑ups, monitor growth and development, and offer guidance on nutrition, safety, and behavioral health. Pediatricians may work in hospitals, private practices, or community health settings, and they often collaborate with specialists, nurses, and other health professionals to ensure comprehensive care for young patients.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is the sales tax rate in New York ?",
+      "system_answer": "4%",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is the money they use in Zambia ?",
+      "system_answer": "Zambia uses the Zambian kwacha (ZMW).",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What is acetic acid ?",
+      "system_answer": "Acetic acid is a colorless, volatile liquid with the chemical formula CH₃COOH. It is a weak organic acid that is the main component of vinegar (typically 4–8 % by volume). Acetic acid has a sharp, sour taste and a characteristic pungent odor. It is used in food preservation, as a chemical reagent, and in various industrial processes.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "When was Lyndon B. Johnson born ?",
+      "system_answer": "Lyndon B. Johnson was born on August 27, 1908.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "In what spacecraft did U.S. astronaut Alan Shepard make his historic 1961 flight ?",
+      "system_answer": "Alan Shepard’s historic 1961 flight was aboard the Mercury‑Redstone 3 spacecraft, also known as Freedom 7.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "How cold should a refrigerator be ?",
+      "system_answer": "A refrigerator should be kept at about 3 °C to 5 °C (37 °F to 41 °F).",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is another astronomic term for the Northern Lights ?",
+      "system_answer": "Aurora Borealis",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "Where is the Shawnee National Forest ?",
+      "system_answer": "Shawnee National Forest is located in southern Illinois, United States.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "How much of an apple is water ?",
+      "system_answer": "An average apple is about 84 % water by weight.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is strep throat ?",
+      "system_answer": "Strep throat is a bacterial infection of the throat and tonsils caused by Group A Streptococcus (Streptococcus pyogenes). It typically presents with sudden sore throat, fever, swollen lymph nodes, and white patches or streaks on the tonsils, and can lead to complications such as rheumatic fever if untreated.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is poliomyelitis ?",
+      "system_answer": "Poliomyelitis, commonly known as polio, is an acute infectious disease caused by the poliovirus, a member of the Picornaviridae family. The virus is transmitted primarily through the fecal‑oral route, often via contaminated water or food, and can also spread through person‑to‑person contact. After infection, the virus replicates in the oropharynx and intestinal tract, then may invade the central nervous system. While most infections are asymptomatic or result in mild flu‑like symptoms, a small proportion lead to paralytic poliomyelitis, characterized by sudden onset of flaccid paralysis, often affecting the legs, and can result in permanent disability or death. The disease is preventable through vaccination with inactivated poliovirus vaccine (IPV) or oral poliovirus vaccine (OPV), and global eradication efforts have dramatically reduced its incidence worldwide.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is the temperature at the center of the earth ?",
+      "system_answer": "The temperature at the center of the Earth is estimated to be about 6,000 – 7,000 K (roughly 5,700 – 6,700 °C).",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Where is the Lourve ?",
+      "system_answer": "The Louvre is located in Paris, France.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is the longest bone in the human body ?",
+      "system_answer": "The femur is the longest bone in the human body.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What state has the least amount of rain per year ?",
+      "system_answer": "Nevada.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is neurology ?",
+      "system_answer": "Neurology is the branch of medicine that focuses on the structure, function, development, and disorders of the nervous system, including the brain, spinal cord, peripheral nerves, and muscles. It encompasses the diagnosis, treatment, and prevention of neurological diseases such as stroke, epilepsy, Parkinson’s disease, multiple sclerosis, neuropathies, and neurodegenerative disorders, as well as the study of neurophysiology, neuroanatomy, and neuropsychology. Neurologists use a variety of diagnostic tools—including imaging (MRI, CT), electrophysiological studies (EEG, EMG), and laboratory tests—to assess and manage conditions that affect the nervous system.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is the statue of liberty made of ?",
+      "system_answer": "The Statue of Liberty is made of copper sheets over a steel framework.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What was W.C. Fields ' real name ?",
+      "system_answer": "W.C. Fields' real name was William Claude Dukenfield.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is solar wind ?",
+      "system_answer": "Solar wind is a continuous outflow of charged particles—primarily electrons and protons—from the Sun’s outer atmosphere (the corona). It streams outward at speeds ranging from about 300 km s⁻¹ in the slow solar wind to over 800 km s⁻¹ in the fast solar wind, carrying with it the Sun’s magnetic field. This plasma permeates the heliosphere, interacts with planetary magnetospheres and atmospheres, and is responsible for phenomena such as auroras, geomagnetic storms, and the shaping of comet tails.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What position did Willie Davis play in baseball ?",
+      "system_answer": "Willie Davis was a catcher in baseball.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "Who was the abolitionist who led the raid on Harper 's Ferry in 1859 ?",
+      "system_answer": "John Brown was the abolitionist who led the raid on Harper's Ferry in 1859.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "Who was the first woman governor in the U.S. ?",
+      "system_answer": "Nellie Tayloe Ross was the first woman elected as governor in the United States, serving as the 21st Governor of Wyoming from 1925 to 1927.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What are solar cells ?",
+      "system_answer": "Solar cells, also known as photovoltaic cells, are semiconductor devices that convert light energy from the Sun into electrical energy through the photovoltaic effect. They are typically made from crystalline silicon (monocrystalline or polycrystalline) or thin‑film materials such as amorphous silicon, cadmium telluride (CdTe), or copper indium gallium selenide (CIGS). When photons strike the semiconductor, they excite electrons, creating electron‑hole pairs that are separated by an internal electric field at a p‑n junction. This separation generates a flow of electrons (current) that can be harnessed as direct current (DC) electricity. Solar cells are assembled into modules and panels to increase power output, and they can be integrated into building materials, portable devices, or large utility‑scale solar farms.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "When was the telephone invented ?",
+      "system_answer": "The telephone was invented in 1876.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is another name for vitamin B1 ?",
+      "system_answer": "Thiamine.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What is the major fault line near Kentucky ?",
+      "system_answer": "The New Madrid Fault.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "Where is the Savannah River ?",
+      "system_answer": "The Savannah River forms part of the border between South Carolina and Georgia in the southeastern United States.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What city 's newspaper is called `` The Star '' ?",
+      "system_answer": "St. Louis, Missouri.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What planet has the strongest magnetic field of all the planets ?",
+      "system_answer": "Jupiter has the strongest magnetic field of all the planets in the solar system.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is severance pay ?",
+      "system_answer": "Severance pay is a financial compensation provided by an employer to an employee upon termination of employment, typically due to layoffs, restructuring, or mutual agreement. It is intended to help the employee transition to new employment and may be based on factors such as length of service, position, and company policy.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What breed of hunting dog did the Beverly Hillbillies own ?",
+      "system_answer": "",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What is the population of China ?",
+      "system_answer": "The population of China is approximately 1.41 billion people.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What are semiconductors ?",
+      "system_answer": "Semiconductors are materials whose electrical conductivity lies between that of conductors (like metals) and insulators (like glass). Their conductivity can be precisely controlled by adding impurities (doping) or by applying electric fields, temperature changes, or light. Common semiconductor materials include silicon, germanium, gallium arsenide, and various compound semiconductors. These properties make semiconductors essential for electronic devices such as diodes, transistors, integrated circuits, solar cells, and many other components that form the backbone of modern electronics and photonics.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What body of water are the Canary Islands in ?",
+      "system_answer": "Atlantic Ocean",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What does the word fortnight mean ?",
+      "system_answer": "A fortnight is a period of two weeks (14 days).",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What monastery was raided by Vikings in the late eighth century ?",
+      "system_answer": "The monastery of Lindisfarne (Holy Island) was raided by Vikings in the late eighth century.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What did Edward Binney and Howard Smith invent in 1903 ?",
+      "system_answer": "",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "When was President Kennedy shot ?",
+      "system_answer": "President John F. Kennedy was shot on November 22, 1963.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is a thermometer ?",
+      "system_answer": "A thermometer is an instrument that measures temperature, typically by using a material that expands or changes in some measurable way (such as mercury, alcohol, or a thermistor) in response to heat.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is the earth 's diameter ?",
+      "system_answer": "The Earth's diameter is approximately 12,742 kilometers (about 7,918 miles).",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is mold ?",
+      "system_answer": "Mold is a type of fungus that grows in damp or humid environments, reproducing through microscopic spores that spread through the air. It thrives on organic materials such as wood, paper, and food, breaking them down and often producing visible fuzzy patches in colors like green, black, or white. While some molds are harmless, others can release allergens, irritants, or toxic compounds (mycotoxins) that may cause respiratory problems, allergic reactions, or other health issues in sensitive individuals.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What does `` Sitting Shiva '' mean ?",
+      "system_answer": "Sitting shiva is a traditional Jewish mourning practice in which close relatives of a deceased person observe a seven‑day period of mourning immediately following the funeral. During shiva, mourners sit on low stools or cushions, refrain from work, and receive visitors who offer condolences, often bringing food and flowers. The term comes from the Hebrew word “shiva” meaning “seven.”",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is desktop publishing ?",
+      "system_answer": "Desktop publishing is the process of creating documents—such as books, magazines, brochures, newsletters, and flyers—using computer software and a personal computer, where text, images, and layout are designed and assembled for print or digital distribution.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "Who discovered radium ?",
+      "system_answer": "Marie Curie and her husband Pierre Curie discovered radium in 1898.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is mad cow disease ?",
+      "system_answer": "Mad cow disease, also known as bovine spongiform encephalopathy (BSE), is a fatal neurodegenerative prion disease that affects cattle. It is caused by misfolded prion proteins that accumulate in the brain, producing spongiform changes and leading to neurological symptoms such as ataxia, tremors, and loss of coordination, ultimately resulting in death. The disease is primarily transmitted through contaminated feed containing animal protein, and it can be transmitted to humans as variant Creutzfeldt‑Jakob disease (vCJD). Control measures include strict feed bans, surveillance programs, and culling of infected or exposed animals.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is the location of Lake Champlain ?",
+      "system_answer": "Lake Champlain is located between New York and Vermont, extending into Quebec, Canada.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is the proper name for a female walrus ?",
+      "system_answer": "A female walrus is called a **cow**.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "When was Rosa Parks born ?",
+      "system_answer": "Rosa Parks was born on December 4, 1913.",
+      "gold_answer": "4",
+      "score": 1
+    },
+    {
+      "question": "When were William Shakespeare 's twins born ?",
+      "system_answer": "1585",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is natural gas composed of ?",
+      "system_answer": "Natural gas is primarily composed of methane (CH₄), with smaller amounts of ethane (C₂H₆), propane (C₃H₈), butane (C₄H₁₀), and other higher‑molecular‑weight hydrocarbons. Trace gases such as nitrogen (N₂), carbon dioxide (CO₂), hydrogen sulfide (H₂S), and sometimes helium (He) are also present in varying proportions.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "How tall is the Gateway Arch in St. Louis , MO ?",
+      "system_answer": "The Gateway Arch in St. Louis, Missouri, stands 630 feet (192 meters) tall.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Who was the first governor of Alaska ?",
+      "system_answer": "William A. Egan was the first governor of Alaska.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "When was the first Wal-Mart store opened ?",
+      "system_answer": "July 2, 1962.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What New York City structure is also known as the Twin Towers ?",
+      "system_answer": "The original World Trade Center towers in Lower Manhattan, known as the Twin Towers.",
+      "gold_answer": "5",
+      "score": 0
+    }
+  ]
+}

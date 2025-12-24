@@ -1,0 +1,610 @@
+{
+  "system": "Openai_SDK_Groq_CTX50",
+  "split": "Conflict_Resolution",
+  "session_id": "6",
+  "subtask": "FC-SH",
+  "category": "SF",
+  "runtime_sec": 180.53,
+  "questions": [
+    {
+      "question": "Which sport is Salem-Keizer Volcanoes associated with?",
+      "system_answer": "The Salem‑Keizer Volcanoes are a minor‑league **baseball** team.",
+      "gold_answer": "basketball",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Nick Rimando play?",
+      "system_answer": "Nick Rimando is a professional baseball pitcher—he’s best known as a relief pitcher, serving primarily as a closer.",
+      "gold_answer": "flanker",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is power forward associated with?",
+      "system_answer": "The “power forward” is a position in **basketball**.",
+      "gold_answer": "rugby",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Morris Iemma affiliated with?",
+      "system_answer": "Morris Iemma is a Catholic.",
+      "gold_answer": "Methodism",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is FC Slutsk associated with?",
+      "system_answer": "FC Slutsk is a **football (soccer)** club.",
+      "gold_answer": "association football",
+      "score": 1.0
+    },
+    {
+      "question": "What is the capital of United Kingdom?",
+      "system_answer": "The capital of the United Kingdom is **London**.",
+      "gold_answer": "Rupnagar",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Dan Christensen?",
+      "system_answer": "Dan Christensen is a citizen of the **United States of America**.",
+      "gold_answer": "United States of America",
+      "score": 1.0
+    },
+    {
+      "question": "Who founded Montanism?",
+      "system_answer": "Montanism was founded by **Montanus** (c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c. c.",
+      "gold_answer": "Montanus of Phrygia",
+      "score": 1.0
+    },
+    {
+      "question": "Which city did Noel Pemberton Billing work in?",
+      "system_answer": "Noel Pemberton Billing worked in **London**. He was a solicitor and later a journalist based in the capital, and he represented the London constituency of St. Pancras South in Parliament.",
+      "gold_answer": "London",
+      "score": 1.0
+    },
+    {
+      "question": "What is the capital of Papal States?",
+      "system_answer": "The capital of the Papal States was **Rome**.",
+      "gold_answer": "Rome",
+      "score": 1.0
+    },
+    {
+      "question": "What is the country of citizenship of Edmund Burke?",
+      "system_answer": "Edmund Burke was born in County Cork, Ireland, which at the time was part of the **Kingdom of Great Britain and Ireland**.  He served as a member of the British Parliament and was a British statesman, so his citizenship was that of the Kingdom of Great Britain and Ireland (often simply referred to as “British”).",
+      "gold_answer": "Kingdom of Ireland",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Colin Irwin?",
+      "system_answer": "Colin Irwin is a citizen of the United Kingdom (he is British).",
+      "gold_answer": "Israel",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the developer of Apple DOS?",
+      "system_answer": "Apple DOS was written by **Steve Wozniak** (for Apple Computer, Inc.).",
+      "gold_answer": "Apple Inc.",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Gary SouthShore RailCats associated with?",
+      "system_answer": "The Gary SouthShore RailCats are a professional **baseball** team.",
+      "gold_answer": "baseball",
+      "score": 1.0
+    },
+    {
+      "question": "Which city was Bachir Gemayel born in?",
+      "system_answer": "Bachir Gemayel was born in **Beirut, Lebanon**.",
+      "gold_answer": "Beirut",
+      "score": 1.0
+    },
+    {
+      "question": "What is the country of citizenship of Rick Remender?",
+      "system_answer": "Rick Remender is a citizen of the **United States**.",
+      "gold_answer": "Italy",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Jeff Hornacek associated with?",
+      "system_answer": "Jeff Hornacek is associated with **basketball**.",
+      "gold_answer": "association football",
+      "score": 0.0
+    },
+    {
+      "question": "Who is Charles Darwin married to?",
+      "system_answer": "Charles Darwin was married to **Emma Wedgwood**.",
+      "gold_answer": "Amala Paul",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of David Copperfield?",
+      "system_answer": "The author of *David Copperfield* is **Charles Dickens**.",
+      "gold_answer": "Charles Darwin",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Maria Amalia of Naples and Sicily affiliated with?",
+      "system_answer": "Maria Amalia of Naples and Sicily was a **Roman Catholic**. She was born into the Bourbon‑Capetian dynasty, which was firmly Catholic, and she remained a devout Catholic throughout her life.",
+      "gold_answer": "Church of Greece",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Tony Parker play?",
+      "system_answer": "Tony Parker played as a **point guard** in the NBA.",
+      "gold_answer": "shooting guard",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is flanker associated with?",
+      "system_answer": "The term **“flanker”** is most commonly associated with **rugby**—specifically rugby union (and also used in rugby league). In rugby, a flanker is one of the two loose‑back forwards (numbers 6 and 7) who play a key role in both defense and ball‑carrying.",
+      "gold_answer": "rugby",
+      "score": 1.0
+    },
+    {
+      "question": "What language does Federico García Lorca speak?",
+      "system_answer": "Federico García Lorca was a native Spanish speaker – he wrote and spoke in Spanish, specifically the Andalusian dialect of the language that is spoken in his native Granada.",
+      "gold_answer": "Spanish",
+      "score": 1.0
+    },
+    {
+      "question": "What is Stephen Crane famous for?",
+      "system_answer": "Stephen Crane (1871‑1900) is best known as an American novelist and short‑story writer who helped pioneer modern realism and naturalism.  His most celebrated work is the war novel **“The Red Badge of Courage”** (1895), which offers a vivid, psychologically honest portrait of a Civil War soldier.  He also earned acclaim for his short stories—especially the realist “The Open Boat” (1897) and “The Black Riders” (1898)—and for his lyrical, often experimental prose that pushed the boundaries of American literature at the turn of the 20th century.",
+      "gold_answer": "Charlie Hebdo",
+      "score": 0.0
+    },
+    {
+      "question": "Who is Igor of Kiev married to?",
+      "system_answer": "Igor of Kiev (c. 912–945 CE), the son of Oleg of Novgorod and the grandson of Rurik, was married to **Olga of Kiev**.  Olga, who later became regent after Igor’s death, was a prominent figure in early Kievan Rus and is remembered for her diplomatic and military actions during her regency.",
+      "gold_answer": "Olga of Kiev",
+      "score": 1.0
+    },
+    {
+      "question": "What is the country of citizenship of Robert Wisdom?",
+      "system_answer": "Robert Wisdom is an American citizen.",
+      "gold_answer": "United States of America",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Renaud Lavillenie?",
+      "system_answer": "Renaud Lavillenie is a French citizen.",
+      "gold_answer": "Ireland",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is midfielder associated with?",
+      "system_answer": "The term **midfielder** is a position in **association football (soccer)**.  \nIn soccer, midfielders play in the middle of the field and are responsible for linking defense and attack, controlling the tempo, distributing passes, and often contributing to both defensive duties and goal‑scoring opportunities.",
+      "gold_answer": "sumo",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of James Badge Dale?",
+      "system_answer": "James Badge Dale is an American actor—his citizenship is the United States.",
+      "gold_answer": "United States of America",
+      "score": 1.0
+    },
+    {
+      "question": "Which sport is Darryl Strawberry associated with?",
+      "system_answer": "Darryl Strawberry is associated with **baseball**. He was a star Major League Baseball outfielder.",
+      "gold_answer": "baseball",
+      "score": 1.0
+    },
+    {
+      "question": "Which company is Apple TV produced by?",
+      "system_answer": "Apple TV+ is produced by **Apple Inc.**",
+      "gold_answer": "Apple Inc.",
+      "score": 1.0
+    },
+    {
+      "question": "Which city is the headquarter of Microsoft located in?",
+      "system_answer": "Microsoft’s headquarters are located in **Redmond, Washington**.",
+      "gold_answer": "Beverly Hills",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Catholic bishop affiliated with?",
+      "system_answer": "A Catholic bishop is affiliated with **Catholicism**, which is a branch of **Christianity**.",
+      "gold_answer": "Catholicism",
+      "score": 1.0
+    },
+    {
+      "question": "Which city did William Holman Hunt die in?",
+      "system_answer": "William Holman Hunt died in **London**.",
+      "gold_answer": "Washington, D.C.",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Travis Barker?",
+      "system_answer": "Travis Barker is an American citizen—he holds citizenship of the **United States**.",
+      "gold_answer": "United States of America",
+      "score": 1.0
+    },
+    {
+      "question": "Which sport is Burleigh Grimes associated with?",
+      "system_answer": "Burleigh Grimes was associated with **baseball** (he was a Major League pitcher).",
+      "gold_answer": "baseball",
+      "score": 1.0
+    },
+    {
+      "question": "Which university was Hrishikesh Mukherjee educated at?",
+      "system_answer": "Hrishikesh Mukherjee was educated at the **University of Calcutta**, where he earned a degree in English literature.",
+      "gold_answer": "University of Calcutta",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the original broadcaster of Parenthood?",
+      "system_answer": "The original broadcaster of the TV series **“Parenthood”** was **NBC**.",
+      "gold_answer": "NBC",
+      "score": 1.0
+    },
+    {
+      "question": "What position does Lisa Leslie play?",
+      "system_answer": "Lisa Leslie played the **center** position.",
+      "gold_answer": "goaltender",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital of Iran?",
+      "system_answer": "The capital of Iran is **Tehran**.",
+      "gold_answer": "Tehran",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the original broadcaster of The Drew Carey Show?",
+      "system_answer": "The original broadcaster of **“The Drew Carey Show”** was **ABC**.",
+      "gold_answer": "American Broadcasting Company",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the chief executive officer of Apple Inc.?",
+      "system_answer": "The chief executive officer of Apple Inc. is **Tim Cook**.",
+      "gold_answer": "Vijay Mallya",
+      "score": 0.0
+    },
+    {
+      "question": "What kind of work does Sabbatai Zevi do?",
+      "system_answer": "Sabbatai Zevi (1626 – 1676) was a 17th‑century Jewish mystic and rabbi who became famous for proclaiming himself the Jewish Messiah.  He was a preacher and spiritual teacher, leading a community of followers in the Ottoman Empire.  In addition to his religious work, Zevi was also a merchant and trader, which helped sustain his community and his own livelihood.  After his arrest and forced conversion to Islam in 1666, he continued to work as a Muslim preacher and court official in Istanbul until his death.",
+      "gold_answer": "superhero",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Lionel Richie?",
+      "system_answer": "Lionel Richie is an American citizen – he holds citizenship of the United States of America.",
+      "gold_answer": "Ghana",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Tom Cruise affiliated with?",
+      "system_answer": "Tom Cruise is a member of the Church of Scientology.",
+      "gold_answer": "Scientology",
+      "score": 1.0
+    },
+    {
+      "question": "Which company is Ford F-Series produced by?",
+      "system_answer": "The Ford F‑Series trucks are produced by **Ford Motor Company**.",
+      "gold_answer": "Ford Motor Company",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the author of Inuyasha?",
+      "system_answer": "The manga series *Inuyasha* was written and illustrated by **Rumiko Takahashi**.",
+      "gold_answer": "Terrance Dicks",
+      "score": 0.0
+    },
+    {
+      "question": "Which continent is San Francisco located in?",
+      "system_answer": "San Francisco is located on the continent of **North America**.",
+      "gold_answer": "Africa",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Terry Collins associated with?",
+      "system_answer": "Terry Collins is associated with **baseball**. He was a longtime Major League Baseball (MLB) player and later served as a manager in the league.",
+      "gold_answer": "baseball",
+      "score": 1.0
+    },
+    {
+      "question": "Which sport is 2009 Six Nations Championship associated with?",
+      "system_answer": "The 2009 Six Nations Championship is a **rugby union** competition.",
+      "gold_answer": "association football",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Vernon Davis play?",
+      "system_answer": "Vernon Davis was a **wide receiver** in the National Football League (NFL).",
+      "gold_answer": "defensive end",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the current head of state in Ireland?",
+      "system_answer": "The head of state of Ireland is the President, and the current president is **Michael D. Higgins**.",
+      "gold_answer": "Roch Marc Christian Kaboré",
+      "score": 0.0
+    },
+    {
+      "question": "Who performed Past Masters?",
+      "system_answer": "“Past Masters” is a compilation album released by **The Beatles**.  All of the tracks on that collection were performed by the band itself—John Lennon, Paul McCartney, George Harrison, and Ringo Starr.",
+      "gold_answer": "Madonna",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Imran Khan associated with?",
+      "system_answer": "Imran Khan is most famously associated with **cricket**.  He was a legendary Pakistani cricketer and former captain of the national team before moving into politics.",
+      "gold_answer": "association football",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Tomoyasu Hotei?",
+      "system_answer": "Tomoyasu Hotei is a citizen of **Japan**.",
+      "gold_answer": "Germany",
+      "score": 0.0
+    },
+    {
+      "question": "What language does Matti Vanhanen speak?",
+      "system_answer": "Matti Vanhanen speaks **Finnish** (his native language).",
+      "gold_answer": "Finnish",
+      "score": 1.0
+    },
+    {
+      "question": "Who founded Transcendental Meditation movement?",
+      "system_answer": "The Transcendental Meditation movement was founded by **Maharishi Mahesh Yogi**.",
+      "gold_answer": "Adalbert of Prague",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the current head of state in United States of America?",
+      "system_answer": "The head of state of the United States is the President.  \nAs of the most recent information available, **Joe Biden** is the sitting president (he served from January 20 , 2021 until January 20 , 2025).  The president elected in the 2024 election will take office on January 20 , 2025, and that officeholder’s name is not yet known in the public record.",
+      "gold_answer": "Connachta",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the developer of AppleScript?",
+      "system_answer": "AppleScript was created by **Apple Inc.** (the language was developed by Apple’s engineering team in the late 1980s).",
+      "gold_answer": "Apple Inc.",
+      "score": 1.0
+    },
+    {
+      "question": "Which continent is Philippines located in?",
+      "system_answer": "The Philippines is located on the continent of **Asia**.",
+      "gold_answer": "Asia",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the author of The Great Movies?",
+      "system_answer": "The book **“The Great Movies”** was written by **David Thomson**.",
+      "gold_answer": "John Evelyn",
+      "score": 0.0
+    },
+    {
+      "question": "Which university was Chicago Boys educated at?",
+      "system_answer": "The **Chicago Boys** were a group of Chilean economists who received their graduate training at the **University of Chicago**. They studied there in the 1950s and 1960s, where they were influenced by the Chicago School of economics.",
+      "gold_answer": "Yale University",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Andrew Carnegie?",
+      "system_answer": "Andrew Carnegie was a **United States** citizen. He was born in Scotland but emigrated to the U.S. and became a natural‑born citizen of the United States.",
+      "gold_answer": "United Kingdom",
+      "score": 0.0
+    },
+    {
+      "question": "Who is Kristen Bell married to?",
+      "system_answer": "Kristen Bell is married to actor and comedian **Dax Shepard**.",
+      "gold_answer": "Dax Shepard",
+      "score": 1.0
+    },
+    {
+      "question": "What is William Gibson famous for?",
+      "system_answer": "William Gibson is a celebrated science‑fiction author best known for pioneering the cyberpunk genre.  His 1984 novel **“Neuromancer”** (the first book of the Sprawl trilogy) introduced the idea of cyberspace and helped define the cyberpunk aesthetic, earning him the Hugo, Nebula, and Philip K. Dick awards.  He’s also written other influential works such as *Count Zero*, *Mona Lisa Overdrive*, *Pattern Recognition*, and *The Peripheral*.",
+      "gold_answer": "Neuromancer",
+      "score": 1.0
+    },
+    {
+      "question": "Which religion is Bahawalpur State affiliated with?",
+      "system_answer": "Bahawalpur State was a Muslim‑ruled princely state. The Nawabs of Bahawalpur were Sunni Muslims, and the state’s population was overwhelmingly Muslim. Thus, the religion most closely associated with Bahawalpur State is Islam.",
+      "gold_answer": "Catholic Church",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the chief executive officer of Advanced Micro Devices?",
+      "system_answer": "The chief executive officer (CEO) of Advanced Micro Devices (AMD) is **Lisa Su**. She has held the position since 2014 and is responsible for leading the company’s strategy, operations, and overall business performance.",
+      "gold_answer": "Sundar Pichai",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Sue Grafton?",
+      "system_answer": "Sue Grafton was an American citizen—she held citizenship of the United States.",
+      "gold_answer": "Ukraine",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the developer of Internet Explorer 5?",
+      "system_answer": "Internet Explorer 5 was developed by **Microsoft Corporation**. The project was led by the Microsoft team that worked on the Internet Explorer line, with key contributions from the company’s web‑browser engineering group.",
+      "gold_answer": "Google",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of The Marriage of Figaro?",
+      "system_answer": "The play **“The Marriage of Figaro”** was written by **Pierre Beaumarchais**.",
+      "gold_answer": "Thomas Kyd",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of The Age of Reason?",
+      "system_answer": "**Thomas Paine** is the author of *The Age of Reason*.",
+      "gold_answer": "Allen Ginsberg",
+      "score": 0.0
+    },
+    {
+      "question": "What language does Daphne du Maurier speak?",
+      "system_answer": "Daphne du Maurier was an English writer, so her native and primary language was **English**.",
+      "gold_answer": "Arabic",
+      "score": 0.0
+    },
+    {
+      "question": "Which city is the headquarter of MTV located in?",
+      "system_answer": "MTV’s headquarters is in **New York City** (Midtown Manhattan).",
+      "gold_answer": "London",
+      "score": 0.0
+    },
+    {
+      "question": "Who was Malvolio created by?",
+      "system_answer": "Malvolio is a character created by **William Shakespeare** in his play *Twelfth Night*.",
+      "gold_answer": "William Shakespeare",
+      "score": 1.0
+    },
+    {
+      "question": "What type of music does Nat King Cole play?",
+      "system_answer": "Nat King Cole was best known for his smooth, jazz‑inspired pop and swing music.  He sang and played piano on classic jazz standards, easy‑listening ballads, and popular hits of the 1940s‑60s.",
+      "gold_answer": "J-pop",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the developer of Unreal Tournament 2004?",
+      "system_answer": "Unreal Tournament 2004 was developed by **Epic Games** (with Electronic Arts publishing it).",
+      "gold_answer": "Epic Games",
+      "score": 1.0
+    },
+    {
+      "question": "Which country was heartland rock created in?",
+      "system_answer": "Heartland rock originated in the **United States**. The genre emerged in the 1970s‑80s, largely in the Midwest and along the American heartland, and is closely associated with American artists such as Bruce Springsteen, John Mellencamp, Tom Petty, and others.",
+      "gold_answer": "Scotland",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Cédric Klapisch?",
+      "system_answer": "Cédric Klapisch is a French citizen.",
+      "gold_answer": "Malaysia",
+      "score": 0.0
+    },
+    {
+      "question": "Who founded Jaguar Cars?",
+      "system_answer": "Jaguar Cars was founded in 1922 by **Sir William Lyons** and **William Walmsley**.  The pair started the company as AC Cars, and later, under Lyons’ leadership, the brand was renamed Jaguar and grew into the iconic luxury‑sports‑car maker we know today.",
+      "gold_answer": "Eugène Schneider",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Sports Interactive associated with?",
+      "system_answer": "Sports Interactive is best known for its football (soccer) simulation games, most notably the **Football Manager** series.",
+      "gold_answer": "basketball",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was Sigur Rós created in?",
+      "system_answer": "Sigur Rós was formed in **Iceland** (in Reykjavík).",
+      "gold_answer": "Israel",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was pesäpallo created in?",
+      "system_answer": "Pesäpallo was created in **Finland**.",
+      "gold_answer": "Philippines",
+      "score": 0.0
+    },
+    {
+      "question": "Who was Kinsey Millhone created by?",
+      "system_answer": "Kinsey Millhone was created by author **Sue Grafton**.",
+      "gold_answer": "Sue Grafton",
+      "score": 1.0
+    },
+    {
+      "question": "What is the country of citizenship of Madame du Barry?",
+      "system_answer": "Madame du Barry was a French citizen—she was born and lived in France.",
+      "gold_answer": "Great Britain",
+      "score": 0.0
+    },
+    {
+      "question": "Which language was The Thorn Birds written in?",
+      "system_answer": "**English**. The Thorn Birds was originally written and published in English.",
+      "gold_answer": "French",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the head coach of Los Angeles FC?",
+      "system_answer": "The head coach of Los Angeles FC (as of the 2024 MLS season) is **Bob Bradley**. He returned to the club in 2023 after a brief hiatus and has been leading the team since then.",
+      "gold_answer": "Bob Bradley",
+      "score": 1.0
+    },
+    {
+      "question": "Which company is Buick Regal produced by?",
+      "system_answer": "The Buick Regal is manufactured by **General Motors (GM)** under its Buick brand.",
+      "gold_answer": "Aston Martin Lagonda",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Natalie Portman affiliated with?",
+      "system_answer": "Natalie Portman is Jewish.  She was born into a Jewish family (her mother is Jewish and her father is Jewish‑American), and she has spoken publicly about her Jewish heritage and upbringing.",
+      "gold_answer": "interdenominational organization",
+      "score": 0.0
+    },
+    {
+      "question": "Who was Finnish created by?",
+      "system_answer": "It looks like you’re asking about the origins of Finland as a nation‑state.  Finland didn’t “come into being” because a single person or group “created” it in the way a company is founded; rather, it emerged through a long process of political change and self‑determination.  Here’s a quick overview of the key milestones:\n\n| Period | What Happened | Key Players / Events |\n|--------|---------------|----------------------|\n| **Pre‑1809** | Finland was part of the Kingdom of Sweden for several centuries. | Swedish kings, local Swedish‑Finnish nobility. |\n| **1809–1917** | Finland became an autonomous Grand Duchy under the Russian Empire after the Finnish War (1808‑1809). | Russian Tsar Alexander I (who granted autonomy), Finnish local leaders who negotiated the 1809 Treaty of Åbo. |\n| **1917** | Finland declared independence from Russia on December 6, 1917, amid the chaos of the Russian Revolution. | The Finnish Parliament (Eduskunta), the Finnish National Assembly, and key figures such as **Kalevi Sorsa** (later), **J. K. Paasikivi**, and the broader Finnish populace. |\n| **1918–1920** | Civil war (Red vs. White) and the establishment of a republic. | **Kalevi Sorsa** (later), **Kalevi Sorsa** (later), **Kalevi Sorsa** (later), **Kalevi Sorsa** (later). |\n| **1920–present** | Finland becomes a stable, democratic republic. | Presidents, parliaments, and the Finnish people. |\n\n### Bottom line\n\nFinland as a sovereign nation was **created by the Finnish people** through a series of political developments, most notably the declaration of independence in 1917.  No single individual “created” Finland, but the movement for independence was led by a broad coalition of politicians, activists, and ordinary citizens who sought to establish a self‑governed state.",
+      "gold_answer": "Stirling Silliphanta",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Artur Boruc play?",
+      "system_answer": "Artur Boruc is a **goalkeeper**.",
+      "gold_answer": "midfielder",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Ada Wong?",
+      "system_answer": "Ada Wong’s nationality is never explicitly stated in the Resident Evil canon.  She’s presented as a mysterious spy with an ambiguous background, and no official source identifies a specific country of citizenship for her.",
+      "gold_answer": "United States of America",
+      "score": 0.0
+    },
+    {
+      "question": "Who is Lalu Prasad Yadav married to?",
+      "system_answer": "Lalu Prasad Yadav is married to **Rabri Devi**. She is a prominent Indian politician in her own right, having served as the Chief Minister of Bihar from 1997 to 2005.",
+      "gold_answer": "Goldust",
+      "score": 0.0
+    },
+    {
+      "question": "Which company is Ford S-Max produced by?",
+      "system_answer": "The Ford S‑Max is produced by **Ford Motor Company** (commonly known simply as Ford). It’s a mid‑size multi‑purpose vehicle (MPV) that Ford has manufactured in its European and global production facilities.",
+      "gold_answer": "Blue Origin",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was Orkneyinga saga created in?",
+      "system_answer": "**Orkneyinga saga** was written in **Iceland**. The saga, a medieval Icelandic narrative about the history of the Orkney Islands, was composed by Icelandic monks and scholars in the 13th‑14th century.",
+      "gold_answer": "Iceland",
+      "score": 1.0
+    },
+    {
+      "question": "Which sport is shooting guard associated with?",
+      "system_answer": "A shooting guard is a position in **basketball**.",
+      "gold_answer": "rugby",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Henri Grégoire?",
+      "system_answer": "Henri Grégoire was a French citizen.",
+      "gold_answer": "India",
+      "score": 0.0
+    },
+    {
+      "question": "Which city was Constantine VII born in?",
+      "system_answer": "Constantine VII Porphyrogenitus was born in **Constantinople** (the capital of the Byzantine Empire, now Istanbul, Turkey).",
+      "gold_answer": "Constantinople",
+      "score": 1.0
+    },
+    {
+      "question": "What is the country of citizenship of Wilhelm von Humboldt?",
+      "system_answer": "Wilhelm von Humboldt was a citizen of the **Kingdom of Prussia** (the German state that later became part of modern Germany).",
+      "gold_answer": "Germany",
+      "score": 1.0
+    },
+    {
+      "question": "What is the name of the current head of the South Korea government?",
+      "system_answer": "The current head of South Korea’s government is **President Yoon Suk‑yeol**.",
+      "gold_answer": "Mauro Carlesse",
+      "score": 0.0
+    },
+    {
+      "question": "What position does David Seaman play?",
+      "system_answer": "David Seaman is a **goalkeeper**.",
+      "gold_answer": "midfielder",
+      "score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,610 @@
+{
+  "system": "Openai_SDK_Groq_CTX8192",
+  "split": "Conflict_Resolution",
+  "session_id": "5",
+  "subtask": "FC-SH",
+  "category": "SF",
+  "runtime_sec": 245.82,
+  "questions": [
+    {
+      "question": "Which sport is goaltender associated with?",
+      "system_answer": "The sport associated with a **goaltender** is **pesäpallo**.",
+      "gold_answer": "pesäpallo",
+      "score": 0.0
+    },
+    {
+      "question": "What is Nobuhiro Watsuki famous for?",
+      "system_answer": "Nobuhiro Watsuki is famous for **“The Fairly OddParents.”**",
+      "gold_answer": "The Fairly OddParents",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was rugby union created in?",
+      "system_answer": "Rugby union was created in **India**.",
+      "gold_answer": "India",
+      "score": 0.0
+    },
+    {
+      "question": "What is Ferdowsi famous for?",
+      "system_answer": "Ferdowsi is famous for writing the epic poem **“Shahnameh.”**",
+      "gold_answer": "Shahnameh",
+      "score": 0.0
+    },
+    {
+      "question": "Which university was Joan Didion educated at?",
+      "system_answer": "Joan Didion was educated at **the University of California, Berkeley**.",
+      "gold_answer": "University of California, Berkeley",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of The Marriage of Figaro?",
+      "system_answer": "The author of *The Marriage of Figaro* is **Thomas Kyd**.",
+      "gold_answer": "Thomas Kyd",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Tunisia national football team associated with?",
+      "system_answer": "The Tunisia national football team is associated with **association football**.",
+      "gold_answer": "basketball",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is quarterback associated with?",
+      "system_answer": "The facts you gave contain a conflict:\n\n* **Fact 31** says “quarterback is associated with the sport of American football.”\n* **Fact 50** says “quarterback is associated with the sport of Muay Thai.”\n\nSo, according to the stored information, a quarterback is linked to both American football and Muay Thai, with the first fact being the more common association.",
+      "gold_answer": "Muay Thai",
+      "score": 0.0
+    },
+    {
+      "question": "What is the official language of Japan?",
+      "system_answer": "According to the facts you provided, there are two different entries for the official language of Japan:\n\n1. **Fact 240** says the official language of Japan is **Japanese**.  \n2. **Fact 439** says the official language of Japan is **Swedish**.  \n\nSo the stored information contains a conflict between those two statements.",
+      "gold_answer": "Swedish",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the current head of the Tucson government?",
+      "system_answer": "The current head of the Tucson government is **Jonathan Rothschild**.",
+      "gold_answer": "Jonathan Rothschild",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the current head of the Italy government?",
+      "system_answer": "The current head of the Italian government is **Giuseppe Conte**.",
+      "gold_answer": "Giuseppe Conte",
+      "score": 0.0
+    },
+    {
+      "question": "Who performed Meredith Grey?",
+      "system_answer": "Meredith Grey was performed by **Ellen Pompeo**.",
+      "gold_answer": "Ellen Pompeo",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Robert Parish play?",
+      "system_answer": "Robert Parish is recorded as playing **both the center position and the quarterback position**.",
+      "gold_answer": "quarterback",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Cédric Klapisch?",
+      "system_answer": "The facts you provided contain a conflict:\n\n- **Fact 210** says Cédric Klapisch is a citizen of **France**.  \n- **Fact 239** says Cédric Klapisch is a citizen of **Malaysia**.  \n\nSo the stored information lists two different countries of citizenship for Cédric Klapisch.",
+      "gold_answer": "Malaysia",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of Sidereus Nuncius?",
+      "system_answer": "I don’t know.",
+      "gold_answer": "Samuel Beckett",
+      "score": 0.0
+    },
+    {
+      "question": "Which continent is Germany located in?",
+      "system_answer": "The facts you gave contain a conflict:\n\n- **Fact 41** says Germany is located in the continent of **Europe**.  \n- **Fact 435** says Germany is located in the continent of **Africa**.  \n\nSo the stored information lists two different continents for Germany.",
+      "gold_answer": "Africa",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Kingdom of Ireland affiliated with?",
+      "system_answer": "The stored facts contain a conflict:\n\n- **Fact 70** says the Kingdom of Ireland is affiliated with the **Catholic Church**.  \n- **Fact 260** says the Kingdom of Ireland is affiliated with **Zoroastrianism**.  \n\nSo the information lists two different religions for the Kingdom of Ireland.",
+      "gold_answer": "Zoroastrianism",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was association football created in?",
+      "system_answer": "The facts you gave contain a conflict:\n\n- **Fact 272** says *association football was created in the country of England*.  \n- **Fact 389** says *association football was created in the country of Italy*.  \n\nSo the stored information lists two different countries for the creation of association football.",
+      "gold_answer": "Italy",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the developer of Windows Phone?",
+      "system_answer": "The developer of Windows Phone is **Microsoft**.",
+      "gold_answer": "Microsoft",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the chief executive officer of Microsoft?",
+      "system_answer": "The facts you gave contain a conflict:\n\n- **Fact 85** says the chief executive officer of Microsoft is **Satya Nadella**.  \n- **Fact 188** says the chief executive officer of Microsoft is **Steve Jobs**.\n\nSo the stored information lists two different people as the CEO of Microsoft.",
+      "gold_answer": "Steve Jobs",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the chairperson of Harvard University?",
+      "system_answer": "The stored facts give two different answers:\n\n* **Fact 80** says the chairperson of Harvard University is **Lawrence S. Bacow**.  \n* **Fact 222** says the chairperson of Harvard University is **Peter Diamandis**.\n\nSo the information you provided contains a conflict regarding the chairperson of Harvard University.",
+      "gold_answer": "Peter Diamandis",
+      "score": 0.0
+    },
+    {
+      "question": "Who founded Church of Scotland?",
+      "system_answer": "The Church of Scotland was founded by **John Knox**.",
+      "gold_answer": "John Knox",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Galwegians RFC associated with?",
+      "system_answer": "Galwegians RFC is associated with **rugby union**.",
+      "gold_answer": "rugby union",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the director of American Broadcasting Company?",
+      "system_answer": "The facts you provided contain a conflict:\n\n- **Fact 64** says the director of American Broadcasting Company is **Bob Iger**.  \n- **Fact 392** says the director of American Broadcasting Company is **Ernst Heinkel**.\n\nSo the stored information lists two different people as the director of ABC.",
+      "gold_answer": "Ernst Heinkel",
+      "score": 0.0
+    },
+    {
+      "question": "Which city did Gennady Rozhdestvensky die in?",
+      "system_answer": "Gennady Rozhdestvensky died in **Moscow**.",
+      "gold_answer": "United States of America",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital of Tang Empire?",
+      "system_answer": "I’m not sure—there are two different answers in the facts you gave:\n\n* **Fact 21** says the capital of the Tang Empire is **Chang’an**.  \n* **Fact 177** says the capital of the Tang Empire is **Beaumont**.  \n\nSo the stored information contains a conflict regarding the capital of the Tang Empire.",
+      "gold_answer": "Beaumont",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the director of British Broadcasting Corporation?",
+      "system_answer": "The facts you provided contain a conflict:\n\n- **Fact 7** says the director of the British Broadcasting Corporation is **Tony Hall, Baron Hall of Birkenhead**.  \n- **Fact 428** says the director of the British Broadcasting Corporation is **Narendra Modi**.\n\nSo the stored information lists two different individuals as the director of the BBC.",
+      "gold_answer": "Narendra Modi",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Benjamin Mazar?",
+      "system_answer": "Benjamin Mazar is a citizen of **Israel**.",
+      "gold_answer": "Israel",
+      "score": 0.0
+    },
+    {
+      "question": "What type of music does Michael Mantler play?",
+      "system_answer": "The facts you gave contain a conflict:\n\n- **Fact 289** says Michael Mantler plays **jazz**.  \n- **Fact 298** says Michael Mantler plays **post‑punk**.\n\nSo the stored information lists two different music styles for Michael Mantler.",
+      "gold_answer": "post-punk",
+      "score": 0.0
+    },
+    {
+      "question": "Which city did Oscar Wilde die in?",
+      "system_answer": "The facts you gave contain a conflict:\n\n- **Fact 128** says Oscar Wilde died in the city of **Paris**.  \n- **Fact 270** says Oscar Wilde died in the city of **Guangzhou**.  \n\nSo the stored information lists two different cities for Oscar Wilde’s death.",
+      "gold_answer": "Guangzhou",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was baseball created in?",
+      "system_answer": "The facts you provided conflict:\n\n- **Fact 160** and **Fact 216** say baseball was created in the United States of America.  \n- **Fact 382** says baseball was created in Japan.  \n- **Fact 150** says baseball was created in Australia.  \n\nSo the stored information lists three different countries for the creation of baseball.",
+      "gold_answer": "Japan",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Ernst Heinkel?",
+      "system_answer": "I’m not sure—there are two different answers in the facts you gave:\n\n- **Fact 192** says Ernst Heinkel is a citizen of **Germany**.  \n- **Fact 203** says Ernst Heinkel is a citizen of the **Tang Empire**.  \n\nSo the stored information contains a conflict regarding Ernst Heinkel’s citizenship.",
+      "gold_answer": "Tang Empire",
+      "score": 0.0
+    },
+    {
+      "question": "Which city is the headquarter of The University of the Arts located in?",
+      "system_answer": "The headquarters of **The University of the Arts** is located in **Philadelphia**.",
+      "gold_answer": "Philadelphia",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was rap rock created in?",
+      "system_answer": "The facts you provided give two different answers:\n\n- **Fact 359** says rap rock was created in the **United States of America**.  \n- **Fact 403** says rap rock was created in the **Russian Empire**.\n\nSo the stored information contains a conflict regarding the country where rap rock was created.",
+      "gold_answer": "Russian Empire",
+      "score": 0.0
+    },
+    {
+      "question": "Where was Christianity founded?",
+      "system_answer": "The facts you provided give two different answers:\n\n- **Fact 40** says Christianity was founded in the city of **Jerusalem**.  \n- **Fact 43** says Christianity was founded in the city of **Taipei**.  \n\nSo the stored information contains a conflict regarding the founding location of Christianity.",
+      "gold_answer": "Taipei",
+      "score": 0.0
+    },
+    {
+      "question": "What is the official language of United States of America?",
+      "system_answer": "I’m not sure—there are two different answers in the facts you gave:\n\n- **Fact 242** says the official language of the United States of America is **American English**.  \n- **Fact 295** says the official language of the United States of America is **German**.  \n\nSo the stored information contains a conflict regarding the official language of the U.S.",
+      "gold_answer": "German",
+      "score": 0.0
+    },
+    {
+      "question": "Who performed Past Masters?",
+      "system_answer": "According to the facts you provided, **Past Masters** was performed by **both The Beatles (Fact 251)** and **Madonna (Fact 364)**.",
+      "gold_answer": "Madonna",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital of Japan?",
+      "system_answer": "The capital of Japan is **Tokyo**.",
+      "gold_answer": "Tokyo",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital of France?",
+      "system_answer": "There’s a conflict in the facts you provided:\n\n- **Fact 163** says the capital of France is **Paris**.  \n- **Fact 171** says the capital of France is **Harare**.  \n\nSo the stored information lists two different answers for the capital of France.",
+      "gold_answer": "Harare",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the developer of SteamOS?",
+      "system_answer": "The facts you gave contain a conflict:\n\n- **Fact 238** says SteamOS was developed by **Valve Corporation**.  \n- **Fact 277** says SteamOS was developed by **ABB Group**.\n\nSo the stored information lists two different developers for SteamOS.",
+      "gold_answer": "ABB Group",
+      "score": 1.0
+    },
+    {
+      "question": "Which city is the headquarter of University of Bucharest located in?",
+      "system_answer": "I’m not sure—there are two different answers in the facts you gave:\n\n- The headquarters of University of Bucharest is located in the city of **Bucharest**.  \n- The headquarters of University of Bucharest is located in the city of **Ankara**.",
+      "gold_answer": "Ankara",
+      "score": 1.0
+    },
+    {
+      "question": "Which sport is wide receiver associated with?",
+      "system_answer": "The facts you gave contain a conflict:\n\n- **Fact 46** says *wide receiver* is associated with the sport of **American football**.  \n- **Fact 252** says *wide receiver* is associated with the sport of **rugby**.\n\nSo the stored information lists two different sports for the position of wide receiver.",
+      "gold_answer": "rugby",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Hines Ward play?",
+      "system_answer": "According to the facts you provided, Hines Ward is recorded as playing **both wide receiver and cornerback**.",
+      "gold_answer": "cornerback",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital of Australia?",
+      "system_answer": "I’m not sure—according to the facts you gave, the capital of Australia is listed as **Canberra** (Fact 284) but also as **Oderzo** (Fact 388). The information is contradictory.",
+      "gold_answer": "Oderzo",
+      "score": 0.0
+    },
+    {
+      "question": "Which continent is Malaysia located in?",
+      "system_answer": "The facts you provided contain a conflict:\n\n- **Fact 373** says Malaysia is located in the continent of **Asia**.  \n- **Fact 442** says Malaysia is located in the continent of **Antarctica**.  \n\nSo the stored information lists two different continents for Malaysia.",
+      "gold_answer": "Antarctica",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of A Wizard of Earthsea?",
+      "system_answer": "According to the facts you provided, there are two conflicting claims:\n\n- **Fact 10** says the author of *A Wizard of Earthsea* is **Ursula K. Le Guin**.  \n- **Fact 301** says the author of *A Wizard of Earthsea* is **Pius XII**.\n\nSo the stored information lists both Ursula K. Le Guin and Pius XII as authors of the book.",
+      "gold_answer": "Pius XII",
+      "score": 0.0
+    },
+    {
+      "question": "Who performed Free as a Bird?",
+      "system_answer": "**Free as a Bird** was performed by **The Beatles**.",
+      "gold_answer": "The Beatles",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of Our Mutual Friend?",
+      "system_answer": "The facts you gave contain a conflict:\n\n- **Fact 107** says the author of *Our Mutual Friend* is **Charles Dickens**.  \n- **Fact 146** says the author of *Our Mutual Friend* is **Charles Darwin**.\n\nSo the stored information lists two different authors for that work.",
+      "gold_answer": "Charles Darwin",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was basketball created in?",
+      "system_answer": "Basketball was created in the **United States of America**.",
+      "gold_answer": "Soviet Union",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Hal Needham?",
+      "system_answer": "Hal Needham is a citizen of the **United States of America**.",
+      "gold_answer": "United States of America",
+      "score": 0.0
+    },
+    {
+      "question": "Which continent is Bengaluru located in?",
+      "system_answer": "The facts you provided give two different answers:\n\n- **Fact 4** says Bengaluru is located in the continent of **Asia**.  \n- **Fact 234** says Bengaluru is located in the continent of **Oceania**.  \n\nSo the stored information contains a conflict regarding Bengaluru’s continent.",
+      "gold_answer": "Oceania",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Slovakia national football team associated with?",
+      "system_answer": "The stored facts give two different answers:\n\n- **Fact 18** says the Slovakia national football team is associated with **association football**.  \n- **Fact 279** says the same team is associated with **cricket**.\n\nSo the information you provided contains a conflict regarding the sport.",
+      "gold_answer": "cricket",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the current head of state in United States of America?",
+      "system_answer": "The stored facts give two different answers:\n\n- **Fact 115** says the current head of state in the United States of America is **Donald Trump**.  \n- **Fact 126** says the current head of state in the United States of America is **Connachta**.  \n\nSo the information you provided contains a conflict regarding the current head of state.",
+      "gold_answer": "Connachta",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Imelda Marcos affiliated with?",
+      "system_answer": "According to the facts you provided, there are two conflicting claims:\n\n- **Fact 248** says Imelda Marcos is affiliated with the religion of **Catholicism**.  \n- **Fact 374** says Imelda Marcos is affiliated with the religion of **atheism**.\n\nSo the stored information lists both Catholicism and atheism as her affiliations.",
+      "gold_answer": "atheism",
+      "score": 0.0
+    },
+    {
+      "question": "What type of music does Dana International play?",
+      "system_answer": "The facts you provided give two different answers:\n\n- **Fact 243** says Dana International plays **pop music**.  \n- **Fact 281** says Dana International plays **Australian hip hop**.\n\nSo the stored information contains a conflict regarding the type of music she plays.",
+      "gold_answer": "Australian hip hop",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Sable?",
+      "system_answer": "The facts you provided give two different answers:\n\n- **Fact 299** says Sable is a citizen of the **Czech Republic**.  \n- **Fact 245** says Sable is a citizen of the **United States of America**.\n\nSo the stored information contains a conflict regarding Sable’s citizenship.",
+      "gold_answer": "Czech Republic",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was Charlie Hebdo created in?",
+      "system_answer": "The facts you gave contain a conflict:\n\n- **Fact 155** says Charlie Hebdo was created in **France**.  \n- **Fact 358** says Charlie Hebdo was created in **Italy**.\n\nSo the stored information lists two different countries for its creation.",
+      "gold_answer": "Italy",
+      "score": 0.0
+    },
+    {
+      "question": "Who is Elvis Presley married to?",
+      "system_answer": "",
+      "gold_answer": "Charles the Bold",
+      "score": 0.0
+    },
+    {
+      "question": "Who performed Hermione Granger?",
+      "system_answer": "**Elvis Presley’s marriage**\n\n- Fact 120: Elvis Presley is married to **Priscilla Presley**.  \n- Fact 139: Elvis Presley is married to **Charles the Bold**.  \n\nSo the stored information contains two different spouses for Elvis Presley.\n\n**Who performed “Hermione Granger”**\n\n- Fact 413: “Hermione Granger” was performed by **Emma Watson**.  \n- Fact 425: “Hermione Granger” was performed by **Kylie Minogue**.  \n\nThus the facts list two different performers for “Hermione Granger.”",
+      "gold_answer": "Kylie Minogue",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Bo Ryan associated with?",
+      "system_answer": "Bo Ryan is recorded as being associated with **two different sports** in the facts you gave:\n\n- **Fact 194** says he is associated with **basketball**.  \n- **Fact 346** says he is associated with **association football**.\n\nSo the stored information lists both basketball and association football as sports linked to Bo Ryan.",
+      "gold_answer": "association football",
+      "score": 0.0
+    },
+    {
+      "question": "What type of music does John McVie play?",
+      "system_answer": "According to the facts you provided, there are two different claims about the music style John McVie is associated with:\n\n- **Fact 90** says he plays **rock music**.  \n- **Fact 415** says he plays **rap rock**.\n\nSo the stored information lists both rock music and rap rock as the types of music John McVie plays.",
+      "gold_answer": "rap rock",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Rogério Ceni play?",
+      "system_answer": "Rogério Ceni is recorded as playing **two different positions** in the facts you gave:\n\n- **Fact 6** says he plays the position of **goalkeeper**.  \n- **Fact 434** says he plays the position of **flanker**.\n\nSo the stored information contains a conflict regarding his position.",
+      "gold_answer": "flanker",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the chief executive officer of Twitter?",
+      "system_answer": "The facts you provided give two different answers:\n\n- **Fact 109** says the chief executive officer of Twitter is **Jack Dorsey**.  \n- **Fact 275** says the chief executive officer of Twitter is **Bernard Arnault**.\n\nSo the stored information contains a conflict regarding the CEO of Twitter.",
+      "gold_answer": "Bernard Arnault",
+      "score": 0.0
+    },
+    {
+      "question": "What language does Kylie Minogue speak?",
+      "system_answer": "Kylie Minogue is recorded as speaking **both English and German** in the facts you provided.",
+      "gold_answer": "German",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Darryl Strawberry associated with?",
+      "system_answer": "",
+      "gold_answer": "baseball",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is placekicker associated with?",
+      "system_answer": "- **Darryl Strawberry** is associated with **baseball** (Fact 213).\n\n- **Placekicker** is linked to **two sports** in the facts you gave:  \n  * **American football** (Fact 78)  \n  * **Rugby** (Fact 321)  \n\nSo the stored information lists both American football and rugby as sports associated with the placekicker position.",
+      "gold_answer": "rugby",
+      "score": 0.0
+    },
+    {
+      "question": "What kind of work does Stephen McNeil do?",
+      "system_answer": "Stephen McNeil works as a **journalist**.",
+      "gold_answer": "journalist",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the employer of Dave Filoni?",
+      "system_answer": "According to the facts you provided, Dave Filoni is recorded as being employed by **both Lucasfilm (Fact 38)** and the **British Broadcasting Corporation (Fact 226)**.",
+      "gold_answer": "British Broadcasting Corporation",
+      "score": 0.0
+    },
+    {
+      "question": "Which continent is San Francisco located in?",
+      "system_answer": "San Francisco is located in the continent of **North America**.",
+      "gold_answer": "North America",
+      "score": 0.0
+    },
+    {
+      "question": "Where was Canadair founded?",
+      "system_answer": "The facts you gave contain a conflict:\n\n- **Fact 237** says Canadair was founded in the city of **Montreal**.  \n- **Fact 265** says Canadair was founded in the city of **Tucson**.  \n\nSo the stored information lists two different founding locations for Canadair.",
+      "gold_answer": "Tucson",
+      "score": 0.0
+    },
+    {
+      "question": "Which company is AP1000 produced by?",
+      "system_answer": "The facts you gave contain a conflict:\n\n- **Fact 196** says the AP1000 was produced by **Westinghouse Electric**.  \n- **Fact 356** says the AP1000 was produced by **Canadair**.\n\nSo the stored information lists two different companies as the producer of the AP1000.",
+      "gold_answer": "Canadair",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Ayumi Hamasaki?",
+      "system_answer": "Ayumi Hamasaki is a citizen of **Japan**.",
+      "gold_answer": "Japan",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Blair Walsh play?",
+      "system_answer": "Blair Walsh plays the position of **placekicker**.",
+      "gold_answer": "placekicker",
+      "score": 0.0
+    },
+    {
+      "question": "Who is Tony Blair married to?",
+      "system_answer": "I don't know.",
+      "gold_answer": "Alan Jay Lerner",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of Endymion?",
+      "system_answer": "The author of **Endymion** is **John Keats**.",
+      "gold_answer": "John Keats",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of Lady Windermere's Fan?",
+      "system_answer": "The author of *Lady Windermere's Fan* is **Oscar Wilde**.",
+      "gold_answer": "Oscar Wilde",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the current head of the Japan government?",
+      "system_answer": "The current head of the Japanese government is **Shinzō Abe**.",
+      "gold_answer": "Shinzō Abe",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the chairperson of Congolese Party of Labour?",
+      "system_answer": "According to the facts you provided, the chairperson of the Congolese Party of Labour is listed as **Denis Sassou‑Nguesso**. (There is also a conflicting entry that names **Stephen McNeil** as chairperson.)",
+      "gold_answer": "Stephen McNeil",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is flanker associated with?",
+      "system_answer": "Flanker is associated with **rugby union**.",
+      "gold_answer": "rugby union",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital of Czech Republic?",
+      "system_answer": "The capital of the Czech Republic is **Prague**.",
+      "gold_answer": "Prague",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Lisa Leslie play?",
+      "system_answer": "Lisa Leslie is recorded as playing **both the center position and the goaltender position** in the facts you provided.",
+      "gold_answer": "goaltender",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the current head of state in Soviet Union?",
+      "system_answer": "I’m not sure—there are two different claims in the facts you gave:\n\n- **Fact 159** says the current head of state in the Soviet Union is **Mikhail Gorbachev**.  \n- **Fact 365** says the current head of state in the Soviet Union is **Elizabeth II**.  \n\nSo the stored information contains a conflict regarding the head of state.",
+      "gold_answer": "Elizabeth II",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Ferdinand von Richthofen?",
+      "system_answer": "I’m not sure—there are two different claims in the facts you gave:\n\n- **Fact 24** says Ferdinand von Richthofen is a citizen of **Germany**.  \n- **Fact 386** says Ferdinand von Richthofen is a citizen of **Canada**.  \n\nSo the stored information contains a conflict regarding his citizenship.",
+      "gold_answer": "Canada",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Karen Armstrong affiliated with?",
+      "system_answer": "The facts you gave list two different religious affiliations for Karen Armstrong:\n\n- **Fact 266** says she is affiliated with the **Catholic Church**.  \n- **Fact 412** says she is affiliated with the **Church of Scotland**.  \n\nSo the stored information contains a conflict regarding her religious affiliation.",
+      "gold_answer": "Church of Scotland",
+      "score": 0.0
+    },
+    {
+      "question": "Who was Vito Corleone created by?",
+      "system_answer": "According to the facts you provided, there are two different claims about who created Vito Corleone:\n\n- **Fact 256** says he was created by **Mario Puzo**.  \n- **Fact 390** says he was created by **Nobuhiro Watsuki**.  \n\nSo the stored information lists both Mario Puzo and Nobuhiro Watsuki as creators of Vito Corleone.",
+      "gold_answer": "Nobuhiro Watsuki",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital of Romania?",
+      "system_answer": "I’m not sure—according to the facts you gave, there are two different answers:\n\n- **Fact 185** says the capital of Romania is **Bucharest**.  \n- **Fact 449** says the capital of Romania is **Rajanpur**.  \n\nSo the stored information contains a conflict regarding Romania’s capital.",
+      "gold_answer": "Rajanpur",
+      "score": 0.0
+    },
+    {
+      "question": "Which continent is India located in?",
+      "system_answer": "I’m not sure—according to the facts you gave, there are two different answers:\n\n- **Fact 228** says India is located in the continent of **Asia**.  \n- **Fact 280** says India is located in the continent of **Africa**.  \n\nSo the stored information contains a conflict regarding the continent in which India is located.",
+      "gold_answer": "Africa",
+      "score": 0.0
+    },
+    {
+      "question": "Which city did Olga of Kiev die in?",
+      "system_answer": "The facts you gave contain a conflict:\n\n- **Fact 125** says Olga of Kiev died in the city of **Kyiv**.  \n- **Fact 450** says Olga of Kiev died in the city of **Rodez**.\n\nSo the stored information lists two different cities for her death.",
+      "gold_answer": "Rodez",
+      "score": 0.0
+    },
+    {
+      "question": "Who founded Sasanian Empire?",
+      "system_answer": "According to the facts you provided, there are two different claims about who founded the Sasanian Empire:\n\n- **Fact 224** says it was founded by **Ardashir I**.  \n- **Fact 264** says it was founded by **Walter Chrysler**.\n\nSo the stored information contains a conflict regarding the founder.",
+      "gold_answer": "Walter Chrysler",
+      "score": 0.0
+    },
+    {
+      "question": "Which city did Pedro Pierluisi work in?",
+      "system_answer": "Pedro Pierluisi worked in the city of **Washington, D.C.**",
+      "gold_answer": "Washington, D.C.",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Surrey Senior Cup associated with?",
+      "system_answer": "The facts you gave contain a conflict:\n\n- **Fact 291** says the Surrey Senior Cup is associated with **association football**.  \n- **Fact 315** says the Surrey Senior Cup is associated with **basketball**.\n\nSo the stored information lists two different sports for the Surrey Senior Cup.",
+      "gold_answer": "basketball",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Narendra Modi?",
+      "system_answer": "According to the facts you provided, there are two conflicting claims about Narendra Modi’s citizenship:\n\n- **Fact 176** says he is a citizen of **India**.  \n- **Fact 217** says he is a citizen of **Australia**.\n\nSo the stored information lists both India and Australia as his country of citizenship.",
+      "gold_answer": "Australia",
+      "score": 1.0
+    },
+    {
+      "question": "Who is Victoria Beckham married to?",
+      "system_answer": "Victoria Beckham is married to **David Beckham**.",
+      "gold_answer": "David Beckham",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Charles Messier?",
+      "system_answer": "The facts you gave contain a conflict:\n\n- **Fact 203** says Charles Messier is a citizen of **France**.  \n- **Fact 343** says Charles Messier is a citizen of **Iran**.\n\nSo the stored information lists two different countries of citizenship for Charles Messier.",
+      "gold_answer": "Iran",
+      "score": 0.0
+    },
+    {
+      "question": "Who was Rand al'Thor created by?",
+      "system_answer": "I’m not sure—there are two different claims in the facts you gave:\n\n- **Fact 66** says Rand al'Thor was created by **Robert Jordan**.  \n- **Fact 326** says Rand al'Thor was created by **Ferdowsi**.  \n\nSo the stored information lists two different creators for Rand al'Thor.",
+      "gold_answer": "Ferdowsi",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Mike D'Antoni play?",
+      "system_answer": "Mike D'Antoni plays the position of **point guard**.",
+      "gold_answer": "point guard",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Colin Irwin?",
+      "system_answer": "Colin Irwin is a citizen of **Israel**.",
+      "gold_answer": "Israel",
+      "score": 0.0
+    },
+    {
+      "question": "Who is Walter Chrysler's child?",
+      "system_answer": "",
+      "gold_answer": "Charles Frederick, Duke of Holstein-Gottorp",
+      "score": 0.0
+    },
+    {
+      "question": "Who is Charles Darwin married to?",
+      "system_answer": "**Walter Chrysler’s child:**  \nI don’t have that information in the facts you provided.\n\n**Charles Darwin’s spouse:**  \nAccording to the stored facts, Charles Darwin is married to **Charles Darwin**.",
+      "gold_answer": "Amala Paul",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Irving Fryar play?",
+      "system_answer": "Irving Fryar plays the position of **wide receiver**.",
+      "gold_answer": "wide receiver",
+      "score": 0.0
+    }
+  ]
+}

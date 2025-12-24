@@ -80,7 +80,12 @@ def generate_latex_table(results_dir):
 \setlength{\tabcolsep}{2pt}
 \begin{table*}[t]
 \centering
-\caption{Evaluation of memory competencies on MemoryAgentBench. Placeholder results (in \textcolor{red}{red}) will be replaced with empirical scores for CrewAI, the OpenAI Agent SDK, and other frameworks.}
+\caption{Evaluation of memory competencies on MemoryAgentBench.
+For each agent framework, scores are first computed per session, then averaged across all sessions belonging to the same subtask.
+For OpenAI SDK variants, $C$ denotes the maximum short-term context window (in tokens) retained during accumulation-based memory.
+Category-level scores (AR, TTL, LRU, SF) are obtained by averaging the corresponding subtask scores within each category.
+The Overall score is computed as the mean of the category-level averages.
+}
 \label{tab:memorybench-results}
 \footnotesize
 \begin{tabular}{
@@ -135,7 +140,12 @@ def generate_latex_table(results_dir):
         readable_name = system.replace("_", " ")
         body += f"{readable_name} & " + " & ".join(row) + r" \\" + "\n"
 
-    footer = r"""\bottomrule
+    footer = r"""
+\midrule
+\multicolumn{15}{p{0.95\linewidth}}{
+\footnotesize\textit{Note:} While the Groq-backed \texttt{openai/gpt-oss-20b} model supports context windows up to $\sim$130K tokens, using very large accumulated contexts frequently hits tokens-per-minute (TPM) rate limits (e.g., 250K TPM limit exceeded during benchmark runs). This renders extreme context accumulation impractical for scalable evaluations such as MemoryAgentBench, despite being theoretically supported by the model.
+}
+\bottomrule
 \end{tabular}
 \end{table*}"""
 

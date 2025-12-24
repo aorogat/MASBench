@@ -1,0 +1,610 @@
+{
+  "system": "LangGraph_STM_LTM_CTX50",
+  "split": "Test_Time_Learning",
+  "session_id": "6",
+  "subtask": "MCC",
+  "category": "TTL",
+  "runtime_sec": 309.44,
+  "questions": [
+    {
+      "question": "What is the population of Venezuela ?",
+      "system_answer": "",
+      "gold_answer": "33",
+      "score": 0
+    },
+    {
+      "question": "What does target heart rate mean ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What currency does Luxembourg use ?",
+      "system_answer": "label: 32",
+      "gold_answer": "32",
+      "score": 1
+    },
+    {
+      "question": "How long did Rip Van Winkle sleep ?",
+      "system_answer": "",
+      "gold_answer": "18",
+      "score": 0
+    },
+    {
+      "question": "Material called linen is made from what plant ?",
+      "system_answer": "label: 17",
+      "gold_answer": "17",
+      "score": 1
+    },
+    {
+      "question": "What is phenylalanine ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is a group of turkeys called ?",
+      "system_answer": "",
+      "gold_answer": "16",
+      "score": 0
+    },
+    {
+      "question": "What are enzymes ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "Why is the sun yellow ?",
+      "system_answer": "",
+      "gold_answer": "43",
+      "score": 0
+    },
+    {
+      "question": "What state is the geographic center of the lower 48 states ?",
+      "system_answer": "- **Linen** is made from the **flax** plant.  \n- **Phenylalanine** is an essential **amino acid** (an aromatic amino acid) that is a building block of proteins.  \n- A group of turkeys is called a **gaggle** (sometimes also a “rafter”).  \n- **Enzymes** are biological **catalysts** that accelerate chemical reactions in living organisms.  \n- The Sun appears **yellow** to us because Earth’s atmosphere scatters the shorter (blue) wavelengths of sunlight, leaving the longer (yellow‑orange) wavelengths to dominate the light that reaches our eyes.  \n- The geographic center of the lower 48 U.S. states lies in **Kansas** (near the town of Lebanon).",
+      "gold_answer": "45",
+      "score": 0
+    },
+    {
+      "question": "What is foot and mouth disease ?",
+      "system_answer": "**Foot‑and‑mouth disease (FMD)** is a highly contagious viral illness that primarily affects cloven‑hoofed animals such as cattle, sheep, goats, pigs, and deer. It is caused by a picornavirus belonging to the *Pestivirus* genus.  \n\n**Key features**\n\n| Feature | Details |\n|---------|---------|\n| **Clinical signs** | Fever, lameness, and painful vesicles (blisters) on the feet, mouth, and teats. The vesicles rupture, leaving ulcerated lesions that can lead to secondary bacterial infections. |\n| **Transmission** | Direct contact with infected animals, contaminated feed or water, and through the air over short distances. The virus can survive in the environment (e.g., on fomites, in dust) for weeks. |\n| **Affected species** | Cattle, sheep, goats, pigs, deer, and other cloven‑hoofed livestock. It can also infect some wildlife species. |\n| **Economic impact** | Losses arise from decreased milk and meat production, trade restrictions, culling of infected or exposed animals, and costs of vaccination and biosecurity measures. |\n| **Control measures** | Vaccination (often with inactivated virus), movement restrictions, culling of infected and exposed animals, strict biosecurity protocols, and surveillance. |\n| **Human health** | The virus does not infect humans, but people can become infected with the virus’s genetic material through handling infected animals or contaminated materials. However, it is not a zoonotic disease. |\n\n**Why it matters**  \nBecause of its rapid spread and severe economic consequences, many countries have strict surveillance and control programs. Outbreaks can lead to international trade bans and significant financial losses for the livestock industry.",
+      "gold_answer": "7",
+      "score": 0
+    },
+    {
+      "question": "What is sonar ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "When was Thomas Jefferson born ?",
+      "system_answer": "label: 38",
+      "gold_answer": "38",
+      "score": 1
+    },
+    {
+      "question": "What is the Ohio state bird ?",
+      "system_answer": "",
+      "gold_answer": "16",
+      "score": 0
+    },
+    {
+      "question": "What are the colors of the German flag ?",
+      "system_answer": "label: 3",
+      "gold_answer": "3",
+      "score": 1
+    },
+    {
+      "question": "Who won Ms. American in 1989 ?",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "Where on the body is a mortarboard worn ?",
+      "system_answer": "",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What is the width of a football field ?",
+      "system_answer": "",
+      "gold_answer": "10",
+      "score": 0
+    },
+    {
+      "question": "Who is the Prime Minister of Canada ?",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "What is the conversion rate between dollars and pounds ?",
+      "system_answer": "",
+      "gold_answer": "34",
+      "score": 0
+    },
+    {
+      "question": "What is fibromyalgia ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What are the spots on dominoes called ?",
+      "system_answer": "**1. Where on the body is a mortarboard worn?**  \nA mortarboard (the flat, square graduation cap) is worn on the **top of the head**—the crown of the skull.\n\n**2. What is the width of a football field?**  \n- **American football (NFL/college)**: 160 ft (53 ⅓ yd) wide.  \n- **Association football (soccer)**: width ranges from 50 yd (45 m) to 100 yd (90 m) depending on competition level; most professional fields are 70–80 yd (64–73 m) wide.\n\n**3. Who is the Prime Minister of Canada?**  \nAs of 2025, the Prime Minister of Canada is **Justin Trudeau** (since November 4, 2015).\n\n**4. What is the conversion rate between dollars and pounds?**  \nThe U.S. dollar (USD) to British pound sterling (GBP) rate fluctuates daily.  \n- **Approximate (as of 24 Dec 2025)**: 1 USD ≈ 0.78 GBP.  \n- For the most accurate, check a reliable financial source (e.g., Bloomberg, Reuters, or your bank) on the day you need the conversion.\n\n**5. What is fibromyalgia?**  \nFibromyalgia is a chronic disorder characterized by:\n- **Widespread musculoskeletal pain** (often described as a constant dull ache).  \n- **Fatigue, sleep disturbances, and cognitive “fog.”**  \n- **Trigger points** (sensitive spots) that can produce pain when pressed.  \nThe exact cause is unknown, but it’s thought to involve abnormal pain processing in the brain and nervous system. Treatment focuses on medication, exercise, stress management, and lifestyle changes.\n\n**6. What are the spots on dominoes called?**  \nThe individual dots on a domino tile are called **pips** (or “spots”). Each pip represents a number value, and the arrangement of pips determines the tile’s number.",
+      "gold_answer": "19",
+      "score": 0
+    },
+    {
+      "question": "What city is also known as `` The Gateway to the West '' ?",
+      "system_answer": "St. Louis, Missouri.",
+      "gold_answer": "36",
+      "score": 0
+    },
+    {
+      "question": "Who discovered x-rays ?",
+      "system_answer": "Wilhelm Conrad Röntgen.",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "How much does water weigh ?",
+      "system_answer": "A standard unit of measurement is the liter.  \n- 1 liter of water (at 4 °C, the density of water is 1 kg/L) weighs **about 1 kilogram** (≈ 2.2 pounds).  \n- In other terms, 1 cubic meter of water weighs **1,000 kilograms** (≈ 2,200 pounds).  \n\nSo, roughly, each liter of water has a mass of one kilogram.",
+      "gold_answer": "39",
+      "score": 0
+    },
+    {
+      "question": "Mercury , what year was it discovered ?",
+      "system_answer": "label: 15",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "Where do apple snails live ?",
+      "system_answer": "",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What is the rainiest place on Earth ?",
+      "system_answer": "",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "Who invented the hula hoop ?",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "What is the longest suspension bridge in the U.S. ?",
+      "system_answer": "",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What is plastic made of ?",
+      "system_answer": "",
+      "gold_answer": "42",
+      "score": 0
+    },
+    {
+      "question": "How far is it from Denver to Aspen ?",
+      "system_answer": "label: 10",
+      "gold_answer": "10",
+      "score": 1
+    },
+    {
+      "question": "What is the criterion for being legally blind ?",
+      "system_answer": "",
+      "gold_answer": "6",
+      "score": 0
+    },
+    {
+      "question": "Who invented the instant Polaroid camera ?",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "What is the distance in miles from the earth to the sun ?",
+      "system_answer": "",
+      "gold_answer": "10",
+      "score": 0
+    },
+    {
+      "question": "In which state would you find the Catskill Mountains ?",
+      "system_answer": "",
+      "gold_answer": "45",
+      "score": 0
+    },
+    {
+      "question": "What is a prism ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "How fast is sound ?",
+      "system_answer": "The speed of sound depends on the medium and its conditions, but in dry air at a typical room temperature (about 20 °C or 68 °F) it travels at roughly:\n\n- **≈ 343 m s⁻¹** (≈ 1,125 ft s⁻¹)  \n- **≈ 1,235 km h⁻¹** (≈ 767 mph)\n\nIn other media the speed is higher:\n\n- **Water**: ~1,480 m s⁻¹ (≈ 5,400 km h⁻¹)  \n- **Steel**: ~5,120 m s⁻¹ (≈ 18,400 km h⁻¹)\n\nThe speed increases with temperature in gases, and is also affected by humidity, pressure, and the density of the medium.",
+      "gold_answer": "15",
+      "score": 0
+    },
+    {
+      "question": "What does cc in engines mean ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is an ulcer ?",
+      "system_answer": "An ulcer is a sore or lesion that develops when the surface of a tissue—usually skin or the lining of an organ—becomes eroded or broken down. The term is most often used for **peptic (stomach) ulcers** or **gastric ulcers**, where the protective lining of the stomach or duodenum is damaged, usually by excess acid, infection (Helicobacter pylori), or certain medications (NSAIDs). Ulcers can also occur on the skin (e.g., pressure ulcers, diabetic foot ulcers) or other mucous membranes (e.g., mouth ulcers). They are characterized by pain, inflammation, and sometimes bleeding, and they heal when the underlying cause is addressed.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is compounded interest ?",
+      "system_answer": "**Compound interest** is the process of earning interest on both the original amount of money (the principal) and on the interest that has already accumulated. In other words, the interest “compounds” or is added to the principal, so that in the next period you earn interest on a larger amount.\n\n### How it works\n1. **Initial deposit (principal)** – the amount you start with.  \n2. **Interest rate** – the percentage you earn per compounding period.  \n3. **Compounding frequency** – how often the interest is added to the principal (e.g., annually, semi‑annually, quarterly, monthly, daily, or continuously).\n\nThe formula for compound interest (for discrete compounding) is:\n\n\\[\nA = P \\left(1 + \\frac{r}{n}\\right)^{nt}\n\\]\n\n- \\(A\\) = the amount after \\(t\\) years  \n- \\(P\\) = principal (initial deposit)  \n- \\(r\\) = annual interest rate (decimal)  \n- \\(n\\) = number of compounding periods per year  \n- \\(t\\) = number of years\n\n### Example\nSuppose you invest \\$1,000 at an annual interest rate of 5% compounded monthly for 3 years.\n\n- \\(P = 1{,}000\\)  \n- \\(r = 0.05\\)  \n- \\(n = 12\\)  \n- \\(t = 3\\)\n\n\\[\nA = 1{,}000 \\left(1 + \\frac{0.05}{12}\\right)^{12 \\times 3}\n  \\approx 1{,}161.62\n\\]\n\nSo after 3 years you would have about \\$1,161.62, with \\$161.62 earned as interest.\n\n### Key points\n- **Interest on interest**: Each compounding period adds interest to the principal, so subsequent interest calculations include that added amount.  \n- **Frequency matters**: More frequent compounding (e.g., daily vs. yearly) yields a slightly higher final amount because interest is added more often.  \n- **Continuous compounding**: If interest is compounded an infinite number of times per year, the formula becomes \\(A = P e^{rt}\\).\n\nCompound interest is a fundamental concept in finance, used in savings accounts, mortgages, bonds, and many investment products. It demonstrates how money can grow faster over time when interest is reinvested.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What does CPR stand for ?",
+      "system_answer": "",
+      "gold_answer": "37",
+      "score": 0
+    },
+    {
+      "question": "What is hybridization ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "How fast is alcohol absorbed ?",
+      "system_answer": "Alcohol is absorbed very quickly once it reaches the stomach and small intestine.  \n* **Peak blood‑alcohol concentration (BAC)** is usually reached within **30–90 minutes** after drinking.  \n* The rate depends on a few factors:  \n  * **Concentration** – higher‑strength drinks (e.g., spirits) are absorbed faster than diluted beverages.  \n  * **Food in the stomach** – a full stomach slows absorption, while an empty stomach speeds it up.  \n  * **Rate of consumption** – sipping slowly allows the stomach to empty into the small intestine, whereas gulping or “binge” drinking can saturate the stomach and accelerate absorption.  \n  * **Individual differences** – age, sex, body weight, and liver function also influence how quickly alcohol enters the bloodstream.  \n\nIn short, alcohol typically reaches its peak in the blood within about half an hour to an hour after consumption, with the exact timing varying by the factors above.",
+      "gold_answer": "15",
+      "score": 0
+    },
+    {
+      "question": "Who was the first American to walk in space ?",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "What are pediatricians ?",
+      "system_answer": "**Pediatricians** are medical doctors who specialize in the health and medical care of infants, children, and adolescents (generally up to age 18–21, depending on the country).  \n\n### Key aspects of a pediatrician’s role\n\n| What they do | Why it matters |\n|--------------|----------------|\n| **Diagnose and treat illnesses** – from common colds to complex congenital conditions | Children’s bodies and immune systems differ from adults, so pediatricians use age‑appropriate methods. |\n| **Preventive care** – routine check‑ups, growth monitoring, developmental screenings, and vaccinations | Early detection and prevention keep kids healthy and reduce future health problems. |\n| **Counseling and education** – advising parents on nutrition, safety, sleep, and behavior | Parents rely on pediatricians for guidance on everyday health and developmental milestones. |\n| **Specialized care** – some pediatricians focus on areas such as neonatology, pediatric oncology, or sports medicine | Allows deeper expertise for specific conditions or populations. |\n\n### How they become pediatricians\n\n1. **Undergraduate education** – usually a 4‑year degree (often in biology or pre‑med).  \n2. **Medical school** – 4 years of coursework and clinical rotations.  \n3. **Residency in pediatrics** – 3–4 years of supervised practice in hospitals and clinics.  \n4. **Board certification** – Passing exams from the American Board of Pediatrics (or equivalent bodies worldwide).  \n5. **Continuing education** – Ongoing learning to stay current with medical advances.\n\n### Where they work\n\n- **Hospitals** (pediatric wards, neonatal intensive care units).  \n- **Private practices** (family‑medicine or solo pediatric offices).  \n- **Community health centers** and **schools** (school nurses, health educators).  \n- **Research and academia** (clinical trials, teaching future doctors).\n\nIn short, pediatricians are the specialists who provide comprehensive, age‑appropriate medical care to keep children healthy from infancy through adolescence.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the sales tax rate in New York ?",
+      "system_answer": "",
+      "gold_answer": "33",
+      "score": 0
+    },
+    {
+      "question": "What is the money they use in Zambia ?",
+      "system_answer": "The currency used in Zambia is the **Zambian kwacha (ZMW)**.",
+      "gold_answer": "32",
+      "score": 0
+    },
+    {
+      "question": "What is acetic acid ?",
+      "system_answer": "Acetic acid is a simple carboxylic acid with the chemical formula **CH₃COOH**. It is a colorless liquid that gives vinegar its characteristic sour taste and pungent smell. Acetic acid is widely used in food preservation (as vinegar), in industrial processes (e.g., as a solvent or reagent), and in the manufacture of various chemicals such as acetate esters and plastics.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "When was Lyndon B. Johnson born ?",
+      "system_answer": "Lyndon B. Johnson was born on **August 27, 1908**.",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "In what spacecraft did U.S. astronaut Alan Shepard make his historic 1961 flight ?",
+      "system_answer": "Alan Shepard’s historic 1961 flight was aboard the **Mercury‑Redstone 3 spacecraft, also called Freedom 7**.",
+      "gold_answer": "44",
+      "score": 0
+    },
+    {
+      "question": "How cold should a refrigerator be ?",
+      "system_answer": "A refrigerator should be kept at **about 37 °F to 40 °F (3 °C to 4 °C)**.  \nThis temperature range is cool enough to keep food safe and fresh, but not so cold that it freezes most foods or causes excessive condensation.",
+      "gold_answer": "2",
+      "score": 0
+    },
+    {
+      "question": "What is another astronomic term for the Northern Lights ?",
+      "system_answer": "",
+      "gold_answer": "19",
+      "score": 0
+    },
+    {
+      "question": "Where is the Shawnee National Forest ?",
+      "system_answer": "The Shawnee National Forest is located in the southern part of Illinois, USA.",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "How much of an apple is water ?",
+      "system_answer": "An average apple is mostly water – roughly **84 %–86 % of its weight is water** (the rest is sugars, fiber, vitamins, minerals, etc.).",
+      "gold_answer": "9",
+      "score": 0
+    },
+    {
+      "question": "What is strep throat ?",
+      "system_answer": "**Strep throat** is a bacterial infection of the throat and tonsils caused by *Streptococcus pyogenes* (group A streptococcus). It is one of the most common causes of sore throat in children and adults.\n\n**Key points**\n\n| Feature | Typical presentation |\n|---------|----------------------|\n| **Cause** | *Streptococcus pyogenes* (group A strep) |\n| **Transmission** | Respiratory droplets (coughs, sneezes) or close contact with an infected person |\n| **Symptoms** | • Sudden, severe sore throat<br>• Painful swallowing<br>• Red, swollen tonsils (sometimes with white patches or streaks of pus)<br>• Fever (often >38 °C / 100.4 °F)<br>• Headache, body aches, fatigue<br>• Small, red spots (“petechiae”) on the soft palate<br>• Swollen, tender cervical lymph nodes<br>• Rarely, rash (scarlet fever) |\n| **Diagnosis** | • Clinical exam (look for tonsillar exudates, fever, swollen nodes)<br>• Rapid antigen detection test (RADT) or throat culture (gold standard) |\n| **Treatment** | • Antibiotics (penicillin or amoxicillin are first‑line; alternatives for penicillin‑allergic patients: cephalosporins, macrolides, clindamycin)<br>• Symptomatic relief: pain relievers (acetaminophen, ibuprofen), throat lozenges, warm salt‑water gargles, adequate hydration |\n| **Complications (if untreated)** | • Rheumatic fever (can damage heart valves)<br>• Post‑streptococcal glomerulonephritis (kidney inflammation)<br>• Peritonsillar abscess (quinsy) |\n| **Prevention** | • Good hand hygiene<br>• Cover coughs/sneezes<br>• Avoid close contact with infected individuals<br>• Finish the full course of antibiotics even if symptoms improve |\n\n**Bottom line:** Strep throat is a bacterial throat infection that can be quickly diagnosed and effectively treated with antibiotics, preventing serious complications. If you suspect you or a child has strep throat, see a healthcare provider for testing and appropriate treatment.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is poliomyelitis ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the temperature at the center of the earth ?",
+      "system_answer": "label: 2",
+      "gold_answer": "2",
+      "score": 1
+    },
+    {
+      "question": "Where is the Lourve ?",
+      "system_answer": "",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What is the longest bone in the human body ?",
+      "system_answer": "",
+      "gold_answer": "13",
+      "score": 0
+    },
+    {
+      "question": "What state has the least amount of rain per year ?",
+      "system_answer": "",
+      "gold_answer": "45",
+      "score": 0
+    },
+    {
+      "question": "What is neurology ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the statue of liberty made of ?",
+      "system_answer": "",
+      "gold_answer": "42",
+      "score": 0
+    },
+    {
+      "question": "What was W.C. Fields ' real name ?",
+      "system_answer": "W.C. Fields’ real name was **William Claude Dukenfield**.",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "What is solar wind ?",
+      "system_answer": "**Solar wind** is a continuous stream of charged particles—mostly electrons and protons—ejected from the outer layers of the Sun’s atmosphere (the corona). These particles are accelerated to high speeds (typically 300–800 km/s) and flow outward through the entire solar system, carrying with them the Sun’s magnetic field. Solar wind interacts with planetary magnetospheres, creates auroras, and can influence space‑based technology and the Earth’s upper atmosphere.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What position did Willie Davis play in baseball ?",
+      "system_answer": "Willie Davis was a **catcher** in Major League Baseball.",
+      "gold_answer": "14",
+      "score": 0
+    },
+    {
+      "question": "Who was the abolitionist who led the raid on Harper 's Ferry in 1859 ?",
+      "system_answer": "The raid on Harpers Ferry in 1859 was led by the abolitionist **John Brown**.",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "Who was the first woman governor in the U.S. ?",
+      "system_answer": "The first woman elected as a U.S. governor was **Nellie Tayloe Ross**, who became governor of Wyoming in 1924.",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "What are solar cells ?",
+      "system_answer": "**Solar cells** (also called photovoltaic cells) are semiconductor devices that convert light—specifically sunlight—directly into electricity. They work by exploiting the **photovoltaic effect**: when photons strike the cell, they excite electrons in the semiconductor material, creating electron‑hole pairs that are separated by an internal electric field. This separation generates a flow of electric current that can be harnessed for power.\n\nKey points:\n\n| Feature | Typical Details |\n|---------|-----------------|\n| **Material** | Most common: crystalline silicon (monocrystalline or polycrystalline). Others include thin‑film materials such as cadmium telluride (CdTe), copper indium gallium selenide (CIGS), and emerging perovskites. |\n| **Structure** | A p‑type layer and an n‑type layer form a p‑n junction. The junction creates an electric field that drives electrons toward the n‑side and holes toward the p‑side, producing a voltage. |\n| **Operation** | • Light photons hit the cell. <br>• Electrons are knocked loose, creating electron‑hole pairs. <br>• The internal field separates them, generating a current. <br>• The current flows through an external circuit, delivering usable power. |\n| **Efficiency** | Commercial silicon cells typically reach 15–22 % efficiency; high‑performance research cells can exceed 30 %. |\n| **Applications** | • Residential and commercial rooftop installations. <br>• Utility‑scale solar farms. <br>• Portable devices (solar chargers, calculators). <br>• Spacecraft power (solar panels on satellites, the International Space Station). |\n| **Advantages** | • Renewable, abundant energy source. <br>• Low operating costs and minimal maintenance. <br>• Scalable from small panels to large arrays. |\n| **Challenges** | • Production cost and material scarcity (e.g., silicon, rare metals). <br>• Efficiency limits and energy payback time. <br>• Environmental concerns over manufacturing and disposal. |\n\nIn short, a solar cell is a tiny, solid‑state device that turns photons from the sun into a steady electric current, forming the fundamental building block of photovoltaic power systems.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "When was the telephone invented ?",
+      "system_answer": "label: 38",
+      "gold_answer": "38",
+      "score": 1
+    },
+    {
+      "question": "What is another name for vitamin B1 ?",
+      "system_answer": "label: 0",
+      "gold_answer": "19",
+      "score": 0
+    },
+    {
+      "question": "What is the major fault line near Kentucky ?",
+      "system_answer": "",
+      "gold_answer": "6",
+      "score": 0
+    },
+    {
+      "question": "Where is the Savannah River ?",
+      "system_answer": "",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What city 's newspaper is called `` The Star '' ?",
+      "system_answer": "",
+      "gold_answer": "36",
+      "score": 0
+    },
+    {
+      "question": "What planet has the strongest magnetic field of all the planets ?",
+      "system_answer": "",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What is severance pay ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What breed of hunting dog did the Beverly Hillbillies own ?",
+      "system_answer": "",
+      "gold_answer": "16",
+      "score": 0
+    },
+    {
+      "question": "What is the population of China ?",
+      "system_answer": "",
+      "gold_answer": "33",
+      "score": 0
+    },
+    {
+      "question": "What are semiconductors ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What body of water are the Canary Islands in ?",
+      "system_answer": "",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What does the word fortnight mean ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What monastery was raided by Vikings in the late eighth century ?",
+      "system_answer": "",
+      "gold_answer": "6",
+      "score": 0
+    },
+    {
+      "question": "What did Edward Binney and Howard Smith invent in 1903 ?",
+      "system_answer": "",
+      "gold_answer": "6",
+      "score": 0
+    },
+    {
+      "question": "When was President Kennedy shot ?",
+      "system_answer": "",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "What is a thermometer ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the earth 's diameter ?",
+      "system_answer": "",
+      "gold_answer": "10",
+      "score": 0
+    },
+    {
+      "question": "What is mold ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What does `` Sitting Shiva '' mean ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is desktop publishing ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "Who discovered radium ?",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "What is mad cow disease ?",
+      "system_answer": "**When was President Kennedy shot?**  \nPresident John F. Kennedy was assassinated on **November 22, 1963** in Dallas, Texas.\n\n**What is a thermometer?**  \nA thermometer is a device that measures temperature, typically by using a material that expands or contracts (like mercury, alcohol, or a digital sensor) in response to heat.\n\n**What is the Earth’s diameter?**  \nThe Earth’s equatorial diameter is about **12,742 km** (≈ 7,918 miles).\n\n**What is mold?**  \nMold is a type of fungus that grows in damp or decaying organic matter, producing spores that can spread through the air. It often appears as fuzzy patches in dark, moist areas.\n\n**What does “Sitting Shiva” mean?**  \nSitting Shiva is a Jewish mourning tradition in which mourners gather for a 7‑day period after a death, offering support, sharing memories, and observing specific customs such as sitting on low stools and refraining from certain activities.\n\n**What is desktop publishing?**  \nDesktop publishing (DTP) is the creation of printed or digital documents using a computer and specialized software (e.g., Adobe InDesign, QuarkXPress, Microsoft Publisher). It allows users to design layouts, typeset text, and incorporate graphics for high‑quality output.\n\n**Who discovered radium?**  \nRadium was discovered by **Marie Curie** and her husband **Pierre Curie** in 1898, after isolating it from pitchblende (uranium ore).\n\n**What is mad cow disease?**  \nMad cow disease, or **bovine spongiform encephalopathy (BSE)**, is a fatal neurodegenerative disease in cattle caused by misfolded prion proteins. It can be transmitted to humans as variant Creutzfeldt‑Jakob disease (vCJD) through consumption of infected beef.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the location of Lake Champlain ?",
+      "system_answer": "",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What is the proper name for a female walrus ?",
+      "system_answer": "A female walrus is simply called a **walrus**—there isn’t a separate gender‑specific name for it.",
+      "gold_answer": "16",
+      "score": 0
+    },
+    {
+      "question": "When was Rosa Parks born ?",
+      "system_answer": "Rosa Parks was born on **February 4, 1913**.",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "When were William Shakespeare 's twins born ?",
+      "system_answer": "William Shakespeare didn’t have any twins.  He had one son, Henry, and one daughter, Judith, but no twin children.",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "What is natural gas composed of ?",
+      "system_answer": "Natural gas is a mixture of hydrocarbons and other gases.  In most fields it is dominated by **methane (CH₄)** – usually 70 %–90 % of the volume – with smaller amounts of:\n\n| Component | Typical range (by volume) |\n|-----------|---------------------------|\n| Ethane (C₂H₆) | 5 %–15 % |\n| Propane (C₃H₈) | 1 %–5 % |\n| Butanes (C₄H₁₀) | 0.5 %–2 % |\n| Pentanes & heavier | < 1 % |\n| Nitrogen (N₂) | 1 %–5 % |\n| Carbon dioxide (CO₂) | 0.5 %–3 % |\n| Trace gases (H₂S, Ar, He, etc.) | < 0.5 % |\n\nThe exact mix varies with the source (e.g., Appalachian Basin, Permian Basin, offshore Gulf of Mexico, etc.), but methane is by far the dominant component.",
+      "gold_answer": "42",
+      "score": 0
+    },
+    {
+      "question": "How tall is the Gateway Arch in St. Louis , MO ?",
+      "system_answer": "The Gateway Arch in St. Louis stands **630 feet tall** (about 192 meters).",
+      "gold_answer": "10",
+      "score": 0
+    },
+    {
+      "question": "Who was the first governor of Alaska ?",
+      "system_answer": "The first governor of Alaska was **William A. Egan**. He served as the territory’s inaugural governor in 1912 and later became the state’s first governor when Alaska achieved statehood in 1959.",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "When was the first Wal-Mart store opened ?",
+      "system_answer": "The first Wal‑Mart store opened on **July 2, 1962** in Rogers, Arkansas.",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "What New York City structure is also known as the Twin Towers ?",
+      "system_answer": "The Twin Towers were the original **World Trade Center** towers in New York City.",
+      "gold_answer": "24",
+      "score": 0
+    }
+  ]
+}

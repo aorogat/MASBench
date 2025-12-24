@@ -332,6 +332,54 @@ This ensures that memory-enabled agents built on different technologies can be c
 
 ---
 
+
+## ⚠️ Important Note on Score Aggregation and Reproducibility
+
+When re-running our experiments, users may observe differences between **runtime-reported scores (numbers you will see in the terminal)** and the scores reported in the **LaTeX tables**. This is expected and results from **two distinct aggregation procedures**, each serving a different purpose. Understanding this distinction is essential for correct interpretation and reproducibility.
+
+### Runtime Evaluation (Split-Local Aggregation)
+
+During execution, evaluation is performed **per split** of MemoryAgentBench (e.g., *Test-Time Learning*). The aggregation follows these steps:
+
+1. **Per session:** Question-level scores are computed for each evaluation session.
+2. **Per subtask:** For each subtask in the executed split (e.g., *Recom.*, *MCC*), scores are averaged across all questions belonging to that subtask.
+3. **Per category:** Subtask scores within the split are averaged to produce a category-level score (e.g., Test-Time Learning).
+4. **Overall score:** The reported Overall score is the mean of the category scores evaluated in that split.  
+   - If only one category is evaluated, the Overall score equals that category score.
+
+As a result, **runtime scores are split-local** and reflect performance only on the executed portion of the benchmark.
+
+---
+
+### LaTeX Table Generation by `single_agent/memory/generate_latex.py` (Cross-Session, Category-Centric Aggregation)
+
+The LaTeX table is generated in a **post-processing step** and assumes a broader, benchmark-level view:
+
+1. **Per session (file):** Each JSON result file contains session-level subtask scores.
+2. **Per subtask:** For each subtask (e.g., *Recom.*, *MCC*), scores are averaged **across all sessions/files** belonging to that subtask.
+3. **Per category:** Category-level scores (AR, TTL, LRU, SF) are computed as the mean of their corresponding subtask averages.
+4. **Overall score:** The Overall score is computed as the mean of the available category-level averages.
+
+This aggregation is **category-centric** and is intended to summarize performance across multiple sessions and subtasks.
+
+---
+
+### Practical Implications
+
+- **Runtime output and LaTeX table values are not expected to match numerically**, even for the same system.
+- The LaTeX table **assumes that all relevant subtasks (and ideally all splits) have been evaluated**. Generating a full benchmark table from partial runs may lead to misleading results.
+- For fair comparison and publication-quality tables, we recommend running **all MemoryAgentBench splits** before generating the LaTeX table.
+
+### Recommendation for Reproduction
+
+- Use **runtime scores** to analyze split-specific behavior and ablation studies.
+- Use the **LaTeX table** only after completing a full benchmark run, or clearly indicate which categories/subtasks were evaluated.
+
+Failure to account for these differences may result in apparent discrepancies that are purely due to aggregation methodology rather than model performance.
+
+
+
+
 ## 🤝 Contributing
 
 To contribute a new framework integration:

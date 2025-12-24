@@ -1,7 +1,12 @@
 \setlength{\tabcolsep}{2pt}
 \begin{table*}[t]
 \centering
-\caption{Evaluation of memory competencies on MemoryAgentBench. Placeholder results (in \textcolor{red}{red}) will be replaced with empirical scores for CrewAI, the OpenAI Agent SDK, and other frameworks.}
+\caption{Evaluation of memory competencies on MemoryAgentBench.
+For each agent framework, scores are first computed per session, then averaged across all sessions belonging to the same subtask.
+For OpenAI SDK variants, $C$ denotes the maximum short-term context window (in tokens) retained during accumulation-based memory.
+Category-level scores (AR, TTL, LRU, SF) are obtained by averaging the corresponding subtask scores within each category.
+The Overall score is computed as the mean of the category-level averages.
+}
 \label{tab:memorybench-results}
 \footnotesize
 \begin{tabular}{
@@ -26,10 +31,23 @@
   FC-SH & FC-MH & Avg. &
   Score \\
 \midrule
-Agno & 12.0 & 19.0 & 2.0 & 43.2 & 19.1 & \textcolor{red}{--} & \textcolor{red}{--} & \textcolor{red}{--} & 0.0 & 18.3 & 9.2 & 27.0 & 0.8 & 13.9 & 14.0 \\
-Crewai & 14.0 & 22.0 & 3.0 & 48.7 & 21.9 & \textcolor{red}{--} & \textcolor{red}{--} & \textcolor{red}{--} & 0.0 & 19.7 & 9.9 & 26.2 & 0.8 & 13.5 & 15.1 \\
+Agno & 12.0 & 19.0 & 2.0 & 43.2 & 19.1 & 0.6 & 15.1 & 7.8 & 0.0 & 18.3 & 9.2 & 27.0 & 0.8 & 13.9 & 12.5 \\
+Crewai & 14.0 & 22.0 & 3.0 & 48.7 & 21.9 & 5.6 & 12.2 & 8.9 & 0.0 & 19.7 & 9.9 & 26.2 & 0.8 & 13.5 & 13.5 \\
 LangGraph & 14.0 & 24.0 & 31.3 & 63.3 & 33.2 & 22.8 & 0.0 & 11.4 & 20.0 & 40.8 & 30.4 & 36.0 & 4.5 & 20.2 & 23.8 \\
+LangGraph STM LTM CTX50 & 35.0 & 35.0 & 41.7 & 3.7 & 28.8 & 38.6 & 3.9 & 21.3 & \textcolor{red}{--} & \textcolor{red}{--} & \textcolor{red}{--} & \textcolor{red}{--} & \textcolor{red}{--} & \textcolor{red}{--} & 25.1 \\
+LangGraph STM LTM CTX512 & 36.0 & 34.0 & 44.0 & 65.6 & 44.9 & 35.6 & 12.8 & 24.2 & 0.0 & 35.2 & 17.6 & 0.0 & 0.0 & 0.0 & 21.7 \\
+Openai SDK Groq CTX1024 & 40.0 & 33.0 & 7.7 & 48.5 & 32.3 & 3.6 & 22.1 & 12.8 & 0.0 & 25.4 & 12.7 & 0.0 & 0.0 & 0.0 & 14.5 \\
+Openai SDK Groq CTX2048 & 32.0 & 32.0 & 18.3 & 49.9 & 33.1 & 10.0 & 20.9 & 15.5 & 0.0 & 33.8 & 16.9 & 0.2 & 0.0 & 0.1 & 16.4 \\
+Openai SDK Groq CTX4096 & 36.0 & 35.0 & 14.0 & 48.5 & 33.4 & 16.2 & 22.7 & 19.4 & 0.0 & 29.6 & 14.8 & 0.5 & 0.0 & 0.2 & 17.0 \\
+Openai SDK Groq CTX50 & 16.0 & 16.0 & 1.7 & 0.0 & 8.4 & 1.4 & 0.9 & 1.2 & 0.0 & 0.0 & 0.0 & 28.5 & 1.0 & 14.8 & 6.1 \\
+Openai SDK Groq CTX512 & 8.0 & 11.0 & 1.0 & 44.1 & 16.0 & 0.6 & 17.2 & 8.9 & 0.0 & 28.2 & 14.1 & 28.7 & 0.8 & 14.8 & 13.4 \\
+Openai SDK Groq CTX8192 & 34.0 & 34.0 & 23.0 & 44.7 & 33.9 & 34.0 & 7.3 & 20.7 & 10.0 & 45.1 & 27.5 & 0.8 & 0.0 & 0.4 & 20.6 \\
 
+
+\midrule
+\multicolumn{15}{p{0.95\linewidth}}{
+\footnotesize\textit{Note:} While the Groq-backed \texttt{openai/gpt-oss-20b} model supports context windows up to $\sim$130K tokens, using very large accumulated contexts frequently hits tokens-per-minute (TPM) rate limits (e.g., 250K TPM limit exceeded during benchmark runs). This renders extreme context accumulation impractical for scalable evaluations such as MemoryAgentBench, despite being theoretically supported by the model.
+}
 \bottomrule
 \end{tabular}
 \end{table*}

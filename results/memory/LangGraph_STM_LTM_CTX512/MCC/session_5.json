@@ -1,0 +1,610 @@
+{
+  "system": "LangGraph_STM_LTM_CTX512",
+  "split": "Test_Time_Learning",
+  "session_id": "5",
+  "subtask": "MCC",
+  "category": "TTL",
+  "runtime_sec": 311.25,
+  "questions": [
+    {
+      "question": "What is the population of Venezuela ?",
+      "system_answer": "",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What does target heart rate mean ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What currency does Luxembourg use ?",
+      "system_answer": "",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "How long did Rip Van Winkle sleep ?",
+      "system_answer": "",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Material called linen is made from what plant ?",
+      "system_answer": "Linen is made from the fibers of the **flax plant** (genus *Linum*).",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What is phenylalanine ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is a group of turkeys called ?",
+      "system_answer": "",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What are enzymes ?",
+      "system_answer": "Enzymes are biological catalysts—usually proteins (though some RNA molecules can act as enzymes, called ribozymes)—that accelerate chemical reactions in living organisms. They work by lowering the activation energy required for a reaction, allowing metabolic processes to occur rapidly and under the mild conditions (temperature, pH) found inside cells. Each enzyme is highly specific for its substrate(s) and can be regulated by various mechanisms (inhibition, activation, allosteric control, etc.) to maintain the proper balance of biochemical pathways.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "Why is the sun yellow ?",
+      "system_answer": "The Sun itself does not have a “yellow” color—it emits a broad spectrum of light that is essentially **white** (or very slightly yellow‑ish in the visible range).  The reason we normally see it as yellow (or sometimes orange or red) is due to the way Earth’s atmosphere interacts with that light.\n\n### 1. The Sun’s intrinsic spectrum  \n- The Sun is a hot, roughly 5,800 K black‑body radiator.  \n- Its spectrum peaks in the green‑yellow part of the visible range, but it emits strongly across the entire visible spectrum (and beyond into UV and IR).  \n- If you could view the Sun from space, or from a high‑altitude balloon, it would appear almost white.\n\n### 2. Atmospheric scattering (Rayleigh scattering)  \n- As sunlight travels through the atmosphere, shorter‑wavelength light (blue and violet) is scattered in all directions by air molecules and small particles.  \n- The longer‑wavelength light (yellow, orange, red) travels more directly to the observer.  \n- When the Sun is high in the sky, the path through the atmosphere is short, so the blue light is only slightly scattered and the Sun looks white or very pale yellow.  \n- When the Sun is near the horizon (sunrise/sunset), the light must pass through a much thicker layer of air, scattering away most of the blue light and leaving the longer wavelengths, so the Sun appears orange or red.\n\n### 3. Human perception and color mixing  \n- Our eyes are more sensitive to green and yellow wavelengths, so a mixture of all colors (white) can appear slightly yellowish to us.  \n- The sky itself is blue because of the same scattering, and the Sun’s light is the dominant source of that scattered light.\n\n### 4. Other factors  \n- **Atmospheric pollution** or aerosols can enhance scattering, sometimes making the Sun look more orange or reddish.  \n- **Solar activity** (sunspots, flares) can slightly alter the Sun’s spectral output, but the effect on perceived color is negligible for everyday observation.\n\n**Bottom line:** The Sun is essentially white; it looks yellow to us because the Earth’s atmosphere scatters away the blue part of its spectrum, leaving the longer wavelengths that dominate the visible light we receive.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What state is the geographic center of the lower 48 states ?",
+      "system_answer": "The geographic center of the lower 48 states lies in **Kansas**—specifically near the town of Lebanon in the southeastern part of the state.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is foot and mouth disease ?",
+      "system_answer": "**Foot‑and‑mouth disease (FMD)** is a highly contagious viral illness that affects cloven‑hoofed animals such as cattle, sheep, goats, pigs, deer, and many other livestock species.  \n\n| Feature | Details |\n|---------|---------|\n| **Causative agent** | A picornavirus of the *Pestivirus* genus (seven serotypes: O, A, C, SAT‑1, SAT‑2, SAT‑3, and Asia‑1). |\n| **Transmission** | Direct contact with infected animals, contaminated feed or equipment, aerosol spread over short distances, and occasionally via insects or fomites. |\n| **Clinical signs** | Fever, lameness, swelling of the feet and mouth, ulcerative lesions on the tongue, lips, and inside the mouth, and in some species, vesicles on the teats or hooves. |\n| **Economic impact** | Losses arise from decreased milk and meat production, trade restrictions, culling of infected and exposed animals, and costs of vaccination and biosecurity. |\n| **Control measures** | Strict movement controls, quarantine, culling of infected and exposed animals, vaccination (where available), and rigorous sanitation of equipment and facilities. |\n| **Global status** | FMD is endemic in many parts of Asia, Africa, and the Middle East, while it is largely eradicated in North America and much of Europe. International trade is heavily regulated to prevent spread. |\n\nIn short, foot‑and‑mouth disease is a viral infection that causes painful blisters in the mouths and hooves of livestock, leading to significant animal welfare and economic concerns worldwide.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What is sonar ?",
+      "system_answer": "**Sonar** (short for *Sound Navigation and Ranging*) is a technology that uses sound waves to detect, locate, and identify objects underwater (or in air, in some cases).  \n\n- **How it works**: A sonar system emits a sound pulse (the “ping”) into the medium. When that pulse encounters an object, it reflects back. The system measures the time it takes for the echo to return and the characteristics of the returned signal.  \n- **Key functions**:  \n  - **Detection**: Finding objects (e.g., fish, submarines, underwater terrain).  \n  - **Range**: Calculating distance based on echo travel time.  \n  - **Bearing**: Determining direction of the target.  \n  - **Imaging**: Creating maps or images of underwater structures (e.g., side‑scan sonar).  \n- **Types**:  \n  - **Active sonar** – emits pulses and listens for echoes.  \n  - **Passive sonar** – listens for sounds produced by other objects (e.g., marine mammals, ships).  \n- **Applications**: Navigation, depth sounding, fish-finding, submarine detection, underwater archaeology, and scientific research.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "When was Thomas Jefferson born ?",
+      "system_answer": "Thomas Jefferson was born on **April 13, 1743**.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is the Ohio state bird ?",
+      "system_answer": "The Ohio state bird is the **Northern Cardinal**.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What are the colors of the German flag ?",
+      "system_answer": "The German flag consists of three horizontal stripes in the colors **black, red, and gold (yellow)**.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "Who won Ms. American in 1989 ?",
+      "system_answer": "The Miss America title for 1989 was won by **Karen McDougal**.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "Where on the body is a mortarboard worn ?",
+      "system_answer": "A mortarboard is worn on the **head**—specifically, it sits on top of the head as an academic cap.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is the width of a football field ?",
+      "system_answer": "A standard American football field is **160 feet wide** (about **53 ⅓ yards**, or **48.8 meters**).",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Who is the Prime Minister of Canada ?",
+      "system_answer": "The current Prime Minister of Canada is **Justin Trudeau**.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the conversion rate between dollars and pounds ?",
+      "system_answer": "The exchange rate between the U.S. dollar (USD) and the British pound sterling (GBP) changes constantly because it’s set by the foreign‑exchange market.  \nAs of the **latest market data (April 2025)**, the rate is roughly:\n\n- **1 USD ≈ 0.78 GBP**  \n- **1 GBP ≈ 1.28 USD**\n\nThese figures are approximate and can vary by a few pence per transaction, so it’s a good idea to check a reliable financial news source, a bank, or a currency‑conversion website for the exact rate at the time you need it.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is fibromyalgia ?",
+      "system_answer": "**Fibromyalgia** is a chronic disorder that causes widespread pain, tenderness, and fatigue throughout the body. It’s often accompanied by a range of other symptoms, such as:\n\n| Symptom | Typical description |\n|---------|---------------------|\n| **Widespread pain** | Pain that lasts at least three months and is felt on both sides of the body and above and below the waist. |\n| **Tender points** | Specific spots on the body (e.g., neck, shoulders, hips) that are especially painful when pressed. |\n| **Fatigue** | Feeling exhausted even after a full night’s sleep. |\n| **Sleep disturbances** | Trouble falling or staying asleep, or waking up feeling unrefreshed. |\n| **Cognitive issues** | “Fibro fog” – problems with concentration, memory, and mental clarity. |\n| **Headaches** | Migraines or tension‑type headaches are common. |\n| **Mood changes** | Anxiety, depression, or irritability. |\n| **Other symptoms** | Irritable bowel syndrome, numbness/tingling, and sensitivity to temperature or noise. |\n\n### What causes it?\nThe exact cause isn’t fully understood, but several factors are thought to contribute:\n\n1. **Central nervous system sensitivity** – The brain and spinal cord may amplify pain signals.\n2. **Genetics** – A family history can increase risk.\n3. **Physical or emotional trauma** – Injury, stress, or major life events can trigger or worsen symptoms.\n4. **Infections** – Some cases follow viral or bacterial infections.\n\n### Diagnosis\nBecause there’s no single test, doctors diagnose fibromyalgia by:\n\n- **Medical history** and symptom review.\n- **Physical exam** to check for tender points.\n- **Rule‑out** other conditions (e.g., rheumatoid arthritis, lupus).\n\n### Treatment\nThere’s no cure, but many people find relief with a combination of:\n\n- **Medications** (pain relievers, antidepressants, anti‑seizure drugs).\n- **Lifestyle changes** (regular exercise, stress‑management, good sleep hygiene).\n- **Therapies** (physical therapy, cognitive‑behavioral therapy, acupuncture).\n- **Support** (patient education, support groups).\n\nFibromyalgia is a real, often debilitating condition, but with proper management many people can lead active, fulfilling lives.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What are the spots on dominoes called ?",
+      "system_answer": "The little dots on a domino tile are called **pips** (sometimes just referred to as “dots”). Each pip represents a number, just like the dots on a die.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What city is also known as `` The Gateway to the West '' ?",
+      "system_answer": "The nickname “The Gateway to the West” is most famously associated with **St. Louis, Missouri**.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "Who discovered x-rays ?",
+      "system_answer": "X‑rays were discovered by **Wilhelm Conrad Röntgen** in 1895.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "How much does water weigh ?",
+      "system_answer": "Water’s weight depends on how much you have, but the standard reference is:\n\n| Volume | Weight (approx.) |\n|--------|------------------|\n| 1 liter (1 dm³) | **1 kg** (≈ 2.2 lb) |\n| 1 US gallon (3.785 L) | **3.78 kg** (≈ 8.34 lb) |\n| 1 imperial gallon (4.546 L) | **4.55 kg** (≈ 10.0 lb) |\n\n**Why?**  \nAt 4 °C the density of pure water is 1 g / cm³, so 1 cm³ (1 mL) weighs 1 g. Scaling up gives the figures above. If you’re measuring a different temperature or a solution with dissolved solids, the weight will change slightly.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Mercury , what year was it discovered ?",
+      "system_answer": "Mercury has been known to humanity since antiquity—both the planet and the liquid metal were observed by ancient Greeks, Romans, and other early cultures. Because it was part of everyday life long before modern scientific cataloguing, there isn’t a single “discovery” year to cite. In short: it was known in ancient times, so no specific year can be given.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Where do apple snails live ?",
+      "system_answer": "Apple snails (family *Ampullariidae*) are freshwater creatures that thrive in warm, slow‑moving or still waters. They’re commonly found in:\n\n| Habitat | Typical Locations |\n|---------|-------------------|\n| **Ponds & lakes** | Small to medium freshwater bodies in tropical and subtropical regions. |\n| **Rice paddies** | The flooded fields of Southeast Asia, India, and parts of Africa. |\n| **Canals & irrigation ditches** | Slow‑moving water in agricultural areas. |\n| **Marshes & swamps** | Wetlands with abundant vegetation. |\n| **River floodplains** | Areas where rivers back up and create shallow, calm pools. |\n\nThey prefer warm temperatures (20–30 °C) and a diet of algae, detritus, and plant matter. In many parts of the world, they’re considered an invasive species because they can outcompete native snails and damage crops.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is the rainiest place on Earth ?",
+      "system_answer": "The title of “rainiest place on Earth” goes to **Mawsynram, Meghalaya, India**.  \n- **Annual rainfall:** ~11,871 mm (≈ 467 in) on average.  \n- **Why it rains so much:** The monsoon winds hit the steep Khasi Hills, forcing the moist air to rise, cool, and condense into heavy, prolonged showers.  \n- **Nearby rival:** Cherrapunji, also in Meghalaya, is very close in rainfall totals and often shares the record, but Mawsynram holds the official Guinness World Record for the highest average annual rainfall.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "Who invented the hula hoop ?",
+      "system_answer": "The hula‑hoop was created by the American toy company **Wham‑O** in 1958. The original design was developed by a Wham‑O employee named **Fred Karger** (sometimes credited as the “inventor” of the toy). The hoop quickly became a worldwide craze in the late 1950s and early 1960s.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the longest suspension bridge in the U.S. ?",
+      "system_answer": "**The longest suspension bridge in the United States is the Verrazzano‑Narrows Bridge.**\n\n| Feature | Detail |\n|---------|--------|\n| **Location** | Narrows of the New York Harbor, connecting Staten Island and Brooklyn, New York City |\n| **Main span** | **4,260 ft** (1,298 m) – the longest main span of any U.S. suspension bridge |\n| **Total length** | 8,748 ft (2,667 m) |\n| **Opened** | 1964 |\n| **Design** | Designed by the engineering firm *Sullivan & Cromwell* (later *Sullivan & Cromwell*), the bridge was built by the *New York City Department of Transportation* and *Sullivan & Cromwell* |\n| **Why it’s notable** | It carries the New York‑New Jersey Expressway (I‑278) and the New York‑New Jersey Turnpike (NY 9A) across the Narrows, and its main span is longer than the Golden Gate Bridge’s 4,200 ft span. |\n\nSo, if you’re looking for the U.S. bridge with the longest suspension span, the Verrazzano‑Narrows Bridge is the answer.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is plastic made of ?",
+      "system_answer": "**Plastic is a synthetic material made from long chains of molecules called polymers.**  \nThese polymers are built from small building blocks called *monomers* that are chemically bonded together in a repeating pattern. The most common monomers used in everyday plastics are derived from petroleum or natural gas, but there are also biobased options.\n\n| Type of plastic | Typical monomers | Key characteristics |\n|-----------------|------------------|---------------------|\n| **Thermoplastics** (e.g., polyethylene, polypropylene, PVC, PET) | Ethylene, propylene, vinyl chloride, terephthalic acid + ethylene glycol | Can be melted and reshaped repeatedly; used for bottles, bags, pipes, etc. |\n| **Thermosetting plastics** (e.g., epoxy, phenolic, melamine) | Epichlorohydrin, phenol, melamine | Harden irreversibly when cured; used for laminates, adhesives, circuit boards. |\n| **Bioplastics** (e.g., PLA, PHA) | Lactide (from corn starch), polyhydroxyalkanoates (from microbes) | Derived from renewable resources; biodegradable under the right conditions. |\n\n**In short:** plastic is made by polymerizing monomers—usually hydrocarbons from fossil fuels or, increasingly, from renewable feedstocks—into long chains that give the material its strength, flexibility, and versatility.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "How far is it from Denver to Aspen ?",
+      "system_answer": "**Driving distance (via I‑70 W):**  \n- **≈ 200 miles (≈ 320 km)**  \n- **Typical drive time:** 3 – 3½ hours, depending on traffic and weather.\n\n**Straight‑line (as‑the‑air) distance:**  \n- **≈ 140 miles (≈ 225 km)**\n\nSo, if you’re planning a road trip, expect about 200 miles and a 3‑hour drive from Denver to Aspen.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is the criterion for being legally blind ?",
+      "system_answer": "**Legally blind** (also called “visually impaired” in many jurisdictions) is a medical‑legal classification used to determine eligibility for disability benefits, vision‑screening programs, and other services.  \nThe standard definition is based on two key measures of visual function:\n\n| Measure | Criterion | What it means |\n|---------|-----------|---------------|\n| **Visual acuity** | **20/200 or worse** in the better‑seeing eye, even with the best possible correction (glasses or contact lenses). | You can read a line on a Snellen chart that a person with normal vision can read at 200 ft. |\n| **Visual field** | **Less than 20°** of the visual field (i.e., a “tunnel vision” of 20 degrees or less). | The area you can see without moving your eyes is narrower than a 20‑degree cone. |\n\n**How it’s applied**\n\n1. **Best‑corrected acuity** is measured first. If the better eye is 20/200 or worse, the person is considered legally blind, regardless of field loss.  \n2. If the acuity is better than 20/200, the visual field is checked. If the field is 20° or less, the person is also considered legally blind.  \n3. If neither criterion is met, the person is not legally blind, even if they have significant vision loss.\n\n**Why it matters**\n\n- **Eligibility for services**: Social Security Disability Insurance (SSDI), Supplemental Security Income (SSI), state vision‑screening programs, and many other benefits use this definition.  \n- **Legal protection**: The Americans with Disabilities Act (ADA) and other laws use the same standard to determine disability status.  \n- **Insurance and medical billing**: Some insurance plans and medical billing codes use the 20/200 or 20° field thresholds to classify blindness for coverage purposes.\n\n**Note on variations**\n\n- Some states or countries use slightly different thresholds (e.g., 20/400 or 20° field) or add additional criteria such as contrast sensitivity.  \n- The definition is intended for *functional* blindness, not for diagnosing a specific eye disease.\n\n**Bottom line:**  \nA person is legally blind if, with the best possible correction, their visual acuity in the better eye is 20/200 or worse, or if their visual field is 20° or less.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "Who invented the instant Polaroid camera ?",
+      "system_answer": "The instant Polaroid camera was invented by **Edwin H. Land** (often just called Edwin Land). He developed the first instant camera in 1947, which later became the iconic Polaroid brand.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the distance in miles from the earth to the sun ?",
+      "system_answer": "The average distance from the Earth to the Sun—known as one astronomical unit (AU)—is about **93 million miles** (≈ 149.6 million kilometers). This value varies slightly over the year because the Earth’s orbit is slightly elliptical, but 93 million miles is the standard figure used for most calculations.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "In which state would you find the Catskill Mountains ?",
+      "system_answer": "The Catskill Mountains are located in **New York State**.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is a prism ?",
+      "system_answer": "A **prism** is a solid object—usually made of glass or clear plastic—whose faces are flat and typically triangular or rectangular. Its key optical property is that it refracts (bends) light that passes through it. Because the surfaces are angled relative to one another, a prism can split a beam of light into its component colors (a spectrum) or change the direction of a beam. In everyday terms, a prism is any transparent shape that bends light, such as the triangular glass pieces used in science labs or the classic “rainbow” prism that turns white light into a rainbow.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "How fast is sound ?",
+      "system_answer": "Sound travels at about **343 meters per second** (≈ 1,125 feet per second) in dry air at 20 °C (68 °F).  \nThat’s roughly **767 mph** (≈ 1,235 km/h).  \n\nThe exact speed varies with temperature, humidity, and the medium (e.g., water or steel is much faster).",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What does cc in engines mean ?",
+      "system_answer": "**CC** in an engine stands for **cubic centimeters**.  \nIt’s a unit of *engine displacement*—the total volume of all the cylinders in the engine.  \n\n- 1 cc = 1 cubic centimeter = 1 mL.  \n- A 2 L (liter) engine has 2 000 cc of displacement.  \n\nEngineers and mechanics use cc to describe how big an engine is; larger cc usually means more power (though other factors matter too).",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is an ulcer ?",
+      "system_answer": "An **ulcer** is a sore that develops when the lining of a body surface (most commonly the skin or the lining of the digestive tract) breaks down and becomes open, raw, and often painful.  \n\n**Key points**\n\n| Feature | Typical ulcer types | Common causes |\n|---------|---------------------|---------------|\n| **Location** | • **Peptic (gastric or duodenal)** – stomach or upper small intestine<br>• **Gastro‑oesophageal (GERD)** – esophagus<br>• **Pressure (bed‑sores)** – skin over bony areas<br>• **Venous** – legs<br>• **Diabetic** – feet | • Excess stomach acid, H. pylori infection, NSAIDs, stress, smoking, alcohol<br>• Prolonged pressure, poor circulation, immobility, obesity, diabetes |\n| **Symptoms** | • Burning or gnawing pain<br>• Burning or burning sensation that may improve or worsen with food<br>• Bleeding, pus, or foul odor (especially in skin ulcers) | • Pain, swelling, redness, drainage, or a visible open sore |\n| **Diagnosis** | • Endoscopy (for GI ulcers)<br>• Biopsy, imaging, or lab tests (H. pylori, blood sugar, etc.) | • Physical exam, imaging, lab tests |\n| **Treatment** | • Acid‑reducing medications (PPIs, H₂ blockers)<br>• Antibiotics for H. pylori<br>• Lifestyle changes (diet, smoking cessation, alcohol moderation)<br>• Wound care, pressure off‑loading, debridement for skin ulcers | • Treat underlying cause, keep wound clean, use dressings, manage pain, and monitor for infection |\n\n**Bottom line:** An ulcer is an open sore that forms when tissue is damaged and fails to heal properly, most often due to excess acid, infection, or chronic pressure. Proper diagnosis and treatment target the underlying cause and promote healing.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is compounded interest ?",
+      "system_answer": "**Compound interest** is the interest that is earned not only on the original amount of money you invest or borrow (the *principal*), but also on the interest that has already accumulated.  \nIn other words, the interest “compounds” or “re‑invests” itself, so each period you earn interest on a larger base.\n\n---\n\n### How it works\n\n| Step | What happens | Example (simple numbers) |\n|------|--------------|--------------------------|\n| 1. **Start** | You deposit or owe a principal amount, \\(P\\). | $1,000 |\n| 2. **First period** | Interest is calculated on \\(P\\). | 5 % → $50 |\n| 3. **Add interest** | The interest is added to the principal, creating a new balance, \\(P_1 = P + \\text{interest}\\). | $1,050 |\n| 4. **Next period** | Interest is now calculated on \\(P_1\\). | 5 % of $1,050 → $52.50 |\n| 5. **Repeat** | Continue adding the new interest to the balance each period. | After 2 periods: $1,102.50 |\n\nBecause the base grows each time, the total interest earned over time is larger than if you only earned interest on the original principal (simple interest).\n\n---\n\n### Formula\n\nFor an amount \\(P\\) invested at an annual nominal rate \\(r\\) compounded \\(n\\) times per year, after \\(t\\) years the balance \\(A\\) is:\n\n\\[\nA = P \\left(1 + \\frac{r}{n}\\right)^{nt}\n\\]\n\n- \\(P\\) = principal  \n- \\(r\\) = annual interest rate (decimal)  \n- \\(n\\) = number of compounding periods per year  \n- \\(t\\) = number of years  \n\nIf compounding is **continuous** (theoretically infinite times per year), the formula becomes:\n\n\\[\nA = P\\,e^{rt}\n\\]\n\n---\n\n### Why it matters\n\n| Scenario | Simple interest | Compound interest |\n|----------|-----------------|-------------------|\n| 1 year at 5 % on $1,000 | $50 | $50 |\n| 2 years at 5 % on $1,000 | $100 | $105.13 |\n| 10 years at 5 % on $1,000 | $500 | $1,628.89 |\n\nThe difference grows with higher rates, longer time, and more frequent compounding.\n\n---\n\n### Practical examples\n\n| Context | How compounding helps |\n|---------|-----------------------|\n| **Savings account** | Your money earns interest on the interest it has already earned. |\n| **Mortgage** | The interest you pay each month is calculated on the remaining balance, which itself has grown due to previous interest. |\n| **Investments** | Dividends or capital gains that are reinvested generate additional returns. |\n| **Loans** | If you make extra payments, the remaining balance shrinks faster, reducing the total interest paid. |\n\n---\n\n### Bottom line\n\nCompound interest is the “interest on interest” effect that lets money grow faster over time. It’s a key principle behind savings, investments, and many financial products.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What does CPR stand for ?",
+      "system_answer": "**CPR** stands for **Cardiopulmonary Resuscitation**.",
+      "gold_answer": "2",
+      "score": 0
+    },
+    {
+      "question": "What is hybridization ?",
+      "system_answer": "**Hybridization** is a concept in chemistry that explains how atomic orbitals mix (or “hybridize”) to form new, equivalent orbitals that are better suited for bonding in molecules.\n\n---\n\n### Why it matters\n- **Geometry**: The shape of a molecule (e.g., linear, trigonal planar, tetrahedral, trigonal bipyramidal, octahedral) is determined by the hybrid orbitals that the central atom uses.\n- **Bonding**: Hybrid orbitals can overlap with orbitals on other atoms to form sigma bonds, and the remaining unhybridized orbitals can form pi bonds.\n\n---\n\n### Common hybridization types\n\n| Hybridization | Number of orbitals mixed | Geometry | Example |\n|---------------|--------------------------|----------|---------|\n| **sp** | 1 s + 1 p | Linear (180°) | BeCl₂ |\n| **sp²** | 1 s + 2 p | Trigonal planar (120°) | BF₃, C₃H₆ |\n| **sp³** | 1 s + 3 p | Tetrahedral (109.5°) | CH₄, NH₃ |\n| **sp³d** | 1 s + 3 p + 1 d | Trigonal bipyramidal (90°, 120°) | PCl₅ |\n| **sp³d²** | 1 s + 3 p + 2 d | Octahedral (90°) | SF₆ |\n\n---\n\n### How it works (simplified)\n\n1. **Identify the central atom** and count its valence electrons.\n2. **Determine the number of electron‑pair domains** (bonding pairs + lone pairs) around that atom.\n3. **Assign a hybridization** that matches that number of domains (e.g., 4 domains → sp³).\n4. **Construct the hybrid orbitals**: combine the appropriate s, p, (and sometimes d) orbitals to form the hybrid set.\n5. **Use the hybrids** to form sigma bonds with other atoms; any remaining p orbitals can form pi bonds.\n\n---\n\n### Example: Methane (CH₄)\n\n- Carbon has 4 valence electrons → 4 bonding pairs with hydrogen.\n- 4 electron‑pair domains → **sp³ hybridization**.\n- Four sp³ orbitals (each 25% s, 75% p) point toward the corners of a tetrahedron.\n- Each sp³ orbital overlaps with an H 1s orbital to form a C–H sigma bond.\n\n---\n\n### Key take‑away\nHybridization is a useful model that helps chemists predict and rationalize the shapes and bonding patterns of molecules. It’s not a literal “mixing” of orbitals in the physical sense, but a convenient way to describe how atoms form bonds in a way that matches observed molecular geometry.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "How fast is alcohol absorbed ?",
+      "system_answer": "**Alcohol is absorbed very quickly—most of it enters the bloodstream within the first 30–90 minutes after you drink.**  \n\n| What happens | Typical timing | Key factors that change the rate |\n|--------------|----------------|----------------------------------|\n| **Stomach absorption** | 10–30 min | Concentration of alcohol, presence of food (food slows it), gastric emptying rate |\n| **Small‑intestine absorption** | 30–90 min | Same factors as above; the intestine is the main site of absorption |\n| **Peak blood‑alcohol concentration (BAC)** | 30–60 min after a drink | Amount of alcohol, body weight, sex, metabolism, and whether you’re on an empty stomach |\n| **Overall absorption** | ~90 % of the alcohol you ingest is absorbed by the time BAC peaks | Alcohol is absorbed at roughly 0.1 g per minute in a typical adult, but this can vary widely |\n\n**Why it matters**\n\n- **Fast absorption** means you can feel the effects of a drink within minutes, especially if you drink on an empty stomach or in a high‑concentration beverage (e.g., spirits).\n- **Food slows absorption** by delaying gastric emptying, so a meal can lower the peak BAC and spread the alcohol over a longer period.\n- **Individual differences** (body weight, sex, liver function, drinking history) influence how quickly alcohol is metabolized, but absorption itself is largely governed by the factors above.\n\n**Bottom line:** Alcohol is absorbed rapidly—most of it reaches the bloodstream within the first hour, with peak levels typically occurring 30–60 minutes after consumption.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Who was the first American to walk in space ?",
+      "system_answer": "The first American to walk in space was astronaut **Ed White**. He performed the historic spacewalk on June 3, 1965 during the Gemini 4 mission.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What are pediatricians ?",
+      "system_answer": "**Pediatricians** are medical doctors who specialize in the health and medical care of infants, children, and adolescents—generally from birth up to about 18 – 21 years of age.  \n\nKey points:\n\n| What they do | Why it matters |\n|--------------|----------------|\n| **Primary care for kids** | They monitor growth, development, and overall health. |\n| **Preventive care** | Vaccinations, nutrition counseling, and early detection of health issues. |\n| **Diagnosis & treatment** | Treat illnesses, injuries, and chronic conditions specific to children. |\n| **Specialized care** | Some pediatricians focus on areas like pediatric cardiology, oncology, neurology, or genetics. |\n| **Family involvement** | They work closely with parents and caregivers to support a child’s well‑being. |\n\nIn short, pediatricians are the doctors who keep children healthy, diagnose and treat their illnesses, and guide parents through the medical needs of their growing kids.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is the sales tax rate in New York ?",
+      "system_answer": "The **state sales‑tax rate in New York is 4 %**.  \n\n> **Note:** Local jurisdictions (cities, counties, and special districts) can add their own taxes, so the total rate you pay can range from about 4 % up to roughly 8.875 % in places like New York City.",
+      "gold_answer": "4",
+      "score": 1
+    },
+    {
+      "question": "What is the money they use in Zambia ?",
+      "system_answer": "Zambia uses the **Zambian kwacha (ZMW)** as its official currency. The kwacha is subdivided into 100 **cents** (though the cent is rarely used in everyday transactions). The currency symbol is **ZK** or **ZMW**.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What is acetic acid ?",
+      "system_answer": "**Acetic acid** is a simple, colorless liquid with a sharp, sour taste and a characteristic “vinegar” odor. Its chemical formula is **CH₃COOH** (also written as CH₃CO₂H).  \n\nKey points:\n\n| Feature | Details |\n|---------|---------|\n| **Structure** | A methyl group (CH₃) attached to a carboxyl group (–COOH). |\n| **Common name** | Vinegar (when diluted to about 5 % in water). |\n| **Physical properties** | Boiling point ≈ 118 °C, melting point ≈ 16 °C, density ~1.05 g cm⁻³. |\n| **Uses** | • Food preservative and flavoring (vinegar). <br>• Industrial solvent and reagent. <br>• Production of acetate esters, plastics, and synthetic fibers. |\n| **Reactivity** | Strong acid in organic chemistry; reacts with bases to form salts (acetates). |\n| **Safety** | Irritant to skin, eyes, and respiratory tract; can corrode metals. |\n\nIn short, acetic acid is the main component of vinegar and a widely used organic acid in both culinary and industrial contexts.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "When was Lyndon B. Johnson born ?",
+      "system_answer": "Lyndon B. Johnson was born on **August 27, 1908**.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "In what spacecraft did U.S. astronaut Alan Shepard make his historic 1961 flight ?",
+      "system_answer": "Alan Shepard’s historic 1961 flight was aboard the **Freedom 7** spacecraft (the first U.S. Mercury capsule).",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "How cold should a refrigerator be ?",
+      "system_answer": "A refrigerator should be kept at **about 37 °F to 40 °F (3 °C to 4 °C)**.  \n\n- **Below 37 °F** and foods can freeze or become overly dry.  \n- **Above 40 °F** and bacteria can grow more quickly, increasing the risk of foodborne illness.  \n\nIf you have a separate freezer, keep it at **0 °F (–18 °C)**.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is another astronomic term for the Northern Lights ?",
+      "system_answer": "The Northern Lights are also known as **Aurora Borealis**.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "Where is the Shawnee National Forest ?",
+      "system_answer": "The Shawnee National Forest is located in **southwestern Illinois, USA**. It covers about 280,000 acres of forest, hills, and river valleys in the Shawnee Hills region of the state.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "How much of an apple is water ?",
+      "system_answer": "Apples are very juicy—about **84 % to 86 % of their weight is water**.  \nThat means that in a typical 182‑gram (6‑ounce) apple, roughly **150 – 156 grams** (≈ 82 – 86 %) is water, with the rest made up of sugars, fiber, vitamins, minerals, and a small amount of fat.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is strep throat ?",
+      "system_answer": "**Strep throat** is a bacterial infection of the throat and tonsils caused by *Streptococcus pyogenes* (group A streptococcus).  \n\n| What it is | Key points |\n|------------|------------|\n| **Causative agent** | *Streptococcus pyogenes* (group A strep) |\n| **Typical symptoms** | • Sudden, severe sore throat<br>• Painful swallowing<br>• Red, swollen tonsils (sometimes with white patches or streaks of pus)<br>• Fever, chills, headache, body aches<br>• Small red spots (“petechiae”) on the soft palate<br>• Swollen lymph nodes in the neck |\n| **Transmission** | Person‑to‑person via respiratory droplets or by touching contaminated surfaces and then touching the mouth or nose. |\n| **Diagnosis** | Rapid antigen test or throat culture from a swab of the tonsils. |\n| **Treatment** | • Antibiotics (usually penicillin or amoxicillin) to clear the bacteria, reduce symptoms, and prevent complications.<br>• Symptom relief: pain relievers (acetaminophen, ibuprofen), throat lozenges, plenty of fluids, and rest. |\n| **Why it matters** | Untreated strep throat can lead to complications such as rheumatic fever, kidney inflammation, or peritonsillar abscess. |\n| **Prevention** | Good hand hygiene, covering coughs/sneezes, avoiding close contact with infected individuals, and completing the full course of prescribed antibiotics. |\n\nIn short, strep throat is a common, contagious bacterial infection that causes a painful sore throat and can be effectively treated with antibiotics.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is poliomyelitis ?",
+      "system_answer": "**Poliomyelitis** (often called **polio**) is a viral disease that attacks the nervous system, specifically the motor neurons that control muscle movement.  \n\n| Feature | Details |\n|---------|---------|\n| **Causative agent** | Poliovirus (three serotypes: PV‑1, PV‑2, PV‑3). |\n| **Transmission** | Fecal‑oral route (contaminated food or water) and, less commonly, person‑to‑person contact. |\n| **Incubation period** | 7–14 days (can range from 3 days to 3 weeks). |\n| **Clinical course** | 1. **Incubation** – no symptoms.<br>2. **Prodromal phase** – low‑grade fever, sore throat, fatigue, headache, nausea.<br>3. **Paralytic phase** – in ~5–10 % of cases, the virus invades the spinal cord, causing flaccid paralysis that can affect the legs, arms, or respiratory muscles. |\n| **Symptoms** | • Fever, sore throat, fatigue, headache, nausea.<br>• Muscle pain, stiffness, and weakness.<br>• Flaccid paralysis (often asymmetric).<br>• In severe cases, paralysis of the diaphragm → respiratory failure. |\n| **Diagnosis** | • Clinical presentation.<br>• Laboratory tests: viral isolation from stool or throat swab, or detection of poliovirus antibodies in blood. |\n| **Treatment** | No specific antiviral therapy. Management is supportive: pain control, physical therapy, respiratory support (ventilation) if needed. |\n| **Prevention** | • **Vaccination** – inactivated polio vaccine (IPV) or oral polio vaccine (OPV).<br>• Good sanitation and hygiene to reduce fecal‑oral spread. |\n| **Historical impact** | Polio epidemics caused widespread paralysis and death, especially in children. Global vaccination campaigns have reduced cases by >99 % and have led to the WHO’s goal of polio eradication. |\n\nIn short, poliomyelitis is a viral infection that can lead to permanent paralysis, but it is largely preventable through vaccination and improved sanitation.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is the temperature at the center of the earth ?",
+      "system_answer": "The core of the Earth is extremely hot—about **5,500 °C (≈10,000 °F)**.  \nThis estimate comes from seismic‑wave data, laboratory experiments on high‑pressure materials, and models of heat flow from the planet’s interior. The temperature rises from roughly 1,000 °C at the crust‑mantle boundary to the core‑mantle boundary (~4,000 °C) and peaks near the very center.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Where is the Lourve ?",
+      "system_answer": "The **Louvre** (often spelled “Lourve” in some languages) is located in **Paris, France**.  \nIt sits on the right bank of the Seine River, in the 1st arrondissement, near the Palais Royal and the Tuileries Garden. The museum’s main entrance is on the famous **Pyramide du Louvre** at the corner of Rue de Rivoli and Rue de la Pyramide.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is the longest bone in the human body ?",
+      "system_answer": "The longest bone in the human body is the **femur** (thigh bone). It extends from the hip joint to the knee and typically measures about 18–20 inches (45–50 cm) in adults.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What state has the least amount of rain per year ?",
+      "system_answer": "The U.S. state that receives the least average rainfall is **Nevada**—about 9 inches (≈230 mm) of precipitation per year on average.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is neurology ?",
+      "system_answer": "**Neurology** is the branch of medicine that focuses on the nervous system—its structure, function, disorders, and diseases. It deals with the brain, spinal cord, peripheral nerves, and muscles, diagnosing and treating conditions such as stroke, epilepsy, Parkinson’s disease, multiple sclerosis, neuropathies, and many other neurological disorders. Neurologists use a combination of clinical examination, imaging (MRI, CT), electrophysiological tests (EEG, EMG), and laboratory studies to understand and manage these conditions.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is the statue of liberty made of ?",
+      "system_answer": "The Statue of Liberty’s outer skin is **copper**—thin sheets (about 1.5 inches thick) that give it its green patina.  \nBeneath that skin is a **steel (originally wrought‑iron) framework** that supports the statue’s structure. The copper cladding was applied over the internal skeleton, which was later reinforced with a steel armature. Thus, the statue is essentially a copper‑clad, steel‑framed monument.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What was W.C. Fields ' real name ?",
+      "system_answer": "W.C. Fields’ birth name was **William Claude Dukenfield**.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is solar wind ?",
+      "system_answer": "**Solar wind** is a continuous stream of charged particles—mostly electrons and protons—ejected from the outer layers of the Sun (the corona). It flows outward through the entire solar system at speeds ranging from about 300 km/s (slow wind) to over 800 km/s (fast wind). The wind carries the Sun’s magnetic field with it, forming the heliosphere, and it interacts with planetary magnetospheres, causing auroras, shaping comet tails, and influencing space‑craft operations.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What position did Willie Davis play in baseball ?",
+      "system_answer": "Willie Davis was a **first baseman** in Major League Baseball. He played that position for teams such as the Chicago Cubs, St. Louis Cardinals, and Philadelphia Phillies during his career.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "Who was the abolitionist who led the raid on Harper 's Ferry in 1859 ?",
+      "system_answer": "The raid on Harpers Ferry in 1859 was led by the abolitionist **John Brown**.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "Who was the first woman governor in the U.S. ?",
+      "system_answer": "The first woman elected and to serve as a U.S. state governor was **Nellie Tayloe Ross**. She became governor of Wyoming in 1924 after the death of her husband, former Governor William J. Ross.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What are solar cells ?",
+      "system_answer": "**Solar cells** (also called photovoltaic cells) are devices that convert sunlight directly into electricity. They are made from semiconductor materials—most commonly silicon—that absorb photons from the sun. When a photon hits the semiconductor, it excites an electron, creating an electron‑hole pair. The built‑in electric field at a p‑n junction forces the electrons and holes to move in opposite directions, generating a flow of electric current. By connecting many cells in series or parallel, we can produce the voltage and current needed for homes, businesses, or grid‑connected systems. Solar cells are the fundamental building blocks of solar panels and photovoltaic power systems.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "When was the telephone invented ?",
+      "system_answer": "The telephone was invented in **1876**—Alexander Graham Bell made the first successful demonstration on March 10, 1876.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is another name for vitamin B1 ?",
+      "system_answer": "Another name for vitamin B1 is **thiamine** (also spelled thiamin).",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What is the major fault line near Kentucky ?",
+      "system_answer": "The major fault line that runs through the region near Kentucky is the **New Madrid fault** (part of the New Madrid Seismic Zone).",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "Where is the Savannah River ?",
+      "system_answer": "The Savannah River is a major river in the southeastern United States. It rises in the Blue Ridge Mountains of western North Carolina, flows southward, and forms most of the border between **South Carolina and Georgia** before emptying into the Atlantic Ocean near the city of Savannah, Georgia.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What city 's newspaper is called `` The Star '' ?",
+      "system_answer": "",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What planet has the strongest magnetic field of all the planets ?",
+      "system_answer": "Jupiter has the strongest magnetic field of all the planets in our Solar System.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is severance pay ?",
+      "system_answer": "**Severance pay** is a monetary payment (often in addition to any accrued benefits) that an employer gives to an employee when the employment relationship is terminated—whether through layoff, downsizing, restructuring, or a mutual separation. It’s intended to help the employee transition to new employment, cover living expenses, or compensate for the loss of a job. The amount and eligibility can vary by company policy, employment contract, or local labor laws.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What breed of hunting dog did the Beverly Hillbillies own ?",
+      "system_answer": "The Beverly Hillbillies owned a **beagle** as their hunting dog.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What is the population of China ?",
+      "system_answer": "China’s population is roughly **1.4 billion people** (about 1.41 billion as of a 2023 estimate).",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What are semiconductors ?",
+      "system_answer": "**Semiconductors** are materials whose electrical conductivity lies between that of conductors (like copper or aluminum) and insulators (like glass). Their ability to conduct electricity can be finely tuned by adding impurities (a process called *doping*) or by changing temperature, light, or electric fields.\n\nKey points:\n\n| Feature | Explanation |\n|---------|-------------|\n| **Base material** | Usually crystalline solids such as silicon, germanium, or compound semiconductors (GaAs, SiC, etc.). |\n| **Band gap** | They have a small energy gap between the valence band (filled with electrons) and the conduction band (where electrons can move freely). This gap allows electrons to be excited into the conduction band with relatively little energy. |\n| **Doping** | Adding a few atoms of another element creates *n‑type* (extra electrons) or *p‑type* (electron “holes”) material, enabling control of charge carriers. |\n| **Device building blocks** | By joining p‑type and n‑type regions, we form p‑n junctions, the core of diodes, transistors, solar cells, LEDs, and many other electronic components. |\n| **Applications** | Integrated circuits (microprocessors, memory chips), power electronics, sensors, optoelectronics, and more. |\n\nIn short, semiconductors are the “middle‑ground” materials that can be engineered to conduct or block electricity as needed, making modern electronics possible.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What body of water are the Canary Islands in ?",
+      "system_answer": "The Canary Islands lie in the **Atlantic Ocean** (specifically the North Atlantic, off the northwest coast of Africa).",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What does the word fortnight mean ?",
+      "system_answer": "A **fortnight** is a period of **two weeks** (14 days). The term comes from the Old English *fēowertig nēata*, meaning “fourteen nights.” It’s commonly used in British English and other Commonwealth countries.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What monastery was raided by Vikings in the late eighth century ?",
+      "system_answer": "The raid was on the **monastery of Lindisfarne** (also known as Holy Island) in 793 CE.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What did Edward Binney and Howard Smith invent in 1903 ?",
+      "system_answer": "",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "When was President Kennedy shot ?",
+      "system_answer": "President John F. Kennedy was shot on **November 22, 1963**.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is a thermometer ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is the earth 's diameter ?",
+      "system_answer": "The Earth’s diameter is about **12,742 km** (≈ 7,918 miles) at the equator.  \nThe polar diameter is slightly smaller, around **12,714 km** (≈ 7,900 miles).",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is mold ?",
+      "system_answer": "**Mold** is a type of fungus that grows in damp, warm, and poorly ventilated environments. It reproduces by releasing microscopic spores that can spread through the air or on surfaces. When the spores land on a suitable substrate (e.g., wood, drywall, food, or skin), they germinate and form a network of thread‑like cells called mycelium, which can produce visible colonies that appear fuzzy or powdery in various colors (green, black, white, etc.).  \n\nKey points:\n\n| Feature | Details |\n|---------|---------|\n| **Biology** | Fungi that break down organic matter, often thriving on moisture and decaying material. |\n| **Growth** | Requires moisture, a food source, and a suitable temperature (typically 20–30 °C). |\n| **Health impact** | Can trigger allergies, asthma, and respiratory irritation; some species produce mycotoxins that are toxic if ingested or inhaled. |\n| **Common locations** | Bathrooms, basements, kitchens, attics, and any area with water leaks or high humidity. |\n| **Control** | Reduce moisture, improve ventilation, fix leaks, clean with mold‑removing solutions, and remove heavily infested materials. |\n\nIn short, mold is a fungal organism that thrives in damp conditions, spreads via spores, and can cause both structural damage and health problems.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What does `` Sitting Shiva '' mean ?",
+      "system_answer": "**Sitting Shiva** is a Jewish mourning practice.  \nAfter a person dies, family and close friends gather for a period of **seven days** (the “Shiva” period). During this time, mourners sit on low stools or the floor, keep the house quiet, and receive visitors who come to offer condolences. The word *Shiva* comes from the Hebrew word for “seven.” The practice is a way to honor the deceased, reflect on loss, and receive communal support.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is desktop publishing ?",
+      "system_answer": "**Desktop publishing** is the process of creating printed or digital documents—such as brochures, newsletters, books, magazines, flyers, or web pages—using a personal computer (desktop) and specialized software. It combines text, images, and layout design into a single workflow, allowing designers, writers, and small businesses to produce professional‑looking materials without the need for a large printing press or a dedicated typesetting studio. Key components include:\n\n| Component | What it does |\n|-----------|--------------|\n| **Computer** | The workstation that runs the publishing software. |\n| **Software** | Programs like Adobe InDesign, QuarkXPress, Microsoft Publisher, or Scribus that provide tools for layout, typography, and image handling. |\n| **Fonts & Graphics** | Digital typefaces and images that can be imported, edited, and arranged on the page. |\n| **Output** | Final files (PDF, PostScript, or print-ready formats) sent to a printer or distributed electronically. |\n\nDesktop publishing democratized the design and production of printed materials, making it possible for individuals and small companies to create high‑quality documents in-house.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "Who discovered radium ?",
+      "system_answer": "Radium was discovered by **Marie Curie and her husband Pierre Curie** in 1898.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is mad cow disease ?",
+      "system_answer": "**Mad cow disease**—scientifically called **bovine spongiform encephalopathy (BSE)**—is a fatal neurodegenerative disease that affects cattle. It is caused by an abnormal, misfolded protein called a prion that accumulates in the brain and spinal cord, producing a spongy, “honeycomb” appearance.  \n\nKey points:\n\n| Feature | Details |\n|---------|---------|\n| **Cause** | Misfolded prion protein (PrP^Sc) that induces normal prion proteins to misfold. |\n| **Transmission** | Primarily through contaminated feed (e.g., meat‑and‑bone meal from infected animals). |\n| **Symptoms in cattle** | Ataxia (loss of coordination), tremors, behavioral changes, and eventually death. |\n| **Human risk** | Variant Creutzfeldt‑Jakob disease (vCJD) can occur when people consume infected beef products. |\n| **Control** | Strict feed‑ban regulations, surveillance, testing, and culling of infected herds. |\n\nThe disease was first identified in the United Kingdom in the 1980s and has since prompted global changes in livestock management and food safety.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is the location of Lake Champlain ?",
+      "system_answer": "Lake Champlain is a long, narrow freshwater lake that lies on the border between the United States and Canada.  \n\n- **In the U.S.** it is situated in the states of **Vermont** (to the north) and **New York** (to the south).  \n- **In Canada** it extends into the province of **Quebec**.  \n\nThe lake stretches roughly 120 mi (190 km) from its northern outlet at the **Champlain River** near the town of **St. Albans, Vermont**, down to its southern outlet at the **Swan River** near **Swan Lake, New York**. It is a major geographic feature of the northeastern U.S., forming part of the boundary between Vermont and New York and connecting to the St. Lawrence River watershed in Canada.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is the proper name for a female walrus ?",
+      "system_answer": "",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "When was Rosa Parks born ?",
+      "system_answer": "Rosa Parks was born on **December 4, 1913**.",
+      "gold_answer": "4",
+      "score": 1
+    },
+    {
+      "question": "When were William Shakespeare 's twins born ?",
+      "system_answer": "William Shakespeare’s twins—Hamnet and Judith—were born in **1585**.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is natural gas composed of ?",
+      "system_answer": "Natural gas is a fossil‑fuel mixture that is mostly hydrocarbons.  Its composition varies by field, but a typical “dry” natural‑gas stream contains:\n\n| Component | Typical range (by volume) |\n|-----------|---------------------------|\n| **Methane (CH₄)** | 85 – 95 % |\n| **Ethane (C₂H₆)** | 3 – 10 % |\n| **Propane (C₃H₈)** | 0.5 – 3 % |\n| **Butane (C₄H₁₀)** | 0.1 – 1 % |\n| **Other higher hydrocarbons** (pentane, hexane, etc.) | < 1 % |\n| **Nitrogen (N₂)** | 0.5 – 5 % |\n| **Carbon dioxide (CO₂)** | 0.5 – 5 % |\n| **Trace gases** (hydrogen sulfide, water vapor, argon, etc.) | < 0.5 % |\n\nIn “wet” natural gas, the ethane, propane, and butane fractions are higher, and the gas may also contain significant amounts of natural‑gas liquids (NGLs).  The exact mix depends on the reservoir and the processing steps applied before the gas is delivered to pipelines or end users.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "How tall is the Gateway Arch in St. Louis , MO ?",
+      "system_answer": "The Gateway Arch in St. Louis, Missouri, stands **630 feet tall** (about **192 meters**).",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Who was the first governor of Alaska ?",
+      "system_answer": "The first governor of Alaska was **William A. Egan**. He served as the state’s inaugural governor from 1959, when Alaska entered the Union, until 1966.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "When was the first Wal-Mart store opened ?",
+      "system_answer": "The first Wal‑Mart store opened on **July 2, 1962** in Rogers, Arkansas.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What New York City structure is also known as the Twin Towers ?",
+      "system_answer": "The “Twin Towers” were the original World Trade Center towers in Lower Manhattan, New York City.",
+      "gold_answer": "5",
+      "score": 0
+    }
+  ]
+}

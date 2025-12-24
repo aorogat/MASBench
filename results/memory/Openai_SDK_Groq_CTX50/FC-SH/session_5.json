@@ -1,0 +1,610 @@
+{
+  "system": "Openai_SDK_Groq_CTX50",
+  "split": "Conflict_Resolution",
+  "session_id": "5",
+  "subtask": "FC-SH",
+  "category": "SF",
+  "runtime_sec": 158.43,
+  "questions": [
+    {
+      "question": "Which sport is goaltender associated with?",
+      "system_answer": "The term **goaltender** is most closely associated with **ice hockey** (and, more generally, with any sport that has a player whose job is to guard the goal). In ice hockey, the goaltender is the key defensive position, responsible for stopping the puck from entering the net.",
+      "gold_answer": "pesäpallo",
+      "score": 0.0
+    },
+    {
+      "question": "What is Nobuhiro Watsuki famous for?",
+      "system_answer": "Nobuhiro Watsuki is a Japanese manga artist best known for creating the popular historical‑action series **“Rurouni Kenshin”** (also known as *Samurai X*). The series, which ran in *Weekly Shōnen Jump* from 1994 to 1999, follows the wandering swordsman Kenshin Himura as he seeks redemption for his past as an assassin. The manga’s success spawned an anime adaptation, several live‑action films, and a lasting legacy in the shōnen genre. Watsuki has also worked on other titles such as *Shaman King* (as a writer) and *Rurouni Kenshin: The Legend of the Sword*, but “Rurouni Kenshin” remains his most iconic and widely recognized work.",
+      "gold_answer": "The Fairly OddParents",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was rugby union created in?",
+      "system_answer": "Rugby union was created in **England**.",
+      "gold_answer": "India",
+      "score": 0.0
+    },
+    {
+      "question": "What is Ferdowsi famous for?",
+      "system_answer": "Ferdowsi is best known as the author of the **Shahnameh** (“The Book of Kings”), the epic poem that chronicles the history, legends, and mythology of pre‑Islamic Persia. His work is considered the pinnacle of Persian literature and earned him the title “Father of Persian literature.”",
+      "gold_answer": "Shahnameh",
+      "score": 1.0
+    },
+    {
+      "question": "Which university was Joan Didion educated at?",
+      "system_answer": "Joan Didion attended the **University of California, Berkeley** (though she left after a year and did not graduate).",
+      "gold_answer": "University of California, Berkeley",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the author of The Marriage of Figaro?",
+      "system_answer": "The play **“The Marriage of Figaro”** was written by **Pierre‑Augustin Caron de Beaumarchais**.",
+      "gold_answer": "Thomas Kyd",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Tunisia national football team associated with?",
+      "system_answer": "The Tunisia national football team is associated with **football (soccer)**.",
+      "gold_answer": "basketball",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is quarterback associated with?",
+      "system_answer": "The position of **quarterback** is a key role in **American football** (gridiron football).",
+      "gold_answer": "Muay Thai",
+      "score": 0.0
+    },
+    {
+      "question": "What is the official language of Japan?",
+      "system_answer": "The official language of Japan is **Japanese**.",
+      "gold_answer": "Swedish",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the current head of the Tucson government?",
+      "system_answer": "The current head of Tucson’s city government is **Mayor Regina Romero**. She has been serving as Tucson’s mayor since her inauguration in January 2021.",
+      "gold_answer": "Jonathan Rothschild",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the current head of the Italy government?",
+      "system_answer": "The head of Italy’s government is the **Prime Minister**. As of 2025, the incumbent Prime Minister is **Giorgia Meloni**, who has been in office since 22 October 2022.",
+      "gold_answer": "Giuseppe Conte",
+      "score": 0.0
+    },
+    {
+      "question": "Who performed Meredith Grey?",
+      "system_answer": "Meredith Grey was portrayed by **Ellen Pompeo** on the television series *Grey’s Anatomy*.",
+      "gold_answer": "Ellen Pompeo",
+      "score": 1.0
+    },
+    {
+      "question": "What position does Robert Parish play?",
+      "system_answer": "Robert Parish played **center** in the NBA.",
+      "gold_answer": "quarterback",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Cédric Klapisch?",
+      "system_answer": "Cédric Klapisch is a French citizen – he was born and works in France.",
+      "gold_answer": "Malaysia",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of Sidereus Nuncius?",
+      "system_answer": "The *Sidereus Nuncius* (“Starry Messenger”) was written by **Galileo Galilei**.",
+      "gold_answer": "Samuel Beckett",
+      "score": 0.0
+    },
+    {
+      "question": "Which continent is Germany located in?",
+      "system_answer": "Germany is located in **Europe**.",
+      "gold_answer": "Africa",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Kingdom of Ireland affiliated with?",
+      "system_answer": "The Kingdom of Ireland (1542‑1800) was a Protestant monarchy under the English crown, and its official state religion was the **Church of Ireland**—the Anglican (Protestant) church.",
+      "gold_answer": "Zoroastrianism",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was association football created in?",
+      "system_answer": "Association football (soccer) was created in **England**.",
+      "gold_answer": "Italy",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the developer of Windows Phone?",
+      "system_answer": "Windows Phone was developed by **Microsoft**. The operating system was created and maintained by Microsoft’s mobile and cloud division, with the first version (Windows Phone 7) launched in 2010.",
+      "gold_answer": "Microsoft",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the chief executive officer of Microsoft?",
+      "system_answer": "The chief executive officer of Microsoft is **Satya Nadella**. He has held the position since February 2014.",
+      "gold_answer": "Steve Jobs",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the chairperson of Harvard University?",
+      "system_answer": "Harvard University does not have a single “chairperson” in the way a corporation has a CEO. Instead, the university is governed by two separate boards:\n\n| Governing body | Chairperson (as of 2024) |\n|----------------|--------------------------|\n| **Board of Overseers** | **Dr. David A. McKellar** – a former Harvard faculty member and senior executive at the U.S. Department of Defense. |\n| **Board of Trustees** | **Dr. David A. McKellar** – the same individual serves as chair of both boards, a role he has held since 2022. |\n\nIf you were referring to a different position (e.g., the president of Harvard University), that would be **Dr. Claudine Gay** (since 2022).",
+      "gold_answer": "Peter Diamandis",
+      "score": 0.0
+    },
+    {
+      "question": "Who founded Church of Scotland?",
+      "system_answer": "The Church of Scotland was not founded by a single individual in the way a modern organization might be. It came into being as a result of the Scottish Reformation, which was formalized by the Scottish Parliament in 1560.  \n\n**Key points**\n\n| Aspect | Details |\n|--------|---------|\n| **Historical context** | The Reformation in Scotland was a movement to break away from the Roman Catholic Church and adopt Protestant theology. |\n| **Parliamentary act** | On 11 May 1560, the Scottish Parliament passed the *Act of Supremacy*, declaring the King the supreme head of the Church of Scotland and effectively establishing a national, Presbyterian church. |\n| **Influential figure** | While the church was a collective national institution, **John Knox** (1513‑1572) is widely regarded as the leading theological and political figure who shaped its doctrines, governance, and identity. Knox’s preaching, writings, and leadership were instrumental in steering the Reformation and setting the church’s direction. |\n| **Resulting structure** | The Church of Scotland adopted a Presbyterian polity (rule by elders) and a Reformed theological framework, distinguishing it from the Anglican Church in England and the Catholic Church. |\n\nSo, the Church of Scotland was **established by the Scottish Parliament in 1560**, with **John Knox** as the principal architect of its theological and organizational character.",
+      "gold_answer": "John Knox",
+      "score": 1.0
+    },
+    {
+      "question": "Which sport is Galwegians RFC associated with?",
+      "system_answer": "Galwegians RFC is a rugby union club.",
+      "gold_answer": "rugby union",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the director of American Broadcasting Company?",
+      "system_answer": "The current director (President & CEO) of the American Broadcasting Company (ABC) is **Susan L. Arnold**.",
+      "gold_answer": "Ernst Heinkel",
+      "score": 0.0
+    },
+    {
+      "question": "Which city did Gennady Rozhdestvensky die in?",
+      "system_answer": "Gennady Rozhdestvensky passed away in **Moscow**.",
+      "gold_answer": "United States of America",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital of Tang Empire?",
+      "system_answer": "The capital of the Tang Empire (the Tang dynasty of China, 618‑907 CE) was **Chang’an**—today’s Xi’an in Shaanxi province.",
+      "gold_answer": "Beaumont",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the director of British Broadcasting Corporation?",
+      "system_answer": "The chief executive of the BBC is called the **Director‑General**.  \nAs of 2025, the Director‑General of the British Broadcasting Corporation is **Tim Davie**. He has been in the role since 1 January 2023, succeeding David Cameron.",
+      "gold_answer": "Narendra Modi",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Benjamin Mazar?",
+      "system_answer": "Benjamin Mazar was an Israeli citizen. He was born in Warsaw, Poland, in 1907, but he emigrated to the British Mandate of Palestine (later the State of Israel) and became a natural‑born Israeli. He spent his entire academic and professional life in Israel, serving as a professor at the Hebrew University of Jerusalem and as a leading figure in Israeli archaeology and history.",
+      "gold_answer": "Israel",
+      "score": 1.0
+    },
+    {
+      "question": "What type of music does Michael Mantler play?",
+      "system_answer": "Michael Mantler is best known as an avant‑garde/free‑jazz trumpeter and composer.  He’s worked in experimental jazz, often blending elements of classical music and contemporary composition, and has been a key figure in the European free‑jazz scene.",
+      "gold_answer": "post-punk",
+      "score": 0.0
+    },
+    {
+      "question": "Which city did Oscar Wilde die in?",
+      "system_answer": "Oscar Wilde died in **London**.",
+      "gold_answer": "Guangzhou",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was baseball created in?",
+      "system_answer": "Baseball was created in the **United States of America**.",
+      "gold_answer": "Japan",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Ernst Heinkel?",
+      "system_answer": "Ernst Heinkel was a citizen of **Germany**.",
+      "gold_answer": "Tang Empire",
+      "score": 0.0
+    },
+    {
+      "question": "Which city is the headquarter of The University of the Arts located in?",
+      "system_answer": "",
+      "gold_answer": "Philadelphia",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was rap rock created in?",
+      "system_answer": "- **Headquarters of The University of the Arts:** Philadelphia, Pennsylvania, United States.  \n- **Country where rap‑rock was created:** United States.",
+      "gold_answer": "Russian Empire",
+      "score": 0.0
+    },
+    {
+      "question": "Where was Christianity founded?",
+      "system_answer": "Christianity began in the 1st century CE in the Roman province of **Judea**, specifically in the city of **Jerusalem** (the area that is now part of modern‑day Israel/Palestine).",
+      "gold_answer": "Taipei",
+      "score": 0.0
+    },
+    {
+      "question": "What is the official language of United States of America?",
+      "system_answer": "The United States does **not** have an official language at the federal level. While English is the de facto lingua franca and is used for all federal government business, no law designates it as the official language of the country. Some individual states have adopted English (or other languages) as their official state language, but this is separate from any national designation.",
+      "gold_answer": "German",
+      "score": 0.0
+    },
+    {
+      "question": "Who performed Past Masters?",
+      "system_answer": "**Past Masters** is a compilation album of the Beatles’ non‑album singles and B‑sides.  \nAll of the tracks on that collection were performed by **the Beatles** (John Lennon, Paul McCartney, George Harrison, and Ringo Starr).",
+      "gold_answer": "Madonna",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital of Japan?",
+      "system_answer": "The capital of Japan is **Tokyo**.",
+      "gold_answer": "Tokyo",
+      "score": 1.0
+    },
+    {
+      "question": "What is the capital of France?",
+      "system_answer": "The capital of France is **Paris**.",
+      "gold_answer": "Harare",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the developer of SteamOS?",
+      "system_answer": "SteamOS was developed by **Valve Corporation**, the same company behind the Steam gaming platform.",
+      "gold_answer": "ABB Group",
+      "score": 0.0
+    },
+    {
+      "question": "Which city is the headquarter of University of Bucharest located in?",
+      "system_answer": "The University of Bucharest is headquartered in **Bucharest, Romania**.",
+      "gold_answer": "Ankara",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is wide receiver associated with?",
+      "system_answer": "The position of **wide receiver** is a key role in **American football**.",
+      "gold_answer": "rugby",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Hines Ward play?",
+      "system_answer": "Hines Ward played as a **wide receiver** in the NFL.",
+      "gold_answer": "cornerback",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital of Australia?",
+      "system_answer": "The capital of Australia is **Canberra**.",
+      "gold_answer": "Oderzo",
+      "score": 0.0
+    },
+    {
+      "question": "Which continent is Malaysia located in?",
+      "system_answer": "Malaysia is located on the continent of **Asia** (specifically in Southeast Asia).",
+      "gold_answer": "Antarctica",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of A Wizard of Earthsea?",
+      "system_answer": "The novel *A Wizard of Earthsea* was written by **Ursula K. Le Guin**.",
+      "gold_answer": "Pius XII",
+      "score": 0.0
+    },
+    {
+      "question": "Who performed Free as a Bird?",
+      "system_answer": "“Free as a Bird” was performed by **The Beatles**.",
+      "gold_answer": "The Beatles",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the author of Our Mutual Friend?",
+      "system_answer": "The novel **“Our Mutual Friend”** was written by **Charles Dickens**.",
+      "gold_answer": "Charles Darwin",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was basketball created in?",
+      "system_answer": "Basketball was invented in the **United States**. It was created in 1891 by Dr. James Naismith while he was working at the International YMCA Training School in Springfield, Massachusetts.",
+      "gold_answer": "Soviet Union",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Hal Needham?",
+      "system_answer": "Hal Needham is an American—he holds U.S. citizenship.",
+      "gold_answer": "United States of America",
+      "score": 1.0
+    },
+    {
+      "question": "Which continent is Bengaluru located in?",
+      "system_answer": "Bengaluru (also known as Bengaluru) is located on the continent of **Asia**.",
+      "gold_answer": "Oceania",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Slovakia national football team associated with?",
+      "system_answer": "The Slovakia national football team is associated with **football (soccer)**.",
+      "gold_answer": "cricket",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the current head of state in United States of America?",
+      "system_answer": "The current head of state of the United States of America is **President Donald J. Trump**.",
+      "gold_answer": "Connachta",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Imelda Marcos affiliated with?",
+      "system_answer": "Imelda Marcos is a Roman Catholic.",
+      "gold_answer": "atheism",
+      "score": 0.0
+    },
+    {
+      "question": "What type of music does Dana International play?",
+      "system_answer": "Dana International is best known as a pop and dance‑pop performer.  Her songs blend mainstream pop with upbeat dance rhythms, and she often incorporates Middle‑Eastern and Israeli musical elements into her recordings.",
+      "gold_answer": "Australian hip hop",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Sable?",
+      "system_answer": "Sable (the former WWE wrestler, real name Rena Mero) is a citizen of the **United States of America**.",
+      "gold_answer": "Czech Republic",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was Charlie Hebdo created in?",
+      "system_answer": "Charlie Hebdo was created in **France**.",
+      "gold_answer": "Italy",
+      "score": 0.0
+    },
+    {
+      "question": "Who is Elvis Presley married to?",
+      "system_answer": "Elvis Presley was married to **Priscilla Beaulieu** (later known as Priscilla Presley). They wed in 1967 and divorced in 1973.",
+      "gold_answer": "Charles the Bold",
+      "score": 0.0
+    },
+    {
+      "question": "Who performed Hermione Granger?",
+      "system_answer": "Hermione Granger was portrayed by **Emma Watson** in the Harry Potter film series.",
+      "gold_answer": "Kylie Minogue",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Bo Ryan associated with?",
+      "system_answer": "Bo Ryan is associated with **basketball**—he’s best known as the former head coach of the University of Wisconsin‑Madison men’s basketball team.",
+      "gold_answer": "association football",
+      "score": 0.0
+    },
+    {
+      "question": "What type of music does John McVie play?",
+      "system_answer": "John McVie is a bassist best known for playing **blues‑rock/folk‑rock** (and pop‑rock) with Fleetwood Mac.",
+      "gold_answer": "rap rock",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Rogério Ceni play?",
+      "system_answer": "Rogério Ceni is a **goalkeeper**.",
+      "gold_answer": "flanker",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the chief executive officer of Twitter?",
+      "system_answer": "The chief executive officer of Twitter (now operating under the X brand) is **Elon Musk**.",
+      "gold_answer": "Bernard Arnault",
+      "score": 0.0
+    },
+    {
+      "question": "What language does Kylie Minogue speak?",
+      "system_answer": "Kylie Minogue’s native language is **English**. She grew up in Australia and performs and records primarily in English.",
+      "gold_answer": "German",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Darryl Strawberry associated with?",
+      "system_answer": "Darryl Strawberry is associated with **baseball**. He was a star outfielder in Major League Baseball, most famously playing for the New York Mets.",
+      "gold_answer": "baseball",
+      "score": 1.0
+    },
+    {
+      "question": "Which sport is placekicker associated with?",
+      "system_answer": "A placekicker is a position in **American football**.",
+      "gold_answer": "rugby",
+      "score": 0.0
+    },
+    {
+      "question": "What kind of work does Stephen McNeil do?",
+      "system_answer": "Stephen McNeil is a Canadian politician—he served as the Premier of Nova Scotia from 2013 to 2017.  Before entering politics he was a lawyer and has continued to work in public service and community affairs.",
+      "gold_answer": "journalist",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the employer of Dave Filoni?",
+      "system_answer": "Dave Filoni is employed by **Lucasfilm Ltd.**, the film‑and‑television studio that produces the Star Wars franchise (Lucasfilm is a subsidiary of The Walt Disney Company).",
+      "gold_answer": "British Broadcasting Corporation",
+      "score": 0.0
+    },
+    {
+      "question": "Which continent is San Francisco located in?",
+      "system_answer": "San Francisco is located on the continent of **North America**.",
+      "gold_answer": "North America",
+      "score": 1.0
+    },
+    {
+      "question": "Where was Canadair founded?",
+      "system_answer": "Canadair was founded in **Montreal, Quebec, Canada**.  \nIt began in 1941 as Canadian Aeroplanes Limited (CAL) in Montreal and later adopted the name Canadair.",
+      "gold_answer": "Tucson",
+      "score": 0.0
+    },
+    {
+      "question": "Which company is AP1000 produced by?",
+      "system_answer": "The AP1000 nuclear reactor is produced by **Westinghouse Electric Company** (a subsidiary of Toshiba).",
+      "gold_answer": "Canadair",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Ayumi Hamasaki?",
+      "system_answer": "Ayumi Hamasaki is a Japanese citizen.",
+      "gold_answer": "Japan",
+      "score": 1.0
+    },
+    {
+      "question": "What position does Blair Walsh play?",
+      "system_answer": "Blair Walsh is a baseball pitcher.",
+      "gold_answer": "placekicker",
+      "score": 0.0
+    },
+    {
+      "question": "Who is Tony Blair married to?",
+      "system_answer": "Tony Blair is married to **Cherie Blair** (née Booth).",
+      "gold_answer": "Alan Jay Lerner",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of Endymion?",
+      "system_answer": "",
+      "gold_answer": "John Keats",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of Lady Windermere's Fan?",
+      "system_answer": "- **Endymion** – written by **Dan Simmons** (American author of the *Hyperion* series).  \n- **Lady Windermere's Fan** – written by **Oscar Wilde** (British playwright and novelist).",
+      "gold_answer": "Oscar Wilde",
+      "score": 1.0
+    },
+    {
+      "question": "What is the name of the current head of the Japan government?",
+      "system_answer": "The head of the Japanese government is the **Prime Minister**. As of 2025, the current Prime Minister of Japan is **Fumio Kishida**. He has been in office since October 4, 2021.",
+      "gold_answer": "Shinzō Abe",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the chairperson of Congolese Party of Labour?",
+      "system_answer": "I’m sorry, but I don’t have that information.",
+      "gold_answer": "Stephen McNeil",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is flanker associated with?",
+      "system_answer": "A **flanker** is a position in **rugby** (both rugby union and rugby league).  \nIn rugby union, flankers are the two players who wear numbers 6 and 7 and play on the sides of the scrum, while in rugby league the term is used more loosely for a forward who plays a similar loose, mobile role.",
+      "gold_answer": "rugby union",
+      "score": 1.0
+    },
+    {
+      "question": "What is the capital of Czech Republic?",
+      "system_answer": "The capital of the Czech Republic is **Prague**.",
+      "gold_answer": "Prague",
+      "score": 1.0
+    },
+    {
+      "question": "What position does Lisa Leslie play?",
+      "system_answer": "Lisa Leslie played the **center** position in basketball.",
+      "gold_answer": "goaltender",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the current head of state in Soviet Union?",
+      "system_answer": "The Soviet Union dissolved in 1991, so there is no longer a “current” head of state for that country. The former Soviet republics are now independent states, each with its own president or head of state.",
+      "gold_answer": "Elizabeth II",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Ferdinand von Richthofen?",
+      "system_answer": "Ferdinand von Richthofen was a German national. He was born in 1833 in the Kingdom of Prussia (now part of Germany) and spent his life as a German citizen, serving as a professor, explorer, and writer in the German Empire.",
+      "gold_answer": "Canada",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Karen Armstrong affiliated with?",
+      "system_answer": "Karen Armstrong was a Catholic nun for many years, but she left the order in the 1970s and is now a secular Christian. She does not belong to any particular religious order or denomination today, though she continues to write about and study religions from a largely secular perspective.",
+      "gold_answer": "Church of Scotland",
+      "score": 0.0
+    },
+    {
+      "question": "Who was Vito Corleone created by?",
+      "system_answer": "Vito Corleone is a fictional character first introduced in **Mario Puzo’s 1969 novel *The Godfather***. Puzo created the character as the aging, wise‑cracking patriarch of the Corleone crime family. When the novel was adapted into the 1972 film, **Francis Ford Coppola** directed and further shaped Vito’s on‑screen persona (with the screenplay co‑written by Coppola and Puzo). So, the character’s original creation is credited to Mario Puzo, with Coppola’s film adaptation giving him the iconic cinematic form we all know.",
+      "gold_answer": "Nobuhiro Watsuki",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital of Romania?",
+      "system_answer": "The capital of Romania is **Bucharest**.",
+      "gold_answer": "Rajanpur",
+      "score": 0.0
+    },
+    {
+      "question": "Which continent is India located in?",
+      "system_answer": "India is located on the continent of **Asia**.",
+      "gold_answer": "Africa",
+      "score": 0.0
+    },
+    {
+      "question": "Which city did Olga of Kiev die in?",
+      "system_answer": "Olga of Kiev died in **Kiev** (modern‑day Kyiv).",
+      "gold_answer": "Rodez",
+      "score": 0.0
+    },
+    {
+      "question": "Who founded Sasanian Empire?",
+      "system_answer": "The Sasanian Empire was founded by **Ardashir I** (Ardashir the Great) in 224 CE.",
+      "gold_answer": "Walter Chrysler",
+      "score": 0.0
+    },
+    {
+      "question": "Which city did Pedro Pierluisi work in?",
+      "system_answer": "Pedro Pierluisi’s professional career has been based in **San Juan, Puerto Rico**. He worked as a lawyer, served as Secretary of State of Puerto Rico, and later became Governor, all positions headquartered in San Juan.",
+      "gold_answer": "Washington, D.C.",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Surrey Senior Cup associated with?",
+      "system_answer": "The **Surrey Senior Cup** is a football (soccer) competition. It’s a county cup for clubs in Surrey, England, and is part of the English football (association football) pyramid.",
+      "gold_answer": "basketball",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Narendra Modi?",
+      "system_answer": "Narendra Modi is a citizen of **India**.",
+      "gold_answer": "Australia",
+      "score": 0.0
+    },
+    {
+      "question": "Who is Victoria Beckham married to?",
+      "system_answer": "Victoria Beckham is married to former professional footballer **David Beckham**.",
+      "gold_answer": "David Beckham",
+      "score": 1.0
+    },
+    {
+      "question": "What is the country of citizenship of Charles Messier?",
+      "system_answer": "Charles Messier was a French astronomer, so his country of citizenship was **France**.",
+      "gold_answer": "Iran",
+      "score": 0.0
+    },
+    {
+      "question": "Who was Rand al'Thor created by?",
+      "system_answer": "Rand al'Thor was created by the author **Robert Jordan** (real name James Oliver Rigney Jr.).",
+      "gold_answer": "Ferdowsi",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Mike D'Antoni play?",
+      "system_answer": "Mike D’Antoni played as a **point guard** during his professional basketball career.",
+      "gold_answer": "point guard",
+      "score": 1.0
+    },
+    {
+      "question": "What is the country of citizenship of Colin Irwin?",
+      "system_answer": "Colin Irwin is a former New Zealand rugby union player, so his country of citizenship is **New Zealand**.",
+      "gold_answer": "Israel",
+      "score": 0.0
+    },
+    {
+      "question": "Who is Walter Chrysler's child?",
+      "system_answer": "Walter Chrysler’s most well‑known child was his son **Walter P. Chrysler Jr.** (1915 – 2005).  The younger Chrysler followed in his father’s footsteps as a businessman and philanthropist, and he is often the one referenced when people talk about Walter Chrysler’s family.",
+      "gold_answer": "Charles Frederick, Duke of Holstein-Gottorp",
+      "score": 0.0
+    },
+    {
+      "question": "Who is Charles Darwin married to?",
+      "system_answer": "Charles Darwin was married to **Emma Wedgwood** (née Wedgwood). They wed on 29 May 1839 in the family chapel at Shrewsbury, and Emma was a first cousin of Darwin’s mother, making her a close family friend before their marriage. Their partnership produced 10 children, many of whom played significant roles in Darwin’s work and the continuation of his scientific legacy.",
+      "gold_answer": "Amala Paul",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Irving Fryar play?",
+      "system_answer": "Irving Fryar played as a **wide receiver** in the NFL.",
+      "gold_answer": "wide receiver",
+      "score": 1.0
+    }
+  ]
+}

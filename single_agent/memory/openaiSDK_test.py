@@ -9,30 +9,16 @@ Each benchmark split runs in an isolated SQLite session database
 so the full memory is preserved for inspection and analysis.
 
 To run:
+    # This file target Groq WITHOUT using the groq_router
     python -m single_agent.memory.openaiSDK_test
 """
 
-# ---------------------------------------------------------------------
-# ⚠️ Framework-Specific Ingestion Guard (IMPORTANT)
-# ---------------------------------------------------------------------
-# NOTE:
-# Although chunk_max_tokens is shared across frameworks, the OpenAI Agents
-# SDK introduces additional hidden context overhead (agent metadata,
-# session state, tracing, tool schemas). When using Groq-backed models,
-# this reduces the effective usable context per request.
-#
-# To avoid per-request context overflow *without changing the global
-# benchmark configuration*, we apply a conservative local cap for
-# ingestion chunks in THIS file only.
-#
-# Other frameworks (CrewAI, Agno, LangGraph) do not require this guard
-# because they send lighter-weight requests.
 
 # Engineering safety (fixed)
 OPENAI_SDK_INGEST_MAX_TOKENS = 4096
 
 # Experimental variable (sweep this)
-OPENAI_SDK_CONTEXT_WINDOW_TOKENS = 50   # 512 / 1024 / 2048 / 4096
+OPENAI_SDK_CONTEXT_WINDOW_TOKENS = 16384   # 50 / 512 / 1024 / 2048 / 4096 / 8192 / 16384 / 32768 [big context window hit the TPM]
 
 
 
@@ -304,7 +290,7 @@ class OpenAIMemoryAgent:
                 self.session = SQLiteSession(self.session_id, self.session_path)
 
                 # TPM throttle
-                time.sleep(1.0)
+                time.sleep(3.0)
 
             except Exception as e:
                 print(f"❌ Error storing chunk {i}: {e}")

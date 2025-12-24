@@ -4,7 +4,7 @@
   "session_id": "2",
   "subtask": "MCC",
   "category": "TTL",
-  "runtime_sec": 475.36,
+  "runtime_sec": 413.06,
   "questions": [
     {
       "question": "Are there restrictions for my disposable card since it does not seem to be working?",
@@ -22,13 +22,13 @@
       "question": "What do I do if I notice a strange withdrawl in my statement?",
       "system_answer": "label: 50",
       "gold_answer": "50",
-      "score": 0
+      "score": 1
     },
     {
       "question": "I got a message that I need to verify my identity; what do I do?",
-      "system_answer": "label: 38",
+      "system_answer": "label: 16",
       "gold_answer": "38",
-      "score": 1
+      "score": 0
     },
     {
       "question": "How do I use the app if I don't have my phone with me?",
@@ -56,15 +56,15 @@
     },
     {
       "question": "I sent money.  They haven't received it.",
-      "system_answer": "['label 6']",
+      "system_answer": "label: 6",
       "gold_answer": "6",
-      "score": 0
+      "score": 1
     },
     {
       "question": "What age do my kids need to be to use your service?",
       "system_answer": "label: 21",
       "gold_answer": "21",
-      "score": 0
+      "score": 1
     },
     {
       "question": "I've notice I was charged for withdrawing cash, can you explain why?",
@@ -74,7 +74,7 @@
     },
     {
       "question": "Can you please identify the problem with my bank card?",
-      "system_answer": "label: 42",
+      "system_answer": "",
       "gold_answer": "42",
       "score": 0
     },
@@ -82,47 +82,47 @@
       "question": "Do you know where my card will be accepted?",
       "system_answer": "label: 15",
       "gold_answer": "15",
-      "score": 0
+      "score": 1
     },
     {
       "question": "My work sends me all over the world, can I get a discount for all the money I have to exchange?",
       "system_answer": "label: 10",
       "gold_answer": "10",
-      "score": 0
+      "score": 1
     },
     {
       "question": "Why do I have to verify my identity?",
       "system_answer": "label: 45",
       "gold_answer": "45",
-      "score": 0
+      "score": 1
     },
     {
       "question": "When my card expires what happens to my account?",
       "system_answer": "label: 9",
       "gold_answer": "9",
-      "score": 0
+      "score": 1
     },
     {
       "question": "It appears that I am being double charged for some items that I have purchased this past week.  Please review and correct.",
-      "system_answer": "",
+      "system_answer": "label: 63",
       "gold_answer": "63",
-      "score": 0
+      "score": 1
     },
     {
       "question": "how long til my cash out goes through?",
       "system_answer": "label: 24",
       "gold_answer": "24",
-      "score": 0
+      "score": 1
     },
     {
       "question": "my phone is gone",
-      "system_answer": "I’m sorry to hear that! Here’s what you can do right away to keep your account safe:\n\n1. **Log out of the app**  \n   • If you still have access to the app on another device, log out from all devices.  \n   • If you can’t log in, go to the *Forgot passcode* or *Reset passcode* option on the login screen and follow the instructions.\n\n2. **Change your passcode**  \n   • Once you’re logged in on a new device, go to *Settings → Security → Passcode* and set a new, strong passcode.\n\n3. **Block or freeze your card**  \n   • In the app, tap the card you want to block and select *Freeze card* (or *Block card*).  \n   • If you can’t access the app, you can also call our support line or use the *Help & Support* chat in the app to request a card freeze.\n\n4. **Enable two‑factor authentication (2FA)**  \n   • If you haven’t already, enable 2FA in *Settings → Security*. This adds an extra layer of protection even if someone gets hold of your passcode.\n\n5. **Check recent activity**  \n   • Review recent transactions and top‑ups. If you see anything suspicious, report it immediately through the app’s *Report a problem* or *Help & Support* section.\n\n6. **Contact support**  \n   • If you’re unable to log in or need further assistance, reach out to our support team via the app or by calling the number on the back of your card. They can help you secure your account and, if necessary, issue a new card.\n\n7. **Keep your recovery email and phone number up to date**  \n   • Make sure the email address and phone number on file are current so we can reach you if anything unusual happens.\n\nIf you need any more help or have questions about a specific step, just let me know!",
+      "system_answer": "label: 22",
       "gold_answer": "22",
-      "score": 0
+      "score": 1
     },
     {
       "question": "My money transfer has not arrived.",
-      "system_answer": "",
+      "system_answer": "label: 69",
       "gold_answer": "6",
       "score": 0
     },
@@ -130,17 +130,17 @@
       "question": "I bought something but now I would like a refund. How do I do that?",
       "system_answer": "label: 47",
       "gold_answer": "47",
-      "score": 0
+      "score": 1
     },
     {
       "question": "Hello. Can you tell me if you use Visa or Mastercard?",
       "system_answer": "label: 72",
       "gold_answer": "72",
-      "score": 0
+      "score": 1
     },
     {
       "question": "I can't see my latest bank transfer",
-      "system_answer": "label: 69",
+      "system_answer": "",
       "gold_answer": "69",
       "score": 0
     },
@@ -154,7 +154,7 @@
       "question": "There is a transaction for $1 and I don't know why it was charged.",
       "system_answer": "label: 55",
       "gold_answer": "55",
-      "score": 0
+      "score": 1
     },
     {
       "question": "Am I able to get a second card?",
@@ -176,7 +176,7 @@
     },
     {
       "question": "Is it okay to use a bank card to top up",
-      "system_answer": "",
+      "system_answer": "label: 25",
       "gold_answer": "76",
       "score": 0
     },
@@ -196,7 +196,7 @@
       "question": "I want a refund because my package has been taking too long to arrive. How do I go about doing that?",
       "system_answer": "label: 47",
       "gold_answer": "47",
-      "score": 0
+      "score": 1
     },
     {
       "question": "Freeze my account it's been hacked.",
@@ -214,13 +214,13 @@
       "question": "The transfer is coming up as pending the payment is due today. Will I be charged a fee?",
       "system_answer": "label: 18",
       "gold_answer": "18",
-      "score": 0
+      "score": 1
     },
     {
       "question": "Does my PIN come with my card?",
       "system_answer": "label: 75",
       "gold_answer": "75",
-      "score": 0
+      "score": 1
     },
     {
       "question": "Someone else is using my card, freeze it.",
@@ -230,7 +230,7 @@
     },
     {
       "question": "Transferring money in 2018 to another country shouldn't take this long. My transfer has been pending for too long. I verified my account details are correct.",
-      "system_answer": "label: 18",
+      "system_answer": "",
       "gold_answer": "18",
       "score": 0
     },
@@ -238,49 +238,49 @@
       "question": "My card is gone I think it was stolen",
       "system_answer": "label: 7",
       "gold_answer": "7",
-      "score": 0
+      "score": 1
     },
     {
       "question": "Can I get a mastercard?",
       "system_answer": "label: 72",
       "gold_answer": "72",
-      "score": 0
+      "score": 1
     },
     {
       "question": "I don't understand where this debit came from and want it removed.",
       "system_answer": "label: 5",
       "gold_answer": "5",
-      "score": 0
+      "score": 1
     },
     {
       "question": "I made a transfer 12 hours ago. Why is it still listed as pending?",
       "system_answer": "label: 18",
       "gold_answer": "18",
-      "score": 0
+      "score": 1
     },
     {
       "question": "can you limit my top up?",
       "system_answer": "label: 14",
       "gold_answer": "14",
-      "score": 0
+      "score": 1
     },
     {
       "question": "Why can't I get my virtual card to work?",
       "system_answer": "label: 28",
       "gold_answer": "28",
-      "score": 0
+      "score": 1
     },
     {
       "question": "What steps must I follow to get a Visa credit card?",
       "system_answer": "label: 72",
       "gold_answer": "72",
-      "score": 0
+      "score": 1
     },
     {
       "question": "Can I transfer money to a beneficiery?",
       "system_answer": "label: 44",
       "gold_answer": "44",
-      "score": 0
+      "score": 1
     },
     {
       "question": "Can you help with a transfer to an account",
@@ -316,7 +316,7 @@
       "question": "What places can I use my card?",
       "system_answer": "label: 15",
       "gold_answer": "15",
-      "score": 0
+      "score": 1
     },
     {
       "question": "How do I open up an account for my child?",
@@ -332,7 +332,7 @@
     },
     {
       "question": "Why didn't my balance change after I transferred some money?",
-      "system_answer": "",
+      "system_answer": "label: 18",
       "gold_answer": "69",
       "score": 0
     },
@@ -340,7 +340,7 @@
       "question": "The wrong rate was applied to an item I bought in a currency different from mine. Can this be changed?",
       "system_answer": "label: 19",
       "gold_answer": "19",
-      "score": 0
+      "score": 1
     },
     {
       "question": "How many tries do I have to enter my pin before I'm blocked?",
@@ -352,31 +352,31 @@
       "question": "My top-up isn't working.",
       "system_answer": "label: 54",
       "gold_answer": "54",
-      "score": 0
+      "score": 1
     },
     {
       "question": "Where do I need to live to get support?",
-      "system_answer": "",
+      "system_answer": "label: 11",
       "gold_answer": "11",
-      "score": 0
+      "score": 1
     },
     {
       "question": "Delete this account!",
       "system_answer": "label: 23",
       "gold_answer": "23",
-      "score": 0
+      "score": 1
     },
     {
       "question": "There is an extra $1 charge",
-      "system_answer": "label: 55",
+      "system_answer": "",
       "gold_answer": "55",
       "score": 0
     },
     {
       "question": "app does not recognize me",
-      "system_answer": "",
+      "system_answer": "label: 16",
       "gold_answer": "16",
-      "score": 0
+      "score": 1
     },
     {
       "question": "What are the fees for a physical card?",
@@ -394,7 +394,7 @@
       "question": "Please explain why the transfers shows up as pending?",
       "system_answer": "label: 18",
       "gold_answer": "18",
-      "score": 0
+      "score": 1
     },
     {
       "question": "How do I know which ATMs will accept this card?",
@@ -406,19 +406,19 @@
       "question": "Is my cash withdrawal pending?",
       "system_answer": "label: 24",
       "gold_answer": "24",
-      "score": 0
+      "score": 1
     },
     {
       "question": "Why do you require so many identity details?",
       "system_answer": "label: 45",
       "gold_answer": "45",
-      "score": 0
+      "score": 1
     },
     {
       "question": "I don't recognize a debit payment that was made and would like to find out about the payment.",
       "system_answer": "label: 5",
       "gold_answer": "5",
-      "score": 0
+      "score": 1
     },
     {
       "question": "Still waiting on a refund.",
@@ -440,7 +440,7 @@
     },
     {
       "question": "My credit card cancelled a payment for a purchase.",
-      "system_answer": "label: 74",
+      "system_answer": "['label 74']",
       "gold_answer": "74",
       "score": 1
     },
@@ -454,7 +454,7 @@
       "question": "I made a mistake and need to cancel a transaction",
       "system_answer": "label: 20",
       "gold_answer": "20",
-      "score": 0
+      "score": 1
     },
     {
       "question": "I need to verify my identity, but how do I do that?",
@@ -466,7 +466,7 @@
       "question": "I need to cancel an incorrect transaction.",
       "system_answer": "label: 20",
       "gold_answer": "20",
-      "score": 0
+      "score": 1
     },
     {
       "question": "My latest payment was declined, I was told everything was back to working order. What happened?",
@@ -482,21 +482,21 @@
     },
     {
       "question": "How do I get my paycheck through this?",
-      "system_answer": "",
+      "system_answer": "label: 8",
       "gold_answer": "8",
-      "score": 0
+      "score": 1
     },
     {
       "question": "How can i check if my card is working?",
       "system_answer": "label: 42",
       "gold_answer": "42",
-      "score": 0
+      "score": 1
     },
     {
       "question": "What is the top-ups limit?",
       "system_answer": "label: 14",
       "gold_answer": "14",
-      "score": 0
+      "score": 1
     },
     {
       "question": "I would like to link my card. How do I do it?",
@@ -520,7 +520,7 @@
       "question": "I made a mistake when I did a transfer so now what can I do to fix that?",
       "system_answer": "label: 20",
       "gold_answer": "20",
-      "score": 0
+      "score": 1
     },
     {
       "question": "The app reverted what I topped up.",
@@ -532,7 +532,7 @@
       "question": "In terms of holding and exchange, what fiat currencies do you use.",
       "system_answer": "label: 56",
       "gold_answer": "56",
-      "score": 0
+      "score": 1
     },
     {
       "question": "Can you tell me if my top-up has been cancelled?",
@@ -548,27 +548,27 @@
     },
     {
       "question": "Can you help me with a weird charge?  It's a pound charge that never goes away from the statement view on the app I'm using.  It's not described as anything but \"Pending\", and that status has never changed during the last two days.",
-      "system_answer": "",
+      "system_answer": "label: 55",
       "gold_answer": "55",
-      "score": 0
+      "score": 1
     },
     {
       "question": "I received my new card, but I don't see it in the app anywhere.  What do I do?",
-      "system_answer": "",
+      "system_answer": "label: 31",
       "gold_answer": "41",
       "score": 0
     },
     {
       "question": "The transfer I did hasn't arrived",
-      "system_answer": "",
+      "system_answer": "label: 6",
       "gold_answer": "6",
-      "score": 0
+      "score": 1
     },
     {
       "question": "Can I top up using an international card",
-      "system_answer": "label: 76",
+      "system_answer": "label: 25",
       "gold_answer": "76",
-      "score": 1
+      "score": 0
     },
     {
       "question": "How do I deal with a blocked PIN?",
@@ -604,7 +604,7 @@
       "question": "I don't like that I have to fill out so much information about my identity.",
       "system_answer": "label: 45",
       "gold_answer": "45",
-      "score": 0
+      "score": 1
     }
   ]
 }

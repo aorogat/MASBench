@@ -6,12 +6,25 @@ from dotenv import load_dotenv
 # ---------------------------------------------------------
 # OPENAI CLIENT INITIALIZATION
 # ---------------------------------------------------------
+import os
+from dotenv import load_dotenv
+from openai import OpenAI
+
 def load_openai_client():
     load_dotenv()
+
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         raise ValueError("Missing OPENAI_API_KEY")
+
+    # Optional base URL (e.g., your local router or proxy)
+    base_url = os.getenv("OPENAI_BASE_URL")
+
+    if base_url:
+        return OpenAI(api_key=api_key, base_url=base_url)
+
     return OpenAI(api_key=api_key)
+
 
 
 # ---------------------------------------------------------
@@ -232,44 +245,49 @@ def map_items_with_entity_mapping(items, entity_mapping):
 def evaluate_recall_at_5(answers_pairs, model="gpt-4o-mini", entity_mapping=None):
     recalls = []
 
+    id_to_title = entity_mapping["id_to_title"] if entity_mapping else {}
+
     for pair in answers_pairs:
-        system_top5 = pair.get("system", [])[:5]
-        gold_items = pair.get("gold", [])
+        print(f"Pais of id,title: {pair}")
+        system_outputs = pair.get("system", [])[:5]
+        raw_gold = pair.get("gold", [])
 
-        system_top5 = map_items_with_entity_mapping(system_top5, entity_mapping)
-
-        if not gold_items:
+        if not raw_gold or not system_outputs:
             recalls.append(0.0)
             continue
 
-        gold_unique_ids = {str(g).lower().strip() for g in gold_items}
-        gold_unique = len(gold_unique_ids)
 
-        if not system_top5:
-            recalls.append(0.0)
-            continue
+        print(f"raw_gold: {raw_gold}")
+        # 🔹 Map GOLD IDs → labels
+        gold_labels = []
+        for g in raw_gold:
+            g = str(g).strip()
+            gold_labels.append(id_to_title.get(g, g.lower()))
 
-        sys_block = "- " + "\n- ".join(system_top5)
-        gold_block = "- " + "\n- ".join(gold_unique_ids)
+        gold_labels = list(set(gold_labels))  # unique
+        print(f"gold_labels: {gold_labels}")
+
+        gold_block = "\n".join(f"- {g}" for g in gold_labels)
+        sys_block = "\n".join(f"- {s}" for s in system_outputs)
 
         prompt = f"""
-You are a semantic evaluator.
+You are an expert movie recommendation evaluator.
 
-Gold Items (unique expected items):
+GOLD MOVIES (canonical titles):
 {gold_block}
 
-System Top-5 (evaluate each independently):
+SYSTEM OUTPUTS (raw, top-5):
 {sys_block}
 
-For EACH system item, respond ONLY:
+For EACH gold movie, decide whether it is mentioned, implied,
+or clearly recommended in ANY of the system outputs.
+
+Return EXACTLY one line per gold movie:
 1. Yes/No
 2. Yes/No
-3. Yes/No
-4. Yes/No
-5. Yes/No
-
-A 'Yes' means the system item is semantically equivalent to ANY gold item.
+...
 """
+        print(f"Prompt {prompt}")
         raw = _call_gpt(model, prompt)
 
         if not raw:
@@ -279,16 +297,81 @@ A 'Yes' means the system item is semantically equivalent to ANY gold item.
         matches = []
         for line in raw.splitlines():
             s = line.strip().lower()
-            if s.startswith("1.") or s.startswith("2.") or s.startswith("3.") or s.startswith("4.") or s.startswith("5."):
-                matches.append(1 if "yes" in s else 0)
+            if s.endswith("yes"):
+                matches.append(1)
+            elif s.endswith("no"):
+                matches.append(0)
 
-        while len(matches) < 5:
+        while len(matches) < len(gold_labels):
             matches.append(0)
 
-        total_matches = sum(matches)
-        correct_hits = min(total_matches, gold_unique)
-        recall = correct_hits / gold_unique
-
+        recall = sum(matches) / len(gold_labels)
         recalls.append(recall)
 
     return recalls
+
+
+# def evaluate_recall_at_5(answers_pairs, model="gpt-4o-mini", entity_mapping=None):
+#     recalls = []
+
+#     for pair in answers_pairs:
+#         system_top5 = pair.get("system", [])[:5]
+#         gold_items = pair.get("gold", [])
+
+#         system_top5 = map_items_with_entity_mapping(system_top5, entity_mapping)
+#         print(f"Entity mapped {system_top5}")
+
+#         if not gold_items:
+#             recalls.append(0.0)[[]]
+#             continue
+
+#         gold_unique_ids = {str(g).lower().strip() for g in gold_items}
+#         gold_unique = len(gold_unique_ids)
+
+#         if not system_top5:
+#             recalls.append(0.0)
+#             continue
+
+#         sys_block = "- " + "\n- ".join(system_top5)
+#         gold_block = "- " + "\n- ".join(gold_unique_ids)
+
+#         prompt = f"""
+# You are a semantic evaluator.
+
+# Gold Items (unique expected items):
+# {gold_block}
+
+# System Top-5 (evaluate each independently):
+# {sys_block}
+
+# For EACH system item, respond ONLY:
+# 1. Yes/No
+# 2. Yes/No
+# 3. Yes/No
+# 4. Yes/No
+# 5. Yes/No
+
+# A 'Yes' means the system item is semantically equivalent to ANY gold item.
+# """
+#         raw = _call_gpt(model, prompt)
+
+#         if not raw:
+#             recalls.append(0.0)
+#             continue
+
+#         matches = []
+#         for line in raw.splitlines():
+#             s = line.strip().lower()
+#             if s.startswith("1.") or s.startswith("2.") or s.startswith("3.") or s.startswith("4.") or s.startswith("5."):
+#                 matches.append(1 if "yes" in s else 0)
+
+#         while len(matches) < 5:
+#             matches.append(0)
+
+#         total_matches = sum(matches)
+#         correct_hits = min(total_matches, gold_unique)
+#         recall = correct_hits / gold_unique
+
+#         recalls.append(recall)
+
+#     return recalls

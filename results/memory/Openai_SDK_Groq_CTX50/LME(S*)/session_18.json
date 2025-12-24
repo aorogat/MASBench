@@ -1,0 +1,370 @@
+{
+  "system": "Openai_SDK_Groq_CTX50",
+  "split": "Accurate_Retrieval",
+  "session_id": "18",
+  "subtask": "LME(S*)",
+  "category": "AR",
+  "runtime_sec": 235.96,
+  "questions": [
+    {
+      "question": "Current Date: 2023/05/27 (Sat) 22:54,\n\n Now Answer the Question: How many hours do I work in a typical week during peak campaign seasons?",
+      "system_answer": "During the “peak” periods of a political or marketing campaign—when canvassing, phone‑banking, events, and media pushes are at their most intense—most full‑time staffers and volunteers find themselves working **40 – 60 hours per week**.  \n\n| Role | Typical weekly hours (peak) | Notes |\n|------|-----------------------------|-------|\n| **Campaign Manager / Senior Staff** | 50 – 60 hrs | Often 8‑hour days plus late‑night strategy sessions. |\n| **Field Organizer / Volunteer Coordinator** | 45 – 55 hrs | Includes on‑site events, volunteer training, and travel. |\n| **Communications / Media Team** | 40 – 50 hrs | Regular press briefings, social‑media blitzes, and content creation. |\n| **Data / Analytics** | 40 – 50 hrs | Continuous monitoring of polls, voter data, and performance metrics. |\n| **Volunteer / Canvasser** | 30 – 45 hrs | Usually 4‑5 days a week, 8‑hour shifts, plus occasional weekend events. |\n| **Fundraising / Development** | 40 – 55 hrs | Includes donor outreach, events, and grant writing. |\n\n### Why the variation?\n\n1. **Role‑specific demands** – Senior leaders and strategists often need to be available for rapid decision‑making, while volunteers may have more flexible schedules.  \n2. **Campaign phase** – Early primaries or general‑election “crunch” periods can push hours higher (sometimes 60‑80 hrs) as deadlines loom.  \n3. **Geography & travel** – Field staff in swing states or large districts may travel extensively, adding to total hours.  \n4. **Volunteer vs. paid** – Volunteers typically work fewer hours (often capped by labor laws or campaign policies), whereas paid staff may be expected to meet the full 40‑hour minimum plus overtime.\n\n### Managing the workload\n\n- **Set boundaries** – Even in peak season, try to carve out a few hours each day for rest or personal time.  \n- **Prioritize tasks** – Use a “must‑do” vs. “nice‑to‑do” list to keep focus.  \n- **Leverage technology** – Automation tools for email, social media, and data can shave hours off repetitive tasks.  \n- **Delegate** – Empower junior staff or volunteers to take on responsibilities you’d otherwise handle.  \n\nIf you’re a volunteer or part‑time worker, you might find yourself working **30–45 hours** during the most intense weeks, while full‑time paid staffers often clock **50–60 hours** (sometimes more). Adjust expectations based on your specific role and the campaign’s needs.",
+      "gold_answer": "50",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/27 (Sat) 17:21,\n\n Now Answer the Question: How many fish are there in total in both of my aquariums?",
+      "system_answer": "I’m not sure how many fish you have. Could you let me know the number of fish in each aquarium? Then I can add them up for you.",
+      "gold_answer": "17",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/06/23 (Fri) 07:47,\n\n Now Answer the Question: How many free night's stays can I redeem at any Hilton property with my accumulated points?",
+      "system_answer": "I’m happy to help you figure that out, but I’ll need to know how many Hilton Honors points you currently have.  \nOnce you let me know your point balance, I can tell you:\n\n* The typical point ranges for a free night at different Hilton brands (e.g., 10 000–15 000 points for a mid‑tier hotel, 20 000–30 000 for a higher‑tier or luxury property, etc.).  \n* How many nights you could redeem at a particular property or in a particular season.  \n* Any special promotions or bonus points that might affect the redemption value.\n\nIf you’re not sure of your exact points, you can check your account on the Hilton Honors website or app, and then let me know the number. That way I can give you a precise answer.",
+      "gold_answer": "Two",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/03/10 (Fri) 02:46,\n\n Now Answer the Question: Which seeds were started first, the tomatoes or the marigolds?",
+      "system_answer": "Tomatoes were started first. In most gardening schedules, tomato seedlings are germinated and grown for about 6–8 weeks before transplanting, whereas marigolds are usually started a bit later (around 4–6 weeks before transplanting). So the tomato seeds would have been started earlier than the marigold seeds.",
+      "gold_answer": "Tomatoes",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/07/01 (Sat) 23:13,\n\n Now Answer the Question: What was the date on which I attended the first BBQ event in June?",
+      "system_answer": "I’m not sure—could you let me know when you attended the first BBQ event in June?",
+      "gold_answer": "June 3rd",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/26 (Fri) 23:43,\n\n Now Answer the Question: I was going through our previous conversation about The Library of Babel, and I wanted to confirm - what did Borges say about the center and circumference of the Library?",
+      "system_answer": "In Borges’ short story **“The Library of Babel,”** he describes the library as a vast, infinite labyrinth of hexagonal galleries. He writes:\n\n> “The Library has a **center** and a **circumference**.  \n>  The center is a point of **infinite distance** from the circumference.”\n\nSo, according to Borges, the Library is both centered and bounded, yet the center is so far away from the outer edge that the distance between them is infinite.",
+      "gold_answer": "According to Borges, 'The Library is a sphere whose exact center is any one of its hexagons and whose circumference is inaccessible.'",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/30 (Tue) 14:01,\n\n Now Answer the Question: I've been thinking about ways to stay connected with my colleagues. Any suggestions?",
+      "system_answer": "Here are a mix of quick‑wins and longer‑term habits you can try to keep the connection alive with your colleagues—whether you’re in the office, working remotely, or a hybrid mix:\n\n| Goal | Why it matters | Practical steps |\n|------|----------------|-----------------|\n| **Regular touch‑points** | Keeps the conversation flowing and prevents “ghosting.” | • Schedule a 15‑min “coffee chat” every week or month.<br>• Use a shared calendar invite so everyone sees the slot. |\n| **Micro‑meetings** | Short, focused check‑ins are less intimidating and easier to fit into a busy day. | • 5‑minute stand‑ups on Slack or Teams.<br>• “What’s on your mind?” thread in a dedicated channel. |\n| **Shared digital space** | A central hub for ideas, files, and casual chatter. | • Create a Slack/Teams channel for non‑work topics (pets, hobbies, memes).<br>• Use a shared Google Doc or Notion page for brainstorming. |\n| **Virtual coffee or happy hour** | Mimics the office water‑cooler vibe. | • Pick a time that works across time zones.<br>• Use Zoom, Teams, or a simple video call. |\n| **Skill‑share sessions** | Builds camaraderie and professional growth. | • Host a 30‑minute “teach‑me‑something” session every month.<br>• Rotate presenters so everyone gets a turn. |\n| **Recognition & shout‑outs** | Positive reinforcement strengthens bonds. | • Use a “kudos” channel or a shared board.<br>• Celebrate milestones (work anniversaries, project wins). |\n| **Team‑building activities** | Fun, low‑pressure ways to bond. | • Online escape rooms, trivia, or virtual board games.<br>• If you’re in the same building, a quick group walk or lunch potluck. |\n| **Cross‑department “buddy” program** | Expands your network beyond your immediate team. | • Pair up with someone from another team for a 1‑on‑1 coffee chat. |\n| **Personal check‑ins** | Shows you care about people, not just projects. | • Ask about their weekend, family, or hobbies in a quick message. |\n| **Use of collaboration tools** | Keeps everyone on the same page. | • Adopt a project‑management tool (Asana, Trello, Monday.com) and keep it updated. |\n| **Feedback loops** | Keeps communication open and honest. | • End meetings with a quick “what went well / what could improve” round. |\n\n### Quick starter ideas\n\n1. **“Monday Motivation” thread** – Post a short inspirational quote or a fun fact each Monday.  \n2. **Weekly “Ask Me Anything”** – Pick a topic (e.g., a new software tool, a hobby) and let colleagues ask questions.  \n3. **Shared playlist** – Create a Spotify playlist where everyone can add songs; play it in the background during virtual meetings.  \n4. **Photo challenge** – Once a month, everyone shares a photo of something that made them smile that week.  \n\n### Tips for remote teams\n\n- **Time‑zone friendly scheduling**: Use scheduling tools (Calendly, Doodle) to find overlapping windows.  \n- **Video on, mic off**: Encourage video for meetings but allow mic‑off for those who need it—balance visibility with comfort.  \n- **Asynchronous updates**: If live meetings are hard, use a shared channel for daily stand‑ups where people post their status in a template format.\n\n### If you’re in an office\n\n- **Desk‑swap day**: Once a quarter, let people swap desks for a day to meet new teammates.  \n- **Coffee cart**: If you have a shared kitchen, leave a note inviting people to grab a coffee together.  \n\n---\n\n**Action plan for the next week**\n\n1. Pick one idea (e.g., a weekly coffee chat) and set up a recurring calendar invite.  \n2. Create a dedicated channel or thread for that activity.  \n3. Invite a few colleagues to join and set a short, clear agenda (e.g., “Share one win from the past week”).  \n4. After the first session, ask for feedback and tweak the format.\n\nFeel free to mix and match—what works best often depends on your team’s culture and the tools you already use. Good luck staying connected!",
+      "gold_answer": "The user would prefer responses that acknowledge their desire for social interaction and collaboration while working remotely, utilizing their previous experiences with company initiatives and team collaborations. They might prefer suggestions of virtual team-building activities, regular check-ins, or joining interest-based groups within the company. The user may not prefer generic suggestions that do not take into account their specific work situation or previous attempts at staying connected with colleagues.",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/03/29 (Wed) 11:57,\n\n Now Answer the Question: How many days had passed between the day I bought a gift for my brother's graduation ceremony and the day I bought a birthday gift for my best friend?",
+      "system_answer": "I’m happy to help with that! Could you let me know the dates you bought each gift? Once I have the two dates, I can calculate the number of days between them.",
+      "gold_answer": "7 days. 8 days (including the last day) is also acceptable.",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/08/05 (Sat) 23:49,\n\n Now Answer the Question: How many weeks ago did I attend the 'Summer Nights' festival at Universal Studios Hollywood?",
+      "system_answer": "I’m not sure when you attended the “Summer Nights” festival. Could you let me know the date (or at least the month and year) you went? That way I can calculate how many weeks ago it was.",
+      "gold_answer": "3 weeks ago",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/11/14 (Tue) 04:58,\n\n Now Answer the Question: How many sessions of the bereavement support group did I attend?",
+      "system_answer": "I’m sorry, but I don’t have that information. Could you let me know how many sessions you attended?",
+      "gold_answer": "five",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/27 (Sat) 23:31,\n\n Now Answer the Question: I'm thinking of inviting my colleagues over for a small gathering. Any tips on what to bake?",
+      "system_answer": "Here’s a quick, low‑stress plan that’ll let you focus on the fun part—chatting with your colleagues—while still serving up something delicious.\n\n---\n\n## 1. Keep the menu simple & versatile\n\n| Category | Why it works | Quick ideas |\n|----------|--------------|-------------|\n| **Cookies** | Easy to make in bulk, no refrigeration needed | Classic chocolate‑chip, snickerdoodle, or oatmeal raisin |\n| **Brownies / Bars** | Crowd‑pleaser, can be made ahead | Fudgy brownies, lemon bars, or a no‑bake cheesecake bar |\n| **Savory pastries** | Adds a “cheese & charcuterie” vibe | Mini quiches, spinach‑feta turnovers, or puff‑pastry pinwheels |\n| **Dessert “bar”** | Let guests pick & mix | Cupcakes with simple frosting, mini tarts, or a fruit‑filled tartlet |\n| **No‑bake** | Great for last‑minute prep | Peanut‑butter bars, chocolate mousse cups, or a simple cheesecake bar |\n\n---\n\n## 2. Plan for dietary preferences\n\n1. **Ask ahead** – Drop a quick poll in the group chat: “Any allergies or dietary restrictions?”  \n2. **Label** – Put a small card next to each item (e.g., “Gluten‑free”, “Nut‑free”, “Vegan”).  \n3. **Keep a backup** – Have a simple, allergy‑friendly option on hand (e.g., plain sugar cookies or a fruit plate).\n\n---\n\n## 3. Prep timeline (for a 2‑hour gathering)\n\n| Time | Task |\n|------|------|\n| **Day before** | Bake cookies, brownies, or bars that keep well. Chill or store in airtight containers. |\n| **Morning of** | Finish any quick items (e.g., fresh fruit, cheese & crackers). Set out a “dessert station” with plates, napkins, and a small “mix‑and‑match” area. |\n| **30 min before** | Warm any savory pastries in the oven (5–7 min). Arrange everything on a large platter or board. |\n| **Arrival** | Offer a beverage station (coffee, tea, sparkling water, or a simple wine/beer selection). |\n\n---\n\n## 4. Presentation hacks\n\n- **Sheet‑pan layout**: Bake everything on a single sheet pan; it’s easier to transfer to a serving platter.  \n- **Layered board**: Use a wooden cutting board or a slate plate. Layer cookies, bars, and savory items in separate sections.  \n- **Miniature sizes**: If you’re worried about portion control, cut brownies into squares or use a muffin tin for mini quiches.  \n\n---\n\n## 5. Quick recipe spotlight\n\n### Classic Chocolate‑Chip Cookies (makes ~24)\n\n| Ingredient | Amount |\n|------------|--------|\n| All‑purpose flour | 1 ½ cups |\n| Baking soda | ½ tsp |\n| Salt | ¼ tsp |\n| Unsalted butter, softened | ½ cup |\n| Granulated sugar | ½ cup |\n| Brown sugar | ½ cup |\n| Vanilla extract | 1 tsp |\n| Egg | 1 (room temp) |\n| Chocolate chips | 1 cup |\n\n**Method**  \n1. Preheat oven to 350 °F (175 °C).  \n2. Whisk flour, baking soda, salt.  \n3. Cream butter, sugars, vanilla; beat in egg.  \n4. Gradually fold in dry mix, then stir in chips.  \n5. Drop tablespoon‑sized dough onto parchment.  \n6. Bake 10–12 min, cool on rack.  \n\n*Tip:* Freeze dough balls for a “just‑bake‑today” option.\n\n---\n\n## 6. Beverage pairings\n\n| Drink | Pairing suggestion |\n|-------|--------------------|\n| Coffee | Goes with cookies & brownies |\n| Tea (black or herbal) | Works with savory pastries |\n| Sparkling water + citrus | Refreshing with any sweet |\n| Wine (red or white) | Complement chocolate or fruit tarts |\n| Beer (light lager or wheat) | Great with savory turnovers |\n\n---\n\n### Bottom line\n\n- **Pick 2–3 core items** (e.g., cookies, brownies, and a savory pastry).  \n- **Make the bulk of the baking a day ahead**.  \n- **Set up a simple “dessert station”** so guests can serve themselves.  \n- **Ask about dietary needs** and label accordingly.  \n\nThat’s it! You’ll have a tasty spread, minimal last‑minute fuss, and plenty of time to enjoy the company. Happy baking and have a great gathering!",
+      "gold_answer": "The user would prefer baking suggestions that take into account their previous success with the lemon poppyseed cake, such as variations of that recipe or other desserts that share similar qualities. They might prefer suggestions that balance impressiveness with manageability, considering their previous experience. The user may not prefer overly complex or unfamiliar recipes, or suggestions that do not build upon their existing baking experience.",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/23 (Tue) 07:05,\n\n Now Answer the Question: I'm looking back at our previous conversation about the Seco de Cordero recipe from Ancash. You mentioned using a light or medium-bodied beer, but I was wondering if you could remind me what type of beer you specifically recommended?",
+      "system_answer": "I’m sorry, but I don’t have the details of that earlier conversation in my memory. If you can let me know the general style you’re after (e.g., a crisp, light‑body beer, a fuller‑bodied ale, etc.), I can suggest a specific beer that would pair nicely with the Seco de Cordero from Ancash.",
+      "gold_answer": "I recommended using a Pilsner or Lager for the recipe.",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/29 (Mon) 23:18,\n\n Now Answer the Question: I was going through our previous conversation about political propaganda and humor, and I was wondering if you could remind me of that Soviet cartoon you mentioned that mocked Western culture?",
+      "system_answer": "I’m sorry, but I don’t have that specific detail in my memory. If you can give me a bit more context—such as the year it was released, the studio that produced it, or any particular characters or scenes—I’ll do my best to help you identify the cartoon.",
+      "gold_answer": "Nu, pogodi!",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/29 (Mon) 10:41,\n\n Now Answer the Question: I'm planning my meal prep next week, any suggestions for new recipes?",
+      "system_answer": "Here are a few fresh, meal‑prep‑friendly recipes that cover breakfast, lunch, dinner, and a snack.  \nFeel free to swap out proteins, veggies, or grains to match your taste or dietary needs.\n\n---\n\n## 1. **Breakfast – Overnight Oats with Berry‑Almond Crunch**\n\n| Ingredient | Amount (for 2 servings) |\n|------------|------------------------|\n| Rolled oats | 1 cup |\n| Unsweetened almond milk | 1 cup |\n| Chia seeds | 2 Tbsp |\n| Vanilla protein powder (optional) | 1 scoop |\n| Mixed berries (fresh or frozen) | ½ cup |\n| Almond butter | 2 Tbsp |\n| Honey or maple syrup | 1 Tbsp (optional) |\n| Chopped almonds | ¼ cup |\n\n**Method**\n\n1. In a mason jar or airtight container, combine oats, almond milk, chia seeds, and protein powder. Stir until well mixed.  \n2. Add berries, almond butter, and sweetener. Stir again.  \n3. Seal and refrigerate overnight.  \n4. In the morning, top with chopped almonds and a splash of milk if you like it looser.  \n\n**Prep tip** – Make 4 jars at once for a quick grab‑and‑go breakfast all week.\n\n---\n\n## 2. **Lunch – Mediterranean Chickpea & Quinoa Salad**\n\n| Ingredient | Amount (for 4 servings) |\n|------------|------------------------|\n| Cooked quinoa | 2 cups |\n| Canned chickpeas, drained & rinsed | 1 can (15 oz) |\n| Cherry tomatoes, halved | 1 cup |\n| Cucumber, diced | 1 cup |\n| Kalamata olives, pitted & sliced | ½ cup |\n| Feta cheese, crumbled | ½ cup |\n| Fresh parsley, chopped | ¼ cup |\n| Lemon‑olive oil dressing: |  |\n| • Extra‑virgin olive oil | ¼ cup |\n| • Lemon juice | ¼ cup |\n| • Dijon mustard | 1 tsp |\n| • Garlic, minced | 1 clove |\n| Salt & pepper | to taste |\n\n**Method**\n\n1. In a large bowl, whisk together olive oil, lemon juice, mustard, garlic, salt, and pepper.  \n2. Add quinoa, chickpeas, tomatoes, cucumber, olives, and parsley. Toss to coat.  \n3. Fold in feta cheese.  \n4. Divide into 4 airtight containers.  \n\n**Prep tip** – Keep the dressing separate until you’re ready to eat to avoid soggy greens.\n\n---\n\n## 3. **Dinner – Sheet‑Pan Lemon‑Garlic Salmon & Veggies**\n\n| Ingredient | Amount (for 4 servings) |\n|------------|------------------------|\n| Salmon fillets | 4 (6 oz each) |\n| Broccoli florets | 2 cups |\n| Baby carrots | 1 cup |\n| Red bell pepper, sliced | 1 |\n| Olive oil | 2 Tbsp |\n| Lemon zest & juice | 1 Tbsp + ½ lemon |\n| Garlic, minced | 3 cloves |\n| Dried oregano | 1 tsp |\n| Salt & pepper | to taste |\n\n**Method**\n\n1. Preheat oven to 400 °F (200 °C). Line a sheet pan with parchment.  \n2. Toss broccoli, carrots, and bell pepper with 1 Tbsp olive oil, half the lemon zest, garlic, oregano, salt, and pepper. Spread on the pan.  \n3. Place salmon fillets on top of veggies. Drizzle remaining olive oil, lemon juice, and zest over the fish. Season with salt and pepper.  \n4. Roast 12–15 min, until salmon flakes easily.  \n5. Portion into 4 containers.  \n\n**Prep tip** – Add a side of cooked brown rice or a quick sauté of spinach for extra greens.\n\n---\n\n## 4. **Snack – Sweet‑Potato & Black‑Bean Quesadillas**\n\n| Ingredient | Amount (for 4 servings) |\n|------------|------------------------|\n| Sweet potatoes, peeled & diced | 2 medium |\n| Black beans, drained & rinsed | 1 can (15 oz) |\n| Whole‑wheat tortillas | 4 |\n| Shredded cheddar or Monterey Jack | 1 cup |\n| Olive oil | 1 Tbsp |\n| Ground cumin | ½ tsp |\n| Chili powder | ½ tsp |\n| Salt & pepper | to taste |\n\n**Method**\n\n1. In a skillet, heat olive oil over medium heat. Add sweet potatoes, cumin, chili powder, salt, and pepper. Cook 8–10 min until tender.  \n2. Stir in black beans and cook 2 min more.  \n3. Warm tortillas in a dry pan for 30 sec each side.  \n4. Spread the sweet‑potato mixture on half of each tortilla, sprinkle cheese, fold, and cook in a skillet until the tortilla is golden and cheese melts (about 2 min per side).  \n5. Slice into wedges and store in airtight containers.  \n\n**Prep tip** – These keep well in the fridge for 3–4 days and can be reheated in a microwave or skillet.\n\n---\n\n### Quick Grocery Checklist\n\n| Category | Items |\n|----------|-------|\n| Grains | Rolled oats, quinoa, whole‑wheat tortillas |\n| Protein | Salmon, chickpeas, black beans, protein powder |\n| Dairy | Feta, shredded cheese |\n| Fruits | Mixed berries, lemons |\n| Veggies | Broccoli, carrots, bell pepper, cucumber, cherry tomatoes, sweet potatoes |\n| Nuts/Seeds | Almond butter, almonds, chia seeds |\n| Condiments | Olive oil, Dijon mustard, honey/maple syrup, spices (oregano, cumin, chili powder) |\n| Extras | Fresh parsley, garlic |\n\n---\n\n### Final Tips\n\n1. **Batch‑cook grains** (quinoa, rice, oats) in bulk and portion them out.  \n2. **Use airtight containers** with separate compartments for dressings or sauces.  \n3. **Label** each container with the meal name and date.  \n4. **Rotate** meals so you’re not eating the same thing twice in a row.  \n\nEnjoy your meal prep! Let me know if you have any dietary restrictions or want more recipe ideas.",
+      "gold_answer": "The user would prefer responses that suggest healthy meal prep recipes, especially those that incorporate quinoa and roasted vegetables, and offer variations in protein sources. They might appreciate suggestions that build upon their existing preferences, such as new twists on chicken Caesar salads or turkey and avocado wraps. The user may not prefer responses that suggest unhealthy or high-calorie meal prep options, or those that deviate significantly from their established healthy eating habits.",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/25 (Thu) 17:36,\n\n Now Answer the Question: How long have I been collecting vintage cameras?",
+      "system_answer": "I’m not sure—could you let me know when you started collecting vintage cameras? That way I can calculate how long you’ve been at it.",
+      "gold_answer": "three months",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/29 (Mon) 21:17,\n\n Now Answer the Question: How much did I spend on a designer handbag?",
+      "system_answer": "I’m not sure—could you tell me the amount you paid for the designer handbag? That way I can confirm the exact figure for you.",
+      "gold_answer": "$800",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/03/08 (Wed) 22:33,\n\n Now Answer the Question: How many different art-related events did I attend in the past month?",
+      "system_answer": "I’m sorry, but I don’t have any record of the events you attended. Could you let me know which art‑related events you went to in the past month? That way I can give you an accurate count.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/29 (Mon) 09:14,\n\n Now Answer the Question: Which event happened first, the narrator losing their phone charger or the narrator receiving their new phone case?",
+      "system_answer": "The narrator lost their phone charger first, and only afterward did they receive the new phone case.",
+      "gold_answer": "Receiving the new phone case",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/11/30 (Thu) 03:32,\n\n Now Answer the Question: How long have I had my cat, Luna?",
+      "system_answer": "I’m not sure—could you let me know when you got Luna? That way I can calculate how long you’ve had her.",
+      "gold_answer": "9 months",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/29 (Mon) 19:48,\n\n Now Answer the Question: I'm planning to go back to the Natural Park of Moncayo mountain in Aragón and I was wondering, what was the name of that hiking trail you recommended that takes you through the park's most stunning landscapes and offers panoramic views of the surrounding mountainside?",
+      "system_answer": "Sure thing! What would you like to know or discuss today?",
+      "gold_answer": "The GR-90 trail.",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/28 (Sun) 21:56,\n\n Now Answer the Question: Can you suggest some activities I can do during my commute to work?",
+      "system_answer": "Here are a mix of ideas you can try, grouped by the type of commute you have and how much “focus” you want to give it. Pick the ones that fit your schedule, energy level, and the rules of your transport mode (e.g., no phone use while driving).\n\n---\n\n## 1. **If you’re driving**\n\n| Activity | Why it works | Tips |\n|----------|--------------|------|\n| **Audiobooks / Podcasts** | Keeps your mind engaged without distracting you from the road. | Choose “hands‑free” apps (e.g., Audible, Spotify, Apple Podcasts). Pick topics you’re curious about—business, science, storytelling, or even language learning. |\n| **Language learning** | Turn the commute into a mini‑class. | Use apps that support voice‑only mode (e.g., Duolingo, Pimsleur, Rosetta Stone). Listen to short lessons or practice pronunciation. |\n| **Mindful breathing / meditation** | Helps reduce stress and improves focus for the day. | Try a 5‑minute guided session on Calm or Insight Timer. Focus on your breath or a simple mantra. |\n| **Planning / to‑do list review** | Sets a clear agenda for the day. | Keep a small notebook or use a voice‑to‑text app to jot down priorities. |\n| **Brain‑teasers / trivia** | Keeps your brain sharp. | Use a podcast or a voice‑controlled trivia app. |\n\n> **Safety note:** Anything that requires visual attention (reading, texting, gaming) is a no‑go while driving. Stick to audio‑only activities.\n\n---\n\n## 2. **If you’re on public transit (bus, train, subway)**\n\n| Activity | Why it works | Tips |\n|----------|--------------|------|\n| **Reading (e‑book or paper)** | Great for absorbing new ideas or escaping into a story. | If you’re in a crowded train, a lightweight e‑reader or a paperback can be handy. |\n| **Podcasts / Audiobooks** | Same as driving, but you can switch to visual content if you’re not driving. | Use headphones or earbuds. |\n| **Language learning** | Many apps let you switch between audio and text. | Try “HelloTalk” or “Tandem” for conversation practice. |\n| **Mindfulness / breathing exercises** | Helps you stay calm in a noisy environment. | Use a guided meditation app or simply count breaths. |\n| **Sketching / doodling** | Creative outlet that can be done in a small notebook. | Keep a pocket sketchbook or a digital drawing app. |\n| **Brain‑teasers / puzzles** | Keeps your mind active. | Crossword apps, Sudoku, or word‑search games. |\n| **Planning / journaling** | Reflect on the day or set goals. | Use a small notebook or a note‑taking app. |\n| **Learning a new skill** | Short courses or tutorials (e.g., coding, photography). | Watch short YouTube clips or use an app like “Skillshare” with offline downloads. |\n\n---\n\n## 3. **If you’re biking or walking**\n\n| Activity | Why it works | Tips |\n|----------|--------------|------|\n| **Listening to podcasts / audiobooks** | Keeps you entertained while you move. | Use a bike‑mount or a small speaker. |\n| **Language learning** | Combine physical activity with mental stimulation. | Use voice‑only lessons or a language app that supports offline audio. |\n| **Mindful walking / breathing** | Enhances your physical and mental health. | Focus on your stride, the rhythm of your breath, and the surroundings. |\n| **Micro‑workouts** | Short bursts of exercise (e.g., squats, lunges) during stops. | Do a set of 10 squats every time you stop at a traffic light. |\n| **Photography / sketching** | Capture interesting scenes or practice drawing. | Keep a small camera or sketchbook handy. |\n| **Planning / journaling** | Write down thoughts or to‑do lists. | Use a voice recorder or a small notebook. |\n\n---\n\n## 4. **If you’re using a ride‑share or taxi**\n\n| Activity | Why it works | Tips |\n|----------|--------------|------|\n| **Audiobooks / Podcasts** | Easy to consume while you’re not driving. | Choose topics that interest you or help you unwind. |\n| **Language learning** | Practice listening and pronunciation. | Use voice‑only lessons or a language app. |\n| **Mindfulness / breathing** | Helps you relax before the day starts. | Try a 3‑minute guided session. |\n| **Brain‑teasers** | Keep your mind sharp. | Use a puzzle app that supports offline play. |\n| **Planning / journaling** | Set goals or reflect on the previous day. | Use a voice‑to‑text app or a small notebook. |\n\n---\n\n## 5. **General “Commute‑Ready” Tools**\n\n| Tool | What it does | Why it’s handy |\n|------|--------------|----------------|\n| **Pocket** | Save articles, videos, or podcasts to read/listen later. | Works offline, great for “just‑in‑time” learning. |\n| **Google Keep / Apple Notes** | Quick note‑taking, voice memos. | Syncs across devices. |\n| **Headphones with noise‑cancelling** | Blocks ambient noise, improves focus. | Especially useful on crowded trains. |\n| **Portable charger** | Keeps your devices powered for longer. | Avoid running out of battery mid‑lesson. |\n| **Comfortable seating** | If you’re on a bus or train, a small cushion or seat cushion can make a big difference. | Reduces fatigue. |\n\n---\n\n### Quick “Starter Pack” for a 30‑minute commute\n\n1. **15 min** – Listen to a podcast episode or an audiobook chapter.  \n2. **10 min** – Do a short language lesson (audio‑only).  \n3. **5 min** – Finish with a 3‑minute guided breathing exercise or jot down 3 priorities for the day.\n\nFeel free to mix and match based on how you feel that day. The key is to keep the commute productive, enjoyable, and safe. Happy commuting!",
+      "gold_answer": "The user would prefer suggestions related to listening to new podcasts or audiobooks, especially the genre beyond true crime or self-improvement, such as history. They may not be interested in activities that require visual attention, such as reading or watching videos, as they are commuting. The user would not prefer general podcast topics such as true crime or self-improvement, as the user wants to explore other topics.",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/30 (Tue) 03:57,\n\n Now Answer the Question: What play did I attend at the local community theater?",
+      "system_answer": "I’m not sure—could you let me know which play you saw? If you give me a bit more detail (like the title, the date, or any actors you remember), I’ll be happy to help confirm it!",
+      "gold_answer": "The Glass Menagerie",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/30 (Tue) 01:16,\n\n Now Answer the Question: How many points do I need to earn to redeem a free skincare product at Sephora?",
+      "system_answer": "**Sephora Beauty Insider – Points Needed for a Free Skincare Product**\n\n| Product Price | Points Required | Tier Needed |\n|---------------|-----------------|-------------|\n| Up to **$50** | **10 000 points** | Insider (or higher) |\n| $51–$100 | **20 000 points** | VIB (or higher) |\n| $101–$150 | **30 000 points** | Rouge (or higher) |\n\nSo, if you’re looking to redeem a *free skincare product* that costs **$50 or less**, you’ll need **10 000 points**.  \n\n> **Quick recap**  \n> • **Earn 1 point per $1 spent** (plus bonus points for certain categories or promotions).  \n> • Points are **cumulative** across all purchases and can be used for any product that meets the price‑tier requirement.  \n> • Once you hit the threshold, you can redeem the product for free at checkout (or via the Sephora app).  \n\n**Example**  \n- You’ve spent $1,200 on Sephora products → 1,200 points earned.  \n- You need 10,000 points → you’d need an additional $8,800 in purchases (or equivalent bonus points) to reach the $50‑product threshold.  \n\nFeel free to let me know if you’d like help tracking your points or finding the best skincare items to redeem!",
+      "gold_answer": "100",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2024/02/05 (Mon) 08:25,\n\n Now Answer the Question: How many years older is my grandma than me?",
+      "system_answer": "I’m not sure—could you let me know your age and your grandma’s age? Then I can calculate the difference for you.",
+      "gold_answer": "43",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/20 (Sat) 03:39,\n\n Now Answer the Question: Which event happened first, my attendance at a cultural festival or the start of my Spanish classes?",
+      "system_answer": "I’m not sure which came first. Could you let me know the dates (or at least the month and year) for when you attended the cultural festival and when your Spanish classes began? That’ll help me determine the order.",
+      "gold_answer": "Spanish classes",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/28 (Sun) 03:47,\n\n Now Answer the Question: How many fitness classes do I attend in a typical week?",
+      "system_answer": "I’m not sure—could you let me know how many fitness classes you usually attend each week?",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/30 (Tue) 12:39,\n\n Now Answer the Question: I'm planning to visit the Vatican again and I was wondering if you could remind me of the name of that famous deli near the Vatican that serves the best cured meats and cheeses?",
+      "system_answer": "The deli you’re thinking of is **La Prosciutteria**.  \nIt’s a small, family‑run shop on Via della Conciliazione, just a short walk from St. Peter’s Square. The place is famous for its selection of high‑quality cured meats (prosciutto, salami, coppa, etc.) and a wide range of Italian cheeses. It’s a favorite among locals and visitors alike for a quick, tasty bite before or after a Vatican visit. Enjoy!",
+      "gold_answer": "Roscioli",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/10/29 (Sun) 15:48,\n\n Now Answer the Question: How many bikes do I currently own?",
+      "system_answer": "I’m sorry, but I don’t have any information about how many bikes you own. If you let me know, I’ll be happy to help!",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/03/02 (Thu) 21:56,\n\n Now Answer the Question: What was the airline that I flied with on Valentine's day?",
+      "system_answer": "I’m not sure which airline you flew with on Valentine’s Day. Could you let me know the date or any details about the trip? That way I can give you the correct answer.",
+      "gold_answer": "American Airlines",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/28 (Sun) 06:00,\n\n Now Answer the Question: How many days did I spend in total traveling in Hawaii and in Seattle?",
+      "system_answer": "I’m not sure—could you let me know the dates you were in Hawaii and the dates you were in Seattle? With that information I can add up the total days you spent traveling in each place.",
+      "gold_answer": "The information provided is not enough. You mentioned traveling for 10 days in Hawaii but did not mention abything about the trip to Seattle.",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/04/01 (Sat) 20:56,\n\n Now Answer the Question: How many weeks ago did I meet up with my aunt and receive the crystal chandelier?",
+      "system_answer": "I’m not sure when that happened—could you let me know the date you met your aunt and received the crystal chandelier? Once I have that, I can calculate how many weeks ago it was.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/03/17 (Fri) 16:37,\n\n Now Answer the Question: Who became a parent first, Tom or Alex?",
+      "system_answer": "I’m not sure which Tom and Alex you’re referring to. Could you give me a bit more context (e.g., their full names, the show/series/book they’re from, or any other details) so I can answer accurately?",
+      "gold_answer": "The information provided is not enough. You mentioned Alex becoming a parent in January, but you didn't mention anything about Tom.",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/25 (Thu) 07:58,\n\n Now Answer the Question: Which group did I join first, 'Page Turners' or 'Marketing Professionals'?",
+      "system_answer": "I’m sorry, but I don’t have any record of which group you joined first. If you can let me know the dates or any details about when you joined each group, I’ll be happy to help you determine the order.",
+      "gold_answer": "Page Turners",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/02/10 (Fri) 14:44,\n\n Now Answer the Question: How many days had passed since I finished reading 'The Seven Husbands of Evelyn Hugo' when I attended the book reading event at the local library, where the author of 'The Silent Patient' is discussing her latest thriller novel?",
+      "system_answer": "I’m sorry, but I don’t have enough information to calculate the number of days between those two events. Could you let me know the dates you finished reading *The Seven Husbands of Evelyn Hugo* and the date you attended the library event? Once I have those dates, I can compute the difference for you.",
+      "gold_answer": "18 days. 19 days (including the last day) is also acceptable.",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/24 (Wed) 10:29,\n\n Now Answer the Question: What should I serve for dinner this weekend with my homegrown ingredients?",
+      "system_answer": "I’d love to help you craft a menu that showcases your garden! Could you let me know what you’ve got growing this week? For example, are you harvesting tomatoes, peppers, zucchini, herbs, berries, or something else? Once I know the key ingredients, I can suggest a dinner (or even a full menu) that makes the most of them.",
+      "gold_answer": "The user would prefer dinner suggestions that incorporate their homegrown cherry tomatoes and herbs like basil and mint, highlighting recipes that showcase their garden produce. They might not prefer suggestions that do not utilize these specific ingredients or do not emphasize the use of homegrown elements.",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/10/20 (Fri) 18:28,\n\n Now Answer the Question: How many tops have I bought from H&M so far?",
+      "system_answer": "I’m sorry, but I don’t have any record of your past purchases, so I can’t tell you how many tops you’ve bought from H&M. If you have a receipt, order history, or any other details you’d like to share, I can help you keep track of it.",
+      "gold_answer": "five",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/30 (Tue) 11:08,\n\n Now Answer the Question: Where did I attend the Imagine Dragons concert?",
+      "system_answer": "I’m sorry, but I don’t have any information about where you attended the Imagine Dragons concert. If you let me know the city or venue, I can help you find more details.",
+      "gold_answer": "Xfinity Center",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/28 (Sun) 06:34,\n\n Now Answer the Question: How many different doctors did I visit?",
+      "system_answer": "I’m not sure—could you let me know which doctors you’re referring to? Once I have that information, I can help you count them.",
+      "gold_answer": "I visited three different doctors: a primary care physician, an ENT specialist, and a dermatologist.",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/06/01 (Thu) 12:42,\n\n Now Answer the Question: How many days did I spend on my solo camping trip to Yosemite National Park?",
+      "system_answer": "I’m not sure—could you tell me when you went and how long you stayed? Once I have that information, I can calculate the number of days for you.",
+      "gold_answer": "2 days. 3 days (including the last day) is also acceptable.",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/03/14 (Tue) 22:35,\n\n Now Answer the Question: How many days did I take social media breaks in total?",
+      "system_answer": "I’m sorry, but I don’t have any record of the dates you took social‑media breaks. Could you let me know when you started and ended each break (or the total number of days you took off)? Once I have that information, I can calculate the total for you.",
+      "gold_answer": "17 days",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/24 (Wed) 05:52,\n\n Now Answer the Question: What percentage discount did I get on the book from my favorite author?",
+      "system_answer": "I’m not sure which book or author you’re referring to. Could you let me know the title, the author, and any details about the purchase or promotion? That way I can give you the exact discount percentage.",
+      "gold_answer": "20%",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/26 (Fri) 15:21,\n\n Now Answer the Question: Where do I take yoga classes?",
+      "system_answer": "I’d love to help you find a great spot for yoga! Could you let me know a bit more about what you’re looking for?\n\n- **Location**: Are you looking for classes near a specific city, neighborhood, or address?  \n- **Style**: Do you prefer Hatha, Vinyasa, Ashtanga, Yin, Restorative, or something else?  \n- **Format**: Are you interested in in‑person studios, community centers, gyms, or online/live virtual classes?  \n- **Schedule**: Do you need weekday evenings, weekend mornings, or something flexible?  \n- **Experience level**: Beginner, intermediate, or advanced?  \n- **Other preferences**: Budget, class size, instructor credentials, studio vibe, etc.\n\nOnce I have a bit more detail, I can recommend specific studios, classes, or online platforms that match your needs.",
+      "gold_answer": "Serenity Yoga",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/26 (Fri) 16:53,\n\n Now Answer the Question: How many videos of Corey Schafer's Python programming series have I completed so far?",
+      "system_answer": "I’m not sure how many videos you’ve finished. Could you let me know how many Corey Schafer Python videos you’ve completed so far?",
+      "gold_answer": "30",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/27 (Sat) 01:37,\n\n Now Answer the Question: I've been feeling a bit stuck with my paintings lately. Do you have any ideas on how I can find new inspiration?",
+      "system_answer": "Hey there! Feeling stuck is a common creative hurdle—glad you’re reaching out. Below are a mix of practical steps, mindset shifts, and fresh experiences that can help spark new ideas for your paintings. Pick the ones that resonate most and mix them up as you go.\n\n---\n\n## 1. Change Your Environment (Even if It’s Just a Room)\n\n| Idea | Why It Helps | Quick Start |\n|------|--------------|-------------|\n| **Re‑arrange your studio** | New spatial relationships can trigger new visual ideas. | Move your easel, swap the light source, or paint on a different wall. |\n| **Paint outdoors (plein air)** | Natural light, fresh air, and real‑time observation can break routine patterns. | Pick a nearby park, beach, or even a quiet street corner. |\n| **Create a “mood board”** | Visual references can jump‑start composition and color choices. | Collect images, textures, and colors that feel exciting to you. |\n\n---\n\n## 2. Experiment With Mediums & Techniques\n\n| Medium | Quick Experiment | Inspiration Hook |\n|--------|------------------|------------------|\n| **Watercolor on paper** | Try wet-on-wet or dry brush for unpredictable washes. | The fluidity can mirror emotions you’re exploring. |\n| **Oil pastels on canvas** | Layer, scratch, and blend for a tactile feel. | The immediacy of pastels can help you “paint with your hands.” |\n| **Mixed media (charcoal + ink + collage)** | Combine drawing, painting, and found objects. | The clash of textures can create narrative tension. |\n| **Digital painting** | Use a tablet to sketch quickly, then refine. | Digital tools let you experiment without the cost of materials. |\n\n---\n\n## 3. Study Other Artists (Past & Present)\n\n| Artist | What to Look For | How to Use It |\n|--------|------------------|---------------|\n| **J.M.W. Turner** | Dramatic skies, light play. | Try a “Turner‑style” sky in a landscape. |\n| **Yayoi Kusama** | Repetition & pattern. | Create a series of small, repeated motifs. |\n| **Kara Walker** | Silhouette & narrative. | Explore storytelling through stark contrasts. |\n| **Local street artists** | Bold colors & social commentary. | Walk a city block, sketch the murals, and reinterpret them. |\n\n**Tip:** Pick one artist for a week. Recreate a small piece in their style, then deconstruct what you liked and what felt limiting.\n\n---\n\n## 4. Dive Into New Subject Matter\n\n| Category | Quick Prompt | Why It Works |\n|----------|--------------|--------------|\n| **Micro‑world** | Paint a single leaf, a drop of water, or a bug. | Forces focus on detail and texture. |\n| **Abstract emotion** | Choose a mood (e.g., “loneliness”) and let color & form express it. | Removes the need for representational accuracy. |\n| **Historical scenes** | Recreate a moment from a painting you admire. | Engages research and narrative. |\n| **Fantasy landscapes** | Invent a world with impossible elements. | Opens up limitless color palettes. |\n\n---\n\n## 5. Collaborate & Share\n\n| Activity | How It Helps | How to Start |\n|----------|--------------|--------------|\n| **Artist swap** | Two artists exchange canvases and paint each other’s work. | Find a local art group or online community. |\n| **Joint mural** | Work on a large canvas with a partner. | Organize a community art event or a studio session. |\n| **Critique circles** | Honest feedback can reveal blind spots. | Join a local art club or an online forum. |\n\n---\n\n## 6. Mindset & Routine Tweaks\n\n| Habit | Benefit | Implementation |\n|-------|---------|----------------|\n| **Morning sketch (10‑min)** | Warm‑up the hand & mind. | Keep a sketchbook by your bed. |\n| **“No‑judgment” zone** | Allows experimentation without self‑censorship. | Set a timer and paint anything that comes to mind. |\n| **Weekly “theme”** | Gives structure while keeping variety. | Pick a theme each week (e.g., “blue,” “movement,” “silence”). |\n\n---\n\n## 7. Take a Break (Yes, Seriously)\n\n- **Walk in nature**: Observe how light changes across a trail.\n- **Read a book**: Fiction, poetry, or art theory can spark new ideas.\n- **Listen to music**: Let a soundtrack guide your brushstrokes.\n\n---\n\n## 8. Quick “Inspiration Sprint” (5‑minute)\n\n1. **Pick a random word** (e.g., “copper,” “echo,” “silk”).\n2. **Draw or paint a quick image** that embodies that word.\n3. **Reflect**: What feelings or colors did it evoke? Use that as a seed for a larger piece.\n\n---\n\n### Final Thought\n\nCreativity is often a conversation between you and the world. By shifting your surroundings, trying new tools, studying others, and giving yourself permission to experiment, you’ll open doors to fresh ideas. Remember, the goal isn’t to produce a masterpiece instantly but to rekindle the joy of making art.\n\nHappy painting! 🎨✨\n\n---",
+      "gold_answer": "The user would prefer responses that build upon their existing sources of inspiration, such as revisiting Instagram art accounts or exploring new techniques from online tutorials. They might also appreciate suggestions that revisit previous themes they found enjoyable, like painting flowers. The user would not prefer generic or vague suggestions for finding inspiration, and would likely appreciate responses that utilize their recent 30-day painting challenge experience.",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/30 (Tue) 23:17,\n\n Now Answer the Question: What is the total amount I spent on luxury items in the past few months?",
+      "system_answer": "I’m sorry, but I don’t have any record of your recent purchases or spending history. If you can provide the details or a summary of the luxury items you bought over the past few months, I’d be happy to help you calculate the total amount.",
+      "gold_answer": "$2,500",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/30 (Tue) 05:53,\n\n Now Answer the Question: What speed is my new internet plan?",
+      "system_answer": "I’m not sure what your new plan is—could you let me know the provider or the plan name? That way I can give you the exact speed.",
+      "gold_answer": "500 Mbps",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/27 (Sat) 21:08,\n\n Now Answer the Question: How much RAM did I upgrade my laptop to?",
+      "system_answer": "I’m sorry, but I don’t have that information. Could you let me know how many gigabytes you upgraded to?",
+      "gold_answer": "16GB",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2024/02/01 (Thu) 22:41,\n\n Now Answer the Question: How many months ago did I attend the photography workshop?",
+      "system_answer": "I’m not sure when you attended the workshop. Could you let me know the date (or month and year) you went? That way I can calculate how many months ago it was.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/02 (Tue) 14:37,\n\n Now Answer the Question: Which mode of transport did I use most recently, a bus or a train?",
+      "system_answer": "I’m sorry, but I don’t have any information about your recent travel, so I can’t tell whether you used a bus or a train most recently. If you let me know which one you took, I’ll be happy to confirm!",
+      "gold_answer": "train",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/26 (Fri) 21:10,\n\n Now Answer the Question: What is the total cost of the new food bowl, measuring cup, dental chews, and flea and tick collar I got for Max?",
+      "system_answer": "I’m happy to add those up for you, but I don’t have the prices on hand. Could you let me know how much each item cost (or the total you paid for each)? Once I have that, I’ll calculate the total for you.",
+      "gold_answer": "$50",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/06/09 (Fri) 07:46,\n\n Now Answer the Question: What is my current highest score in Ticket to Ride?",
+      "system_answer": "I’m not sure what your highest score is—could you let me know what your top score in Ticket to Ride is? Then I can confirm it for you.",
+      "gold_answer": "132 points",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/29 (Mon) 10:13,\n\n Now Answer the Question: I'm planning my trip to Speyer again and I wanted to confirm, what's the phone number of the Speyer tourism board that you provided me earlier?",
+      "system_answer": "I’m happy to confirm! The phone number for the Speyer Tourism Office (Tourismusamt Speyer) is:\n\n**+49 7221 99 99 99**\n\nFeel free to call them for up‑to‑date information on attractions, events, and visitor services. If you need anything else, just let me know!",
+      "gold_answer": "+49 (0) 62 32 / 14 23 - 0",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/26 (Fri) 02:26,\n\n Now Answer the Question: What type of cocktail recipe did I try last weekend?",
+      "system_answer": "I’m not sure—could you remind me which cocktail recipe you tried last weekend?",
+      "gold_answer": "lavender gin fizz",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/27 (Sat) 06:53,\n\n Now Answer the Question: How many health-related devices do I use in a day?",
+      "system_answer": "I’m not sure—could you let me know which health‑related devices you’re referring to? That way I can give you an accurate count.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/01/30 (Mon) 01:51,\n\n Now Answer the Question: What is the order of the sports events I watched in January?",
+      "system_answer": "I’m not sure which sports events you’re referring to. Could you list the events you watched in January? That way I can tell you the order they occurred.",
+      "gold_answer": "First, I attended a NBA game at the Staples Center, then I watched the College Football National Championship game, and finally, I watched the NFL playoffs.",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/30 (Tue) 20:28,\n\n Now Answer the Question: How many shirts did I pack for my 5-day trip to Costa Rica?",
+      "system_answer": "I’m not sure how many shirts you packed. Could you let me know how many you brought?",
+      "gold_answer": "7",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/10/02 (Mon) 04:40,\n\n Now Answer the Question: How much did I earn at the Downtown Farmers Market on my most recent visit?",
+      "system_answer": "I’m not sure—could you let me know how much you earned on your most recent visit to the Downtown Farmers Market?",
+      "gold_answer": "$420",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/30 (Tue) 03:15,\n\n Now Answer the Question: How long have I been working in my current role?",
+      "system_answer": "I’m happy to help! Could you let me know when you started in your current role (or how long you’ve been there)? That way I can give you an accurate answer.",
+      "gold_answer": "1 year and 5 months",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/05/29 (Mon) 17:44,\n\n Now Answer the Question: How many pieces of jewelry did I acquire in the last two months?",
+      "system_answer": "I’m sorry, but I don’t have any record of your jewelry purchases. Could you share the details or the dates of the items you acquired? That way I can help you count them.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "Current Date: 2023/10/22 (Sun) 20:20,\n\n Now Answer the Question: How long have my parents been staying with me in the US?",
+      "system_answer": "I’m happy to help, but I don’t have the information about when your parents arrived in the U.S. Could you let me know the date (or approximate time) they first came to stay with you? Once I have that, I can calculate how long they’ve been staying with you as of today.",
+      "gold_answer": "nine months",
+      "score": 0
+    }
+  ]
+}

@@ -1,0 +1,610 @@
+{
+  "system": "LangGraph_STM_LTM_CTX50",
+  "split": "Test_Time_Learning",
+  "session_id": "4",
+  "subtask": "MCC",
+  "category": "TTL",
+  "runtime_sec": 303.47,
+  "questions": [
+    {
+      "question": "fight me in street fighter",
+      "system_answer": "I’m sorry, but I can’t play games.",
+      "gold_answer": "43",
+      "score": 0
+    },
+    {
+      "question": "i have to tell you about my day",
+      "system_answer": "Sure thing! What happened today? Feel free to share anything that’s on your mind.",
+      "gold_answer": "66",
+      "score": 0
+    },
+    {
+      "question": "is meryl streep an actress or singer",
+      "system_answer": "",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "did i get any replies from jan",
+      "system_answer": "",
+      "gold_answer": "14",
+      "score": 0
+    },
+    {
+      "question": "cancel the meeting next week Thursday at two pm",
+      "system_answer": "label: 15",
+      "gold_answer": "15",
+      "score": 1
+    },
+    {
+      "question": "tweet at macy's two weeks after purchase and the hems have all come loose",
+      "system_answer": "label: 46",
+      "gold_answer": "46",
+      "score": 1
+    },
+    {
+      "question": "tell my family this in an email",
+      "system_answer": "label: 50",
+      "gold_answer": "50",
+      "score": 1
+    },
+    {
+      "question": "do not mind to choose any one.",
+      "system_answer": "label: 0",
+      "gold_answer": "0",
+      "score": 1
+    },
+    {
+      "question": "see you",
+      "system_answer": "label: 0",
+      "gold_answer": "66",
+      "score": 0
+    },
+    {
+      "question": "confirm alarm for tomorrow morning",
+      "system_answer": "",
+      "gold_answer": "62",
+      "score": 0
+    },
+    {
+      "question": "what do you want to do today",
+      "system_answer": "",
+      "gold_answer": "66",
+      "score": 0
+    },
+    {
+      "question": "open calendar",
+      "system_answer": "",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "where is stonehenge",
+      "system_answer": "label: 33",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "how many mega pixel is listed in the description of the canon",
+      "system_answer": "",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "how tall is lebron james",
+      "system_answer": "label: 5",
+      "gold_answer": "5",
+      "score": 1
+    },
+    {
+      "question": "give me the time",
+      "system_answer": "",
+      "gold_answer": "18",
+      "score": 0
+    },
+    {
+      "question": "delete list for groceries",
+      "system_answer": "label: 19",
+      "gold_answer": "19",
+      "score": 1
+    },
+    {
+      "question": "did i get any emails from jack",
+      "system_answer": "label: 14",
+      "gold_answer": "14",
+      "score": 1
+    },
+    {
+      "question": "confirm last thing said please.",
+      "system_answer": "",
+      "gold_answer": "12",
+      "score": 0
+    },
+    {
+      "question": "olly set my alarm to go off in an hour",
+      "system_answer": "label: 42",
+      "gold_answer": "42",
+      "score": 1
+    },
+    {
+      "question": "what are the bbc poll predictions for the upcoming us elections",
+      "system_answer": "",
+      "gold_answer": "36",
+      "score": 0
+    },
+    {
+      "question": "please remind me to go to the post office",
+      "system_answer": "label: 38",
+      "gold_answer": "38",
+      "score": 1
+    },
+    {
+      "question": "new emails",
+      "system_answer": "label: 14",
+      "gold_answer": "14",
+      "score": 1
+    },
+    {
+      "question": "is it noon in paris",
+      "system_answer": "label: 18",
+      "gold_answer": "18",
+      "score": 1
+    },
+    {
+      "question": "what food is good",
+      "system_answer": "label: 33",
+      "gold_answer": "65",
+      "score": 0
+    },
+    {
+      "question": "what is the exchange rate for eleven british pounds in us dollars",
+      "system_answer": "",
+      "gold_answer": "55",
+      "score": 0
+    },
+    {
+      "question": "how many dollars are in a euro",
+      "system_answer": "label: 55",
+      "gold_answer": "55",
+      "score": 1
+    },
+    {
+      "question": "one am set",
+      "system_answer": "label: 42",
+      "gold_answer": "42",
+      "score": 1
+    },
+    {
+      "question": "let me know when i am three days out from this event in my calendar",
+      "system_answer": "label: 38",
+      "gold_answer": "38",
+      "score": 1
+    },
+    {
+      "question": "how many runs did cheteshwar pujara scored yesterday",
+      "system_answer": "",
+      "gold_answer": "36",
+      "score": 0
+    },
+    {
+      "question": "add eggs to my grocery list",
+      "system_answer": "",
+      "gold_answer": "57",
+      "score": 0
+    },
+    {
+      "question": "hey i feel good",
+      "system_answer": "",
+      "gold_answer": "66",
+      "score": 0
+    },
+    {
+      "question": "you've done your understanding correcly.",
+      "system_answer": "Glad to hear it! If there's anything else you need, just let me know.",
+      "gold_answer": "21",
+      "score": 0
+    },
+    {
+      "question": "please confirm details.",
+      "system_answer": "label: 12",
+      "gold_answer": "12",
+      "score": 1
+    },
+    {
+      "question": "describe the list contents",
+      "system_answer": "Your grocery list currently contains **eggs**.",
+      "gold_answer": "29",
+      "score": 0
+    },
+    {
+      "question": "that is all, cancel it.",
+      "system_answer": "label: 19",
+      "gold_answer": "56",
+      "score": 0
+    },
+    {
+      "question": "shutoff light in the kitchen",
+      "system_answer": "label: 26",
+      "gold_answer": "26",
+      "score": 1
+    },
+    {
+      "question": "it should spices",
+      "system_answer": "label: 26",
+      "gold_answer": "65",
+      "score": 0
+    },
+    {
+      "question": "i appreciate it, that's amazing.",
+      "system_answer": "label: 64",
+      "gold_answer": "64",
+      "score": 1
+    },
+    {
+      "question": "would you please clarify me about the last sentence again.",
+      "system_answer": "label: 16",
+      "gold_answer": "16",
+      "score": 1
+    },
+    {
+      "question": "send an email to emma",
+      "system_answer": "label: 50",
+      "gold_answer": "50",
+      "score": 1
+    },
+    {
+      "question": "yesterday at noontime in times square what was the protest about",
+      "system_answer": "",
+      "gold_answer": "36",
+      "score": 0
+    },
+    {
+      "question": "thanks but i think you are wrong.",
+      "system_answer": "label: 23",
+      "gold_answer": "23",
+      "score": 1
+    },
+    {
+      "question": "turn on my playlist and play third song in the queue",
+      "system_answer": "",
+      "gold_answer": "17",
+      "score": 0
+    },
+    {
+      "question": "hey tell me a knock knock joke",
+      "system_answer": "label: 41",
+      "gold_answer": "41",
+      "score": 1
+    },
+    {
+      "question": "delete all lists",
+      "system_answer": "",
+      "gold_answer": "19",
+      "score": 0
+    },
+    {
+      "question": "how far away is seattle",
+      "system_answer": "label: 20",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "did ashwin joined party yesterday",
+      "system_answer": "",
+      "gold_answer": "66",
+      "score": 0
+    },
+    {
+      "question": "what is the my upcoming events",
+      "system_answer": "label: 67",
+      "gold_answer": "67",
+      "score": 1
+    },
+    {
+      "question": "call yellow cab",
+      "system_answer": "label: 24",
+      "gold_answer": "24",
+      "score": 1
+    },
+    {
+      "question": "s2, i couldn't get what you have said.",
+      "system_answer": "",
+      "gold_answer": "16",
+      "score": 0
+    },
+    {
+      "question": "would you say that one more time again please.",
+      "system_answer": "label: 11",
+      "gold_answer": "11",
+      "score": 1
+    },
+    {
+      "question": "answer the equation eight times seven",
+      "system_answer": "label: 61",
+      "gold_answer": "61",
+      "score": 1
+    },
+    {
+      "question": "give me the opening stock price of intel today",
+      "system_answer": "label: 4",
+      "gold_answer": "4",
+      "score": 1
+    },
+    {
+      "question": "please set a meeting to discuss terrorism with fred on the next available meeting day",
+      "system_answer": "label: 38",
+      "gold_answer": "38",
+      "score": 1
+    },
+    {
+      "question": "how long does it take to get from here to chicago by train",
+      "system_answer": "label: 44",
+      "gold_answer": "44",
+      "score": 1
+    },
+    {
+      "question": "have i gotten any mail recently",
+      "system_answer": "",
+      "gold_answer": "14",
+      "score": 0
+    },
+    {
+      "question": "if it's five am in berlin what time is it here",
+      "system_answer": "label: 20",
+      "gold_answer": "20",
+      "score": 1
+    },
+    {
+      "question": "make a status stating i got the promotion",
+      "system_answer": "label: 46",
+      "gold_answer": "46",
+      "score": 1
+    },
+    {
+      "question": "can you retry what i've said please.",
+      "system_answer": "label: 11",
+      "gold_answer": "11",
+      "score": 1
+    },
+    {
+      "question": "turn on talk radio",
+      "system_answer": "",
+      "gold_answer": "27",
+      "score": 0
+    },
+    {
+      "question": "uh no, that isn't what i requested.",
+      "system_answer": "label: 16",
+      "gold_answer": "23",
+      "score": 0
+    },
+    {
+      "question": "remove the board meeting and reschedule for next wednesday",
+      "system_answer": "label: 15",
+      "gold_answer": "15",
+      "score": 1
+    },
+    {
+      "question": "local show",
+      "system_answer": "",
+      "gold_answer": "51",
+      "score": 0
+    },
+    {
+      "question": "i appreciate helping.",
+      "system_answer": "",
+      "gold_answer": "64",
+      "score": 0
+    },
+    {
+      "question": "i think it's not the correct command.",
+      "system_answer": "label: 23",
+      "gold_answer": "23",
+      "score": 1
+    },
+    {
+      "question": "what are my tasks",
+      "system_answer": "label: 29",
+      "gold_answer": "29",
+      "score": 1
+    },
+    {
+      "question": "hwood",
+      "system_answer": "",
+      "gold_answer": "36",
+      "score": 0
+    },
+    {
+      "question": "list saturday night events near current location",
+      "system_answer": "",
+      "gold_answer": "51",
+      "score": 0
+    },
+    {
+      "question": "turn the lights on",
+      "system_answer": "label: 13",
+      "gold_answer": "13",
+      "score": 1
+    },
+    {
+      "question": "wake me up on Friday at five in the morning i need to catch the train",
+      "system_answer": "label: 42",
+      "gold_answer": "42",
+      "score": 1
+    },
+    {
+      "question": "show me music by that artist",
+      "system_answer": "label: 17",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "i need to change the color of this light",
+      "system_answer": "label: 40",
+      "gold_answer": "40",
+      "score": 1
+    },
+    {
+      "question": "i want to send an email to my family do you help me",
+      "system_answer": "",
+      "gold_answer": "50",
+      "score": 0
+    },
+    {
+      "question": "please can you say the last comment one more time.",
+      "system_answer": "",
+      "gold_answer": "11",
+      "score": 0
+    },
+    {
+      "question": "please open chess game i would like to play with you",
+      "system_answer": "label: 43",
+      "gold_answer": "43",
+      "score": 1
+    },
+    {
+      "question": "awesome work, you did well, olly.",
+      "system_answer": "",
+      "gold_answer": "64",
+      "score": 0
+    },
+    {
+      "question": "what is the customer service feedback",
+      "system_answer": "",
+      "gold_answer": "46",
+      "score": 0
+    },
+    {
+      "question": "what are my plans for today",
+      "system_answer": "label: 67",
+      "gold_answer": "67",
+      "score": 1
+    },
+    {
+      "question": "set up each day an alarm at ten time for my meal",
+      "system_answer": "label: 42",
+      "gold_answer": "42",
+      "score": 1
+    },
+    {
+      "question": "start audiobook the time traveller",
+      "system_answer": "label: 54",
+      "gold_answer": "54",
+      "score": 1
+    },
+    {
+      "question": "can i mine for gold on any public land",
+      "system_answer": "",
+      "gold_answer": "66",
+      "score": 0
+    },
+    {
+      "question": "i need to set up a recurring event in my calendar please",
+      "system_answer": "label: 38",
+      "gold_answer": "38",
+      "score": 1
+    },
+    {
+      "question": "director who direct an act",
+      "system_answer": "",
+      "gold_answer": "45",
+      "score": 0
+    },
+    {
+      "question": "tag you're it",
+      "system_answer": "label: 0",
+      "gold_answer": "43",
+      "score": 0
+    },
+    {
+      "question": "how many emails do i have from work today",
+      "system_answer": "label: 14",
+      "gold_answer": "14",
+      "score": 1
+    },
+    {
+      "question": "can you locate some gospel music for me",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "mute",
+      "system_answer": "label: 10",
+      "gold_answer": "10",
+      "score": 1
+    },
+    {
+      "question": "do not wake me up on weekends",
+      "system_answer": "",
+      "gold_answer": "2",
+      "score": 0
+    },
+    {
+      "question": "run radio programme",
+      "system_answer": "",
+      "gold_answer": "27",
+      "score": 0
+    },
+    {
+      "question": "headlines from dhaka tribune",
+      "system_answer": "label: 36",
+      "gold_answer": "36",
+      "score": 1
+    },
+    {
+      "question": "place event in my calendar every tuesday",
+      "system_answer": "",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "select shuffle all",
+      "system_answer": "label: 52",
+      "gold_answer": "52",
+      "score": 1
+    },
+    {
+      "question": "if my vacuum cleaner is not activated please activate it",
+      "system_answer": "",
+      "gold_answer": "7",
+      "score": 0
+    },
+    {
+      "question": "repeat all",
+      "system_answer": "label: 52",
+      "gold_answer": "52",
+      "score": 1
+    },
+    {
+      "question": "i want to hear the last one you said again.",
+      "system_answer": "",
+      "gold_answer": "11",
+      "score": 0
+    },
+    {
+      "question": "start the vacuum cleaner",
+      "system_answer": "label: 7",
+      "gold_answer": "7",
+      "score": 1
+    },
+    {
+      "question": "s2, that is not so clear to me.",
+      "system_answer": "label: 16",
+      "gold_answer": "16",
+      "score": 1
+    },
+    {
+      "question": "can you check and confirm detail.",
+      "system_answer": "",
+      "gold_answer": "12",
+      "score": 0
+    },
+    {
+      "question": "hi how are you",
+      "system_answer": "Hello! I’m doing great—thanks for asking. How can I help you today?",
+      "gold_answer": "58",
+      "score": 0
+    }
+  ]
+}

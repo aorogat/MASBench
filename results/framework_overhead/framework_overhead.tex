@@ -6,11 +6,13 @@
 \centering
 \begin{tikzpicture}
 \begin{axis}[
-    width=1.2\linewidth,
+    width=1.25\linewidth,
     height=4cm,
     ymin=0,
-    symbolic x coords={DL,LG,OA,CO,AG,CA,OA2,AG2},
+    ymax=61.433,
+    symbolic x coords={Direct LLM,OpenAgents,AutoGen,LangGraph,CrewAI,Agno,OpenAISDK,Concordia},
     xtick=data,
+    xticklabel style={rotate=30, anchor=east, font=\scriptsize},
     ylabel={Latency (s)},
     ylabel style={at={(axis description cs:1.08,0.2)}, anchor=west},
     legend style={at={(0.02,0.98)}, anchor=north west, font=\scriptsize},
@@ -32,8 +34,8 @@
     },
     every axis plot/.append style={fill opacity=0.9}
 ]
-\addplot+[fill=blue!60] coordinates {(DL,0.379) (LG,0.524) (OA,0.495) (CO,44.473) (AG,0.496) (CA,0.611) (OA2,1.170) (AG2,0.860)};
-\addplot+[fill=green!60] coordinates {(DL,0.730) (LG,1.093) (OA,0.840) (CO,53.420) (AG,0.787) (CA,0.801) (OA2,2.036) (AG2,1.183)};
+\addplot+[fill=blue!60] coordinates {(Direct LLM,0.379) (OpenAgents,0.495) (AutoGen,0.496) (LangGraph,0.524) (CrewAI,0.611) (Agno,0.860) (OpenAISDK,1.170) (Concordia,44.473)};
+\addplot+[fill=green!60] coordinates {(Direct LLM,0.730) (OpenAgents,0.840) (AutoGen,0.787) (LangGraph,1.093) (CrewAI,0.801) (Agno,1.183) (OpenAISDK,2.036) (Concordia,53.420)};
 \legend{p50, p95}
 \end{axis}
 \end{tikzpicture}
@@ -46,11 +48,13 @@
 \centering
 \begin{tikzpicture}
 \begin{axis}[
-    width=1.1\linewidth,
+    width=1.15\linewidth,
     height=4cm,
     ymin=0,
-    symbolic x coords={DL,LG,OA,CO,AG,CA,OA2,AG2},
+    ymax=10.206,
+    symbolic x coords={Direct LLM,OpenAgents,AutoGen,LangGraph,CrewAI,Agno,OpenAISDK,Concordia},
     xtick=data,
+    xticklabel style={rotate=30, anchor=east, font=\scriptsize},
     ylabel={Throughput (req/s)},
     ylabel style={at={(axis description cs:1.08,-0.05)}, anchor=west},
     tick label style={font=\scriptsize},
@@ -71,7 +75,7 @@
     },
     every axis plot/.append style={fill opacity=0.9}
 ]
-\addplot+[fill=red!60] coordinates {(DL,8.875) (LG,6.377) (OA,7.062) (CO,0.089) (AG,6.827) (CA,6.113) (OA2,2.860) (AG2,4.158)};
+\addplot+[fill=red!60] coordinates {(Direct LLM,8.875) (OpenAgents,7.062) (AutoGen,6.827) (LangGraph,6.377) (CrewAI,6.113) (Agno,4.158) (OpenAISDK,2.860) (Concordia,0.089)};
 \end{axis}
 \end{tikzpicture}
 \caption{Throughput}
@@ -84,12 +88,15 @@
 \centering
 \begin{tikzpicture}
 \begin{axis}[
-    width=1.0\linewidth,
+    width=1.05\linewidth,
     height=4cm,
     ymode=log,
     log basis y=10,
-    symbolic x coords={DL,LG,OA,CO,AG,CA,OA2,AG2},
+    ymin=1,
+    ymax=117991.564,
+    symbolic x coords={Direct LLM,OpenAgents,AutoGen,LangGraph,CrewAI,Agno,OpenAISDK,Concordia},
     xtick=data,
+    xticklabel style={rotate=30, anchor=east, font=\scriptsize},
     ylabel={Output size (chars)},
     ylabel style={at={(axis description cs:1.08,0.2)}, anchor=west},
     tick label style={font=\scriptsize},
@@ -110,7 +117,7 @@
     },
     every axis plot/.append style={fill opacity=0.9}
 ]
-\addplot+[fill=orange!60] coordinates {(DL,1.000) (LG,14.900) (OA,14.900) (CO,102601.360) (AG,14.220) (CA,1.000) (OA2,13.880) (AG2,14.800)};
+\addplot+[fill=orange!60] coordinates {(Direct LLM,1.000) (OpenAgents,14.900) (AutoGen,14.220) (LangGraph,14.900) (CrewAI,1.000) (Agno,14.800) (OpenAISDK,13.880) (Concordia,102601.360)};
 \end{axis}
 \end{tikzpicture}
 \caption{Mean output}
@@ -122,12 +129,15 @@
 \centering
 \begin{tikzpicture}
 \begin{axis}[
-    width=1.2\linewidth,
+    width=1.25\linewidth,
     height=4cm,
     ymode=log,
     log basis y=10,
-    symbolic x coords={DL,LG,OA,CO,AG,CA,OA2,AG2},
+    ymin=1,
+    ymax=5899578.200,
+    symbolic x coords={Direct LLM,OpenAgents,AutoGen,LangGraph,CrewAI,Agno,OpenAISDK,Concordia},
     xtick=data,
+    xticklabel style={rotate=30, anchor=east, font=\scriptsize},
     ylabel={Output size (chars)},
     ylabel style={at={(axis description cs:1.08,0.2)}, anchor=west},
     legend style={at={(0.02,0.98)}, anchor=north west, font=\scriptsize},
@@ -149,9 +159,9 @@
     },
     every axis plot/.append style={fill opacity=0.9}
 ]
-\addplot+[fill=blue!60] coordinates {(DL,1.000) (LG,10.000) (OA,10.000) (CO,97448.000) (AG,10.000) (CA,1.000) (OA2,10.000) (AG2,10.000)};
-\addplot+[fill=red!60] coordinates {(DL,1.000) (LG,15.000) (OA,15.000) (CO,110886.000) (AG,15.000) (CA,1.000) (OA2,15.000) (AG2,15.000)};
-\addplot+[fill=orange!60] coordinates {(DL,50.000) (LG,745.000) (OA,745.000) (CO,5130068.000) (AG,711.000) (CA,50.000) (OA2,694.000) (AG2,740.000)};
+\addplot+[fill=blue!60] coordinates {(Direct LLM,1.000) (OpenAgents,10.000) (AutoGen,10.000) (LangGraph,10.000) (CrewAI,1.000) (Agno,10.000) (OpenAISDK,10.000) (Concordia,97448.000)};
+\addplot+[fill=red!60] coordinates {(Direct LLM,1.000) (OpenAgents,15.000) (AutoGen,15.000) (LangGraph,15.000) (CrewAI,1.000) (Agno,15.000) (OpenAISDK,15.000) (Concordia,110886.000)};
+\addplot+[fill=orange!60] coordinates {(Direct LLM,50.000) (OpenAgents,745.000) (AutoGen,711.000) (LangGraph,745.000) (CrewAI,50.000) (Agno,740.000) (OpenAISDK,694.000) (Concordia,5130068.000)};
 \legend{Min, Max, Total}
 \end{axis}
 \end{tikzpicture}
@@ -159,6 +169,7 @@
 \end{subfigure}
 
 \caption{Framework overhead results for 50 trials of the trivial task (``What is 2+2?''). 
-\textbf{DL} = Direct LLM, \textbf{LG} = LangGraph, \textbf{OA} = OpenAgents, \textbf{CO} = Concordia, \textbf{AG} = AutoGen, \textbf{CA} = CrewAI, \textbf{OA2} = OpenAISDK, \textbf{AG2} = Agno.}
+Frameworks are ordered by increasing p50 latency.
+\textbf{Direct LLM}, \textbf{OpenAgents}, \textbf{AutoGen}, \textbf{LangGraph}, \textbf{CrewAI}, \textbf{Agno}, \textbf{OpenAISDK}, \textbf{Concordia}.}
 \label{fig:framework-overhead}
 \end{figure}

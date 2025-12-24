@@ -1,0 +1,610 @@
+{
+  "system": "Openai_SDK_Groq_CTX1024",
+  "split": "Test_Time_Learning",
+  "session_id": "2",
+  "subtask": "MCC",
+  "category": "TTL",
+  "runtime_sec": 885.63,
+  "questions": [
+    {
+      "question": "Are there restrictions for my disposable card since it does not seem to be working?",
+      "system_answer": "label: 68",
+      "gold_answer": "28",
+      "score": 0
+    },
+    {
+      "question": "I'm trying to transfer money to another country. It's just pending and not sending. My account details are correct. Please help me.",
+      "system_answer": "label: 18",
+      "gold_answer": "18",
+      "score": 1
+    },
+    {
+      "question": "What do I do if I notice a strange withdrawl in my statement?",
+      "system_answer": "label: 48",
+      "gold_answer": "50",
+      "score": 0
+    },
+    {
+      "question": "I got a message that I need to verify my identity; what do I do?",
+      "system_answer": "label: 16",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "How do I use the app if I don't have my phone with me?",
+      "system_answer": "label: 22",
+      "gold_answer": "22",
+      "score": 1
+    },
+    {
+      "question": "why is the exchange rate for a Foreign ATM different",
+      "system_answer": "label: 19",
+      "gold_answer": "26",
+      "score": 0
+    },
+    {
+      "question": "What happens if my card is stuck in the ATM?",
+      "system_answer": "label: 40",
+      "gold_answer": "51",
+      "score": 0
+    },
+    {
+      "question": "Is there a discount for frequently exchanging currencies?",
+      "system_answer": "label: 10",
+      "gold_answer": "10",
+      "score": 1
+    },
+    {
+      "question": "I sent money.  They haven't received it.",
+      "system_answer": "label: 18",
+      "gold_answer": "6",
+      "score": 0
+    },
+    {
+      "question": "What age do my kids need to be to use your service?",
+      "system_answer": "label: 21",
+      "gold_answer": "21",
+      "score": 1
+    },
+    {
+      "question": "I've notice I was charged for withdrawing cash, can you explain why?",
+      "system_answer": "label: 62",
+      "gold_answer": "62",
+      "score": 1
+    },
+    {
+      "question": "Can you please identify the problem with my bank card?",
+      "system_answer": "label: 42",
+      "gold_answer": "42",
+      "score": 1
+    },
+    {
+      "question": "Do you know where my card will be accepted?",
+      "system_answer": "label: 23",
+      "gold_answer": "15",
+      "score": 0
+    },
+    {
+      "question": "My work sends me all over the world, can I get a discount for all the money I have to exchange?",
+      "system_answer": "label: 10",
+      "gold_answer": "10",
+      "score": 1
+    },
+    {
+      "question": "Why do I have to verify my identity?",
+      "system_answer": "",
+      "gold_answer": "45",
+      "score": 0
+    },
+    {
+      "question": "When my card expires what happens to my account?",
+      "system_answer": "label: 42",
+      "gold_answer": "9",
+      "score": 0
+    },
+    {
+      "question": "It appears that I am being double charged for some items that I have purchased this past week.  Please review and correct.",
+      "system_answer": "label: 41",
+      "gold_answer": "63",
+      "score": 0
+    },
+    {
+      "question": "how long til my cash out goes through?",
+      "system_answer": "label: 5",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "my phone is gone",
+      "system_answer": "label: 12",
+      "gold_answer": "22",
+      "score": 0
+    },
+    {
+      "question": "My money transfer has not arrived.",
+      "system_answer": "label: 18",
+      "gold_answer": "6",
+      "score": 0
+    },
+    {
+      "question": "I bought something but now I would like a refund. How do I do that?",
+      "system_answer": "label: 6",
+      "gold_answer": "47",
+      "score": 0
+    },
+    {
+      "question": "Hello. Can you tell me if you use Visa or Mastercard?",
+      "system_answer": "label: 23",
+      "gold_answer": "72",
+      "score": 0
+    },
+    {
+      "question": "I can't see my latest bank transfer",
+      "system_answer": "label: 18",
+      "gold_answer": "69",
+      "score": 0
+    },
+    {
+      "question": "I got a fee for an ATM withdrawal.",
+      "system_answer": "label: 62",
+      "gold_answer": "62",
+      "score": 1
+    },
+    {
+      "question": "There is a transaction for $1 and I don't know why it was charged.",
+      "system_answer": "",
+      "gold_answer": "55",
+      "score": 0
+    },
+    {
+      "question": "Am I able to get a second card?",
+      "system_answer": "label: 48  \nlabel: 3",
+      "gold_answer": "71",
+      "score": 0
+    },
+    {
+      "question": "Why is my card payment showing as pending?",
+      "system_answer": "label: 11",
+      "gold_answer": "65",
+      "score": 0
+    },
+    {
+      "question": "Why was I chaged twice for the same thing?",
+      "system_answer": "label: 41",
+      "gold_answer": "63",
+      "score": 0
+    },
+    {
+      "question": "Is it okay to use a bank card to top up",
+      "system_answer": "",
+      "gold_answer": "76",
+      "score": 0
+    },
+    {
+      "question": "I see what looks like duplicate charges on account.",
+      "system_answer": "label: 0  \nlabel: 41",
+      "gold_answer": "63",
+      "score": 0
+    },
+    {
+      "question": "What ATMs is the card okay to use at?",
+      "system_answer": "",
+      "gold_answer": "43",
+      "score": 0
+    },
+    {
+      "question": "I want a refund because my package has been taking too long to arrive. How do I go about doing that?",
+      "system_answer": "label: 23  \nlabel: 6",
+      "gold_answer": "47",
+      "score": 0
+    },
+    {
+      "question": "Freeze my account it's been hacked.",
+      "system_answer": "label: 47",
+      "gold_answer": "57",
+      "score": 0
+    },
+    {
+      "question": "The card got declined twice when I tried to use it to buy something online yesterday.",
+      "system_answer": "label: 34",
+      "gold_answer": "29",
+      "score": 0
+    },
+    {
+      "question": "The transfer is coming up as pending the payment is due today. Will I be charged a fee?",
+      "system_answer": "label: 18",
+      "gold_answer": "18",
+      "score": 1
+    },
+    {
+      "question": "Does my PIN come with my card?",
+      "system_answer": "label: 57",
+      "gold_answer": "75",
+      "score": 0
+    },
+    {
+      "question": "Someone else is using my card, freeze it.",
+      "system_answer": "label: 47",
+      "gold_answer": "57",
+      "score": 0
+    },
+    {
+      "question": "Transferring money in 2018 to another country shouldn't take this long. My transfer has been pending for too long. I verified my account details are correct.",
+      "system_answer": "label: 18",
+      "gold_answer": "18",
+      "score": 1
+    },
+    {
+      "question": "My card is gone I think it was stolen",
+      "system_answer": "label: 47",
+      "gold_answer": "7",
+      "score": 0
+    },
+    {
+      "question": "Can I get a mastercard?",
+      "system_answer": "label: 23",
+      "gold_answer": "72",
+      "score": 0
+    },
+    {
+      "question": "I don't understand where this debit came from and want it removed.",
+      "system_answer": "label: 0",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "I made a transfer 12 hours ago. Why is it still listed as pending?",
+      "system_answer": "label: 18",
+      "gold_answer": "18",
+      "score": 1
+    },
+    {
+      "question": "can you limit my top up?",
+      "system_answer": "label: 4",
+      "gold_answer": "14",
+      "score": 0
+    },
+    {
+      "question": "Why can't I get my virtual card to work?",
+      "system_answer": "label: 35",
+      "gold_answer": "28",
+      "score": 0
+    },
+    {
+      "question": "What steps must I follow to get a Visa credit card?",
+      "system_answer": "label: 23",
+      "gold_answer": "72",
+      "score": 0
+    },
+    {
+      "question": "Can I transfer money to a beneficiery?",
+      "system_answer": "",
+      "gold_answer": "44",
+      "score": 0
+    },
+    {
+      "question": "Can you help with a transfer to an account",
+      "system_answer": "label: 18",
+      "gold_answer": "44",
+      "score": 0
+    },
+    {
+      "question": "Do you support all fiat currencies?",
+      "system_answer": "label: 9",
+      "gold_answer": "56",
+      "score": 0
+    },
+    {
+      "question": "My transfer didn't go through.",
+      "system_answer": "label: 18",
+      "gold_answer": "73",
+      "score": 0
+    },
+    {
+      "question": "How do I add the card to my account?",
+      "system_answer": "label: 4",
+      "gold_answer": "41",
+      "score": 0
+    },
+    {
+      "question": "I am still waiting for a cash withdrawal to show",
+      "system_answer": "label: 5",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What places can I use my card?",
+      "system_answer": "label: 23",
+      "gold_answer": "15",
+      "score": 0
+    },
+    {
+      "question": "How do I open up an account for my child?",
+      "system_answer": "label: 21",
+      "gold_answer": "21",
+      "score": 1
+    },
+    {
+      "question": "can you tell me what cards and currencies you take?",
+      "system_answer": "label: 9",
+      "gold_answer": "39",
+      "score": 0
+    },
+    {
+      "question": "Why didn't my balance change after I transferred some money?",
+      "system_answer": "label: 18",
+      "gold_answer": "69",
+      "score": 0
+    },
+    {
+      "question": "The wrong rate was applied to an item I bought in a currency different from mine. Can this be changed?",
+      "system_answer": "label: 17",
+      "gold_answer": "19",
+      "score": 0
+    },
+    {
+      "question": "How many tries do I have to enter my pin before I'm blocked?",
+      "system_answer": "label: 57",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "My top-up isn't working.",
+      "system_answer": "",
+      "gold_answer": "54",
+      "score": 0
+    },
+    {
+      "question": "Where do I need to live to get support?",
+      "system_answer": "",
+      "gold_answer": "11",
+      "score": 0
+    },
+    {
+      "question": "Delete this account!",
+      "system_answer": "label: 52",
+      "gold_answer": "23",
+      "score": 0
+    },
+    {
+      "question": "There is an extra $1 charge",
+      "system_answer": "label: 0",
+      "gold_answer": "55",
+      "score": 0
+    },
+    {
+      "question": "app does not recognize me",
+      "system_answer": "",
+      "gold_answer": "16",
+      "score": 0
+    },
+    {
+      "question": "What are the fees for a physical card?",
+      "system_answer": "label: 22  \nlabel: 63",
+      "gold_answer": "37",
+      "score": 0
+    },
+    {
+      "question": "Is there a limit to top-ups?",
+      "system_answer": "label: 4",
+      "gold_answer": "14",
+      "score": 0
+    },
+    {
+      "question": "Please explain why the transfers shows up as pending?",
+      "system_answer": "label: 18",
+      "gold_answer": "18",
+      "score": 1
+    },
+    {
+      "question": "How do I know which ATMs will accept this card?",
+      "system_answer": "label: 23",
+      "gold_answer": "43",
+      "score": 0
+    },
+    {
+      "question": "Is my cash withdrawal pending?",
+      "system_answer": "label: 5",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "Why do you require so many identity details?",
+      "system_answer": "label: 16",
+      "gold_answer": "45",
+      "score": 0
+    },
+    {
+      "question": "I don't recognize a debit payment that was made and would like to find out about the payment.",
+      "system_answer": "label: 48",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "Still waiting on a refund.",
+      "system_answer": "label: 6",
+      "gold_answer": "17",
+      "score": 0
+    },
+    {
+      "question": "Why is there a transaction that shows multiple times?",
+      "system_answer": "label: 41",
+      "gold_answer": "63",
+      "score": 0
+    },
+    {
+      "question": "I was taking out funds and was unable to regain my card.",
+      "system_answer": "label: 40",
+      "gold_answer": "51",
+      "score": 0
+    },
+    {
+      "question": "My credit card cancelled a payment for a purchase.",
+      "system_answer": "",
+      "gold_answer": "74",
+      "score": 0
+    },
+    {
+      "question": "Can I get a physical card through this app?",
+      "system_answer": "34  \n63",
+      "gold_answer": "37",
+      "score": 0
+    },
+    {
+      "question": "I made a mistake and need to cancel a transaction",
+      "system_answer": "",
+      "gold_answer": "20",
+      "score": 0
+    },
+    {
+      "question": "I need to verify my identity, but how do I do that?",
+      "system_answer": "",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "I need to cancel an incorrect transaction.",
+      "system_answer": "label: 16",
+      "gold_answer": "20",
+      "score": 0
+    },
+    {
+      "question": "My latest payment was declined, I was told everything was back to working order. What happened?",
+      "system_answer": "label: 34",
+      "gold_answer": "60",
+      "score": 0
+    },
+    {
+      "question": "whats your exchange rate",
+      "system_answer": "",
+      "gold_answer": "10",
+      "score": 0
+    },
+    {
+      "question": "How do I get my paycheck through this?",
+      "system_answer": "",
+      "gold_answer": "8",
+      "score": 0
+    },
+    {
+      "question": "How can i check if my card is working?",
+      "system_answer": "label: 34",
+      "gold_answer": "42",
+      "score": 0
+    },
+    {
+      "question": "What is the top-ups limit?",
+      "system_answer": "label: 4",
+      "gold_answer": "14",
+      "score": 0
+    },
+    {
+      "question": "I would like to link my card. How do I do it?",
+      "system_answer": "label: 4",
+      "gold_answer": "41",
+      "score": 0
+    },
+    {
+      "question": "Where do I go if I want to link my new card?",
+      "system_answer": "label: 4",
+      "gold_answer": "41",
+      "score": 0
+    },
+    {
+      "question": "How can I start using my card?",
+      "system_answer": "label: 34",
+      "gold_answer": "31",
+      "score": 0
+    },
+    {
+      "question": "I made a mistake when I did a transfer so now what can I do to fix that?",
+      "system_answer": "label: 18",
+      "gold_answer": "20",
+      "score": 0
+    },
+    {
+      "question": "The app reverted what I topped up.",
+      "system_answer": "label: 30",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "In terms of holding and exchange, what fiat currencies do you use.",
+      "system_answer": "label: 9",
+      "gold_answer": "56",
+      "score": 0
+    },
+    {
+      "question": "Can you tell me if my top-up has been cancelled?",
+      "system_answer": "label: 30",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "Why can't I use my American Express with Apple Pay to top up my account?",
+      "system_answer": "label: 30",
+      "gold_answer": "30",
+      "score": 1
+    },
+    {
+      "question": "Can you help me with a weird charge?  It's a pound charge that never goes away from the statement view on the app I'm using.  It's not described as anything but \"Pending\", and that status has never changed during the last two days.",
+      "system_answer": "label: 0",
+      "gold_answer": "55",
+      "score": 0
+    },
+    {
+      "question": "I received my new card, but I don't see it in the app anywhere.  What do I do?",
+      "system_answer": "label: 42",
+      "gold_answer": "41",
+      "score": 0
+    },
+    {
+      "question": "The transfer I did hasn't arrived",
+      "system_answer": "label: 18",
+      "gold_answer": "6",
+      "score": 0
+    },
+    {
+      "question": "Can I top up using an international card",
+      "system_answer": "",
+      "gold_answer": "76",
+      "score": 0
+    },
+    {
+      "question": "How do I deal with a blocked PIN?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "Why was I charged a fee for withdrawing cash?",
+      "system_answer": "label: 30  \nlabel: 57  \nlabel: 62",
+      "gold_answer": "62",
+      "score": 1
+    },
+    {
+      "question": "I payed with a card and was charged an extra fee",
+      "system_answer": "",
+      "gold_answer": "27",
+      "score": 0
+    },
+    {
+      "question": "Hello. I checked my transactions and saw I was double charged on my card for a restaurant visit. I would like to get my money back.",
+      "system_answer": "",
+      "gold_answer": "63",
+      "score": 0
+    },
+    {
+      "question": "How long do card transactions take to clear?",
+      "system_answer": "",
+      "gold_answer": "65",
+      "score": 0
+    },
+    {
+      "question": "I don't like that I have to fill out so much information about my identity.",
+      "system_answer": "label: 41  \nlabel: 41  \nlabel: 11  \nlabel: 16",
+      "gold_answer": "45",
+      "score": 0
+    }
+  ]
+}

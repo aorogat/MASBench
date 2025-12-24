@@ -1,0 +1,610 @@
+{
+  "system": "Openai_SDK_Groq_CTX50",
+  "split": "Conflict_Resolution",
+  "session_id": "8",
+  "subtask": "FC-SH",
+  "category": "SF",
+  "runtime_sec": 246.52,
+  "questions": [
+    {
+      "question": "Which university was Adam Putnam educated at?",
+      "system_answer": "Adam Putnam earned both his undergraduate and law degrees from the **University of Florida** (B.S. in biology, 1976; J.D., 1979).",
+      "gold_answer": "Federal University of Rio de Janeiro",
+      "score": 0.0
+    },
+    {
+      "question": "What type of music does Tito Nieves play?",
+      "system_answer": "Tito Nieves is best known as a **salsa singer**—specifically, he’s a leading figure in the “salsa romántica” style that blends traditional salsa rhythms with more melodic, romantic lyrics. His catalog also touches on other Latin‑music genres such as merengue and Latin pop, but salsa remains the core of his musical identity.",
+      "gold_answer": "salsa",
+      "score": 1.0
+    },
+    {
+      "question": "Which country was Sigur Rós created in?",
+      "system_answer": "Sigur Rós was formed in **Iceland** (in Reykjavík).",
+      "gold_answer": "Israel",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the developer of AppleWorks?",
+      "system_answer": "AppleWorks was developed by **Apple Computer, Inc.** (now Apple Inc.). It was created as part of Apple’s suite of office software for the Macintosh platform.",
+      "gold_answer": "Boeing",
+      "score": 0.0
+    },
+    {
+      "question": "What language does Jasper Fforde speak?",
+      "system_answer": "Jasper Fforde speaks **English**.  In the Thursday Next series he’s a literary detective who talks in contemporary English (often peppered with literary references and a touch of the archaic, but the language is English).",
+      "gold_answer": "Kannada",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Benedict XIII affiliated with?",
+      "system_answer": "Benedict XIII (Pope Lorenzo Corsini, 1676–1730) was a **Roman Catholic** pope. He served as the head of the Catholic Church from 1724 until his death in 1730.",
+      "gold_answer": "Methodism",
+      "score": 0.0
+    },
+    {
+      "question": "What language does Shane Meadows speak?",
+      "system_answer": "Shane Meadows speaks **English**.",
+      "gold_answer": "English",
+      "score": 1.0
+    },
+    {
+      "question": "What position does Lou Gehrig play?",
+      "system_answer": "Lou Gehrig was a **first baseman** for the New York Yankees.",
+      "gold_answer": "placekicker",
+      "score": 0.0
+    },
+    {
+      "question": "Who founded Shingon Buddhism?",
+      "system_answer": "Shingon Buddhism was founded by **Kūkai** (also known as Kōbō‑Daishi). He established the school in the early 9th century in Japan.",
+      "gold_answer": "Kūkai",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the developer of Extensible Markup Language?",
+      "system_answer": "The original author and lead of the XML specification was **Jon Bosak** of the World Wide Web Consortium (W3C). He headed the W3C XML Working Group that produced the first XML standard in 1998.",
+      "gold_answer": "Sega AM2",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Cy Young?",
+      "system_answer": "Cy Young was an American—he held U.S. citizenship.",
+      "gold_answer": "Russia",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Davina McCall?",
+      "system_answer": "Davina McCall is a citizen of the United Kingdom.",
+      "gold_answer": "Kingdom of the Netherlands",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was Witches of East End created in?",
+      "system_answer": "The TV series **“Witches of East End”** was produced in the **United States**.",
+      "gold_answer": "United Kingdom",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the chief executive officer of Oculus VR, LLC?",
+      "system_answer": "The chief executive officer of **Oculus VR, LLC** is **Andrew Bosworth**. He has served as the CEO of Oculus since 2018 and is also the Vice‑President of Reality Labs at Meta Platforms.",
+      "gold_answer": "Marc Benioff",
+      "score": 0.0
+    },
+    {
+      "question": "Who was Bart Simpson created by?",
+      "system_answer": "Bart Simpson was created by **Matt Groening**.  \nMatt Groening is the original creator of *The Simpsons* television series, and he conceived the character of Bart Simpson as part of that show.",
+      "gold_answer": "Ray Bradbury",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Albert of Saxony affiliated with?",
+      "system_answer": "Albert of Saxony (the 12th‑century bishop of Hildesheim) was a Roman Catholic. He served as a Catholic bishop and was a member of the Roman Catholic Church.",
+      "gold_answer": "The Church of Jesus Christ of Latter-day Saints",
+      "score": 0.0
+    },
+    {
+      "question": "Who was The IT Crowd created by?",
+      "system_answer": "**The IT Crowd** was created by **Graham Linehan**.  \nLinehan, a British comedy writer and producer, conceived the show and served as its primary writer and executive producer. The series was produced for Channel 4 and ran from 2006 to 2013, becoming a cult‑favorite for its quirky take on office life and tech culture.",
+      "gold_answer": "Graham Linehan",
+      "score": 1.0
+    },
+    {
+      "question": "What language does Queen Victoria I speak?",
+      "system_answer": "Queen Victoria’s primary language was **English**—she was fluent in it and used it for all her public duties and most private correspondence.  \n\nIn addition to English, she received a broad classical education and was familiar with several other languages:\n\n| Language | Level of proficiency |\n|----------|----------------------|\n| **French** | Conversational; she used it in private conversations and was a keen reader of French literature. |\n| **German** | Basic conversational ability; she learned it as part of her schooling. |\n| **Latin** | Good reading proficiency; she studied Latin texts and used it in her education. |\n| **Greek** | Basic reading knowledge; she studied Greek as part of her classical curriculum. |\n| **Italian** | Limited conversational knowledge; she had some exposure through her education. |\n\nShe did not speak Spanish or other languages fluently. Her linguistic skills were typical of a 19th‑century British monarch, with a strong emphasis on English and a solid grounding in the classical languages and French, which was the lingua franca of European diplomacy at the time.",
+      "gold_answer": "Dutch",
+      "score": 0.0
+    },
+    {
+      "question": "Which company is Windows Vista produced by?",
+      "system_answer": "Windows Vista was produced by **Microsoft**.",
+      "gold_answer": "Raytheon",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Indiana Mr. Basketball associated with?",
+      "system_answer": "It’s a basketball award – Indiana Mr. Basketball is given to the top high‑school basketball player in the state.",
+      "gold_answer": "association football",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Laura Bush?",
+      "system_answer": "Laura Bush is a citizen of the **United States of America**.",
+      "gold_answer": "United States of America",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the employer of Helen Vendler?",
+      "system_answer": "Helen Vendler is a professor of English at **Harvard University**.",
+      "gold_answer": "Yale University",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of C. S. Forester?",
+      "system_answer": "C. S. Forester was a citizen of the **United Kingdom**.",
+      "gold_answer": "United Kingdom",
+      "score": 1.0
+    },
+    {
+      "question": "What is the country of citizenship of Tom Simpson?",
+      "system_answer": "Tom Simpson was a **British** citizen (he was born and lived in the United Kingdom).",
+      "gold_answer": "United States of America",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Diego Simeone associated with?",
+      "system_answer": "Diego Simeone is associated with **football (soccer)**.",
+      "gold_answer": "auto racing",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was go-go created in?",
+      "system_answer": "Go‑go music was created in the United States, originating in Washington, D.C.",
+      "gold_answer": "United States of America",
+      "score": 1.0
+    },
+    {
+      "question": "What is the country of citizenship of Arthur Miller?",
+      "system_answer": "Arthur Miller is a citizen of the **United States of America**.",
+      "gold_answer": "United States of America",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the Prime Minister of Albania?",
+      "system_answer": "The current Prime Minister of Albania is **Edi Rama**. He has held the office since 2013, leading the Socialist Party’s government and serving as Albania’s head of government through the most recent elections.",
+      "gold_answer": "Edi Rama",
+      "score": 1.0
+    },
+    {
+      "question": "What is the country of citizenship of Liz Lochhead?",
+      "system_answer": "Liz Lochhead is a citizen of the United Kingdom (she is Scottish).",
+      "gold_answer": "Singapore",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Texas Collegiate League associated with?",
+      "system_answer": "The Texas Collegiate League is a **baseball** league.",
+      "gold_answer": "baseball",
+      "score": 1.0
+    },
+    {
+      "question": "Who performed Vogue?",
+      "system_answer": "The hit song “Vogue” was performed by **Madonna**.",
+      "gold_answer": "Madonna",
+      "score": 1.0
+    },
+    {
+      "question": "Who is Wilma Flintstone's child?",
+      "system_answer": "Wilma Flintstone’s child is **Pebbles Flintstone**.",
+      "gold_answer": "Eric Garcetti",
+      "score": 0.0
+    },
+    {
+      "question": "Which city did Abraham Ortelius work in?",
+      "system_answer": "Abraham Ortelius worked in **Antwerp**.",
+      "gold_answer": "Berlin",
+      "score": 0.0
+    },
+    {
+      "question": "Who founded Armani?",
+      "system_answer": "Armani was founded by **Giorgio Armani**.",
+      "gold_answer": "Pál Teleki",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Mathieu Flamini play?",
+      "system_answer": "Mathieu Flamini is a professional footballer who plays as a **midfielder**—most often in a **defensive‑midfield** role.",
+      "gold_answer": "midfielder",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the original broadcaster of The Wonder Years?",
+      "system_answer": "The original broadcaster of *The Wonder Years* was **NBC**. The series premiered on NBC in 1988 and ran on the network until its final season in 1993.",
+      "gold_answer": "British Broadcasting Corporation",
+      "score": 0.0
+    },
+    {
+      "question": "Which company is M1895 Colt-Browning machine gun produced by?",
+      "system_answer": "The M1895 “Colt‑Browning” machine gun was manufactured by **Colt’s Manufacturing Company** (often simply called Colt). It was a joint design by John Browning and Colt, but the actual production was carried out by Colt’s factory in Hartford, Connecticut.",
+      "gold_answer": "Ford Motor Company",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Pius IX affiliated with?",
+      "system_answer": "Pius IX was a Roman Catholic pope, so he was affiliated with the Roman Catholic Church.",
+      "gold_answer": "Catholic Church",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the original broadcaster of Morning Joe?",
+      "system_answer": "**Morning Joe** first aired on **MSNBC** in 2007.  \nThe original hosts were **Joe Scarborough** (the former U.S. Representative and former Fox News anchor) and **Wolf Blitzer** (the long‑time CNN correspondent).  So the show’s original broadcaster was MSNBC, and its original co‑hosts were Scarborough and Blitzer.",
+      "gold_answer": "MSNBC",
+      "score": 1.0
+    },
+    {
+      "question": "Who is Herodias's child?",
+      "system_answer": "Herodias’s child was **Salome**—the daughter she had with Herod II (Herod Philip I). Salome is the woman who later performed the dance that led to John the Baptist’s beheading.",
+      "gold_answer": "Francis Russell, 4th Earl of Bedford",
+      "score": 0.0
+    },
+    {
+      "question": "Who was The Dark Knight created by?",
+      "system_answer": "**The Dark Knight**—better known as **Batman**—was created by the comic‑book duo **Bob Kane** (artist) and **Bill Finger** (writer).  \n\n- **Bob Kane** came up with the visual design and the idea of a masked vigilante.  \n- **Bill Finger** supplied the character’s backstory, personality, and many of the iconic elements (the Bat‑signal, the Bat‑cave, the rogues’ gallery, etc.).  \n\nBatman first appeared in *Detective Comics* #27 (April 1939). The collaboration between Kane and Finger is widely regarded as the birth of one of the most enduring superheroes in popular culture.",
+      "gold_answer": "Stephen Hillenburg",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was Jeune Afrique created in?",
+      "system_answer": "Jeune Afrique was created in **France** (in Paris).",
+      "gold_answer": "Israel",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Anna Ancher?",
+      "system_answer": "Anna Ancher was a Danish citizen—she was born and lived in Denmark.",
+      "gold_answer": "Ecuador",
+      "score": 0.0
+    },
+    {
+      "question": "What type of music does Andy Griffith play?",
+      "system_answer": "Andy Griffith is best known as a country‑music performer.  In the 1960s he recorded a handful of country‑style singles (most famously “The Ballad of the Green River”) and his musical work was firmly rooted in the country genre.",
+      "gold_answer": "post-punk",
+      "score": 0.0
+    },
+    {
+      "question": "Which city did Jerry Lee Lewis work in?",
+      "system_answer": "Jerry Lee Lewis began his career in **Memphis, Tennessee**—performing at venues such as the 12th Street Lounge and the 12th Street Club before his national breakthrough.",
+      "gold_answer": "Helsinki",
+      "score": 0.0
+    },
+    {
+      "question": "What language does William Shakespeare speak?",
+      "system_answer": "William Shakespeare spoke and wrote in **Early Modern English**—the form of English used in England from roughly the late 15th to the early 17th century. This is the same language that appears in his plays, sonnets, and other works.",
+      "gold_answer": "French",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Joseph Lyons affiliated with?",
+      "system_answer": "Joseph Lyons was a devout Christian – he was an Anglican, belonging to the Church of England.",
+      "gold_answer": "The Church of Jesus Christ of Latter-day Saints",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is 2014 CollegeInsider.com Postseason Tournament associated with?",
+      "system_answer": "The 2014 CollegeInsider.com Postseason Tournament is a college **basketball** tournament.",
+      "gold_answer": "basketball",
+      "score": 1.0
+    },
+    {
+      "question": "What is the country of citizenship of Harry Judd?",
+      "system_answer": "Harry Judd is a citizen of the **United Kingdom**.",
+      "gold_answer": "France",
+      "score": 0.0
+    },
+    {
+      "question": "Which city did H. P. Lovecraft work in?",
+      "system_answer": "H. P. Lovecraft worked as a clerk in **Providence, Rhode Island**.",
+      "gold_answer": "Providence",
+      "score": 1.0
+    },
+    {
+      "question": "Which sport is Grêmio Barueri Futebol associated with?",
+      "system_answer": "Grêmio Barueri Futebol is a **football (soccer)** club.",
+      "gold_answer": "association football",
+      "score": 1.0
+    },
+    {
+      "question": "Which religion is Pius VI affiliated with?",
+      "system_answer": "Pius VI was a **Roman Catholic** pope.",
+      "gold_answer": "Jainism",
+      "score": 0.0
+    },
+    {
+      "question": "Which university was Frank Norris educated at?",
+      "system_answer": "Frank Norris attended the **University of Chicago** (he left before graduating).",
+      "gold_answer": "University of Mississippi",
+      "score": 0.0
+    },
+    {
+      "question": "What language does Theodor Herzl speak?",
+      "system_answer": "Theodor Herzl was multilingual – he spoke **German** (his main literary language), **Hebrew**, and also had a working knowledge of **Yiddish**.",
+      "gold_answer": "French",
+      "score": 0.0
+    },
+    {
+      "question": "What is the official language of Spain?",
+      "system_answer": "The official language of Spain is **Spanish (Castilian)**.",
+      "gold_answer": "Walloon",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Glenn L. Martin?",
+      "system_answer": "Glenn L. Martin was an American citizen – his country of citizenship was the **United States of America**.",
+      "gold_answer": "Denmark",
+      "score": 0.0
+    },
+    {
+      "question": "Which continent is Kingdom of Italy located in?",
+      "system_answer": "The Kingdom of Italy was located on the continent of **Europe**.",
+      "gold_answer": "Asia",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is squeeze play associated with?",
+      "system_answer": "The “squeeze play” is a tactic used in **baseball**.",
+      "gold_answer": "basketball",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Worksop Town F.C. associated with?",
+      "system_answer": "Worksop Town F.C. is a football club, so it’s associated with **association football (soccer)**.",
+      "gold_answer": "association football",
+      "score": 1.0
+    },
+    {
+      "question": "What is the original language of Gunsmoke?",
+      "system_answer": "The original language of *Gunsmoke* is **English**.",
+      "gold_answer": "Hindi",
+      "score": 0.0
+    },
+    {
+      "question": "What is Helen Fielding famous for?",
+      "system_answer": "Helen Fielding is best known as the author who created the iconic character **Bridget Jones** and wrote the bestselling *Bridget Jones’s Diary* series (and its film adaptations). She is a British novelist and journalist whose work has become a cultural touchstone for modern, relatable humor and romance.",
+      "gold_answer": "Bridget Jones's Diary",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the employer of Milan Stojadinović?",
+      "system_answer": "Milan Stojadinović is employed by **FK Vojvodina**.",
+      "gold_answer": "WWE",
+      "score": 0.0
+    },
+    {
+      "question": "Which continent is Cuba located in?",
+      "system_answer": "Cuba is located on the continent of **North America**.",
+      "gold_answer": "North America",
+      "score": 1.0
+    },
+    {
+      "question": "Which language was 9/11 Commission Report written in?",
+      "system_answer": "The 9/11 Commission Report was written in **English**.",
+      "gold_answer": "Spanish",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Gianni Morbidelli?",
+      "system_answer": "Gianni Morbidelli is an Italian citizen.",
+      "gold_answer": "Denmark",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the current head of the Nova Scotia government?",
+      "system_answer": "The head of the Nova Scotia government is Premier **Tim Houston**.",
+      "gold_answer": "Khalifa bin Zayed Al Nahyan",
+      "score": 0.0
+    },
+    {
+      "question": "Which city did Lucan die in?",
+      "system_answer": "Lucan, the Roman poet, died in the city of **Sicily** (specifically, in the area around the city of **Sicily** during the civil war of 53 AD).",
+      "gold_answer": "Lancaster",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the developer of Windows XP?",
+      "system_answer": "Windows XP was developed by **Microsoft** (the Windows operating‑system team at Microsoft).",
+      "gold_answer": "Netscape Comunications Corporation",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the employer of Aldrich Ames?",
+      "system_answer": "Aldrich Ames was employed by the **Central Intelligence Agency (CIA)**.",
+      "gold_answer": "British Broadcasting Corporation",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was The Unit created in?",
+      "system_answer": "**The Unit** (the TV series) was created in the **United States**. The show centers on a fictional U.S. Army special‑operations unit, and it was produced by ABC in the U.S.",
+      "gold_answer": "Nepal",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Jason Motte?",
+      "system_answer": "Jason Motte is a citizen of the **United States**.",
+      "gold_answer": "Ireland",
+      "score": 0.0
+    },
+    {
+      "question": "What is the official language of Nokia?",
+      "system_answer": "Nokia is a Finnish company, so the “official language” associated with it is the official language of Finland.  \nFinland’s official languages are **Finnish** and **Swedish** (Finnish is the majority language, while Swedish is also an official language used in certain regions).",
+      "gold_answer": "Finnish",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the original broadcaster of Fantasy Island?",
+      "system_answer": "The original *Fantasy Island* series (1977‑1984) was produced and first aired by **ABC (American Broadcasting Company)**.",
+      "gold_answer": "British Broadcasting Corporation",
+      "score": 0.0
+    },
+    {
+      "question": "What kind of work does N. Chandrababu Naidu do?",
+      "system_answer": "N. Chandrababu Naidu is an Indian politician. He is the leader of the Telugu Desam Party (TDP) and has served as the Chief Minister of the state of Andhra Pradesh on multiple occasions (1995‑1999, 2014‑2019). In addition to his political career, he is known for his work in public administration, economic development, and technology‑driven governance initiatives in the state.",
+      "gold_answer": "basketball player",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of George R. R. Martin?",
+      "system_answer": "George R. R. Martin is a citizen of the **United States of America**.",
+      "gold_answer": "United Kingdom",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Shay Given play?",
+      "system_answer": "Shay Given is a **goalkeeper**.",
+      "gold_answer": "quarterback",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Glenn Miller?",
+      "system_answer": "Glenn Miller was a citizen of the **United States of America**.",
+      "gold_answer": "United Kingdom",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Florentino Pérez associated with?",
+      "system_answer": "Florentino Pérez is associated with **football (soccer)**.",
+      "gold_answer": "Muay Thai",
+      "score": 0.0
+    },
+    {
+      "question": "Which city is the headquarter of University of Washington located in?",
+      "system_answer": "The University of Washington’s main campus and headquarters are located in **Seattle, Washington**.",
+      "gold_answer": "Nuapada",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Jerzy Dudek play?",
+      "system_answer": "Jerzy Dudek is a **goalkeeper**.",
+      "gold_answer": "defenceman",
+      "score": 0.0
+    },
+    {
+      "question": "Which city did Ibn Saud work in?",
+      "system_answer": "Ibn Saud’s career was centered in **Riyadh**—he served as the tribal leader and later the governor of the Riyadh region before founding the modern Kingdom of Saudi Arabia.",
+      "gold_answer": "Riyadh Region",
+      "score": 1.0
+    },
+    {
+      "question": "What is the country of citizenship of Lonnie Mack?",
+      "system_answer": "Lonnie Mack is a citizen of the **United States**.",
+      "gold_answer": "United States of America",
+      "score": 1.0
+    },
+    {
+      "question": "What language does Néstor Kirchner speak?",
+      "system_answer": "Néstor Kirchner’s native and primary language is **Spanish**.",
+      "gold_answer": "Russian",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Larry Bird associated with?",
+      "system_answer": "Larry Bird is associated with **basketball**.",
+      "gold_answer": "association football",
+      "score": 0.0
+    },
+    {
+      "question": "Who performed Jessica Jones?",
+      "system_answer": "The character Jessica Jones was portrayed by **Krysten Ritter** in the Marvel Cinematic Universe television series.",
+      "gold_answer": "Krysten Ritter",
+      "score": 1.0
+    },
+    {
+      "question": "Which city did Gordon Jackson die in?",
+      "system_answer": "Gordon Jackson passed away in **London, England**.",
+      "gold_answer": "Flensburg",
+      "score": 0.0
+    },
+    {
+      "question": "What is Alexander Hamilton famous for?",
+      "system_answer": "Alexander Hamilton (1755/1757 – 1804) is best known as one of the Founding Fathers of the United States. He was:\n\n1. **First Secretary of the Treasury** – He established the nation’s financial system, created the national bank, and set up a system of tariffs and taxes to pay off war debt.  \n2. **Author of the Federalist Papers** – Together with James Madison and John Jay, he wrote 85 essays that helped secure ratification of the U.S. Constitution.  \n3. **Key architect of the American political system** – His ideas helped shape the federal government’s structure, the separation of powers, and the role of the executive branch.  \n4. **Influential political theorist** – His writings on the necessity of a strong central government and a robust economy remain foundational to American political thought.",
+      "gold_answer": "De re militari",
+      "score": 0.0
+    },
+    {
+      "question": "Which university was Pablo Neruda educated at?",
+      "system_answer": "Pablo Neruda studied at the **University of Chile** (in Santiago), where he pursued a law degree before leaving to focus on his literary career.",
+      "gold_answer": "The Wharton School",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the Minister for Home Affairs?",
+      "system_answer": "I’m not sure which country you’re referring to. Could you let me know which country’s “Minister for Home Affairs” you’d like to know about?",
+      "gold_answer": "Danny Danon",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the developer of Purification Rundown?",
+      "system_answer": "The **Purification Rundown** was developed by **Dr. William S. R. (Bill) R.** He is a former U.S. Army physician and a pioneer in the field of detoxification and rehabilitation. The program was first introduced in the 1980s as a method to help people detox from various substances, and it has since been used in a variety of therapeutic settings.",
+      "gold_answer": "L. Ron Hubbard",
+      "score": 0.0
+    },
+    {
+      "question": "Which city is the headquarter of Canadian Broadcasting Corporation located in?",
+      "system_answer": "The Canadian Broadcasting Corporation (CBC) is headquartered in **Toronto, Ontario, Canada**.",
+      "gold_answer": "Universal City",
+      "score": 0.0
+    },
+    {
+      "question": "Who is Chiang Kai-shek's child?",
+      "system_answer": "Chiang Kai‑shek had several children, but the most well‑known is his son **Chiang Ching‑kuo** (1910 – 1988), who later served as President of the Republic of China (Taiwan).  \n\nOther children of Chiang Kai‑shek include:\n\n- **Chiang Wei‑kuo** (1919 – 2000), a former military officer.  \n- **Chiang Fang‑liang** (1918 – 2005), a daughter who was active in cultural and charitable work.  \n- **Chiang Hsiao‑wen** (1920 – 2005), another daughter who was involved in various social causes.  \n\nSo, if you’re referring to the most prominent child, it’s Chiang Ching‑kuo.",
+      "gold_answer": "Christopher Monck, 2nd Duke of Albemarle",
+      "score": 0.0
+    },
+    {
+      "question": "Which company is Big Mac produced by?",
+      "system_answer": "The Big Mac is produced and sold by **McDonald’s**.",
+      "gold_answer": "McDonald's",
+      "score": 1.0
+    },
+    {
+      "question": "Who is the author of Micrographia?",
+      "system_answer": "The author of *Micrographia* is **Robert Hooke**.",
+      "gold_answer": "Brothers Grimm",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the head coach of San Francisco Giants?",
+      "system_answer": "The head coach (i.e., the manager) of the San Francisco Giants is **Gabe Kapler**.",
+      "gold_answer": "Thiago Motta",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Lorenzo Lamas?",
+      "system_answer": "Lorenzo Lamas is a citizen of the **United States**.",
+      "gold_answer": "United Kingdom",
+      "score": 0.0
+    },
+    {
+      "question": "What is Charaka famous for?",
+      "system_answer": "Charaka is famous as one of the founding fathers of **Ayurveda**—the ancient Indian system of medicine. He authored the *Charaka Samhita*, a foundational Ayurvedic text that outlines medical theory, diagnosis, treatment, and ethical principles, and his work has influenced medical practice in India for millennia.",
+      "gold_answer": "A Wrinkle in Time",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Jadranka Kosor affiliated with?",
+      "system_answer": "Jadranka Kosor is a Roman Catholic.",
+      "gold_answer": "Church of Scotland",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Sam Cassell play?",
+      "system_answer": "Sam Cassell played as a **point guard** in the NBA.",
+      "gold_answer": "shooting guard",
+      "score": 0.0
+    },
+    {
+      "question": "What is the official language of Tampere?",
+      "system_answer": "The official language of Tampere is **Finnish**.",
+      "gold_answer": "Esperanto",
+      "score": 0.0
+    }
+  ]
+}

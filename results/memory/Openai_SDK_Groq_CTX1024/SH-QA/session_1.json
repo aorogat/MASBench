@@ -1,0 +1,610 @@
+{
+  "system": "Openai_SDK_Groq_CTX1024",
+  "split": "Accurate_Retrieval",
+  "session_id": "1",
+  "subtask": "SH-QA",
+  "category": "AR",
+  "runtime_sec": 414.76,
+  "questions": [
+    {
+      "question": "In what country is Normandy located?",
+      "system_answer": "Normandy is located in France.",
+      "gold_answer": "France",
+      "score": 0
+    },
+    {
+      "question": "When were the Normans in Normandy?",
+      "system_answer": "The Normans came to what is now Normandy in the late 9th and early 10th centuries, after a series of Viking raids and settlements along the French coast. By 911, the Viking leader Rollo was granted the land that became the Duchy of Normandy, and the Norman identity—Viking settlers who adopted the local language and culture—was firmly established. The Norman presence in Normandy continued through the 11th century, culminating in the famous Norman conquest of England in 1066. So, roughly speaking, the Normans were in Normandy from the early 900s until the late 1000s.",
+      "gold_answer": "10th and 11th centuries",
+      "score": 1
+    },
+    {
+      "question": "From which countries did the Norse originate?",
+      "system_answer": "The Norse—often called Vikings—were people from the **Scandinavian region**.  Their homeland was the area that today comprises:\n\n| Modern country | Historical Norse context |\n|----------------|--------------------------|\n| **Norway** | The western and northern parts of the Viking world; many of the earliest Norse settlers and raiders came from here. |\n| **Sweden** | The eastern coast and inland areas produced many long‑ship crews and traders; the Swedish “Varangians” also ventured into Russia. |\n| **Denmark** | A central hub for Viking raids along the British Isles and the North Sea; many of the most famous Norse leaders (e.g., Harald Bluetooth, Sweyn Forkbeard) were Danish. |\n\n**Iceland** was settled by Norse colonists (mainly from Norway) in the 9th–10th centuries, so while it is not a “country” of origin, it was a major Norse homeland.\n\nIn short, the Norse originated from the three core Scandinavian countries—Norway, Sweden, and Denmark.",
+      "gold_answer": "Denmark, Iceland and Norway",
+      "score": 0
+    },
+    {
+      "question": "Who was the Norse leader?",
+      "system_answer": "The term “Norse leader” can refer to many different figures, depending on the time period and region you’re interested in. Below are a few of the most famous Norse (Viking) leaders, along with a quick snapshot of what they’re known for:\n\n| Leader | Time Period | Key Achievements / Roles |\n|--------|-------------|--------------------------|\n| **Rollo (Rollo of Normandy)** | Early 10th c. | Viking chieftain who settled in what became Normandy; granted land by the Frankish king Charles the Simple in 911. |\n| **Harald Hardrada** | 10th–11th c. | King of Norway (1046–1066); led the famous “Varangian Guard” in Byzantium and attempted to reclaim the English throne. |\n| **Erik the Red** | 10th c. | Norse explorer who founded the first Norse settlement in Greenland (c. 982). |\n| **Leif Erikson** | 10th c. | Explorer who reached North America (Vinland) around 1000 AD, predating Columbus by nearly a millennium. |\n| **Sweyn Forkbeard** | 11th c. | King of Denmark (c. 986–1014); briefly ruled England (1013–1014) before his son Cnut the Great. |\n| **Ivar the Boneless** | 9th c. | Viking leader who participated in the Great Heathen Army’s invasion of England (c. 865–871). |\n| **Björn Ironside** | 9th c. | Legendary Swedish Viking king, reputed to have led raids along the Mediterranean. |\n| **Olaf Tryggvason** | 10th c. | King of Norway (995–1000); known for his missionary zeal and military campaigns. |\n\nIf you had a particular region, era, or type of leadership in mind (e.g., a king, a warlord, a chieftain, or a naval commander), let me know and I can narrow it down further!",
+      "gold_answer": "Rollo",
+      "score": 0
+    },
+    {
+      "question": "What century did the Normans first gain their separate identity?",
+      "system_answer": "The Normans began to form a distinct, “Norman” identity in the **10th century**.  \n\n- **Early 900s**: Viking raiders from Scandinavia (mainly Norway, Sweden, and Denmark) started settling along the French coast.  \n- **911**: The Viking leader **Rollo** was granted the land that became the Duchy of Normandy by the Frankish king Charles the Simple.  \n- By the mid‑10th century, these settlers had adopted the local language, customs, and Christianity, and they were recognized as a separate people—hence the name “Normans” (from *Normanni*, “Northmen”).  \n\nSo the 10th century is when the Normans first gained a distinct identity separate from their Scandinavian origins.",
+      "gold_answer": "10th century",
+      "score": 1
+    },
+    {
+      "question": "Who was the duke in the battle of Hastings?",
+      "system_answer": "The duke who led the Norman forces at the Battle of Hastings in 1066 was **William I of England**, better known as **William the Conqueror**.  \n\n- **Title before Hastings**: Duke of Normandy (and later Duke of Brittany).  \n- **Role at Hastings**: He commanded the Norman army that defeated King Harold II of England, securing his claim to the English throne.  \n\nAfter the victory, William was crowned King of England on Christmas Day 1066, marking the beginning of Norman rule in England.",
+      "gold_answer": "William the Conqueror",
+      "score": 1
+    },
+    {
+      "question": "Who ruled the duchy of Normandy",
+      "system_answer": "### The Dukes of Normandy (from its founding to its absorption into the French crown)\n\n| Duke | Reign | Notes |\n|------|-------|-------|\n| **Rollo (Rollo of Normandy)** | 911 – 928 | First Viking leader granted the land that became Normandy by King Charles the Simple. |\n| **William I (William Longsword)** | 928 – 942 | Rollo’s son; consolidated Norman power. |\n| **Richard I (Richard the Fearless)** | 942 – 996 | Expanded the duchy’s influence. |\n| **Richard II (Richard the Good)** | 996 – 1026 | Continued consolidation; father of William II. |\n| **William II (William the Bastard)** | 1026 – 1035 | Son of Richard II; his reign was short. |\n| **Richard III (Richard the Red)** | 1035 – 1047 | Brother of William II; restored stability. |\n| **William III (William the Conqueror)** | 1047 – 1087 | Duke of Normandy before conquering England in 1066; became King of England. |\n| **Robert I (Robert Curthose)** | 1087 – 1106 | William III’s eldest son; retained Normandy after William’s death. |\n| **Henry I (Henry Beauclerc)** | 1106 – 1135 | Younger son of William III; became King of England in 1100, ruling both realms. |\n| **William IV (William the Young)** | 1135 – 1154 | Henry I’s son; lost Normandy to the French crown in 1154. |\n| **Henry II (Henry Plantagenet)** | 1154 – 1189 | After the Treaty of Falaise, Normandy became part of the Angevin Empire under the English crown. |\n| **Richard I (Richard the Lionheart)** | 1189 – 1199 | Continued Angevin rule; lost Normandy to France in 1204. |\n| **John I (John Lackland)** | 1199 – 1216 | Last English duke of Normandy; lost the duchy to France in 1204. |\n\n**Key points**\n\n- The duchy was founded in 911 by Rollo and remained a semi‑independent Norman state until 1204, when it was fully incorporated into the French crown.\n- From 1066 onward, the same individuals who ruled Normandy also became Kings of England (William the Conqueror, Henry I, etc.), creating the Angevin Empire that spanned both sides of the English Channel.\n- After 1204, Normandy ceased to exist as a duchy; it became a French province under the Capetian monarchy.",
+      "gold_answer": "Richard I",
+      "score": 1
+    },
+    {
+      "question": "What religion were the Normans",
+      "system_answer": "**The Normans were Roman Catholic Christians.**\n\n| Stage | What it means | How it happened |\n|-------|---------------|-----------------|\n| **Early Viking settlers (9th c.)** | Pagan Norse (heathen) religion | The Norse raiders who first settled in what became Normandy followed the traditional Norse pantheon (Odin, Thor, etc.). |\n| **Christianization (late 9th – 10th c.)** | Adoption of Roman Catholicism | 1. **Rollo’s treaty (911)** – The Viking leader Rollo was granted land by the Frankish king Charles the Simple on the condition that he convert to Christianity and defend the realm. 2. **Missionary work** – Frankish missionaries (e.g., Saint Anselm of Canterbury, Saint Remigius) worked among the Norse settlers. 3. **Integration with the Frankish Church** – The new duchy was incorporated into the ecclesiastical structure of the Frankish kingdom, adopting the Latin rite. |\n| **Norman identity (10th – 11th c.)** | Fully Catholic, Latin‑rite Christians | By the time of William the Conqueror (1066), the Normans were indistinguishable from the rest of the French Catholic population. They built churches, monasteries, and followed the customs of the Roman Church. |\n| **Later periods** | Continued Catholicism | Even after the Norman conquest of England, the Normans in England remained Catholic until the Reformation in the 16th century. |\n\n**Key points**\n\n- The Normans’ conversion was a political and cultural process that aligned them with the powerful Frankish (and later French) Church.  \n- Their religious identity was Roman Catholicism, following the Latin rite, not the Eastern Orthodox or any other Christian tradition.  \n- The shift from paganism to Catholicism helped cement their legitimacy as rulers in both Normandy and, after 1066, in England.",
+      "gold_answer": "Catholic",
+      "score": 1
+    },
+    {
+      "question": "What is the original meaning of the word Norman?",
+      "system_answer": "**Norman** – *original meaning*\n\n| Language | Root | Literal sense | How it came to be used |\n|----------|------|---------------|------------------------|\n| **Old Norse** | *norrmann* | “man from the north” | The word literally described a person who came from the northern lands of Scandinavia (Norway, Sweden, Denmark). |\n| **Old English** | *norþmann* | “North‑man” | Anglo‑Saxons used the same term for Scandinavian raiders and settlers. |\n| **Old French** | *Normand* | “North‑man” | When the Viking leaders settled in the region that became Normandy, the local Frankish population called them “Normands” – literally “men from the north.” |\n\n**Key points**\n\n1. **Geographic origin** – The term refers to people coming from the north of Europe (Scandinavia).  \n2. **Cultural identity** – It was first applied to the Norse Vikings who raided and later settled the French coast.  \n3. **Evolution** – Over time “Norman” became the name of the people who formed the Duchy of Normandy and later the Norman conquerors of England, but the original sense was simply “North‑man” or “Norseman.”",
+      "gold_answer": "Viking",
+      "score": 1
+    },
+    {
+      "question": "When was the Latin version of the word Norman first recorded?",
+      "system_answer": "",
+      "gold_answer": "9th century",
+      "score": 0
+    },
+    {
+      "question": "When was the Duchy of Normandy founded?",
+      "system_answer": "**1.  When was the Latin version of the word “Norman” first recorded?**  \n\n| Date | Document | Latin form | Context |\n|------|----------|------------|---------|\n| **c. 911 CE** | *Treaty of Saint‑Clair‑sur‑Epte* (the charter that granted Rollo the land that became Normandy) | **Normannus** (plural *Normanni*) | The charter, written in Latin, refers to the Viking settlers as “Normanni” – literally “men from the north.” This is the earliest surviving Latin attestation of the word. |\n| **10th century** | Various Frankish charters and chronicles | **Normannus / Normannus** | The term appears repeatedly in the 10th‑century Latin sources that describe the Norse settlers and their descendants. |\n\n> **Bottom line:** The Latin form *Normannus* (plural *Normanni*) is first attested in the 911 charter of the Treaty of Saint‑Clair‑sur‑Epte. It is the earliest known Latin use of the word that later became “Norman.”\n\n---\n\n**2.  When was the Duchy of Normandy founded?**  \n\n| Year | Event | Key figure | Significance |\n|------|-------|------------|--------------|\n| **911 CE** | *Treaty of Saint‑Clair‑sur‑Epte* | Rollo (Rollo of Normandy) | The treaty granted Rollo and his followers land along the lower Seine in exchange for protection against Viking raids. This land later became the Duchy of Normandy. |\n| **912 CE** | Rollo’s formal investiture | Rollo | Rollo was officially recognized as the *Dux Normannorum* (Duke of the Normans) by the Frankish king Charles the Simple, cementing the political status of the territory. |\n\n> **Bottom line:** The Duchy of Normandy was founded in **911 CE** with the Treaty of Saint‑Clair‑sur‑Epte, and its formal recognition as a duchy followed in 912 when Rollo was invested as duke.",
+      "gold_answer": "911",
+      "score": 1
+    },
+    {
+      "question": "Who did Rollo sign the treaty of Saint-Clair-sur-Epte with?",
+      "system_answer": "**Rollo signed the Treaty of Saint‑Clair‑sur‑Epte with the Frankish king Charles the Simple.**  \n\n- **Primary parties:**  \n  - **Rollo** (the Viking leader who would become the first Duke of Normandy)  \n  - **Charles the Simple** (the reigning king of the West Frankish realm, later known as the Kingdom of France)\n\n- **Other witnesses (who helped formalise the agreement):**  \n  - The **Bishop of Bayeux**  \n  - The **Bishop of Rouen**  \n  - The **Bishop of Saint‑Étienne** (in the region of the treaty)\n\nThe treaty, signed in 911 CE, granted Rollo and his followers land along the lower Seine in exchange for their protection against further Viking raids and their conversion to Christianity. The king’s signature was the decisive act that turned the Viking settlement into the political entity that would become the Duchy of Normandy.",
+      "gold_answer": "King Charles III",
+      "score": 0
+    },
+    {
+      "question": "What river originally bounded the Duchy",
+      "system_answer": "The original territory that became the Duchy of Normandy was a narrow strip of land along the **Seine River**.  \n- **Southern boundary:** The Seine ran along the southern edge of the duchy, forming a natural defensive line against the English Channel and the surrounding Frankish territories.  \n- **Northern boundary:** While the Oise and other smaller rivers marked the northern limits, the Seine was the principal river that defined the duchy’s core area and served as its most significant geographic boundary.",
+      "gold_answer": "Seine",
+      "score": 0
+    },
+    {
+      "question": "Who upon arriving gave the original viking settlers a common identity?",
+      "system_answer": "The Viking settlers who arrived in what would become Normandy were given a **common identity by their own leader, Rollo**.\n\n- **Rollo** (also called Rollo of Normandy) was the chief Viking chieftain who led the first group of Norsemen into the lower Seine region in the early 9th century.  \n- When he signed the Treaty of Saint‑Clair‑sur‑Epte in 911 CE with the Frankish king Charles the Simple, Rollo was formally recognized as the *Dux Normannorum* (Duke of the Normans).  \n- By accepting the title, land, and Christian faith, Rollo unified the disparate Viking raiders into a single political entity.  \n- The settlers came to be known collectively as **Normans**—literally “men from the north”—a name that stuck and became the identity of the new duchy.\n\nSo, **Rollo** is the figure who, upon arriving and establishing his rule, gave the original Viking settlers a shared identity as Normans.",
+      "gold_answer": "Rollo",
+      "score": 1
+    },
+    {
+      "question": "What was the Norman religion?",
+      "system_answer": "**Norman religion – a quick snapshot**\n\n| Period | Religious identity | Key facts |\n|--------|--------------------|-----------|\n| **Early 9th century (arrival)** | **Norse paganism** (animism, worship of Odin, Thor, etc.) | The Viking raiders who first landed in the Seine valley were still practicing their traditional Norse polytheistic faith. |\n| **Late 9th – early 10th century** | **Christian conversion** (Roman Catholicism) | 1. **Treaty of Saint‑Clair‑sur‑Epte (911 CE)** – Rollo was required to convert to Christianity and to baptise his followers. 2. The Frankish king Charles the Simple and the local bishops (Bishops of Bayeux, Rouen, etc.) oversaw the process. 3. The new duchy was granted a bishopric (Bishop of Bayeux) and a cathedral (Bayeux Cathedral). |\n| **Mid‑10th century onward** | **Roman Catholicism** (dominant faith) | The Normans became fully integrated into the Latin Christian world. They built churches, monasteries, and adopted the liturgical practices of the Western Church. |\n| **Cultural note** | **Syncretism** | While the Normans were officially Catholic, some Norse pagan motifs (e.g., runic inscriptions, certain folk customs) lingered in art and folklore for a few generations. |\n\n**Bottom line:**  \n- The original Viking settlers were pagan.  \n- By the time the Duchy of Normandy was founded (911 CE), the Normans had converted to **Roman Catholic Christianity** under the auspices of the Frankish king and the Church.  \n- From then on, Catholicism was the dominant, official religion of the Norman people.",
+      "gold_answer": "Catholicism",
+      "score": 1
+    },
+    {
+      "question": "What part of France were the Normans located?",
+      "system_answer": "**Where the Normans were located in France**\n\n| Geographic scope | Modern equivalent | Key features |\n|------------------|-------------------|--------------|\n| **North‑western France** | The entire region of **Normandy** (Normandie) | • Bordered by the English Channel to the north, the Seine River to the south, and the Atlantic Ocean to the west. <br>• The duchy’s core was the lower Seine valley, including the cities of **Rouen** (capital), **Caen**, **Le Mans**, and **Bayeux**. <br>• Modern departments that were part of the original duchy: Calvados, Manche, Orne, Eure, Seine‑Maritime, and parts of the Eure‑Escaut. |\n| **Historical context** | The Normans settled in this area after the **Treaty of Saint‑Clair‑sur‑Epte (911 CE)**, which granted them land along the lower Seine in exchange for protection against further Viking raids. | • The region’s strategic position on the coast made it a natural buffer between the Frankish kingdom and the sea. <br>• The fertile plains and access to the sea facilitated the growth of a powerful, maritime‑oriented duchy. |\n\n**Bottom line:** The Normans were located in what is today the **Normandy region of north‑western France**, centered on the lower Seine valley and extending to the English Channel.",
+      "gold_answer": "north",
+      "score": 1
+    },
+    {
+      "question": "What was one of the Norman's major exports?",
+      "system_answer": "**One of the Normans’ major exports was salt.**\n\n- **Why salt?**  \n  - The low‑lying marshlands along the Seine and the English Channel were ideal for salt evaporation.  \n  - Normandy’s saltworks (especially around the towns of **Caen**, **Bayeux**, and the **Pays de Caux**) produced large quantities of sea‑salt.  \n  - Salt was essential for preserving food, seasoning, and for many industrial uses, making it a highly valuable commodity in medieval Europe.\n\n- **Impact**  \n  - The salt trade helped finance the duchy’s economy and funded the construction of castles, churches, and the navy that later enabled the Norman conquest of England.  \n  - Salt was traded throughout France, the Low Countries, and even as far as the Mediterranean, cementing Normandy’s reputation as a major commercial hub.\n\nSo, while the Normans are often remembered for their military exploits, their **salt production** was a cornerstone of their economic power.",
+      "gold_answer": "fighting horsemen",
+      "score": 0
+    },
+    {
+      "question": "Who was the Normans' main enemy in Italy, the Byzantine Empire and Armenia?",
+      "system_answer": "**Short answer**\n\n- **In Italy:** The Normans’ main enemy was the **Byzantine Empire** (the Eastern Roman Empire).  \n- **In the Byzantine Empire itself:** The Normans were the principal threat to the empire’s southern provinces.  \n- **In Armenia:** The Normans’ main adversary was the **Byzantine Empire** (and, to a lesser extent, the Armenian Kingdom of Cilicia when the two sides clashed).\n\n---\n\n### Why the Byzantine Empire shows up in all three places\n\n| Context | Why the Byzantines were the main enemy |\n|---------|----------------------------------------|\n| **Southern Italy (Norman conquest, 11th c.)** | The Byzantines still controlled large swaths of southern Italy (Apulia, Calabria, and the Mezzogiorno). They were the political and military power that the Normans had to defeat in order to establish the County (later Duchy) of Apulia and the Kingdom of Sicily. |\n| **Byzantine Empire (Norman incursions, 11th–12th c.)** | The Normans, after conquering southern Italy, turned their attention northward. They raided and eventually captured key Byzantine territories such as the city of **Brindisi** and the **Sicilian** coast, threatening the empire’s southern flank. |\n| **Armenia (Crusader–Norman interactions, 12th c.)** | The Normans, as part of the Crusader states, often found themselves at odds with the **Byzantine Empire** over control of the eastern Mediterranean. In Armenia, the Byzantine Empire was the dominant regional power, and the Normans’ expansionist ambitions brought them into conflict with it (and occasionally with the Armenian Kingdom of Cilicia, which was a Byzantine ally). |\n\n---\n\n### A quick timeline\n\n| Year | Event | Main enemy |\n|------|-------|------------|\n| **1016–1040** | Norman conquest of southern Italy | Byzantine Empire (and Lombards) |\n| **1061–1071** | Norman raids into Byzantine territories (e.g., Brindisi) | Byzantine Empire |\n| **1099–1122** | Crusader–Norman campaigns in the Levant | Byzantine Empire (and sometimes Armenian Cilicia) |\n\n---\n\n### Bottom line\n\nThe **Byzantine Empire** was the dominant adversary for the Normans in all three regions you mentioned. In Italy, it was the empire they had to defeat to establish their own rule; in the empire itself, it was the threat they posed; and in Armenia, it was the regional power that the Normans had to contend with as they expanded their influence in the eastern Mediterranean.",
+      "gold_answer": "Seljuk Turks",
+      "score": 0
+    },
+    {
+      "question": "When did Herve serve as a Byzantine general?",
+      "system_answer": "I’m not aware of any Byzantine general named **Herve** (or *Hervé*).  The most likely mix‑up is with **Heraclius** (also spelled *Herakleios*), who was the Byzantine emperor from 610 CE to 641 CE and led the empire in a series of campaigns against the Sassanid Persians and the early Muslim conquests.  \n\nIf you had a different figure in mind—perhaps a lesser‑known commander, a Norman who served the Byzantines, or a medieval chronicler’s name—could you provide a bit more context (e.g., a time period, a battle, or a region)?  With that, I can look up the correct individual and give you the dates of his service.",
+      "gold_answer": "1050s",
+      "score": 0
+    },
+    {
+      "question": "When did Robert Crispin go up against the Turks?",
+      "system_answer": "**Short answer:**  \nRobert Crispin never fought the Turks. He was a Norman knight who fought in England (most famously at the Battle of Hastings in 1066) and died in 1070; there is no historical record of him ever campaigning against the Ottoman or Seljuk Turks.\n\n---\n\n### Why the confusion might arise\n\n| Possible source of confusion | Explanation |\n|------------------------------|-------------|\n| **Name similarity** | “Crispin” is a Norman name; some later medieval chroniclers sometimes mixed up Norman knights with other figures. |\n| **Norman–Turk interactions** | The Normans did fight the Turks in the 12th‑13th centuries (e.g., the Crusader states, the Battle of Myriokephalon 1176, the Battle of Hattin 1187). But those campaigns involved later Norman leaders such as **Raymond of Toulouse** or **Bohemond of Taranto**, not Robert Crispin. |\n| **Misattribution of dates** | The 12th‑century Norman campaigns against the Seljuks and later the Ottomans are often conflated with earlier Norman exploits in England. |\n\n---\n\n### Quick facts about Robert Crispin\n\n| Year | Event | Notes |\n|------|-------|-------|\n| **1066** | Battle of Hastings | Robert Crispin fought on the Norman side; he was a prominent knight under William the Conqueror. |\n| **1070** | Death | He was killed in a skirmish in England (some accounts say he was slain by a local lord’s men). |\n\n---\n\n### Bottom line\n\n- **No record** of Robert Crispin ever engaging the Turks.  \n- His military career was confined to England and the Norman conquest of that island.  \n- If you’re thinking of a Norman who fought the Turks, you might be recalling a later figure such as **Raymond IV of Toulouse** or **Bohemond I of Taranto**.",
+      "gold_answer": "1060s",
+      "score": 0
+    },
+    {
+      "question": "Who ruined Roussel de Bailleul's plans for an independent state?",
+      "system_answer": "",
+      "gold_answer": "Alexius Komnenos",
+      "score": 0
+    },
+    {
+      "question": "What was the name of the Norman castle?",
+      "system_answer": "**Who ruined Roussel de Bailleul’s plans?**  \n- **Alexios I Komnenos** – The Byzantine emperor who defeated Roussel’s forces and captured his stronghold, ending the Norman attempt to carve out an independent state in the Balkans.\n\n**What was the name of the Norman castle?**  \n- The castle that Roussel used as his base was called **Bailleul** (often referred to as *Bailleul Castle*). It was a Norman‑style fortress situated near Thessalonica, which he had fortified after arriving in the Byzantine Empire.",
+      "gold_answer": "Afranji",
+      "score": 0
+    },
+    {
+      "question": "Who was the leader when the Franks entered the Euphrates valley?",
+      "system_answer": "The Crusader army that crossed the Euphrates valley in 1098 was led by **Godfrey of Bouillon**.  \nHe was the senior commander of the First Crusade’s forces, and it was under his overall leadership that the Franks entered the Euphrates valley, crossed the river, and moved on to the city of Antioch.",
+      "gold_answer": "Oursel",
+      "score": 0
+    },
+    {
+      "question": "Who did the Normans team up with in Anatolia?",
+      "system_answer": "**Answer**\n\nThe Normans (the Crusader forces that had settled in the Principality of Antioch) allied themselves with the **Seljuk Turks** while operating in Anatolia.\n\n---\n\n### Why the Seljuks?\n\n| Context | Reason |\n|---------|--------|\n| **Geography** | Antioch lay on the frontier of the Seljuk‑controlled Anatolia. |\n| **Political necessity** | Bohemond of Taranto, the Norman ruler of Antioch, signed a treaty with Seljuk Sultan Malik Shah in 1098 to secure his position against both Byzantine and local Arab rivals. |\n| **Military cooperation** | The alliance allowed the Normans to use Seljuk forces (or at least secure safe passage) when moving into Anatolia, and the Seljuks benefited from Norman military expertise and a buffer against Byzantine advances. |\n\n---\n\n### Quick historical snapshot\n\n- **1098** – Bohemond signs a treaty with Seljuk Sultan Malik Shah, agreeing to pay tribute and cooperate against common enemies.  \n- **Subsequent years** – The Normans of Antioch and the Seljuks occasionally coordinated campaigns, especially against the Byzantine Empire and other local powers.  \n\nSo, in Anatolia, the Normans’ principal ally was the **Seljuk Turks**.",
+      "gold_answer": "Turkish forces",
+      "score": 1
+    },
+    {
+      "question": "What were the origins of the Raouliii family?",
+      "system_answer": "**Short answer:**  \nThe Raouliii were a Norman‑French noble house that sprang from the aristocracy of **Normandy** (in northern France).  Their name is the Latin plural of the given name *Raoul* (French for “Ralph” or “Rauol”), and the family’s early members were part of the Norman aristocracy that took part in the First Crusade and later settled in the Crusader states (especially the Kingdom of Jerusalem and the Principality of Antioch).  A later branch of the family also made its way to southern Italy, where it became known as the **Rauoli** of the Kingdom of Sicily.",
+      "gold_answer": "Norman mercenary",
+      "score": 0
+    },
+    {
+      "question": "What was the name of the count of Apulia",
+      "system_answer": "The most famous “Count of Apulia” was **Robert Guiscard** (c. 1015 – 1085).  \nHe was a Norman adventurer who, after a series of campaigns in southern Italy, was granted the title **Count of Apulia and Calabria** by the Holy Roman Emperor Henry II in 1059.  Guiscard’s conquests laid the foundation for the Norman Kingdom of Sicily and made him one of the most powerful rulers in medieval Italy.",
+      "gold_answer": "Robert Guiscard",
+      "score": 1
+    },
+    {
+      "question": "When did Dyrrachium  fall to the Normans?",
+      "system_answer": "**Dyrrachium (modern Durrës, Albania) fell to the Normans in 1081.**\n\n- **Who:** The Norman commander was **Robert Guiscard** (Count of Apulia and Calabria), leading a force that had already taken Bari and other parts of southern Italy.\n- **Why:** Guiscard’s campaign in the Balkans was part of his ambition to extend Norman influence into the Byzantine Empire’s western provinces.\n- **What happened:** After a brief siege, the Norman army captured the city and its fortress, securing a strategic foothold on the Adriatic coast.  \n- **Aftermath:** The capture of Dyrrachium paved the way for the subsequent Norman conquest of Thessalonica in 1082 and the brief establishment of a Norman presence in the Balkans.\n\nSo, the key date is **1081**.",
+      "gold_answer": "1082",
+      "score": 0
+    },
+    {
+      "question": "How many men were in Robert's army?",
+      "system_answer": "**Answer**\n\nThe Norman army that captured Dyrrachium in 1081 was **roughly 3,000 men** in total.\n\n| Component | Approx. number |\n|-----------|----------------|\n| Heavy cavalry (Norman knights) | 1,000 |\n| Light infantry (spearmen, archers, etc.) | 1,000 |\n| Auxiliary troops (local allies, mercenaries) | 1,000 |\n\n> **Why 3,000?**  \n> Contemporary chronicles (e.g., the *Chronicon* of William of Tyre and the *Annales* of the *Chronicon* of the *Annales de la Ville de Paris*) consistently describe Guiscard’s forces as “a few thousand” men. Modern historians (e.g., John H. Pryor, *The Norman Campaigns in the Balkans*, 2003) estimate the strength at about 3,000–3,500, based on logistical constraints and the size of the siege equipment he brought.\n\n> **What if the number is higher?**  \n> Some later medieval writers inflated the figure to 5,000 or more, but those numbers are generally considered exaggerations. The consensus among scholars is that 3,000 is the most realistic estimate for the size of Guiscard’s army at Dyrrachium.",
+      "gold_answer": "30,000",
+      "score": 0
+    },
+    {
+      "question": "Where did the Normans and Byzantines sign the peace treaty?",
+      "system_answer": "The peace treaty between the Norman commander **Robert Guiscard** and the Byzantine emperor **Alexios I Komnenos** was signed in the city of **Dyrrachium** (modern Durrës, Albania).  \n\nAfter Guiscard’s defeat at the Battle of Dyrrachium in 1081, the two sides met on the city’s walls and negotiated the terms that ended the brief Norman incursion into the Balkans. The treaty was formally concluded there, with the city serving as the neutral ground for the negotiations.",
+      "gold_answer": "Deabolis",
+      "score": 0
+    },
+    {
+      "question": "Who was Robert's son?",
+      "system_answer": "**Robert Guiscard’s son was Roger Borsa** (c. 1060 – 1111).  \nRoger Borsa succeeded his father as Count of Apulia and Calabria after Guiscard’s death in 1085.  \n\n(For completeness, Robert Guiscard also had another notable son, **Bohemond of Taranto**, who became the first Prince of Antioch.)",
+      "gold_answer": "Bohemond",
+      "score": 0
+    },
+    {
+      "question": "What river was Petrela located by?",
+      "system_answer": "Petrela was situated on the banks of the **river Vrbas**.",
+      "gold_answer": "Deabolis",
+      "score": 0
+    },
+    {
+      "question": "When did the Normans attack Dyrrachium?",
+      "system_answer": "The Normans launched their assault on Dyrrachium in **1081**.  \nDuring the campaign that year, Robert Guiscard’s forces moved up the Adriatic coast, captured the city, and then negotiated the peace treaty with Emperor Alexios I Komnenos.",
+      "gold_answer": "1185",
+      "score": 0
+    },
+    {
+      "question": "What was the naval base called?",
+      "system_answer": "The Normans used the **harbor at Dyrrachium** itself as their naval base.  \nIn contemporary sources it is simply referred to as the **Port of Dyrrachium** (modern Durrës, Albania). This fortified harbor on the Adriatic coast served as the staging point for the Norman fleet that sailed up the coast in 1081.",
+      "gold_answer": "Dyrrachium",
+      "score": 1
+    },
+    {
+      "question": "Where was Dyrrachium located?",
+      "system_answer": "**Dyrrachium** (modern Durrës) was an ancient Greek‑Roman city situated on the western coast of the Balkan Peninsula, in what is today **Albania**.  \n\n- **Geographic setting**: It lies on the Adriatic Sea, just north of the mouth of the Vjosa (Vjosa) River, about 30 km (18 mi) north of the capital, Tirana.  \n- **Coordinates**: 41° 12′ N latitude, 19° 12′ E longitude.  \n- **Historical context**: In antiquity it was a major port of the Illyrian kingdom, later a key Roman and Byzantine stronghold, and the site of the Norman siege in 1081.  \n\nSo, Dyrrachium was a coastal city on the Adriatic Sea in present‑day Albania.",
+      "gold_answer": "the Adriatic",
+      "score": 1
+    },
+    {
+      "question": "Who did Emma Marry?",
+      "system_answer": "**Emma of Normandy** (c. 1016 – 1077) was a key figure in the Norman‑English world of the 11th century.  \nShe married twice:\n\n| Marriage | Spouse | Dates | Significance |\n|----------|--------|-------|--------------|\n| 1️⃣ | **William I of England** (the Conqueror) | 1042 – 1051 (until William’s death) | Emma became Queen of England and a powerful regent for her son, William II. |\n| 2️⃣ | **Henry I of France** | 1054 – 1076 (until Henry’s death) | The marriage linked the Norman and Capetian houses, strengthening Norman influence in France. |\n\nSo, Emma married **William the Conqueror** first, and after his death she married **Henry I of France**.",
+      "gold_answer": "King Ethelred II",
+      "score": 0
+    },
+    {
+      "question": "Who was Emma's brother?",
+      "system_answer": "Emma of Normandy’s brother was **Robert I of Normandy** (c. 1010 – 1076), also known as **Robert the Magnificent**.  \n\n- **Family background**: Emma and Robert were both children of **Richard I, Duke of Normandy** and his wife **Gunnor**.  \n- **Robert’s role**: He succeeded his father as Duke of Normandy in 1035, ruling until his death in 1076.  \n- **Connection to Emma**: Their marriage alliances (Emma first to William I of England, then to Henry I of France) helped cement Norman influence across England, Normandy, and France, while Robert’s reign kept Normandy stable during this period.",
+      "gold_answer": "Duke Richard II",
+      "score": 0
+    },
+    {
+      "question": "To where did Ethelred flee?",
+      "system_answer": "Ethelred II, the “Unready” king of England, fled to **the court of the French king in Paris** after the Danish forces captured London in 1013. He sought refuge and support from the French monarch, who was his cousin through the Norman line.",
+      "gold_answer": "Normandy",
+      "score": 0
+    },
+    {
+      "question": "Who kicked Ethelred out?",
+      "system_answer": "Ethelred II was “kicked out” of England by the **Danish invaders led by Sweyn Forkbeard**.  \nAfter Sweyn’s forces captured London in 1013, Ethelred fled to the court of the French king in Paris, effectively ending his reign until his son, Æthelstan, later reclaimed the throne.",
+      "gold_answer": "Sweyn Forkbeard",
+      "score": 1
+    },
+    {
+      "question": "Who was Edward the Confessor's half-brother?",
+      "system_answer": "Edward the Confessor’s half‑brother was **Æthelred the Unready** (Æthelred II).  \n\n- **Family link**: Both were sons of **Æthelred I** (the father of Edward’s father, Æthelred the Unready).  \n- **Half‑relationship**: Edward’s mother, **Ælfgifu of York**, was a daughter of Æthelred I, while Æthelred the Unready was a son of Æthelred I from a different marriage.  \n- **Historical context**: Æthelred the Unready reigned as king of England from 978 to 1013 and again from 1014 to 1016, preceding Edward’s own reign (1042‑1066).",
+      "gold_answer": "Harthacnut",
+      "score": 0
+    },
+    {
+      "question": "When did Edward return?",
+      "system_answer": "Edward the Confessor returned to England in **1042**.  \n\nAfter his brother Æthelred the Unready died in 1016, Edward spent most of his life in exile (first in Normandy, then in the court of the Holy Roman Emperor). In 1041, following the death of the young king Harthacnut and the political turmoil that followed, Edward was invited back by the English nobles and the Archbishop of Canterbury. He arrived in England in the spring of **1042** and was crowned king on 25 May 1042.",
+      "gold_answer": "1041",
+      "score": 0
+    },
+    {
+      "question": "Who did Edward make archbishop of Canterbury?",
+      "system_answer": "Edward the Confessor appointed **Thomas of Canterbury** (also known as **Thomas of Canterbury, Bishop of Rochester**) as Archbishop of Canterbury. He was consecrated in 1045 and served until his death in 1060.",
+      "gold_answer": "Robert of Jumièges",
+      "score": 0
+    },
+    {
+      "question": "Where did Harold II die?",
+      "system_answer": "Harold II (Harold Godwinson) was killed **at the Battle of Hastings** on 14 October 1066, near the town of **Hastings** on England’s south‑east coast (East Sussex). The battle took place on the hill overlooking the town, where Harold’s forces were defeated by William the Conqueror’s Norman army.",
+      "gold_answer": "Battle of Hastings",
+      "score": 1
+    },
+    {
+      "question": "Who killed Harold II?",
+      "system_answer": "Harold II was killed by the Norman forces of **William the Conqueror** (William I of England) during the Battle of Hastings on 14 October 1066. The Norman army’s spear thrusts and arrows struck Harold, and he fell on the battlefield near Hastings, ending his reign.",
+      "gold_answer": "William II",
+      "score": 0
+    },
+    {
+      "question": "When was the Battle of Hastings?",
+      "system_answer": "The Battle of Hastings took place on **14 October 1066**.",
+      "gold_answer": "1066",
+      "score": 1
+    },
+    {
+      "question": "Who was the ruling class ahead of the Normans?",
+      "system_answer": "**Before the Normans arrived, England was ruled by an Anglo‑Saxon aristocracy.**  \n\n- **The king** (e.g., Edward the Confessor, Harold Godwinson) sat at the centre of power.  \n- **The Witan** (the council of nobles and bishops) advised the king and had a say in major decisions.  \n- **The high‑ranking nobles**—the earls, ealdormen, and the powerful families such as the Godwins, the Leofs, and the Wulfs—held large estates, commanded armies, and administered the shires.  \n- **The clergy** (bishops and abbots) also wielded significant influence, both spiritually and politically.\n\nSo the ruling class ahead of the Normans was essentially the Anglo‑Saxon nobility and the king’s court, who governed England until William the Conqueror’s victory at Hastings in 1066.",
+      "gold_answer": "Anglo-Saxons",
+      "score": 1
+    },
+    {
+      "question": "What was the Anglo-Norman language's final form?",
+      "system_answer": "**Anglo‑Norman’s “final form” was its Late‑Middle‑Norman stage, which survived in England until the mid‑14th century.**  \n\n- **Late Anglo‑Norman (c. 1200‑1350)** – By this time the dialect had absorbed many English words and was heavily influenced by the local English speech. It was still the language of the court, the church, and the legal system, but it was increasingly being written in a more “English‑like” orthography.  \n\n- **Disappearance** – After the 14th century, Anglo‑Norman fell out of use as a literary and administrative language. Its vocabulary and grammatical features were absorbed into Middle English, which itself evolved into Early Modern English by the 16th century.  \n\nSo, the last distinct form of Anglo‑Norman was the Late‑Middle‑Norman dialect that persisted until the 1300s, after which it was effectively replaced by Middle English.",
+      "gold_answer": "Modern English",
+      "score": 0
+    },
+    {
+      "question": "In what year did the Norman's invade at Bannow Bay?",
+      "system_answer": "The Normans first landed at **Bannow Bay in County Wexford, Ireland, in 1169**. This initial landing, led by Richard de Clare (Strongbow), marked the beginning of the Norman invasion of Ireland.",
+      "gold_answer": "1169",
+      "score": 1
+    },
+    {
+      "question": "What country did the Normans invade in 1169?",
+      "system_answer": "They invaded **Ireland** in 1169.",
+      "gold_answer": "Ireland",
+      "score": 1
+    },
+    {
+      "question": "What culture did the Normans combine with in Ireland?",
+      "system_answer": "The Normans blended their own **feudal, Latin‑based culture** with the **native Gaelic Irish culture** that had been in Ireland for centuries.  \n\n- **Gaelic Irish culture** – The indigenous society was organized around kinship clans, a system of *túatha* (small kingdoms), and a rich oral tradition of law, poetry, and music.  \n- **Norman influence** – The Normans brought a hierarchical feudal system, castle‑building, Latin‑based administration, and a new class of Anglo‑Norman lords.  \n\nThe result was a hybrid **Hiberno‑Norman culture**: Norman legal and military practices were adapted to Irish customs, and Gaelic language, law, and social norms were incorporated into the new Anglo‑Norman aristocracy. This cultural fusion shaped Ireland’s social, political, and architectural landscape for centuries.",
+      "gold_answer": "Irish",
+      "score": 0
+    },
+    {
+      "question": "Who was Margaret's brother?",
+      "system_answer": "I’m not sure which Margaret you’re referring to. Could you let me know a bit more about her—such as her full name, title, or the historical period she lived in? That will help me give you the correct answer.",
+      "gold_answer": "Edgar",
+      "score": 0
+    },
+    {
+      "question": "Who was Margaret's husband?",
+      "system_answer": "I’m not sure which Margaret you’re referring to. Could you let me know a bit more about her—such as her full name, title, or the historical period she lived in? That will help me give you the correct answer.",
+      "gold_answer": "King Malcolm III of Scotland",
+      "score": 0
+    },
+    {
+      "question": "When was Scotland invaded by William?",
+      "system_answer": "The question “When was Scotland invaded by William?” is a bit ambiguous because several “Williams” were involved in Scottish affairs over the centuries. Here are the most common interpretations:\n\n| William | Context | Year(s) of the invasion or campaign |\n|---------|---------|-------------------------------------|\n| **William I of England (William the Conqueror)** | After conquering England in 1066, he launched a brief campaign into northern Scotland in 1069‑70, capturing the fortress at **Dunbar** and briefly occupying the area. | **1069‑1070** |\n| **William II of England (William Rufus)** | In 1086 he led a campaign into Scotland, defeating the Scots at the Battle of the **River Nidd** and capturing the fortress at **Dunbar** again. | **1086** |\n| **William III of Scotland (William the Lion)** | He was the king of Scotland, not an invader. |\n| **William IV of Scotland (William the Lion)** | Same as above. |\n| **William V of Scotland (William the Lion)** | Same as above. |\n\nIf you were thinking of the Norman invasion of Ireland (1169) or the Norman invasion of England (1066), those were led by **William I of England**. But the only “invasion of Scotland” by a William that is historically recorded is the 1069‑70 campaign by **William the Conqueror**.",
+      "gold_answer": "1072",
+      "score": 0
+    },
+    {
+      "question": "Who was the hostage?",
+      "system_answer": "I’m not sure which hostage you’re referring to. Could you give a bit more context—such as the time period, the parties involved, or the event you have in mind? That will help me give you the correct answer.",
+      "gold_answer": "Duncan",
+      "score": 0
+    },
+    {
+      "question": "Who did Alexander I marry?",
+      "system_answer": "Alexander I of Scotland (reigned 1107‑1124) married **Margaret of Wessex**.  \nMargaret was the daughter of King Henry I of England and his wife Matilda of France. She became Alexander’s queen consort and was the mother of his son, David I, who succeeded him as king of Scotland.",
+      "gold_answer": "Sybilla of Normandy",
+      "score": 0
+    },
+    {
+      "question": "What culture's arrival in Scotland is know as the \"Davidian Revolution\"?",
+      "system_answer": "The “Davidian Revolution” refers to the **arrival and influence of Norman (Anglo‑Norman) culture** in Scotland during the reign of King David I (1124‑1153).  \n\nUnder David, Norman ideas of feudal land tenure, castle building, and centralized administration were introduced, reshaping Scottish society, law, and governance. This influx of Norman culture and institutions is what historians call the Davidian Revolution.",
+      "gold_answer": "Norman",
+      "score": 1
+    },
+    {
+      "question": "Where was Ralph earl of?",
+      "system_answer": "**Ralph de Lacy** was the **Earl of Hereford**.  \nHereford is a historic county in the West Midlands of England, and the earldom was one of the major Norman titles granted in the early 12th century. Ralph held the earldom from about 1129 until his death in 1156.",
+      "gold_answer": "Hereford",
+      "score": 1
+    },
+    {
+      "question": "Who was Ralph in charge of being at war with?",
+      "system_answer": "**Ralph de Lacy, Earl of Hereford (c. 1070‑1156), was chiefly “in charge” of fighting two main groups:**\n\n| Who | Why he was fighting them | Key campaigns |\n|-----|--------------------------|---------------|\n| **Welsh princes of the Marches** | As a marcher lord, Ralph’s lands bordered the Welsh kingdoms. He was tasked with defending the English frontier and expanding Norman control. | • 1120‑1125: Campaigns against **Owain Gwynedd** (North‑Welsh prince). <br>• 1130‑1135: Skirmishes with **Gruffydd ap Rhys** and other southern Welsh lords. |\n| **Rebels during the Anarchy (1135‑1153)** | After Henry I’s death, England plunged into civil war. Ralph supported **King Stephen** against the baron‑led opposition. | • 1138‑1140: Battles against the forces of **Robert de Beaumont, 1st Earl of Leicester** and other rebel barons. <br>• 1141: Participation in the **Battle of Lincoln** (though the battle was a stalemate, Ralph’s forces were part of Stephen’s army). |\n\n### Summary\n\n- **Primary enemy in the north:** The Welsh princes who resisted Norman encroachment.  \n- **Primary enemy in the south:** The rebel barons who opposed King Stephen during the civil war known as the Anarchy.\n\nRalph’s military career was therefore defined by defending the English border against Welsh incursions and by supporting the royal cause against internal opposition.",
+      "gold_answer": "the Welsh",
+      "score": 1
+    },
+    {
+      "question": "Who made Ralph earl?",
+      "system_answer": "**Ralph de Lacy was made Earl of Hereford by King Henry I of England.**  \n\n- **When:** The earldom was created for him in **1129**.  \n- **Why:** Henry I granted the title as part of his policy of rewarding loyal Norman barons and securing the Marcher lordship along the Welsh border.  \n- **Result:** Ralph held the earldom until his death in 1156, using it as a base for his military campaigns against the Welsh and his support of King Stephen during the Anarchy.",
+      "gold_answer": "Edward the Confessor",
+      "score": 0
+    },
+    {
+      "question": "What country was under the control of Norman barons?",
+      "system_answer": "The country that came under the direct rule of Norman barons after the Norman Conquest was **England**.  \n\n- **Why:** In 1066 William the Conqueror defeated the Anglo‑Saxon king Harold II and seized the English throne.  \n- **Result:** William redistributed the English crown lands to his Norman followers, creating a new aristocracy of Norman barons who governed the country, built castles, and imposed Norman law and customs.  \n\n(For comparison, the Normans later extended their influence to Ireland in 1169 and to parts of Scotland during the Davidian Revolution, but the core “country under Norman baronial control” is England.)",
+      "gold_answer": "Wales",
+      "score": 0
+    },
+    {
+      "question": "What year did Roger de Tosny fail to accomplish what he set out to do?",
+      "system_answer": "Roger de Tosny’s most famous failure came in **1096**.  \nIn that year he led a Norman force to lay siege to the city of **Tournai** (in present‑day Belgium), but the assault was repulsed and he was unable to take the town.",
+      "gold_answer": "1018",
+      "score": 0
+    },
+    {
+      "question": "Who was in charge of the papal army in the War of Barbastro?",
+      "system_answer": "I’m sorry, but I don’t have that information.",
+      "gold_answer": "William of Montreuil",
+      "score": 0
+    },
+    {
+      "question": "When did the Siege of Antioch take place?",
+      "system_answer": "The **Siege of Antioch** was a key episode of the First Crusade and lasted from **20 September 1097 to 13 June 1098**.  The Crusader army, under leaders such as Godfrey of Bouillon and Raymond of Toulouse, besieged the city for almost nine months before finally capturing it in June 1098.",
+      "gold_answer": "1097",
+      "score": 1
+    },
+    {
+      "question": "What was the name of Bohemond's nephew?",
+      "system_answer": "Bohemond I of Taranto’s nephew was **Robert Guiscard**’s son, **Robert of Taranto** (sometimes called **Robert de Taranto**). He was the son of Roger of Salerno, Bohemond’s brother, and thus Bohemond’s nephew.",
+      "gold_answer": "Tancred",
+      "score": 0
+    },
+    {
+      "question": "What major conquest did Tancred play a roll in?",
+      "system_answer": "Tancred was a key player in the **First Crusade’s capture of Antioch**.  \nDuring the 1097‑1098 siege, he led the Crusader forces that finally broke the city’s walls and secured it for the Crusaders, establishing the Principality of Antioch. This conquest was one of the most significant victories of the Crusade and cemented Tancred’s reputation as a bold and decisive commander.",
+      "gold_answer": "Jerusalem",
+      "score": 0
+    },
+    {
+      "question": "How long did Western Europe control Cyprus?",
+      "system_answer": "**Western European (Latin) control of Cyprus lasted roughly 298 years.**\n\n| Period | Key events |\n|--------|------------|\n| **1191** | Richard the Lionheart conquers Cyprus during the Third Crusade and establishes the *Kingdom of Cyprus*. |\n| **1192‑1489** | The island is ruled by the Lusignan dynasty (and briefly by the Knights Templar and the Knights Hospitaller). |\n| **1489** | The last Latin king, *John II of Lusignan*, is deposed by the Ottoman Empire, ending Western European rule. |\n\nSo from the first Latin conquest in 1191 until the Ottoman takeover in 1489, Cyprus was under Western European control for about **298 years**.",
+      "gold_answer": "380 years",
+      "score": 0
+    },
+    {
+      "question": "What ruined Richard's plans to reach Acre?",
+      "system_answer": "Richard’s plans to reach Acre were ruined when he was **captured by the Holy Roman Emperor Henry VI at the Battle of Jaffa in 1192**.  The capture forced Richard to spend the rest of the Crusade in captivity, delaying his arrival at Acre and disrupting the Crusader campaign.",
+      "gold_answer": "a storm",
+      "score": 0
+    },
+    {
+      "question": "Who was Richard's fiancee?",
+      "system_answer": "Richard I of England (the Lionheart) was engaged to **Berengaria of Castile**.  \n\n- **Who she was:** Daughter of King Alfonso VIII of Castile and Queen Eleanor of England.  \n- **Why the engagement mattered:** In 1186, Richard and Berengaria were betrothed as part of a political alliance between England and Castile.  \n- **What happened:** The marriage never took place—Richard’s crusading commitments and the political situation in England kept him from traveling to Castile, and the engagement was eventually broken off.  \n\nSo, the fiancée most commonly associated with Richard the Lionheart is Berengaria of Castile.",
+      "gold_answer": "Berengaria",
+      "score": 1
+    },
+    {
+      "question": "What year did the storm hit Richard's fleet?",
+      "system_answer": "The storm that wrecked a large portion of Richard the Lionheart’s fleet struck in **1191**.  While returning from the Crusade, a severe tempest hit his convoy, causing significant losses and forcing him to cut his voyage short.",
+      "gold_answer": "1191",
+      "score": 1
+    },
+    {
+      "question": "Who ruled Cyprus in 1191?",
+      "system_answer": "In 1191, **Richard I of England (Richard the Lionheart)** was the ruler of Cyprus.  \n\n- **Why:** During the Third Crusade, Richard captured the island from the Knights Templar in 1191 and immediately established the *Kingdom of Cyprus*, proclaiming himself king.  \n- **Result:** He ruled Cyprus as a Latin (Western European) monarch until his death in 1199, after which the Lusignan dynasty succeeded him.",
+      "gold_answer": "Isaac Komnenos",
+      "score": 0
+    },
+    {
+      "question": "Who was Guy's Rival?",
+      "system_answer": "**Guy of Lusignan’s main rival was Raynald of Châtillon.**  \n\n- **Why:** Both were powerful Crusader nobles vying for control of the Kingdom of Jerusalem.  \n- **Key conflict:** After Guy was elected king in 1186, Raynald, a staunch supporter of the previous king Amalric, opposed Guy’s rule and even attacked his forces.  \n- **Outcome:** Their rivalry weakened the Crusader states and contributed to the disastrous defeat at the Battle of Hattin in 1187.",
+      "gold_answer": "Conrad of Montferrat",
+      "score": 0
+    },
+    {
+      "question": "What were Isaac's chains made out of?",
+      "system_answer": "I’m sorry, but I don’t have that information.",
+      "gold_answer": "silver",
+      "score": 0
+    },
+    {
+      "question": "Who led Richard's troops when Cyprus was conquered?",
+      "system_answer": "Richard I of England – the “Lionheart” – personally led the expedition that captured Cyprus in 1191.  He assembled a fleet of his own ships, landed at Limassol, and marched on the Templar stronghold of Kyrenia, taking the island by force and proclaiming himself king.  In short, it was Richard himself who commanded the troops that conquered Cyprus.",
+      "gold_answer": "Guy de Lusignan",
+      "score": 0
+    },
+    {
+      "question": "What continent are the Canarian Islands off the coast of?",
+      "system_answer": "The Canary Islands lie off the coast of **Africa** (northwest of the African mainland).",
+      "gold_answer": "Africa",
+      "score": 0
+    },
+    {
+      "question": "Who became the King of the Canary Islands?",
+      "system_answer": "The title “King of the Canary Islands” was never a separate, independent monarchy.  \nIt was a **royal title added to the Spanish crown** after the islands were conquered in the late‑15th century.\n\n- **First holder:** **Ferdinand II of Aragon and Isabella I of Castile** – the Catholic Monarchs – who formally annexed the islands in 1496.  \n- **Subsequent holders:** All Spanish monarchs thereafter (the Habsburgs, Bourbons, etc.) carried the title as part of their full list of sovereign titles.\n\nSo, the “King of the Canary Islands” was the Spanish king, beginning with Ferdinand and Isabella.",
+      "gold_answer": "Bethencourt",
+      "score": 0
+    },
+    {
+      "question": "Who bought the rights?",
+      "system_answer": "I’m sorry, but I don’t have that information.",
+      "gold_answer": "Enrique Pérez de Guzmán",
+      "score": 0
+    },
+    {
+      "question": "Who sold the rights?",
+      "system_answer": "There was **no sale of the Canary Islands**.  \nAfter the Spanish crown (the Catholic Monarchs, Ferdinand II of Aragon and Isabella I of Castile) conquered the islands in the late‑15th century, the territory was annexed directly to the Spanish crown. The “rights” to rule the islands were never transferred by a sale; they were obtained through conquest and incorporated into the Spanish monarchy’s list of sovereign titles.",
+      "gold_answer": "Maciot de Bethencourt",
+      "score": 0
+    },
+    {
+      "question": "Where are Jersey and Guernsey",
+      "system_answer": "**Jersey and Guernsey are the two largest islands of the Channel Islands, a group of British Crown dependencies situated in the English Channel.**  \n\n- **Geographic location:**  \n  - They lie roughly 80 km (50 mi) west of the French coast (Normandy) and about 120 km (75 mi) south of the coast of England.  \n  - Jersey is the larger of the two, followed by Guernsey.  \n\n- **Political status:**  \n  - They are not part of the United Kingdom but are Crown dependencies, meaning they are self‑governing but under the sovereignty of the British monarch.  \n\nSo, Jersey and Guernsey are islands in the English Channel, just off the coast of Normandy, France.",
+      "gold_answer": "Channel Islands",
+      "score": 1
+    },
+    {
+      "question": "How many customaries does Norman customary law have?",
+      "system_answer": "",
+      "gold_answer": "two",
+      "score": 0
+    },
+    {
+      "question": "What is the Norman architecture idiom?",
+      "system_answer": "**1. How many customaries does Norman customary law have?**  \nNorman customary law is traditionally divided into **three main customaries**:\n\n| Century | Title (common name) | Notes |\n|---------|---------------------|-------|\n| 12th c. | *Customary of Normandy* | First comprehensive compilation of the laws of the Duchy of Normandy. |\n| 13th c. | *Customary of the Normans* | Updated version reflecting changes in the 13th‑century legal landscape. |\n| 14th c. | *Customary of the Normans* | Final major revision, incorporating later legal developments. |\n\nSo, **three customaries** are the core texts of Norman customary law.\n\n---\n\n**2. What is the Norman architecture idiom?**  \nThe “Norman architecture idiom” refers to the Romanesque style that developed in Normandy and was carried to England after the 1066 conquest. Key characteristics include:\n\n| Feature | Description |\n|---------|-------------|\n| **Massive stone construction** | Thick walls, heavy piers, and robust masonry. |\n| **Round (semi‑circular) arches** | Used in doorways, windows, and arcades. |\n| **Barrel and groin vaults** | Simple, semicircular vaulting in nave and transept spaces. |\n| **Large towers** | Square or round towers at corners or transepts, often with crenellations. |\n| **Decorative motifs** | Chevron (zig‑zag), blind arcading, and carved capitals with foliage or biblical scenes. |\n| **Small, narrow windows** | Often with a single round arch, providing limited light but enhancing solidity. |\n| **Simple, monumental forms** | Emphasis on weight and presence rather than elaborate ornamentation. |\n\nThis idiom is sometimes called **Norman Romanesque** or simply **Norman style** and can be seen in churches, cathedrals, and castles across Normandy and southern England (e.g., Durham Cathedral, St. Saviour’s Church in Caen, and the Tower of London’s original Norman gatehouse).",
+      "gold_answer": "Romanesque",
+      "score": 1
+    },
+    {
+      "question": "What kind of arches does Norman architecture have?",
+      "system_answer": "**Norman architecture is defined by its use of the classic Romanesque, or “round,” arch.**  \n\n| Arch type | Key features | Typical use in Norman buildings |\n|-----------|--------------|---------------------------------|\n| **Semi‑circular (round) arch** | A perfect half‑circle; the most common and unmistakable Norman form. | Doorways, windows, arcades, and the openings of vaults (barrel or groin). |\n| **Barrel vault** | A continuous, semi‑circular arch that extends in a tunnel‑like shape. | Naves and transepts of churches and cathedrals. |\n| **Groin vault** | Two barrel vaults intersecting at right angles, creating a ribbed ceiling. | Larger interior spaces such as the crossing of a cathedral. |\n\n**Why the round arch?**  \n- It distributes weight evenly onto thick stone piers, giving the massive, fortress‑like feel of Norman structures.  \n- The simplicity of the shape allowed builders to construct large, sturdy spaces without the complex geometry of later Gothic pointed arches.\n\n**Decorative twist:**  \n- Norman arches are often adorned with **chevron (zig‑zag) patterns** or other carved motifs on the arch’s springing and the capitals of the supporting columns.\n\nSo, when you see a Norman building, look for the unmistakable semi‑circular arch—whether it frames a doorway, a window, or forms the backbone of a vaulted ceiling.",
+      "gold_answer": "rounded",
+      "score": 1
+    },
+    {
+      "question": "What architecture type came after Norman in England?",
+      "system_answer": "After the Norman (Romanesque) period, England entered the **Early English Gothic** phase—often called the “First Wave” of Gothic architecture.  \n\n**Key points**\n\n| Feature | What changed |\n|---------|--------------|\n| **Arches** | Shift from the heavy, semi‑circular Norman arch to the **pointed (lancet) arch**. |\n| **Vaulting** | Introduction of **ribbed vaults** (first used in the nave of Canterbury Cathedral, c. 1180). |\n| **Windows** | Tall, narrow **lancet windows** with minimal tracery, allowing more light. |\n| **Structural emphasis** | Use of **vertical lines** and **slender columns** to create a sense of height and lightness. |\n| **Decorative style** | Simpler, more restrained ornamentation compared with the elaborate chevron motifs of Norman work. |\n\n**Timeline**\n\n- **Late 12th century** (c. 1170‑1200): Early English Gothic begins to appear, with Canterbury Cathedral’s nave and the early phases of Lincoln Cathedral as prime examples.  \n- **Early 13th century** (c. 1200‑1250): The style matures, spreading to major cathedrals (e.g., York, Durham) and many parish churches.  \n- **Mid‑13th century onward**: The style evolves into the Decorated Gothic, but the Early English remains the direct successor to Norman architecture in England.\n\nSo, the architectural type that followed Norman in England is the **Early English Gothic** style.",
+      "gold_answer": "Early Gothic",
+      "score": 1
+    },
+    {
+      "question": "What architecture type came before Norman in England?",
+      "system_answer": "**Before the Norman (Romanesque) wave, England’s built‑environment was dominated by the Anglo‑Saxon style.**\n\n| Period | Approximate dates | Key characteristics |\n|--------|-------------------|---------------------|\n| **Anglo‑Saxon architecture** | 5th – 1066 CE | • **Timber‑frame** churches and houses (post‑Domesday).  <br>• **Stone churches** with simple, rectangular plans, often with a **nave‑only** layout.  <br>• **Narrow, tall windows** (often a single round or pointed opening).  <br>• **Decorative stonework** such as **chevron (zig‑zag) patterns** and **interlaced motifs** on arches and capitals.  <br>• **Use of stone quoins** and **battered walls** (sloping at the base).  <br>• **Limited ornamentation** compared with later Norman work. |\n\n**Why it matters**\n\n- The Anglo‑Saxon churches were the direct predecessors of the Norman cathedrals and monasteries that followed the 1066 conquest.  \n- Many of the earliest Norman buildings were built on or over existing Anglo‑Saxon sites, so the transition is often seen as a layering rather than a complete replacement.\n\nSo, the architectural type that came **before** Norman in England is the **Anglo‑Saxon style**.",
+      "gold_answer": "Anglo-Saxon",
+      "score": 1
+    },
+    {
+      "question": "What place had the Norman Arab architectural style?",
+      "system_answer": "**The “Norman‑Arab” (or “Arab‑Norman”) architectural style is most famously found in southern Italy—especially the island of Sicily.**  \n\n| Place | Why it’s the classic example |\n|-------|------------------------------|\n| **Palermo, Sicily** | The Cathedral of Palermo (Cattedrale di Palermo) and the Palazzo dei Normanni (Royal Palace) blend Norman stonework with Arab‑influenced decorative motifs, mosaics, and spatial organization. |\n| **Catania, Sicily** | The Cathedral of Saint Agatha and the Palazzo dei Normanni‑Catania showcase the same fusion of Norman structural forms with Arab‑inspired ornamentation. |\n| **Sicily’s “Arab‑Norman” monuments** | Many churches, palaces, and fortifications across the island (e.g., the Palatine Chapel in Palermo, the Cathedral of Monreale) display the hallmark combination of Norman solidity and Arab elegance. |\n\n### What makes it “Norman‑Arab”?\n\n- **Norman structural elements**: thick stone walls, rounded arches, massive towers, and a clear, hierarchical layout.  \n- **Arab decorative influence**: intricate geometric patterns, arabesques, calligraphic motifs, and the use of glazed tiles and mosaics.  \n- **Cultural blending**: The Kingdom of Sicily (established by the Normans in the 11th century) was a crossroads of Latin, Greek, and Islamic cultures, so the architecture naturally absorbed Arab artistic traditions.\n\nSo, if you’re looking for a place that embodies the Norman‑Arab architectural idiom, **Sicily—particularly Palermo and Catania—is the definitive answer.**",
+      "gold_answer": "Sicily",
+      "score": 1
+    },
+    {
+      "question": "When did the church reform begin?",
+      "system_answer": "The term “church reform” most often refers to the **Gregorian Reforms** of the 11th century, a sweeping set of measures aimed at rooting out corruption, enforcing clerical celibacy, and asserting papal authority over secular rulers.\n\n| Date | Key Event | Significance |\n|------|-----------|--------------|\n| **1075** | Pope Gregory VII issues the *Dictatus Papae*, asserting the pope’s right to appoint bishops and to depose kings. | Marks the beginning of the formal reform agenda. |\n| **1076** | The *Papal Schism* (Gregory VII vs. Antipope Benedict V) forces the pope to assert papal supremacy. | Reinforces the pope’s political power. |\n| **1077** | The *Investiture Controversy* erupts when Emperor Henry IV refuses to relinquish the right to invest bishops. | Central conflict of the reform movement. |\n| **1080** | Pope Gregory VII excommunicates Henry IV, forcing the emperor to seek absolution at Canossa (1080–1081). | Demonstrates the pope’s newfound authority. |\n| **1089** | The *First Lateran Council* (Council of Clermont) confirms the reforms and condemns simony and clerical marriage. | Institutionalizes the reforms. |\n\n**Bottom line:** The church reform movement began in the **mid‑1070s** under Pope Gregory VII and continued through the late 11th and early 12th centuries, reshaping the relationship between the papacy, the clergy, and secular rulers.",
+      "gold_answer": "early 11th century",
+      "score": 1
+    },
+    {
+      "question": "Who used the church to unify themselves?",
+      "system_answer": "**In the medieval world, the most famous example of a ruler or polity “using the church to unify themselves” is the Norman conquest of England.**\n\n| Who | How they used the church | Result |\n|-----|--------------------------|--------|\n| **The Norman kings (William I, Henry II, etc.)** | •  They **replaced the Anglo‑Saxon clergy** with Norman clerics who spoke Latin and were loyal to the king.  <br>•  They **re‑ordered the English church** into a single, papally‑aligned institution, abolishing the old “double‑monastery” system and bringing the entire country under one ecclesiastical hierarchy.  <br>•  They **used the church’s administrative network** (parishes, monasteries, and the cathedral chapter) to collect taxes, enforce royal law, and spread Norman culture. | •  The church became a **unifying national institution** that linked the Norman aristocracy with the Anglo‑Saxon populace.  <br>•  It helped cement **Norman authority** and laid the groundwork for a unified English identity that persisted for centuries. |\n\n### Why it worked\n\n1. **Papal support** – William’s coronation in 1066 was performed by the Archbishop of Canterbury, who had been backed by the Pope.  \n2. **Uniform liturgy** – Latin became the common liturgical language, erasing many of the linguistic differences between the Norman and Anglo‑Saxon peoples.  \n3. **Centralized administration** – The church’s existing record‑keeping and land‑holding system provided a ready‑made bureaucratic framework for the new regime.  \n\n---\n\n### Other notable examples\n\n| Polity | How the church was used | Purpose |\n|--------|------------------------|---------|\n| **Holy Roman Empire** | The emperor’s coronation by the Pope and the establishment of a unified ecclesiastical hierarchy across Germanic lands. | To legitimize imperial authority and bind diverse Germanic peoples under a single religious and political structure. |\n| **Byzantine Empire** | The Patriarch of Constantinople and the Orthodox Church were integral to imperial ideology, with the emperor seen as the “God‑chosen” ruler. | To unify Greek, Slavic, and other peoples under a common religious and cultural identity. |\n| **Early Islamic Caliphates** | While not a Christian church, the mosque served a similar unifying function, bringing diverse peoples under a single religious institution. | To consolidate political power and create a cohesive Muslim identity. |\n\n---\n\n**Bottom line:**  \nThe Normans in England are the classic case of a conquering power “using the church to unify themselves” by restructuring the ecclesiastical hierarchy, gaining papal endorsement, and leveraging the church’s administrative reach to bind together a newly conquered population.",
+      "gold_answer": "dukes",
+      "score": 0
+    },
+    {
+      "question": "When were the French wars of religion?",
+      "system_answer": "**The French Wars of Religion spanned from 1562 to 1598** – a 36‑year period of intermittent civil war, massacres, and political upheaval between the Catholic majority and the Huguenot (French Protestant) minority.\n\n| Year | Key Event | Significance |\n|------|-----------|--------------|\n| **1562** | **First War of Religion** – The conflict ignites after the *Massacre of Vassy* (June 1), when Duke of Guise’s troops attack a Huguenot congregation. | Marks the formal start of hostilities. |\n| **1563** | **Peace of Amboise** – A temporary truce that grants limited religious freedoms to Huguenots. | Short‑lived peace; hostilities resume. |\n| **1567–1570** | **Second War** – Intensified fighting, culminating in the *Siege of La Rochelle* (1572). | Escalation of conflict. |\n| **1572** | **St. Bartholomew’s Day Massacre** – Over 5,000 Huguenots are killed in Paris and across France. | A turning point that deepened the sectarian divide. |\n| **1572–1576** | **Third War** – Continued clashes, with the *Battle of Moncontour* (1575) and the *Battle of Saint-Denis* (1576). | Huguenot forces gain some victories. |\n| **1576–1580** | **Fourth War** – The *Battle of Jarnac* (1589) and the *Battle of Ivry* (1590) are fought. | The Catholic League gains momentum. |\n| **1589** | **Henry III is assassinated**; Henry of Navarre (a Huguenot) becomes king as Henry IV. | Henry IV’s accession shifts the balance. |\n| **1590–1598** | **Fifth War** – Henry IV’s campaigns to consolidate power, including the *Battle of Ivry* (1590) and the *Battle of Fontaine-Française* (1598). | Henry IV’s victories pave the way for peace. |\n| **1598** | **Edict of Nantes** – Issued by Henry IV, granting substantial religious freedoms to Huguenots and ending the wars. | Officially ends the conflict (though tensions linger). |\n\n### Quick Reference\n\n- **Start:** 1562 (Massacre of Vassy)  \n- **End:** 1598 (Edict of Nantes)  \n- **Duration:** 36 years  \n- **Key Players:** Catholic League (led by the Duke of Guise), Huguenot forces (led by the Navarre family), French monarchy (Henry III, Henry IV).  \n\nThese wars profoundly shaped French politics, society, and the balance of power between monarchy and religious factions.",
+      "gold_answer": "16th century",
+      "score": 1
+    },
+    {
+      "question": "What kind of needlework was used in the creation of the Bayeux Tapestry?",
+      "system_answer": "**The Bayeux Tapestry is not a woven tapestry at all – it is a long embroidered cloth made with a specific medieval technique called “tapestry embroidery.”**\n\n| Feature | What it is | How it was used on the Bayeux Tapestry |\n|---------|------------|----------------------------------------|\n| **Stitch type** | **Tapestry stitch** (also called “tapestry embroidery stitch”) | A flat, even stitch that covers the fabric in a smooth, almost woven‑like surface. It is worked with a single thread that is laid over the background and then pulled tight, creating a dense, uniform appearance. |\n| **Needle** | **Tapestry needle** – a large, blunt needle with a rounded tip and a short eye | The needle is thick enough to carry the heavy, tightly twisted thread. Its blunt tip prevents damage to the linen warp. |\n| **Thread** | **Tapestry thread** – a thick, tightly twisted cotton or linen thread (often dyed in bright colors) | The thread is heavier than typical embroidery thread, giving the tapestry its rich, opaque look. |\n| **Fabric** | Linen warp (the “warp” is the vertical threads that run the length of the cloth) | The linen warp is left unworked; the tapestry stitch is applied only to the weft (horizontal) side, giving the illusion of a woven fabric. |\n| **Technique** | **Tapestry embroidery** – a form of needlework that mimics the appearance of a woven tapestry | The embroiderers worked in a single, continuous line, creating the narrative panels without any visible seams. |\n\n### Why this technique was chosen\n\n- **Durability**: The heavy thread and flat stitch made the cloth robust enough to survive for centuries.\n- **Visual effect**: The tapestry stitch gives a smooth, almost “woven” surface, which was ideal for the detailed, narrative scenes.\n- **Practicality**: Working on a single, long piece of linen with a tapestry needle allowed the embroiderers to produce a continuous, uninterrupted story.\n\nSo, the Bayeux Tapestry was created using **tapestry embroidery**—a flat‑stitch needlework technique that employs a tapestry needle and thick, tightly twisted thread to produce a smooth, woven‑like surface.",
+      "gold_answer": "embroidery",
+      "score": 1
+    },
+    {
+      "question": "What is Norman art's most well known piece?",
+      "system_answer": "**The Bayeux Tapestry** is widely regarded as the most famous and iconic work of Norman art.\n\n| Why it’s the standout |\n|------------------------|\n| **Historical significance** – It chronicles the Norman conquest of England (1066) in vivid detail, making it a primary visual source for that era. |\n| **Artistic quality** – The tapestry uses the distinctive “tapestry stitch” embroidery technique, giving it a smooth, woven‑like surface that was highly prized in the 11th‑12th centuries. |\n| **Cultural impact** – It has become a symbol of Norman heritage, influencing later medieval art and modern interpretations of the Norman period. |\n| **Preservation** – The original is still in excellent condition and is displayed in the Musée de la Tapisserie de Bayeux in France, attracting scholars and tourists alike. |\n\nWhile other Norman masterpieces—such as the stone carvings of Durham Cathedral or the Romanesque sculptures of the Cathedral of Rouen—are also celebrated, the Bayeux Tapestry remains the single most recognized and celebrated piece of Norman art worldwide.",
+      "gold_answer": "Bayeux Tapestry",
+      "score": 1
+    },
+    {
+      "question": "Who commissioned the Tapestry?",
+      "system_answer": "**The Bayeux Tapestry was commissioned by the Norman court—most likely by William the Conqueror himself (or by his wife, Matilda of Flanders).**\n\n| What we know | Why it matters |\n|--------------|----------------|\n| **Timeframe** – The tapestry was woven in the 1070s, shortly after William’s victory at Hastings (1066). | The work was created as a celebratory record of the conquest. |\n| **Patronage** – Contemporary sources and later scholarship point to William the Conqueror (or his wife Matilda) as the patron. | William’s status as king of England and Duke of Normandy made him the natural patron for a monumental commemorative piece. |\n| **Purpose** – To document the Norman conquest for the Norman court and for posterity. | The tapestry served both as propaganda and as a historical record. |\n| **Evidence** – The tapestry’s style, iconography, and the fact that it was produced in a Norman workshop (likely in Bayeux or nearby) support a royal commission. | The use of high‑quality materials and the detailed narrative suggest royal backing. |\n\n**Bottom line:** While the exact patron is not recorded in surviving documents, the consensus among historians is that William the Conqueror (or his wife Matilda) commissioned the Bayeux Tapestry to celebrate and legitimize his conquest of England.",
+      "gold_answer": "Odo",
+      "score": 0
+    },
+    {
+      "question": "What is the most important type of Norman art preserved in churches?",
+      "system_answer": "**The most important type of Norman art that survives in churches is the stone sculpture of the Romanesque period—especially the carved capitals, tympanums, and portal arches.**\n\n| Why these are the key Norman artistic legacy in churches |\n|----------------------------------------------------------|\n| **Durability** – Stone carvings have survived the centuries better than painted or textile works, so they are the most common visual evidence of Norman art. |\n| **Iconographic richness** – The capitals and tympanums are densely packed with biblical scenes, saints, and symbolic motifs that convey theological messages to a largely illiterate congregation. |\n| **Architectural integration** – These carvings are integral to the church’s structure (columns, arches, lintels), making them a defining feature of Norman church design. |\n| **Stylistic distinctiveness** – Norman sculpture is characterized by bold, stylized figures, strong geometric patterns, and a sense of monumentality that set it apart from earlier Anglo‑Saxon or later Gothic styles. |\n| **Historical documentation** – The carvings provide valuable insight into Norman iconography, patronage, and the spread of Romanesque art across England, Normandy, and beyond. |\n\n**Typical examples** include the carved capitals of the nave columns at Durham Cathedral, the tympanum of the west portal at St. Mary’s Church in Caen, and the sculpted arches of the nave at the Cathedral of Rouen. These stone works remain the most visible and influential representation of Norman artistic achievement in ecclesiastical settings.",
+      "gold_answer": "mosaics",
+      "score": 0
+    },
+    {
+      "question": "In what century did important classical music developments occur in Normandy?",
+      "system_answer": "**The 19th century.**\n\nDuring the 1800s Normandy became a hub for classical‑music education and composition.  Key milestones include:\n\n| Milestone | Year | Significance |\n|-----------|------|--------------|\n| **Conservatoire de Rouen founded** | 1835 | Established a formal training ground for musicians and composers, attracting talent from across France. |\n| **Conservatoire de Caen founded** | 1839 | Further expanded the region’s musical infrastructure. |\n| **Rise of notable composers** | 1830s‑1880s | Composers such as Camille Saint‑Saëns (who studied in Rouen) and others began to write and perform works that reflected the region’s musical heritage. |\n| **Growth of public concerts and festivals** | 19th century | Regular concerts in churches, town halls, and concert halls helped disseminate new works and foster a local audience for classical music. |\n\nThese developments laid the groundwork for Normandy’s enduring reputation as a center of classical music in France.",
+      "gold_answer": "11th",
+      "score": 0
+    },
+    {
+      "question": "Who were the two abbots at Fécamp Abbey?",
+      "system_answer": "**The two abbots who are most often mentioned together in the history of Fécamp Abbey are:**\n\n| Abbot | Tenure at Fécamp | Other major office | Key points |\n|-------|------------------|-------------------|------------|\n| **William of Fécamp** | 1127 – 1128 | Bishop of Rouen (1127 – 1128) | • Formerly a monk of the abbey, he was elected abbot during a period of reform. <br>• His short episcopate in Rouen was marked by attempts to strengthen the diocese’s discipline. |\n| **William of Saint‑Remi** | 1128 – 1135 | Bishop of Rouen (1128 – 1135) | • Succeeded William of Fécamp as abbot and was later elected bishop of Rouen. <br>• His abbacy is noted for continued monastic reforms and for fostering ties with the royal court. |\n\n### Why these two are highlighted\n\n1. **Dual roles** – Both men served as abbot of Fécamp and later as bishops of the nearby see of Rouen, a rare combination that underscores their influence in both monastic and diocesan affairs.\n2. **Reform and consolidation** – Their tenures coincided with a broader movement of monastic renewal in Normandy, and they were instrumental in tightening the abbey’s discipline and financial stability.\n3. **Historical documentation** – Contemporary chronicles (e.g., the *Chronicon* of the *Annales de Fécamp*) record their activities, making them the most reliably documented abbots of the early 12th century.\n\nIf you’re looking at a different period or a different pair of abbots, let me know—Fécamp had many notable leaders over its long history!",
+      "gold_answer": "William of Volpiano and John of Ravenna",
+      "score": 0
+    },
+    {
+      "question": "Where did the monks flee to?",
+      "system_answer": "I’m sorry for the confusion earlier. The question refers to the famous Viking raid on Fécamp Abbey in 860 CE. When the Norsemen stormed the abbey, the monks fled inland to escape the attackers. They took refuge on the **mainland of Normandy**, specifically at the nearby **Abbey of Saint‑Remi in the town of Saint‑Remi‑en‑Caux** (not to be confused with the more famous Saint‑Remi in Reims). This inland location was safer from the sea‑borne raiders and allowed the monks to regroup and continue their monastic life.",
+      "gold_answer": "southern Italy",
+      "score": 0
+    },
+    {
+      "question": "What monastery did the Saint-Evroul monks establish in Italy?",
+      "system_answer": "The monks of **Saint‑Evroul** founded the **Abbey of San Salvatore in Capua** (also called *San Salvatore di Capua*) in southern Italy.  \n\n- **Founded:** 1124  \n- **Location:** Capua, Campania, Italy  \n- **Order:** Benedictine (in the tradition of the Norman‑French monastic reform that Saint‑Evroul represented)  \n\nThis daughter house became an important Norman‑Benedictine center in the Kingdom of Sicily, reflecting the spread of Norman monasticism from Normandy to the Italian peninsula.",
+      "gold_answer": "Latin monastery at Sant'Eufemia.",
+      "score": 0
+    },
+    {
+      "question": "Who patronized the monks in Italy?",
+      "system_answer": "**The monks of Saint‑Evroul were patronized in Italy by the Norman rulers of the southern Italian kingdoms—most notably by King Roger II of Sicily (and his predecessors, the Hauteville lords).**\n\n| Patron | Role & Why They Supported the Monks |\n|--------|-------------------------------------|\n| **Roger II of Sicily** (1130‑1154) | • As the first Norman king of Sicily, Roger sought to consolidate his realm by promoting religious institutions that could serve as centers of learning, administration, and loyalty. <br>• He granted the Abbey of San Salvatore in Capua land, privileges, and protection, allowing the monks to thrive and to act as a bridge between Norman secular power and the Church. |\n| **Robert Guiscard** (d. 1085) | • The founder of the Norman conquest in southern Italy, Guiscard’s earlier grants of land to monastic houses laid the groundwork for later patronage. <br>• He is recorded as having given the Capua region to the Abbey of San Salvatore, which the Saint‑Evroul monks later occupied. |\n| **The Bishop of Capua** | • While the king provided the overarching political patronage, the local bishop offered ecclesiastical support, confirming the abbey’s rights and ensuring its integration into the diocesan structure. |\n\n### How the patronage worked\n\n1. **Land Grants** – The Norman rulers granted the abbey extensive estates in the Capua area, giving the monks a stable economic base.  \n2. **Legal Privileges** – The monks received exemptions from certain taxes and the right to hold markets, which helped the abbey become a local economic hub.  \n3. **Protection** – In return for their spiritual services and sometimes for their role in educating Norman elites, the monks were protected from local feudal disputes and from the occasional Viking or Saracen raid.  \n4. **Cultural Exchange** – The patronage encouraged the monks to bring Norman monastic practices (e.g., the Benedictine Rule as reformed by Saint‑Evroul) into the Italian context, fostering a blend of Norman and Italian ecclesiastical culture.\n\nIn short, the **Norman monarchy of southern Italy—especially Roger II—was the primary patron of the Saint‑Evroul monks in Italy, providing them with land, legal status, and protection that allowed the abbey to flourish.**",
+      "gold_answer": "Robert Guiscard",
+      "score": 1
+    },
+    {
+      "question": "What tradition were the Saint-Evroul monks known for?",
+      "system_answer": "The monks of **Saint‑Evroul** were celebrated for a single, unmistakable tradition: **a rigorous, reform‑oriented observance of the Benedictine Rule that produced a distinctive “Evroul school” of monastic culture**.  \n\n### 1.  Strict Benedictine Discipline  \n- **Rule‑based life** – The abbey was founded on the *Rule of St. Benedict* and was noted for its uncompromising adherence to its precepts (work, prayer, and study).  \n- **Reformist zeal** – In the 12th century, Saint‑Evroul became a center for the *Cistercian‑style* reform that sought to return to the original simplicity and austerity of Benedictine life.  \n\n### 2.  The “Evroul School” of Manuscript Illumination  \n- **Artistic output** – Monks produced a distinctive style of illuminated manuscripts, characterized by vivid colors, intricate borders, and a blend of Romanesque and early Gothic motifs.  \n- **Influence** – These manuscripts were copied and disseminated throughout Normandy and beyond, spreading the “Evroul aesthetic” to other monastic houses.  \n\n### 3.  Liturgical Chant and Music  \n- **Evroul chant** – The abbey developed its own chant tradition, a blend of the *Gregorian* repertoire with local melodic variations.  \n- **Musical manuscripts** – Many of the illuminated manuscripts contain musical notation, indicating the abbey’s role in preserving and transmitting chant.  \n\n### 4.  Educational and Spiritual Outreach  \n- **Scholarly work** – The monks were active in copying theological texts, providing a scholarly backbone to the reform movement.  \n- **Spiritual guidance** – Their disciplined lifestyle served as a model for other monasteries, especially those founded by Norman missionaries in Italy and the Iberian Peninsula.  \n\nIn short, **Saint‑Evroul’s tradition was a blend of strict Benedictine observance, reformist zeal, and a distinctive artistic and musical culture**—the “Evroul school” that left a lasting imprint on monastic life in Normandy and beyond.",
+      "gold_answer": "singing",
+      "score": 0
+    },
+    {
+      "question": "What branch of theoretical computer science deals with broadly classifying computational problems by difficulty and class of relationship?",
+      "system_answer": "The branch you’re referring to is **computational complexity theory**.  \n\nIt studies how hard it is to solve computational problems and groups them into classes (e.g., P, NP, PSPACE, EXP, etc.) based on resource requirements such as time, space, or other computational models. It also examines relationships between these classes (reductions, completeness, separations, etc.) to understand the landscape of problem difficulty.",
+      "gold_answer": "Computational complexity theory",
+      "score": 1
+    },
+    {
+      "question": "By what main attribute are computational problems classified utilizing computational complexity theory?",
+      "system_answer": "**Computational problems are classified by the amount of computational resources they require—most commonly the time (or space) needed to solve them.**  \n\nIn practice, a problem is placed in a complexity class such as **P, NP, PSPACE, EXP, etc.** based on how its worst‑case running time (or memory usage) grows with the size of the input. Thus, the *main attribute* used for classification is the **resource consumption (time, space, or other computational cost) of the best algorithm that solves the problem**.",
+      "gold_answer": "inherent difficulty",
+      "score": 0
+    },
+    {
+      "question": "What is the term for a task that generally lends itself to being solved by a computer?",
+      "system_answer": "The standard term is **a “computational problem”** (sometimes called an **algorithmic problem**).  \n\nIn computer science a computational problem is any task that can be expressed in a way that a computer can process—i.e., it can be given an input, a set of rules (an algorithm), and an output.  The term emphasizes that the problem is amenable to algorithmic treatment and, consequently, to implementation on a computer.",
+      "gold_answer": "computational problems",
+      "score": 1
+    },
+    {
+      "question": "What measure of a computational problem broadly defines the inherent difficulty of the solution?",
+      "system_answer": "The inherent difficulty of a computational problem is captured by its **computational complexity**—most often expressed as the **asymptotic time (or space) complexity** of the best algorithm that solves it.  In other words, the problem’s complexity class (e.g., P, NP, PSPACE, EXP) tells us how the required resources grow with input size and thus how hard the problem is to solve.",
+      "gold_answer": "if its solution requires significant resources",
+      "score": 1
+    }
+  ]
+}

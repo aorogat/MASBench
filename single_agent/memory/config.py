@@ -14,6 +14,7 @@ openai_sdk_llm_model = "openai/gpt-4o-mini"
 agno_llm_model = "gpt-4o-mini"
 crewai_llm_model = "gpt-4o-mini"
 langgraph_llm_model = "gpt-4o-mini"
+autogen_llm_model = "gpt-4o-mini"
 
 llm_max_tokens = 1500
 llm_temperature = 0.1
@@ -40,8 +41,8 @@ ignore_ingest = False # keep it False, use True for debugging issues only
 splits = [
     "Accurate_Retrieval",
     "Test_Time_Learning", #Check the code, benchmark for example "results/memory/Crewai/MCC/session_3.json" like 76 question is weired
-    # "Long_Range_Understanding",
-    # "Conflict_Resolution",
+    "Long_Range_Understanding",
+    "Conflict_Resolution",
 ]
 # NEW — Maximum sessions to evaluate per task (per subtask)
 max_sessions_per_subtask = 10
