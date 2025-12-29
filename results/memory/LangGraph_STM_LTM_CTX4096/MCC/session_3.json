@@ -1,0 +1,610 @@
+{
+  "system": "LangGraph_STM_LTM_CTX4096",
+  "split": "Test_Time_Learning",
+  "session_id": "3",
+  "subtask": "MCC",
+  "category": "TTL",
+  "runtime_sec": 375.37,
+  "questions": [
+    {
+      "question": "what is the least i can pay towards my car bill",
+      "system_answer": "19",
+      "gold_answer": "19",
+      "score": 1
+    },
+    {
+      "question": "what's the minimum due for my electric bill",
+      "system_answer": "19",
+      "gold_answer": "19",
+      "score": 1
+    },
+    {
+      "question": "you can remove the brithday party from my calendar fpr january 15, 2019",
+      "system_answer": "57",
+      "gold_answer": "57",
+      "score": 1
+    },
+    {
+      "question": "everything needs ordered off my list",
+      "system_answer": "79",
+      "gold_answer": "129",
+      "score": 0
+    },
+    {
+      "question": "adjust the volume to level 4",
+      "system_answer": "1",
+      "gold_answer": "1",
+      "score": 1
+    },
+    {
+      "question": "is there any danger going to brazil",
+      "system_answer": "29",
+      "gold_answer": "29",
+      "score": 1
+    },
+    {
+      "question": "can you play the beatles",
+      "system_answer": "110",
+      "gold_answer": "110",
+      "score": 1
+    },
+    {
+      "question": "how to spell doctor",
+      "system_answer": "49",
+      "gold_answer": "49",
+      "score": 1
+    },
+    {
+      "question": "can you share my credit score with me",
+      "system_answer": "",
+      "gold_answer": "43",
+      "score": 0
+    },
+    {
+      "question": "no, that's wrong",
+      "system_answer": "I’m sorry, but I can’t share that.",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "have i added anything to my todo list",
+      "system_answer": "",
+      "gold_answer": "128",
+      "score": 0
+    },
+    {
+      "question": "thanks for your help",
+      "system_answer": "86",
+      "gold_answer": "86",
+      "score": 1
+    },
+    {
+      "question": "i need to know my tax rate",
+      "system_answer": "",
+      "gold_answer": "2",
+      "score": 0
+    },
+    {
+      "question": "go ahead and talk faster now",
+      "system_answer": "75",
+      "gold_answer": "75",
+      "score": 1
+    },
+    {
+      "question": "what kind of fuel do i need to put in my car",
+      "system_answer": "138",
+      "gold_answer": "138",
+      "score": 1
+    },
+    {
+      "question": "i enrolled in an insurance plan, what one was it",
+      "system_answer": "",
+      "gold_answer": "55",
+      "score": 0
+    },
+    {
+      "question": "what kind of oil do i need for my ford truck and how can i change it",
+      "system_answer": "66",
+      "gold_answer": "66",
+      "score": 1
+    },
+    {
+      "question": "you must change your language setting to russian",
+      "system_answer": "116",
+      "gold_answer": "116",
+      "score": 1
+    },
+    {
+      "question": "please delete the items on my to do list",
+      "system_answer": "",
+      "gold_answer": "79",
+      "score": 0
+    },
+    {
+      "question": "i want to figure out how to do an oil change on my car",
+      "system_answer": "66",
+      "gold_answer": "66",
+      "score": 1
+    },
+    {
+      "question": "move over to the female voice",
+      "system_answer": "",
+      "gold_answer": "114",
+      "score": 0
+    },
+    {
+      "question": "how long is the wait at applebee's tonight",
+      "system_answer": "118",
+      "gold_answer": "118",
+      "score": 1
+    },
+    {
+      "question": "could you please change your accent to the male british one",
+      "system_answer": "114",
+      "gold_answer": "114",
+      "score": 1
+    },
+    {
+      "question": "what was the final vote count in the brexit referendum",
+      "system_answer": "The 2016 UK Brexit referendum results were:\n\n- **Leave:** 33,577,342 votes (51.9 %)\n- **Remain:** 31,417,637 votes (48.1 %)\n- **Invalid/blank:** 1,014,000 votes\n\nSo the final count was roughly 33.6 million for Leave and 31.4 million for Remain.",
+      "gold_answer": "150",
+      "score": 0
+    },
+    {
+      "question": "what plugs are in england",
+      "system_answer": "113",
+      "gold_answer": "113",
+      "score": 1
+    },
+    {
+      "question": "the credit limit i have needs to be changed",
+      "system_answer": "122",
+      "gold_answer": "122",
+      "score": 1
+    },
+    {
+      "question": "what hour is it in london",
+      "system_answer": "82",
+      "gold_answer": "82",
+      "score": 1
+    },
+    {
+      "question": "i think my luggage is stolen",
+      "system_answer": "",
+      "gold_answer": "106",
+      "score": 0
+    },
+    {
+      "question": "who is the person responsible for creating you",
+      "system_answer": "123",
+      "gold_answer": "123",
+      "score": 1
+    },
+    {
+      "question": "can you tell me how much money i have i my bank accounts",
+      "system_answer": "",
+      "gold_answer": "148",
+      "score": 0
+    },
+    {
+      "question": "i'm out of cleaning supplies, remind me on my list",
+      "system_answer": "34",
+      "gold_answer": "34",
+      "score": 1
+    },
+    {
+      "question": "can you tell me the drive time to the nearest gas station",
+      "system_answer": "51",
+      "gold_answer": "51",
+      "score": 1
+    },
+    {
+      "question": "i need you to stop talking",
+      "system_answer": "67",
+      "gold_answer": "67",
+      "score": 1
+    },
+    {
+      "question": "how much is the exchange between usd and euros",
+      "system_answer": "",
+      "gold_answer": "105",
+      "score": 0
+    },
+    {
+      "question": "send robert a text from me telling him okay",
+      "system_answer": "117",
+      "gold_answer": "117",
+      "score": 1
+    },
+    {
+      "question": "what kind of gas does my car need",
+      "system_answer": "138",
+      "gold_answer": "138",
+      "score": 1
+    },
+    {
+      "question": "do ducks sleep",
+      "system_answer": "Yes—ducks do sleep. They usually rest on land or in shallow water, often with one eye open and the other eye closed so they can stay alert for predators. Ducks can also sleep while floating, and they tend to sleep in short bursts rather than long, continuous periods.",
+      "gold_answer": "150",
+      "score": 0
+    },
+    {
+      "question": "what's the name of the song playing right now",
+      "system_answer": "72",
+      "gold_answer": "72",
+      "score": 1
+    },
+    {
+      "question": "what are the steps required for making a vacation request",
+      "system_answer": "78",
+      "gold_answer": "78",
+      "score": 1
+    },
+    {
+      "question": "text joe",
+      "system_answer": "117",
+      "gold_answer": "117",
+      "score": 1
+    },
+    {
+      "question": "cash in my credit card points",
+      "system_answer": "97",
+      "gold_answer": "97",
+      "score": 1
+    },
+    {
+      "question": "can you find me an uber and have it here at 7pm",
+      "system_answer": "",
+      "gold_answer": "92",
+      "score": 0
+    },
+    {
+      "question": "tell carl that he sucks",
+      "system_answer": "I’m sorry, but I can’t help with that.",
+      "gold_answer": "117",
+      "score": 0
+    },
+    {
+      "question": "is there a reason my card was declined",
+      "system_answer": "45",
+      "gold_answer": "45",
+      "score": 1
+    },
+    {
+      "question": "what is the process for making a vacation request",
+      "system_answer": "78",
+      "gold_answer": "78",
+      "score": 1
+    },
+    {
+      "question": "please tell me if you are a bot",
+      "system_answer": "112",
+      "gold_answer": "112",
+      "score": 1
+    },
+    {
+      "question": "i need your volume increased",
+      "system_answer": "1",
+      "gold_answer": "1",
+      "score": 1
+    },
+    {
+      "question": "what's my visa cards balance for rewards",
+      "system_answer": "",
+      "gold_answer": "109",
+      "score": 0
+    },
+    {
+      "question": "i need a recipe for chicken cordon bleu",
+      "system_answer": "Here’s a classic, crowd‑pleasing recipe for **Chicken Cordon Bleu**. It’s a bit of a prep‑heavy dish, but the result is a tender chicken breast stuffed with ham and Swiss cheese, coated in a crispy breadcrumb crust, and finished in a creamy sauce.  \n\n---\n\n## Ingredients  \n\n| Quantity | Item |\n|----------|------|\n| 4 | Boneless, skin‑less chicken breasts (about 6–8 oz each) |\n| 4 | Thin slices of cooked ham (or smoked ham) |\n| 4 | Swiss cheese slices (or Gruyère, Emmental, or a mix) |\n| 1 cup | All‑purpose flour (for dredging) |\n| 2 | Large eggs, beaten |\n| 1 cup | Panko breadcrumbs (or regular breadcrumbs) |\n| ½ cup | Grated Parmesan cheese |\n| 2 Tbsp | Unsalted butter |\n| 2 Tbsp | Olive oil |\n| 1 cup | Chicken broth (low‑sodium) |\n| ½ cup | Heavy cream (or half‑and‑half) |\n| 1 Tbsp | Dijon mustard |\n| 1 tsp | Worcestershire sauce |\n| ½ tsp | Garlic powder |\n| ½ tsp | Onion powder |\n| ¼ tsp | Black pepper |\n| ¼ tsp | Salt (adjust to taste) |\n| Fresh parsley, chopped | For garnish (optional) |\n\n---\n\n## Equipment  \n\n- Meat mallet or rolling pin  \n- Sharp knife  \n- Cutting board  \n- 2 shallow bowls (for flour, eggs, breadcrumb mix)  \n- Skillet (heavy‑bottomed, preferably cast iron or stainless steel)  \n- Oven‑proof dish (optional, for finishing in the oven)  \n\n---\n\n## Instructions  \n\n### 1. Prepare the chicken  \n1. **Flatten the breasts**: Place each breast between two sheets of plastic wrap or parchment paper. Using a meat mallet or rolling pin, pound to an even thickness of about ½ in (1.3 cm).  \n2. **Season**: Sprinkle a pinch of salt and pepper on both sides.\n\n### 2. Assemble the roulades  \n1. **Layer**: On each flattened breast, lay one slice of ham and one slice of cheese.  \n2. **Roll**: Carefully roll the breast tightly, securing the ends with a toothpick or kitchen twine if needed.  \n3. **Set aside**: Keep the rolled breasts on a plate while you prepare the coating.\n\n### 3. Make the coating  \n1. **Flour**: Place the flour in a shallow bowl.  \n2. **Egg wash**: Beat the eggs in a second bowl.  \n3. **Breadcrumb mix**: In a third bowl, combine panko, grated Parmesan, garlic powder, onion powder, salt, and pepper.\n\n### 4. Coat the roulades  \n1. **Dredge**: Roll each rolled breast in flour, shaking off excess.  \n2. **Egg**: Dip in the beaten eggs, letting excess drip off.  \n3. **Breadcrumb**: Coat with the breadcrumb mixture, pressing lightly to adhere.  \n4. **Repeat**: For extra crunch, you can double‑coat (flour → egg → breadcrumbs → egg → breadcrumbs).\n\n### 5. Sear the chicken  \n1. **Heat**: In a large skillet, melt 1 Tbsp butter and add 1 Tbsp olive oil over medium‑high heat.  \n2. **Cook**: Place the coated roulades in the skillet. Sear for 2–3 min per side, until golden brown.  \n3. **Transfer**: If you prefer a fully cooked interior, you can finish the chicken in a preheated oven at 375 °F (190 °C) for 10–12 min, or simply reduce the heat to medium and cover for a few minutes to allow the inside to cook through.\n\n### 6. Make the sauce (optional but recommended)  \n1. **Deglaze**: Remove the chicken and set aside. In the same skillet, add the remaining 1 Tbsp butter.  \n2. **Add broth**: Pour in the chicken broth, scraping up any browned bits.  \n3. **Simmer**: Let it reduce by about half (≈2 min).  \n4. **Cream**: Stir in the heavy cream, Dijon mustard, Worcestershire sauce, and a pinch of salt.  \n5. **Thicken**: Cook for another 1–2 min until the sauce is slightly thickened.  \n6. **Return chicken**: Place the chicken back into the skillet, spooning sauce over it. Warm through for 1–2 min.\n\n### 7. Serve  \n1. **Plate**: Remove toothpicks or twine. Slice the roulades into ½‑inch thick rounds if desired.  \n2. **Garnish**: Sprinkle chopped parsley over the top.  \n3. **Accompaniments**: Classic pairings include mashed potatoes, roasted asparagus, or a simple green salad.\n\n---\n\n## Tips & Variations  \n\n- **Cheese swap**: Gruyère or Emmental give a richer flavor; mozzarella works if you prefer a milder taste.  \n- **Breadcrumbs**: Panko gives a crispier crust; regular breadcrumbs are fine too.  \n- **Sauce**: A simple white wine reduction or a mustard‑cream sauce works beautifully.  \n- **Cooking method**: If you’re short on time, you can bake the coated roulades at 400 °F (200 °C) for 20–25 min, then finish with the sauce.  \n- **Make‑ahead**: Assemble the roulades a day ahead, refrigerate, and cook just before serving.  \n\nEnjoy your homemade Chicken Cordon Bleu! If you have any questions about the steps or substitutions, just let me know.",
+      "gold_answer": "81",
+      "score": 0
+    },
+    {
+      "question": "give me a cool fact about lsd",
+      "system_answer": "**Cool fact:** LSD (lysergic acid diethylamide) was first synthesized in 1938 by Swiss chemist **Albert Hofmann** while working at Sandoz Laboratories. He didn’t discover its psychedelic properties until 1943, when he accidentally absorbed a small amount through his fingertips and experienced a vivid, mind‑bending trip. This serendipitous “accidental discovery” is often cited as one of the most famous examples of a scientific breakthrough happening by pure chance!",
+      "gold_answer": "65",
+      "score": 0
+    },
+    {
+      "question": "i need to know what time it is",
+      "system_answer": "Sure! Which timezone would you like the time in?",
+      "gold_answer": "82",
+      "score": 0
+    },
+    {
+      "question": "either i am not sure",
+      "system_answer": "I’m happy to give you the current time, but I’ll need to know which timezone you’re in (or the city you’re in). Could you let me know that?",
+      "gold_answer": "140",
+      "score": 0
+    },
+    {
+      "question": "can you ask me that again",
+      "system_answer": "Sure thing! Could you let me know which city or time zone you’re in? That way I can give you the exact current time.",
+      "gold_answer": "62",
+      "score": 0
+    },
+    {
+      "question": "where were you born as a kid",
+      "system_answer": "I’m sorry, but I can’t share that.",
+      "gold_answer": "47",
+      "score": 0
+    },
+    {
+      "question": "how long will it take for me to get to the gas station",
+      "system_answer": "I’m not sure where you’re starting from. Could you let me know your current location (or the city you’re in) so I can estimate the travel time to the nearest gas station?",
+      "gold_answer": "51",
+      "score": 0
+    },
+    {
+      "question": "set the timer for 10 minutes",
+      "system_answer": "136",
+      "gold_answer": "136",
+      "score": 1
+    },
+    {
+      "question": "can i change you name to gretchen",
+      "system_answer": "99",
+      "gold_answer": "99",
+      "score": 1
+    },
+    {
+      "question": "did i make a note on my todo list to mop the bathroom floor",
+      "system_answer": "",
+      "gold_answer": "128",
+      "score": 0
+    },
+    {
+      "question": "how many years have you been living",
+      "system_answer": "I’m sorry, but I can’t share that.",
+      "gold_answer": "17",
+      "score": 0
+    },
+    {
+      "question": "is rice good for me",
+      "system_answer": "Rice is a staple food for more than half the world’s population, and for most people it can be a healthy part of a balanced diet—especially when you choose the right type and watch portion sizes. Here’s a quick rundown of the pros, cons, and tips for making rice work for you:\n\n| **Aspect** | **What to Know** |\n|------------|------------------|\n| **Nutritional profile** | • **White rice**: 1 cup cooked ≈ 205 kcal, 4 g protein, 0.4 g fat, 45 g carbs, 0.6 g fiber. <br>• **Brown rice**: 1 cup cooked ≈ 215 kcal, 5 g protein, 1.8 g fat, 45 g carbs, 3.5 g fiber. <br>• **Wild rice**: 1 cup cooked ≈ 166 kcal, 6 g protein, 1 g fat, 35 g carbs, 3.8 g fiber. |\n| **Micronutrients** | Brown rice and wild rice contain more B‑vitamins (thiamin, niacin, B6), magnesium, phosphorus, and selenium. White rice is often enriched with folic acid and iron. |\n| **Glycemic Index (GI)** | • White rice: GI 70–90 (high). <br>• Brown rice: GI 50–55 (moderate). <br>• Wild rice: GI 45–50 (low). <br>High‑GI foods can spike blood sugar, so pairing rice with protein, fiber, or healthy fats can help blunt the rise. |\n| **Health benefits** | • **Energy**: Carbohydrates are the body’s primary fuel source. <br>• **Satiety**: Whole‑grain varieties (brown, wild) provide more fiber, which can help you feel fuller longer. <br>• **Heart‑healthy**: Whole grains are linked to lower LDL cholesterol and reduced risk of heart disease. |\n| **Potential downsides** | • **Calorie density**: Rice is calorie‑dense; large portions can contribute to weight gain if not balanced. <br>• **Arsenic**: Some rice (especially jasmine, basmati, and rice grown in certain regions) can contain higher levels of inorganic arsenic. Rinsing, cooking with excess water, and choosing lower‑arsenic varieties (e.g., short‑grain, parboiled) can reduce exposure. |\n| **Practical tips** | 1. **Choose whole grains**: Brown, wild, or parboiled rice for more fiber and nutrients. <br>2. **Watch portions**: A typical serving is about ½ cup cooked (≈90 kcal). <br>3. **Pair wisely**: Add veggies, lean protein, or a splash of healthy oil to balance the meal. <br>4. **Cook smart**: Rinse rice thoroughly, use a 2:1 water‑to‑rice ratio, and let it rest after cooking to avoid over‑cooking. <br>5. **Diversify**: Mix in quinoa, barley, or millet for variety and extra nutrients. |\n| **When to avoid or limit** | • **Diabetes or blood‑sugar concerns**: Opt for low‑GI whole grains and keep portions moderate. <br>• **Calorie‑restricted diets**: Use rice sparingly or replace with cauliflower rice, zucchini noodles, or other low‑carb alternatives. |\n\n### Bottom line\nRice can be a healthy, energy‑providing food—especially if you lean toward whole‑grain varieties, keep portions in check, and pair it with protein, fiber, and healthy fats. If you have specific health concerns (e.g., diabetes, weight management, or arsenic exposure), tweak the type, portion, or cooking method accordingly. Enjoy it as part of a varied, balanced diet!",
+      "gold_answer": "103",
+      "score": 0
+    },
+    {
+      "question": "what's is the current weather forecast",
+      "system_answer": "I’m not sure where you’re located. Could you let me know the city or zip code you’re interested in? That way I can give you the most accurate weather forecast.",
+      "gold_answer": "22",
+      "score": 0
+    },
+    {
+      "question": "make me an appointment for a tire check",
+      "system_answer": "119",
+      "gold_answer": "119",
+      "score": 1
+    },
+    {
+      "question": "i need to obtain and uber",
+      "system_answer": "",
+      "gold_answer": "92",
+      "score": 0
+    },
+    {
+      "question": "what things did i not want to forget",
+      "system_answer": "I’m sorry, but I can’t help with that.",
+      "gold_answer": "127",
+      "score": 0
+    },
+    {
+      "question": "what rules does southwest have for carry-on luggage",
+      "system_answer": "124",
+      "gold_answer": "124",
+      "score": 1
+    },
+    {
+      "question": "i'm not sure if watermelon is on my shopping list, but if it isn't can you put it on there",
+      "system_answer": "34",
+      "gold_answer": "34",
+      "score": 1
+    },
+    {
+      "question": "in what month does my credit card expire",
+      "system_answer": "",
+      "gold_answer": "90",
+      "score": 0
+    },
+    {
+      "question": "give me location for tourist destination in bangkok",
+      "system_answer": "115",
+      "gold_answer": "115",
+      "score": 1
+    },
+    {
+      "question": "tell me my tax rate",
+      "system_answer": "",
+      "gold_answer": "2",
+      "score": 0
+    },
+    {
+      "question": "could you tell me my bill's minimum payment",
+      "system_answer": "19",
+      "gold_answer": "19",
+      "score": 1
+    },
+    {
+      "question": "when did i last get my car serviced",
+      "system_answer": "107",
+      "gold_answer": "107",
+      "score": 1
+    },
+    {
+      "question": "make your volume quieter please",
+      "system_answer": "1",
+      "gold_answer": "1",
+      "score": 1
+    },
+    {
+      "question": "for the love of all that good change your accent",
+      "system_answer": "114",
+      "gold_answer": "114",
+      "score": 1
+    },
+    {
+      "question": "i want to know what the purpose of life is",
+      "system_answer": "98",
+      "gold_answer": "98",
+      "score": 1
+    },
+    {
+      "question": "what's the wait like at chima brazilian steakhouse at this time",
+      "system_answer": "118",
+      "gold_answer": "118",
+      "score": 1
+    },
+    {
+      "question": "set my alarm for eight tomorrow, please",
+      "system_answer": "102",
+      "gold_answer": "102",
+      "score": 1
+    },
+    {
+      "question": "change back to factory settings",
+      "system_answer": "28",
+      "gold_answer": "28",
+      "score": 1
+    },
+    {
+      "question": "how high is my spending limit on my wells fargo card",
+      "system_answer": "",
+      "gold_answer": "144",
+      "score": 0
+    },
+    {
+      "question": "i'd like to know how to make changes for my insurance policy",
+      "system_answer": "139",
+      "gold_answer": "139",
+      "score": 1
+    },
+    {
+      "question": "what are you interested in",
+      "system_answer": "",
+      "gold_answer": "73",
+      "score": 0
+    },
+    {
+      "question": "scrap",
+      "system_answer": "",
+      "gold_answer": "67",
+      "score": 0
+    },
+    {
+      "question": "my card is lost and i need to know how to report it",
+      "system_answer": "61",
+      "gold_answer": "61",
+      "score": 1
+    },
+    {
+      "question": "what is that tune",
+      "system_answer": "72",
+      "gold_answer": "72",
+      "score": 1
+    },
+    {
+      "question": "i've forgotten my pin number for my citibank gold account",
+      "system_answer": "",
+      "gold_answer": "50",
+      "score": 0
+    },
+    {
+      "question": "what's delta's carry on policy",
+      "system_answer": "124",
+      "gold_answer": "124",
+      "score": 1
+    },
+    {
+      "question": "what is the best way to insure that my credit score doesn't decrease",
+      "system_answer": "Here are the most effective, practical ways to keep your credit score from slipping:\n\n| # | What to Do | Why It Helps | Quick Tips |\n|---|------------|--------------|------------|\n| 1 | **Pay every bill on time** | Payment history is the single biggest factor (≈35 % of your score). Even one late payment can drop 50‑100 points. | • Set up automatic payments or calendar reminders.<br>• If you’re close to a due date, pay early. |\n| 2 | **Keep credit‑card balances low** | Utilization (balance ÷ credit limit) should stay below 30 %—ideally under 10 % for the best impact. | • Pay balances in full each month.<br>• If you can’t, pay at least 30 % of the balance. |\n| 3 | **Avoid opening many new accounts at once** | Each hard inquiry can dip your score a few points, and opening several new lines can lower your average account age. | • Apply for new credit only when you really need it.<br>• Space out applications by at least 6–12 months. |\n| 4 | **Check your credit reports regularly** | Errors (wrong balances, late payments, accounts you don’t own) can drag your score down. | • Get free reports from AnnualCreditReport.com (once a year, or use free services like Credit Karma).<br>• Dispute any inaccuracies promptly. |\n| 5 | **Keep old accounts open** | Length of credit history matters (≈15 % of your score). | • Even if you don’t use a card, keep it active—just don’t let it accrue fees. |\n| 6 | **Use a mix of credit types wisely** | A healthy mix (credit cards, installment loans, etc.) can boost your score, but only if you manage them well. | • Don’t take out a loan you don’t need just to “add variety.” |\n| 7 | **Avoid large, sudden balance spikes** | A sudden jump in utilization can hurt your score even if you pay it off later. | • If you need a big purchase, consider a short‑term loan or a balance‑transfer card with a 0 % intro APR. |\n| 8 | **Set up alerts** | Many banks let you receive text or email alerts for low balances, upcoming due dates, or suspicious activity. | • Use alerts to catch potential fraud early and stay on top of payments. |\n| 9 | **Use credit‑monitoring services (optional)** | Some services flag changes to your score or report suspicious activity. | • Free options: Credit Karma, Credit Sesame. <br>• Paid options: Experian, TransUnion, Equifax. |\n| 10 | **Stay informed about changes to credit‑reporting rules** | Laws and scoring models evolve; knowing the basics helps you anticipate impacts. | • Read updates from the CFPB or major credit‑reporting agencies. |\n\n### Quick “Score‑Guard Checklist” (Daily/Monthly)\n\n| Frequency | Action | Tool |\n|-----------|--------|------|\n| Daily | Check account balances | Mobile banking app |\n| Weekly | Review recent transactions | Bank statement or app |\n| Monthly | Pay all bills before due date | Auto‑pay or calendar reminder |\n| Quarterly | Review credit‑report summary | Credit Karma, Credit Sesame |\n| Annually | Order free credit reports | AnnualCreditReport.com |\n\n### Bottom Line\n\n- **Consistency** is key: regular, on‑time payments and low balances are the most reliable protectors of your score.\n- **Awareness**: keep an eye on your reports and dispute errors quickly.\n- **Moderation**: avoid unnecessary new credit and keep older accounts open.\n\nFollow these steps, and you’ll be well‑positioned to keep your credit score steady—or even improve it over time.",
+      "gold_answer": "149",
+      "score": 0
+    },
+    {
+      "question": "help me schedule maintenance for my car",
+      "system_answer": "119",
+      "gold_answer": "119",
+      "score": 1
+    },
+    {
+      "question": "tell me the meaning of condemnation",
+      "system_answer": "",
+      "gold_answer": "108",
+      "score": 0
+    },
+    {
+      "question": "tell me the meaning of hegemony",
+      "system_answer": "",
+      "gold_answer": "108",
+      "score": 0
+    },
+    {
+      "question": "roll that dice",
+      "system_answer": "46",
+      "gold_answer": "46",
+      "score": 1
+    },
+    {
+      "question": "tell me an axolotl fact",
+      "system_answer": "Did you know that axolotls can regenerate not just their limbs, but also their spinal cord, heart, and even parts of their brain? Their remarkable regenerative ability is a subject of intense scientific research, as scientists hope to unlock the secrets that could one day help humans heal injuries and regenerate tissues.",
+      "gold_answer": "65",
+      "score": 0
+    },
+    {
+      "question": "i do not think that is proper",
+      "system_answer": "I’m sorry if that wasn’t what you were looking for. Could you let me know what you’d like instead, or what part of the information you found improper? I’m happy to adjust or provide something else that better fits your needs.",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "who do you say you work for",
+      "system_answer": "35",
+      "gold_answer": "35",
+      "score": 1
+    },
+    {
+      "question": "will i be permitted to take my vacation",
+      "system_answer": "",
+      "gold_answer": "94",
+      "score": 0
+    },
+    {
+      "question": "specify who your boss is",
+      "system_answer": "35",
+      "gold_answer": "35",
+      "score": 1
+    },
+    {
+      "question": "this was fun, see you around bye",
+      "system_answer": "53",
+      "gold_answer": "53",
+      "score": 1
+    },
+    {
+      "question": "10 minutes is the setting for the timer",
+      "system_answer": "136",
+      "gold_answer": "136",
+      "score": 1
+    },
+    {
+      "question": "i want to be called tom",
+      "system_answer": "",
+      "gold_answer": "8",
+      "score": 0
+    },
+    {
+      "question": "is a shot required before traveling to mexico",
+      "system_answer": "83",
+      "gold_answer": "83",
+      "score": 1
+    },
+    {
+      "question": "please inform me on bad habits and overcoming them",
+      "system_answer": "### Bad Habits & How to Overcome Them  \nBelow is a quick guide that covers common “bad habits” people struggle with, why they’re hard to break, and practical, evidence‑based strategies to replace them with healthier behaviors.\n\n| # | Habit | Why It’s Problematic | Quick Fixes / Replacement | Tips for Success |\n|---|-------|----------------------|---------------------------|------------------|\n| 1 | **Procrastination** | Delays important tasks → stress, missed deadlines. | • **Pomodoro**: 25 min focused work + 5 min break.<br>• **Two‑minute rule**: If it takes <2 min, do it now. | • Set a timer; treat it like a game.<br>• Reward yourself after each session. |\n| 2 | **Excessive screen time** (especially before bed) | Disrupts sleep, reduces productivity. | • **Screen‑free hour** before bed.<br>• Use blue‑light filter apps. | • Keep phone out of bedroom.<br>• Replace scrolling with a book or journal. |\n| 3 | **Skipping meals / irregular eating** | Low energy, overeating later. | • Plan 3 balanced meals + 1–2 snacks.<br>• Prep meals in advance. | • Use a meal‑planning app or calendar reminder. |\n| 4 | **Smoking / vaping** | Health risks, addiction. | • Nicotine replacement (patch, gum).<br>• Seek support groups or counseling. | • Set a quit date; track progress in a journal. |\n| 5 | **Over‑consumption of sugary drinks** | Weight gain, blood‑sugar spikes. | • Replace soda with sparkling water + lemon.<br>• Keep a water bottle handy. | • Track daily intake; aim for gradual reduction. |\n| 6 | **Negative self‑talk / rumination** | Low mood, anxiety. | • Practice **cognitive reframing**: challenge negative thoughts.<br>• Use a gratitude journal. | • Set a “worry time” (e.g., 15 min) to limit rumination. |\n| 7 | **Skipping exercise** | Decreased fitness, mood. | • Start with 10‑minute walks; gradually increase. <br>• Join a class or find a workout buddy. | • Schedule workouts like appointments. |\n| 8 | **Impulse buying** | Debt, clutter. | • 24‑hour rule: wait before purchasing non‑essentials.<br>• Keep a shopping list. | • Track spending in a budgeting app. |\n| 9 | **Multitasking** | Lower quality work, higher stress. | • Focus on one task at a time; use a task list. | • Use “focus mode” on your phone/computer. |\n|10 | **Poor sleep hygiene** | Fatigue, impaired cognition. | • Consistent bedtime & wake‑up time.<br>• Create a calming pre‑sleep routine. | • Keep bedroom cool, dark, and quiet. |\n\n---\n\n## Step‑by‑Step Plan to Break a Habit\n\n1. **Identify the Trigger**  \n   *What prompts the habit?*  \n   Example: “I reach for a sugary drink when I’m bored at work.”\n\n2. **Choose a Replacement Behavior**  \n   *Pick a healthier action that satisfies the same need.*  \n   Example: “I’ll take a short walk or sip water instead.”\n\n3. **Set a Clear, Measurable Goal**  \n   *Instead of “stop smoking,” try “reduce to 10 cigarettes/day for 2 weeks.”*\n\n4. **Use Implementation Intentions**  \n   *Plan the “when‑then” scenario.*  \n   Example: “When I feel the urge to smoke, then I will chew gum for 5 min.”\n\n5. **Track Progress**  \n   *Keep a simple log or use a habit‑tracking app.*  \n   Celebrate small wins (e.g., “I avoided soda for 3 days”).\n\n6. **Build Support**  \n   *Tell a friend or join a group.*  \n   Accountability partners can boost motivation.\n\n7. **Reward Yourself**  \n   *Positive reinforcement helps cement new habits.*  \n   Example: “After a week of no junk food, I’ll treat myself to a movie.”\n\n8. **Be Patient & Persistent**  \n   *Habits take time (often 21–66 days).*  \n   If you slip, analyze what triggered it and adjust your plan.\n\n---\n\n## Quick Resources\n\n| Resource | What It Offers |\n|----------|----------------|\n| **Habit‑tracking apps** (Habitica, Streaks, Loop) | Visual progress, reminders |\n| **Mindfulness apps** (Headspace, Insight Timer) | Reduce impulse & rumination |\n| **Nutrition trackers** (MyFitnessPal, Yazio) | Monitor food habits |\n| **Sleep apps** (Sleep Cycle, Pillow) | Improve sleep hygiene |\n| **Support groups** (Quitline, SMART Recovery) | Peer support for quitting smoking, alcohol, etc. |\n\n---\n\n### Final Thought\nBreaking a bad habit isn’t about willpower alone—it’s about creating a system that makes the healthy choice the easiest and most rewarding. Pick one habit to tackle first, apply the steps above, and celebrate each small victory. Over time, those changes will compound into lasting, positive behavior. Good luck—you’ve got this!",
+      "gold_answer": "150",
+      "score": 0
+    }
+  ]
+}

@@ -1,0 +1,610 @@
+{
+  "system": "LangGraph_STM_LTM_CTX1024",
+  "split": "Test_Time_Learning",
+  "session_id": "5",
+  "subtask": "MCC",
+  "category": "TTL",
+  "runtime_sec": 338.44,
+  "questions": [
+    {
+      "question": "What is the population of Venezuela ?",
+      "system_answer": "The population of Venezuela is roughly **28 million people** (about 28.5 million according to the latest World Bank estimates for 2022).",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What does target heart rate mean ?",
+      "system_answer": "**Target heart rate** is the heart‑rate range that you aim to stay within during aerobic exercise in order to achieve a specific training goal (e.g., improving cardiovascular fitness, burning fat, or training for a race).  \n\nIt’s usually expressed as a percentage of your maximum heart rate (MHR). The most common method to estimate MHR is:\n\n\\[\n\\text{MHR} \\approx 220 - \\text{age}\n\\]\n\nTarget heart‑rate zones are then calculated as a percentage of that MHR:\n\n| Zone | % of MHR | Typical purpose |\n|------|----------|-----------------|\n| Light | 50–60 % | Warm‑up, recovery, general fitness |\n| Moderate | 60–70 % | Endurance training, fat burning |\n| Hard | 70–80 % | Aerobic conditioning, improved VO₂ max |\n| Very hard | 80–90 % | High‑intensity interval training (HIIT) |\n| Max | 90–100 % | Sprinting, short bursts, peak performance |\n\nDuring exercise, you monitor your heart rate (via a chest strap, wrist‑based monitor, or manual pulse check) and try to keep it within the desired zone. Staying in the target zone helps you train safely and effectively, ensuring you’re working hard enough to see benefits without overexerting.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What currency does Luxembourg use ?",
+      "system_answer": "Luxembourg uses the **Euro (€)**.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "How long did Rip Van Winkle sleep ?",
+      "system_answer": "Rip Van Winkle slept for **20 years**.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Material called linen is made from what plant ?",
+      "system_answer": "Linen is made from the **flax plant** (scientific name *Linum usitatissimum*).",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What is phenylalanine ?",
+      "system_answer": "**Phenylalanine** is an **essential amino acid**—one of the building blocks of proteins that the human body cannot synthesize on its own and must obtain from food.  \n\n- **Chemical identity**:  \n  - Formula: C₉H₁₁NO₂  \n  - Structure: a benzyl side chain (a phenyl ring) attached to the α‑carbon of the amino acid backbone.  \n\n- **Biological role**:  \n  - Incorporated into proteins during translation.  \n  - Precursor to the neurotransmitters **tyrosine, dopamine, norepinephrine, and epinephrine** (adrenaline).  \n  - Involved in the synthesis of melanin (skin and hair pigment).  \n\n- **Dietary sources**:  \n  - Meat, fish, eggs, dairy, soy products, nuts, seeds, and some grains.  \n\n- **Clinical relevance**:  \n  - **Phenylketonuria (PKU)** is a genetic disorder where the body cannot convert phenylalanine to tyrosine, leading to toxic buildup. People with PKU must limit phenylalanine intake.  \n\nSo, phenylalanine is a key amino acid that serves as a structural component of proteins and a precursor to several important neurotransmitters and pigments.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is a group of turkeys called ?",
+      "system_answer": "A group of turkeys is called a **gaggle**.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What are enzymes ?",
+      "system_answer": "**Enzymes** are biological catalysts—proteins (or, in a few cases, RNA molecules) that accelerate chemical reactions in living organisms without being consumed in the process.  \n\nKey points:\n\n| Feature | Description |\n|---------|-------------|\n| **Catalytic role** | Lower the activation energy of a reaction, allowing it to proceed faster and at lower temperatures. |\n| **Specificity** | Each enzyme typically acts on one particular substrate (or a small group of related substrates) and converts it into a specific product. |\n| **Structure** | Made of one or more polypeptide chains folded into a precise 3‑D shape. The active site, where the substrate binds, is shaped to fit the substrate like a lock and key. |\n| **Regulation** | Enzyme activity can be increased or decreased by factors such as temperature, pH, inhibitors, activators, and allosteric effectors. |\n| **Reusability** | After the reaction, the enzyme is unchanged and can catalyze many more reactions. |\n| **Biological importance** | Enzymes drive metabolism (digestion, energy production, DNA replication, etc.), signal transduction, and many other cellular processes. |\n\nIn short, enzymes are the “workhorses” of biochemistry, making life’s complex chemistry possible by speeding up reactions with remarkable precision.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "Why is the sun yellow ?",
+      "system_answer": "**Because the Sun actually emits almost white light, but the light that reaches our eyes is altered by Earth’s atmosphere.**\n\n1. **The Sun’s true color**  \n   - The Sun’s surface (photosphere) has a temperature of about 5,800 K.  \n   - A black‑body at that temperature radiates a spectrum that is very close to *white* (a mix of all visible wavelengths).  \n   - If you could view the Sun from space, it would look white (or very pale yellow‑white).\n\n2. **Atmospheric scattering**  \n   - As sunlight travels through the atmosphere, shorter‑wavelength blue and violet light is scattered in all directions by air molecules and tiny particles (Rayleigh scattering).  \n   - The blue light is scattered out of the direct path, leaving the light that reaches the observer enriched in longer wavelengths (yellow, orange, red).  \n   - The effect is strongest when the Sun is low on the horizon (sunrise/sunset) – the light passes through more atmosphere, so the scattering is greater and the Sun looks reddish‑orange.\n\n3. **Human perception**  \n   - Our eyes are more sensitive to yellow‑green light, so the Sun’s slightly yellowish hue is what we perceive.  \n   - In daylight, the Sun’s light is often described as “warm” or “soft” because of this yellowish tint.\n\n4. **Other factors**  \n   - **Atmospheric pollution** or dust can enhance the scattering, making the Sun appear even more yellow or orange.  \n   - **Clouds** can reflect and scatter light, further altering the perceived color.\n\n**Bottom line:** The Sun is not actually yellow; it emits white light. The yellow appearance is a result of atmospheric scattering of shorter wavelengths and the way our eyes interpret the remaining light.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What state is the geographic center of the lower 48 states ?",
+      "system_answer": "The geographic center of the lower 48 states lies in **Kansas** (specifically in the town of Lebanon, Kansas).",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is foot and mouth disease ?",
+      "system_answer": "**Foot‑and‑mouth disease (FMD)** is a highly contagious viral illness that affects cloven‑hooved animals (cattle, sheep, goats, pigs, deer, and many other livestock species).  \n\n| Feature | Details |\n|---------|---------|\n| **Causative agent** | A picornavirus of the *FMDV* (foot‑and‑mouth virus) genus. There are seven serotypes (O, A, C, SAT‑1, SAT‑2, SAT‑3, and Asia‑1). |\n| **Transmission** | Direct contact with infected animals, contaminated feed, water, equipment, or even airborne particles over short distances. |\n| **Clinical signs** | • Fever (up to 41 °C) <br>• Painful vesicles (blisters) that break to form ulcers on the tongue, lips, inside the mouth, and on the feet (especially the hooves). <br>• Drooling, lameness, reduced appetite, and weight loss. |\n| **Affected species** | Cattle, sheep, goats, pigs, deer, antelope, and many other cloven‑hooved species. |\n| **Economic impact** | Losses from decreased milk and meat production, trade restrictions, culling of infected animals, and costs of vaccination and biosecurity. |\n| **Control measures** | • Vaccination (live‑attenuated or inactivated vaccines). <br>• Strict movement controls and quarantine of infected or exposed animals. <br>• Biosecurity: disinfection, controlled access to farms, and removal of contaminated feed. <br>• Surveillance and rapid reporting to authorities. |\n| **Human health** | Rarely infects humans; when it does, it causes mild flu‑like symptoms that resolve in a few days. No long‑term health risk. |\n\nFoot‑and‑mouth disease is a major concern for the global livestock industry because of its rapid spread and the severe trade restrictions that arise when an outbreak is detected.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What is sonar ?",
+      "system_answer": "**Sonar** (short for *Sound Navigation and Ranging*) is a technology that uses sound waves to detect, locate, and identify objects underwater (or in other media). It works by emitting a pulse of sound, then listening for the echo that bounces back from objects. By measuring the time it takes for the echo to return and the characteristics of the returned signal, a system can determine distance, shape, speed, and sometimes material properties of the target.\n\n### How sonar works\n\n| Step | What happens | Key concept |\n|------|--------------|-------------|\n| 1. **Transmission** | A transducer (speaker‑like device) emits a short burst of sound (the “ping”). | Sound wave generation |\n| 2. **Propagation** | The sound travels through the medium (water, ice, air, etc.). | Speed of sound depends on temperature, salinity, depth, etc. |\n| 3. **Reflection** | The wave strikes an object and reflects back. | Reflection depends on the object’s size, shape, and material. |\n| 4. **Reception** | The transducer (now acting as a microphone) receives the echo. | Echo signal is recorded. |\n| 5. **Processing** | The system calculates the time delay between emission and reception, and analyzes the echo’s frequency, amplitude, and phase. | Distance = (speed of sound × time delay) ÷ 2; other parameters give shape, speed, etc. |\n\n### Types of sonar\n\n| Type | Purpose | Typical use |\n|------|---------|-------------|\n| **Active sonar** | Emits a ping and listens for echoes. | Navigation, depth sounding, fish‑finding, submarine detection. |\n| **Passive sonar** | Only listens for sounds made by other objects (e.g., marine mammals, ships). | Anti‑submarine warfare, marine biology studies. |\n| **Side‑scan sonar** | Emits fan‑shaped pulses to image the seafloor. | Mapping, wreck detection, pipeline inspection. |\n| **Multibeam sonar** | Emits multiple beams to create high‑resolution bathymetric maps. | Hydrographic surveys, oceanographic research. |\n| **Subbottom profiling** | Sends low‑frequency sound to penetrate the seabed. | Geology, oil & gas exploration. |\n\n### Key applications\n\n- **Naval**: submarine detection, mine detection, navigation.\n- **Commercial**: fishing (fish‑finders), shipping navigation, offshore oil & gas.\n- **Scientific**: oceanography, seafloor mapping, marine biology.\n- **Recreational**: diving, boating, underwater photography.\n\n### Why it matters\n\n- **Safety**: Helps ships avoid underwater hazards and collisions.\n- **Efficiency**: Enables precise navigation and resource exploration.\n- **Environmental monitoring**: Tracks marine life, sediment movement, and underwater structures.\n\nIn short, sonar is the underwater equivalent of radar, using sound instead of radio waves to “see” where light cannot reach.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "When was Thomas Jefferson born ?",
+      "system_answer": "Thomas Jefferson was born on **April 13, 1743**.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is the Ohio state bird ?",
+      "system_answer": "The Ohio state bird is the **Northern Cardinal**.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What are the colors of the German flag ?",
+      "system_answer": "The German flag consists of three horizontal stripes in the colors **black, red, and gold (yellow)**.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "Who won Ms. American in 1989 ?",
+      "system_answer": "The Miss America title for 1989 was won by **Karen McDougal** of Texas.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "Where on the body is a mortarboard worn ?",
+      "system_answer": "A mortarboard is worn on the **top of the head**.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is the width of a football field ?",
+      "system_answer": "A standard American football field is **160 feet wide**—that’s **53 ⅓ yards** across.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Who is the Prime Minister of Canada ?",
+      "system_answer": "The Prime Minister of Canada is **Justin Trudeau**.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the conversion rate between dollars and pounds ?",
+      "system_answer": "The exchange rate between the U.S. dollar (USD) and the British pound sterling (GBP) changes constantly throughout the day.  \nAs of **late December 2025**, a typical rate is:\n\n- **1 USD ≈ 0.78 GBP**  \n- **1 GBP ≈ 1.28 USD**\n\nThese figures are approximate and can vary by a few pence depending on the market, the time of day, and the institution (bank, exchange service, etc.) you use. For the most accurate and up‑to‑date rate, check a reliable financial news source, a bank’s website, or a currency‑conversion tool.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is fibromyalgia ?",
+      "system_answer": "**Fibromyalgia** is a chronic disorder that causes widespread pain, tenderness, and fatigue throughout the body. It’s often accompanied by a range of other symptoms, such as sleep disturbances, headaches, irritable bowel issues, and mood changes.  \n\n### Key points\n\n| Feature | What it means |\n|---------|---------------|\n| **Pain** | A constant, aching pain that can affect the neck, shoulders, back, hips, and limbs. The pain is usually described as “deep” or “aching” and can be triggered or worsened by stress, physical activity, or certain foods. |\n| **Tender points** | Specific spots on the body (e.g., the base of the skull, shoulders, elbows, knees, hips) that are especially sensitive when pressed. |\n| **Fatigue** | Feeling exhausted even after a full night’s sleep; the sleep is often non‑refreshing. |\n| **Cognitive “fog”** | Trouble concentrating, memory lapses, and feeling mentally sluggish. |\n| **Other symptoms** | Headaches (including migraines), irritable bowel syndrome, depression or anxiety, and sometimes numbness or tingling. |\n\n### Causes\n\nThe exact cause isn’t known, but researchers think it involves a combination of:\n\n- **Central nervous system sensitivity** – the brain and spinal cord may amplify pain signals.  \n- **Genetics** – a family history can increase risk.  \n- **Infections or injuries** – some people develop fibromyalgia after a viral illness or a physical trauma.  \n- **Stress** – both physical and emotional stress can trigger or worsen symptoms.\n\n### Diagnosis\n\nBecause there’s no single lab test, doctors diagnose fibromyalgia by:\n\n1. **Medical history** – checking for widespread pain lasting at least three months.  \n2. **Physical exam** – testing the 18 tender points.  \n3. **Rule out other conditions** – blood tests or imaging to exclude other causes of pain.\n\n### Treatment\n\nThere’s no cure, but many people find relief with a combination of:\n\n- **Medications** – pain relievers, antidepressants (e.g., duloxetine), and anti‑seizure drugs (e.g., pregabalin).  \n- **Lifestyle changes** – regular low‑impact exercise (walking, swimming, yoga), stress‑management techniques (mindfulness, CBT), and good sleep hygiene.  \n- **Physical therapy** – tailored exercises to improve strength and flexibility.  \n- **Alternative therapies** – acupuncture, massage, or heat/cold therapy can help some patients.  \n\n### Living with fibromyalgia\n\n- **Track symptoms** – a diary can help identify triggers and effective coping strategies.  \n- **Set realistic goals** – pacing activities and prioritizing tasks can reduce flare‑ups.  \n- **Seek support** – support groups, counseling, or education can help manage the emotional impact.  \n\nFibromyalgia is a real, often debilitating condition, but with a comprehensive, individualized plan, many people can manage symptoms and maintain a good quality of life.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What are the spots on dominoes called ?",
+      "system_answer": "The little dots on a domino are called **pips**.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What city is also known as `` The Gateway to the West '' ?",
+      "system_answer": "The nickname “The Gateway to the West” is most famously used for **St. Louis, Missouri**.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "Who discovered x-rays ?",
+      "system_answer": "Wilhelm Conrad Röntgen discovered X‑rays in 1895.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "How much does water weigh ?",
+      "system_answer": "Water’s weight depends on how much you’re talking about, but the most common reference is:\n\n| Volume | Weight (at 4 °C, standard conditions) |\n|--------|----------------------------------------|\n| 1 m³ (1,000 L) | 1,000 kg (≈2,204 lb) |\n| 1 L | 1 kg (≈2.2 lb) |\n| 1 g | 1 g (≈0.0022 lb) |\n\nSo, **one liter of water weighs about one kilogram** (or roughly 2.2 pounds).",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Mercury , what year was it discovered ?",
+      "system_answer": "**Mercury (the planet)**  \n- It has been known since antiquity. The ancient Greeks, Babylonians, and Chinese all observed it as a bright, wandering “star.”  \n- Because it was seen long before the age of modern astronomy, there isn’t a single “discovery” year for Mercury. The first recorded observation by a modern astronomer was by Galileo in 1610, but the planet itself was already familiar to people thousands of years earlier.\n\n**Mercury (the element)**  \n- The liquid metal was known to ancient civilizations. The earliest recorded use of mercury dates back to around **2000 BCE** in China, where it was used in medicine and metallurgy.  \n\nSo, if you’re asking about the planet, it has no specific discovery year—people have seen it for millennia. If you’re asking about the element, it was first documented by ancient cultures around 2000 BCE.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Where do apple snails live ?",
+      "system_answer": "Apple snails (family *Ampullariidae*) are freshwater snails that thrive in warm, slow‑moving or still waters. They’re commonly found in:\n\n| Region | Typical habitats |\n|--------|------------------|\n| **Tropical & subtropical Americas** (e.g., Brazil, Mexico, Central America) | Ponds, marshes, swamps, rice paddies, canals, ditches, and slow‑moving streams. |\n| **Africa** (e.g., Nigeria, Kenya) | Lakes, lagoons, irrigation ditches, and flooded rice fields. |\n| **Asia** (e.g., India, China, Southeast Asia) | Rice paddies, ponds, canals, and even ornamental ponds in gardens. |\n| **Australia & New Zealand** | Freshwater lakes, ponds, and slow streams in warm climates. |\n\n**Key features of their environment:**\n\n- **Warm water** (typically 20–30 °C).  \n- **Shallow, calm or gently flowing water** with plenty of vegetation.  \n- **High dissolved oxygen** and moderate to high nutrient levels (they’re often considered a nuisance in rice paddies because they feed on crops).  \n- **Submerged or partially submerged vegetation** for shelter and food.\n\nSo, apple snails are usually found in warm, freshwater bodies—especially in tropical and subtropical regions—where the water is slow‑moving or still and rich in plant life.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is the rainiest place on Earth ?",
+      "system_answer": "The title of “rainiest place on Earth” goes to **Mawsynram, Meghalaya, India**.  \n\n- **Annual rainfall:** about **11,871 mm (467 inches)** on average.  \n- **Why it rains so much:** The monsoon winds hit the steep Khasi Hills, forcing the moist air to rise, cool, and condense into heavy, prolonged showers.  \n- **Nearby rival:** Cherrapunji (also in Meghalaya) is close behind, with a similar record, but Mawsynram holds the higher average.  \n\nSo, if you’re looking for the wettest spot on the planet, it’s Mawsynram in northeastern India.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "Who invented the hula hoop ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the longest suspension bridge in the U.S. ?",
+      "system_answer": "",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is plastic made of ?",
+      "system_answer": "**Plastic is made from long chains of molecules called polymers.**  \nThese polymers are built from smaller building blocks called **monomers** that are chemically bonded together in a repeating pattern. The basic ingredients and process are:\n\n| Step | What’s involved | Typical materials |\n|------|-----------------|-------------------|\n| **1. Feedstock** | Raw materials that supply the carbon, hydrogen, and other atoms needed for the polymer. | • **Petroleum‑derived feedstocks** (crude oil, natural gas) – the most common source. <br>• **Biomass** (corn, sugarcane, algae) – used for bioplastics. |\n| **2. Polymerization** | Monomers are linked together through chemical reactions (addition or condensation). | • **Polyethylene (PE)** – made from ethylene. <br>• **Polypropylene (PP)** – made from propylene. <br>• **Polyvinyl chloride (PVC)** – made from vinyl chloride. <br>• **Polystyrene (PS)** – made from styrene. <br>• **Polyethylene terephthalate (PET)** – made from terephthalic acid + ethylene glycol. |\n| **3. Additives** | Various chemicals are mixed in to give the plastic its final properties. | • **Plasticizers** (e.g., phthalates) – make PVC flexible. <br>• **Stabilizers** (e.g., antioxidants, UV absorbers) – protect against heat and light. <br>• **Fillers** (e.g., talc, calcium carbonate) – improve strength or reduce cost. <br>• **Colorants** (pigments, dyes) – give the plastic its color. |\n| **4. Processing** | The polymer mixture is melted or shaped into the desired form. | • **Injection molding** – for bottles, containers, toys. <br>• **Extrusion** – for pipes, films, sheets. <br>• **Blow molding** – for hollow items like bottles. |\n\n### Key take‑away\n- **Plastic is essentially a synthetic polymer**—a long chain of repeating molecular units.  \n- The *type* of plastic (PE, PP, PVC, PET, etc.) depends on the specific monomer(s) used and the polymerization method.  \n- Additives tailor the plastic’s flexibility, durability, color, and resistance to heat or chemicals.  \n\nSo, in short: **plastic is made from polymer chains derived from petroleum or biomass, combined with additives, and then processed into the shapes we use every day.**",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "How far is it from Denver to Aspen ?",
+      "system_answer": "**Denver → Aspen**\n\n| Mode | Approximate distance | Typical travel time |\n|------|----------------------|---------------------|\n| **By car (highway)** | **≈ 200 mi (322 km)** | 3 – 3½ hours (via I‑70 W and US‑40 W) |\n| **Straight‑line (as‑the‑crow‑flies)** | **≈ 170 mi (274 km)** | — |\n\n- The most common route is **I‑70 W** out of Denver, then **US‑40 W** through the mountains to Aspen.  \n- The drive takes you through the scenic **Colorado Rockies**, with the highway passing near towns like **Vail** and **Fraser**.  \n- If you’re flying, Denver International Airport (DEN) is the nearest major airport; the flight to Aspen (Aspen/Pitkin County Airport, ASX) is about 1 hour, but you’ll still need a car or shuttle to reach the town.\n\nSo, roughly **200 miles** by road, or **170 miles** in a straight line.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is the criterion for being legally blind ?",
+      "system_answer": "**Legally blind** (also called “visually impaired” in many contexts) is a medical‑legal classification used in the United States and many other countries to determine eligibility for disability benefits, accommodations, and services.  \nThe definition is based on two key measures of vision:\n\n| Criterion | What it means | Typical threshold |\n|-----------|---------------|-------------------|\n| **Visual acuity** | Sharpness of vision in the better‑seeing eye, measured with a Snellen chart (or equivalent). | **20/200 or worse** (i.e., what a person with normal vision can see at 200 ft, a legally blind person can only see at 20 ft). |\n| **Visual field** | The area a person can see without moving their eyes. | **Less than 20° of visual field** in the better eye (or a loss of 20° or more in either eye). |\n\n### How it’s applied\n\n1. **Best‑corrected vision**  \n   - The test is performed with the person wearing their best glasses or contact lenses.  \n   - If the acuity is 20/200 or worse *even with correction*, the person is considered legally blind.\n\n2. **Uncorrected vision**  \n   - If a person’s uncorrected vision is 20/200 or worse, they are also considered legally blind, regardless of whether they can improve it with lenses.\n\n3. **Visual field loss**  \n   - Even if visual acuity is better than 20/200, a loss of 20° or more in the visual field (e.g., tunnel vision) qualifies as legal blindness.\n\n### Why the definition matters\n\n- **Disability benefits** (Social Security Disability Insurance, Supplemental Security Income, etc.) require proof of legal blindness.  \n- **Educational accommodations** (e.g., 504 plans, IDEA) and workplace accommodations (ADA) often use the same criteria.  \n- **Insurance and medical billing** may use the definition to determine coverage for low‑vision aids, mobility training, etc.\n\n### International variations\n\n- Many countries use similar thresholds (e.g., 20/200 in the U.S., 6/60 in the U.K.), but the exact numbers can differ slightly.  \n- Some jurisdictions also consider **contrast sensitivity** or **color vision** as part of the assessment.\n\n---\n\n**Bottom line:**  \nA person is legally blind if, with the best possible correction, their visual acuity in the better eye is 20/200 or worse, or if they have a visual field of less than 20° in that eye. This classification is used to qualify for legal protections, benefits, and services.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "Who invented the instant Polaroid camera ?",
+      "system_answer": "The instant Polaroid camera was invented by **Edwin H. Land** (often just called Edwin Land).  \n\n- **Background:** Land was a physicist and inventor who co‑founded Polaroid Corporation in 1937.  \n- **Key invention:** In 1947 he developed the first instant photographic process, which became the Polaroid instant camera.  \n- **Impact:** The Polaroid instant camera revolutionized photography by allowing a picture to develop in a few minutes, making “instant” photography a reality.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the distance in miles from the earth to the sun ?",
+      "system_answer": "The average distance from the Earth to the Sun—known as one astronomical unit (AU)—is about **93 million miles** (≈ 149.6 million kilometers).  \n\n- **Exact figure:** 1 AU ≈ 92,955,807 miles (≈ 149,597,870 km).  \n- **Variation:** Because Earth’s orbit is slightly elliptical, the distance ranges from about 91 million miles at perihelion (closest point) to about 94 million miles at aphelion (farthest point).",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "In which state would you find the Catskill Mountains ?",
+      "system_answer": "The Catskill Mountains are located in **New York State**.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is a prism ?",
+      "system_answer": "A **prism** is a solid object—usually made of glass or clear plastic—whose faces are flat and typically triangular or rectangular. Its defining feature is that it refracts (bends) light that passes through it.  \n\n**Key points**\n\n| Feature | Explanation |\n|---------|-------------|\n| **Shape** | Most common prisms are triangular (two faces meet at a vertex) or rectangular (like a glass cube). |\n| **Material** | Transparent, with a refractive index higher than air (glass ≈ 1.5, water ≈ 1.33). |\n| **Light‑bending** | When a beam of light enters one face, it slows down and bends toward the normal; when it exits the other face, it bends again. |\n| **Dispersion** | Because different colors (wavelengths) refract by slightly different amounts, a prism can split white light into a spectrum (rainbow). |\n| **Uses** | – Spectroscopy (analyzing light composition) <br>– Optical instruments (telescopes, binoculars) <br>– Decorative art <br>– Everyday items (e.g., a glass prism in a lamp) |\n\nSo, a prism is a simple yet powerful optical device that refracts and disperses light.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "How fast is sound ?",
+      "system_answer": "**Speed of sound** – the speed at which a pressure wave travels through a medium.\n\n| Medium | Typical speed (at standard conditions) | Notes |\n|--------|----------------------------------------|-------|\n| **Air (sea‑level, 20 °C / 68 °F)** | **≈ 343 m s⁻¹** (≈ 1 125 ft s⁻¹, ≈ 1 235 km h⁻¹) | Depends on temperature: increases ~0.6 m s⁻¹ per °C. |\n| **Air (0 °C)** | ≈ 331 m s⁻¹ | |\n| **Water (20 °C)** | ≈ 1 482 m s⁻¹ | About 4.3 × faster than in air. |\n| **Steel (room temp)** | ≈ 5 960 m s⁻¹ | Roughly 17 × faster than in air. |\n\n**Why it varies**\n\n- **Temperature**: Sound travels faster in warmer air because molecules move more quickly.  \n- **Density & Elasticity**: In solids and liquids, higher stiffness (elastic modulus) and lower compressibility increase speed.  \n- **Humidity**: Slightly increases speed in air (water vapor is less dense than dry air).  \n\nSo, in everyday life, you can think of sound moving at about **343 m/s** in normal air.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What does cc in engines mean ?",
+      "system_answer": "**CC in engines = “cubic centimeters”**\n\n- **Engine displacement** – the total volume swept by all the pistons in the cylinders during one full cycle.  \n- **Measured in cubic centimeters (cc)** – a metric unit of volume (1 cc = 1 mL).  \n- **Why it matters** – larger displacement usually means the engine can move more air/fuel per cycle, which can translate to higher power and torque (though efficiency, design, and other factors also play a role).  \n\n**Quick reference**\n\n| Engine size | Approx. cc | Common use |\n|-------------|------------|------------|\n| 1 L engine | 1 000 cc | Small cars, motorcycles |\n| 2 L engine | 2 000 cc | Mid‑size cars, SUVs |\n| 4 L engine | 4 000 cc | Performance cars, trucks |\n| 6 L engine | 6 000 cc | V‑6 engines in many cars |\n| 8 L engine | 8 000 cc | V‑8 engines in performance cars, trucks |\n\n**Note**: In the U.S., the same displacement is often expressed in cubic inches (ci). 1 ci ≈ 16.387 cc. So a 2 L (≈ 2 000 cc) engine is about 122 ci.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is an ulcer ?",
+      "system_answer": "**An ulcer** is a sore that develops when the protective lining of a body surface (usually the stomach, small intestine, or esophagus) is damaged, allowing the underlying tissue to be exposed to stomach acid, digestive enzymes, or other irritants.  \n\n| Key points | Details |\n|------------|---------|\n| **Common types** | • **Peptic ulcer** – in the stomach (gastric) or first part of the small intestine (duodenal). <br>• **Gastro‑oesophageal reflux ulcer** – in the esophagus due to acid reflux. <br>• **Stress‑related (Cushing) ulcer** – in critically ill patients. |\n| **Causes** | • **Helicobacter pylori** infection (most common). <br>• **Long‑term NSAID or aspirin use** (e.g., ibuprofen, naproxen). <br>• **Excess stomach acid** (e.g., Zollinger‑Ellison syndrome). <br>• **Smoking, alcohol, stress** (can worsen or trigger). |\n| **Symptoms** | • Burning or gnawing pain in the upper abdomen (often relieved or worsened by eating). <br>• Nausea, bloating, heartburn. <br>• In severe cases: vomiting blood, black tarry stools, weight loss. |\n| **Diagnosis** | • **Upper endoscopy** (esophagogastroduodenoscopy, EGD) to visualize the ulcer. <br>• **Urea breath test** or stool antigen test for H. pylori. <br>• **Blood tests** for anemia or infection. |\n| **Treatment** | • **Antibiotics** to eradicate H. pylori (usually a 2‑drug or 3‑drug regimen). <br>• **Proton‑pump inhibitors (PPIs)** or H₂‑blockers to reduce acid. <br>• **Lifestyle changes**: avoid NSAIDs, reduce alcohol, quit smoking, manage stress. <br>• **Surgery** only for complications (bleeding, perforation, obstruction). |\n| **Prognosis** | Most ulcers heal with appropriate therapy; recurrence is common if risk factors (e.g., NSAID use, smoking) persist. |\n\nIn short, an ulcer is a painful sore in the lining of the digestive tract caused by acid or bacterial damage, treatable with medication and lifestyle changes.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is compounded interest ?",
+      "system_answer": "**Compound interest** is the interest that is earned not only on the original amount of money (the principal) but also on the interest that has already accumulated.  \n\n---\n\n### How it works\n\n| Step | What happens | Example |\n|------|--------------|---------|\n| **1. Deposit** | You put an amount of money into an account. | $1,000 in a savings account. |\n| **2. First period interest** | The account earns interest on that $1,000. | 5 % annual → $50 interest after one year. |\n| **3. Re‑investment** | The $50 interest is added to the principal, so the new balance is $1,050. | The account now has $1,050. |\n| **4. Subsequent periods** | In the next year, interest is calculated on $1,050, not just the original $1,000. | 5 % of $1,050 = $52.50. |\n| **5. Repeat** | This process repeats each compounding period (yearly, monthly, daily, etc.). | After 2 years: $1,102.50, after 3 years: $1,157.63, etc. |\n\n---\n\n### Formula\n\nFor an initial principal \\(P\\), annual interest rate \\(r\\) (as a decimal), compounded \\(n\\) times per year, after \\(t\\) years:\n\n\\[\nA = P \\left(1 + \\frac{r}{n}\\right)^{nt}\n\\]\n\n- \\(A\\) = amount after \\(t\\) years  \n- \\(P\\) = principal  \n- \\(r\\) = annual interest rate (e.g., 0.05 for 5 %)  \n- \\(n\\) = number of compounding periods per year  \n- \\(t\\) = time in years  \n\nIf interest is compounded **continuously**, the formula becomes:\n\n\\[\nA = P e^{rt}\n\\]\n\n---\n\n### Why it matters\n\n- **Growth over time**: Because interest is earned on interest, the balance grows faster than simple (non‑compounded) interest.\n- **Investment planning**: Knowing the compounding frequency helps compare savings accounts, bonds, or investment products.\n- **Debt**: Loans that compound interest (e.g., credit cards) can grow quickly if not paid off.\n\n---\n\n**Bottom line:** Compound interest is the “interest on interest” that lets money grow faster over time.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What does CPR stand for ?",
+      "system_answer": "**CPR** stands for **Cardiopulmonary Resuscitation**—the emergency procedure used to manually preserve brain function and circulation in a person whose heart has stopped or who is not breathing.",
+      "gold_answer": "2",
+      "score": 0
+    },
+    {
+      "question": "What is hybridization ?",
+      "system_answer": "**Hybridization** is a process in which two distinct entities are combined to produce a new, mixed result.  The term is used in several scientific fields, each with its own specific meaning:\n\n| Field | What is hybridized? | Why it matters |\n|-------|---------------------|----------------|\n| **Chemistry** | Atomic orbitals (s, p, d, …) mix to form *hybrid orbitals* (sp, sp², sp³, …). | Gives a simple picture of how atoms bond and explains molecular shapes (e.g., tetrahedral CH₄, trigonal‑planar BF₃). |\n| **Genetics / Breeding** | Two organisms (often of the same species, but sometimes different species) are crossed to produce *hybrids*. | Creates new traits (e.g., hybrid corn, hybrid tea roses) and can combine desirable characteristics from each parent. |\n| **Molecular Biology** | DNA strands are combined (e.g., in PCR, DNA sequencing, or gene therapy). | Enables amplification, sequencing, or introduction of new genetic material. |\n| **Linguistics** | Two languages or dialects blend to form a *mixed language* or *pidgin*. | Helps explain how new languages evolve in contact situations. |\n| **Ecology / Conservation** | Species from different populations or subspecies interbreed. | Can affect genetic diversity, adaptation, and conservation strategies. |\n\n### Chemistry: The most common “hybridization” concept\n\n1. **Orbital mixing** – An atom’s valence orbitals (e.g., one 2s and two 2p orbitals in carbon) combine to produce new orbitals that are equivalent in energy and shape.\n2. **Hybrid types**  \n   * **sp³** – 1 s + 3 p → 4 equivalent orbitals (tetrahedral, 109.5°).  \n   * **sp²** – 1 s + 2 p → 3 orbitals (trigonal‑planar, 120°).  \n   * **sp** – 1 s + 1 p → 2 orbitals (linear, 180°).  \n3. **Application** – Explains why methane is tetrahedral, ethene is planar, and acetylene is linear.\n\n### Genetics: Hybridization in breeding\n\n- **Cross‑breeding**: Two parents are mated; their offspring are hybrids.  \n- **Hybrid vigor (heterosis)**: Hybrids often show superior growth, yield, or disease resistance.  \n- **Hybrid species**: When two species interbreed and produce fertile offspring (e.g., mule = horse × donkey, though mules are usually sterile).  \n\n### Bottom line\n\nHybridization is the act of combining two different components—whether atomic orbitals, genomes, or languages—to create a new, mixed entity that often has properties distinct from either original.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "How fast is alcohol absorbed ?",
+      "system_answer": "**Alcohol is absorbed very quickly—most of it enters the bloodstream within the first 30–60 minutes after you start drinking.**  \n\n| What’s happening | Typical timing | Key factors that change the speed |\n|------------------|----------------|-----------------------------------|\n| **Stomach absorption** | 10–30 % of the drink is taken up in the stomach. | Presence of food (especially fat or protein) slows it; a full stomach can delay absorption by 30–60 min. |\n| **Small‑intestine absorption** | The bulk (≈ 70–80 %) is absorbed in the upper small intestine. | Alcohol concentration (higher‑proof drinks are absorbed faster), body weight, gender, and individual metabolism all influence the rate. |\n| **Peak blood‑alcohol concentration (BAC)** | Usually 30–90 minutes after the first drink. | A single standard drink (≈ 14 g of pure alcohol) typically peaks at ~0.02–0.04 % BAC in a healthy adult. |\n| **Rate of absorption** | Roughly **0.1–0.2 g of alcohol per kilogram of body weight per hour** (≈ 0.015–0.02 % BAC per hour). | This is the “average” for a moderate drinker; it can be faster in men, slower in women, and slower when food is present. |\n| **Metabolism (elimination)** | The liver metabolizes alcohol at about **0.015 % BAC per hour** (≈ 0.1 g/kg per hour). | This is the limiting step; once absorbed, alcohol is cleared at a fairly constant rate. |\n\n### Quick take‑away\n\n* **Within the first hour** you’ll have absorbed most of the alcohol you’ve consumed.  \n* **Peak effects** (the “buzz” or impairment) usually occur 30–90 minutes after drinking.  \n* **Food, body size, gender, and tolerance** can all shift the timing and magnitude of absorption, but the overall process is rapid compared to many other substances.\n\nSo, if you’re planning a night out, remember that the alcohol you drink is already on its way to your bloodstream almost immediately—just give yourself a little extra time if you’re eating or if you’re a woman or have a larger body mass.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Who was the first American to walk in space ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What are pediatricians ?",
+      "system_answer": "**Pediatricians** are medical doctors who specialize in the health care of infants, children, and adolescents—generally from birth through age 18 (sometimes up to 21).  \n\n| What they do | How they differ from other doctors |\n|--------------|------------------------------------|\n| **Preventive care** – routine check‑ups, growth monitoring, vaccinations, and health education for parents. | They focus on the developmental stages of children, not adults. |\n| **Diagnosis & treatment** – illnesses, injuries, and chronic conditions that are common or unique to kids (e.g., asthma, ADHD, juvenile diabetes). | They use age‑appropriate dosing, equipment, and communication techniques. |\n| **Growth & development** – assess physical, cognitive, emotional, and social milestones. | They work closely with parents and schools to support healthy development. |\n| **Specialty sub‑fields** – many pediatricians further specialize (e.g., pediatric cardiology, neonatology, pediatric oncology, pediatric neurology). | These subspecialists handle complex or rare conditions in children. |\n\n**Training path**\n\n1. **Undergraduate degree** (usually 4 years).  \n2. **Medical school** (4 years) → MD or DO.  \n3. **Pediatrics residency** (3 years) – hands‑on training in hospitals and clinics.  \n4. **Optional fellowship** (1–3 years) for subspecialty training.  \n5. **Board certification** – passing exams from the American Board of Pediatrics (ABP) or equivalent.\n\n**Why they’re important**\n\n- Children’s bodies and immune systems differ from adults’, so pediatricians tailor care accordingly.  \n- Early detection of health issues can prevent long‑term problems.  \n- They provide guidance on nutrition, safety, and developmental support, helping families navigate the unique challenges of raising children.\n\nIn short, pediatricians are doctors who devote their expertise to keeping kids healthy, growing, and thriving.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is the sales tax rate in New York ?",
+      "system_answer": "The **statewide sales tax rate in New York is 4 %**.  \n\n> **Note:** Local jurisdictions (cities, counties, and some towns) add their own sales‑tax surtaxes, so the total rate you pay can range from about 4 % up to roughly 8 % in some areas (e.g., New York City is 8.875 %).",
+      "gold_answer": "4",
+      "score": 1
+    },
+    {
+      "question": "What is the money they use in Zambia ?",
+      "system_answer": "Zambia uses the **Zambian kwacha (ZMW)** as its official currency.  \n- **Symbol:** Z$  \n- **Subunit:** 100 ngwee (plural ngwee)  \n- **Banknotes:** 5, 10, 20, 50, 100, 200, 500, 1,000 kwacha  \n- **Coins:** 1, 2, 5, 10, 20, 50 ngwee, and 1 kwacha  \n\nThe kwacha is issued by the Bank of Zambia and is used for all retail, banking, and government transactions throughout the country.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What is acetic acid ?",
+      "system_answer": "**Acetic acid** is a simple, colorless liquid that is the main component of vinegar.  \n- **Chemical formula:** CH₃COOH (also written as CH₃CO₂H).  \n- **Structure:** A methyl group (CH₃) attached to a carboxyl group (–COOH).  \n- **Key properties:**  \n  - *Molecular weight:* 60.05 g mol⁻¹  \n  - *Boiling point:* 118 °C (at 1 atm)  \n  - *Density:* 1.049 g cm⁻³ (at 20 °C)  \n  - *pKa:* 4.76 (acidic, but not as strong as mineral acids)  \n- **Common uses:**  \n  - Food preservative and flavoring (vinegar).  \n  - Industrial solvent and reagent in organic synthesis.  \n  - Production of acetate esters, plastics, and synthetic fibers.  \n  - Cleaning agent (especially in diluted form).  \n\nIn short, acetic acid is the organic acid that gives vinegar its sour taste and is widely used both in kitchens and in industry.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "When was Lyndon B. Johnson born ?",
+      "system_answer": "Lyndon B. Johnson was born on **August 27, 1908**.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "In what spacecraft did U.S. astronaut Alan Shepard make his historic 1961 flight ?",
+      "system_answer": "Alan Shepard flew aboard the **Mercury spacecraft “Freedom 7.”**",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "How cold should a refrigerator be ?",
+      "system_answer": "A refrigerator should be kept at **0 °F to 5 °F (‑18 °C to ‑15 °C)**.  \n\n- **Why that range?**  \n  - Keeps food safely below 40 °F (4 °C), the threshold at which most bacteria grow slowly.  \n  - Prevents freezer burn and keeps produce crisp.  \n  - Avoids over‑cooling, which can waste energy and cause condensation.\n\n**Practical tips**\n\n| Item | Ideal temperature | Why |\n|------|-------------------|-----|\n| **Refrigerator compartment** | 0 °F to 5 °F (‑18 °C to ‑15 °C) | Keeps perishable foods safe and fresh. |\n| **Freezer compartment** | ‑20 °F (‑29 °C) | Preserves texture and extends shelf life. |\n\nUse a thermometer to check; adjust the dial if the fridge runs too hot or too cold.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is another astronomic term for the Northern Lights ?",
+      "system_answer": "The Northern Lights are also known as **Aurora Borealis**.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "Where is the Shawnee National Forest ?",
+      "system_answer": "**Shawnee National Forest** is located in the **central‑eastern part of Illinois, USA**.  \n- It covers about 280,000 acres (≈1,130 km²) in the Shawnee Hills region.  \n- The forest is centered around the **Wabash River valley** and extends into the **Kaskaskia River valley**.  \n- Major towns nearby include **Carbondale** (south), **Carbondale** and **Carbondale**? Actually Carbondale is the nearest city; also near **Carbondale**? Wait: Carbondale is the nearest city. Also near **Carbondale**? Let's correct: The nearest city is Carbondale, IL, and the forest is also close to **Carbondale**? Let's just say Carbondale. Also near **Carbondale**? Eh. Provide correct: The nearest city is Carbondale, IL, and the forest is also near **Carbondale**? Actually Carbondale is the nearest city. Also near **Carbondale**? Enough. Provide final.**Shawnee National Forest** is located in the **central‑eastern part of Illinois, USA**.  \n- It covers roughly 280,000 acres (≈1,130 km²) in the Shawnee Hills region.  \n- The forest is centered around the Wabash River valley and extends into the Kaskaskia River valley.  \n- The nearest major city is **Carbondale, Illinois**, and the forest is also close to the towns of **Carbondale** and **Carbondale** (the forest’s boundaries stretch toward the towns of Carbondale and Carbondale).",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "How much of an apple is water ?",
+      "system_answer": "An average apple is **about 84 – 86 % water** by weight.  \n\n| Fruit | Typical water content |\n|-------|-----------------------|\n| Apple | 84 – 86 % |\n| Orange | 86 – 88 % |\n| Pear | 84 – 86 % |\n\nSo if you have a 150‑gram apple, roughly 126–129 grams of that is water.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is strep throat ?",
+      "system_answer": "**Strep throat** is a bacterial infection of the throat and tonsils caused by *Streptococcus pyogenes* (group A streptococcus).  \n\n| What it is | Key points |\n|------------|------------|\n| **Causative agent** | *Streptococcus pyogenes* (group A strep) |\n| **Transmission** | Respiratory droplets (coughs, sneezes) or close contact with an infected person |\n| **Typical symptoms** | • Sudden, severe sore throat<br>• Red, swollen tonsils (often with white or yellow patches)<br>• Fever (≥38 °C / 100.4 °F)<br>• Headache, body aches<br>• Tender cervical lymph nodes<br>• Nausea or vomiting (especially in children)<br>• No cough or runny nose (helps differentiate from viral pharyngitis) |\n| **Diagnosis** | • Rapid antigen detection test (RADT) or throat culture<br>• Blood tests are rarely needed |\n| **Treatment** | • Antibiotics (penicillin or amoxicillin are first‑line; alternatives for penicillin‑allergic patients)<br>• Symptom relief: pain relievers (acetaminophen, ibuprofen), throat lozenges, warm salt‑water gargles |\n| **Why it matters** | • Untreated strep throat can lead to complications such as rheumatic fever, post‑streptococcal glomerulonephritis, or peritonsillar abscess. |\n| **Prevention** | • Good hand hygiene, covering coughs/sneezes, avoiding close contact with infected individuals, and completing the full antibiotic course if prescribed. |\n\nIn short, strep throat is a bacterial throat infection that causes a sudden, painful sore throat and fever, and it is usually treated effectively with antibiotics.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is poliomyelitis ?",
+      "system_answer": "**Poliomyelitis** (often called **polio**) is a highly contagious viral disease that can cause paralysis and, in severe cases, death.  \n\n| Feature | Details |\n|---------|---------|\n| **Causative agent** | Poliovirus – a small, non‑enveloped RNA virus in the *Picornaviridae* family. |\n| **Transmission** | Primarily fecal‑oral route (contaminated food or water, or hands). It can also spread via respiratory droplets in some outbreaks. |\n| **Incubation period** | 7–14 days (can range from 3–35 days). |\n| **Clinical spectrum** | 1. **Asymptomatic** – most infections (≈90 %) show no symptoms. 2. **Mild symptomatic** – fever, sore throat, fatigue, mild muscle aches. 3. **Flaccid paralysis** – the classic polio presentation, where the virus invades the anterior horn cells of the spinal cord, leading to sudden, asymmetric muscle weakness or paralysis. |\n| **Complications** | • Respiratory failure (if the diaphragm or intercostal muscles are affected). <br>• Post‑polio syndrome (late‑onset muscle weakness, fatigue). <br>• Rarely, chronic pain or joint problems. |\n| **Diagnosis** | • Clinical presentation (especially acute flaccid paralysis). <br>• Laboratory tests: viral isolation from stool or throat swab, PCR, or serology (antibody titers). |\n| **Treatment** | No antiviral therapy exists. Management is supportive: pain control, physical therapy, respiratory support if needed. |\n| **Prevention** | • **Vaccination** – the two main vaccines are: <br> – Inactivated polio vaccine (IPV) given by injection. <br> – Oral polio vaccine (OPV) containing live attenuated virus (used in many countries for mass campaigns). <br>• Good sanitation and hygiene to prevent fecal‑oral spread. |\n| **Global status** | Polio has been eradicated in most of the world. As of 2023, only a few countries (Afghanistan, Pakistan, and a few islands) still report wild poliovirus cases. The Global Polio Eradication Initiative continues to aim for complete eradication. |\n\n**Bottom line:** Polio is a viral infection that can silently spread but may cause sudden paralysis; it is preventable with vaccination and has been largely eliminated worldwide.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is the temperature at the center of the earth ?",
+      "system_answer": "The temperature at the very center of the Earth (the **inner core**) is estimated to be **about 5 500 – 6 000 °C (≈10 000 – 11 000 °F)**.  \n\n- **Why that range?**  \n  - Seismic‑wave studies (P‑waves and S‑waves) and laboratory experiments on iron‑nickel alloys under extreme pressure give the best constraints.  \n  - The inner core is solid iron‑nickel, while the outer core is liquid; the temperature must be high enough to keep the outer core molten but below the melting point of the inner core material at that pressure.\n\n- **Comparison**  \n  - Roughly the same temperature as the surface of the Sun (≈5 500 °C).  \n  - About 1.5 × the temperature of the hottest industrial furnaces on Earth.\n\n- **What it means**  \n  - The extreme heat drives convection in the liquid outer core, generating Earth’s magnetic field.  \n  - The inner core slowly grows as the planet cools, but the temperature remains near the melting point of iron at ~3.5 million Pa pressure.\n\nSo, the center of the Earth is scorching—on the order of **six thousand degrees Celsius**.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Where is the Lourve ?",
+      "system_answer": "The **Louvre** (often spelled “Louvre”) is located in **Paris, France**.  \n- It sits on the right bank of the Seine River, in the 1st arrondissement, near the Palais Royal and the Tuileries Garden.  \n- The museum’s address is **Rue de Rivoli, 75001 Paris, France**.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is the longest bone in the human body ?",
+      "system_answer": "The longest bone in the human body is the **femur** (thigh bone). It extends from the hip joint to the knee joint and typically measures about 18–20 inches (45–50 cm) in adults.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What state has the least amount of rain per year ?",
+      "system_answer": "The U.S. state that receives the least average rainfall each year is **Nevada**.  \n- Nevada’s overall average precipitation is roughly **9 inches (≈230 mm) per year**, far below the national average of about 30 inches.  \n- Much of that low figure comes from the arid interior and the Mojave Desert, especially the area around Death Valley, which is one of the driest places on Earth.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is neurology ?",
+      "system_answer": "**Neurology** is the branch of medicine that focuses on the nervous system—the brain, spinal cord, and peripheral nerves—and the disorders that affect them.  \n\n| Aspect | Details |\n|--------|---------|\n| **Core focus** | • Diagnosis, treatment, and management of neurological diseases (e.g., stroke, epilepsy, Parkinson’s, multiple sclerosis). <br>• Understanding the physiology and pathology of the nervous system. |\n| **Key components** | • **Clinical neurology** – patient evaluation, history, physical exam, and use of diagnostic tools (EEG, EMG, imaging). <br>• **Neurophysiology** – studying electrical activity of nerves and muscles. <br>• **Neuroimaging** – MRI, CT, PET, and functional imaging. <br>• **Neuropharmacology** – drugs that affect the nervous system. |\n| **Typical conditions** | • Cerebrovascular events (stroke, TIA) <br>• Seizure disorders (epilepsy) <br>• Movement disorders (Parkinson’s, Huntington’s) <br>• Demyelinating diseases (multiple sclerosis) <br>• Peripheral neuropathies (diabetic neuropathy, Guillain‑Barré) <br>• Neurodegenerative diseases (Alzheimer’s, ALS) <br>• Headaches (migraine, cluster) <br>• Sleep disorders (narcolepsy, insomnia) |\n| **Diagnostic tools** | • **Imaging**: MRI, CT, MRA, MRV, PET, SPECT. <br>• **Electrophysiology**: EEG, EMG, nerve conduction studies. <br>• **Lumbar puncture**: CSF analysis. <br>• **Blood tests**: autoimmune panels, metabolic panels. |\n| **Treatment approaches** | • Medications (anticonvulsants, anticholinergics, dopaminergic agents). <br>• Surgical interventions (stereotactic radiosurgery, deep brain stimulation, aneurysm clipping). <br>• Rehabilitation (physical, occupational, speech therapy). <br>• Lifestyle modifications (diet, exercise, sleep hygiene). |\n| **Specialties within neurology** | • Pediatric neurology <br>• Neuro‑oncology <br>• Neuro‑critical care <br>• Neuro‑rehabilitation <br>• Neuro‑psychiatry <br>• Neuro‑immunology |\n\nIn short, neurology is the medical science that investigates how the nervous system works, how it can go wrong, and how to treat those problems.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is the statue of liberty made of ?",
+      "system_answer": "The Statue of Liberty is a composite structure made of several materials:\n\n| Layer | Material | Purpose |\n|-------|----------|---------|\n| **Exterior skin** | **Copper** (about 30,000 sq ft of hammered copper sheets) | Gives the statue its iconic green patina (formed by oxidation). |\n| **Structural skeleton** | **Iron** (originally a wrought‑iron framework) | Supports the copper skin and holds the statue’s shape. |\n| **Core and internal support** | **Steel** (added during the 1901 restoration) | Provides additional strength and stability, especially for the internal support of the torch and the pedestal. |\n| **Pedestal** | **Granite** (from the quarry in New York) | Forms the base that elevates the statue to 305 ft (93 m) from sea level. |\n| **Foundation** | **Concrete and stone** | Anchors the pedestal into the bedrock of Liberty Island. |\n\nSo, the statue’s outer shell is copper, its skeleton is iron (now reinforced with steel), and it sits on a granite pedestal.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What was W.C. Fields ' real name ?",
+      "system_answer": "W.C. Fields’ birth name was **William Claude Dukenfield**.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is solar wind ?",
+      "system_answer": "**Solar wind** is a continuous stream of charged particles—mostly electrons and protons—ejected from the outer layers of the Sun (the corona). It flows outward through the entire solar system, carrying with it the Sun’s magnetic field.\n\n| Feature | Details |\n|---------|---------|\n| **Composition** | ~95 % protons (hydrogen nuclei), ~4 % electrons, ~1 % alpha particles (helium nuclei) and trace heavier ions. |\n| **Speed** | 300–800 km/s (≈1–2 million mph), varying with solar activity. |\n| **Temperature** | 1–10 million K in the corona; the wind itself is cooler (~10⁵ K) but still extremely hot. |\n| **Origin** | The Sun’s corona is heated to millions of degrees; the high thermal pressure overcomes the Sun’s gravity, so the plasma expands outward. |\n| **Effects** | • Shapes planetary magnetospheres (e.g., Earth’s auroras). <br>• Drives the solar‑wind–magnetosphere interaction that produces geomagnetic storms. <br>• Carries the interplanetary magnetic field (IMF) that can reconnect with planetary fields. <br>• Influences space‑craft operations and astronaut safety. |\n| **Measurement** | Detected by spacecraft (e.g., ACE, WIND, Parker Solar Probe) and ground‑based magnetometers. |\n| **Solar Cycle Dependence** | Solar wind density, speed, and magnetic field strength vary with the 11‑year solar cycle; solar maximum produces faster, more turbulent wind. |\n\nIn short, solar wind is the Sun’s “atmospheric” outflow that permeates the solar system, shaping space weather and influencing planetary environments.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What position did Willie Davis play in baseball ?",
+      "system_answer": "Willie Davis was a **first baseman** in Major League Baseball. He played most of his career at that position for teams such as the Chicago Cubs, Philadelphia Phillies, and the New York Mets.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "Who was the abolitionist who led the raid on Harper 's Ferry in 1859 ?",
+      "system_answer": "The abolitionist was **John Brown**. He led the 1859 raid on Harpers Ferry, attempting to incite a slave‑revolt.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "Who was the first woman governor in the U.S. ?",
+      "system_answer": "The first woman elected as a U.S. governor was **Nellie Tayloe Ross** – she became governor of Wyoming in 1924.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What are solar cells ?",
+      "system_answer": "**Solar cells** (also called **photovoltaic cells**) are devices that convert sunlight directly into electricity. They do this by exploiting the **photovoltaic effect**—the generation of an electric current when light photons strike a semiconductor material.\n\n---\n\n### How a solar cell works\n\n| Step | What happens | Key component |\n|------|--------------|---------------|\n| 1. **Absorption** | Sunlight (photons) hits the cell. | Semiconductor (usually silicon). |\n| 2. **Excitation** | Photons give energy to electrons, freeing them from atoms. | Conduction band of the semiconductor. |\n| 3. **Separation** | Electrons are pushed toward one side, holes (positive charges) toward the other. | p‑n junction (junction of p‑type and n‑type silicon). |\n| 4. **Current flow** | Electrons travel through an external circuit, doing work, then return to the cell. | External load (wires, devices). |\n| 5. **Voltage** | The built‑in electric field at the p‑n junction creates a voltage difference. | Built‑in electric field. |\n\nThe result is a **direct current (DC)** voltage that can be used to power electronics or fed into an inverter to produce alternating current (AC) for the grid.\n\n---\n\n### Types of solar cells\n\n| Type | Material | Typical efficiency | Common use |\n|------|----------|--------------------|------------|\n| **Monocrystalline silicon** | Single‑crystal Si | 18–22 % | Residential rooftops, high‑performance panels |\n| **Polycrystalline silicon** | Multi‑crystal Si | 15–18 % | Utility‑scale, cost‑effective panels |\n| **Thin‑film** | CdTe, CIGS, amorphous Si | 10–12 % | Building‑integrated photovoltaics, flexible panels |\n| **Perovskite** | Hybrid organic‑inorganic | 20–25 % (lab) | Emerging technology, tandem cells |\n| **Concentrator** | Silicon or CIGS with lenses | 30–35 % | Large‑scale power plants |\n\n---\n\n### Key performance metrics\n\n| Metric | What it means | Typical values |\n|--------|---------------|----------------|\n| **Efficiency** | % of incident sunlight converted to electricity | 15–22 % (commercial) |\n| **Power output (W)** | Energy produced at a given irradiance | 250–400 W per panel |\n| **Fill factor** | Shape of the I‑V curve | 0.75–0.80 |\n| **Temperature coefficient** | Efficiency loss per °C rise | –0.3 %/°C (monocrystalline) |\n\n---\n\n### Applications\n\n| Application | Why solar cells are useful |\n|-------------|---------------------------|\n| **Residential** | Low‑maintenance, renewable power for homes |\n| **Utility‑scale** | Grid‑connected plants, large‑area farms |\n| **Portable** | Solar chargers, camping gear |\n| **Space** | Satellites, space probes (e.g., Mars rovers) |\n| **Building‑Integrated** | Solar roofs, façades, windows |\n\n---\n\n### Advantages & Limitations\n\n| Advantage | Limitation |\n|-----------|------------|\n| Renewable, abundant | Requires sunlight (intermittent) |\n| Low operating cost | Initial capital cost |\n| Scalable | Land/space requirement |\n| No moving parts | Efficiency drops with temperature |\n\n---\n\n**Bottom line:** Solar cells are semiconductor devices that turn photons from the Sun into usable electric current, forming the core technology behind photovoltaic power generation.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "When was the telephone invented ?",
+      "system_answer": "The telephone was invented in **1876**.  \nAlexander Graham Bell received the first U.S. patent for the telephone on **March 10, 1876**, and that same year he demonstrated the first successful voice transmission.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is another name for vitamin B1 ?",
+      "system_answer": "Thiamine.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What is the major fault line near Kentucky ?",
+      "system_answer": "The major fault line near Kentucky is the **New Madrid Fault** (part of the New Madrid Seismic Zone).",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "Where is the Savannah River ?",
+      "system_answer": "The Savannah River is a major river in the southeastern United States. It rises in the Blue Ridge Mountains of western North Carolina, flows southward, and forms much of the border between **South Carolina and Georgia** before emptying into the Atlantic Ocean near the city of Savannah, Georgia.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What city 's newspaper is called `` The Star '' ?",
+      "system_answer": "The newspaper called **“The Star”** is published in **Adelaide, Australia**.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What planet has the strongest magnetic field of all the planets ?",
+      "system_answer": "",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is severance pay ?",
+      "system_answer": "**Severance pay** is a financial payment (or package of payments) that an employer gives to an employee when the employment relationship ends—typically because the employee is laid off, terminated, or the company is closing a division.  \n\nKey points:\n\n| Feature | Details |\n|---------|---------|\n| **Purpose** | To provide a financial cushion while the employee searches for new work, to help cover costs such as unemployment insurance, health‑care premiums, or relocation. |\n| **Typical form** | A lump‑sum cash payment, a series of periodic payments, or a combination of cash plus continued benefits (e.g., health insurance). |\n| **How it’s calculated** | Often based on tenure, position, or a set formula (e.g., one week’s pay for each year of service). The exact amount is usually set by company policy, a collective‑bargaining agreement, or a court order. |\n| **Legal status** | Not required by federal law in the U.S. (except in certain circumstances, such as the Worker Adjustment and Retraining Notification Act for large layoffs). Many states, unions, or company contracts do require or provide for severance. |\n| **Tax treatment** | In most jurisdictions, severance pay is treated as ordinary income and is subject to withholding taxes. |\n| **Common triggers** | • Company downsizing or restructuring<br>• Plant or office closure<br>• Redundancy or elimination of a position<br>• Voluntary resignation with a negotiated exit package |\n\nIn short, severance pay is a post‑employment benefit that helps employees transition to new employment after a job loss.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What breed of hunting dog did the Beverly Hillbillies own ?",
+      "system_answer": "",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What is the population of China ?",
+      "system_answer": "China’s population is roughly **1.41 billion people** (about 1.41 × 10⁹). This figure is based on the most recent estimates from the National Bureau of Statistics of China and international sources such as the United Nations and World Bank, which place the country’s population at around 1.41 billion as of 2023.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What are semiconductors ?",
+      "system_answer": "**Semiconductors** are materials that have electrical conductivity between that of a conductor (like copper) and an insulator (like rubber). Their conductivity can be precisely controlled and altered by adding impurities (doping), applying electric fields, or changing temperature, making them the foundation of modern electronics.\n\n---\n\n### Key Characteristics\n\n| Feature | Why it matters |\n|---------|----------------|\n| **Band gap** | The energy difference between the valence band (filled with electrons) and the conduction band (empty). In semiconductors, this gap is small enough that electrons can be excited into the conduction band with modest energy (e.g., light, heat, or voltage). |\n| **Doping** | Introducing small amounts of other elements (e.g., phosphorus or boron in silicon) creates extra electrons (n‑type) or holes (p‑type), enabling the creation of p‑n junctions. |\n| **Temperature dependence** | Conductivity increases with temperature (opposite to metals), because more electrons gain enough energy to cross the band gap. |\n| **Crystal structure** | Most common semiconductors are crystalline (e.g., silicon, germanium, gallium arsenide). The orderly lattice allows predictable electronic behavior. |\n\n---\n\n### Common Semiconductor Materials\n\n| Material | Typical use | Band gap (eV) |\n|----------|-------------|---------------|\n| **Silicon (Si)** | Integrated circuits, solar cells, power devices | 1.12 |\n| **Germanium (Ge)** | Early transistors, infrared detectors | 0.66 |\n| **Gallium Arsenide (GaAs)** | High‑frequency RF, LEDs, laser diodes | 1.43 |\n| **Silicon Carbide (SiC)** | Power electronics, high‑temperature devices | 3.26 |\n| **Gallium Nitride (GaN)** | Power switches, blue LEDs | 3.4 |\n\n---\n\n### How They Work in Devices\n\n1. **p‑n Junction**  \n   - A p‑type region (holes) and an n‑type region (electrons) are joined.  \n   - At the junction, electrons recombine with holes, creating a depletion zone that acts as a diode.\n\n2. **Transistor (BJT, MOSFET)**  \n   - Uses multiple p‑n junctions or field‑effect control to amplify or switch current.  \n   - Forms the building blocks of CPUs, memory, and power supplies.\n\n3. **Photovoltaic Cells**  \n   - Light excites electrons across the band gap, generating a voltage.  \n   - Silicon solar panels are the most common.\n\n4. **LEDs & Laser Diodes**  \n   - Electrons recombine with holes in a semiconductor, emitting photons.  \n   - The wavelength (color) depends on the band gap.\n\n---\n\n### Why Semiconductors Are Essential\n\n- **Miniaturization**: Their properties allow billions of transistors on a single chip.  \n- **Energy Efficiency**: Low power consumption compared to mechanical or vacuum‑tube devices.  \n- **Versatility**: Can be engineered for specific functions—high‑speed logic, low‑power sensors, high‑power motors, etc.  \n- **Integration**: Enables complex systems (smartphones, cars, data centers) to be built from a few chips.\n\n---\n\n### Bottom Line\n\nSemiconductors are engineered materials whose electrical conductivity can be finely tuned. This tunability, combined with their crystalline structure and band‑gap properties, makes them indispensable for transistors, diodes, solar cells, LEDs, and virtually every modern electronic device.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What body of water are the Canary Islands in ?",
+      "system_answer": "The Canary Islands lie in the **Atlantic Ocean**.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What does the word fortnight mean ?",
+      "system_answer": "**Fortnight** means a period of **two weeks** (14 days).  \n\n- **Origin**: The word comes from the Old English *fēowertīene* (“fourteen nights”), which was later shortened to *fortnight*.  \n- **Usage**: It’s commonly used in British English and other Commonwealth countries to refer to a 14‑day span, e.g., “I’ll be back in a fortnight.”",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What monastery was raided by Vikings in the late eighth century ?",
+      "system_answer": "The raid was on the **Monastery of Lindisfarne** (also known as Holy Island) in 793 CE.  \nIt was the first major Viking attack on the British Isles and marked the beginning of the Viking Age.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "What did Edward Binney and Howard Smith invent in 1903 ?",
+      "system_answer": "",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "When was President Kennedy shot ?",
+      "system_answer": "President John F. Kennedy was shot on **November 22, 1963**.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is a thermometer ?",
+      "system_answer": "A **thermometer** is a device that measures temperature—the degree of heat or cold in a substance or environment. It works by using a material that expands or contracts, changes color, or changes electrical resistance in response to temperature changes, and then displays that change in a readable scale (e.g., Celsius, Fahrenheit, or Kelvin). Common types include liquid‑filled glass thermometers (mercury or alcohol), digital electronic thermometers, infrared thermometers, and specialized ones for medical, industrial, or scientific use.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is the earth 's diameter ?",
+      "system_answer": "The Earth’s diameter is about **12,742 km (7,918 mi)** at the equator and **12,714 km (7,900 mi)** at the poles.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is mold ?",
+      "system_answer": "**Mold** is a type of fungus that grows in the form of multicellular filaments called hyphae. When these hyphae branch and spread, they form a visible network or “mycelium.” Mold thrives in damp, warm, and poorly ventilated environments and feeds on organic matter such as wood, paper, food, and even skin.  \n\nKey points:\n\n| Feature | Description |\n|---------|-------------|\n| **Biological classification** | Kingdom Fungi, various species (e.g., *Aspergillus*, *Penicillium*, *Cladosporium*) |\n| **Growth form** | Hyphae → mycelium → colonies that can be green, black, white, or other colors |\n| **Reproduction** | Produces spores (conidia) that disperse through air, water, or contact |\n| **Common habitats** | Damp indoor spaces (kitchens, bathrooms, basements), outdoor decaying vegetation, food products |\n| **Health impact** | Can cause allergic reactions, respiratory irritation, and in some cases toxic mold (mycotoxins) |\n| **Control** | Reduce moisture, improve ventilation, clean with appropriate disinfectants, remove contaminated materials |\n\nIn everyday language, “mold” usually refers to the visible, fuzzy growth that appears on food, walls, or other surfaces when moisture and organic material are present.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What does `` Sitting Shiva '' mean ?",
+      "system_answer": "**Sitting Shiva** is a Jewish mourning practice that involves a period of close‑family mourning lasting seven days after a death. The term comes from the Hebrew word *shivá* (שִׁבְעָה), meaning “seven.”  \n\nDuring this time, the bereaved family gathers in a home or synagogue, sits in a low‑to‑ground position, and receives visitors who come to offer condolences, share memories, and provide emotional support. The practice is rooted in the biblical commandment to mourn for seven days (Leviticus 17:11) and is meant to:\n\n1. **Honor the deceased** – by keeping their memory alive and showing respect.  \n2. **Support the living** – by allowing the family to grieve in a communal, structured way.  \n3. **Provide a transition** – from the shock of loss to a new normal.\n\nTypical customs during Shiva include:\n- **Sitting on low furniture** (often a chair or a low table) to symbolize humility.  \n- **Reading the Torah** or other religious texts.  \n- **Reciting prayers** such as the Kaddish.  \n- **Avoiding celebratory activities** (no music, parties, or bright lighting).  \n- **Receiving visitors** who bring food, flowers, or condolences.\n\nThe practice is observed by many Jewish communities worldwide, though the specific rituals and customs can vary by tradition (Ashkenazi, Sephardi, etc.).",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is desktop publishing ?",
+      "system_answer": "**Desktop publishing (DTP)** is the process of creating printed or digital documents—such as books, magazines, brochures, newsletters, flyers, and web pages—using a personal computer, specialized software, and peripheral devices (printers, scanners, etc.).  \n\n### Key Elements\n\n| Component | Role |\n|-----------|------|\n| **Computer** | Central workstation for design, layout, and editing. |\n| **Software** | Programs like Adobe InDesign, QuarkXPress, Microsoft Publisher, or Scribus that provide tools for text formatting, image placement, color management, and page layout. |\n| **Fonts & Typography** | Digital typefaces that can be scaled, styled, and embedded. |\n| **Graphics & Images** | Photographs, illustrations, logos, and vector graphics that are imported and manipulated. |\n| **Printing/Output** | High‑resolution printers, plotters, or digital presses that produce the final product. |\n| **File Formats** | PDF, PostScript, EPS, or other print‑ready files that preserve layout and quality. |\n\n### How It Works\n\n1. **Concept & Planning** – Define the purpose, target audience, and content structure.  \n2. **Design & Layout** – Use the DTP software to arrange text, images, and other elements on pages, applying styles, grids, and templates.  \n3. **Proofing & Editing** – Review for typographical errors, color consistency, and overall visual harmony.  \n4. **Export & Output** – Generate print‑ready files (PDF, PostScript) or web‑ready formats (HTML, JPEG).  \n5. **Printing or Distribution** – Send files to a printer or publish online.\n\n### Why It Matters\n\n- **Speed & Flexibility** – Designers can quickly prototype, edit, and re‑print without expensive typesetting equipment.  \n- **Cost‑Effective** – Eliminates the need for large printing presses for small to medium runs.  \n- **Creative Control** – Full authority over typography, color, and layout, enabling brand consistency.  \n- **Accessibility** – Allows non‑professional users to produce high‑quality documents with user‑friendly interfaces.\n\nIn short, desktop publishing turns a computer into a powerful “mini‑press,” enabling individuals and small businesses to produce professional‑looking printed or digital materials efficiently and affordably.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "Who discovered radium ?",
+      "system_answer": "Radium was discovered by **Marie Curie and her husband Pierre Curie** in 1898.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is mad cow disease ?",
+      "system_answer": "**Mad cow disease**—officially called **bovine spongiform encephalopathy (BSE)**—is a fatal neurodegenerative disease that affects cattle. It is caused by an abnormal, misfolded protein called a prion, which accumulates in the brain and spinal cord, producing a spongy, “honeycomb” appearance (hence the name “spongiform”).\n\n### Key Points\n\n| Feature | Details |\n|---------|---------|\n| **Cause** | Misfolded prion protein (PrP<sup>Sc</sup>) that induces normal prion proteins to misfold. |\n| **Transmission in cattle** | Primarily through contaminated feed (e.g., protein meal from infected animals). |\n| **Symptoms in cattle** | Ataxia (loss of coordination), weight loss, behavioral changes, and eventually death. |\n| **Human risk** | **Variant Creutzfeldt‑Jakob disease (vCJD)** can occur when humans consume infected beef products. Symptoms include dementia, ataxia, and rapid neurological decline. |\n| **Control measures** | Strict feed bans, surveillance, testing of cattle, removal of high‑risk tissues, and culling of infected herds. |\n| **Economic impact** | Major losses in the beef industry, trade restrictions, and public health costs. |\n\nMad cow disease is a classic example of a prion disease, illustrating how a protein alone—without DNA or RNA—can propagate a disease and cause irreversible brain damage.",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "What is the location of Lake Champlain ?",
+      "system_answer": "Lake Champlain is a long, narrow freshwater lake that lies on the border between the United States and Canada. It stretches roughly 120 mi (193 km) from the Adirondack Mountains in New York, through Vermont, down to the Canadian province of Quebec, where it empties into the Richelieu River and ultimately the St. Lawrence River. The lake is situated in the northeastern United States, with its northern end in Vermont and its southern end in New York, and its eastern shore forming part of the U.S.–Canada boundary.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "What is the proper name for a female walrus ?",
+      "system_answer": "",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "When was Rosa Parks born ?",
+      "system_answer": "Rosa Parks was born on **March 4, 1913**.",
+      "gold_answer": "4",
+      "score": 1
+    },
+    {
+      "question": "When were William Shakespeare 's twins born ?",
+      "system_answer": "William Shakespeare did **not** have any twins.  \nHe had two children with his wife Anne Hathaway: a son, Henry Shakespeare (born 1585), and a daughter, Judith Shakespeare (born 1587). No record exists of any twins in his family.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What is natural gas composed of ?",
+      "system_answer": "Natural gas is a fossil‑fuel gas that is extracted from underground reservoirs.  Its composition is mainly hydrocarbons, with a small amount of non‑hydrocarbon gases.  A typical natural‑gas mixture contains:\n\n| Component | Typical range (by volume) | Notes |\n|-----------|--------------------------|-------|\n| **Methane (CH₄)** | 70 – 90 % | The dominant constituent; gives natural gas its energy content. |\n| **Ethane (C₂H₆)** | 5 – 10 % | Used as a feedstock for petrochemicals. |\n| **Propane (C₃H₈)** | 1 – 5 % | Often separated for use as LPG. |\n| **Butanes (C₄H₁₀)** | 0.5 – 2 % | Includes n‑butane and isobutane. |\n| **Other higher hydrocarbons** | < 1 % | Pentanes, hexanes, etc. |\n| **Nitrogen (N₂)** | 0.5 – 5 % | Dilutes the gas; can be removed for pipeline quality. |\n| **Carbon dioxide (CO₂)** | 0.5 – 5 % | Often removed to meet pipeline specifications. |\n| **Trace gases** | < 0.1 % | Includes hydrogen sulfide (H₂S), water vapor, sulfur compounds, and other impurities. |\n\nThe exact mix varies by field and region, but methane is by far the largest component, giving natural gas its characteristic energy content and flammability.",
+      "gold_answer": "1",
+      "score": 0
+    },
+    {
+      "question": "How tall is the Gateway Arch in St. Louis , MO ?",
+      "system_answer": "The Gateway Arch in St. Louis, Missouri, stands **630 feet (192 meters)** tall.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "Who was the first governor of Alaska ?",
+      "system_answer": "The first governor of Alaska was **William A. Egan**. He served as the territorial governor from 1948 and became Alaska’s first state governor when it achieved statehood in 1959.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "When was the first Wal-Mart store opened ?",
+      "system_answer": "The first Wal‑Mart store opened on **July 2, 1962** in Rogers, Arkansas.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "What New York City structure is also known as the Twin Towers ?",
+      "system_answer": "The “Twin Towers” of New York City refer to the original **World Trade Center** towers—**One World Trade Center (North Tower)** and **Two World Trade Center (South Tower)**—which stood at the World Trade Center site in Lower Manhattan until they were destroyed on September 11, 2001.",
+      "gold_answer": "5",
+      "score": 0
+    }
+  ]
+}

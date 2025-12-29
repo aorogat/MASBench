@@ -1,0 +1,610 @@
+{
+  "system": "LangGraph_STM_LTM_CTX1024",
+  "split": "Test_Time_Learning",
+  "session_id": "6",
+  "subtask": "MCC",
+  "category": "TTL",
+  "runtime_sec": 372.19,
+  "questions": [
+    {
+      "question": "What is the population of Venezuela ?",
+      "system_answer": "",
+      "gold_answer": "33",
+      "score": 0
+    },
+    {
+      "question": "What does target heart rate mean ?",
+      "system_answer": "25",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What currency does Luxembourg use ?",
+      "system_answer": "32",
+      "gold_answer": "32",
+      "score": 1
+    },
+    {
+      "question": "How long did Rip Van Winkle sleep ?",
+      "system_answer": "",
+      "gold_answer": "18",
+      "score": 0
+    },
+    {
+      "question": "Material called linen is made from what plant ?",
+      "system_answer": "17",
+      "gold_answer": "17",
+      "score": 1
+    },
+    {
+      "question": "What is phenylalanine ?",
+      "system_answer": "35",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is a group of turkeys called ?",
+      "system_answer": "22",
+      "gold_answer": "16",
+      "score": 0
+    },
+    {
+      "question": "What are enzymes ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "Why is the sun yellow ?",
+      "system_answer": "",
+      "gold_answer": "43",
+      "score": 0
+    },
+    {
+      "question": "What state is the geographic center of the lower 48 states ?",
+      "system_answer": "45",
+      "gold_answer": "45",
+      "score": 1
+    },
+    {
+      "question": "What is foot and mouth disease ?",
+      "system_answer": "",
+      "gold_answer": "7",
+      "score": 0
+    },
+    {
+      "question": "What is sonar ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "When was Thomas Jefferson born ?",
+      "system_answer": "",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "What is the Ohio state bird ?",
+      "system_answer": "",
+      "gold_answer": "16",
+      "score": 0
+    },
+    {
+      "question": "What are the colors of the German flag ?",
+      "system_answer": "",
+      "gold_answer": "3",
+      "score": 0
+    },
+    {
+      "question": "Who won Ms. American in 1989 ?",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "Where on the body is a mortarboard worn ?",
+      "system_answer": "A mortarboard is worn on the head—specifically, it sits on top of the head.",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What is the width of a football field ?",
+      "system_answer": "A standard American football field is 160 feet wide, which is about 53.3 yards.",
+      "gold_answer": "10",
+      "score": 0
+    },
+    {
+      "question": "Who is the Prime Minister of Canada ?",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "What is the conversion rate between dollars and pounds ?",
+      "system_answer": "The exchange rate between the U.S. dollar (USD) and the British pound (GBP) fluctuates constantly, but as of the most recent data (late 2025) it’s roughly:\n\n- **1 USD ≈ 0.78 GBP**  \n- **1 GBP ≈ 1.28 USD**\n\nSo if you’re converting, you can multiply the dollar amount by about 0.78 to get pounds, or divide the pound amount by 0.78 (or multiply by 1.28) to get dollars.  \n\nKeep in mind that rates change every minute, so for a precise conversion you’ll want to check a reliable financial news source, a bank, or a currency‑conversion website (e.g., XE, OANDA, or your bank’s online portal).",
+      "gold_answer": "34",
+      "score": 0
+    },
+    {
+      "question": "What is fibromyalgia ?",
+      "system_answer": "0",
+      "gold_answer": "0",
+      "score": 1
+    },
+    {
+      "question": "What are the spots on dominoes called ?",
+      "system_answer": "0",
+      "gold_answer": "19",
+      "score": 0
+    },
+    {
+      "question": "What city is also known as `` The Gateway to the West '' ?",
+      "system_answer": "",
+      "gold_answer": "36",
+      "score": 0
+    },
+    {
+      "question": "Who discovered x-rays ?",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "How much does water weigh ?",
+      "system_answer": "Water’s weight depends on how much you have, but the numbers are very simple:\n\n| Volume | Weight (approx.) |\n|--------|------------------|\n| 1 liter (≈ 0.264 gal) | 1 kg (≈ 2.2 lb) |\n| 1 US gallon (≈ 3.785 L) | 8.34 lb (≈ 3.78 kg) |\n| 1 cubic meter (≈ 1000 L) | 1 000 kg (≈ 2 204 lb) |\n\nSo, for example, a 1‑liter bottle of water weighs about 1 kg, a 1‑gallon jug about 8.3 lb, and a 1‑m³ bucket (roughly a 10 ft × 10 ft × 10 ft cube) about 1 000 kg.",
+      "gold_answer": "39",
+      "score": 0
+    },
+    {
+      "question": "Mercury , what year was it discovered ?",
+      "system_answer": "The element mercury (quick‑silver) was first isolated as a pure metal by the alchemist Paracelsus in **1544**.",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "Where do apple snails live ?",
+      "system_answer": "Apple snails are freshwater creatures. They’re typically found in slow‑moving or still water such as:\n\n- Ponds, lakes, and marshes  \n- Slow‑streaming rivers and streams  \n- Rice paddies, irrigation canals, and other flooded agricultural areas  \n- Aquariums and pond‑style fish tanks (when kept as pets)\n\nThey prefer warm, tropical or subtropical climates but can also be found in temperate freshwater habitats.",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What is the rainiest place on Earth ?",
+      "system_answer": "",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "Who invented the hula hoop ?",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "What is the longest suspension bridge in the U.S. ?",
+      "system_answer": "6",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What is plastic made of ?",
+      "system_answer": "35",
+      "gold_answer": "42",
+      "score": 0
+    },
+    {
+      "question": "How far is it from Denver to Aspen ?",
+      "system_answer": "10",
+      "gold_answer": "10",
+      "score": 1
+    },
+    {
+      "question": "What is the criterion for being legally blind ?",
+      "system_answer": "0",
+      "gold_answer": "6",
+      "score": 0
+    },
+    {
+      "question": "Who invented the instant Polaroid camera ?",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "What is the distance in miles from the earth to the sun ?",
+      "system_answer": "10",
+      "gold_answer": "10",
+      "score": 1
+    },
+    {
+      "question": "In which state would you find the Catskill Mountains ?",
+      "system_answer": "",
+      "gold_answer": "45",
+      "score": 0
+    },
+    {
+      "question": "What is a prism ?",
+      "system_answer": "0",
+      "gold_answer": "0",
+      "score": 1
+    },
+    {
+      "question": "How fast is sound ?",
+      "system_answer": "15",
+      "gold_answer": "15",
+      "score": 1
+    },
+    {
+      "question": "What does cc in engines mean ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is an ulcer ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is compounded interest ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What does CPR stand for ?",
+      "system_answer": "37",
+      "gold_answer": "37",
+      "score": 1
+    },
+    {
+      "question": "What is hybridization ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "How fast is alcohol absorbed ?",
+      "system_answer": "15",
+      "gold_answer": "15",
+      "score": 1
+    },
+    {
+      "question": "Who was the first American to walk in space ?",
+      "system_answer": "48",
+      "gold_answer": "48",
+      "score": 1
+    },
+    {
+      "question": "What are pediatricians ?",
+      "system_answer": "12",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the sales tax rate in New York ?",
+      "system_answer": "",
+      "gold_answer": "33",
+      "score": 0
+    },
+    {
+      "question": "What is the money they use in Zambia ?",
+      "system_answer": "",
+      "gold_answer": "32",
+      "score": 0
+    },
+    {
+      "question": "What is acetic acid ?",
+      "system_answer": "0",
+      "gold_answer": "0",
+      "score": 1
+    },
+    {
+      "question": "When was Lyndon B. Johnson born ?",
+      "system_answer": "Lyndon B. Johnson was born on **August 27, 1908**.",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "In what spacecraft did U.S. astronaut Alan Shepard make his historic 1961 flight ?",
+      "system_answer": "",
+      "gold_answer": "44",
+      "score": 0
+    },
+    {
+      "question": "How cold should a refrigerator be ?",
+      "system_answer": "5",
+      "gold_answer": "2",
+      "score": 0
+    },
+    {
+      "question": "What is another astronomic term for the Northern Lights ?",
+      "system_answer": "",
+      "gold_answer": "19",
+      "score": 0
+    },
+    {
+      "question": "Where is the Shawnee National Forest ?",
+      "system_answer": "24",
+      "gold_answer": "24",
+      "score": 1
+    },
+    {
+      "question": "How much of an apple is water ?",
+      "system_answer": "",
+      "gold_answer": "9",
+      "score": 0
+    },
+    {
+      "question": "What is strep throat ?",
+      "system_answer": "7",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is poliomyelitis ?",
+      "system_answer": "7",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the temperature at the center of the earth ?",
+      "system_answer": "",
+      "gold_answer": "2",
+      "score": 0
+    },
+    {
+      "question": "Where is the Lourve ?",
+      "system_answer": "The Louvre is located in Paris, France.",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What is the longest bone in the human body ?",
+      "system_answer": "5",
+      "gold_answer": "13",
+      "score": 0
+    },
+    {
+      "question": "What state has the least amount of rain per year ?",
+      "system_answer": "",
+      "gold_answer": "45",
+      "score": 0
+    },
+    {
+      "question": "What is neurology ?",
+      "system_answer": "0",
+      "gold_answer": "0",
+      "score": 1
+    },
+    {
+      "question": "What is the statue of liberty made of ?",
+      "system_answer": "0",
+      "gold_answer": "42",
+      "score": 0
+    },
+    {
+      "question": "What was W.C. Fields ' real name ?",
+      "system_answer": "48",
+      "gold_answer": "48",
+      "score": 1
+    },
+    {
+      "question": "What is solar wind ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What position did Willie Davis play in baseball ?",
+      "system_answer": "",
+      "gold_answer": "14",
+      "score": 0
+    },
+    {
+      "question": "Who was the abolitionist who led the raid on Harper 's Ferry in 1859 ?",
+      "system_answer": "48",
+      "gold_answer": "48",
+      "score": 1
+    },
+    {
+      "question": "Who was the first woman governor in the U.S. ?",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "What are solar cells ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "When was the telephone invented ?",
+      "system_answer": "",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "What is another name for vitamin B1 ?",
+      "system_answer": "0",
+      "gold_answer": "19",
+      "score": 0
+    },
+    {
+      "question": "What is the major fault line near Kentucky ?",
+      "system_answer": "",
+      "gold_answer": "6",
+      "score": 0
+    },
+    {
+      "question": "Where is the Savannah River ?",
+      "system_answer": "24",
+      "gold_answer": "24",
+      "score": 1
+    },
+    {
+      "question": "What city 's newspaper is called `` The Star '' ?",
+      "system_answer": "",
+      "gold_answer": "36",
+      "score": 0
+    },
+    {
+      "question": "What planet has the strongest magnetic field of all the planets ?",
+      "system_answer": "",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What is severance pay ?",
+      "system_answer": "28",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What breed of hunting dog did the Beverly Hillbillies own ?",
+      "system_answer": "The Clampett family’s hunting dog was a **coonhound** (named “Judy”).",
+      "gold_answer": "16",
+      "score": 0
+    },
+    {
+      "question": "What is the population of China ?",
+      "system_answer": "33",
+      "gold_answer": "33",
+      "score": 1
+    },
+    {
+      "question": "What are semiconductors ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What body of water are the Canary Islands in ?",
+      "system_answer": "",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "What does the word fortnight mean ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What monastery was raided by Vikings in the late eighth century ?",
+      "system_answer": "",
+      "gold_answer": "6",
+      "score": 0
+    },
+    {
+      "question": "What did Edward Binney and Howard Smith invent in 1903 ?",
+      "system_answer": "",
+      "gold_answer": "6",
+      "score": 0
+    },
+    {
+      "question": "When was President Kennedy shot ?",
+      "system_answer": "",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "What is a thermometer ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the earth 's diameter ?",
+      "system_answer": "",
+      "gold_answer": "10",
+      "score": 0
+    },
+    {
+      "question": "What is mold ?",
+      "system_answer": "0",
+      "gold_answer": "0",
+      "score": 1
+    },
+    {
+      "question": "What does `` Sitting Shiva '' mean ?",
+      "system_answer": "**Sitting Shiva** is a traditional Jewish mourning practice that takes place after the death of a close relative (usually a parent, spouse, child, or sibling). The term “Shiva” comes from the Hebrew word for “seven,” and the observance lasts for seven days.\n\n**Key elements of Sitting Shiva:**\n\n| Aspect | What Happens |\n|--------|--------------|\n| **Time frame** | 7 consecutive days immediately following the burial. |\n| **Location** | Usually in the home of the deceased or the mourner’s home. |\n| **Attire** | Mourners often wear black clothing or a black armband. |\n| **Lighting** | A single candle is lit (the “Shiva candle”) and kept burning for the week. |\n| **Gathering** | Family, friends, and community members come to offer condolences, share memories, and provide support. |\n| **Prayers & rituals** | The mourners recite the *Kaddish* (a prayer for the deceased) and may read from the Torah or other texts. |\n| **Restrictions** | Mourners typically avoid celebratory activities, bright lighting, and sometimes even certain foods or music. |\n| **Purpose** | To honor the deceased, allow the mourners to grieve, and receive communal support. |\n\nDuring Shiva, the mourners are expected to sit or kneel in a low‑light setting, often with a small table of food and water for visitors. The practice is a way to express grief, remember the life of the deceased, and receive comfort from the community.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is desktop publishing ?",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "Who discovered radium ?",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "What is mad cow disease ?",
+      "system_answer": "7",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "What is the location of Lake Champlain ?",
+      "system_answer": "24",
+      "gold_answer": "24",
+      "score": 1
+    },
+    {
+      "question": "What is the proper name for a female walrus ?",
+      "system_answer": "",
+      "gold_answer": "16",
+      "score": 0
+    },
+    {
+      "question": "When was Rosa Parks born ?",
+      "system_answer": "",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "When were William Shakespeare 's twins born ?",
+      "system_answer": "William Shakespeare did not have twins. He had two children: a son, Henry, born in 1585, and a daughter, Judith, born in 1587.",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "What is natural gas composed of ?",
+      "system_answer": "",
+      "gold_answer": "42",
+      "score": 0
+    },
+    {
+      "question": "How tall is the Gateway Arch in St. Louis , MO ?",
+      "system_answer": "10",
+      "gold_answer": "10",
+      "score": 1
+    },
+    {
+      "question": "Who was the first governor of Alaska ?",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "When was the first Wal-Mart store opened ?",
+      "system_answer": "",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "What New York City structure is also known as the Twin Towers ?",
+      "system_answer": "36",
+      "gold_answer": "24",
+      "score": 0
+    }
+  ]
+}

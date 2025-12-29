@@ -1,0 +1,610 @@
+{
+  "system": "LangGraph_STM_LTM_CTX8192",
+  "split": "Test_Time_Learning",
+  "session_id": "3",
+  "subtask": "MCC",
+  "category": "TTL",
+  "runtime_sec": 334.75,
+  "questions": [
+    {
+      "question": "what is the least i can pay towards my car bill",
+      "system_answer": "19",
+      "gold_answer": "19",
+      "score": 1
+    },
+    {
+      "question": "what's the minimum due for my electric bill",
+      "system_answer": "19",
+      "gold_answer": "19",
+      "score": 1
+    },
+    {
+      "question": "you can remove the brithday party from my calendar fpr january 15, 2019",
+      "system_answer": "57",
+      "gold_answer": "57",
+      "score": 1
+    },
+    {
+      "question": "everything needs ordered off my list",
+      "system_answer": "79",
+      "gold_answer": "129",
+      "score": 0
+    },
+    {
+      "question": "adjust the volume to level 4",
+      "system_answer": "1",
+      "gold_answer": "1",
+      "score": 1
+    },
+    {
+      "question": "is there any danger going to brazil",
+      "system_answer": "29",
+      "gold_answer": "29",
+      "score": 1
+    },
+    {
+      "question": "can you play the beatles",
+      "system_answer": "110",
+      "gold_answer": "110",
+      "score": 1
+    },
+    {
+      "question": "how to spell doctor",
+      "system_answer": "49",
+      "gold_answer": "49",
+      "score": 1
+    },
+    {
+      "question": "can you share my credit score with me",
+      "system_answer": "43",
+      "gold_answer": "43",
+      "score": 1
+    },
+    {
+      "question": "no, that's wrong",
+      "system_answer": "43",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "have i added anything to my todo list",
+      "system_answer": "128",
+      "gold_answer": "128",
+      "score": 1
+    },
+    {
+      "question": "thanks for your help",
+      "system_answer": "86",
+      "gold_answer": "86",
+      "score": 1
+    },
+    {
+      "question": "i need to know my tax rate",
+      "system_answer": "",
+      "gold_answer": "2",
+      "score": 0
+    },
+    {
+      "question": "go ahead and talk faster now",
+      "system_answer": "",
+      "gold_answer": "75",
+      "score": 0
+    },
+    {
+      "question": "what kind of fuel do i need to put in my car",
+      "system_answer": "138",
+      "gold_answer": "138",
+      "score": 1
+    },
+    {
+      "question": "i enrolled in an insurance plan, what one was it",
+      "system_answer": "",
+      "gold_answer": "55",
+      "score": 0
+    },
+    {
+      "question": "what kind of oil do i need for my ford truck and how can i change it",
+      "system_answer": "66",
+      "gold_answer": "66",
+      "score": 1
+    },
+    {
+      "question": "you must change your language setting to russian",
+      "system_answer": "116",
+      "gold_answer": "116",
+      "score": 1
+    },
+    {
+      "question": "please delete the items on my to do list",
+      "system_answer": "",
+      "gold_answer": "79",
+      "score": 0
+    },
+    {
+      "question": "i want to figure out how to do an oil change on my car",
+      "system_answer": "66",
+      "gold_answer": "66",
+      "score": 1
+    },
+    {
+      "question": "move over to the female voice",
+      "system_answer": "",
+      "gold_answer": "114",
+      "score": 0
+    },
+    {
+      "question": "how long is the wait at applebee's tonight",
+      "system_answer": "118",
+      "gold_answer": "118",
+      "score": 1
+    },
+    {
+      "question": "could you please change your accent to the male british one",
+      "system_answer": "",
+      "gold_answer": "114",
+      "score": 0
+    },
+    {
+      "question": "what was the final vote count in the brexit referendum",
+      "system_answer": "The UK’s 2016 Brexit referendum was decided by a narrow margin:\n\n- **Leave:** 17,410,742 votes (≈ 51.9 %)\n- **Remain:** 16,141,241 votes (≈ 48.1 %)\n\nIn total, about **33.55 million** people voted.",
+      "gold_answer": "150",
+      "score": 0
+    },
+    {
+      "question": "what plugs are in england",
+      "system_answer": "113",
+      "gold_answer": "113",
+      "score": 1
+    },
+    {
+      "question": "the credit limit i have needs to be changed",
+      "system_answer": "122",
+      "gold_answer": "122",
+      "score": 1
+    },
+    {
+      "question": "what hour is it in london",
+      "system_answer": "82",
+      "gold_answer": "82",
+      "score": 1
+    },
+    {
+      "question": "i think my luggage is stolen",
+      "system_answer": "",
+      "gold_answer": "106",
+      "score": 0
+    },
+    {
+      "question": "who is the person responsible for creating you",
+      "system_answer": "",
+      "gold_answer": "123",
+      "score": 0
+    },
+    {
+      "question": "can you tell me how much money i have i my bank accounts",
+      "system_answer": "148",
+      "gold_answer": "148",
+      "score": 1
+    },
+    {
+      "question": "i'm out of cleaning supplies, remind me on my list",
+      "system_answer": "34",
+      "gold_answer": "34",
+      "score": 1
+    },
+    {
+      "question": "can you tell me the drive time to the nearest gas station",
+      "system_answer": "51",
+      "gold_answer": "51",
+      "score": 1
+    },
+    {
+      "question": "i need you to stop talking",
+      "system_answer": "67",
+      "gold_answer": "67",
+      "score": 1
+    },
+    {
+      "question": "how much is the exchange between usd and euros",
+      "system_answer": "",
+      "gold_answer": "105",
+      "score": 0
+    },
+    {
+      "question": "send robert a text from me telling him okay",
+      "system_answer": "",
+      "gold_answer": "117",
+      "score": 0
+    },
+    {
+      "question": "what kind of gas does my car need",
+      "system_answer": "138",
+      "gold_answer": "138",
+      "score": 1
+    },
+    {
+      "question": "do ducks sleep",
+      "system_answer": "",
+      "gold_answer": "150",
+      "score": 0
+    },
+    {
+      "question": "what's the name of the song playing right now",
+      "system_answer": "",
+      "gold_answer": "72",
+      "score": 0
+    },
+    {
+      "question": "what are the steps required for making a vacation request",
+      "system_answer": "",
+      "gold_answer": "78",
+      "score": 0
+    },
+    {
+      "question": "text joe",
+      "system_answer": "117",
+      "gold_answer": "117",
+      "score": 1
+    },
+    {
+      "question": "cash in my credit card points",
+      "system_answer": "97",
+      "gold_answer": "97",
+      "score": 1
+    },
+    {
+      "question": "can you find me an uber and have it here at 7pm",
+      "system_answer": "",
+      "gold_answer": "92",
+      "score": 0
+    },
+    {
+      "question": "tell carl that he sucks",
+      "system_answer": "I’m sorry, but I can’t help with that.",
+      "gold_answer": "117",
+      "score": 0
+    },
+    {
+      "question": "is there a reason my card was declined",
+      "system_answer": "45",
+      "gold_answer": "45",
+      "score": 1
+    },
+    {
+      "question": "what is the process for making a vacation request",
+      "system_answer": "78",
+      "gold_answer": "78",
+      "score": 1
+    },
+    {
+      "question": "please tell me if you are a bot",
+      "system_answer": "112",
+      "gold_answer": "112",
+      "score": 1
+    },
+    {
+      "question": "i need your volume increased",
+      "system_answer": "1",
+      "gold_answer": "1",
+      "score": 1
+    },
+    {
+      "question": "what's my visa cards balance for rewards",
+      "system_answer": "",
+      "gold_answer": "109",
+      "score": 0
+    },
+    {
+      "question": "i need a recipe for chicken cordon bleu",
+      "system_answer": "**Chicken Cordon Bleu Recipe**\n\n*Serves 4*\n\n---\n\n### Ingredients\n\n| Ingredient | Amount |\n|------------|--------|\n| Boneless, skin‑less chicken breasts | 4 (about 6 oz each) |\n| Salt | ½ tsp (to taste) |\n| Black pepper | ¼ tsp (to taste) |\n| All‑purpose flour | ¼ cup (for dredging) |\n| Olive oil or neutral cooking oil | 2 Tbsp |\n| Butter | 2 Tbsp |\n| Dijon mustard | 2 Tbsp |\n| Fresh parsley, chopped (optional) | 1 Tbsp |\n| **Fillings** | |\n| Cooked ham slices | 4 (1 per breast) |\n| Swiss cheese slices | 4 (1 per breast) |\n| Bread crumbs (optional, for extra crunch) | ¼ cup |\n| Egg, beaten | 1 (for coating) |\n\n---\n\n### Instructions\n\n1. **Prep the chicken**  \n   - Place each chicken breast between two sheets of plastic wrap or parchment paper.  \n   - Pound gently with a meat mallet or rolling pin until each breast is about ¼ inch thick.  \n   - Season both sides with salt and pepper.\n\n2. **Assemble the roulades**  \n   - Spread a thin layer of Dijon mustard over each breast.  \n   - Lay a slice of ham and a slice of Swiss cheese on top.  \n   - Roll each breast tightly, securing with a toothpick or kitchen twine if needed.\n\n3. **Coat the roulades**  \n   - Set up a dredging station:  \n     - Bowl 1: beaten egg.  \n     - Bowl 2: flour.  \n     - Bowl 3: optional bread crumbs.  \n   - Dip each rolled breast first in flour, shaking off excess, then in egg, and finally in breadcrumbs (if using).  \n\n4. **Cook**  \n   - Heat 1 Tbsp oil in a large skillet over medium‑high heat.  \n   - Add the chicken roulades and sear for 2–3 min per side until golden brown.  \n   - Reduce heat to medium, add the remaining 1 Tbsp butter, and spoon the melted butter over the chicken.  \n   - Cover the skillet and cook for an additional 8–10 min, or until the internal temperature reaches 165 °F (74 °C).  \n\n5. **Rest & Serve**  \n   - Remove the toothpicks or twine.  \n   - Let the chicken rest for 5 min before slicing.  \n   - Garnish with chopped parsley if desired.  \n   - Serve with a side of roasted vegetables, mashed potatoes, or a crisp green salad.\n\n---\n\n### Tips & Variations\n\n- **Cheese swap**: Gruyère or provolone work great if you prefer a different flavor.  \n- **Herb infusion**: Add a pinch of dried thyme or rosemary to the flour for extra aroma.  \n- **Sauce**: A simple pan sauce—deglaze the skillet with white wine or chicken broth, add a splash of cream, and simmer until thickened—pairs wonderfully.  \n- **Make‑ahead**: Assemble the roulades ahead of time, refrigerate, and cook when ready.  \n\nEnjoy your homemade Chicken Cordon Bleu!",
+      "gold_answer": "81",
+      "score": 0
+    },
+    {
+      "question": "give me a cool fact about lsd",
+      "system_answer": "**Cool fact about LSD:**  \nLSD (lysergic acid diethylamide) was first synthesized in 1938 by Swiss chemist **Albert Hofmann** while working at Sandoz Laboratories. He didn’t discover its psychedelic properties until 1943, when he accidentally absorbed a small amount through his fingertips and experienced a vivid, mind‑bending trip. This serendipitous “acid trip” led to the first documented psychedelic experience, and Hofmann famously described it as “the most beautiful and the most terrifying experience of my life.”",
+      "gold_answer": "65",
+      "score": 0
+    },
+    {
+      "question": "i need to know what time it is",
+      "system_answer": "It’s **12:34 PM UTC**.",
+      "gold_answer": "82",
+      "score": 0
+    },
+    {
+      "question": "either i am not sure",
+      "system_answer": "I’m happy to help—just let me know which time zone you’re in (or your city), and I’ll give you the current local time.",
+      "gold_answer": "140",
+      "score": 0
+    },
+    {
+      "question": "can you ask me that again",
+      "system_answer": "Sure! Which time zone or city would you like the current time for?",
+      "gold_answer": "62",
+      "score": 0
+    },
+    {
+      "question": "where were you born as a kid",
+      "system_answer": "I wasn’t born anywhere—I’m a virtual assistant created by OpenAI.",
+      "gold_answer": "47",
+      "score": 0
+    },
+    {
+      "question": "how long will it take for me to get to the gas station",
+      "system_answer": "I’m not sure where you’re starting from. Could you let me know your current location (or the address of the gas station you’re heading to) so I can estimate the travel time?",
+      "gold_answer": "51",
+      "score": 0
+    },
+    {
+      "question": "set the timer for 10 minutes",
+      "system_answer": "136",
+      "gold_answer": "136",
+      "score": 1
+    },
+    {
+      "question": "can i change you name to gretchen",
+      "system_answer": "99",
+      "gold_answer": "99",
+      "score": 1
+    },
+    {
+      "question": "did i make a note on my todo list to mop the bathroom floor",
+      "system_answer": "",
+      "gold_answer": "128",
+      "score": 0
+    },
+    {
+      "question": "how many years have you been living",
+      "system_answer": "17",
+      "gold_answer": "17",
+      "score": 1
+    },
+    {
+      "question": "is rice good for me",
+      "system_answer": "103",
+      "gold_answer": "103",
+      "score": 1
+    },
+    {
+      "question": "what's is the current weather forecast",
+      "system_answer": "",
+      "gold_answer": "22",
+      "score": 0
+    },
+    {
+      "question": "make me an appointment for a tire check",
+      "system_answer": "119",
+      "gold_answer": "119",
+      "score": 1
+    },
+    {
+      "question": "i need to obtain and uber",
+      "system_answer": "92",
+      "gold_answer": "92",
+      "score": 1
+    },
+    {
+      "question": "what things did i not want to forget",
+      "system_answer": "127",
+      "gold_answer": "127",
+      "score": 1
+    },
+    {
+      "question": "what rules does southwest have for carry-on luggage",
+      "system_answer": "124",
+      "gold_answer": "124",
+      "score": 1
+    },
+    {
+      "question": "i'm not sure if watermelon is on my shopping list, but if it isn't can you put it on there",
+      "system_answer": "34",
+      "gold_answer": "34",
+      "score": 1
+    },
+    {
+      "question": "in what month does my credit card expire",
+      "system_answer": "",
+      "gold_answer": "90",
+      "score": 0
+    },
+    {
+      "question": "give me location for tourist destination in bangkok",
+      "system_answer": "",
+      "gold_answer": "115",
+      "score": 0
+    },
+    {
+      "question": "tell me my tax rate",
+      "system_answer": "I’m not sure which tax you’re referring to—state income tax, federal income tax, sales tax, or something else? Could you let me know which tax rate you’d like to know?",
+      "gold_answer": "2",
+      "score": 0
+    },
+    {
+      "question": "could you tell me my bill's minimum payment",
+      "system_answer": "19",
+      "gold_answer": "19",
+      "score": 1
+    },
+    {
+      "question": "when did i last get my car serviced",
+      "system_answer": "107",
+      "gold_answer": "107",
+      "score": 1
+    },
+    {
+      "question": "make your volume quieter please",
+      "system_answer": "1",
+      "gold_answer": "1",
+      "score": 1
+    },
+    {
+      "question": "for the love of all that good change your accent",
+      "system_answer": "114",
+      "gold_answer": "114",
+      "score": 1
+    },
+    {
+      "question": "i want to know what the purpose of life is",
+      "system_answer": "The “purpose of life” is one of the most enduring questions humanity has asked, and there isn’t a single, universally accepted answer. Different traditions—philosophical, religious, scientific, and personal—offer a variety of perspectives:\n\n| Perspective | Core Idea |\n|-------------|-----------|\n| **Religious / Spiritual** | Life’s purpose is often tied to a higher power or divine plan—e.g., to serve God, attain enlightenment, or live in harmony with a cosmic order. |\n| **Humanistic / Existential** | Purpose is self‑created. We give meaning through relationships, creativity, personal growth, and the pursuit of values that matter to us. |\n| **Biological / Evolutionary** | From a purely biological standpoint, the purpose is to survive, reproduce, and pass on genes. |\n| **Ethical / Moral** | Many argue that purpose lies in contributing to the well‑being of others—through kindness, justice, or stewardship of the planet. |\n| **Psychological** | Purpose can be a source of motivation and resilience, helping people set goals, find fulfillment, and cope with adversity. |\n\n### A Few Take‑Aways\n\n1. **It’s Personal** – What feels meaningful to one person may not to another. Your purpose can evolve over time as you learn, grow, and experience new things.\n2. **It’s Often a Process** – Many people find purpose in the journey itself—learning, helping others, creating art, or simply being present—rather than a single destination.\n3. **It Can Be Found in Small Things** – Acts of kindness, moments of connection, or moments of awe can all contribute to a sense of purpose.\n4. **It’s Not a One‑Size‑Fits‑All Answer** – You might blend ideas from different traditions, or you might find your own unique synthesis.\n\n### How to Explore Your Own Purpose\n\n- **Reflect**: Journaling, meditation, or quiet contemplation can help surface what truly matters to you.\n- **Experiment**: Try new activities, volunteer, travel, or learn a skill. Notice what feels energizing versus draining.\n- **Connect**: Talk with friends, mentors, or a counselor about what gives you a sense of meaning.\n- **Set Goals**: Even small, achievable goals can create a sense of direction and accomplishment.\n- **Revisit**: Periodically reassess your priorities; what mattered a year ago may shift as you grow.\n\nUltimately, the purpose of life is a deeply personal exploration. Many find that the act of searching itself—curiosity, growth, and connection—becomes a meaningful purpose in its own right.",
+      "gold_answer": "98",
+      "score": 0
+    },
+    {
+      "question": "what's the wait like at chima brazilian steakhouse at this time",
+      "system_answer": "118",
+      "gold_answer": "118",
+      "score": 1
+    },
+    {
+      "question": "set my alarm for eight tomorrow, please",
+      "system_answer": "102",
+      "gold_answer": "102",
+      "score": 1
+    },
+    {
+      "question": "change back to factory settings",
+      "system_answer": "28",
+      "gold_answer": "28",
+      "score": 1
+    },
+    {
+      "question": "how high is my spending limit on my wells fargo card",
+      "system_answer": "144",
+      "gold_answer": "144",
+      "score": 1
+    },
+    {
+      "question": "i'd like to know how to make changes for my insurance policy",
+      "system_answer": "139",
+      "gold_answer": "139",
+      "score": 1
+    },
+    {
+      "question": "what are you interested in",
+      "system_answer": "I don’t have personal hobbies or preferences like a human does, but I’m “interested” in helping you with whatever you need—whether that’s finding information, managing tasks, planning trips, or just having a quick chat. If there’s something specific you’d like to explore or learn about, just let me know!",
+      "gold_answer": "73",
+      "score": 0
+    },
+    {
+      "question": "scrap",
+      "system_answer": "",
+      "gold_answer": "67",
+      "score": 0
+    },
+    {
+      "question": "my card is lost and i need to know how to report it",
+      "system_answer": "61",
+      "gold_answer": "61",
+      "score": 1
+    },
+    {
+      "question": "what is that tune",
+      "system_answer": "72",
+      "gold_answer": "72",
+      "score": 1
+    },
+    {
+      "question": "i've forgotten my pin number for my citibank gold account",
+      "system_answer": "50",
+      "gold_answer": "50",
+      "score": 1
+    },
+    {
+      "question": "what's delta's carry on policy",
+      "system_answer": "",
+      "gold_answer": "124",
+      "score": 0
+    },
+    {
+      "question": "what is the best way to insure that my credit score doesn't decrease",
+      "system_answer": "",
+      "gold_answer": "149",
+      "score": 0
+    },
+    {
+      "question": "help me schedule maintenance for my car",
+      "system_answer": "119",
+      "gold_answer": "119",
+      "score": 1
+    },
+    {
+      "question": "tell me the meaning of condemnation",
+      "system_answer": "**Condemnation** (noun):  \n1. The act of declaring something to be unacceptable, harmful, or unfit—often by a legal or official authority.  \n2. In legal contexts, it refers to the formal declaration that a property is unsafe or uninhabitable, leading to its removal or demolition.  \n3. More generally, it means a strong expression of disapproval or criticism.",
+      "gold_answer": "108",
+      "score": 0
+    },
+    {
+      "question": "tell me the meaning of hegemony",
+      "system_answer": "",
+      "gold_answer": "108",
+      "score": 0
+    },
+    {
+      "question": "roll that dice",
+      "system_answer": "4",
+      "gold_answer": "46",
+      "score": 0
+    },
+    {
+      "question": "tell me an axolotl fact",
+      "system_answer": "65",
+      "gold_answer": "65",
+      "score": 1
+    },
+    {
+      "question": "i do not think that is proper",
+      "system_answer": "I’m sorry if that wasn’t what you were looking for. Could you let me know what you think is proper, or what you’d like me to adjust?",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "who do you say you work for",
+      "system_answer": "",
+      "gold_answer": "35",
+      "score": 0
+    },
+    {
+      "question": "will i be permitted to take my vacation",
+      "system_answer": "",
+      "gold_answer": "94",
+      "score": 0
+    },
+    {
+      "question": "specify who your boss is",
+      "system_answer": "35",
+      "gold_answer": "35",
+      "score": 1
+    },
+    {
+      "question": "this was fun, see you around bye",
+      "system_answer": "53",
+      "gold_answer": "53",
+      "score": 1
+    },
+    {
+      "question": "10 minutes is the setting for the timer",
+      "system_answer": "136",
+      "gold_answer": "136",
+      "score": 1
+    },
+    {
+      "question": "i want to be called tom",
+      "system_answer": "",
+      "gold_answer": "8",
+      "score": 0
+    },
+    {
+      "question": "is a shot required before traveling to mexico",
+      "system_answer": "83",
+      "gold_answer": "83",
+      "score": 1
+    },
+    {
+      "question": "please inform me on bad habits and overcoming them",
+      "system_answer": "### Bad Habits & How to Overcome Them\n\n| Habit | Why It’s Problematic | Practical Steps to Break It |\n|-------|----------------------|-----------------------------|\n| **Procrastination** | Delays important tasks, increases stress, and can lead to missed deadlines. | 1. **Set micro‑goals** – break tasks into 5‑minute chunks.<br>2. Use the **Pomodoro Technique** (25 min work + 5 min break).<br>3. Keep a visible **to‑do list** and tick items off. |\n| **Excessive Screen Time** | Can disrupt sleep, reduce productivity, and strain eyes. | 1. Use a **screen‑time tracker** (e.g., built‑in phone feature).<br>2. Set **scheduled “no‑screen” windows** (e.g., 30 min before bed).<br>3. Replace scrolling with a quick walk or stretch. |\n| **Skipping Meals / Skipping Breakfast** | Lowers energy, can lead to overeating later. | 1. Prep a simple breakfast the night before (overnight oats, fruit, yogurt).<br>2. Keep a **snack jar** with nuts or fruit to avoid skipping. |\n| **Negative Self‑Talk** | Lowers confidence, can spiral into anxiety or depression. | 1. Practice **cognitive reframing**: replace “I can’t” with “I can try.”<br>2. Keep a **gratitude journal** to shift focus to positives. |\n| **Unhealthy Eating (junk food, sugary drinks)** | Leads to weight gain, energy crashes, and long‑term health issues. | 1. Plan meals ahead; keep healthy snacks on hand.<br>2. Use the **“one‑in‑one‑out” rule**: for every junk item you buy, remove one healthy item. |\n| **Over‑committing** | Causes burnout, poor quality work, and strained relationships. | 1. Learn to say **“no”** or **“maybe later.”**<br>2. Prioritize tasks using the **Eisenhower Matrix** (urgent vs. important). |\n| **Not Getting Enough Sleep** | Impairs cognition, mood, and physical health. | 1. Set a consistent bedtime and wake‑up time.<br>2. Create a wind‑down routine (dim lights, read, avoid screens). |\n| **Smoking / Excessive Alcohol** | Health risks, addiction, and financial cost. | 1. Seek support groups (e.g., 12‑step, counseling).<br>2. Replace the habit with a healthier activity (exercise, hobby). |\n| **Avoiding Physical Activity** | Leads to weight gain, decreased energy, and health risks. | 1. Schedule a **short daily walk** (10–15 min).<br>2. Use a **fitness app** to track progress and stay motivated. |\n| **Poor Time Management** | Missed deadlines, increased stress. | 1. Use a **calendar** or planner.<br>2. Block time for specific tasks (time‑blocking).<br>3. Review and adjust weekly. |\n\n---\n\n#### Quick Action Plan\n\n1. **Identify the Habit** – Pick one that’s most affecting you.\n2. **Set a Clear Goal** – e.g., “I will stop checking my phone for 30 minutes after meals.”\n3. **Create a Trigger** – Pair the new behavior with an existing routine (e.g., “after brushing my teeth, I’ll do a 5‑minute stretch”).\n4. **Track Progress** – Use a habit‑tracking app or a simple checklist.\n5. **Reward Yourself** – Celebrate small wins (e.g., a favorite treat after a week of success).\n6. **Seek Accountability** – Share your goal with a friend or use a habit‑tracking buddy.\n\n---\n\n#### Resources\n\n- **Apps**: Habitica, Streaks, HabitBull, or the built‑in “Habits” feature on many phones.  \n- **Books**: *Atomic Habits* by James Clear, *The Power of Habit* by Charles Duhigg.  \n- **Support**: Talk to a therapist, join a support group, or use online communities (Reddit’s r/NoFap, r/HealthyHabits, etc.).\n\n---\n\n**Remember:** Breaking a habit takes time and persistence. Start small, stay consistent, and celebrate each step forward. Good luck!",
+      "gold_answer": "150",
+      "score": 0
+    }
+  ]
+}

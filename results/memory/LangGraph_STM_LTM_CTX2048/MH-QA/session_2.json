@@ -1,0 +1,610 @@
+{
+  "system": "LangGraph_STM_LTM_CTX2048",
+  "split": "Accurate_Retrieval",
+  "session_id": "2",
+  "subtask": "MH-QA",
+  "category": "AR",
+  "runtime_sec": 381.3,
+  "questions": [
+    {
+      "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+      "system_answer": "",
+      "gold_answer": "yes",
+      "score": 0
+    },
+    {
+      "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+      "system_answer": "Betty Grable, who played Corliss Archer in *Kiss and Tell*, did not hold any government position.",
+      "gold_answer": "Chief of Protocol",
+      "score": 0
+    },
+    {
+      "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+      "system_answer": "",
+      "gold_answer": "Animorphs",
+      "score": 0
+    },
+    {
+      "question": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+      "system_answer": "No.  \n- **Laleli Mosque** is situated in the Laleli neighborhood of Istanbul’s Fatih district.  \n- **Esma Sultan Mansion** (Esma Sultan Evleri) lies in the Esma Sultan area, also within Fatih, but in a different neighborhood.\n\nSo while both buildings are in the same district (Fatih), they are not located in the same neighborhood.",
+      "gold_answer": "no",
+      "score": 1
+    },
+    {
+      "question": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+      "system_answer": "",
+      "gold_answer": "Greenwich Village, New York City",
+      "score": 0
+    },
+    {
+      "question": "2014 S/S is the debut album of a South Korean boy group that was formed by who?",
+      "system_answer": "",
+      "gold_answer": "YG Entertainment",
+      "score": 0
+    },
+    {
+      "question": "Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
+      "system_answer": "",
+      "gold_answer": "Eenasul Fateh",
+      "score": 0
+    },
+    {
+      "question": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+      "system_answer": "The Lewiston Maineiacs played at the Lewiston Ice Arena, which has a seating capacity of **about 2,500** spectators.",
+      "gold_answer": "3,677 seated",
+      "score": 0
+    },
+    {
+      "question": "Who is older, Annie Morton or Terry Richardson?",
+      "system_answer": "Terry Richardson is older.  \n- **Annie Morton** was born in 1974.  \n- **Terry Richardson** was born in 1965.  \n\nSo Richardson is the older of the two.",
+      "gold_answer": "Terry Richardson",
+      "score": 1
+    },
+    {
+      "question": "Are Local H and For Against both from the United States?",
+      "system_answer": "",
+      "gold_answer": "yes",
+      "score": 0
+    },
+    {
+      "question": "What is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area?",
+      "system_answer": "The university is the **University of Kansas (KU)**, and its fight song is called **“Blue and White.”**",
+      "gold_answer": "Kansas Song",
+      "score": 0
+    },
+    {
+      "question": "What screenwriter with credits for \"Evolution\" co-wrote a film starring Nicolas Cage and Téa Leoni?",
+      "system_answer": "",
+      "gold_answer": "David Weissman",
+      "score": 0
+    },
+    {
+      "question": "What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?",
+      "system_answer": "The promo was done in **2013**.",
+      "gold_answer": "1999",
+      "score": 0
+    },
+    {
+      "question": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+      "system_answer": "Yes.  \n\n- **Random House Tower** is a mixed‑use building that houses the headquarters of Random House (a publishing company) and a luxury residential component.  \n- **888 7th Avenue** is an office tower that serves as the headquarters of Vornado Realty Trust, a major real‑estate investment‑trust company.  \n\nSo both buildings are actively involved in the real‑estate sector—one as a residential/office mixed‑use property and the other as the corporate HQ of a real‑estate firm.",
+      "gold_answer": "no",
+      "score": 0
+    },
+    {
+      "question": "The football manager who recruited David Beckham managed Manchester United during what timeframe?",
+      "system_answer": "The manager who signed David Beckham was **Sir Alex Ferguson**.  \nHe was the manager of Manchester United from **1986 to 2013**.",
+      "gold_answer": "from 1986 to 2013",
+      "score": 1
+    },
+    {
+      "question": "Brown State Fishing Lake is in a country that has a population of how many inhabitants ?",
+      "system_answer": "",
+      "gold_answer": "9,984",
+      "score": 0
+    },
+    {
+      "question": "The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?",
+      "system_answer": "",
+      "gold_answer": "the North Atlantic Conference",
+      "score": 0
+    },
+    {
+      "question": "Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?",
+      "system_answer": "Yes.  \n- **Giuseppe Verdi** (1813‑1901) is one of the most celebrated Italian opera composers, known for works such as *Rigoletto*, *Il Trovatore*, and *Aida*.  \n- **Ambroise Thomas** (1811‑1896) was a French composer whose most famous operas include *Mignon* and *Hamlet*.\n\nBoth composers are renowned for their contributions to the operatic repertoire.",
+      "gold_answer": "yes",
+      "score": 1
+    },
+    {
+      "question": "Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?",
+      "system_answer": "Roger O. Egeberg served as Assistant Secretary for Health and Scientific Affairs during the administration of **President George H. W. Bush**, who was in office from **1989 to 1993**.",
+      "gold_answer": "1969 until 1974",
+      "score": 0
+    },
+    {
+      "question": "Which writer was from England, Henry Roth or Robert Erskine Childers?",
+      "system_answer": "Neither of them was English.  \n- **Henry Roth** was an American novelist (born in New York City).  \n- **Robert Erskine Childers** was Irish (born in Dublin).",
+      "gold_answer": "Robert Erskine Childers DSC",
+      "score": 0
+    },
+    {
+      "question": "Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990?",
+      "system_answer": "",
+      "gold_answer": "Pedro Rodríguez",
+      "score": 0
+    },
+    {
+      "question": "This singer of A Rather Blustery Day also voiced what hedgehog?",
+      "system_answer": "",
+      "gold_answer": "Sonic",
+      "score": 0
+    },
+    {
+      "question": "Aside from the Apple Remote, what other device can control the program Apple Remote was originally designed to interact with?",
+      "system_answer": "The Apple Remote was originally built to control the **Apple TV**.  \nIn addition to the physical remote, any iOS device (iPhone, iPad, or iPod touch) can control the Apple TV through the built‑in Apple TV Remote app.",
+      "gold_answer": "keyboard function keys",
+      "score": 0
+    },
+    {
+      "question": "Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice? ",
+      "system_answer": "**Badly Drawn Boy** has the higher instrument‑to‑person ratio.\n\n- **Badly Drawn Boy** is essentially a solo project of Stephen Jones.  He records and performs with a wide array of instruments (guitar, piano, bass, drums, synths, etc.) all in one person, so the number of instruments per performer is very high.\n\n- **Wolf Alice** is a four‑member band (Jade Vowles, Ellie Sullivan, Joel Jenkins, and Theo Gould‑Smith).  Each member typically plays one primary instrument (guitar, bass, drums, vocals), so the instrument‑to‑person ratio is roughly one instrument per person.\n\nThus, Badly Drawn Boy’s solo‑artist setup gives it a higher instrument‑to‑person ratio than Wolf Alice.",
+      "gold_answer": "Badly Drawn Boy",
+      "score": 0
+    },
+    {
+      "question": "What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?",
+      "system_answer": "Peter Schmeichel was voted the **IFFHS World’s Best Goalkeeper** in 1992.",
+      "gold_answer": "World's Best Goalkeeper",
+      "score": 1
+    },
+    {
+      "question": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
+      "system_answer": "The song “These Boots Are Made for Walkin’” was written by **Lee Hazlewood**, who passed away in 2007.",
+      "gold_answer": "Barton Lee Hazlewood",
+      "score": 1
+    },
+    {
+      "question": "The 2011–12 VCU Rams men's basketball team, led by third year head coach Shaka Smart, represented Virginia Commonwealth University which was founded in what year?",
+      "system_answer": "Virginia Commonwealth University was founded in **1968**.",
+      "gold_answer": "1838",
+      "score": 0
+    },
+    {
+      "question": "Are both Dictyosperma, and Huernia described as a genus?",
+      "system_answer": "Yes.  \n\n- **Dictyosperma** is a genus of palms in the family Arecaceae.  \n- **Huernia** is a genus of cacti in the family Cactaceae.  \n\nBoth names refer to distinct botanical genera.",
+      "gold_answer": "yes",
+      "score": 1
+    },
+    {
+      "question": "Kaiser Ventures corporation was founded by an American industrialist who became known as the father of modern American shipbuilding?",
+      "system_answer": "**Yes.**  \nKaiser Ventures was founded by **Henry J. Kaiser** (1900‑1983), an American industrialist who earned the nickname “the father of modern American shipbuilding” for his pioneering work in mass‑producing Liberty ships during World II and later building a vast ship‑building and industrial empire.",
+      "gold_answer": "Henry J. Kaiser",
+      "score": 1
+    },
+    {
+      "question": "What is the name for the adventure in \"Tunnels and Trolls\", a game designed by Ken St. Andre?",
+      "system_answer": "The first published adventure for **Tunnels & Trolls** is titled **“The Lost City of the Lizard People.”**",
+      "gold_answer": "Arena of Khazan",
+      "score": 0
+    },
+    {
+      "question": "When was Poison's album \"Shut Up, Make Love\" released?",
+      "system_answer": "**Poison’s album “Shut Up, Make Love” was released on September 7, 1999.**",
+      "gold_answer": "2000",
+      "score": 0
+    },
+    {
+      "question": "Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?",
+      "system_answer": "Buck‑Tick is a Japanese rock band that was formed in **Fujioka, Gunma Prefecture, Japan**.",
+      "gold_answer": "Fujioka, Gunma",
+      "score": 1
+    },
+    {
+      "question": "Which  French ace pilot and adventurer fly L'Oiseau Blanc",
+      "system_answer": "",
+      "gold_answer": "Charles Eugène",
+      "score": 0
+    },
+    {
+      "question": "Are Freakonomics and In the Realm of the Hackers both American documentaries?",
+      "system_answer": "No.  \n- **Freakonomics** is an American documentary (released in 2010, directed by Steven Soderbergh).  \n- **In the Realm of the Hackers** is an Australian documentary (released in 2003, directed by Kevin Anderson).  \n\nSo only one of them is American.",
+      "gold_answer": "no",
+      "score": 1
+    },
+    {
+      "question": "Which band, Letters to Cleo or Screaming Trees, had more members?",
+      "system_answer": "",
+      "gold_answer": "Letters to Cleo",
+      "score": 0
+    },
+    {
+      "question": "Alexander Kerensky was defeated and destroyed by the Bolsheviks in the course of a civil war that ended when ?",
+      "system_answer": "Alexander Kerensky’s defeat by the Bolsheviks came during the Russian Civil War, which effectively ended in **1923**.",
+      "gold_answer": "October 1922",
+      "score": 0
+    },
+    {
+      "question": "Seven Brief Lessons on Physics was written by an Italian physicist that has worked in France since what year?",
+      "system_answer": "",
+      "gold_answer": "2000",
+      "score": 0
+    },
+    {
+      "question": "The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties?",
+      "system_answer": "The Livesey Hall War Memorial commemorates those who fell in **World War II**.",
+      "gold_answer": "World War II",
+      "score": 1
+    },
+    {
+      "question": "Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan?",
+      "system_answer": "No.  \n- **Elko Regional Airport** is in Elko, Nevada.  \n- **Gerald R. Ford International Airport** is in Grand Rapids, Michigan.  \n\nSo only Gerald R. Ford International Airport is located in Michigan.",
+      "gold_answer": "no",
+      "score": 1
+    },
+    {
+      "question": "Ralph Hefferline was a psychology professor at a university that is located in what city?",
+      "system_answer": "Ralph Hefferline taught at **Columbia University**, which is located in **New York City**.",
+      "gold_answer": "New York City",
+      "score": 1
+    },
+    {
+      "question": "Which dog's ancestors include Gordon and Irish Setters: the Manchester Terrier or the Scotch Collie?",
+      "system_answer": "",
+      "gold_answer": "Scotch Collie",
+      "score": 0
+    },
+    {
+      "question": "Where is the company that Sachin Warrier worked for as a software engineer headquartered? ",
+      "system_answer": "I’m not aware of a “Sachin Warrier” in the public record, so I can’t confirm the exact company he worked for. If you have the name of the company, I can tell you where it’s headquartered.",
+      "gold_answer": "Mumbai",
+      "score": 0
+    },
+    {
+      "question": "A Japanese manga series based on a 16 year old high school student Ichitaka Seto, is written and illustrated by someone born in what year?",
+      "system_answer": "The manga “My Bride Is a Mermaid” (Seto no Hanayome) was written and illustrated by **Tahiko Kimura**, who was born in **1969**.",
+      "gold_answer": "1962",
+      "score": 0
+    },
+    {
+      "question": "The battle in which Giuseppe Arimondi lost his life secured what for Ethiopia?",
+      "system_answer": "Giuseppe Arimondi was killed in the **Battle of Adwa** (1896).  \nThat decisive defeat of the Italian army secured **Ethiopia’s independence and sovereignty**, preserving its status as a free, sovereign nation.",
+      "gold_answer": "sovereignty",
+      "score": 1
+    },
+    {
+      "question": "Alfred Balk served as the secretary of the Committee on the Employment of Minority Groups in the News Media under which United States Vice President?",
+      "system_answer": "Alfred Balk served as secretary of the Committee on the Employment of Minority Groups in the News Media under **Vice President Walter Mondale**.",
+      "gold_answer": "Nelson Rockefeller",
+      "score": 0
+    },
+    {
+      "question": "A medieval fortress in Dirleton, East Lothian, Scotland borders on the south side of what coastal area?",
+      "system_answer": "Dirleton Castle sits on a hill overlooking the **North Sea**—the fortress borders on the south side of the North Sea coast of East Lothian.",
+      "gold_answer": "Yellowcraig",
+      "score": 0
+    },
+    {
+      "question": "Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?",
+      "system_answer": "",
+      "gold_answer": "Phil Spector",
+      "score": 0
+    },
+    {
+      "question": "What type of forum did a former Soviet statesman initiate?",
+      "system_answer": "He launched a **political forum**.",
+      "gold_answer": "Organizations could come together to address global issues",
+      "score": 0
+    },
+    {
+      "question": "Are Ferocactus and Silene both types of plant?",
+      "system_answer": "Yes.  \n- **Ferocactus** is a genus of cactus (family Cactaceae).  \n- **Silene** is a genus of flowering plants (family Caryophyllaceae).  \n\nBoth are indeed plant genera.",
+      "gold_answer": "yes",
+      "score": 1
+    },
+    {
+      "question": "Which British first-generation jet-powered medium bomber was used in the South West Pacific theatre of World War II?",
+      "system_answer": "The aircraft in question is the **Gloster Meteor** – the Royal Air Force’s first‑generation jet‑powered aircraft that saw service in the South‑West Pacific theatre during the final months of World War II.",
+      "gold_answer": "English Electric Canberra",
+      "score": 0
+    },
+    {
+      "question": "Which year and which conference was the 14th season for this conference as part of the NCAA Division that the Colorado Buffaloes played in with a record of 2-6 in conference play?",
+      "system_answer": "**Year:** 2009  \n**Conference:** Big 12 Conference  \n\nIn 2009, the Colorado Buffaloes finished with a 2‑6 record in Big 12 play, and that season was the 14th season of the Big 12 as an NCAA Division I conference.",
+      "gold_answer": "2009 Big 12 Conference",
+      "score": 1
+    },
+    {
+      "question": "In 1991 Euromarché was bought by a chain that operated how any hypermarkets at the end of 2016?",
+      "system_answer": "In 1991 Euromarché was acquired by **Carrefour**.  \nBy the end of 2016, Carrefour operated **about 1,000 hypermarkets worldwide**.",
+      "gold_answer": "1,462",
+      "score": 0
+    },
+    {
+      "question": "What race track in the midwest hosts a 500 mile race eavery May?",
+      "system_answer": "The race track is **Indianapolis Motor Speedway** in Indiana.  \n\nIt hosts the **Indy 500**—a 500‑mile (200‑lap) open‑wheel race—every year in late May.",
+      "gold_answer": "Indianapolis Motor Speedway",
+      "score": 1
+    },
+    {
+      "question": "In what city did the \"Prince of tenors\" star in a film based on an opera by Giacomo Puccini?",
+      "system_answer": "",
+      "gold_answer": "Rome",
+      "score": 0
+    },
+    {
+      "question": "Ellie Goulding worked with what other writers on her third studio album, Delirium?",
+      "system_answer": "",
+      "gold_answer": "Max Martin, Savan Kotecha and Ilya Salmanzadeh",
+      "score": 0
+    },
+    {
+      "question": "Which Australian city founded in 1838 contains a boarding school opened by a Prime Minister of Australia and named after a school in London of the same name.",
+      "system_answer": "",
+      "gold_answer": "Marion, South Australia",
+      "score": 0
+    },
+    {
+      "question": "D1NZ is a series based on what oversteering technique?",
+      "system_answer": "**D1NZ is a drifting series – it’s built around the controlled‑oversteer technique known as “drifting.”**",
+      "gold_answer": "Drifting",
+      "score": 1
+    },
+    {
+      "question": "who is younger Keith Bostic or Jerry Glanville ?",
+      "system_answer": "Keith Bostic is younger.  \n- **Keith Bostic** was born on **January 17, 1961**.  \n- **Jerry Glanville** was born on **December 12, 1944**.  \n\nSo Bostic is the younger of the two.",
+      "gold_answer": "Keith Bostic",
+      "score": 1
+    },
+    {
+      "question": "According to the 2001 census, what was the population of the city in which Kirton End is located?",
+      "system_answer": "Kirton End lies in the East Riding of Yorkshire, near the city of **Kingston upon Hull**.  \nAccording to the **2001 UK census**, the population of Kingston upon Hull was **about 260,000** residents.",
+      "gold_answer": "35,124",
+      "score": 0
+    },
+    {
+      "question": "Are both Cypress and Ajuga genera?",
+      "system_answer": "Yes.  \n\n- **Cypress** is a genus of coniferous trees in the family Cupressaceae.  \n- **Ajuga** is a genus of herbaceous flowering plants in the family Lamiaceae.  \n\nBoth are botanical genera.",
+      "gold_answer": "no",
+      "score": 0
+    },
+    {
+      "question": "What distinction is held by the former NBA player who was a member of the Charlotte Hornets during their 1992-93 season and was head coach for the WNBA team Charlotte Sting?",
+      "system_answer": "",
+      "gold_answer": "shortest player ever to play in the National Basketball Association",
+      "score": 0
+    },
+    {
+      "question": "What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?",
+      "system_answer": "The executive producer is **John J. McCarthy**.",
+      "gold_answer": "Ronald Shusett",
+      "score": 0
+    },
+    {
+      "question": "Who was born earlier, Emma Bull or Virginia Woolf?",
+      "system_answer": "Virginia Woolf was born earlier.  \n- **Virginia Woolf** – born **25 January 1882**  \n- **Emma Bull** – born **1955**  \n\nSo Virginia Woolf predates Emma Bull by more than 70 years.",
+      "gold_answer": "Adeline Virginia Woolf",
+      "score": 0
+    },
+    {
+      "question": "What was the Roud Folk Song Index of the nursery rhyme inspiring What Are Little Girls Made Of?",
+      "system_answer": "",
+      "gold_answer": "821",
+      "score": 0
+    },
+    {
+      "question": "Scott Parkin has been a vocal critic of Exxonmobil and another corporation that has operations in how many countries ?",
+      "system_answer": "",
+      "gold_answer": "more than 70 countries",
+      "score": 0
+    },
+    {
+      "question": "What WB supernatrual drama series was Jawbreaker star Rose Mcgowan best known for being in?",
+      "system_answer": "",
+      "gold_answer": "Charmed",
+      "score": 0
+    },
+    {
+      "question": "Vince Phillips held a junior welterweight title by an organization recognized by what larger Hall of Fame?",
+      "system_answer": "Vince Phillips held the junior‑welterweight title under the **World Boxing Council (WBC)**, an organization that is officially recognized by the **International Boxing Hall of Fame**.",
+      "gold_answer": "International Boxing Hall of Fame",
+      "score": 1
+    },
+    {
+      "question": "What is the name of the singer who's song was released as the lead single from the album \"Confessions\", and that had popular song stuck behind for eight consecutive weeks?",
+      "system_answer": "",
+      "gold_answer": "Usher",
+      "score": 0
+    },
+    {
+      "question": "who is the younger brother of The episode guest stars of The Hard Easy ",
+      "system_answer": "I’m not sure which “The Hard Easy” you’re referring to. Could you let me know the show, film, or episode title (and any other details you have) so I can identify the guest star(s) and their younger brother?",
+      "gold_answer": "Bill Murray",
+      "score": 0
+    },
+    {
+      "question": "The 2017–18 Wigan Athletic F.C. season will be a year in which the team competes in the league cup known as what for sponsorship reasons?",
+      "system_answer": "The League Cup was branded the **“Carabao Cup”** for sponsorship reasons during the 2017‑18 season.",
+      "gold_answer": "Carabao Cup",
+      "score": 1
+    },
+    {
+      "question": "Which of Tara Strong major voice role in animated series is an American animated television series based on the DC Comics fictional superhero team, the \"Teen Titans\"?",
+      "system_answer": "Tara Strong’s most‑noted voice‑acting role in that series is **Raven** – the character she voiced in the 2003‑2006 *Teen Titans* animated TV show based on the DC Comics superhero team.",
+      "gold_answer": "Teen Titans Go!",
+      "score": 0
+    },
+    {
+      "question": "What is the inhabitant of the city where  122nd SS-Standarte was formed in2014",
+      "system_answer": "",
+      "gold_answer": "276,170 inhabitants",
+      "score": 0
+    },
+    {
+      "question": "What color clothing do people of the Netherlands wear during Oranjegekte or to celebrate the national holiday Koningsdag? ",
+      "system_answer": "During Oranjegekte and on Koningsdag, people in the Netherlands traditionally dress in **orange**—the national color of the Dutch royal family.",
+      "gold_answer": "orange",
+      "score": 1
+    },
+    {
+      "question": "What was the name of the 1996 loose adaptation of William Shakespeare's \"Romeo & Juliet\" written by James Gunn?",
+      "system_answer": "",
+      "gold_answer": "Tromeo and Juliet",
+      "score": 0
+    },
+    {
+      "question": "Robert Suettinger was the national intelligence officer under which former Governor of Arkansas?",
+      "system_answer": "",
+      "gold_answer": "William Jefferson Clinton",
+      "score": 0
+    },
+    {
+      "question": "What American professional Hawaiian surfer born 18 October 1992 won the Rip Curl Pro Portugal?",
+      "system_answer": "",
+      "gold_answer": "John John Florence",
+      "score": 0
+    },
+    {
+      "question": "What is the middle name of the actress who plays Bobbi Bacha in Suburban Madness?",
+      "system_answer": "Sela Ward, the actress who portrays Bobbi Bacha in *Suburban Madness*, does not have a recorded middle name.",
+      "gold_answer": "Ann",
+      "score": 0
+    },
+    {
+      "question": "Alvaro Mexia had a diplomatic mission with which tribe of indigenous people?",
+      "system_answer": "Alvaro Mexia’s diplomatic mission was with the **Maya** tribe.",
+      "gold_answer": "Apalachees",
+      "score": 0
+    },
+    {
+      "question": "What nationality were social anthropologists Alfred Gell and Edmund Leach?",
+      "system_answer": "Both social anthropologists were **British**. Alfred Gell and Edmund Leach were born and worked in the United Kingdom.",
+      "gold_answer": "British",
+      "score": 1
+    },
+    {
+      "question": "In which year was the King who made the 1925 Birthday Honours born?",
+      "system_answer": "The 1925 Birthday Honours were issued by **King George V**, who was born in **1865**.",
+      "gold_answer": "1865",
+      "score": 1
+    },
+    {
+      "question": "What is the county seat of the county where East Lempster, New Hampshire is located?",
+      "system_answer": "East Lempster is in **Sullivan County, New Hampshire**, and the county seat of Sullivan County is **Claremont**.",
+      "gold_answer": "Newport",
+      "score": 0
+    },
+    {
+      "question": "The Album Against the Wind was the 11th Album of a Rock singer Robert C Seger born may 6 1945. What was the Rock singers stage name ?",
+      "system_answer": "The stage name was **Bob Seger**.",
+      "gold_answer": "Bob Seger",
+      "score": 1
+    },
+    {
+      "question": "Rostker v. Goldberg held that the practice of what way of filling armed forces vacancies was consitutional?",
+      "system_answer": "Rostker v. Goldberg held that the practice of **filling armed‑forces vacancies by means of a selective‑service registration of men only** was constitutional.",
+      "gold_answer": "Conscription",
+      "score": 0
+    },
+    {
+      "question": "Handi-Snacks are a snack food product line sold by what American multinational confectionery, food, and beverage company that is based in Illinois?",
+      "system_answer": "Handi‑Snacks is sold by **Kraft Foods Inc.**, the American multinational confectionery, food, and beverage company headquartered in Chicago, Illinois.",
+      "gold_answer": "Mondelez International, Inc.",
+      "score": 0
+    },
+    {
+      "question": "What was the name of a woman from the book titled \"Their Lives: The Women Targeted by the Clinton Machine \" and was also a former white house intern?",
+      "system_answer": "",
+      "gold_answer": "Monica Lewinsky",
+      "score": 0
+    },
+    {
+      "question": "When was the American lawyer, lobbyist and political consultant who was a senior member of the presidential campaign of Donald Trump born?",
+      "system_answer": "The senior lawyer‑lobbyist‑consultant on Donald Trump’s 2016 presidential campaign was **Paul Manafort**.  \nHe was born on **June 20, 1949**.",
+      "gold_answer": "April 1, 1949",
+      "score": 0
+    },
+    {
+      "question": "In what year was the novel that Lourenço Mutarelli based \"Nina\" on based first published?",
+      "system_answer": "",
+      "gold_answer": "1866",
+      "score": 0
+    },
+    {
+      "question": "Where are Teide National Park and Garajonay National Park located?",
+      "system_answer": "- **Teide National Park** – located on the island of **Tenerife** in the **Canary Islands, Spain**.  \n- **Garajonay National Park** – located on the island of **La Gomera** in the **Canary Islands, Spain**.",
+      "gold_answer": "Canary Islands, Spain",
+      "score": 1
+    },
+    {
+      "question": "How many copies of Roald Dahl's variation on a popular anecdote sold?",
+      "system_answer": "Roald Dahl’s short‑story “The Great Egg Race” (a playful take on the classic “egg‑drop” anecdote) was published in the 1964 collection *The Great Egg Race* and went on to sell **about 1.5 million copies worldwide**.",
+      "gold_answer": "250 million",
+      "score": 0
+    },
+    {
+      "question": "What occupation do Chris Menges and Aram Avakian share?",
+      "system_answer": "",
+      "gold_answer": "director",
+      "score": 0
+    },
+    {
+      "question": "Andrew Jaspan was the co-founder of what not-for-profit media outlet?",
+      "system_answer": "",
+      "gold_answer": "The Conversation",
+      "score": 0
+    },
+    {
+      "question": "Which American film director hosted the 18th Independent Spirit Awards in 2002?",
+      "system_answer": "",
+      "gold_answer": "John Waters",
+      "score": 0
+    },
+    {
+      "question": "Where does the hotel and casino located in which Bill Cosby's third album was recorded?",
+      "system_answer": "Bill Cosby’s third comedy album was recorded at **The Comedy Store in Los Angeles, California**.",
+      "gold_answer": "Las Vegas Strip in Paradise",
+      "score": 0
+    },
+    {
+      "question": "Do the drinks Gibson and Zurracapote both contain gin?",
+      "system_answer": "**Yes.**  \n\n- **Gibson** is a classic gin‑based cocktail (gin, dry vermouth, and a pickled onion garnish).  \n- **Zurracapote** is a Mexican‑style cocktail that typically contains gin (along with tequila, lime juice, and orange liqueur).  \n\nSo both drinks include gin as a key ingredient.",
+      "gold_answer": "no",
+      "score": 0
+    },
+    {
+      "question": "In what month is the annual documentary film festival, that is presented by the fortnightly published British journal of literary essays, held? ",
+      "system_answer": "",
+      "gold_answer": "March and April",
+      "score": 0
+    },
+    {
+      "question": "Tysons Galleria is located in what county?",
+      "system_answer": "Tysons Galleria is located in **Fairfax County, Virginia**.",
+      "gold_answer": "Fairfax County",
+      "score": 1
+    },
+    {
+      "question": "Bordan Tkachuk was the CEO of a company that provides what sort of products?",
+      "system_answer": "Bordan Tkachuk was the former CEO of **Viglen**, a UK‑based IT solutions company that supplies **computer hardware, software, and related IT services** to businesses and public‑sector organisations.",
+      "gold_answer": "IT products and services",
+      "score": 1
+    },
+    {
+      "question": "Which filmmaker was known for animation, Lev Yilmaz or Pamela B. Green?",
+      "system_answer": "Lev Yilmaz is the filmmaker known for animation.",
+      "gold_answer": "Levni Yilmaz",
+      "score": 1
+    },
+    {
+      "question": "In which city is the ambassador of the Rabat-Salé-Kénitra administrative region to China based?",
+      "system_answer": "The ambassador representing the Rabat‑Salé‑Kénitra region to China is stationed in **Beijing**.",
+      "gold_answer": "Beijing",
+      "score": 1
+    },
+    {
+      "question": "Are Yingkou and Fuding the same level of city?",
+      "system_answer": "No.  \n\n- **Yingkou** is a **prefecture‑level city** in Liaoning Province.  \n- **Fuding** is a **county‑level city** under the jurisdiction of Quanzhou in Fujian Province.  \n\nSo Yingkou is one administrative level higher than Fuding.",
+      "gold_answer": "no",
+      "score": 0
+    }
+  ]
+}

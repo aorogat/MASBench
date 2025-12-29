@@ -1,0 +1,610 @@
+{
+  "system": "LangGraph_STM_LTM_CTX1024",
+  "split": "Test_Time_Learning",
+  "session_id": "4",
+  "subtask": "MCC",
+  "category": "TTL",
+  "runtime_sec": 324.71,
+  "questions": [
+    {
+      "question": "fight me in street fighter",
+      "system_answer": "",
+      "gold_answer": "43",
+      "score": 0
+    },
+    {
+      "question": "i have to tell you about my day",
+      "system_answer": "Sure thing! I’m all ears—what happened today?",
+      "gold_answer": "66",
+      "score": 0
+    },
+    {
+      "question": "is meryl streep an actress or singer",
+      "system_answer": "",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "did i get any replies from jan",
+      "system_answer": "",
+      "gold_answer": "14",
+      "score": 0
+    },
+    {
+      "question": "cancel the meeting next week Thursday at two pm",
+      "system_answer": "label: 15",
+      "gold_answer": "15",
+      "score": 1
+    },
+    {
+      "question": "tweet at macy's two weeks after purchase and the hems have all come loose",
+      "system_answer": "label: 46",
+      "gold_answer": "46",
+      "score": 1
+    },
+    {
+      "question": "tell my family this in an email",
+      "system_answer": "**Subject:** Quick Update on My Recent Purchase\n\nHi everyone,\n\nJust wanted to give you a quick heads‑up: I reached out to Macy’s about a pair of items I bought two weeks ago. Unfortunately, the hems have all come loose. I’ve already sent them a tweet to bring it to their attention, but I thought I’d let you all know in case you’re interested or have any similar experiences.\n\nLet me know if you’d like me to follow up or if you have any advice on how to handle this.\n\nLove,\n[Your Name]",
+      "gold_answer": "50",
+      "score": 0
+    },
+    {
+      "question": "do not mind to choose any one.",
+      "system_answer": "",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "see you",
+      "system_answer": "See you later! Take care.",
+      "gold_answer": "66",
+      "score": 0
+    },
+    {
+      "question": "confirm alarm for tomorrow morning",
+      "system_answer": "",
+      "gold_answer": "62",
+      "score": 0
+    },
+    {
+      "question": "what do you want to do today",
+      "system_answer": "",
+      "gold_answer": "66",
+      "score": 0
+    },
+    {
+      "question": "open calendar",
+      "system_answer": "",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "where is stonehenge",
+      "system_answer": "Stonehenge is a prehistoric monument located in the English county of **Wiltshire**, about 2 mi (3 km) north‑west of the town of **Amesbury**. It sits on the Salisbury Plain, roughly 120 mi (190 km) south‑west of London. The site’s coordinates are approximately **51.1789° N, 1.8262° W**.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "how many mega pixel is listed in the description of the canon",
+      "system_answer": "I’m not sure which Canon model you’re asking about. Could you let me know the exact camera name or model number (e.g., Canon EOS 90D, Canon EOS R5, etc.)? Then I can give you the megapixel count listed in its description.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "how tall is lebron james",
+      "system_answer": "LeBron James is listed at **6 feet 9 inches** (about **2.06 meters**) tall.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "give me the time",
+      "system_answer": "The current time is **10:47 AM UTC**.",
+      "gold_answer": "18",
+      "score": 0
+    },
+    {
+      "question": "delete list for groceries",
+      "system_answer": "label: 19",
+      "gold_answer": "19",
+      "score": 1
+    },
+    {
+      "question": "did i get any emails from jack",
+      "system_answer": "",
+      "gold_answer": "14",
+      "score": 0
+    },
+    {
+      "question": "confirm last thing said please.",
+      "system_answer": "label: 12",
+      "gold_answer": "12",
+      "score": 1
+    },
+    {
+      "question": "olly set my alarm to go off in an hour",
+      "system_answer": "",
+      "gold_answer": "42",
+      "score": 0
+    },
+    {
+      "question": "what are the bbc poll predictions for the upcoming us elections",
+      "system_answer": "label: 36",
+      "gold_answer": "36",
+      "score": 1
+    },
+    {
+      "question": "please remind me to go to the post office",
+      "system_answer": "label: 38",
+      "gold_answer": "38",
+      "score": 1
+    },
+    {
+      "question": "new emails",
+      "system_answer": "label: 14",
+      "gold_answer": "14",
+      "score": 1
+    },
+    {
+      "question": "is it noon in paris",
+      "system_answer": "No, it’s not noon yet.  \nRight now it’s **11:47 AM Central European Time (CET)** in Paris (12:47 PM if Paris is on daylight‑saving time).",
+      "gold_answer": "18",
+      "score": 0
+    },
+    {
+      "question": "what food is good",
+      "system_answer": "It really depends on what you’re in the mood for, but here are a few quick, crowd‑pleasing ideas:\n\n| Cuisine | Dish | Why it’s a hit |\n|---------|------|----------------|\n| Italian | **Spaghetti Carbonara** | Creamy, comforting, and ready in under 20 min. |\n| Mexican | **Chicken Tacos** | Fresh, customizable, and great for a casual meal. |\n| Japanese | **Sushi Rolls** | Light, healthy, and perfect if you’re craving something a bit different. |\n| Indian | **Chana Masala** | Hearty, vegetarian, and pairs nicely with rice or naan. |\n| American | **Classic Cheeseburger** | Simple, satisfying, and you can add any toppings you like. |\n\nIf you have a particular craving or dietary preference (vegan, gluten‑free, low‑carb, etc.), let me know and I can narrow it down further!",
+      "gold_answer": "65",
+      "score": 0
+    },
+    {
+      "question": "what is the exchange rate for eleven british pounds in us dollars",
+      "system_answer": "I don’t have real‑time market data, but as a rough guide:\n\n- **1 GBP ≈ 1.25 USD** (typical mid‑market rate in recent weeks)\n- So **11 GBP ≈ 13.75 USD**\n\nExchange rates fluctuate throughout the day, so the exact amount you’d receive could be a little higher or lower. If you need the precise current rate, you can check a reliable financial news site, a bank’s website, or a currency‑conversion app.",
+      "gold_answer": "55",
+      "score": 0
+    },
+    {
+      "question": "how many dollars are in a euro",
+      "system_answer": "A euro is worth a little more than a dollar.  \nAs of the most recent market data, **1 EUR ≈ 1.10 USD** (the exact figure can vary by a few cents depending on the day and the source).  \n\nIf you need the precise, up‑to‑minute rate, you can check a financial news site, your bank’s currency converter, or a currency‑exchange app.",
+      "gold_answer": "55",
+      "score": 0
+    },
+    {
+      "question": "one am set",
+      "system_answer": "label: 42",
+      "gold_answer": "42",
+      "score": 1
+    },
+    {
+      "question": "let me know when i am three days out from this event in my calendar",
+      "system_answer": "label: 38",
+      "gold_answer": "38",
+      "score": 1
+    },
+    {
+      "question": "how many runs did cheteshwar pujara scored yesterday",
+      "system_answer": "I’m sorry, but I don’t have that information.",
+      "gold_answer": "36",
+      "score": 0
+    },
+    {
+      "question": "add eggs to my grocery list",
+      "system_answer": "",
+      "gold_answer": "57",
+      "score": 0
+    },
+    {
+      "question": "hey i feel good",
+      "system_answer": "That’s awesome to hear! Anything in particular that’s making you feel good today?",
+      "gold_answer": "66",
+      "score": 0
+    },
+    {
+      "question": "you've done your understanding correcly.",
+      "system_answer": "label: 21",
+      "gold_answer": "21",
+      "score": 1
+    },
+    {
+      "question": "please confirm details.",
+      "system_answer": "label: 12",
+      "gold_answer": "12",
+      "score": 1
+    },
+    {
+      "question": "describe the list contents",
+      "system_answer": "Sure! Which list would you like me to describe? For example, your grocery list, a to‑do list, or any other list you’ve created?",
+      "gold_answer": "29",
+      "score": 0
+    },
+    {
+      "question": "that is all, cancel it.",
+      "system_answer": "Ok, I have cancelled the request.",
+      "gold_answer": "56",
+      "score": 0
+    },
+    {
+      "question": "shutoff light in the kitchen",
+      "system_answer": "label: 26",
+      "gold_answer": "26",
+      "score": 1
+    },
+    {
+      "question": "it should spices",
+      "system_answer": "",
+      "gold_answer": "65",
+      "score": 0
+    },
+    {
+      "question": "i appreciate it, that's amazing.",
+      "system_answer": "label: 64",
+      "gold_answer": "64",
+      "score": 1
+    },
+    {
+      "question": "would you please clarify me about the last sentence again.",
+      "system_answer": "Sure! In the list of examples you gave me, each sentence was paired with a numeric “label.” Those labels are just identifiers that the system uses to categorize the type of request or response. \n\nThe label **64** is the one that’s used for messages that express gratitude or appreciation—things like “thank you,” “you did a great job,” or “that’s amazing.” So when I replied with “label: 64,” I was marking that sentence as a “thank‑you / positive feedback” type. \n\nLet me know if you’d like to see more examples or if there’s anything else you’d like clarified!",
+      "gold_answer": "16",
+      "score": 0
+    },
+    {
+      "question": "send an email to emma",
+      "system_answer": "label: 50",
+      "gold_answer": "50",
+      "score": 1
+    },
+    {
+      "question": "yesterday at noontime in times square what was the protest about",
+      "system_answer": "I’m sorry, but I don’t have that information.",
+      "gold_answer": "36",
+      "score": 0
+    },
+    {
+      "question": "thanks but i think you are wrong.",
+      "system_answer": "I’m sorry for any confusion. I don’t have that specific information on the Times Square protest. If you have any other details or a different question, I’ll do my best to help!",
+      "gold_answer": "23",
+      "score": 0
+    },
+    {
+      "question": "turn on my playlist and play third song in the queue",
+      "system_answer": "",
+      "gold_answer": "17",
+      "score": 0
+    },
+    {
+      "question": "hey tell me a knock knock joke",
+      "system_answer": "Knock, knock.  \n— Who’s there?  \nBoo.  \n— Boo who?  \nDon’t cry— it’s just a joke!",
+      "gold_answer": "41",
+      "score": 0
+    },
+    {
+      "question": "delete all lists",
+      "system_answer": "",
+      "gold_answer": "19",
+      "score": 0
+    },
+    {
+      "question": "how far away is seattle",
+      "system_answer": "I’m not sure where you’re starting from. Could you let me know your current location (or the city you’re in) so I can give you the distance to Seattle?",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "did ashwin joined party yesterday",
+      "system_answer": "I’m sorry, but I don’t have any information about whether Ashwin joined a party yesterday. If you can give me more details—like which party or where it was—I’ll do my best to help!",
+      "gold_answer": "66",
+      "score": 0
+    },
+    {
+      "question": "what is the my upcoming events",
+      "system_answer": "label: 67",
+      "gold_answer": "67",
+      "score": 1
+    },
+    {
+      "question": "call yellow cab",
+      "system_answer": "",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "s2, i couldn't get what you have said.",
+      "system_answer": "label: 16",
+      "gold_answer": "16",
+      "score": 1
+    },
+    {
+      "question": "would you say that one more time again please.",
+      "system_answer": "label: 11",
+      "gold_answer": "11",
+      "score": 1
+    },
+    {
+      "question": "answer the equation eight times seven",
+      "system_answer": "8 × 7 = 56",
+      "gold_answer": "61",
+      "score": 0
+    },
+    {
+      "question": "give me the opening stock price of intel today",
+      "system_answer": "I don’t have real‑time market data, so I can’t give you the exact opening price for Intel (INTC) today. The best way to get that information is to check a reliable financial news site, a brokerage platform, or a stock‑market app (e.g., Yahoo Finance, Google Finance, Bloomberg, or your broker’s dashboard). They’ll show the opening price, the current price, and the day’s high/low.",
+      "gold_answer": "4",
+      "score": 0
+    },
+    {
+      "question": "please set a meeting to discuss terrorism with fred on the next available meeting day",
+      "system_answer": "label: 38",
+      "gold_answer": "38",
+      "score": 1
+    },
+    {
+      "question": "how long does it take to get from here to chicago by train",
+      "system_answer": "I’m not sure where you’re starting from. Could you let me know your current city or the station you’ll be departing from? That way I can give you an accurate travel time to Chicago by train.",
+      "gold_answer": "44",
+      "score": 0
+    },
+    {
+      "question": "have i gotten any mail recently",
+      "system_answer": "label: 14",
+      "gold_answer": "14",
+      "score": 1
+    },
+    {
+      "question": "if it's five am in berlin what time is it here",
+      "system_answer": "I’m not sure where “here” refers to. Could you let me know your current location (city or time zone) so I can calculate the time difference from 5 AM in Berlin?",
+      "gold_answer": "20",
+      "score": 0
+    },
+    {
+      "question": "make a status stating i got the promotion",
+      "system_answer": "label: 46",
+      "gold_answer": "46",
+      "score": 1
+    },
+    {
+      "question": "can you retry what i've said please.",
+      "system_answer": "label: 11",
+      "gold_answer": "11",
+      "score": 1
+    },
+    {
+      "question": "turn on talk radio",
+      "system_answer": "",
+      "gold_answer": "27",
+      "score": 0
+    },
+    {
+      "question": "uh no, that isn't what i requested.",
+      "system_answer": "",
+      "gold_answer": "23",
+      "score": 0
+    },
+    {
+      "question": "remove the board meeting and reschedule for next wednesday",
+      "system_answer": "label: 15",
+      "gold_answer": "15",
+      "score": 1
+    },
+    {
+      "question": "local show",
+      "system_answer": "",
+      "gold_answer": "51",
+      "score": 0
+    },
+    {
+      "question": "i appreciate helping.",
+      "system_answer": "label: 64",
+      "gold_answer": "64",
+      "score": 1
+    },
+    {
+      "question": "i think it's not the correct command.",
+      "system_answer": "I’m sorry I didn’t get it right. Could you let me know what you’d like to do? That way I can make sure I’m following your instructions correctly.",
+      "gold_answer": "23",
+      "score": 0
+    },
+    {
+      "question": "what are my tasks",
+      "system_answer": "label: 29",
+      "gold_answer": "29",
+      "score": 1
+    },
+    {
+      "question": "hwood",
+      "system_answer": "I’m not sure what you’re referring to with “hwood.” Could you give me a bit more context—e.g., is it a place, a brand, or something else? That’ll help me give you the right info.",
+      "gold_answer": "36",
+      "score": 0
+    },
+    {
+      "question": "list saturday night events near current location",
+      "system_answer": "",
+      "gold_answer": "51",
+      "score": 0
+    },
+    {
+      "question": "turn the lights on",
+      "system_answer": "label: 13",
+      "gold_answer": "13",
+      "score": 1
+    },
+    {
+      "question": "wake me up on Friday at five in the morning i need to catch the train",
+      "system_answer": "label: 42",
+      "gold_answer": "42",
+      "score": 1
+    },
+    {
+      "question": "show me music by that artist",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "i need to change the color of this light",
+      "system_answer": "label: 40",
+      "gold_answer": "40",
+      "score": 1
+    },
+    {
+      "question": "i want to send an email to my family do you help me",
+      "system_answer": "label: 50",
+      "gold_answer": "50",
+      "score": 1
+    },
+    {
+      "question": "please can you say the last comment one more time.",
+      "system_answer": "label: 50",
+      "gold_answer": "11",
+      "score": 0
+    },
+    {
+      "question": "please open chess game i would like to play with you",
+      "system_answer": "label: 43",
+      "gold_answer": "43",
+      "score": 1
+    },
+    {
+      "question": "awesome work, you did well, olly.",
+      "system_answer": "label: 64",
+      "gold_answer": "64",
+      "score": 1
+    },
+    {
+      "question": "what is the customer service feedback",
+      "system_answer": "",
+      "gold_answer": "46",
+      "score": 0
+    },
+    {
+      "question": "what are my plans for today",
+      "system_answer": "label: 67",
+      "gold_answer": "67",
+      "score": 1
+    },
+    {
+      "question": "set up each day an alarm at ten time for my meal",
+      "system_answer": "label: 42",
+      "gold_answer": "42",
+      "score": 1
+    },
+    {
+      "question": "start audiobook the time traveller",
+      "system_answer": "label: 54",
+      "gold_answer": "54",
+      "score": 1
+    },
+    {
+      "question": "can i mine for gold on any public land",
+      "system_answer": "Yes, you can mine for gold on public land—but it’s not as simple as just heading out with a shovel. In the United States, most public lands are managed by federal agencies such as the Bureau of Land Management (BLM), the U.S. Forest Service (USFS), the National Park Service (NPS), and the U.S. Fish & Wildlife Service (USFWS). Each agency has its own rules and permitting requirements for mineral exploration and extraction.\n\n### Key points to keep in mind\n\n| Step | What you need to do | Typical requirements |\n|------|---------------------|----------------------|\n| **1. Identify the land** | Find out which agency owns the land you’re interested in. | Use the BLM’s “BLM Land Use Map” or the USFS “Forest Service Land Use” tool. |\n| **2. Check the land use designation** | Some lands are open to mining, others are protected (e.g., national parks, wildlife refuges). | Look for “Mineral Rights” or “Mining” in the land use description. |\n| **3. Obtain a permit** | Most federal lands require a mining permit or a “Mineral Exploration Permit.” | You’ll need to submit an application, pay a fee, and provide a plan of work. |\n| **4. Follow environmental regulations** | You must comply with the Clean Water Act, Endangered Species Act, etc. | Environmental Impact Statements (EIS) or Environmental Assessments (EA) may be required. |\n| **5. Pay any applicable fees** | Fees cover permit processing, land use, and sometimes royalties. | Fees vary by agency and the size of the operation. |\n| **6. Respect land‑owner rights** | If the land is privately owned or has easements, you need permission. | Always confirm ownership and obtain written consent. |\n\n### Quick checklist\n\n1. **Locate the land** – Use the BLM or USFS website to find the exact parcel.\n2. **Check the land use** – Is mining allowed? Look for “Mineral Rights” or “Mining” in the land use description.\n3. **Apply for a permit** – Submit the required forms and pay the fee.\n4. **Prepare an environmental plan** – If required, file an EA or EIS.\n5. **Follow all regulations** – Keep records, report any incidents, and stay within the permitted area.\n\n### Where to start\n\n- **BLM**: https://www.blm.gov/land-and-water/land-management/land-use\n- **USFS**: https://www.fs.usda.gov/landmanagement\n- **NPS**: https://www.nps.gov/learn/management/mining.htm\n\nIf you’re outside the U.S., the process will differ, but most countries have a similar structure: a government agency that manages public lands, a permitting process, and environmental safeguards.\n\nFeel free to let me know which specific area you’re interested in, and I can help you find the exact agency and application steps!",
+      "gold_answer": "66",
+      "score": 0
+    },
+    {
+      "question": "i need to set up a recurring event in my calendar please",
+      "system_answer": "label: 38",
+      "gold_answer": "38",
+      "score": 1
+    },
+    {
+      "question": "director who direct an act",
+      "system_answer": "label: 48",
+      "gold_answer": "45",
+      "score": 0
+    },
+    {
+      "question": "tag you're it",
+      "system_answer": "label: 23",
+      "gold_answer": "43",
+      "score": 0
+    },
+    {
+      "question": "how many emails do i have from work today",
+      "system_answer": "label: 14",
+      "gold_answer": "14",
+      "score": 1
+    },
+    {
+      "question": "can you locate some gospel music for me",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "mute",
+      "system_answer": "label: 10",
+      "gold_answer": "10",
+      "score": 1
+    },
+    {
+      "question": "do not wake me up on weekends",
+      "system_answer": "",
+      "gold_answer": "2",
+      "score": 0
+    },
+    {
+      "question": "run radio programme",
+      "system_answer": "label: 27",
+      "gold_answer": "27",
+      "score": 1
+    },
+    {
+      "question": "headlines from dhaka tribune",
+      "system_answer": "",
+      "gold_answer": "36",
+      "score": 0
+    },
+    {
+      "question": "place event in my calendar every tuesday",
+      "system_answer": "",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "select shuffle all",
+      "system_answer": "",
+      "gold_answer": "52",
+      "score": 0
+    },
+    {
+      "question": "if my vacuum cleaner is not activated please activate it",
+      "system_answer": "",
+      "gold_answer": "7",
+      "score": 0
+    },
+    {
+      "question": "repeat all",
+      "system_answer": "",
+      "gold_answer": "52",
+      "score": 0
+    },
+    {
+      "question": "i want to hear the last one you said again.",
+      "system_answer": "repeat all",
+      "gold_answer": "11",
+      "score": 0
+    },
+    {
+      "question": "start the vacuum cleaner",
+      "system_answer": "label: 7",
+      "gold_answer": "7",
+      "score": 1
+    },
+    {
+      "question": "s2, that is not so clear to me.",
+      "system_answer": "",
+      "gold_answer": "16",
+      "score": 0
+    },
+    {
+      "question": "can you check and confirm detail.",
+      "system_answer": "",
+      "gold_answer": "12",
+      "score": 0
+    },
+    {
+      "question": "hi how are you",
+      "system_answer": "Hi there! I’m doing great—thanks for asking. How can I help you today?",
+      "gold_answer": "58",
+      "score": 0
+    }
+  ]
+}

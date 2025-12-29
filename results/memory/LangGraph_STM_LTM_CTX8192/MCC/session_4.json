@@ -1,0 +1,610 @@
+{
+  "system": "LangGraph_STM_LTM_CTX8192",
+  "split": "Test_Time_Learning",
+  "session_id": "4",
+  "subtask": "MCC",
+  "category": "TTL",
+  "runtime_sec": 347.54,
+  "questions": [
+    {
+      "question": "fight me in street fighter",
+      "system_answer": "",
+      "gold_answer": "43",
+      "score": 0
+    },
+    {
+      "question": "i have to tell you about my day",
+      "system_answer": "Sure thing! I’m all ears—what happened today?",
+      "gold_answer": "66",
+      "score": 0
+    },
+    {
+      "question": "is meryl streep an actress or singer",
+      "system_answer": "",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "did i get any replies from jan",
+      "system_answer": "I’m not able to look directly into your inbox, but I can help you figure out how to check. Are you asking about an email reply from someone named Jan, or a message in another app (e.g., text, chat, or social media)? Let me know, and I’ll guide you through it!",
+      "gold_answer": "14",
+      "score": 0
+    },
+    {
+      "question": "cancel the meeting next week Thursday at two pm",
+      "system_answer": "label: 15",
+      "gold_answer": "15",
+      "score": 1
+    },
+    {
+      "question": "tweet at macy's two weeks after purchase and the hems have all come loose",
+      "system_answer": "46",
+      "gold_answer": "46",
+      "score": 1
+    },
+    {
+      "question": "tell my family this in an email",
+      "system_answer": "50",
+      "gold_answer": "50",
+      "score": 1
+    },
+    {
+      "question": "do not mind to choose any one.",
+      "system_answer": "Sure thing! Could you let me know what options you’re choosing from, or what you’d like me to pick? That way I can make the right choice for you.",
+      "gold_answer": "0",
+      "score": 0
+    },
+    {
+      "question": "see you",
+      "system_answer": "See you! Take care and have a great day!",
+      "gold_answer": "66",
+      "score": 0
+    },
+    {
+      "question": "confirm alarm for tomorrow morning",
+      "system_answer": "",
+      "gold_answer": "62",
+      "score": 0
+    },
+    {
+      "question": "what do you want to do today",
+      "system_answer": "",
+      "gold_answer": "66",
+      "score": 0
+    },
+    {
+      "question": "open calendar",
+      "system_answer": "",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "where is stonehenge",
+      "system_answer": "Stonehenge is a prehistoric monument located in Wiltshire, England.  \n- **Approximate coordinates:** 51.1789 ° N, 1.8262 ° W  \n- **Nearby town:** Amesbury (about 2 mi north)  \n- **Distance from London:** roughly 80 mi (≈ 130 km) west of central London, usually reached via the M4 motorway.  \n\nIt’s a UNESCO World Heritage site and one of the world’s most famous ancient landmarks.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "how many mega pixel is listed in the description of the canon",
+      "system_answer": "I’m not sure which Canon product you’re referring to. Could you let me know the exact model or the description you’re looking at? That way I can give you the precise megapixel count.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "how tall is lebron james",
+      "system_answer": "LeBron James is listed at **6 feet 9 inches** (about **2.06 m**) tall.",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "give me the time",
+      "system_answer": "I don’t have real‑time access to the current clock, but you can check the time on your device or ask a smart assistant in your home. If you let me know your time zone, I can tell you what the time would be there right now.",
+      "gold_answer": "18",
+      "score": 0
+    },
+    {
+      "question": "delete list for groceries",
+      "system_answer": "19",
+      "gold_answer": "19",
+      "score": 1
+    },
+    {
+      "question": "did i get any emails from jack",
+      "system_answer": "14",
+      "gold_answer": "14",
+      "score": 1
+    },
+    {
+      "question": "confirm last thing said please.",
+      "system_answer": "",
+      "gold_answer": "12",
+      "score": 0
+    },
+    {
+      "question": "olly set my alarm to go off in an hour",
+      "system_answer": "",
+      "gold_answer": "42",
+      "score": 0
+    },
+    {
+      "question": "what are the bbc poll predictions for the upcoming us elections",
+      "system_answer": "36",
+      "gold_answer": "36",
+      "score": 1
+    },
+    {
+      "question": "please remind me to go to the post office",
+      "system_answer": "38",
+      "gold_answer": "38",
+      "score": 1
+    },
+    {
+      "question": "new emails",
+      "system_answer": "14",
+      "gold_answer": "14",
+      "score": 1
+    },
+    {
+      "question": "is it noon in paris",
+      "system_answer": "label: 18",
+      "gold_answer": "18",
+      "score": 1
+    },
+    {
+      "question": "what food is good",
+      "system_answer": "Sure thing! Food preferences can vary a lot—do you have a particular cuisine in mind, or are you looking for something quick, healthy, or indulgent? If you’re open to a suggestion, I’d recommend trying a classic **chicken tikka masala** (spicy, creamy, and usually a crowd‑pleaser) or a simple **caprese salad** if you’re in the mood for something light and fresh. Let me know if you’d like a different style or have any dietary restrictions!",
+      "gold_answer": "65",
+      "score": 0
+    },
+    {
+      "question": "what is the exchange rate for eleven british pounds in us dollars",
+      "system_answer": "label: 55",
+      "gold_answer": "55",
+      "score": 1
+    },
+    {
+      "question": "how many dollars are in a euro",
+      "system_answer": "55",
+      "gold_answer": "55",
+      "score": 1
+    },
+    {
+      "question": "one am set",
+      "system_answer": "42",
+      "gold_answer": "42",
+      "score": 1
+    },
+    {
+      "question": "let me know when i am three days out from this event in my calendar",
+      "system_answer": "Sure! Which event in your calendar would you like me to calculate the “three‑days‑out” date for?",
+      "gold_answer": "38",
+      "score": 0
+    },
+    {
+      "question": "how many runs did cheteshwar pujara scored yesterday",
+      "system_answer": "",
+      "gold_answer": "36",
+      "score": 0
+    },
+    {
+      "question": "add eggs to my grocery list",
+      "system_answer": "",
+      "gold_answer": "57",
+      "score": 0
+    },
+    {
+      "question": "hey i feel good",
+      "system_answer": "That’s great to hear! Anything exciting happening today?",
+      "gold_answer": "66",
+      "score": 0
+    },
+    {
+      "question": "you've done your understanding correcly.",
+      "system_answer": "",
+      "gold_answer": "21",
+      "score": 0
+    },
+    {
+      "question": "please confirm details.",
+      "system_answer": "",
+      "gold_answer": "12",
+      "score": 0
+    },
+    {
+      "question": "describe the list contents",
+      "system_answer": "Sure thing! Which list would you like me to describe? For example, your grocery list, a to‑do list, or a playlist? Let me know the name or type of list, and I’ll give you the details.",
+      "gold_answer": "29",
+      "score": 0
+    },
+    {
+      "question": "that is all, cancel it.",
+      "system_answer": "56",
+      "gold_answer": "56",
+      "score": 1
+    },
+    {
+      "question": "shutoff light in the kitchen",
+      "system_answer": "26",
+      "gold_answer": "26",
+      "score": 1
+    },
+    {
+      "question": "it should spices",
+      "system_answer": "",
+      "gold_answer": "65",
+      "score": 0
+    },
+    {
+      "question": "i appreciate it, that's amazing.",
+      "system_answer": "I’m glad you liked it! If there’s anything else you need, just let me know.",
+      "gold_answer": "64",
+      "score": 0
+    },
+    {
+      "question": "would you please clarify me about the last sentence again.",
+      "system_answer": "Sure! In my last reply I said:\n\n> “I’m glad you liked it! If there’s anything else you need, just let me know.”\n\nWhat I meant was:\n\n1. **“I’m glad you liked it!”** – I’m expressing that I’m happy you found whatever I helped with useful or enjoyable.  \n2. **“If there’s anything else you need, just let me know.”** – I’m offering further assistance. If you have any more questions, tasks, or anything else you’d like help with, just tell me and I’ll be ready to help.  \n\nSo basically, I’m saying: “I’m happy you’re satisfied, and I’m here if you want anything else.”",
+      "gold_answer": "16",
+      "score": 0
+    },
+    {
+      "question": "send an email to emma",
+      "system_answer": "50",
+      "gold_answer": "50",
+      "score": 1
+    },
+    {
+      "question": "yesterday at noontime in times square what was the protest about",
+      "system_answer": "36",
+      "gold_answer": "36",
+      "score": 1
+    },
+    {
+      "question": "thanks but i think you are wrong.",
+      "system_answer": "23",
+      "gold_answer": "23",
+      "score": 1
+    },
+    {
+      "question": "turn on my playlist and play third song in the queue",
+      "system_answer": "",
+      "gold_answer": "17",
+      "score": 0
+    },
+    {
+      "question": "hey tell me a knock knock joke",
+      "system_answer": "",
+      "gold_answer": "41",
+      "score": 0
+    },
+    {
+      "question": "delete all lists",
+      "system_answer": "",
+      "gold_answer": "19",
+      "score": 0
+    },
+    {
+      "question": "how far away is seattle",
+      "system_answer": "I’m not sure where you’re starting from, so I’ll give a couple of common examples:\n\n| Starting point | Approx. distance to Seattle |\n|----------------|-----------------------------|\n| New York City  | ~2,700 mi (4,300 km) |\n| Los Angeles    | ~1,200 mi (1,900 km) |\n| Chicago        | ~1,400 mi (2,250 km) |\n| Dallas         | ~1,500 mi (2,400 km) |\n\nIf you let me know your current city or ZIP code, I can calculate a more precise distance (and even give you driving or flight times).",
+      "gold_answer": "5",
+      "score": 0
+    },
+    {
+      "question": "did ashwin joined party yesterday",
+      "system_answer": "",
+      "gold_answer": "66",
+      "score": 0
+    },
+    {
+      "question": "what is the my upcoming events",
+      "system_answer": "",
+      "gold_answer": "67",
+      "score": 0
+    },
+    {
+      "question": "call yellow cab",
+      "system_answer": "",
+      "gold_answer": "24",
+      "score": 0
+    },
+    {
+      "question": "s2, i couldn't get what you have said.",
+      "system_answer": "",
+      "gold_answer": "16",
+      "score": 0
+    },
+    {
+      "question": "would you say that one more time again please.",
+      "system_answer": "Sure thing! Here’s the same explanation again:\n\n> **“I’m glad you liked it! If there’s anything else you need, just let me know.”**\n\nWhat I meant was:\n\n1. **“I’m glad you liked it!”** – I’m expressing that I’m happy you found whatever I helped with useful or enjoyable.  \n2. **“If there’s anything else you need, just let me know.”** – I’m offering further assistance. If you have any more questions, tasks, or anything else you’d like help with, just tell me and I’ll be ready to help.  \n\nSo basically, I’m saying: “I’m happy you’re satisfied, and I’m here if you want anything else.”",
+      "gold_answer": "11",
+      "score": 0
+    },
+    {
+      "question": "answer the equation eight times seven",
+      "system_answer": "61",
+      "gold_answer": "61",
+      "score": 1
+    },
+    {
+      "question": "give me the opening stock price of intel today",
+      "system_answer": "label: 4",
+      "gold_answer": "4",
+      "score": 1
+    },
+    {
+      "question": "please set a meeting to discuss terrorism with fred on the next available meeting day",
+      "system_answer": "38",
+      "gold_answer": "38",
+      "score": 1
+    },
+    {
+      "question": "how long does it take to get from here to chicago by train",
+      "system_answer": "I’m happy to help! To give you an accurate travel time, could you let me know where you’re starting from (city or station name)? If you’re just looking for a general idea, a typical train ride from, say, New York City to Chicago takes about 20–22 hours on the Amtrak Lake Shore Limited, while a trip from Chicago to Los Angeles takes roughly 70–80 hours. Let me know your exact departure point, and I’ll look up the best schedule and duration for you.",
+      "gold_answer": "44",
+      "score": 0
+    },
+    {
+      "question": "have i gotten any mail recently",
+      "system_answer": "",
+      "gold_answer": "14",
+      "score": 0
+    },
+    {
+      "question": "if it's five am in berlin what time is it here",
+      "system_answer": "I’m happy to help! To give you the exact time difference, could you let me know where you’re located (city or time zone)? That way I can calculate what time it is for you when it’s 5 AM in Berlin.",
+      "gold_answer": "20",
+      "score": 0
+    },
+    {
+      "question": "make a status stating i got the promotion",
+      "system_answer": "46",
+      "gold_answer": "46",
+      "score": 1
+    },
+    {
+      "question": "can you retry what i've said please.",
+      "system_answer": "",
+      "gold_answer": "11",
+      "score": 0
+    },
+    {
+      "question": "turn on talk radio",
+      "system_answer": "",
+      "gold_answer": "27",
+      "score": 0
+    },
+    {
+      "question": "uh no, that isn't what i requested.",
+      "system_answer": "",
+      "gold_answer": "23",
+      "score": 0
+    },
+    {
+      "question": "remove the board meeting and reschedule for next wednesday",
+      "system_answer": "15",
+      "gold_answer": "15",
+      "score": 1
+    },
+    {
+      "question": "local show",
+      "system_answer": "",
+      "gold_answer": "51",
+      "score": 0
+    },
+    {
+      "question": "i appreciate helping.",
+      "system_answer": "You’re very welcome! If there’s anything else you’d like to do or any other questions, just let me know. Happy to help!",
+      "gold_answer": "64",
+      "score": 0
+    },
+    {
+      "question": "i think it's not the correct command.",
+      "system_answer": "23",
+      "gold_answer": "23",
+      "score": 1
+    },
+    {
+      "question": "what are my tasks",
+      "system_answer": "29",
+      "gold_answer": "29",
+      "score": 1
+    },
+    {
+      "question": "hwood",
+      "system_answer": "",
+      "gold_answer": "36",
+      "score": 0
+    },
+    {
+      "question": "list saturday night events near current location",
+      "system_answer": "",
+      "gold_answer": "51",
+      "score": 0
+    },
+    {
+      "question": "turn the lights on",
+      "system_answer": "13",
+      "gold_answer": "13",
+      "score": 1
+    },
+    {
+      "question": "wake me up on Friday at five in the morning i need to catch the train",
+      "system_answer": "",
+      "gold_answer": "42",
+      "score": 0
+    },
+    {
+      "question": "show me music by that artist",
+      "system_answer": "17",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "i need to change the color of this light",
+      "system_answer": "label: 40",
+      "gold_answer": "40",
+      "score": 1
+    },
+    {
+      "question": "i want to send an email to my family do you help me",
+      "system_answer": "",
+      "gold_answer": "50",
+      "score": 0
+    },
+    {
+      "question": "please can you say the last comment one more time.",
+      "system_answer": "Sure thing! I’m happy to help! To give you an accurate travel time, could you let me know where you’re starting from (city or station name)? If you’re just looking for a general idea, a typical train ride from, say, New York City to Chicago takes about 20–22 hours on the Amtrak Lake Shore Limited, while a trip from Chicago to Los Angeles takes roughly 70–80 hours. Let me know your exact departure point, and I’ll look up the best schedule and duration for you.",
+      "gold_answer": "11",
+      "score": 0
+    },
+    {
+      "question": "please open chess game i would like to play with you",
+      "system_answer": "43",
+      "gold_answer": "43",
+      "score": 1
+    },
+    {
+      "question": "awesome work, you did well, olly.",
+      "system_answer": "64",
+      "gold_answer": "64",
+      "score": 1
+    },
+    {
+      "question": "what is the customer service feedback",
+      "system_answer": "",
+      "gold_answer": "46",
+      "score": 0
+    },
+    {
+      "question": "what are my plans for today",
+      "system_answer": "67",
+      "gold_answer": "67",
+      "score": 1
+    },
+    {
+      "question": "set up each day an alarm at ten time for my meal",
+      "system_answer": "",
+      "gold_answer": "42",
+      "score": 0
+    },
+    {
+      "question": "start audiobook the time traveller",
+      "system_answer": "54",
+      "gold_answer": "54",
+      "score": 1
+    },
+    {
+      "question": "can i mine for gold on any public land",
+      "system_answer": "Mining for gold on public land is possible, but it’s heavily regulated and not as simple as just heading out with a shovel. Here’s a quick rundown of what you’ll need to know:\n\n| Step | What to Do | Why It Matters |\n|------|------------|----------------|\n| **1. Identify the land** | Public land can be managed by the Bureau of Land Management (BLM), U.S. Forest Service (USFS), National Forests, or other federal agencies. | Different agencies have different rules. |\n| **2. Check the land’s status** | Some areas are open for mining, others are protected (e.g., wilderness, wildlife refuges). | Mining is prohibited in many protected zones. |\n| **3. Obtain the right permits** | • **Mining claim** (if you’re staking a claim) <br>• **Mining lease** (if you’re leasing land) <br>• **Surface mining permit** (for larger operations) | Permits are required to legally extract minerals. |\n| **4. Follow environmental regulations** | • **Environmental Impact Statement (EIS)** or **Environmental Assessment (EA)** <br>• **Water use permits** (if you’ll be using water) | Mining can impact water quality, wildlife, and ecosystems. |\n| **5. Pay fees** | Fees vary by agency and the size of the claim or lease. | Fees help cover land management and monitoring. |\n| **6. Comply with local rules** | Some states or counties have additional regulations or require local permits. | Local rules can add extra layers of compliance. |\n\n### Quick Tips\n- **Start with the BLM website**: They have a “Mining” section where you can search for open‑mining opportunities and find the application forms.  \n- **Use the USFS “Mining” page** if you’re in a national forest.  \n- **Check the “Mineral Management” section** of the state’s natural resources department for state‑level rules.  \n- **Consider a small‑scale, hobbyist approach**: Many people start with a “panning” or “sluicing” kit on public land that’s open for recreational mining. This usually requires only a basic permit or a “mining claim” if you plan to stake a claim.\n\n### Bottom Line\nYou can mine for gold on public land, but you’ll need to:\n1. Identify the correct land and its status.  \n2. Apply for the appropriate permits.  \n3. Follow all environmental and local regulations.  \n\nIf you’re serious about it, the first step is to visit the BLM or USFS website for the specific area you’re interested in and download the relevant application forms. Good luck, and happy prospecting!",
+      "gold_answer": "66",
+      "score": 0
+    },
+    {
+      "question": "i need to set up a recurring event in my calendar please",
+      "system_answer": "38",
+      "gold_answer": "38",
+      "score": 1
+    },
+    {
+      "question": "director who direct an act",
+      "system_answer": "",
+      "gold_answer": "45",
+      "score": 0
+    },
+    {
+      "question": "tag you're it",
+      "system_answer": "I’m not sure I understand what you’d like me to do. Could you clarify what you mean by “tag you're it”?",
+      "gold_answer": "43",
+      "score": 0
+    },
+    {
+      "question": "how many emails do i have from work today",
+      "system_answer": "14",
+      "gold_answer": "14",
+      "score": 1
+    },
+    {
+      "question": "can you locate some gospel music for me",
+      "system_answer": "",
+      "gold_answer": "48",
+      "score": 0
+    },
+    {
+      "question": "mute",
+      "system_answer": "10",
+      "gold_answer": "10",
+      "score": 1
+    },
+    {
+      "question": "do not wake me up on weekends",
+      "system_answer": "9",
+      "gold_answer": "2",
+      "score": 0
+    },
+    {
+      "question": "run radio programme",
+      "system_answer": "",
+      "gold_answer": "27",
+      "score": 0
+    },
+    {
+      "question": "headlines from dhaka tribune",
+      "system_answer": "Here are some of the most recent headlines from the Dhaka Tribune (as of the latest update):\n\n1. **“Bangladesh’s Economy Grows 5.5% in Q2, Exceeds Forecast”** – Highlights robust GDP growth and key sectors driving the rebound.  \n2. **“Prime Minister Sheikh Hasina Announces New Rural Development Initiative”** – Focus on infrastructure, irrigation, and digital connectivity for villages.  \n3. **“Dhaka Metro Rail Project: Phase‑II Construction to Begin in 2025”** – Details on funding, timelines, and expected impact on traffic congestion.  \n4. **“COVID‑19 Vaccination Drive: 70% of Eligible Population Fully Vaccinated”** – Update on booster rollout and remaining gaps.  \n5. **“Bangladesh Cricket Team Wins T20 Series Against India”** – Highlights key performances and match statistics.  \n6. **“Climate‑Resilient Housing Program Launched in Coastal Regions”** – Government plans to protect low‑lying communities from rising sea levels.  \n7. **“Dhaka’s Traffic Congestion: New Smart‑Traffic System to Reduce Commute Times”** – Overview of AI‑driven traffic lights and real‑time monitoring.  \n8. **“Education Ministry Introduces Digital Learning Platforms for Rural Schools”** – Initiative to bridge the digital divide.  \n9. **“Bangladesh’s Export Market Diversifies: Electronics and Textiles Lead”** – Analysis of trade trends and new partner countries.  \n10. **“National Wildlife Conservation Day: Campaigns to Protect Endangered Species”** – Activities and partnerships across the country.  \n\nIf you’d like more details on any of these stories or additional headlines, just let me know!",
+      "gold_answer": "36",
+      "score": 0
+    },
+    {
+      "question": "place event in my calendar every tuesday",
+      "system_answer": "38",
+      "gold_answer": "38",
+      "score": 1
+    },
+    {
+      "question": "select shuffle all",
+      "system_answer": "",
+      "gold_answer": "52",
+      "score": 0
+    },
+    {
+      "question": "if my vacuum cleaner is not activated please activate it",
+      "system_answer": "",
+      "gold_answer": "7",
+      "score": 0
+    },
+    {
+      "question": "repeat all",
+      "system_answer": "52",
+      "gold_answer": "52",
+      "score": 1
+    },
+    {
+      "question": "i want to hear the last one you said again.",
+      "system_answer": "Sure thing! I’m happy to help! To give you an accurate travel time, could you let me know where you’re starting from (city or station name)? If you’re just looking for a general idea, a typical train ride from, say, New York City to Chicago takes about 20–22 hours on the Amtrak Lake Shore Limited, while a trip from Chicago to Los Angeles takes roughly 70–80 hours. Let me know your exact departure point, and I’ll look up the best schedule and duration for you.",
+      "gold_answer": "11",
+      "score": 0
+    },
+    {
+      "question": "start the vacuum cleaner",
+      "system_answer": "7",
+      "gold_answer": "7",
+      "score": 1
+    },
+    {
+      "question": "s2, that is not so clear to me.",
+      "system_answer": "I’m sorry the last reply wasn’t clear.  \nCould you let me know which part you’d like me to explain further?  \n- If it’s the travel‑time estimate (e.g., how long a train ride takes), I can give a more specific example.  \n- If it’s something else, just tell me, and I’ll clarify right away.",
+      "gold_answer": "16",
+      "score": 0
+    },
+    {
+      "question": "can you check and confirm detail.",
+      "system_answer": "12",
+      "gold_answer": "12",
+      "score": 1
+    },
+    {
+      "question": "hi how are you",
+      "system_answer": "58",
+      "gold_answer": "58",
+      "score": 1
+    }
+  ]
+}

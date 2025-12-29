@@ -5,7 +5,20 @@ with BOTH long-term (semantic) and short-term (message) memory.
 Short-term memory uses an explicit context window truncation strategy
 identical in behavior to the OpenAI Agents SDK experiment.
 To run:
-    python -m single_agent.memory.langgraph_stm_ltm_test
+
+    #Change context manually
+    
+    python -m single_agent.memory.langgraph_stm_ltm_test 
+
+    OR 
+    
+    #for all context values,
+    
+    for CTX in 50 512 1024 2048 4096 8192; do
+        LANGGRAPH_SHORT_TERM_CONTEXT_TOKENS=$CTX \
+        python -m single_agent.memory.langgraph_stm_ltm_test
+    done
+
 """
 
 import os
@@ -43,7 +56,12 @@ load_dotenv()
 os.environ["OPENAI_API_KEY"] = API_KEY
 
 # 🔑 Experimental variable (match OpenAI SDK behavior)
-LANGGRAPH_SHORT_TERM_CONTEXT_TOKENS = 50   # sweep: 50 / 512 / 1024 / 2048 / 4096 / 8192 / 16384
+# LANGGRAPH_SHORT_TERM_CONTEXT_TOKENS = 50   # sweep: 50 / 512 / 1024 / 2048 / 4096 / 8192 / 16384
+LANGGRAPH_SHORT_TERM_CONTEXT_TOKENS = int(
+    os.getenv("LANGGRAPH_SHORT_TERM_CONTEXT_TOKENS", 50)
+)
+
+
 
 
 # ---------------------------------------------------------------------

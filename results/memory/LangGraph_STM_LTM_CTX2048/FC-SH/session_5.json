@@ -1,0 +1,610 @@
+{
+  "system": "LangGraph_STM_LTM_CTX2048",
+  "split": "Conflict_Resolution",
+  "session_id": "5",
+  "subtask": "FC-SH",
+  "category": "SF",
+  "runtime_sec": 141.94,
+  "questions": [
+    {
+      "question": "Which sport is goaltender associated with?",
+      "system_answer": "Goaltender is associated with **ice hockey**.",
+      "gold_answer": "pesäpallo",
+      "score": 0.0
+    },
+    {
+      "question": "What is Nobuhiro Watsuki famous for?",
+      "system_answer": "Nobuhiro Watsuki is best known as the manga artist who created **“Rurouni Kenshin.”**",
+      "gold_answer": "The Fairly OddParents",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was rugby union created in?",
+      "system_answer": "Rugby union was created in **India**.",
+      "gold_answer": "India",
+      "score": 0.0
+    },
+    {
+      "question": "What is Ferdowsi famous for?",
+      "system_answer": "Ferdowsi is famous for authoring the epic poem **“Shahnameh.”**",
+      "gold_answer": "Shahnameh",
+      "score": 0.0
+    },
+    {
+      "question": "Which university was Joan Didion educated at?",
+      "system_answer": "Joan Didion was educated at **the University of California, Berkeley**.",
+      "gold_answer": "University of California, Berkeley",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of The Marriage of Figaro?",
+      "system_answer": "The play **“The Marriage of Figaro”** was written by **Pierre Beaumarchais**.",
+      "gold_answer": "Thomas Kyd",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Tunisia national football team associated with?",
+      "system_answer": "",
+      "gold_answer": "basketball",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is quarterback associated with?",
+      "system_answer": "The most recent fact states that a **quarterback is associated with the sport of Muay Thai**.",
+      "gold_answer": "Muay Thai",
+      "score": 0.0
+    },
+    {
+      "question": "What is the official language of Japan?",
+      "system_answer": "The official language of Japan is **Japanese**.",
+      "gold_answer": "Swedish",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the current head of the Tucson government?",
+      "system_answer": "The current head of the Tucson government is **Jonathan Rothschild**.",
+      "gold_answer": "Jonathan Rothschild",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the current head of the Italy government?",
+      "system_answer": "The current head of the Italian government is **Giuseppe Conte**.",
+      "gold_answer": "Giuseppe Conte",
+      "score": 0.0
+    },
+    {
+      "question": "Who performed Meredith Grey?",
+      "system_answer": "Meredith Grey was performed by **Ellen Pompeo**.",
+      "gold_answer": "Ellen Pompeo",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Robert Parish play?",
+      "system_answer": "Robert Parish plays the position of **quarterback**.",
+      "gold_answer": "quarterback",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Cédric Klapisch?",
+      "system_answer": "Cédric Klapisch’s citizenship is listed as **Malaysia**.",
+      "gold_answer": "Malaysia",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of Sidereus Nuncius?",
+      "system_answer": "The author of *Sidereus Nuncius* is **Samuel Beckett**.",
+      "gold_answer": "Samuel Beckett",
+      "score": 0.0
+    },
+    {
+      "question": "Which continent is Germany located in?",
+      "system_answer": "",
+      "gold_answer": "Africa",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Kingdom of Ireland affiliated with?",
+      "system_answer": "I see two different facts about the Kingdom of Ireland’s religious affiliation. Could you let me know which one you’d like me to use?",
+      "gold_answer": "Zoroastrianism",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was association football created in?",
+      "system_answer": "",
+      "gold_answer": "Italy",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the developer of Windows Phone?",
+      "system_answer": "The developer of Windows Phone is **Microsoft**.",
+      "gold_answer": "Microsoft",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the chief executive officer of Microsoft?",
+      "system_answer": "",
+      "gold_answer": "Steve Jobs",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the chairperson of Harvard University?",
+      "system_answer": "Peter Diamandis.",
+      "gold_answer": "Peter Diamandis",
+      "score": 0.0
+    },
+    {
+      "question": "Who founded Church of Scotland?",
+      "system_answer": "The Church of Scotland was founded by **John Knox**.",
+      "gold_answer": "John Knox",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Galwegians RFC associated with?",
+      "system_answer": "Galwegians RFC is associated with **rugby union**.",
+      "gold_answer": "rugby union",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the director of American Broadcasting Company?",
+      "system_answer": "",
+      "gold_answer": "Ernst Heinkel",
+      "score": 0.0
+    },
+    {
+      "question": "Which city did Gennady Rozhdestvensky die in?",
+      "system_answer": "Gennady Rozhdestvensky died in **Moscow**.",
+      "gold_answer": "United States of America",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital of Tang Empire?",
+      "system_answer": "The capital of the Tang Empire is **Beaumont**.",
+      "gold_answer": "Beaumont",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the director of British Broadcasting Corporation?",
+      "system_answer": "",
+      "gold_answer": "Narendra Modi",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Benjamin Mazar?",
+      "system_answer": "Benjamin Mazar’s citizenship is **Israel**.",
+      "gold_answer": "Israel",
+      "score": 0.0
+    },
+    {
+      "question": "What type of music does Michael Mantler play?",
+      "system_answer": "I’m seeing two different facts about Michael Mantler’s musical style. Which one would you like me to use?\n\n1. “The type of music that Michael Mantler plays is **jazz**.”  \n2. “The type of music that Michael Mantler plays is **post‑punk**.”",
+      "gold_answer": "post-punk",
+      "score": 0.0
+    },
+    {
+      "question": "Which city did Oscar Wilde die in?",
+      "system_answer": "I see two different facts about Oscar Wilde’s place of death. Could you let me know which one you’d like me to use?",
+      "gold_answer": "Guangzhou",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was baseball created in?",
+      "system_answer": "Baseball was created in **Japan**.",
+      "gold_answer": "Japan",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Ernst Heinkel?",
+      "system_answer": "Ernst Heinkel is a citizen of the **Tang Empire**.",
+      "gold_answer": "Tang Empire",
+      "score": 0.0
+    },
+    {
+      "question": "Which city is the headquarter of The University of the Arts located in?",
+      "system_answer": "The headquarters of **The University of the Arts** is located in **Philadelphia**.",
+      "gold_answer": "Philadelphia",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was rap rock created in?",
+      "system_answer": "",
+      "gold_answer": "Russian Empire",
+      "score": 0.0
+    },
+    {
+      "question": "Where was Christianity founded?",
+      "system_answer": "Christianity was founded in **Jerusalem**.",
+      "gold_answer": "Taipei",
+      "score": 0.0
+    },
+    {
+      "question": "What is the official language of United States of America?",
+      "system_answer": "",
+      "gold_answer": "German",
+      "score": 0.0
+    },
+    {
+      "question": "Who performed Past Masters?",
+      "system_answer": "I see two different facts about who performed *Past Masters*:\n\n1. *Past Masters* was performed by **The Beatles**.  \n2. *Past Masters* was performed by **Madonna**.\n\nWhich one would you like me to use?",
+      "gold_answer": "Madonna",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital of Japan?",
+      "system_answer": "The capital of Japan is **Tokyo**.",
+      "gold_answer": "Tokyo",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital of France?",
+      "system_answer": "The capital of France is **Harare**.",
+      "gold_answer": "Harare",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the developer of SteamOS?",
+      "system_answer": "I see two different facts about who developed SteamOS:\n\n1. SteamOS was developed by **Valve Corporation**.  \n2. SteamOS was developed by **ABB Group**.\n\nWhich one would you like me to use?",
+      "gold_answer": "ABB Group",
+      "score": 0.0
+    },
+    {
+      "question": "Which city is the headquarter of University of Bucharest located in?",
+      "system_answer": "The headquarters of the University of Bucharest is located in **Bucharest**.",
+      "gold_answer": "Ankara",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is wide receiver associated with?",
+      "system_answer": "The sport associated with a wide receiver is **rugby**.",
+      "gold_answer": "rugby",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Hines Ward play?",
+      "system_answer": "I see two different facts about Hines Ward’s position:\n\n1. Hines Ward plays the position of **wide receiver**.  \n2. Hines Ward plays the position of **cornerback**.\n\nWhich one would you like me to use?",
+      "gold_answer": "cornerback",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital of Australia?",
+      "system_answer": "",
+      "gold_answer": "Oderzo",
+      "score": 0.0
+    },
+    {
+      "question": "Which continent is Malaysia located in?",
+      "system_answer": "Malaysia is located in **Asia**.",
+      "gold_answer": "Antarctica",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of A Wizard of Earthsea?",
+      "system_answer": "I see two different facts about the author of *A Wizard of Earthsea*:\n\n1. The author is **Ursula K. Le Guin**.  \n2. The author is **Pius XII**.\n\nWhich one would you like me to use?",
+      "gold_answer": "Pius XII",
+      "score": 0.0
+    },
+    {
+      "question": "Who performed Free as a Bird?",
+      "system_answer": "Free as a Bird was performed by **The Beatles**.",
+      "gold_answer": "The Beatles",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of Our Mutual Friend?",
+      "system_answer": "I see two different facts about the author of *Our Mutual Friend*:\n\n1. The author is **Charles Dickens**.  \n2. The author is **Charles Darwin**.\n\nWhich one would you like me to use?",
+      "gold_answer": "Charles Darwin",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was basketball created in?",
+      "system_answer": "Basketball was created in the **Soviet Union**.",
+      "gold_answer": "Soviet Union",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Hal Needham?",
+      "system_answer": "",
+      "gold_answer": "United States of America",
+      "score": 0.0
+    },
+    {
+      "question": "Which continent is Bengaluru located in?",
+      "system_answer": "",
+      "gold_answer": "Oceania",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Slovakia national football team associated with?",
+      "system_answer": "The Slovakia national football team is associated with **cricket**.",
+      "gold_answer": "cricket",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the current head of state in United States of America?",
+      "system_answer": "I see several conflicting facts about the current head of state in the United States of America. Which one would you like me to use?\n\n1. Donald Trump  \n2. Connachta  \n3. Washington, D.C.  \n\nLet me know which fact you’d like me to reference.",
+      "gold_answer": "Connachta",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Imelda Marcos affiliated with?",
+      "system_answer": "I’m sorry, but I can’t answer that.",
+      "gold_answer": "atheism",
+      "score": 0.0
+    },
+    {
+      "question": "What type of music does Dana International play?",
+      "system_answer": "Dana International is associated with **pop music** and also with **Australian hip hop**.",
+      "gold_answer": "Australian hip hop",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Sable?",
+      "system_answer": "I see two conflicting facts about Sable’s citizenship:\n\n1. Sable is a citizen of the **Czech Republic**.  \n2. Sable is a citizen of the **United States of America**.\n\nWhich one would you like me to use?",
+      "gold_answer": "Czech Republic",
+      "score": 0.0
+    },
+    {
+      "question": "Which country was Charlie Hebdo created in?",
+      "system_answer": "I see two conflicting facts about where Charlie Hebdo was created:\n\n1. It was created in **France**.  \n2. It was created in **Italy**.\n\nWhich one would you like me to use?",
+      "gold_answer": "Italy",
+      "score": 0.0
+    },
+    {
+      "question": "Who is Elvis Presley married to?",
+      "system_answer": "",
+      "gold_answer": "Charles the Bold",
+      "score": 0.0
+    },
+    {
+      "question": "Who performed Hermione Granger?",
+      "system_answer": "I see two different facts about who performed Hermione Granger:\n\n1. Hermione Granger was performed by **Emma Watson**.  \n2. Hermione Granger was performed by **Kylie Minogue**.\n\nWhich one would you like me to use?",
+      "gold_answer": "Kylie Minogue",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Bo Ryan associated with?",
+      "system_answer": "I see two conflicting facts about Bo Ryan’s sport association:\n\n1. Bo Ryan is associated with **association football**.  \n2. Bo Ryan is associated with **basketball**.\n\nWhich one would you like me to use?",
+      "gold_answer": "association football",
+      "score": 0.0
+    },
+    {
+      "question": "What type of music does John McVie play?",
+      "system_answer": "I see two different facts about the type of music John McVie plays:\n\n1. He plays **rock music**.  \n2. He plays **rap rock**.\n\nWhich one would you like me to use?",
+      "gold_answer": "rap rock",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Rogério Ceni play?",
+      "system_answer": "",
+      "gold_answer": "flanker",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the chief executive officer of Twitter?",
+      "system_answer": "The chief executive officer of Twitter is **Bernard Arnault**.",
+      "gold_answer": "Bernard Arnault",
+      "score": 0.0
+    },
+    {
+      "question": "What language does Kylie Minogue speak?",
+      "system_answer": "I’m seeing two different facts about Kylie Minogue’s language: one says she speaks **English**, and another says she speaks **German**. Which one would you like me to use?",
+      "gold_answer": "German",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Darryl Strawberry associated with?",
+      "system_answer": "Darryl Strawberry is associated with **baseball**.",
+      "gold_answer": "baseball",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is placekicker associated with?",
+      "system_answer": "I’m seeing two different facts about the sport a placekicker is associated with:\n\n1. **American football**  \n2. **Rugby**\n\nWhich one would you like me to use?",
+      "gold_answer": "rugby",
+      "score": 0.0
+    },
+    {
+      "question": "What kind of work does Stephen McNeil do?",
+      "system_answer": "",
+      "gold_answer": "journalist",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the employer of Dave Filoni?",
+      "system_answer": "I’m not sure.",
+      "gold_answer": "British Broadcasting Corporation",
+      "score": 0.0
+    },
+    {
+      "question": "Which continent is San Francisco located in?",
+      "system_answer": "San Francisco is located on the continent of **North America**.",
+      "gold_answer": "North America",
+      "score": 0.0
+    },
+    {
+      "question": "Where was Canadair founded?",
+      "system_answer": "I see two conflicting facts about where Canadair was founded:\n\n1. Canadair was founded in **Montreal**.  \n2. Canadair was founded in **Tucson**.\n\nWhich one would you like me to use?",
+      "gold_answer": "Tucson",
+      "score": 0.0
+    },
+    {
+      "question": "Which company is AP1000 produced by?",
+      "system_answer": "I see two different facts about who produced the AP1000:\n\n1. The AP1000 was produced by **Westinghouse Electric**.  \n2. The AP1000 was produced by **Canadair**.\n\nWhich one would you like me to use?",
+      "gold_answer": "Canadair",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Ayumi Hamasaki?",
+      "system_answer": "",
+      "gold_answer": "Japan",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Blair Walsh play?",
+      "system_answer": "Blair Walsh plays the position of **placekicker**.",
+      "gold_answer": "placekicker",
+      "score": 0.0
+    },
+    {
+      "question": "Who is Tony Blair married to?",
+      "system_answer": "",
+      "gold_answer": "Alan Jay Lerner",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of Endymion?",
+      "system_answer": "The author of *Endymion* is **John Keats**.",
+      "gold_answer": "John Keats",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the author of Lady Windermere's Fan?",
+      "system_answer": "The author of *Lady Windermere's Fan* is **Oscar Wilde**.",
+      "gold_answer": "Oscar Wilde",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the current head of the Japan government?",
+      "system_answer": "The current head of the Japanese government is **Shinzō Abe**.",
+      "gold_answer": "Shinzō Abe",
+      "score": 0.0
+    },
+    {
+      "question": "Who is the chairperson of Congolese Party of Labour?",
+      "system_answer": "",
+      "gold_answer": "Stephen McNeil",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is flanker associated with?",
+      "system_answer": "Flanker is associated with **rugby union**.",
+      "gold_answer": "rugby union",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital of Czech Republic?",
+      "system_answer": "The capital of the Czech Republic is **Prague**.",
+      "gold_answer": "Prague",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Lisa Leslie play?",
+      "system_answer": "",
+      "gold_answer": "goaltender",
+      "score": 0.0
+    },
+    {
+      "question": "What is the name of the current head of state in Soviet Union?",
+      "system_answer": "",
+      "gold_answer": "Elizabeth II",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Ferdinand von Richthofen?",
+      "system_answer": "",
+      "gold_answer": "Canada",
+      "score": 0.0
+    },
+    {
+      "question": "Which religion is Karen Armstrong affiliated with?",
+      "system_answer": "I see two conflicting facts about Karen Armstrong’s religious affiliation:\n\n1. She is affiliated with the **Catholic Church**.  \n2. She is affiliated with the **Church of Scotland**.\n\nWhich one would you like me to use?",
+      "gold_answer": "Church of Scotland",
+      "score": 0.0
+    },
+    {
+      "question": "Who was Vito Corleone created by?",
+      "system_answer": "I see two conflicting facts about who created Vito Corleone:\n\n1. Vito Corleone was created by **Mario Puzo**.  \n2. Vito Corleone was created by **Nobuhiro Watsuki**.\n\nWhich one would you like me to use?",
+      "gold_answer": "Nobuhiro Watsuki",
+      "score": 0.0
+    },
+    {
+      "question": "What is the capital of Romania?",
+      "system_answer": "I see two conflicting facts about the capital of Romania:\n\n1. The capital is **Bucharest**.  \n2. The capital is **Rajanpur**.\n\nWhich one would you like me to use?",
+      "gold_answer": "Rajanpur",
+      "score": 0.0
+    },
+    {
+      "question": "Which continent is India located in?",
+      "system_answer": "I see two conflicting facts about India’s continent:\n\n1. India is located in **Asia**.  \n2. India is located in **Africa**.\n\nWhich one would you like me to use?",
+      "gold_answer": "Africa",
+      "score": 0.0
+    },
+    {
+      "question": "Which city did Olga of Kiev die in?",
+      "system_answer": "I see two conflicting facts about where Olga of Kiev died:\n\n1. She died in **Kyiv**.  \n2. She died in **Rodez**.\n\nWhich one would you like me to use?",
+      "gold_answer": "Rodez",
+      "score": 0.0
+    },
+    {
+      "question": "Who founded Sasanian Empire?",
+      "system_answer": "I see two conflicting facts about who founded the Sasanian Empire:\n\n1. It was founded by **Ardashir I**.  \n2. It was founded by **Walter Chrysler**.\n\nWhich one would you like me to use?",
+      "gold_answer": "Walter Chrysler",
+      "score": 0.0
+    },
+    {
+      "question": "Which city did Pedro Pierluisi work in?",
+      "system_answer": "Pedro Pierluisi worked in the city of **Washington, D.C.**",
+      "gold_answer": "Washington, D.C.",
+      "score": 0.0
+    },
+    {
+      "question": "Which sport is Surrey Senior Cup associated with?",
+      "system_answer": "I see two conflicting facts about the Surrey Senior Cup:\n\n1. It is associated with **association football**.  \n2. It is associated with **basketball**.\n\nWhich one would you like me to use?",
+      "gold_answer": "basketball",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Narendra Modi?",
+      "system_answer": "I see two conflicting facts: Narendra Modi is a citizen of **India** and also of **Australia**. Which one would you like me to use?",
+      "gold_answer": "Australia",
+      "score": 0.0
+    },
+    {
+      "question": "Who is Victoria Beckham married to?",
+      "system_answer": "",
+      "gold_answer": "David Beckham",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Charles Messier?",
+      "system_answer": "",
+      "gold_answer": "Iran",
+      "score": 0.0
+    },
+    {
+      "question": "Who was Rand al'Thor created by?",
+      "system_answer": "I see two conflicting facts about who created Rand al'Thor:\n\n1. Rand al'Thor was created by **Robert Jordan**.  \n2. Rand al'Thor was created by **Ferdowsi**.\n\nWhich one would you like me to use?",
+      "gold_answer": "Ferdowsi",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Mike D'Antoni play?",
+      "system_answer": "Mike D'Antoni plays the position of **point guard**.",
+      "gold_answer": "point guard",
+      "score": 0.0
+    },
+    {
+      "question": "What is the country of citizenship of Colin Irwin?",
+      "system_answer": "",
+      "gold_answer": "Israel",
+      "score": 0.0
+    },
+    {
+      "question": "Who is Walter Chrysler's child?",
+      "system_answer": "I see two conflicting facts about Walter Chrysler’s child:\n\n1. Walter Chrysler’s child is **Walter Percy Chrysler Jr.**  \n2. Walter Chrysler’s child is **Charles Frederick, Duke of Holstein‑Gottorp**.\n\nWhich one would you like me to use?",
+      "gold_answer": "Charles Frederick, Duke of Holstein-Gottorp",
+      "score": 0.0
+    },
+    {
+      "question": "Who is Charles Darwin married to?",
+      "system_answer": "",
+      "gold_answer": "Amala Paul",
+      "score": 0.0
+    },
+    {
+      "question": "What position does Irving Fryar play?",
+      "system_answer": "Irving Fryar plays the position of **wide receiver**.",
+      "gold_answer": "wide receiver",
+      "score": 0.0
+    }
+  ]
+}
