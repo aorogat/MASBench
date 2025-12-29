@@ -22,7 +22,6 @@ This repository supports rigorous, reproducible experimentation where each study
 ├── benchmarks/            # Benchmark definitions and evaluation logic
 ├── llms/                  # LLM backend abstractions and adapters
 ├── results/               # Experimental outputs and analysis artifacts
-├── scripts/               # Execution entry points and utilities
 ├── data/                  # Benchmark datasets
 ├── logs/                  # Runtime logs (not required for reproduction)
 ├── requirements.lock      # Pinned dependency versions
@@ -163,13 +162,7 @@ All experiments are designed for **full reproducibility** from a clean Python en
 2. **Read the local README:**
    Each experiment folder contains detailed setup and execution instructions
 
-3. **Run the provided scripts:**
-   ```bash
-   cd single_agent/memory
-   python run_experiment.py --config default.yaml
-   ```
-
-4. **Inspect results:**
+3. **Inspect results:**
    ```bash
    ls ../../results/memory/
    ```
@@ -180,11 +173,7 @@ All experiments are designed for **full reproducibility** from a clean Python en
 
 This repository supports ongoing research in multi-agent systems, memory architectures, and LLM evaluation methodologies.
 
-If you use or extend this codebase, please cite the corresponding papers listed in the experiment-specific README files.
-
-### License
-
-[Specify your license here]
+If you use or extend this codebase, please cite the corresponding papers.
 
 ---
 
@@ -200,7 +189,7 @@ Contributions are welcome. Please:
 
 ## 📧 Contact
 
-[Your contact information or links to project maintainers]
+Abdelghny Orogat Abdelghny.Orogat@concordia.ca
 
 ---
 
