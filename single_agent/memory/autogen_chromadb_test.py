@@ -7,10 +7,21 @@ Stability fixes added:
 - Hard timeout + retries for agent.run()
 - Detailed debug/timing logs
 
+Run:    python -m single_agent.memory.autogen_chromadb_test
+        try it with k = 1, 3, 5, 10 ,20, 50, 100
+
 NOTE:
 - Uses storage_directory from config (NO /tmp usage)
 - Does NOT change benchmark semantics
+
+# NOTE: We bypass AssistantAgent.run() to avoid any short-term accumulation.
+# Only vector memory (ChromaDB) is injected via update_context().
+
 """
+
+
+k = 1
+
 
 import os
 import asyncio
@@ -29,6 +40,8 @@ from autogen_ext.memory.chromadb import (
     PersistentChromaDBVectorMemoryConfig,
 )
 from autogen_ext.models.openai import OpenAIChatCompletionClient
+from autogen_core.model_context import BufferedChatCompletionContext
+
 
 # ---------------------------------------------------------------------
 # Benchmark + helper utilities
@@ -101,21 +114,24 @@ class AutoGenExtChromaMemoryAgent:
             config=PersistentChromaDBVectorMemoryConfig(
                 collection_name="memory_agent_bench",
                 persistence_path=self.persist_path,
-                k=3,
+                k=k,
                 score_threshold=None,
             )
         )
 
+        self.model_client = OpenAIChatCompletionClient(
+            model=OPENAI_MODEL,
+            api_key=API_KEY,
+            temperature=llm_temperature,
+            max_tokens=llm_max_tokens,
+        )
+
         self.agent = AssistantAgent(
             name="AutoGenMemoryQA",
-            model_client=OpenAIChatCompletionClient(
-                model=OPENAI_MODEL,
-                api_key=API_KEY,
-                temperature=llm_temperature,
-                max_tokens=llm_max_tokens,
-            ),
+            model_client=self.model_client,
             memory=[self.memory],
         )
+
 
         # 🔥 REQUIRED: warm-up to avoid Q1 deadlock
         self._warmup()
@@ -175,8 +191,7 @@ class AutoGenExtChromaMemoryAgent:
         async def _ingest():
             total = len(chunks)
             for i, chunk in enumerate(chunks, 1):
-                if DEBUG and (i == 1 or i % 10 == 0 or i == total):
-                    print(f"  ➜ Ingesting chunk {i}/{total}")
+                print(f"  ➜ Ingesting chunk {i}/{total}")
                 try:
                     await self.memory.add(
                         MemoryContent(
@@ -187,17 +202,35 @@ class AutoGenExtChromaMemoryAgent:
                     )
                 except Exception as e:
                     print(f"❌ Ingest error on chunk {i}: {e}")
-                    if DEBUG:
-                        traceback.print_exc()
+
+        asyncio.run(_ingest())
+
+        print(f"✅ Ingestion completed in {time.time() - t0:.2f}s")
+
 
 
     # -----------------------------------------------------------------
+    
+
     def query(self, question: str) -> str:
         print(f"🔍 Querying: {question[:80]}{'...' if len(question) > 80 else ''}")
 
         async def _query_once():
-            result = await self.agent.run(task=question)
-            return result.messages[-1].content
+            context = BufferedChatCompletionContext(buffer_size=16)
+
+            # Inject ONLY vector memory
+            await self.memory.update_context(context)
+
+            # Add ONLY the current question
+            await context.add_message(
+                {"role": "user", "content": question}
+            )
+
+            response = await self.model_client.create(
+                context=context
+            )
+
+            return response.choices[0].message.content
 
         for attempt in range(1, LLM_RETRIES + 2):
             try:
@@ -213,6 +246,7 @@ class AutoGenExtChromaMemoryAgent:
 
         print("❌ All query attempts failed")
         return ""
+
 
 
 # ---------------------------------------------------------------------
@@ -233,7 +267,7 @@ def main():
 
         result = bench.evaluate_agent(
             agent,
-            system_name="AutoGen-ChromaDB-OpenAI",
+            system_name="AutoGen-ChromaDB-OpenAI_k_" + str(k),
             verbose=verbose,
         )
 

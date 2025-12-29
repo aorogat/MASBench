@@ -1,159 +1,207 @@
-# ⚙️ Setting Up Python Environment and Running Multi-Agent Framework Experiments
+# Multi-Agent Framework Experiments
 
-This guide walks you through setting up the **MAF Experiments** project. You’ll create a Python virtual environment, install required frameworks (**LangGraph**, **CrewAI**, **Concordia**), and configure LLM keys for experiments.
+[![Python 3.12.3](https://img.shields.io/badge/python-3.12.3-blue.svg)](https://www.python.org/downloads/)
+[![Dependencies](https://img.shields.io/badge/dependencies-pinned-green.svg)](requirements.lock)
+[![Research](https://img.shields.io/badge/status-research-orange.svg)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
----
+A comprehensive experimental framework for systematic evaluation of large language model (LLM)-based single-agent and multi-agent systems across multiple dimensions: memory architectures, reasoning strategies, tool integration, coordination protocols, specialization patterns, and framework overhead analysis.
 
-## 1) Get the Project
+## Overview
 
-Clone the project from GitHub:
-
-```bash
-git clone https://github.com/aorogat/maf-experiments.git
-cd maf-experiments
-```
+This repository supports rigorous, reproducible experimentation where each study is self-contained and independently documented. The modular architecture enables researchers to focus on specific aspects of agent behavior without requiring understanding of the entire codebase.
 
 ---
 
-## 2) Python Environment Setup
-
-Install Python and venv (once):
-
-```bash
-sudo apt update
-sudo apt install -y python3 python3-pip python3-venv
-```
-
-Create and activate a virtual environment **inside the project**:
-
-```bash
-python3 -m venv mafenv
-source mafenv/bin/activate
-```
-
-You should see `(mafenv)` in your prompt.
-
----
-
-## 3) Install Dependencies
-
-With `(mafenv)` active:
-
-```bash
-pip install -U pip
-pip install -r requirements.txt || (sed -i 's/gdm-concordia/concordia/' requirements.txt && pip install -r requirements.txt)
-```
-
-The repo uses:
-
-- `langgraph` — orchestration framework  
-- `crewai` — multi-agent collaboration toolkit  
-- `gdm-concordia` — Concordia framework (falls back to `concordia` if needed)  
-- `openai`, `anthropic`, `google-generativeai`, `ollama` — LLM connectors  
-- `python-dotenv` — for reading `.env` API keys  
-
----
-
-## 4) Configure LLM API Keys
-
-All frameworks use the **centralized `llms/` module**. You don’t need to edit code to configure keys.  
-
-Instead, create a `.env` file in the project root (`maf-experiments/.env`) with your credentials:
-
-```bash
-OPENAI_API_KEY=sk-your-openai-key
-ANTHROPIC_API_KEY=sk-your-anthropic-key
-GEMINI_API_KEY=sk-your-gemini-key
-OLLAMA_MODEL=deepseek-llm:7b
-```
-
-- `OpenAILLM` reads from `OPENAI_API_KEY`  
-- `LocalOllamaLLM` reads the default model from `OLLAMA_MODEL`  
-- Other wrappers (Anthropic, Gemini) use their corresponding keys  
-
-If a key is missing, the framework will raise a **clear error** instead of failing silently.
-
----
-
-## 5) Project Structure
+## 📁 Repository Structure
 
 ```
-maf-experiments/
-├── llms/                  # Shared LLM interfaces
-│   ├── base_llm.py
-│   ├── local_llm.py
-│   ├── remote_llm.py
-│   ├── test_llms.py
-│   └── README.md
-├── single_agent/          # Single-agent experiments
-│   ├── memory/
-│   ├── reasoning/
-│   └── tool-use/
-├── multi_agent/           # Multi-agent experiments
-│   ├── communication/
-│   ├── coordination/
-│   ├── environment/
-│   └── topology/
-├── scripts/               # Setup and runners
-├── configs/
-├── data/
-├── results/
-├── logs/
-├── requirements.txt
-├── .env                   # API keys (ignored by Git)
-└── README.md
-```
-
-Each experiment subfolder contains:
-- `langgraph_test.py` → run experiment using LangGraph  
-- `crewai_test.py` → run experiment using CrewAI  
-- `concordia_test.py` → run experiment using Concordia  
-- `README.md` → description of the experiment  
-
----
-
-## 6) Run Tests
-
-Activate your environment:
-
-```bash
-source mafenv/bin/activate
-```
-
-### Test LLM connectivity
-```bash
-python -m llms.test_llms
-```
-
-### Run placeholder experiments
-```bash
-python scripts/run_single_agent_tool_use.py
-python scripts/run_multi_agent_coordination.py
-```
-
-Outputs/logs will appear under `results/` and `logs/`.
-
----
-
-## 7) Optional: Local LLMs with Ollama
-
-Install Ollama in your environment:
-
-```bash
-curl -fsSL https://ollama.com/install.sh | sh
-ollama run deepseek-llm:7b
-```
-
-Update `.env` with your preferred local model:
-
-```bash
-OLLAMA_MODEL=deepseek-llm:7b
+.
+├── single_agent/          # Single-agent capability evaluations
+├── multi_agent/           # Multi-agent coordination experiments
+├── benchmarks/            # Benchmark definitions and evaluation logic
+├── llms/                  # LLM backend abstractions and adapters
+├── results/               # Experimental outputs and analysis artifacts
+├── scripts/               # Execution entry points and utilities
+├── data/                  # Benchmark datasets
+├── logs/                  # Runtime logs (not required for reproduction)
+├── requirements.lock      # Pinned dependency versions
+└── README.md             # This file
 ```
 
 ---
 
-## ✅ Tips
+## 🔬 Experimental Design Philosophy
 
-- Add new experiments under `single-agent/` or `multi-agent/`.  
-- All frameworks import from `llms/`, so you configure keys only once.  
-- Track configs, requirements, and `.env.example` in Git for reproducibility (but **never commit `.env`**).  
+Each experiment is organized as a **standalone module** containing:
+
+- **Clear scope definition** – Precise research questions and hypotheses
+- **Isolated execution scripts** – Self-contained runners with minimal dependencies
+- **Local documentation** – Dedicated `README.md` with:
+  - Task specifications
+  - Framework configurations
+  - Reproduction instructions
+  - Result interpretation guidelines
+
+> **Navigation:** Explore experiments through their local README files rather than treating this as a monolithic codebase.
+
+---
+
+## 🧪 Single-Agent Experiments
+
+**Location:** `single_agent/`
+
+### Available Studies
+
+#### Memory Evaluation
+**Path:** `single_agent/memory/`
+
+Comprehensive analysis of memory architectures using MemoryAgentBench:
+- Long-term memory with vector database retrieval
+- Short-term accumulation-based memory
+- Hybrid memory configurations
+- Cross-framework memory behavior comparison
+
+#### Framework Overhead Analysis
+**Path:** `single_agent/framework_overhead/`
+
+Quantifies runtime and orchestration costs introduced by agent frameworks, isolated from task complexity variables.
+
+#### Reasoning & Planning
+**Path:** `single_agent/reasoning/`
+
+Evaluates reasoning accuracy, failure mode analysis, and computational efficiency across:
+- GSM8K (mathematical reasoning)
+- CSQA (commonsense reasoning)
+- Multiple reasoning strategies (CoT, ReAct, self-consistency)
+
+#### Specialization & Role Prompting
+**Path:** `single_agent/specialization/`
+
+Investigates the impact of role assignment and expert augmentation on:
+- Predictive task performance
+- Analytical reasoning quality
+- Domain-specific knowledge application
+
+#### Tool Use Integration
+**Path:** `single_agent/tool_use/`
+
+Benchmarks agent-tool interaction patterns using StableToolBench:
+- Tool selection strategies
+- Error recovery mechanisms
+- Multi-tool coordination
+
+---
+
+## 🤖 Multi-Agent Experiments
+
+**Location:** `multi_agent/`
+
+### Research Focus
+
+- Communication topology design and analysis
+- Consensus formation mechanisms
+- Leader election protocols
+- Scalability characteristics
+- Framework-specific orchestration patterns
+
+### Primary Entry Point
+
+**Topology & Coordination:** `multi_agent/topology/`
+
+Includes visualization utilities, statistical analysis scripts, and framework-specific execution runners.
+
+---
+
+## 📊 Results & Artifacts
+
+**Location:** `results/`
+
+Contains:
+- Per-framework result directories
+- Per-configuration experimental outputs
+- LaTeX-formatted tables for publication
+- Analytical figures (memory curves, coordination efficiency, etc.)
+
+Raw result files are preserved for **transparency and reproducibility** but are not required to understand or execute experiments.
+
+---
+
+## ⚙️ Environment & Reproducibility
+
+### Requirements
+
+- **Python Version:** `3.12.3`
+- **Dependencies:** Exact library versions specified in `requirements.lock`
+
+### Setup Instructions
+
+1. **Environment Configuration:**
+   ```bash
+   # See session_setup.md for detailed instructions
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   pip install -r requirements.lock
+   ```
+
+2. **Tmux Workflows** (optional):
+   See `tmux.md` for distributed execution patterns
+
+All experiments are designed for **full reproducibility** from a clean Python environment.
+
+---
+
+## 🚀 Getting Started
+
+### Quick Start Guide
+
+1. **Choose an experiment:**
+   - Memory systems → `single_agent/memory/`
+   - Agent coordination → `multi_agent/topology/`
+   - Tool integration → `single_agent/tool_use/`
+
+2. **Read the local README:**
+   Each experiment folder contains detailed setup and execution instructions
+
+3. **Run the provided scripts:**
+   ```bash
+   cd single_agent/memory
+   python run_experiment.py --config default.yaml
+   ```
+
+4. **Inspect results:**
+   ```bash
+   ls ../../results/memory/
+   ```
+
+---
+
+## 📄 Citation & Usage
+
+This repository supports ongoing research in multi-agent systems, memory architectures, and LLM evaluation methodologies.
+
+If you use or extend this codebase, please cite the corresponding papers listed in the experiment-specific README files.
+
+### License
+
+[Specify your license here]
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome. Please:
+- Maintain the modular structure
+- Include standalone README files for new experiments
+- Ensure reproducibility with pinned dependencies
+- Follow existing code organization patterns
+
+---
+
+## 📧 Contact
+
+[Your contact information or links to project maintainers]
+
+---
+
+**Note:** This repository is intentionally modular. You do not need to understand the entire codebase to reproduce or extend a specific study. Each experiment is designed to stand on its own.
