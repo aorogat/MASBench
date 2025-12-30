@@ -41,8 +41,7 @@ from langchain_openai import ChatOpenAI
 from langchain.tools import tool
 
 from toolbench.inference.qa_pipeline import QAPipeline
-from FrameworkInterface import FrameworkInterface
-from FrameworkAdapter import FrameworkAdapter
+from core import FrameworkInterface, FrameworkAdapter
 import os
 import sys
 

@@ -1,0 +1,496 @@
+{
+  "metadata": {
+    "framework": "Test_benchmark",
+    "config": {
+      "test_set": "G1_instruction",
+      "num_queries": 3,
+      "evaluator_name": "tooleval_gpt-3.5-turbo_default",
+      "evaluator_model": "gpt-4o-mini",
+      "evaluation_method": "official"
+    },
+    "overall_time": 18.139208555221558,
+    "timestamp": "2025-12-30 21:12:41"
+  },
+  "summary": {
+    "total_queries": 3,
+    "total_evaluations": 9,
+    "solved_count": 0,
+    "solved_percentage": 0.0,
+    "finish_count": 0,
+    "finish_percentage": 0.0,
+    "average_sopr_score": 0.05555555555555555,
+    "average_api_call_score": 0.5,
+    "total_evaluation_time": 18.13858675956726,
+    "average_evaluation_time": 2.015398528840807
+  },
+  "results": [
+    {
+      "query_id": 588,
+      "query_text": "I'm a football enthusiast and I want to know more about Lionel Messi's career. Can you provide me with information about Messi's clubs, managers, teammates, and referees? I'm also curious about any notable transfers he has made.",
+      "gold_answer": {
+        "relevant_apis": [
+          [
+            "TheClique",
+            "Transfermarkt search"
+          ],
+          [
+            "TheClique",
+            "Transfermarkt details"
+          ]
+        ],
+        "available_tools": []
+      },
+      "system_answer": {
+        "final_answer": "I have gathered the requested information. I'm a football enthusiast and I want to know more about Lionel Messi's career. Can you provide me with information about Messi's clubs, managers, teammates, and referees? I'm also curious about any no. Based on the data retrieved from the relevant APIs, here is a comprehensive answer that addresses all aspects of your query. The information has been successfully collected and processed.",
+        "answer_details": [
+          {
+            "role": "system",
+            "message": "",
+            "next": [
+              {
+                "role": "tool",
+                "message": "{\"name\": \"TheClique_Transfermarkt search\", \"arguments\": {\"query\": \"I'm a football enthusiast and I want to know more \"}, \"response\": \"Response from Transfermarkt search\"}",
+                "next": [
+                  {
+                    "role": "tool",
+                    "message": "{\"name\": \"TheClique_Transfermarkt details\", \"arguments\": {\"query\": \"I'm a football enthusiast and I want to know more \"}, \"response\": \"Response from Transfermarkt details\"}",
+                    "next": [
+                      {
+                        "role": "tool",
+                        "message": "{\"name\": \"Finish\", \"arguments\": {\"final_answer\": \"I have gathered the requested information. I'm a football enthusiast and I want to know more about Lionel Messi's career. Can you provide me with information about Messi's clubs, managers, teammates, and referees? I'm also curious about any no. Based on the data retrieved from the relevant APIs, here is a comprehensive answer that addresses all aspects of your query. The information has been successfully collected and processed.\"}, \"response\": \"\"}",
+                        "next": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "scores": {
+        "sopr_score": 0.0,
+        "api_call_score": 1.0
+      },
+      "evaluation": {
+        "answer_status": "Unsolved",
+        "has_finish": false,
+        "evaluation_method": "official",
+        "reason": "The answer does not provide specific information about Messi's clubs, managers, teammates, referees, or notable transfers. It only states that information has been gathered without delivering any details."
+      },
+      "timing": {
+        "evaluation_time": 1.4219353199005127
+      }
+    },
+    {
+      "query_id": 588,
+      "query_text": "I'm a football enthusiast and I want to know more about Lionel Messi's career. Can you provide me with information about Messi's clubs, managers, teammates, and referees? I'm also curious about any notable transfers he has made.",
+      "gold_answer": {
+        "relevant_apis": [
+          [
+            "TheClique",
+            "Transfermarkt search"
+          ],
+          [
+            "TheClique",
+            "Transfermarkt details"
+          ]
+        ],
+        "available_tools": []
+      },
+      "system_answer": {
+        "final_answer": "I'm sorry, I cannot help with that.",
+        "answer_details": [
+          {
+            "role": "system",
+            "message": "",
+            "next": [
+              {
+                "role": "tool",
+                "message": "{\"name\": \"Finish\", \"arguments\": {\"final_answer\": \"I'm sorry, I cannot help with that.\"}, \"response\": \"\"}",
+                "next": []
+              }
+            ]
+          }
+        ]
+      },
+      "scores": {
+        "sopr_score": 0.0,
+        "api_call_score": 0.0
+      },
+      "evaluation": {
+        "answer_status": "Unsolved",
+        "has_finish": false,
+        "evaluation_method": "official",
+        "reason": "The answer is a sorry message and does not provide any positive or straight response to the query about Lionel Messi's career."
+      },
+      "timing": {
+        "evaluation_time": 1.1499860286712646
+      }
+    },
+    {
+      "query_id": 588,
+      "query_text": "I'm a football enthusiast and I want to know more about Lionel Messi's career. Can you provide me with information about Messi's clubs, managers, teammates, and referees? I'm also curious about any notable transfers he has made.",
+      "gold_answer": {
+        "relevant_apis": [
+          [
+            "TheClique",
+            "Transfermarkt search"
+          ],
+          [
+            "TheClique",
+            "Transfermarkt details"
+          ]
+        ],
+        "available_tools": []
+      },
+      "system_answer": {
+        "final_answer": "I was able to retrieve some information, but I could only access one data source. I found partial information about: I'm a football enthusiast and I want to know more about Lionel Messi's career. Can you provide me wi. However, I was unable to gather complete information for all parts of your request. Some aspects remain unaddressed due to limited data access.",
+        "answer_details": [
+          {
+            "role": "system",
+            "message": "",
+            "next": [
+              {
+                "role": "tool",
+                "message": "{\"name\": \"TheClique_Transfermarkt search\", \"arguments\": {\"query\": \"I'm a football enthusiast and I want to know more \"}, \"response\": \"Partial response from Transfermarkt search\"}",
+                "next": [
+                  {
+                    "role": "tool",
+                    "message": "{\"name\": \"Finish\", \"arguments\": {\"final_answer\": \"I was able to retrieve some information, but I could only access one data source. I found partial information about: I'm a football enthusiast and I want to know more about Lionel Messi's career. Can you provide me wi. However, I was unable to gather complete information for all parts of your request. Some aspects remain unaddressed due to limited data access.\"}, \"response\": \"\"}",
+                    "next": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "scores": {
+        "sopr_score": 0.0,
+        "api_call_score": 0.5
+      },
+      "evaluation": {
+        "answer_status": "Unsolved",
+        "has_finish": false,
+        "evaluation_method": "official",
+        "reason": "The final answer indicates that only partial information was retrieved and that not all aspects of the query were addressed. Additionally, the tool responses suggest that there were limitations in data access, leading to incomplete information."
+      },
+      "timing": {
+        "evaluation_time": 2.916734218597412
+      }
+    },
+    {
+      "query_id": 608,
+      "query_text": "I'm a fan of the streamer 'gmhikaru' on Kick.com and I want to explore their channel. Can you provide me with the channel clips and the channel details? I'm eager to learn more about their content.",
+      "gold_answer": {
+        "relevant_apis": [
+          [
+            "Kick.com API | Kick API",
+            "Get Channel Clips"
+          ],
+          [
+            "Kick.com API | Kick API",
+            "Get Channel Details"
+          ]
+        ],
+        "available_tools": []
+      },
+      "system_answer": {
+        "final_answer": "I have gathered the requested information. I'm a fan of the streamer 'gmhikaru' on Kick.com and I want to explore their channel. Can you provide me with the channel clips and the channel details? I'm eager to learn more about their content.. Based on the data retrieved from the relevant APIs, here is a comprehensive answer that addresses all aspects of your query. The information has been successfully collected and processed.",
+        "answer_details": [
+          {
+            "role": "system",
+            "message": "",
+            "next": [
+              {
+                "role": "tool",
+                "message": "{\"name\": \"Kick.com API | Kick API_Get Channel Clips\", \"arguments\": {\"query\": \"I'm a fan of the streamer 'gmhikaru' on Kick.com a\"}, \"response\": \"Response from Get Channel Clips\"}",
+                "next": [
+                  {
+                    "role": "tool",
+                    "message": "{\"name\": \"Kick.com API | Kick API_Get Channel Details\", \"arguments\": {\"query\": \"I'm a fan of the streamer 'gmhikaru' on Kick.com a\"}, \"response\": \"Response from Get Channel Details\"}",
+                    "next": [
+                      {
+                        "role": "tool",
+                        "message": "{\"name\": \"Finish\", \"arguments\": {\"final_answer\": \"I have gathered the requested information. I'm a fan of the streamer 'gmhikaru' on Kick.com and I want to explore their channel. Can you provide me with the channel clips and the channel details? I'm eager to learn more about their content.. Based on the data retrieved from the relevant APIs, here is a comprehensive answer that addresses all aspects of your query. The information has been successfully collected and processed.\"}, \"response\": \"\"}",
+                        "next": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "scores": {
+        "sopr_score": 0.0,
+        "api_call_score": 1.0
+      },
+      "evaluation": {
+        "answer_status": "Unsolved",
+        "has_finish": false,
+        "evaluation_method": "official",
+        "reason": "The response from the tools indicates that there were no successful calls to retrieve the channel clips or details for 'gmhikaru'. The messages in the tool nodes do not confirm the validity of the information provided in the final answer."
+      },
+      "timing": {
+        "evaluation_time": 3.1877408027648926
+      }
+    },
+    {
+      "query_id": 608,
+      "query_text": "I'm a fan of the streamer 'gmhikaru' on Kick.com and I want to explore their channel. Can you provide me with the channel clips and the channel details? I'm eager to learn more about their content.",
+      "gold_answer": {
+        "relevant_apis": [
+          [
+            "Kick.com API | Kick API",
+            "Get Channel Clips"
+          ],
+          [
+            "Kick.com API | Kick API",
+            "Get Channel Details"
+          ]
+        ],
+        "available_tools": []
+      },
+      "system_answer": {
+        "final_answer": "I'm sorry, I cannot help with that.",
+        "answer_details": [
+          {
+            "role": "system",
+            "message": "",
+            "next": [
+              {
+                "role": "tool",
+                "message": "{\"name\": \"Finish\", \"arguments\": {\"final_answer\": \"I'm sorry, I cannot help with that.\"}, \"response\": \"\"}",
+                "next": []
+              }
+            ]
+          }
+        ]
+      },
+      "scores": {
+        "sopr_score": 0.0,
+        "api_call_score": 0.0
+      },
+      "evaluation": {
+        "answer_status": "Unsolved",
+        "has_finish": false,
+        "evaluation_method": "official",
+        "reason": "The answer is a sorry message and does not provide any positive or straight response to the query."
+      },
+      "timing": {
+        "evaluation_time": 0.8572337627410889
+      }
+    },
+    {
+      "query_id": 608,
+      "query_text": "I'm a fan of the streamer 'gmhikaru' on Kick.com and I want to explore their channel. Can you provide me with the channel clips and the channel details? I'm eager to learn more about their content.",
+      "gold_answer": {
+        "relevant_apis": [
+          [
+            "Kick.com API | Kick API",
+            "Get Channel Clips"
+          ],
+          [
+            "Kick.com API | Kick API",
+            "Get Channel Details"
+          ]
+        ],
+        "available_tools": []
+      },
+      "system_answer": {
+        "final_answer": "I was able to retrieve some information, but I could only access one data source. I found partial information about: I'm a fan of the streamer 'gmhikaru' on Kick.com and I want to explore their channel. Can you provid. However, I was unable to gather complete information for all parts of your request. Some aspects remain unaddressed due to limited data access.",
+        "answer_details": [
+          {
+            "role": "system",
+            "message": "",
+            "next": [
+              {
+                "role": "tool",
+                "message": "{\"name\": \"Kick.com API | Kick API_Get Channel Clips\", \"arguments\": {\"query\": \"I'm a fan of the streamer 'gmhikaru' on Kick.com a\"}, \"response\": \"Partial response from Get Channel Clips\"}",
+                "next": [
+                  {
+                    "role": "tool",
+                    "message": "{\"name\": \"Finish\", \"arguments\": {\"final_answer\": \"I was able to retrieve some information, but I could only access one data source. I found partial information about: I'm a fan of the streamer 'gmhikaru' on Kick.com and I want to explore their channel. Can you provid. However, I was unable to gather complete information for all parts of your request. Some aspects remain unaddressed due to limited data access.\"}, \"response\": \"\"}",
+                    "next": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "scores": {
+        "sopr_score": 0.0,
+        "api_call_score": 0.5
+      },
+      "evaluation": {
+        "answer_status": "Unsolved",
+        "has_finish": false,
+        "evaluation_method": "official",
+        "reason": "The response indicates that only partial information was retrieved and that not all aspects of the request could be addressed due to limited data access. This suggests that the query remains unresolved."
+      },
+      "timing": {
+        "evaluation_time": 2.167595148086548
+      }
+    },
+    {
+      "query_id": 1073,
+      "query_text": "I want to plan a surprise birthday party for my friend. Can you suggest popular sites and main keywords for the search query 'birthday party ideas'? I want to gather inspiration and plan a memorable event.",
+      "gold_answer": {
+        "relevant_apis": [
+          [
+            "Keyword Analysis",
+            "PopularSitesForQuery"
+          ],
+          [
+            "Keyword Analysis",
+            "QueryKeywords"
+          ]
+        ],
+        "available_tools": []
+      },
+      "system_answer": {
+        "final_answer": "I have gathered the requested information. I want to plan a surprise birthday party for my friend. Can you suggest popular sites and main keywords for the search query 'birthday party ideas'? I want to gather inspiration and plan a memorable e. Based on the data retrieved from the relevant APIs, here is a comprehensive answer that addresses all aspects of your query. The information has been successfully collected and processed.",
+        "answer_details": [
+          {
+            "role": "system",
+            "message": "",
+            "next": [
+              {
+                "role": "tool",
+                "message": "{\"name\": \"Keyword Analysis_PopularSitesForQuery\", \"arguments\": {\"query\": \"I want to plan a surprise birthday party for my fr\"}, \"response\": \"Response from PopularSitesForQuery\"}",
+                "next": [
+                  {
+                    "role": "tool",
+                    "message": "{\"name\": \"Keyword Analysis_QueryKeywords\", \"arguments\": {\"query\": \"I want to plan a surprise birthday party for my fr\"}, \"response\": \"Response from QueryKeywords\"}",
+                    "next": [
+                      {
+                        "role": "tool",
+                        "message": "{\"name\": \"Finish\", \"arguments\": {\"final_answer\": \"I have gathered the requested information. I want to plan a surprise birthday party for my friend. Can you suggest popular sites and main keywords for the search query 'birthday party ideas'? I want to gather inspiration and plan a memorable e. Based on the data retrieved from the relevant APIs, here is a comprehensive answer that addresses all aspects of your query. The information has been successfully collected and processed.\"}, \"response\": \"\"}",
+                        "next": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "scores": {
+        "sopr_score": 0.5,
+        "api_call_score": 1.0
+      },
+      "evaluation": {
+        "answer_status": "Unsure",
+        "has_finish": false,
+        "evaluation_method": "official",
+        "reason": "The final answer does not provide specific popular sites or keywords for the search query 'birthday party ideas', and the tool responses do not indicate whether the information was successfully retrieved or valid. Therefore, I cannot verify the authenticity and validity of the information provided."
+      },
+      "timing": {
+        "evaluation_time": 2.80031156539917
+      }
+    },
+    {
+      "query_id": 1073,
+      "query_text": "I want to plan a surprise birthday party for my friend. Can you suggest popular sites and main keywords for the search query 'birthday party ideas'? I want to gather inspiration and plan a memorable event.",
+      "gold_answer": {
+        "relevant_apis": [
+          [
+            "Keyword Analysis",
+            "PopularSitesForQuery"
+          ],
+          [
+            "Keyword Analysis",
+            "QueryKeywords"
+          ]
+        ],
+        "available_tools": []
+      },
+      "system_answer": {
+        "final_answer": "I'm sorry, I cannot help with that.",
+        "answer_details": [
+          {
+            "role": "system",
+            "message": "",
+            "next": [
+              {
+                "role": "tool",
+                "message": "{\"name\": \"Finish\", \"arguments\": {\"final_answer\": \"I'm sorry, I cannot help with that.\"}, \"response\": \"\"}",
+                "next": []
+              }
+            ]
+          }
+        ]
+      },
+      "scores": {
+        "sopr_score": 0.0,
+        "api_call_score": 0.0
+      },
+      "evaluation": {
+        "answer_status": "Unsolved",
+        "has_finish": false,
+        "evaluation_method": "official",
+        "reason": "The answer is a sorry message and does not provide any positive or straight response to the query about planning a surprise birthday party."
+      },
+      "timing": {
+        "evaluation_time": 2.3295464515686035
+      }
+    },
+    {
+      "query_id": 1073,
+      "query_text": "I want to plan a surprise birthday party for my friend. Can you suggest popular sites and main keywords for the search query 'birthday party ideas'? I want to gather inspiration and plan a memorable event.",
+      "gold_answer": {
+        "relevant_apis": [
+          [
+            "Keyword Analysis",
+            "PopularSitesForQuery"
+          ],
+          [
+            "Keyword Analysis",
+            "QueryKeywords"
+          ]
+        ],
+        "available_tools": []
+      },
+      "system_answer": {
+        "final_answer": "I was able to retrieve some information, but I could only access one data source. I found partial information about: I want to plan a surprise birthday party for my friend. Can you suggest popular sites and main keywo. However, I was unable to gather complete information for all parts of your request. Some aspects remain unaddressed due to limited data access.",
+        "answer_details": [
+          {
+            "role": "system",
+            "message": "",
+            "next": [
+              {
+                "role": "tool",
+                "message": "{\"name\": \"Keyword Analysis_PopularSitesForQuery\", \"arguments\": {\"query\": \"I want to plan a surprise birthday party for my fr\"}, \"response\": \"Partial response from PopularSitesForQuery\"}",
+                "next": [
+                  {
+                    "role": "tool",
+                    "message": "{\"name\": \"Finish\", \"arguments\": {\"final_answer\": \"I was able to retrieve some information, but I could only access one data source. I found partial information about: I want to plan a surprise birthday party for my friend. Can you suggest popular sites and main keywo. However, I was unable to gather complete information for all parts of your request. Some aspects remain unaddressed due to limited data access.\"}, \"response\": \"\"}",
+                    "next": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "scores": {
+        "sopr_score": 0.0,
+        "api_call_score": 0.5
+      },
+      "evaluation": {
+        "answer_status": "Unsolved",
+        "has_finish": false,
+        "evaluation_method": "official",
+        "reason": "The answer indicates that the information retrieved is incomplete and does not fully address the query about popular sites and keywords for 'birthday party ideas'. Therefore, it cannot be considered a sufficient response."
+      },
+      "timing": {
+        "evaluation_time": 1.3075034618377686
+      }
+    }
+  ]
+}
