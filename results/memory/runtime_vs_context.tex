@@ -1,0 +1,42 @@
+\begin{figure}[t]
+\centering
+\setlength{\abovecaptionskip}{2pt}
+\setlength{\belowcaptionskip}{-6pt}
+\begin{tikzpicture}
+\begin{groupplot}[
+  group style={group size=2 by 1, horizontal sep=1.0cm},
+  width=0.48\linewidth,
+  height=0.55\linewidth,
+  xmode=log,
+  log basis x=2,
+  xlabel={Context Window (tokens)},
+  ylabel={Total Runtime (s)},
+  grid=both,
+  grid style={dashed,gray!30},
+  tick label style={font=\scriptsize},
+  label style={font=\scriptsize},
+  legend style={font=\scriptsize, draw=none},
+]
+\nextgroupplot[title={LangGraph}]
+\addplot+[mark=*, thick, blue] coordinates {(50,4236.5) (512,4538.9) (1024,4495.4) (2048,5093.6) (4096,5817.5) (8192,6705.5)};
+\addlegendentry{Accurate Retrieval}
+\addplot+[mark=*, thick, orange] coordinates {(50,2247.6) (512,2336.1) (1024,2487.4) (2048,2607.0) (4096,2896.3) (8192,3323.9)};
+\addlegendentry{Test-Time Learning}
+\addplot+[mark=*, thick, green!60!black] coordinates {(50,529.3) (512,523.5) (1024,507.1) (2048,548.7) (4096,531.4) (8192,541.3)};
+\addlegendentry{Long-Range Understanding}
+\addplot+[mark=*, thick, red] coordinates {(50,1861.8) (512,2043.3) (1024,2049.5) (2048,2094.1) (4096,2086.5) (8192,2099.3)};
+\addlegendentry{Selective Forgetting}
+\nextgroupplot[title={OpenAI SDK}]
+\addplot+[mark=*, thick, blue] coordinates {(50,5475.7) (512,5192.0) (1024,4829.4) (2048,5266.9) (4096,5838.1) (8192,6955.1)};
+\addlegendentry{Accurate Retrieval}
+\addplot+[mark=*, thick, orange] coordinates {(50,2175.9) (512,2557.4) (1024,3064.1) (2048,2807.4) (4096,2733.7) (8192,2873.4)};
+\addlegendentry{Test-Time Learning}
+\addplot+[mark=*, thick, green!60!black] coordinates {(50,1650.0) (512,1598.0) (1024,1479.2) (2048,1609.5) (4096,1805.3) (8192,2316.5)};
+\addlegendentry{Long-Range Understanding}
+\addplot+[mark=*, thick, red] coordinates {(50,2450.6) (512,1846.7) (1024,1832.3) (2048,1978.4) (4096,1718.5) (8192,3382.1)};
+\addlegendentry{Selective Forgetting}
+\end{groupplot}
+\end{tikzpicture}
+\caption{Total runtime as a function of context window size for LangGraph (left) and OpenAI SDK (right) across four MemoryAgentBench task categories.}
+\label{fig:runtime-vs-context}
+\end{figure}
