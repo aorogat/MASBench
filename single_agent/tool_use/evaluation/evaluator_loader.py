@@ -6,6 +6,7 @@ Dependency Inversion: Depends on abstractions (environment variables, file syste
 """
 import os
 import json
+import tempfile
 from typing import Optional, Any
 
 
@@ -38,23 +39,30 @@ class EvaluatorLoader:
     def setup_openai_key(self) -> Optional[str]:
         """
         Set up OpenAI API key from environment variable.
+        Creates a temporary file (not in repository) for StableToolBench's evaluator.
         
         Returns:
-            Path to the created key file, or None if no key found
+            Path to the created temporary key file, or None if no key found
         """
         openai_key = os.getenv('OPENAI_API_KEY')
         
         if openai_key:
             if self.verbose:
                 print(f"[Evaluator] Found OpenAI key from environment variable (.env file)")
-            # Create a temporary key file for the evaluator (required by StableToolBench)
-            openai_key_file = os.path.join(
-                self.stabletoolbench_root, "openai_key.json"
-            )
-            with open(openai_key_file, 'w') as f:
-                json.dump([{"api_key": openai_key, "api_base": None}], f)
-            os.environ['API_POOL_FILE'] = openai_key_file
-            return openai_key_file
+            # Create a temporary key file (not in repository) for the evaluator
+            # StableToolBench's evaluator requires API_POOL_FILE to point to a JSON file
+            temp_fd, temp_file = tempfile.mkstemp(suffix='.json', prefix='openai_key_', text=True)
+            try:
+                with os.fdopen(temp_fd, 'w') as f:
+                    json.dump([{"api_key": openai_key, "api_base": None}], f)
+                os.environ['API_POOL_FILE'] = temp_file
+                if self.verbose:
+                    print(f"[Evaluator] Created temporary key file (will be cleaned up automatically)")
+                return temp_file
+            except Exception as e:
+                if self.verbose:
+                    print(f"[Evaluator] Error creating temporary key file: {e}")
+                return None
         else:
             if self.verbose:
                 print(f"[Evaluator] Warning: No OpenAI key found in environment variable")

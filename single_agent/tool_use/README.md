@@ -301,7 +301,7 @@ printer.print_summary(summary, output_file)
 - Create `.env` file in `single_agent/tool_use/` directory
 - The code will automatically load it using `python-dotenv`
 
-**Note**: The code creates a temporary `openai_key.json` file at runtime (required by StableToolBench's original evaluator), but the source of truth is always the `.env` file.
+**Note**: The code creates a temporary key file in the system temp directory at runtime (required by StableToolBench's original evaluator). The source of truth is always the `.env` file, and the temporary file is automatically cleaned up by the system.
 
 ### Python Dependencies
 
