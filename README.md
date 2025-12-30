@@ -137,7 +137,6 @@ Raw result files are preserved for **transparency and reproducibility** but are 
 
 1. **Environment Configuration:**
    ```bash
-   # See session_setup.md for detailed instructions
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    pip install -r requirements.lock
