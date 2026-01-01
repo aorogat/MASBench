@@ -33,42 +33,42 @@ except ImportError:
 
 from run_benchmark import run_benchmark
 from agents.langgraph import LangGraphAgent
+from utils.printer import print_header, print_info, print_success, print_warning
 
 
 def main():
     """Main test function."""
-    print("=" * 80)
-    print("LangGraph Agent Test")
-    print("=" * 80)
+    print_header("LangGraph Agent Test")
     
     # Check if server is running
     server_url = "http://localhost:8080/virtual"
-    print(f"\n[Note] Make sure the server is running at {server_url}")
-    print("       Start it with: python single_agent/tool_use/StableToolBench/server/main.py")
+    print_warning(f"Make sure the server is running at {server_url}")
+    print_info("Start it with: python single_agent/tool_use/StableToolBench/server/main.py")
     print()
     
     # Paths
     tools_dir = os.path.join(CURRENT_DIR, "StableToolBench", "toolenv", "tools")
     
     if not os.path.exists(tools_dir):
-        print(f"Error: Tools directory not found: {tools_dir}")
-        print("Please ensure StableToolBench/toolenv/tools/ exists")
+        from utils.printer import print_error
+        print_error(f"Tools directory not found: {tools_dir}")
+        print_error("Please ensure StableToolBench/toolenv/tools/ exists")
         return
     
     # Create agent
-    print("[1/2] Creating LangGraphAgent...")
+    print_info("[1/2] Creating LangGraphAgent...")
     agent = LangGraphAgent(
         model="gpt-4o-mini",
         server_url=server_url,
         temperature=0.0,
         verbose=True
     )
-    print("✓ Agent created")
-    print("\n[Note] Tool selection and binding will be handled by run_benchmark")
-    print("       This ensures fairness - all frameworks use the same tool set per query")
+    print_success("Agent created")
+    print_info("Tool selection and binding will be handled by run_benchmark")
+    print_info("This ensures fairness - all frameworks use the same tool set per query")
     
     # Run benchmark (tool selection happens inside run_benchmark)
-    print(f"\n[2/2] Running benchmark with 3 queries...")
+    print_info("\n[2/2] Running benchmark with 3 queries...")
     try:
         results = run_benchmark(
             agent=agent,
@@ -79,21 +79,17 @@ def main():
             agent_name="langgraph_agent",
             use_tool_selector=True,  # Use centralized tool selection
             tool_selector_model="gpt-4o-mini",
-            max_tools=120
+            max_tools=120,
+            verbose=True,
+            use_colors=True
         )
         
-        print("\n" + "=" * 80)
-        print("Test completed successfully!")
-        print("=" * 80)
-        print(f"\nResults summary:")
-        print(f"  Total queries: {results['summary']['total_queries']}")
-        print(f"  Solved: {results['summary']['solved_count']} ({results['summary']['solved_percentage']:.1f}%)")
-        print(f"  Average SoPR Score: {results['summary']['average_sopr_score']:.3f}")
-        print(f"  Average API Call Score: {results['summary']['average_api_call_score']:.3f}")
-        print(f"\nCheck results/tools/ for detailed results JSON file")
+        print_header("Test Completed Successfully")
+        print_info("Check results/tools/ for detailed results JSON file")
         
     except Exception as e:
-        print(f"✗ Error running benchmark: {e}")
+        from utils.printer import print_error
+        print_error(f"Error running benchmark: {e}")
         import traceback
         traceback.print_exc()
         return

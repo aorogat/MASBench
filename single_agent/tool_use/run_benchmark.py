@@ -22,6 +22,7 @@ CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, CURRENT_DIR)
 
 from utils import QueryLoader
+from utils.printer import Printer, get_printer
 from evaluation import StableToolBenchEvaluator
 from tool_selection import ToolSelector
 from agents.langgraph.tool_loader import load_tools
@@ -276,7 +277,9 @@ def run_benchmark(
     agent_name: str = "agent",
     use_tool_selector: bool = True,
     tool_selector_model: str = "gpt-4o-mini",
-    max_tools: int = 120
+    max_tools: int = 120,
+    verbose: bool = True,
+    use_colors: bool = True
 ) -> Dict[str, Any]:
     """
     Run benchmark evaluation on an agent.
@@ -293,13 +296,15 @@ def run_benchmark(
         use_tool_selector: Whether to use centralized tool selection (default: True)
         tool_selector_model: Model for tool selection (default: gpt-4o-mini)
         max_tools: Maximum tools to select per query (default: 120)
+        verbose: Whether to print verbose messages (default: True)
+        use_colors: Whether to use colors in terminal output (default: True)
     
     Returns:
         Dictionary with benchmark results
     """
-    print("=" * 80)
-    print("StableToolBench Benchmark Runner")
-    print("=" * 80)
+    # Initialize printer
+    printer = get_printer(use_colors=use_colors, verbose=verbose)
+    printer.print_header("StableToolBench Benchmark Runner")
     
     # Setup paths
     stb_root = os.path.join(CURRENT_DIR, "StableToolBench")
@@ -357,9 +362,7 @@ def run_benchmark(
         query_text = query.get("query", "")
         gold_apis = QueryLoader.extract_gold_tool_calls(query)
         
-        print(f"\n--- Query {idx}/{len(queries)}: {query_id} ---")
-        print(f"Query: {query_text[:100]}...")
-        print(f"Gold APIs: {len(gold_apis)}")
+        printer.print_query_header(idx, len(queries), query_id, query_text, len(gold_apis))
         
         query_start_time = time.time()
         result = {
@@ -370,7 +373,7 @@ def run_benchmark(
         
         try:
             # Generate gold answer
-            print("  Generating gold answer...")
+            printer.print_progress("Generating gold answer")
             gold_start = time.time()
             api_responses = gold_generator.execute_gold_apis(query, gold_apis)
             gold_answer = gold_generator.generate_gold_answer(query, api_responses)
@@ -380,24 +383,24 @@ def run_benchmark(
             
             # Tool selection and binding (if using tool selector)
             if use_tool_selector and tool_selector and all_tools:
-                print("  Selecting tools for this query...")
+                printer.print_progress("Selecting tools for this query")
                 selected_tools = tool_selector.select_tools(query_text, all_tools)
                 result["selected_tools_count"] = len(selected_tools)
-                print(f"  Selected {len(selected_tools)} tools")
+                printer.print_success(f"Selected {len(selected_tools)} tools")
                 
                 # Bind selected tools to agent
                 if hasattr(agent, 'bind_tools'):
                     agent.bind_tools(tools=selected_tools, server_url=server_url)
             
             # Generate system answer
-            print("  Generating system answer...")
+            printer.print_progress("Generating system answer")
             system_start = time.time()
             system_answer = agent.answer(query_text)
             system_time = time.time() - system_start
             result["system_answer_time"] = system_time
             
             # Evaluate system answer
-            print("  Evaluating system answer...")
+            printer.print_progress("Evaluating system answer")
             eval_start = time.time()
             eval_result = evaluator.evaluate_answer(query, system_answer)
             eval_time = time.time() - eval_start
@@ -440,16 +443,19 @@ def run_benchmark(
             })
             
             # Print result
-            status_icon = "✓" if eval_result["sopr_score"] == 1.0 else "?" if eval_result["sopr_score"] == 0.5 else "✗"
-            print(f"  Result: {status_icon} {eval_result['answer_status']:8s} | "
-                  f"SoPR: {eval_result['sopr_score']:.1f} | "
-                  f"API: {api_call_score:.2f} | "
-                  f"Time: {result['timing']['total_time']:.2f}s")
+            printer.print_result(
+                status="",  # Will be determined by print_result
+                sopr_score=eval_result["sopr_score"],
+                api_score=api_call_score,
+                total_time=result['timing']['total_time'],
+                answer_status=eval_result.get('answer_status', '')
+            )
             
         except Exception as e:
-            print(f"  ❌ Error processing query: {e}")
-            import traceback
-            traceback.print_exc()
+            printer.print_error(f"Error processing query: {e}")
+            if verbose:
+                import traceback
+                traceback.print_exc()
             result["error"] = str(e)
             result["scores"] = {
                 "sopr_score": 0.0,
@@ -463,7 +469,7 @@ def run_benchmark(
     overall_time = time.time() - overall_start_time
     
     # Calculate summary statistics
-    print(f"\n[5/6] Calculating summary statistics...")
+    printer.print_step(5, 6, "Calculating summary statistics")
     total_queries = len(queries)
     solved_count = sum(1 for r in all_results if r.get("scores", {}).get("sopr_score", 0) == 1.0)
     unsure_count = sum(1 for r in all_results if r.get("scores", {}).get("sopr_score", 0) == 0.5)
@@ -507,31 +513,37 @@ def run_benchmark(
     }
     
     # Save results
-    print(f"\n[6/6] Saving results...")
-    output_file = output_dir / f"{agent_name}_{test_set}.json"
+    printer.print_step(6, 6, "Saving results")
+    
+    # Build filename with parameters
+    filename_parts = [agent_name, test_set]
+    if use_tool_selector:
+        filename_parts.append(f"k{max_tools}")
+    if max_queries is not None:
+        filename_parts.append(f"q{max_queries}")
+    filename = "_".join(filename_parts) + ".json"
+    output_file = output_dir / filename
     
     with open(output_file, 'w') as f:
         json.dump(results_data, f, indent=2)
+    printer.print_success(f"Results saved to {output_file}")
     
     # Print summary
-    print(f"\n{'=' * 80}")
-    print("Benchmark Results Summary")
-    print(f"{'=' * 80}")
-    print(f"Agent:                    {agent_name}")
-    print(f"Test Set:                 {test_set}")
-    print(f"Total Queries:            {total_queries}")
-    print(f"Solved:                   {solved_count} ({solved_count/total_queries*100:.1f}%)" if total_queries > 0 else "Solved: 0 (0.0%)")
-    print(f"Unsure:                   {unsure_count} ({unsure_count/total_queries*100:.1f}%)" if total_queries > 0 else "Unsure: 0 (0.0%)")
-    print(f"Unsolved:                 {total_queries - solved_count - unsure_count} ({(total_queries - solved_count - unsure_count)/total_queries*100:.1f}%)" if total_queries > 0 else "Unsolved: 0 (0.0%)")
-    print(f"Has Finish Call:          {finish_count} ({finish_count/total_queries*100:.1f}%)" if total_queries > 0 else "Has Finish Call: 0 (0.0%)")
-    print(f"Average SoPR Score:       {avg_sopr:.3f}")
-    print(f"Average API Call Score:   {avg_api_score:.3f}")
-    print(f"Average Gold Answer Time:  {avg_gold_time:.3f}s")
-    print(f"Average System Answer Time: {avg_system_time:.3f}s")
-    print(f"Average Evaluation Time:   {avg_eval_time:.3f}s")
-    print(f"Overall Time:             {overall_time:.2f}s")
-    print(f"\nResults saved to: {output_file}")
-    print(f"{'=' * 80}")
+    summary_dict = {
+        'agent_name': agent_name,
+        'test_set': test_set,
+        'total_queries': total_queries,
+        'solved_count': solved_count,
+        'unsure_count': unsure_count,
+        'finish_count': finish_count,
+        'average_sopr_score': avg_sopr,
+        'average_api_call_score': avg_api_score,
+        'average_gold_answer_time': avg_gold_time,
+        'average_system_answer_time': avg_system_time,
+        'average_evaluation_time': avg_eval_time,
+        'overall_time': overall_time
+    }
+    printer.print_summary(summary_dict, str(output_file))
     
     return results_data
 

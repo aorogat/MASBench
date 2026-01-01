@@ -688,3 +688,147 @@ TYPE: cached_real_response
 REQUEST: category='Data' tool_name='Measurement Units Converter' api_name='Measurements' tool_input={} strip='' toolbench_key='EMPTY'
 RESPONSE: {'error': '', 'response': ''}
 <<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:20:57
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='TheClique' api_name='Transfermarkt search' tool_input={'name': 'messi'} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': "Lionel Messi, born June 24, 1987, is an Argentine professional footballer widely regarded as one of the greatest players of all time. He spent the majority of his career at FC Barcelona, where he won 10 La Liga titles, 7 Copa del Rey trophies, and 4 UEFA Champions League titles. Messi has earned seven Ballon d'Or awards, breaking the record for most wins. Known for his dribbling, vision, and goal‑scoring prowess, he has set numerous records, including most goals for a single club and most goals in a calendar year. In 2021, he transferred to Paris Saint‑Germain, continuing to showcase elite performance. Internationally, Messi led Argentina to victory in the 2021 Copa América and the 2022 FIFA World Cup, cementing his legacy as a national hero. His influence extends beyond the pitch, with philanthropic efforts through the Leo Messi Foundation."}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:20:57
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='TheClique' api_name='Transfermarkt details' tool_input={'type_s': 'verein', 'other': 'startseite', 'id_talent': '583', 'part_slug': 'fc-paris-saint-germain'} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': "Club: FC Paris Saint‑Germain (PSG)\n\n- **Type**: Verein (Club)\n- **Slug**: fc-paris-saint-germain\n- **ID Talent**: 583 (used internally to reference the club’s talent database)\n- **Founded**: 1970 (merger of Paris FC and Stade Saint‑Germain)\n- **Stadium**: Parc des Princes, Paris (capacity ~48,000)\n- **League**: Ligue 1 (France)\n- **Current Manager**: Christophe Galtier (as of 2024)\n- **Recent Achievements**: 7 Ligue 1 titles (2013‑14, 2014‑15, 2015‑16, 2017‑18, 2018‑19, 2021‑22, 2022‑23), 10 Coupe de France titles, 6 Coupe de la Ligue titles, and 2 UEFA Champions League finals (2019, 2020).\n- **Notable Players**: Kylian Mbappé, Neymar Jr., Angel Di Maria, Marco Verratti, and many national team stars.\n- **Youth Academy**: Known for producing talents like Kylian Mbappé and N'Golo Kanté.\n- **Financials**: One of the richest clubs in Europe, with a 2023 revenue of €200+ million.\n- **Fan Base**: Global following with millions of supporters and a strong presence on social media.\n\nThis summary provides a snapshot of PSG’s history, structure, and recent success, useful for fans, analysts, and potential sponsors."}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:21:22
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='Kick.com API | Kick API' api_name='Get Channel Clips' tool_input={'cursor': '0', 'channel_name': 'gmhikaru'} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': 'Here is a simulated response for retrieving messages from the channel "gmhikaru" starting at cursor 0:\n\n{\n  "channel_name": "gmhikaru",\n  "cursor": "0",\n  "messages": [\n    {\n      "id": "msg001",\n      "timestamp": "2024-01-01T12:00:00Z",\n      "user": "alice",\n      "content": "Welcome to the gmhikaru channel!"\n    },\n    {\n      "id": "msg002",\n      "timestamp": "2024-01-01T12:05:23Z",\n      "user": "bob",\n      "content": "Thanks, Alice! Happy to be here."\n    },\n    {\n      "id": "msg003",\n      "timestamp": "2024-01-01T12:10:45Z",\n      "user": "carol",\n      "content": "Does anyone have updates on the project timeline?"\n    }\n  ],\n  "next_cursor": "3",\n  "has_more": true\n}\n\nThis example shows three messages retrieved from the channel, along with a next_cursor value that can be used to fetch subsequent messages. The structure includes typical fields such as message id, timestamp, user, and content, and indicates whether more messages are available.'}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:21:22
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='Kick.com API | Kick API' api_name='Get Channel Details' tool_input={'channel_name': 'gmhikaru'} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': 'The API is intended to retrieve detailed information about a messaging or communication channel based on the provided channel name. In this case, the input specifies the channel name as "gmhikaru". The expected response would include key metadata such as the unique channel identifier, creation timestamp, current status (e.g., active, archived, or pending), the number of participants or members, and any associated tags or categories. Additionally, the response might provide configuration details like notification settings, privacy level, and integration endpoints. For example, a typical output could look like: \n\n- Channel ID: 987654321\n- Name: gmhikaru\n- Status: Active\n- Created At: 2023-07-15T08:23:45Z\n- Members: 42\n- Tags: "team‑collaboration", "project‑alpha"\n- Notification Settings: Email: enabled, Push: disabled\n- Privacy: Public\n- Integration Endpoints: Webhook URL, API token\n\nIf the channel does not exist or the user lacks permission, the API would return an appropriate error message or an empty result set. This structured information allows clients to programmatically manage and display channel details within their applications.'}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:21:27
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='Keyword Analysis' api_name='PopularSitesForQuery' tool_input={'q': 'taylor swift'} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': 'Taylor\u202fSwift is an American singer‑songwriter who first rose to prominence in the mid‑2000s as a country‑pop artist. Born in 1989 in Pennsylvania, she moved to Nashville at 14 to pursue music, releasing her self‑titled debut in 2006. Her breakthrough came with the 2008 single “Love Story,” which topped the Billboard Hot\u202f100 and cemented her status as a pop‑country crossover star. Over the years, Swift has released a string of critically acclaimed albums—*Fearless* (2008), *Speak\u202fNow* (2010), *Red* (2012), *1989* (2014), *Reputation* (2017), *Lover* (2019), *Folklore* (2020), *Evermore* (2020), and *Midnights* (2022). She has earned numerous awards, including 11 Grammys, and is known for her candid songwriting, which often draws from personal experiences. Swift’s influence extends beyond music; she is an advocate for artists’ rights, gender equality, and LGBTQ+ causes, and she has a significant cultural impact worldwide. '}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:21:27
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='Keyword Analysis' api_name='QueryKeywords' tool_input={'q': 'cyberia game review'} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': 'Cyberia is a fast‑paced, action‑adventure game that blends classic arcade mechanics with modern storytelling. Players control a cyber‑net hacker navigating neon‑lit cityscapes, battling rogue AI and corrupt corporate drones. The game’s pixel‑art aesthetic pays homage to 80s cyberpunk while offering fluid, responsive controls that feel satisfying on both keyboard and controller. Combat is varied, with a mix of melee, ranged, and hacking mini‑games that keep the pacing fresh. The narrative is delivered through witty dialogue and environmental storytelling, giving the player a sense of agency in a sprawling, open‑world metropolis. Sound design is a standout, featuring a synth‑heavy soundtrack that complements the high‑energy gameplay. Overall, Cyberia delivers a polished, nostalgic experience that will appeal to fans of retro‑style action titles and cyberpunk enthusiasts alike.'}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:21:29
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='Measurement Units Converter' api_name='Measurements' tool_input={} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': ''}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:21:29
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='Measurement Units Converter' api_name='Measurements' tool_input={} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': ''}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:26:27
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='TheClique' api_name='Transfermarkt search' tool_input={'name': 'messi'} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': "Lionel Messi, born June 24, 1987, is an Argentine professional footballer widely regarded as one of the greatest players of all time. He spent the majority of his career at FC Barcelona, where he won 10 La Liga titles, 7 Copa del Rey trophies, and 4 UEFA Champions League titles. Messi has earned seven Ballon d'Or awards, breaking the record for most wins. Known for his dribbling, vision, and goal‑scoring prowess, he has set numerous records, including most goals for a single club and most goals in a calendar year. In 2021, he transferred to Paris Saint‑Germain, continuing to showcase elite performance. Internationally, Messi led Argentina to victory in the 2021 Copa América and the 2022 FIFA World Cup, cementing his legacy as a national hero. His influence extends beyond the pitch, with philanthropic efforts through the Leo Messi Foundation."}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:26:27
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='TheClique' api_name='Transfermarkt details' tool_input={'type_s': 'verein', 'other': 'startseite', 'id_talent': '583', 'part_slug': 'fc-paris-saint-germain'} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': "Club: FC Paris Saint‑Germain (PSG)\n\n- **Type**: Verein (Club)\n- **Slug**: fc-paris-saint-germain\n- **ID Talent**: 583 (used internally to reference the club’s talent database)\n- **Founded**: 1970 (merger of Paris FC and Stade Saint‑Germain)\n- **Stadium**: Parc des Princes, Paris (capacity ~48,000)\n- **League**: Ligue 1 (France)\n- **Current Manager**: Christophe Galtier (as of 2024)\n- **Recent Achievements**: 7 Ligue 1 titles (2013‑14, 2014‑15, 2015‑16, 2017‑18, 2018‑19, 2021‑22, 2022‑23), 10 Coupe de France titles, 6 Coupe de la Ligue titles, and 2 UEFA Champions League finals (2019, 2020).\n- **Notable Players**: Kylian Mbappé, Neymar Jr., Angel Di Maria, Marco Verratti, and many national team stars.\n- **Youth Academy**: Known for producing talents like Kylian Mbappé and N'Golo Kanté.\n- **Financials**: One of the richest clubs in Europe, with a 2023 revenue of €200+ million.\n- **Fan Base**: Global following with millions of supporters and a strong presence on social media.\n\nThis summary provides a snapshot of PSG’s history, structure, and recent success, useful for fans, analysts, and potential sponsors."}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:26:51
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='Kick.com API | Kick API' api_name='Get Channel Clips' tool_input={'cursor': '0', 'channel_name': 'gmhikaru'} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': 'Here is a simulated response for retrieving messages from the channel "gmhikaru" starting at cursor 0:\n\n{\n  "channel_name": "gmhikaru",\n  "cursor": "0",\n  "messages": [\n    {\n      "id": "msg001",\n      "timestamp": "2024-01-01T12:00:00Z",\n      "user": "alice",\n      "content": "Welcome to the gmhikaru channel!"\n    },\n    {\n      "id": "msg002",\n      "timestamp": "2024-01-01T12:05:23Z",\n      "user": "bob",\n      "content": "Thanks, Alice! Happy to be here."\n    },\n    {\n      "id": "msg003",\n      "timestamp": "2024-01-01T12:10:45Z",\n      "user": "carol",\n      "content": "Does anyone have updates on the project timeline?"\n    }\n  ],\n  "next_cursor": "3",\n  "has_more": true\n}\n\nThis example shows three messages retrieved from the channel, along with a next_cursor value that can be used to fetch subsequent messages. The structure includes typical fields such as message id, timestamp, user, and content, and indicates whether more messages are available.'}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:26:51
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='Kick.com API | Kick API' api_name='Get Channel Details' tool_input={'channel_name': 'gmhikaru'} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': 'The API is intended to retrieve detailed information about a messaging or communication channel based on the provided channel name. In this case, the input specifies the channel name as "gmhikaru". The expected response would include key metadata such as the unique channel identifier, creation timestamp, current status (e.g., active, archived, or pending), the number of participants or members, and any associated tags or categories. Additionally, the response might provide configuration details like notification settings, privacy level, and integration endpoints. For example, a typical output could look like: \n\n- Channel ID: 987654321\n- Name: gmhikaru\n- Status: Active\n- Created At: 2023-07-15T08:23:45Z\n- Members: 42\n- Tags: "team‑collaboration", "project‑alpha"\n- Notification Settings: Email: enabled, Push: disabled\n- Privacy: Public\n- Integration Endpoints: Webhook URL, API token\n\nIf the channel does not exist or the user lacks permission, the API would return an appropriate error message or an empty result set. This structured information allows clients to programmatically manage and display channel details within their applications.'}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:26:54
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='Keyword Analysis' api_name='PopularSitesForQuery' tool_input={'q': 'taylor swift'} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': 'Taylor\u202fSwift is an American singer‑songwriter who first rose to prominence in the mid‑2000s as a country‑pop artist. Born in 1989 in Pennsylvania, she moved to Nashville at 14 to pursue music, releasing her self‑titled debut in 2006. Her breakthrough came with the 2008 single “Love Story,” which topped the Billboard Hot\u202f100 and cemented her status as a pop‑country crossover star. Over the years, Swift has released a string of critically acclaimed albums—*Fearless* (2008), *Speak\u202fNow* (2010), *Red* (2012), *1989* (2014), *Reputation* (2017), *Lover* (2019), *Folklore* (2020), *Evermore* (2020), and *Midnights* (2022). She has earned numerous awards, including 11 Grammys, and is known for her candid songwriting, which often draws from personal experiences. Swift’s influence extends beyond music; she is an advocate for artists’ rights, gender equality, and LGBTQ+ causes, and she has a significant cultural impact worldwide. '}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:26:54
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='Keyword Analysis' api_name='QueryKeywords' tool_input={'q': 'cyberia game review'} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': 'Cyberia is a fast‑paced, action‑adventure game that blends classic arcade mechanics with modern storytelling. Players control a cyber‑net hacker navigating neon‑lit cityscapes, battling rogue AI and corrupt corporate drones. The game’s pixel‑art aesthetic pays homage to 80s cyberpunk while offering fluid, responsive controls that feel satisfying on both keyboard and controller. Combat is varied, with a mix of melee, ranged, and hacking mini‑games that keep the pacing fresh. The narrative is delivered through witty dialogue and environmental storytelling, giving the player a sense of agency in a sprawling, open‑world metropolis. Sound design is a standout, featuring a synth‑heavy soundtrack that complements the high‑energy gameplay. Overall, Cyberia delivers a polished, nostalgic experience that will appeal to fans of retro‑style action titles and cyberpunk enthusiasts alike.'}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:26:57
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='Measurement Units Converter' api_name='Measurements' tool_input={} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': ''}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:26:57
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='Measurement Units Converter' api_name='Measurements' tool_input={} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': ''}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:28:25
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='TheClique' api_name='Transfermarkt search' tool_input={'name': 'messi'} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': "Lionel Messi, born June 24, 1987, is an Argentine professional footballer widely regarded as one of the greatest players of all time. He spent the majority of his career at FC Barcelona, where he won 10 La Liga titles, 7 Copa del Rey trophies, and 4 UEFA Champions League titles. Messi has earned seven Ballon d'Or awards, breaking the record for most wins. Known for his dribbling, vision, and goal‑scoring prowess, he has set numerous records, including most goals for a single club and most goals in a calendar year. In 2021, he transferred to Paris Saint‑Germain, continuing to showcase elite performance. Internationally, Messi led Argentina to victory in the 2021 Copa América and the 2022 FIFA World Cup, cementing his legacy as a national hero. His influence extends beyond the pitch, with philanthropic efforts through the Leo Messi Foundation."}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:28:25
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='TheClique' api_name='Transfermarkt details' tool_input={'type_s': 'verein', 'other': 'startseite', 'id_talent': '583', 'part_slug': 'fc-paris-saint-germain'} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': "Club: FC Paris Saint‑Germain (PSG)\n\n- **Type**: Verein (Club)\n- **Slug**: fc-paris-saint-germain\n- **ID Talent**: 583 (used internally to reference the club’s talent database)\n- **Founded**: 1970 (merger of Paris FC and Stade Saint‑Germain)\n- **Stadium**: Parc des Princes, Paris (capacity ~48,000)\n- **League**: Ligue 1 (France)\n- **Current Manager**: Christophe Galtier (as of 2024)\n- **Recent Achievements**: 7 Ligue 1 titles (2013‑14, 2014‑15, 2015‑16, 2017‑18, 2018‑19, 2021‑22, 2022‑23), 10 Coupe de France titles, 6 Coupe de la Ligue titles, and 2 UEFA Champions League finals (2019, 2020).\n- **Notable Players**: Kylian Mbappé, Neymar Jr., Angel Di Maria, Marco Verratti, and many national team stars.\n- **Youth Academy**: Known for producing talents like Kylian Mbappé and N'Golo Kanté.\n- **Financials**: One of the richest clubs in Europe, with a 2023 revenue of €200+ million.\n- **Fan Base**: Global following with millions of supporters and a strong presence on social media.\n\nThis summary provides a snapshot of PSG’s history, structure, and recent success, useful for fans, analysts, and potential sponsors."}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:28:48
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='Kick.com API | Kick API' api_name='Get Channel Clips' tool_input={'cursor': '0', 'channel_name': 'gmhikaru'} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': 'Here is a simulated response for retrieving messages from the channel "gmhikaru" starting at cursor 0:\n\n{\n  "channel_name": "gmhikaru",\n  "cursor": "0",\n  "messages": [\n    {\n      "id": "msg001",\n      "timestamp": "2024-01-01T12:00:00Z",\n      "user": "alice",\n      "content": "Welcome to the gmhikaru channel!"\n    },\n    {\n      "id": "msg002",\n      "timestamp": "2024-01-01T12:05:23Z",\n      "user": "bob",\n      "content": "Thanks, Alice! Happy to be here."\n    },\n    {\n      "id": "msg003",\n      "timestamp": "2024-01-01T12:10:45Z",\n      "user": "carol",\n      "content": "Does anyone have updates on the project timeline?"\n    }\n  ],\n  "next_cursor": "3",\n  "has_more": true\n}\n\nThis example shows three messages retrieved from the channel, along with a next_cursor value that can be used to fetch subsequent messages. The structure includes typical fields such as message id, timestamp, user, and content, and indicates whether more messages are available.'}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:28:48
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='Kick.com API | Kick API' api_name='Get Channel Details' tool_input={'channel_name': 'gmhikaru'} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': 'The API is intended to retrieve detailed information about a messaging or communication channel based on the provided channel name. In this case, the input specifies the channel name as "gmhikaru". The expected response would include key metadata such as the unique channel identifier, creation timestamp, current status (e.g., active, archived, or pending), the number of participants or members, and any associated tags or categories. Additionally, the response might provide configuration details like notification settings, privacy level, and integration endpoints. For example, a typical output could look like: \n\n- Channel ID: 987654321\n- Name: gmhikaru\n- Status: Active\n- Created At: 2023-07-15T08:23:45Z\n- Members: 42\n- Tags: "team‑collaboration", "project‑alpha"\n- Notification Settings: Email: enabled, Push: disabled\n- Privacy: Public\n- Integration Endpoints: Webhook URL, API token\n\nIf the channel does not exist or the user lacks permission, the API would return an appropriate error message or an empty result set. This structured information allows clients to programmatically manage and display channel details within their applications.'}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:28:52
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='Keyword Analysis' api_name='PopularSitesForQuery' tool_input={'q': 'taylor swift'} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': 'Taylor\u202fSwift is an American singer‑songwriter who first rose to prominence in the mid‑2000s as a country‑pop artist. Born in 1989 in Pennsylvania, she moved to Nashville at 14 to pursue music, releasing her self‑titled debut in 2006. Her breakthrough came with the 2008 single “Love Story,” which topped the Billboard Hot\u202f100 and cemented her status as a pop‑country crossover star. Over the years, Swift has released a string of critically acclaimed albums—*Fearless* (2008), *Speak\u202fNow* (2010), *Red* (2012), *1989* (2014), *Reputation* (2017), *Lover* (2019), *Folklore* (2020), *Evermore* (2020), and *Midnights* (2022). She has earned numerous awards, including 11 Grammys, and is known for her candid songwriting, which often draws from personal experiences. Swift’s influence extends beyond music; she is an advocate for artists’ rights, gender equality, and LGBTQ+ causes, and she has a significant cultural impact worldwide. '}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:28:52
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='Keyword Analysis' api_name='QueryKeywords' tool_input={'q': 'cyberia game review'} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': 'Cyberia is a fast‑paced, action‑adventure game that blends classic arcade mechanics with modern storytelling. Players control a cyber‑net hacker navigating neon‑lit cityscapes, battling rogue AI and corrupt corporate drones. The game’s pixel‑art aesthetic pays homage to 80s cyberpunk while offering fluid, responsive controls that feel satisfying on both keyboard and controller. Combat is varied, with a mix of melee, ranged, and hacking mini‑games that keep the pacing fresh. The narrative is delivered through witty dialogue and environmental storytelling, giving the player a sense of agency in a sprawling, open‑world metropolis. Sound design is a standout, featuring a synth‑heavy soundtrack that complements the high‑energy gameplay. Overall, Cyberia delivers a polished, nostalgic experience that will appeal to fans of retro‑style action titles and cyberpunk enthusiasts alike.'}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:28:54
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='Measurement Units Converter' api_name='Measurements' tool_input={} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': ''}
+<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>
+TIME: 2026-01-01 22:28:54
+TYPE: cached_real_response
+REQUEST: category='Data' tool_name='Measurement Units Converter' api_name='Measurements' tool_input={} strip='' toolbench_key='EMPTY'
+RESPONSE: {'error': '', 'response': ''}
+<<<<<<<<<<<<<<<<<<<<<<<
