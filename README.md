@@ -1,11 +1,11 @@
-# Multi-Agent Framework Experiments
+# MASBench: Multi-Agent Systems Benchmark Suite
 
 [![Python 3.12.3](https://img.shields.io/badge/python-3.12.3-blue.svg)](https://www.python.org/downloads/)
 [![Dependencies](https://img.shields.io/badge/dependencies-pinned-green.svg)](requirements.lock)
 [![Research](https://img.shields.io/badge/status-research-orange.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A comprehensive experimental framework for systematic evaluation of large language model (LLM)-based single-agent and multi-agent systems across multiple dimensions: memory architectures, reasoning strategies, tool integration, coordination protocols, specialization patterns, and framework overhead analysis.
+MASBench is a comprehensive benchmark suite for systematic evaluation of large language model (LLM)-based single-agent and multi-agent systems (MAS) across multiple dimensions: memory architectures, reasoning strategies, tool integration, coordination protocols, specialization patterns, and framework overhead analysis.
 
 ## Overview
 
@@ -170,9 +170,9 @@ All experiments are designed for **full reproducibility** from a clean Python en
 
 ## 📄 Citation & Usage
 
-This repository supports ongoing research in multi-agent systems, memory architectures, and LLM evaluation methodologies.
+MASBench supports ongoing research in multi-agent systems, memory architectures, and LLM evaluation methodologies.
 
-If you use or extend this codebase, please cite the corresponding papers.
+If you use or extend this benchmark suite, please cite the corresponding papers.
 
 ---
 

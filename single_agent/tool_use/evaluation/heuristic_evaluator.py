@@ -86,4 +86,3 @@ class HeuristicEvaluator:
             "reason": f"Heuristic evaluation (official evaluator not available). API call score: {api_call_score:.2f}",
             "evaluation_method": "heuristic"
         }
-

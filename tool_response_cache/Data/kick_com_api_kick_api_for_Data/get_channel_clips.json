@@ -1,0 +1,6 @@
+{
+    "{'cursor': '0', 'channel_name': 'gmhikaru'}": {
+        "error": "",
+        "response": "Here is a simulated response for retrieving messages from the channel \"gmhikaru\" starting at cursor 0:\n\n{\n  \"channel_name\": \"gmhikaru\",\n  \"cursor\": \"0\",\n  \"messages\": [\n    {\n      \"id\": \"msg001\",\n      \"timestamp\": \"2024-01-01T12:00:00Z\",\n      \"user\": \"alice\",\n      \"content\": \"Welcome to the gmhikaru channel!\"\n    },\n    {\n      \"id\": \"msg002\",\n      \"timestamp\": \"2024-01-01T12:05:23Z\",\n      \"user\": \"bob\",\n      \"content\": \"Thanks, Alice! Happy to be here.\"\n    },\n    {\n      \"id\": \"msg003\",\n      \"timestamp\": \"2024-01-01T12:10:45Z\",\n      \"user\": \"carol\",\n      \"content\": \"Does anyone have updates on the project timeline?\"\n    }\n  ],\n  \"next_cursor\": \"3\",\n  \"has_more\": true\n}\n\nThis example shows three messages retrieved from the channel, along with a next_cursor value that can be used to fetch subsequent messages. The structure includes typical fields such as message id, timestamp, user, and content, and indicates whether more messages are available."
+    }
+}

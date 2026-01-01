@@ -8,54 +8,407 @@ This directory provides a complete wrapper around StableToolBench to evaluate an
 
 ## 📋 Table of Contents
 
-1. [Architecture Overview](#architecture-overview)
-2. [Directory Structure](#directory-structure)
-3. [Wrapper Components](#wrapper-components)
-4. [Original Code Location](#original-code-location)
-5. [Prerequisites](#prerequisites)
-6. [Setup Instructions](#setup-instructions)
-7. [Running Experiments](#running-experiments)
-8. [Evaluation Process](#evaluation-process)
+1. [Overview](#overview)
+2. [What We Implemented](#what-we-implemented)
+3. [Quick Start](#quick-start)
+4. [How to Run the Server](#how-to-run-the-server)
+5. [How to Run Benchmark](#how-to-run-benchmark)
+6. [Evaluation Scores](#evaluation-scores)
+7. [Architecture Overview](#architecture-overview)
+8. [Directory Structure](#directory-structure)
 9. [Troubleshooting](#troubleshooting)
 
 ---
 
-## 🏗️ Architecture Overview
+## Overview
 
-This evaluation framework wraps StableToolBench's original code to provide a clean, reusable interface following SOLID principles. The architecture consists of:
+**Original StableToolBench**: All original code remains unchanged in `StableToolBench/` directory.  
+**Our Additions**: Minimal wrapper code in `single_agent/tool_use/` (this directory).
+
+This framework provides:
+- ✅ **Benchmark Runner** (`run_benchmark.py`): Simple interface to test any agent
+- ✅ **Server Modifications**: CPU-friendly API simulation with GPT fallback
+- ✅ **Evaluation Wrapper**: Clean interface to StableToolBench's original evaluator
+- ✅ **API Call Score**: Verifies actual tool usage by parsing `answer_details`
+
+---
+
+## What We Implemented
+
+### 1. Server Modifications (`StableToolBench/server/main.py`)
+
+**Changes**:
+- ✅ Load OpenAI API key from `.env` file in root folder (`MASBench/.env`)
+- ✅ Changed default model to `gpt-4o-mini` (CPU-friendly, cost-effective)
+- ✅ Fixed config file path to work from any directory
+
+**What it does**:
+- Provides `/virtual` endpoint for API simulation
+- Cache-first approach: checks cache, then real API, then GPT fallback
+- Uses GPT-4o-mini to generate API responses when cache misses
+
+**Original code location**: `StableToolBench/server/main.py` (modified, but minimal changes)
+
+---
+
+### 2. Benchmark Runner (`run_benchmark.py`)
+
+**Purpose**: Test any framework's ability to use tools to solve problems.
+
+**What it does**:
+1. Loads queries from StableToolBench benchmark files
+2. Executes gold APIs via server to generate gold answers
+3. Runs your agent to generate system answers
+4. Compares using StableToolBench's original evaluation
+5. Saves results to `results/tools/` folder
+
+**Key Components**:
+- `GoldAnswerGenerator`: Executes gold APIs via server
+- `extract_called_apis_from_answer_details()`: Parses `answer_details` to extract tool calls
+- `calculate_api_call_score()`: Calculates proportion of gold APIs called
+- `run_benchmark()`: Main function that orchestrates the evaluation
+
+**Dependencies**: Uses original StableToolBench code for:
+- Query loading: `StableToolBench/solvable_queries/test_instruction/*.json`
+- Evaluation: `StableToolBench/toolbench/tooleval/` (via our wrapper)
+- Server: `StableToolBench/server/main.py` (modified)
+
+---
+
+### 3. Evaluation Wrapper (`evaluation/`)
+
+**Purpose**: Wrapper around StableToolBench's original evaluator.
+
+**Components**:
+- `StableToolBenchEvaluator`: Main evaluator class
+- `EvaluatorLoader`: Loads original StableToolBench evaluator
+
+**What it does**: Provides a clean interface to StableToolBench's evaluation without modifying original code.
+
+---
+
+## Quick Start
+
+### Prerequisites
+
+1. **Python dependencies**:
+   ```bash
+   pip install fastapi uvicorn python-dotenv openai pyyaml requests slowapi
+   ```
+
+2. **OpenAI API Key**: Create `.env` file in root folder (`MASBench/.env`):
+   ```bash
+   cd /path/to/MASBench
+   echo "OPENAI_API_KEY=your-openai-api-key-here" > .env
+   ```
+
+### Step 1: Start the Server (from a separate terminal)
+
+```bash
+python single_agent/tool_use/StableToolBench/server/main.py
+```
+
+**Expected output**:
+```
+Loaded .env file from: /path/to/MASBench/.env
+OpenAI API key loaded successfully
+INFO:     Uvicorn running on http://0.0.0.0:8080
+```
+
+**Server endpoint**: `http://localhost:8080/virtual`
+
+### Step 2: Run Benchmark
+
+```python
+from run_benchmark import run_benchmark
+
+# Your agent must have an answer() method
+class MyAgent:
+    def answer(self, query: str):
+        # Your agent logic here
+        return {
+            "answer": {
+                "final_answer": "Your answer",
+                "answer_details": [...]  # Tool calls in ExecutionGraph format
+            }
+        }
+
+# Run benchmark
+agent = MyAgent()
+results = run_benchmark(
+    agent=agent,
+    test_set="G1_instruction",
+    max_queries=10,
+    agent_name="my_agent"
+)
+```
+
+Results are saved to: `results/tools/{agent_name}_{test_set}_{timestamp}.json`
+
+---
+
+## How to Run the Server
+
+### Prerequisites
+
+1. **Python dependencies**:
+   ```bash
+   pip install fastapi uvicorn python-dotenv openai pyyaml requests slowapi
+   ```
+
+2. **OpenAI API Key**: Create `.env` file in root folder (`MASBench/.env`):
+   ```bash
+   cd /path/to/MASBench
+   echo "OPENAI_API_KEY=your-openai-api-key-here" > .env
+   ```
+
+### Start the Server
+
+```bash
+python single_agent/tool_use/StableToolBench/server/main.py
+```
+
+**Expected output**:
+```
+Loaded .env file from: /path/to/MASBench/.env
+OpenAI API key loaded successfully
+INFO:     Uvicorn running on http://0.0.0.0:8080
+```
+
+**Server endpoint**: `http://localhost:8080/virtual`
+
+### How the Server Works
+
+```
+API Call Request
+        ↓
+1) Check cache (JSON file)
+        ↓
+   Cache hit? → Return cached response (instant)
+        ↓
+   Cache miss? → Continue
+        ↓
+2) Try real API call (optional, may fail)
+        ↓
+   Success? → Save to cache, return response
+        ↓
+   Failed? → Continue
+        ↓
+3) GPT fallback (gpt-4o-mini)
+        ↓
+   Generate simulated response using OpenAI API
+        ↓
+   Save to cache for future use
+        ↓
+   Return response
+```
+
+**Cache location**: `StableToolBench/server/tool_response_cache/`  
+**Cache structure**: `category/tool_name/api_name.json`
+
+For detailed server setup instructions, see: `StableToolBench/server/SERVER_SETUP.md`
+
+---
+
+## How to Run Benchmark
+
+### Step 1: Implement Your Agent
+
+Your agent must have an `answer(query: str) -> Dict[str, Any]` method:
+
+```python
+class MyAgent:
+    def answer(self, query: str) -> Dict[str, Any]:
+        """
+        Generate answer for query.
+        
+        Args:
+            query: The query string
+            
+        Returns:
+            Dict with 'answer' key containing:
+            {
+                "final_answer": str,
+                "answer_details": List[Dict]  # ExecutionGraph format
+            }
+        """
+        # Your agent logic here
+        # Can use tools, call APIs, etc.
+        return {
+            "answer": {
+                "final_answer": "Your final answer",
+                "answer_details": [...]  # Tool calls in ExecutionGraph format
+            }
+        }
+```
+
+### Step 2: Run Benchmark
+
+```python
+from run_benchmark import run_benchmark
+
+# Create your agent
+agent = MyAgent()
+
+# Run benchmark
+results = run_benchmark(
+    agent=agent,
+    test_set="G1_instruction",  # or other test sets
+    max_queries=10,  # None for all queries
+    server_url="http://localhost:8080/virtual",
+    evaluator_model="gpt-4o-mini",
+    agent_name="my_agent"
+)
+```
+
+### Step 3: Check Results
+
+Results are saved to: `results/tools/{agent_name}_{test_set}_{timestamp}.json`
+
+**Result structure**:
+```json
+{
+  "metadata": {
+    "agent_name": "my_agent",
+    "test_set": "G1_instruction",
+    "num_queries": 10,
+    "timestamp": "2024-01-01T12:00:00",
+    "overall_time": 123.45
+  },
+  "summary": {
+    "total_queries": 10,
+    "solved_count": 7,
+    "solved_percentage": 70.0,
+    "average_sopr_score": 0.75,
+    "average_api_call_score": 0.85,
+    ...
+  },
+  "results": [
+    {
+      "query_id": "123",
+      "query_text": "...",
+      "gold_apis": [
+        ["TheClique", "Songkick concert"],
+        ["TheClique", "Songkick artist"]
+      ],
+      "scores": {
+        "sopr_score": 1.0,
+        "api_call_score": 0.5,
+        "answer_status": "Solved"
+      },
+      "called_apis": [
+        ["TheClique", "Songkick concert"]
+      ],
+      "timing": {
+        "gold_answer_time": 0.5,
+        "system_answer_time": 2.3,
+        "evaluation_time": 1.2
+      },
+      ...
+    },
+    ...
+  ]
+}
+```
+
+---
+
+## Evaluation Scores
+
+### SoPR Score (Solvable Pass Rate)
+
+**What it measures**: Whether the agent successfully solved the query.
+
+**Values**:
+- `1.0` = **Solved**: Agent successfully addressed the query
+- `0.5` = **Unsure**: Agent partially addressed the query or evaluator is uncertain
+- `0.0` = **Unsolved**: Agent failed to address the query
+
+**How it's computed**: Uses StableToolBench's original evaluator from `StableToolBench/toolbench/tooleval/evaluators/registered_cls/tooleval.py`
+
+**Original code**: `StableToolBench/toolbench/tooleval/evaluators/registered_cls/tooleval.py::OpenAINormalizedEvaluator.check_solve_query()`
+
+The evaluator:
+1. Takes query and final answer
+2. Uses GPT to determine if the answer solves the query
+3. Returns "Solved", "Unsure", or "Unsolved"
+4. Converted to scores: Solved=1.0, Unsure=0.5, Unsolved=0.0
+
+**Reference**: See `StableToolBench/toolbench/tooleval/evaluators/tooleval_gpt-3.5-turbo_default/template.txt` for evaluation prompt.
+
+---
+
+### API Call Score
+
+**What it measures**: Proportion of correctly called APIs (gold APIs vs system-called APIs).
+
+**Values**: `0.0` to `1.0`
+
+**How it's computed**:
+1. Extract called APIs from system answer: Parse `answer_details` (ExecutionGraph format) to find all tool calls
+2. Extract tool name and API name from each tool call's `message` field (format: `tool_name_api_name`)
+3. Compare to gold APIs: Gold APIs come from `query["relevant APIs"]` or `query["relevant_apis"]`
+4. Calculate intersection: How many gold APIs were actually called
+5. Score: `correct_calls / total_gold_apis`
+
+**Example**:
+- Gold APIs: `[["TheClique", "Songkick concert"], ["TheClique", "Songkick artist"]]`
+- System called: `[["TheClique", "Songkick concert"]]`
+- Score: `1 / 2 = 0.5`
+
+**Implementation**: 
+- Function `extract_called_apis_from_answer_details()` in `run_benchmark.py` recursively parses the ExecutionGraph structure
+- Function `calculate_api_call_score()` compares called APIs with gold APIs
+- This verifies that the system actually used tools, not just guessed the answer
+
+---
+
+### Answer Status
+
+**Values**: `"Solved"`, `"Unsure"`, `"Unsolved"`, or `"Error"`
+
+**Source**: Same as SoPR score, from StableToolBench's evaluator.
+
+---
+
+### Finish Call Check
+
+**What it measures**: Whether the answer contains a Finish call (required by StableToolBench).
+
+**Values**: `True` or `False`
+
+**How it's computed**: Checks if `answer_details` contains a node with `name="Finish"`.
+
+**Reference**: `utils/answer_validator.py::check_has_finish()`
+
+---
+
+## Architecture Overview
+
+This evaluation framework wraps StableToolBench's original code to provide a clean, reusable interface. The architecture consists of:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│              Your Framework (LangGraph, CrewAI, etc.)   │
+│              Your Agent (with answer() method)         │
 └────────────────────┬──────────────────────────────────┘
                      │
                      ▼
 ┌─────────────────────────────────────────────────────────┐
-│         FrameworkInterface (Abstract Base Class)         │
-│  - setup_tools(tools: dict)                              │
-│  - reset()                                                │
-│  - answer(query: str) -> str                            │
+│              run_benchmark() Function                    │
+│  - Loads queries                                         │
+│  - Generates gold answers (via server)                   │
+│  - Runs agent to get system answers                     │
+│  - Evaluates using StableToolBenchEvaluator             │
+│  - Calculates API call scores                           │
+│  - Saves results to JSON                                │
 └────────────────────┬──────────────────────────────────┘
                      │
                      ▼
 ┌─────────────────────────────────────────────────────────┐
-│              FrameworkAdapter (Wrapper)                    │
-│  Adapts FrameworkInterface to BaseModelAdapter           │
-└────────────────────┬──────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│                  QAPipeline (Wrapper)                    │
-│  Wraps StableToolBench's QAPipeline                     │
-└────────────────────┬──────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│         StableToolBenchEvaluator (Modular)               │
+│         StableToolBenchEvaluator (Wrapper)               │
 │  - Evaluates answers using SoPR                          │
 │  - Checks for Finish calls                                │
-│  - Calculates API call scores                             │
-│  - Saves detailed results to JSON                        │
+│  - Uses original StableToolBench evaluator              │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -63,524 +416,212 @@ This evaluation framework wraps StableToolBench's original code to provide a cle
 
 ## 📁 Directory Structure
 
-The codebase is organized into modular components following SOLID principles:
-
 ```
 single_agent/tool_use/
-├── core/                          # Core interfaces and adapters
-│   ├── __init__.py
-│   ├── framework_interface.py    # FrameworkInterface (Interface Segregation)
-│   └── framework_adapter.py      # FrameworkAdapter (Adapter Pattern, Dependency Inversion)
+├── StableToolBench/          # Original code (mostly unchanged)
+│   ├── server/
+│   │   ├── main.py          # Modified: .env loading, gpt-4o-mini
+│   │   ├── config.yml        # Modified: gpt-4o-mini
+│   │   └── SERVER_SETUP.md   # Server setup guide
+│   ├── solvable_queries/    # Original benchmark queries
+│   └── toolbench/           # Original evaluation code
 │
-├── evaluation/                     # Evaluation components
-│   ├── __init__.py
-│   ├── evaluator.py              # Main evaluator (composition, orchestration)
-│   ├── evaluator_loader.py       # EvaluatorLoader (Single Responsibility)
-│   ├── api_scorer.py             # APIScorer (Single Responsibility)
-│   └── heuristic_evaluator.py   # HeuristicEvaluator (Single Responsibility)
-│
-├── evaluation_helpers/            # Reusable evaluation utilities
-│   ├── __init__.py
-│   ├── result_formatter.py       # Formats results and calculates statistics
-│   ├── result_saver.py            # Saves results to JSON files
-│   └── evaluation_printer.py     # Prints evaluation progress and results
-│
-├── pipeline/                      # Pipeline wrappers
-│   ├── __init__.py
-│   └── qa_pipeline.py            # QAPipeline (Open/Closed Principle)
-│
-├── utils/                         # Utility functions
-│   ├── __init__.py
-│   ├── query_loader.py           # QueryLoader (Single Responsibility)
-│   └── answer_validator.py       # AnswerValidator (Single Responsibility)
-│
-├── tests/                         # Test scripts
-│   ├── __init__.py
-│   ├── test_benchmark.py         # Main test script
-│   ├── fake_answer_generator.py  # FakeAnswerGenerator (Single Responsibility)
-│   └── test_*.py                 # Unit tests for each component
-│
-└── StableToolBench/               # Original StableToolBench code (NOT MODIFIED)
+├── run_benchmark.py          # Our benchmark runner
+├── utils/                    # Our utilities
+│   └── query_loader.py       # Query loading
+└── evaluation/               # Our evaluation wrapper
+    └── evaluator.py         # Main evaluator
 ```
-
-### Component Dependencies
-
-```
-StableToolBenchEvaluator (orchestrator)
-    ├── EvaluatorLoader (loads evaluator)
-    ├── APIScorer (calculates API scores)
-    ├── HeuristicEvaluator (fallback evaluation)
-    │   └── APIScorer (dependency)
-    └── AnswerValidator (validates answers)
-
-FrameworkAdapter
-    └── FrameworkInterface (depends on abstraction)
-
-QAPipeline
-    └── BaseModelAdapter (depends on abstraction)
-
-QueryLoader (independent)
-FakeAnswerGenerator (independent)
-```
-
-### SOLID Principles Applied
-
-- **Single Responsibility**: Each class has one clear purpose
-- **Open/Closed**: Open for extension, closed for modification
-- **Liskov Substitution**: Subtypes are substitutable for base types
-- **Interface Segregation**: Focused, specific interfaces
-- **Dependency Inversion**: Depend on abstractions, not concretions
 
 ---
 
-## 🔧 Wrapper Components
+## Example: Running with LLM Agent
 
-### 1. `core/framework_interface.py`
+```python
+from run_benchmark import run_benchmark
+from openai import OpenAI
+import os
+import json
+import requests
 
-**Purpose**: Abstract base class that any framework must implement.
+class LLMAgent:
+    """Simple LLM agent that makes one API call for testing."""
+    
+    def __init__(self, model="gpt-4o-mini", server_url="http://localhost:8080/virtual"):
+        api_key = os.getenv('OPENAI_API_KEY')
+        self.client = OpenAI(api_key=api_key)
+        self.model = model
+        self.server_url = server_url
+    
+    def answer(self, query: str):
+        answer_details = []
+        
+        # Make one API call for testing
+        try:
+            api_payload = {
+                "category": "Data",
+                "tool_name": "TheClique",
+                "api_name": "Transfermarkt search",
+                "tool_input": {"query": "Lionel Messi"},
+                "strip": "",
+                "toolbench_key": "EMPTY"
+            }
+            api_response = requests.post(self.server_url, json=api_payload, timeout=10)
+            if api_response.status_code == 200:
+                api_result = api_response.json()
+                answer_details.append({
+                    "role": "tool",
+                    "message": json.dumps({
+                        "name": "TheClique_Transfermarkt search",
+                        "arguments": {"query": "Lionel Messi"},
+                        "response": api_result.get("response", "")
+                    }),
+                    "next": []
+                })
+        except Exception:
+            pass
+        
+        # Generate final answer with LLM
+        response = self.client.chat.completions.create(
+            model=self.model,
+            messages=[
+                {"role": "system", "content": "Answer the question based on the information provided."},
+                {"role": "user", "content": query}
+            ]
+        )
+        
+        final_answer = response.choices[0].message.content
+        
+        # Add Finish call
+        answer_details.append({
+            "role": "tool",
+            "message": json.dumps({
+                "name": "Finish",
+                "arguments": {
+                    "return_type": "give_answer",
+                    "final_answer": final_answer
+                },
+                "response": ""
+            }),
+            "next": []
+        })
+        
+        return {
+            "answer": {
+                "final_answer": final_answer,
+                "answer_details": answer_details
+            }
+        }
 
-**Methods**:
-- `setup_tools(tools: dict)`: Called once before evaluation to set up available tools
-- `reset()`: Reset conversation/memory/internal state between queries
-- `answer(query: str) -> str`: Answer the query and return only the final answer string
+# Run benchmark
+agent = LLMAgent()
+results = run_benchmark(
+    agent=agent,
+    test_set="G1_instruction",
+    max_queries=5,
+    agent_name="llm_agent"
+)
+```
+
+---
+
+## Integration with Frameworks
+
+Your framework agent should:
+1. Accept query as input
+2. Use tools (which call the server at `http://localhost:8080/virtual`)
+3. Return answer in StableToolBench format
 
 **Example**:
 ```python
-from core import FrameworkInterface
-
-class MyFramework(FrameworkInterface):
-    def setup_tools(self, tools: dict):
-        self.tools = tools
+class FrameworkAgent:
+    def __init__(self):
+        # Setup your framework
+        self.framework = YourFramework()
+        # Set SERVICE_URL so framework uses our server
+        os.environ['SERVICE_URL'] = 'http://localhost:8080/virtual'
     
-    def reset(self):
-        self.conversation_history = []
-    
-    def answer(self, query: str) -> str:
-        # Your framework logic here
-        return "Final answer string"
-```
-
-### 2. `core/framework_adapter.py`
-
-**Purpose**: Wraps a `FrameworkInterface` instance to conform to StableToolBench's `BaseModelAdapter` interface.
-
-**Usage**:
-```python
-from core import FrameworkInterface, FrameworkAdapter
-
-my_framework = MyFramework()  # Implements FrameworkInterface
-adapter = FrameworkAdapter(my_framework)
-# Now adapter can be used with QAPipeline
-```
-
-### 3. `pipeline/qa_pipeline.py`
-
-**Purpose**: Wrapper around StableToolBench's `QAPipeline` for easier integration.
-
-**Usage**:
-```python
-from pipeline import QAPipeline
-
-pipeline = QAPipeline(
-    tool_dir="StableToolBench/toolenv/tools",
-    query_dir="StableToolBench/solvable_queries",
-    model=adapter,  # FrameworkAdapter instance
-    use_mirrorapi_cache=True  # Use cache/MirrorAPI (default)
-)
-
-results = pipeline.run()
-```
-
-### 4. `evaluation/evaluator.py`
-
-**Purpose**: Modular evaluator that encapsulates all evaluation logic.
-
-**Features**:
-- Uses `.env` file for OpenAI API key (required)
-- Wraps StableToolBench's official evaluator
-- Provides fallback heuristic evaluation
-- Returns SoPR scores (0.0, 0.5, 1.0) and answer status
-
-**Usage**:
-```python
-from evaluation import StableToolBenchEvaluator
-
-evaluator = StableToolBenchEvaluator(
-    model_name="gpt-4o-mini",  # Model for evaluation
-    verbose=True
-)
-
-result = evaluator.evaluate_answer(query_dict, answer_dict)
-# Returns: {
-#     "sopr_score": 1.0,  # 0.0 (Unsolved), 0.5 (Unsure), 1.0 (Solved)
-#     "answer_status": "Solved",
-#     "has_finish": True,
-#     "api_call_score": 0.85,
-#     "reason": "...",
-#     "evaluation_time": 0.123,
-#     "evaluation_method": "official"  # or "heuristic"
-# }
-```
-
-### 5. `evaluation_helpers/` - Reusable Components
-
-**Purpose**: Common evaluation utilities that can be reused across framework evaluations.
-
-- **`result_formatter.py`**: Formats results and calculates summary statistics
-- **`result_saver.py`**: Saves results to JSON files with standardized naming
-- **`evaluation_printer.py`**: Prints evaluation progress and results to terminal
-
-**Usage**:
-```python
-from evaluation_helpers import ResultFormatter, ResultSaver, EvaluationPrinter
-
-formatter = ResultFormatter()
-saver = ResultSaver(Path("results/tools"))
-printer = EvaluationPrinter()
-
-# Format result
-result = formatter.format_result(query, answer, eval_result, gold_apis)
-
-# Calculate summary
-summary = formatter.calculate_summary(all_results)
-
-# Save results
-output_file = saver.save(results_data, "framework_name_config.json")
-
-# Print summary
-printer.print_summary(summary, output_file)
+    def answer(self, query: str):
+        # Your framework processes query
+        result = self.framework.process(query)
+        
+        # Convert to StableToolBench format
+        return {
+            "answer": {
+                "final_answer": result.final_answer,
+                "answer_details": result.answer_details  # ExecutionGraph format
+            }
+        }
 ```
 
 ---
 
-## 📍 Original Code Location
+## Troubleshooting
 
-**All original StableToolBench code is located in**: `single_agent/tool_use/StableToolBench/`
+### Server Issues
 
-**Key directories**:
-- `StableToolBench/toolbench/inference/`: Inference pipeline code
-- `StableToolBench/toolbench/tooleval/`: Evaluation metrics and evaluators
-- `StableToolBench/solvable_queries/`: Test queries
-- `StableToolBench/toolenv/tools/`: Tool specifications (~7k APIs)
-- `StableToolBench/server/`: MirrorAPI server (optional)
+**Problem**: Server not starting  
+**Solution**: 
+- Check `.env` file exists in root folder with `OPENAI_API_KEY`
+- Check port 8080 is not in use
+- Check Python dependencies are installed
+
+**Problem**: "Cache miss" errors  
+**Solution**: 
+- This is normal for first run
+- Server will generate responses using GPT and cache them
+- Subsequent runs will use cache
+
+### Benchmark Issues
+
+**Problem**: Agent returns wrong format  
+**Solution**: 
+- Ensure `answer()` returns dict with `"answer"` key
+- Ensure `answer_details` is in ExecutionGraph format
+- Ensure Finish call is included
+
+**Problem**: Evaluation fails  
+**Solution**: 
+- Check that evaluator can access OpenAI API
+- Check that answer format matches StableToolBench format
+- Check server logs for API call errors
+
+**Problem**: API call score is always 0  
+**Solution**: 
+- Check that `answer_details` contains tool calls (not just Finish)
+- Verify tool call format: `"name": "tool_name_api_name"` (with underscore)
+- Ensure tool calls are in ExecutionGraph format with `"role": "tool"`
+
+---
+
+## Summary
 
 **What we added**:
-- `core/`: Framework interface and adapter
-- `evaluation/`: Modular evaluation components
-- `evaluation_helpers/`: Reusable evaluation utilities
-- `pipeline/`: Pipeline wrapper
-- `utils/`: Utility functions
-- `tests/`: Test scripts
-- `README.md`: This documentation
-- `EVALUATION_PROCESS.md`: Detailed evaluation process explanation
+- ✅ Server modifications (`.env` loading, `gpt-4o-mini`)
+- ✅ Benchmark runner (`run_benchmark.py`)
+- ✅ Evaluation wrapper (clean interface to original evaluator)
+- ✅ API call score calculation (extracts tool calls from `answer_details`)
 
-**We did NOT modify any files inside `StableToolBench/` directory.**
+**What we use from original**:
+- ✅ Query files (`StableToolBench/solvable_queries/`)
+- ✅ Evaluation logic (`StableToolBench/toolbench/tooleval/`)
+- ✅ Server infrastructure (`StableToolBench/server/main.py`)
 
----
+**Scores computed**:
+- ✅ **SoPR Score**: From original evaluator (`StableToolBench/toolbench/tooleval/`)
+- ✅ **API Call Score**: Proportion of gold APIs called (extracted from `answer_details`)
+- ✅ **Answer Status**: Solved/Unsure/Unsolved from evaluator
 
-## 🔧 Prerequisites
+**Note**: API Call Score is computed by parsing `answer_details` (ExecutionGraph format) to extract tool calls. This verifies that the system actually used tools, not just guessed the answer based on the query.
 
-### Required Downloads
-
-1. **StableToolBench Repository**
-   - Already included in `StableToolBench/` directory
-   - Contains queries, tools, and evaluation code
-
-2. **Tool Cache (for GPT-based caching, no GPU required)**
-   - Download from: [StableToolBench Cache](https://huggingface.co/stabletoolbench/MirrorAPI-Cache)
-   - Or use GPT-based caching (no download needed, uses OpenAI API)
-
-3. **MirrorAPI Model (optional, requires GPU)**
-   - Download from: [MirrorAPI Model](https://huggingface.co/stabletoolbench/MirrorAPI)
-   - Only needed if you want to use MirrorAPI instead of GPT-based caching
-
-### Required API Keys
-
-**OpenAI API Key** (required for evaluation and GPT-based caching):
-- **Required**: Set in `.env` file: `OPENAI_API_KEY=your-key`
-- Create `.env` file in `single_agent/tool_use/` directory
-- The code will automatically load it using `python-dotenv`
-
-**Note**: The code creates a temporary key file in the system temp directory at runtime (required by StableToolBench's original evaluator). The source of truth is always the `.env` file, and the temporary file is automatically cleaned up by the system.
-
-### Python Dependencies
-
-```bash
-pip install python-dotenv openai langchain langgraph  # Add your framework dependencies
-pip install tenacity  # Required by StableToolBench evaluator
-```
+**Results saved to**: `results/tools/{agent_name}_{test_set}_{timestamp}.json`
 
 ---
 
-## 🚀 Setup Instructions
-
-### Step 1: Configure Environment
-
-**Create `.env` file** (required):
-```bash
-cd single_agent/tool_use
-echo "OPENAI_API_KEY=your-key" > .env
-```
-
-The `.env` file must be in the `single_agent/tool_use/` directory. The code will automatically load it using `python-dotenv`.
-
-### Step 2: Choose API Simulation Method
-
-You have two options for simulating API calls:
-
-#### Option A: GPT-based Caching (No GPU Required)
-
-**Best for**: Users without GPU access who want quick setup.
-
-**How it works**: Uses OpenAI API with a cache to simulate tool responses. No downloads required.
-
-**Setup**:
-1. Ensure `OPENAI_API_KEY` is set in `.env`
-2. Set `use_mirrorapi_cache=True` in `QAPipeline` (this uses GPT-based caching, not MirrorAPI)
-3. The system will automatically use OpenAI API for simulation
-
-**Example**:
-```python
-pipeline = QAPipeline(
-    tool_dir="StableToolBench/toolenv/tools",
-    query_dir="StableToolBench/solvable_queries",
-    model=adapter,
-    use_mirrorapi_cache=True  # Uses GPT-based caching
-)
-```
-
-#### Option B: MirrorAPI (Requires GPU)
-
-**Best for**: Users with GPU access who want trained model simulation.
-
-1. **Download MirrorAPI model**:
-   - From: https://huggingface.co/stabletoolbench/MirrorAPI
-   - Or MirrorAPI-Cache: https://huggingface.co/stabletoolbench/MirrorAPI-Cache
-
-2. **Start vLLM server**:
-   ```bash
-   vllm serve {model-path} --api-key EMPTY --port 12345 --served-model-name {model-name}
-   ```
-
-3. **Configure `StableToolBench/server/config_mirrorapi.yml`**:
-   ```yaml
-   api_key: "EMPTY"  # or your OpenAI key
-   api_base: "http://127.0.0.1:12345/v1"
-   model: "{model-name}"
-   temperature: 0
-   tools_folder: "./tools"
-   port: 8080
-   ```
-
-4. **Run server**:
-   ```bash
-   cd single_agent/tool_use/StableToolBench/server
-   python main_mirrorapi.py  # or main_mirrorapi_cache.py
-   ```
-
-### Step 3: Test the Setup
-
-Run the test script to verify everything works:
-
-```bash
-cd single_agent/tool_use
-python test_benchmark.py
-```
-
-This will:
-- Load queries from StableToolBench
-- Create fake answers (good, bad, partial)
-- Evaluate them using the evaluator
-- Save results to `results/tools/Test_benchmark_3queries_G1_instruction.json`
-
----
-
-## 🧪 Running Experiments
-
-### Template: Running with Your Framework
-
-```python
-import os
-import sys
-from pathlib import Path
-
-# Add current directory to path
-CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, CURRENT_DIR)
-
-from core import FrameworkInterface, FrameworkAdapter
-from pipeline import QAPipeline
-from evaluation import StableToolBenchEvaluator
-from evaluation_helpers import ResultFormatter, ResultSaver, EvaluationPrinter
-from utils import QueryLoader
-
-# 1. Implement your framework
-class MyFramework(FrameworkInterface):
-    def setup_tools(self, tools: dict):
-        # Set up tools in your framework
-        self.tools = tools
-    
-    def reset(self):
-        # Reset state
-        self.history = []
-    
-    def answer(self, query: str) -> str:
-        # Your framework logic
-        # Must return only the final answer string
-        return "Final answer"
-
-# 2. Create adapter
-framework = MyFramework()
-adapter = FrameworkAdapter(framework)
-
-# 3. Run evaluation pipeline
-pipeline = QAPipeline(
-    tool_dir="StableToolBench/toolenv/tools",
-    query_dir="StableToolBench/solvable_queries",
-    model=adapter,
-    use_mirrorapi_cache=True  # or False for MirrorAPI
-)
-
-results = pipeline.run()
-
-# 4. Evaluate results (optional, if you want custom evaluation)
-evaluator = StableToolBenchEvaluator(model_name="gpt-4o-mini")
-for query, answer in zip(queries, answers):
-    eval_result = evaluator.evaluate_answer(query, answer)
-    print(f"SoPR: {eval_result['sopr_score']}, Status: {eval_result['answer_status']}")
-```
-
-### Example: Test Script
-
-See `test_benchmark.py` for a complete example that:
-- Loads queries
-- Creates fake answers
-- Evaluates them
-- Saves results to JSON
-
----
-
-## 📊 Evaluation Process
-
-For detailed information about the evaluation process, see **[EVALUATION_PROCESS.md](EVALUATION_PROCESS.md)**.
-
-This document covers:
-- Test file structure and locations
-- Tool selection process (how agents access tools)
-- API execution (cache vs real calls)
-- Answer comparison (SoPR and API Call Score)
-- Evaluation metrics and result format
-
-### Quick Summary
-
-- **Test Files**: Queries loaded from `StableToolBench/solvable_queries/test_instruction/*.json`
-- **Tool Selection**: Agents have access to **ALL tools** in the tool directory, not just query-specific ones
-- **API Execution**: Uses cache/MirrorAPI by default (no real API calls needed)
-- **Evaluation Metrics**:
-  - **SoPR Score**: LLM-based semantic evaluation of final answer quality (0.0, 0.5, 1.0)
-  - **API Call Score**: Proportion of correctly called APIs (0.0 to 1.0)
-- **Results**: Saved to `results/tools/{framework}_{config}.json`
-
----
-
-## 🐛 Troubleshooting
-
-### Issue: "No OpenAI key found"
-
-**Solution**: 
-- Ensure `.env` file exists in `single_agent/tool_use/` directory
-- Check that `OPENAI_API_KEY=your-key` is set in `.env`
-- Verify the key is valid
-
-### Issue: "Could not import evaluation modules"
-
-**Solution**:
-- Check that `StableToolBench/` directory exists
-- Verify Python path includes `StableToolBench/` and `StableToolBench/toolbench/`
-- The code will fall back to heuristic evaluation if imports fail
-
-### Issue: "Finish Call: ✗ Missing"
-
-**Solution**:
-- Ensure your answer includes a "Finish" tool call in `answer_details`
-- The Finish call must be in the ExecutionGraph format:
-  ```python
-  {
-      "role": "tool",
-      "message": '{"name": "Finish", "arguments": {"final_answer": "..."}, "response": ""}',
-      "next": []
-  }
-  ```
-
-### Issue: All answers marked as "Unsolved"
-
-**Possible causes**:
-1. **Missing Finish call**: Add a Finish call to your answer
-2. **Generic final_answer**: The evaluator uses semantic judgment - make your `final_answer` specific and informative
-3. **Incomplete answer**: For multi-part queries, ensure all parts are addressed
-
-**Solution**:
-- Check that `final_answer` is specific and addresses the query
-- Verify Finish call exists
-- Review the evaluator's `reason` field in results
-
-### Issue: Import errors for modules
-
-**Solution**:
-- Use the new import structure:
-  ```python
-  from core import FrameworkInterface, FrameworkAdapter
-  from pipeline import QAPipeline
-  from evaluation import StableToolBenchEvaluator
-  from utils import QueryLoader, AnswerValidator
-  from evaluation_helpers import ResultFormatter, ResultSaver, EvaluationPrinter
-  ```
-
-### Issue: Results not saving
-
-**Solution**:
-- Check that `results/tools/` directory exists (created automatically)
-- Verify write permissions
-- Check the file path in your code (should be relative: `results/tools/`)
-
----
-
-## 📚 Additional Resources
-
-- **Evaluation Process Details**: [EVALUATION_PROCESS.md](EVALUATION_PROCESS.md) - Complete explanation of test files, tool selection, API execution, and answer comparison
-- **Original StableToolBench README**: `StableToolBench/README.md`
-- **StableToolBench Paper**: [arXiv](https://arxiv.org/pdf/2403.07714.pdf)
-- **StableToolBench Project**: [Website](https://zhichengg.github.io/stb.github.io/)
-
----
-
-## 🤝 Contributing
-
-When adding new frameworks:
-
-1. Implement `FrameworkInterface` in your framework class (from `core/framework_interface.py`)
-2. Use `FrameworkAdapter` to wrap it (from `core/framework_adapter.py`)
-3. Use `QAPipeline` to run evaluation (from `pipeline/qa_pipeline.py`)
-4. Use `StableToolBenchEvaluator` for custom evaluation logic (from `evaluation/evaluator.py`)
-5. Use `evaluation_helpers` for result formatting and saving
-6. Save results to `results/tools/{framework_name}_{config}.json`
-
----
-
-## 📝 Notes
-
-- **Original Code**: All StableToolBench code is in `StableToolBench/` directory and is **not modified**
-- **Wrapper Files**: Our additions are organized in `core/`, `evaluation/`, `pipeline/`, `utils/`, and `evaluation_helpers/` directories
-- **API Keys**: Always use `.env` file, never commit API keys
-- **Evaluation**: See [EVALUATION_PROCESS.md](EVALUATION_PROCESS.md) for detailed evaluation process
-- **Finish Call**: Required by StableToolBench - must be included in answers
-
----
-
-## 🙋 Questions?
-
-For issues or questions:
-1. Check this README first
-2. Review [EVALUATION_PROCESS.md](EVALUATION_PROCESS.md) for evaluation details
-3. Review `test_benchmark.py` for examples
-4. Check original StableToolBench documentation in `StableToolBench/README.md`
+## References
+
+- **Original StableToolBench**: See `StableToolBench/README.md`
+- **Server Setup**: See `StableToolBench/server/SERVER_SETUP.md`
+- **Evaluation Details**: See `StableToolBench/toolbench/tooleval/README.md`
+- **Server Code**: `StableToolBench/server/main.py`
+- **Benchmark Runner**: `run_benchmark.py` (this directory)

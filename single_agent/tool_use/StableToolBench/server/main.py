@@ -17,18 +17,48 @@ from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_remote_address
 from tenacity import retry, wait_random_exponential, stop_after_attempt
 
-config_file='config.yml'
+# Load environment variables from .env file in root folder
+try:
+    from dotenv import load_dotenv
+    # Load .env from root folder (MASBench/)
+    # main.py is at: single_agent/tool_use/StableToolBench/server/main.py
+    # Root is 5 levels up: server -> StableToolBench -> tool_use -> single_agent -> MASBench
+    current = os.path.abspath(__file__)
+    for _ in range(5):  # Go up 5 levels to reach root
+        current = os.path.dirname(current)
+    ROOT_DIR = current
+    ENV_PATH = os.path.join(ROOT_DIR, ".env")
+    if os.path.exists(ENV_PATH):
+        load_dotenv(ENV_PATH)
+        print(f"Loaded .env file from: {ENV_PATH}")
+    else:
+        print(f"Warning: .env file not found at {ENV_PATH}")
+        # Also try loading from current directory (fallback)
+        load_dotenv()  # This will look for .env in current working directory
+except ImportError:
+    print("Warning: python-dotenv not installed. Using system environment variables.")
+    pass  # dotenv not available, use system environment variables
+
+# Load config.yml from the same directory as this script
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+config_file = os.path.join(SCRIPT_DIR, 'config.yml')
 CONFIG = yaml.load(open(config_file, 'r'), Loader=yaml.FullLoader)
 print(CONFIG)
 CACHE_FOLDER = CONFIG['cache_folder']
 LOG_FILE = CONFIG['log_file']
-# OpenAI API
+# OpenAI API - Load from .env file, fallback to config
 from openai import OpenAI
 if 'api_base' in CONFIG:
     OPENAI_API_BASE=CONFIG['api_base']
 else:
     OPENAI_API_BASE="https://api.openai.com/v1"
-OPENAI_API_KEY=CONFIG['api_key']
+
+# Load API key from environment variable (from .env file) or config
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY') or CONFIG.get('api_key', '')
+if not OPENAI_API_KEY:
+    print("Warning: No OpenAI API key found in .env file or config.yml")
+else:
+    print("OpenAI API key loaded successfully")
 
 limiter = Limiter(key_func=get_remote_address)
 app = FastAPI()
@@ -85,8 +115,9 @@ def get_virtual_response(request: Request, info: Info):
     tool_name_original = info.tool_name
 
     if api_name == "chat_with_user":
-        write_log(request=info, response=real_response, type="chat_with_user")
-        return {"error": "", "response": "Chat with user."}
+        chat_response = {"error": "", "response": "Chat with user."}
+        write_log(request=info, response=chat_response, type="chat_with_user")
+        return chat_response
     
     try:
         tool_input = json.loads(tool_input)
@@ -344,12 +375,14 @@ Your will also be given successful examples of API calls and their expected outp
     )
     max_retries = 3 
     flag = False
+    # Use gpt-4o-mini as default, allow override from config
+    model_name = CONFIG.get('model', 'gpt-4o-mini')
     for attempt in range(max_retries):
         response = client.chat.completions.create(
-            model = CONFIG['model'],
+            model = model_name,
             messages=[system_prompt, user_prompt],
             max_tokens = 1024,
-            temperature=CONFIG['temperature'],
+            temperature=CONFIG.get('temperature', 0),
             response_format={"type": "json_object"},
         )
         result = response.choices[0].message.content

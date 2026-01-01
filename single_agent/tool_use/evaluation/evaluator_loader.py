@@ -135,4 +135,3 @@ class EvaluatorLoader:
                 print(f"[Evaluator] Error loading evaluator: {e}")
                 print(f"[Evaluator] Will use heuristic evaluation")
             return None
-

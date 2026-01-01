@@ -112,4 +112,3 @@ class APIScorer:
         gold_apis_set = self.normalize_gold_apis(gold_apis)
         
         return self.calculate_score(called_apis, gold_apis_set)
-
