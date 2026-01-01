@@ -57,12 +57,15 @@ This framework provides:
 
 **What it does**:
 1. Loads queries from StableToolBench benchmark files
-2. Executes gold APIs via server to generate gold answers
-3. Runs your agent to generate system answers
-4. Compares using StableToolBench's original evaluation
-5. Saves results to `results/tools/` folder
+2. **Tool Selection**: Uses centralized ToolSelector to select relevant tools per query (cached)
+3. Executes gold APIs via server to generate gold answers
+4. Binds selected tools to agent (ensures fairness across frameworks)
+5. Runs your agent to generate system answers
+6. Compares using StableToolBench's original evaluation
+7. Saves results to `results/tools/` folder
 
 **Key Components**:
+- `ToolSelector`: Centralized LLM-based tool selection (shared across frameworks)
 - `GoldAnswerGenerator`: Executes gold APIs via server
 - `extract_called_apis_from_answer_details()`: Parses `answer_details` to extract tool calls
 - `calculate_api_call_score()`: Calculates proportion of gold APIs called
@@ -72,6 +75,12 @@ This framework provides:
 - Query loading: `StableToolBench/solvable_queries/test_instruction/*.json`
 - Evaluation: `StableToolBench/toolbench/tooleval/` (via our wrapper)
 - Server: `StableToolBench/server/main.py` (modified)
+
+**Tool Selection**:
+- Automatically selects top-k tools (default: 120) per query using LLM
+- Caches selections for reproducibility and fairness
+- All frameworks use the same tool set for the same query
+- See `TOOL_SELECTION_ARCHITECTURE.md` for details
 
 ---
 
@@ -84,6 +93,43 @@ This framework provides:
 - `EvaluatorLoader`: Loads original StableToolBench evaluator
 
 **What it does**: Provides a clean interface to StableToolBench's evaluation without modifying original code.
+
+### 4. Tool Selection System (`tool_selection/`)
+
+**Purpose**: Centralized tool selection that runs before framework binding.
+
+**Components**:
+- `ToolSelector`: LLM-based tool selection with caching
+- Handles ~1500 tools, selects top-k (default: 120) per query
+- Ensures fairness: all frameworks use same tool set for same query
+
+**Features**:
+- Uses tool names only (not descriptions) for faster selection
+- Caches selections per query (SHA256 hash)
+- Handles truncated JSON responses gracefully
+- Falls back to keyword-based selection if LLM parsing fails
+- See `TOOL_SELECTION_ARCHITECTURE.md` for complete details
+
+### 5. Agent Interface (`agents/`)
+
+**Purpose**: Standardized interface for all agent frameworks.
+
+**Components**:
+- `BaseAgent`: Abstract base class that all agents must implement
+- `agents/langgraph/`: LangGraph agent implementation
+- Framework-specific implementations in separate subdirectories
+
+**BaseAgent Interface**:
+- `bind_tools()`: Accepts pre-selected tools (from ToolSelector) or tools_dir (legacy)
+- `answer()`: Generates answer in StableToolBench format
+
+**Tool Name Sanitization**:
+- Tool names are automatically sanitized to match OpenAI's requirements:
+  - **Pattern**: `^[a-zA-Z0-9_-]+$` (only alphanumeric, underscore, hyphen)
+  - **Max length**: 64 characters (truncated if needed)
+- Original names preserved in `tool.metadata['original_name']` for tracking
+- Cache lookup handles both original and sanitized names
+- Prevents errors: "Invalid 'tools[].function.name'" and "string too long"
 
 ---
 
@@ -143,7 +189,7 @@ results = run_benchmark(
 )
 ```
 
-Results are saved to: `results/tools/{agent_name}_{test_set}_{timestamp}.json`
+Results are saved to: `results/tools/{agent_name}_{test_set}.json` (overwrites on each run)
 
 ---
 
@@ -263,7 +309,7 @@ results = run_benchmark(
 
 ### Step 3: Check Results
 
-Results are saved to: `results/tools/{agent_name}_{test_set}_{timestamp}.json`
+Results are saved to: `results/tools/{agent_name}_{test_set}.json` (overwrites on each run)
 
 **Result structure**:
 ```json
@@ -427,10 +473,20 @@ single_agent/tool_use/
 │   └── toolbench/           # Original evaluation code
 │
 ├── run_benchmark.py          # Our benchmark runner
+├── tool_selection/           # Tool selection system
+│   ├── selector.py          # ToolSelector implementation
+│   └── tool_selection_cache/ # Cache directory (auto-created)
+├── agents/                   # Agent implementations
+│   ├── base_agent.py        # BaseAgent interface
+│   └── langgraph/           # LangGraph agent
+│       ├── agent.py         # LangGraphAgent implementation
+│       └── tool_loader.py   # Tool loading and sanitization
 ├── utils/                    # Our utilities
 │   └── query_loader.py       # Query loading
-└── evaluation/               # Our evaluation wrapper
-    └── evaluator.py         # Main evaluator
+├── evaluation/               # Our evaluation wrapper
+│   └── evaluator.py         # Main evaluator
+├── README.md                 # This file
+└── TOOL_SELECTION_ARCHITECTURE.md  # Tool selection details
 ```
 
 ---
@@ -527,21 +583,50 @@ results = run_benchmark(
 
 ## Integration with Frameworks
 
-Your framework agent should:
-1. Accept query as input
-2. Use tools (which call the server at `http://localhost:8080/virtual`)
-3. Return answer in StableToolBench format
+Your framework agent should implement the `BaseAgent` interface:
 
-**Example**:
 ```python
-class FrameworkAgent:
+from agents.base_agent import BaseAgent
+from langchain_core.tools import BaseTool
+
+class FrameworkAgent(BaseAgent):
     def __init__(self):
         # Setup your framework
         self.framework = YourFramework()
-        # Set SERVICE_URL so framework uses our server
-        os.environ['SERVICE_URL'] = 'http://localhost:8080/virtual'
+        self.tools = []
+    
+    def bind_tools(self, tools=None, tools_dir=None, server_url="http://localhost:8080/virtual"):
+        """
+        Bind tools to agent.
+        
+        Args:
+            tools: Pre-selected tools from ToolSelector (preferred)
+            tools_dir: Path to tools directory (legacy mode)
+            server_url: Server URL for tool calls
+        """
+        if tools is not None:
+            # Use pre-selected tools (from ToolSelector)
+            self.tools = tools
+            # Bind to your framework
+            self.framework.bind_tools(tools)
+        elif tools_dir is not None:
+            # Legacy mode: load all tools
+            # (not recommended - use ToolSelector instead)
+            pass
     
     def answer(self, query: str):
+        """
+        Generate answer for query.
+        
+        Returns:
+            {
+                "answer": {
+                    "final_answer": str,
+                    "answer_details": List[Dict]  # ExecutionGraph format
+                },
+                "called_apis": Optional[List[List[str]]]  # Optional: for easier tracking
+            }
+        """
         # Your framework processes query
         result = self.framework.process(query)
         
@@ -550,9 +635,16 @@ class FrameworkAgent:
             "answer": {
                 "final_answer": result.final_answer,
                 "answer_details": result.answer_details  # ExecutionGraph format
-            }
+            },
+            "called_apis": result.called_apis  # Optional: list of [tool_name, api_name] pairs
         }
 ```
+
+**Key Points**:
+- Tools are pre-selected by ToolSelector (ensures fairness)
+- Tools call server at `http://localhost:8080/virtual`
+- Tool names are automatically sanitized (OpenAI pattern + 64-char limit)
+- Original tool names preserved in metadata for tracking
 
 ---
 
@@ -592,6 +684,20 @@ class FrameworkAgent:
 - Verify tool call format: `"name": "tool_name_api_name"` (with underscore)
 - Ensure tool calls are in ExecutionGraph format with `"role": "tool"`
 
+**Problem**: "Invalid 'tools[].function.name'" or "string too long" error  
+**Solution**: 
+- Tool names are automatically sanitized to match OpenAI's requirements
+- Pattern: `^[a-zA-Z0-9_-]+$` (only alphanumeric, underscore, hyphen)
+- Max length: 64 characters (automatically truncated)
+- If error persists, check `agents/langgraph/tool_loader.py` sanitization function
+
+**Problem**: Tool selection returns 0 tools  
+**Solution**: 
+- Check cache for empty selections (they're treated as cache misses)
+- Verify ToolSelector fallback is working (keyword-based selection)
+- Check that tool names in cache match current tool names (handles both original and sanitized)
+- Clear cache if needed: `rm -rf tool_selection/tool_selection_cache/*.json`
+
 ---
 
 ## Summary
@@ -599,8 +705,11 @@ class FrameworkAgent:
 **What we added**:
 - ✅ Server modifications (`.env` loading, `gpt-4o-mini`)
 - ✅ Benchmark runner (`run_benchmark.py`)
+- ✅ **Tool Selection System** (centralized, cached, LLM-based)
+- ✅ **BaseAgent Interface** (standardized interface for all frameworks)
 - ✅ Evaluation wrapper (clean interface to original evaluator)
 - ✅ API call score calculation (extracts tool calls from `answer_details`)
+- ✅ Tool name sanitization (OpenAI pattern + 64-char limit)
 
 **What we use from original**:
 - ✅ Query files (`StableToolBench/solvable_queries/`)
@@ -614,7 +723,9 @@ class FrameworkAgent:
 
 **Note**: API Call Score is computed by parsing `answer_details` (ExecutionGraph format) to extract tool calls. This verifies that the system actually used tools, not just guessed the answer based on the query.
 
-**Results saved to**: `results/tools/{agent_name}_{test_set}_{timestamp}.json`
+**Results saved to**: `results/tools/{agent_name}_{test_set}.json` (overwrites on each run)
+
+**Note**: Result files no longer include timestamps. Each run overwrites the previous result file for the same agent and test set, making it easier to find the latest results.
 
 ---
 
@@ -623,5 +734,7 @@ class FrameworkAgent:
 - **Original StableToolBench**: See `StableToolBench/README.md`
 - **Server Setup**: See `StableToolBench/server/SERVER_SETUP.md`
 - **Evaluation Details**: See `StableToolBench/toolbench/tooleval/README.md`
+- **Tool Selection Architecture**: See `TOOL_SELECTION_ARCHITECTURE.md`
 - **Server Code**: `StableToolBench/server/main.py`
 - **Benchmark Runner**: `run_benchmark.py` (this directory)
+- **BaseAgent Interface**: See `agents/base_agent.py`

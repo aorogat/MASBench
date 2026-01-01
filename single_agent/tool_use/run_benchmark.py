@@ -23,6 +23,8 @@ sys.path.insert(0, CURRENT_DIR)
 
 from utils import QueryLoader
 from evaluation import StableToolBenchEvaluator
+from tool_selection import ToolSelector
+from agents.langgraph.tool_loader import load_tools
 
 
 def extract_called_apis_from_answer_details(answer: Dict[str, Any]) -> List[List[str]]:
@@ -271,7 +273,10 @@ def run_benchmark(
     server_url: str = "http://localhost:8080/virtual",
     evaluator_model: str = "gpt-4o-mini",
     output_dir: Optional[str] = None,
-    agent_name: str = "agent"
+    agent_name: str = "agent",
+    use_tool_selector: bool = True,
+    tool_selector_model: str = "gpt-4o-mini",
+    max_tools: int = 120
 ) -> Dict[str, Any]:
     """
     Run benchmark evaluation on an agent.
@@ -285,6 +290,9 @@ def run_benchmark(
         evaluator_model: Model name for evaluation
         output_dir: Output directory for results (default: results/tools/)
         agent_name: Name of the agent (for output file naming)
+        use_tool_selector: Whether to use centralized tool selection (default: True)
+        tool_selector_model: Model for tool selection (default: gpt-4o-mini)
+        max_tools: Maximum tools to select per query (default: 120)
     
     Returns:
         Dictionary with benchmark results
@@ -296,6 +304,7 @@ def run_benchmark(
     # Setup paths
     stb_root = os.path.join(CURRENT_DIR, "StableToolBench")
     query_instruction_dir = os.path.join(stb_root, "solvable_queries", "test_instruction")
+    tools_dir = os.path.join(stb_root, "toolenv", "tools")
     
     if output_dir is None:
         output_dir = os.path.join(CURRENT_DIR, "..", "..", "results", "tools")
@@ -303,18 +312,43 @@ def run_benchmark(
     output_dir.mkdir(parents=True, exist_ok=True)
     
     # Load queries
-    print(f"\n[1/5] Loading queries from {test_set}...")
+    print(f"\n[1/6] Loading queries from {test_set}...")
     query_loader = QueryLoader(query_instruction_dir=query_instruction_dir)
     queries = query_loader.load_queries(test_set=test_set, max_queries=max_queries)
     print(f"Loaded {len(queries)} queries")
     
     # Initialize components
-    print(f"\n[2/5] Initializing components...")
+    print(f"\n[2/6] Initializing components...")
     gold_generator = GoldAnswerGenerator(server_url=server_url)
     evaluator = StableToolBenchEvaluator(model_name=evaluator_model, verbose=True)
     
+    # Initialize tool selection system
+    all_tools = None
+    tool_selector = None
+    if use_tool_selector:
+        print(f"\n[3/6] Setting up tool selection system...")
+        # Load all tools once
+        print(f"  Loading all tools from {tools_dir}...")
+        all_tools = load_tools(tools_dir=tools_dir, server_url=server_url)
+        print(f"  Loaded {len(all_tools)} tools")
+        
+        # Initialize ToolSelector
+        tool_selector = ToolSelector(
+            model=tool_selector_model,
+            temperature=0.0,  # Reproducibility
+            max_tools=max_tools,
+            verbose=True
+        )
+        print(f"  ToolSelector initialized (max_tools={max_tools})")
+    else:
+        print(f"\n[3/6] Tool selection disabled - using legacy mode")
+        # Legacy mode: agent should handle tool loading itself
+        if hasattr(agent, 'bind_tools'):
+            print(f"  Binding tools to agent (legacy mode)...")
+            agent.bind_tools(tools_dir=tools_dir, server_url=server_url)
+    
     # Run evaluation
-    print(f"\n[3/5] Running benchmark evaluation...")
+    print(f"\n[4/6] Running benchmark evaluation...")
     all_results = []
     overall_start_time = time.time()
     
@@ -344,6 +378,17 @@ def run_benchmark(
             result["gold_answer_time"] = gold_time
             result["gold_api_responses"] = len(api_responses)
             
+            # Tool selection and binding (if using tool selector)
+            if use_tool_selector and tool_selector and all_tools:
+                print("  Selecting tools for this query...")
+                selected_tools = tool_selector.select_tools(query_text, all_tools)
+                result["selected_tools_count"] = len(selected_tools)
+                print(f"  Selected {len(selected_tools)} tools")
+                
+                # Bind selected tools to agent
+                if hasattr(agent, 'bind_tools'):
+                    agent.bind_tools(tools=selected_tools, server_url=server_url)
+            
             # Generate system answer
             print("  Generating system answer...")
             system_start = time.time()
@@ -358,7 +403,11 @@ def run_benchmark(
             eval_time = time.time() - eval_start
             
             # Calculate API call score
-            called_apis = extract_called_apis_from_answer_details(system_answer)
+            # First check if agent provided called_apis directly, otherwise parse from answer_details
+            if "called_apis" in system_answer:
+                called_apis = system_answer["called_apis"]
+            else:
+                called_apis = extract_called_apis_from_answer_details(system_answer)
             api_call_score = calculate_api_call_score(called_apis, gold_apis)
             
             # Store results
@@ -414,7 +463,7 @@ def run_benchmark(
     overall_time = time.time() - overall_start_time
     
     # Calculate summary statistics
-    print(f"\n[4/5] Calculating summary statistics...")
+    print(f"\n[5/6] Calculating summary statistics...")
     total_queries = len(queries)
     solved_count = sum(1 for r in all_results if r.get("scores", {}).get("sopr_score", 0) == 1.0)
     unsure_count = sum(1 for r in all_results if r.get("scores", {}).get("sopr_score", 0) == 0.5)
@@ -458,9 +507,8 @@ def run_benchmark(
     }
     
     # Save results
-    print(f"\n[5/5] Saving results...")
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    output_file = output_dir / f"{agent_name}_{test_set}_{timestamp}.json"
+    print(f"\n[6/6] Saving results...")
+    output_file = output_dir / f"{agent_name}_{test_set}.json"
     
     with open(output_file, 'w') as f:
         json.dump(results_data, f, indent=2)
