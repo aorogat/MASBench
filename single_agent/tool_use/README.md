@@ -249,7 +249,7 @@ API Call Request
    Return response
 ```
 
-**Cache location**: `StableToolBench/server/tool_response_cache/`  
+**Cache location**: `tool_response_cache/` (in `single_agent/tool_use/`)  
 **Cache structure**: `category/tool_name/api_name.json`
 
 For detailed server setup instructions, see: `StableToolBench/server/SERVER_SETUP.md`
@@ -645,6 +645,43 @@ class FrameworkAgent(BaseAgent):
 - Tools call server at `http://localhost:8080/virtual`
 - Tool names are automatically sanitized (OpenAI pattern + 64-char limit)
 - Original tool names preserved in metadata for tracking
+
+---
+
+## Framework Selection and Exclusions
+
+### Included Frameworks
+
+The following frameworks are implemented and evaluated in this benchmark:
+
+- **LangGraph**: Uses `langchain.agents.create_agent` for tool-calling agents
+- **CrewAI**: Multi-agent framework configured for single-agent use
+- **AutoGen**: Microsoft's multi-agent conversation framework
+- **OpenAI Agents SDK**: OpenAI's framework for building agentic applications
+
+All included frameworks:
+- Support binding a large set of tools to a single agent
+- Allow the LLM to select and call tools dynamically from the available set
+- Are compatible with the centralized ToolSelector approach
+- Can handle tool selection under tool overload conditions
+
+### Excluded Frameworks
+
+#### OpenAgents
+
+**Status**: Not included in tool-use experiments
+
+**Reason**: OpenAgents uses an event-driven, workflow-oriented execution model that is not compatible with StableToolBench's evaluation setting.
+
+**Details**:
+- Tools are bound to specific agents and invoked within event-driven task handlers
+- Routing decisions are determined by explicit, developer-defined coordination logic rather than by LLM-driven selection over a large tool registry
+- OpenAgents does not expose a single agent to a large flat set of tools
+- It does not require the model to choose among hundreds of candidate APIs under a fixed budget
+
+Since StableToolBench is designed to evaluate tool selection and execution behavior under tool overload (where an agent must select from a large set of tools), OpenAgents' event-driven execution model is not directly compatible with this evaluation setting.
+
+**Reference**: See [OpenAgents documentation](https://github.com/openagents-org/openagents/tree/develop/demos) for details on their workflow-oriented approach.
 
 ---
 

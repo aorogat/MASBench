@@ -1,268 +1,232 @@
-absl-py==2.3.1
-ag2==0.10.2
-agno==2.2.11
 aiohappyeyeballs==2.6.1
-aiohttp==3.12.15
+aiohttp==3.13.2
 aiosignal==1.4.0
+aiosqlite==0.21.0
+anaconda-anon-usage @ file:///croot/anaconda-anon-usage_1753980460404/work
+anaconda-auth @ file:///croot/anaconda-cloud-auth-split_1747863777058/work
+anaconda-cli-base @ file:///croot/anaconda-cli-base_1741369443553/work
 annotated-doc==0.0.4
-annotated-types==0.7.0
-anthropic==0.72.1
-anyio==4.11.0
+annotated-types @ file:///work/perseverance-python-buildout/croot/annotated-types_1728386958747/work
+anyio==4.12.0
 appdirs==1.4.4
-asttokens==3.0.0
+archspec @ file:///croot/archspec_1709217642129/work
 asyncio-throttle==1.0.2
 attrs==25.4.0
-autogen-agentchat==0.7.5
-autogen-core==0.7.5
-autogen-ext==0.7.5
 backoff==2.2.1
-bcrypt==4.3.0
-blinker==1.9.0
-boto3==1.40.20
-botocore==1.40.20
+bcrypt==5.0.0
+beautifulsoup4==4.13.5
+boltons @ file:///croot/boltons_1751383775419/work
+brotlicffi @ file:///croot/brotlicffi_1736182461069/work
 build==1.3.0
-cachetools==5.5.2
-certifi==2025.11.12
+cachetools==6.2.4
+certifi @ file:///croot/certifi_1754570635119/work/certifi
 cffi==2.0.0
-charset-normalizer==3.4.3
-choreographer==1.1.1
-chromadb==1.0.20
-click==8.3.0
-colorama==0.4.6
+cfgv==3.5.0
+charset-normalizer @ file:///croot/charset-normalizer_1721748349566/work
+chromadb==1.1.1
+click==8.1.8
+colorama @ file:///work/perseverance-python-buildout/croot/colorama_1728388434940/work
 coloredlogs==15.0.1
-contourpy==1.3.3
-crewai==0.175.0
-cryptography==46.0.3
-cycler==0.12.1
-dataclasses-json==0.6.7
-datasets==4.0.0
+conda @ file:///croot/conda_1754469510968/work/conda-src
+conda-anaconda-telemetry @ file:///croot/conda-anaconda-telemetry_1755883788794/work
+conda-anaconda-tos @ file:///croot/conda-anaconda-tos_1755123313635/work
+conda-content-trust @ file:///work/perseverance-python-buildout/croot/conda-content-trust_1728487058234/work
+conda-libmamba-solver @ file:///croot/conda-libmamba-solver_1745607008911/work/src
+conda-package-handling @ file:///croot/conda-package-handling_1731369017509/work
+conda_package_streaming @ file:///croot/conda-package-streaming_1751307506088/work
+crewai==1.7.2
+crewai-tools==1.7.2
+cryptography @ file:///croot/cryptography_1753084572505/work
 decorator==5.2.1
-dill==0.3.8
+defusedxml==0.7.1
+Deprecated==1.3.1
+deprecation==2.1.0
 diskcache==5.6.3
-distro==1.9.0
-dnspython==2.8.0
+distlib==0.4.0
+distro @ file:///work/perseverance-python-buildout/croot/distro_1728396110052/work
 docker==7.1.0
 docstring_parser==0.17.0
 durationpy==0.10
-email-validator==2.3.0
 et_xmlfile==2.0.0
-eval_type_backport==0.2.2
-executing==2.2.0
-fastapi==0.121.1
-fastapi-cli==0.0.16
-fastapi-cloud-cli==0.3.1
-fastjsonschema==2.21.2
-filelock==3.19.1
-flatbuffers==25.2.10
-fonttools==4.59.2
-frozenlist==1.7.0
-fsspec==2025.3.0
-gdm-concordia==2.1.0
-gitdb==4.0.12
-GitPython==3.1.45
-google-ai-generativelanguage==0.6.15
-google-api-core==2.25.1
-google-api-python-client==2.179.0
-google-auth==2.40.3
-google-auth-httplib2==0.2.0
-google-cloud-aiplatform==1.111.0
-google-cloud-bigquery==3.36.0
-google-cloud-core==2.4.3
-google-cloud-resource-manager==1.14.2
-google-cloud-storage==2.19.0
-google-crc32c==1.7.1
-google-genai==1.32.0
-google-generativeai==0.8.5
-google-resumable-media==2.7.2
-googleapis-common-protos==1.70.0
-greenlet==3.2.4
-griffe==1.15.0
-groq==0.34.1
-grpc-google-iam-v1==0.14.2
+fastapi==0.128.0
+filelock==3.20.0
+flatbuffers==25.12.19
+frozendict @ file:///work/perseverance-python-buildout/croot/frozendict_1728497542215/work
+frozenlist==1.8.0
+fsspec==2025.9.0
+google-auth==2.45.0
+googleapis-common-protos==1.72.0
 grpcio==1.76.0
-grpcio-status==1.71.2
 grpcio-tools==1.76.0
 h11==0.16.0
-hf-xet==1.1.9
+hf-xet==1.2.0
 httpcore==1.0.9
-httplib2==0.22.0
 httptools==0.7.1
 httpx==0.28.1
 httpx-sse==0.4.3
-huggingface-hub==0.34.4
+huggingface-hub==0.36.0
 humanfriendly==10.0
-idna==3.11
-importlib_metadata==8.7.0
+identify==2.6.15
+idna @ file:///work/perseverance-python-buildout/croot/idna_1728385935861/work
+importlib_metadata==8.7.1
 importlib_resources==6.5.2
-iniconfig==2.1.0
-instructor==1.11.2
-invoke==2.2.0
-ipython==9.5.0
-ipython_pygments_lexers==1.1.1
-jedi==0.19.2
+instructor==1.12.0
+jaraco.classes @ file:///croot/jaraco.classes_1755516327832/work
+jaraco.context @ file:///io/perseverance-python-buildout/croot/jaraco.context_1731706750665/work
+jaraco.functools @ file:///croot/jaraco.functools_1740408111753/work
+jeepney @ file:///tmp/build/80754af9/jeepney_1627537048313/work
 Jinja2==3.1.6
-jiter==0.12.0
-jmespath==1.0.1
-json5==0.12.1
-json_repair==0.25.2
-jsonpatch==1.33
-jsonpickle==4.1.1
-jsonpointer==3.0.0
+jiter==0.10.0
+json5==0.10.0
+json_repair==0.25.3
+jsonpatch @ file:///work/perseverance-python-buildout/croot/jsonpatch_1728399595941/work
+jsonpointer @ file:///croot/jsonpointer_1753788433671/work
 jsonref==1.1.0
 jsonschema==4.25.1
 jsonschema-specifications==2025.9.1
-jupyter_core==5.8.1
-kaleido==1.1.0
-kiwisolver==1.4.9
-kubernetes==33.1.0
-langchain==0.3.27
-langchain-community==0.3.29
-langchain-core==0.3.75
-langchain-ollama==0.3.7
-langchain-openai==0.3.32
-langchain-text-splitters==0.3.10
-langgraph==0.6.6
-langgraph-checkpoint==2.1.1
-langgraph-prebuilt==0.6.4
-langgraph-sdk==0.2.4
-langsmith==0.4.20
-litellm==1.74.9
-logistro==1.1.0
-markdown-it-py==4.0.0
+keyring @ file:///croot/keyring_1745484691218/work
+kubernetes==34.1.0
+lancedb==0.5.7
+langchain==1.2.0
+langchain-core==1.2.5
+langchain-openai==1.1.6
+langgraph==1.0.5
+langgraph-checkpoint==3.0.1
+langgraph-prebuilt==1.0.5
+langgraph-sdk==0.3.1
+langsmith==0.5.2
+libmambapy @ file:///croot/mamba-split_1734469461757/work/libmambapy
+limits==5.6.0
+lxml==6.0.2
+markdown-it-py @ file:///work/perseverance-python-buildout/croot/markdown-it-py_1728387994477/work
 MarkupSafe==3.0.3
-marshmallow==3.26.1
-matplotlib==3.10.5
-matplotlib-inline==0.1.7
-mcp==1.21.0
-mdurl==0.1.2
-mistralai==1.9.9
+mcp==1.16.0
+mdurl @ file:///work/perseverance-python-buildout/croot/mdurl_1728387286143/work
+menuinst @ file:///croot/menuinst_1753464582829/work
 mmh3==5.2.0
+more-itertools @ file:///work/perseverance-python-buildout/croot/more-itertools_1728388668839/work
 mpmath==1.3.0
-multidict==6.6.4
-multiprocess==0.70.16
-mypy_extensions==1.1.0
-narwhals==2.5.0
-nbformat==5.10.4
+multidict==6.7.0
 networkx==3.5
-numpy==2.3.2
+nodeenv==1.10.0
+numpy==2.4.0
+nvidia-cublas-cu12==12.8.4.1
+nvidia-cuda-cupti-cu12==12.8.90
+nvidia-cuda-nvrtc-cu12==12.8.93
+nvidia-cuda-runtime-cu12==12.8.90
+nvidia-cufile-cu12==1.13.1.3
+nvidia-curand-cu12==10.3.9.90
+nvidia-cusparselt-cu12==0.7.1
+nvidia-nccl-cu12==2.27.5
+nvidia-nvjitlink-cu12==12.8.93
+nvidia-nvshmem-cu12==3.3.20
+nvidia-nvtx-cu12==12.8.90
 oauthlib==3.3.1
-ollama==0.5.3
-onnxruntime==1.22.0
+onnxruntime==1.23.2
 openagents==0.7.9
-openai==2.7.2
-openai-agents==0.5.0
+openai==1.83.0
 openpyxl==3.1.5
-opentelemetry-api==1.36.0
-opentelemetry-exporter-otlp-proto-common==1.36.0
-opentelemetry-exporter-otlp-proto-grpc==1.36.0
-opentelemetry-exporter-otlp-proto-http==1.36.0
-opentelemetry-proto==1.36.0
-opentelemetry-sdk==1.36.0
-opentelemetry-semantic-conventions==0.57b0
-orjson==3.11.3
-ormsgpack==1.10.0
+opentelemetry-api==1.34.1
+opentelemetry-exporter-otlp-proto-common==1.34.1
+opentelemetry-exporter-otlp-proto-grpc==1.34.1
+opentelemetry-exporter-otlp-proto-http==1.34.1
+opentelemetry-proto==1.34.1
+opentelemetry-sdk==1.34.1
+opentelemetry-semantic-conventions==0.55b1
+orjson==3.11.5
+ormsgpack==1.12.1
 overrides==7.7.0
-packaging==25.0
-pandas==2.3.2
-parso==0.8.5
-pdfminer.six==20250506
-pdfplumber==0.11.7
-pexpect==4.9.0
-pillow==11.3.0
-platformdirs==4.4.0
-plotly==6.3.0
-pluggy==1.6.0
+packaging @ file:///croot/packaging_1753775359799/work
+pdfminer.six==20251107
+pdfplumber==0.11.8
+pillow==12.0.0
+pkce @ file:///work/perseverance-python-buildout/croot/pkce_1728388093137/work
+platformdirs @ file:///croot/platformdirs_1744273042065/work
+pluggy @ file:///croot/pluggy_1733169602837/work
 portalocker==2.7.0
 posthog==5.4.0
+pre_commit==4.5.1
 prometheus_client==0.23.1
-prompt_toolkit==3.0.52
-propcache==0.3.2
-proto-plus==1.26.1
+propcache==0.4.1
 protobuf==5.29.5
-psutil==7.1.3
-ptyprocess==0.7.0
-pure_eval==0.2.3
 py==1.11.0
-pyarrow==21.0.0
+pyarrow==22.0.0
 pyasn1==0.6.1
 pyasn1_modules==0.4.2
-pybase64==1.4.2
-pycparser==2.23
-pydantic==2.12.5
-pydantic-settings==2.12.0
-pydantic_core==2.41.5
-Pygments==2.19.2
-PyJWT==2.10.1
+pybase64==1.4.3
+pycosat @ file:///croot/pycosat_1736868416091/work
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pydantic==2.11.10
+pydantic-settings==2.10.1
+pydantic_core @ file:///croot/pydantic-core_1750754736071/work
+Pygments @ file:///croot/pygments_1744664109463/work
+PyJWT==2.9.0
+pylance==0.9.18
+PyMuPDF==1.26.7
 PyNaCl==1.6.1
-pyparsing==3.2.3
-pypdfium2==4.30.0
+pyparsing==3.2.5
+pypdfium2==5.2.0
 PyPika==0.48.9
 pyproject_hooks==1.2.0
-pytest==8.4.2
-pytest-timeout==2.4.0
+PySocks @ file:///work/perseverance-python-buildout/croot/pysocks_1728386193338/work
+pytesseract==0.3.13
 python-dateutil==2.9.0.post0
-python-dotenv==1.2.1
-python-multipart==0.0.20
-pytz==2025.2
-pyvis==0.3.2
+python-docx==1.2.0
+python-dotenv==1.1.1
+python-multipart==0.0.21
+pytube==15.0.0
 PyYAML==6.0.3
-reactivex==4.0.4
+ratelimiter==1.2.0.post0
+rdflib==7.3.0
+readchar @ file:///work/perseverance-python-buildout/croot/readchar_1728397613245/work
 referencing==0.37.0
-regex==2025.7.34
+regex==2024.9.11
 requests==2.32.5
 requests-oauthlib==2.0.0
 requests-toolbelt==1.0.0
 retry==0.9.2
-rich==14.2.0
-rich-toolkit==0.15.1
-rignore==0.7.6
-rpds-py==0.28.0
+rich @ file:///croot/rich_1732638981168/work
+rpds-py==0.30.0
 rsa==4.9.1
-s3transfer==0.13.1
-safetensors==0.6.2
-scipy==1.16.1
-seaborn==0.13.2
-sentry-sdk==2.44.0
-setuptools==80.9.0
-shapely==2.1.1
-shellingham==1.5.4
-simplejson==3.20.1
+ruamel.yaml @ file:///croot/ruamel.yaml_1745960305322/work
+ruamel.yaml.clib @ file:///croot/ruamel.yaml.clib_1745937152469/work
+SecretStorage @ file:///work/perseverance-python-buildout/croot/secretstorage_1728387678881/work
+semver @ file:///croot/semver_1736540782504/work
+setuptools==78.1.1
+shellingham @ file:///work/perseverance-python-buildout/croot/shellingham_1728395303315/work
 six==1.17.0
-smmap==5.0.2
+slowapi==0.1.9
 sniffio==1.3.1
-SQLAlchemy==2.0.44
-sse-starlette==3.0.3
-stack-data==0.6.3
-starlette==0.49.3
+soupsieve==2.8.1
+SPARQLWrapper==2.0.0
+sse-starlette==3.0.4
+starlette==0.50.0
 structlog==25.5.0
 sympy==1.14.0
-tabulate==0.9.0
 tenacity==9.1.2
-termcolor==3.1.0
-tiktoken==0.11.0
-together==1.5.25
-tokenizers==0.21.4
-tomli==2.2.1
-tomli_w==1.2.0
-tqdm==4.67.1
-traitlets==5.14.3
-transformers==4.55.4
-typer==0.20.0
-types-requests==2.32.4.20250913
-typing-inspect==0.9.0
+tiktoken==0.8.0
+tokenizers==0.20.3
+tomli==2.0.2
+tomli_w==1.1.0
+tqdm @ file:///croot/tqdm_1738943501192/work
+triton==3.5.0
+truststore @ file:///croot/truststore_1753907171582/work
+typer @ file:///work/perseverance-python-buildout/croot/typer_1728397851651/work
 typing-inspection==0.4.2
-typing_extensions==4.15.0
-tzdata==2025.2
-uritemplate==4.2.0
-urllib3==2.5.0
-uv==0.8.14
+typing_extensions @ file:///croot/typing_extensions_1734714854207/work
+urllib3==2.3.0
+uuid_utils==0.12.0
+uv==0.9.21
 uvicorn==0.38.0
 uvloop==0.22.1
+virtualenv==20.35.4
 watchfiles==1.1.1
-wcwidth==0.2.13
-websocket-client==1.8.0
+websocket-client==1.9.0
 websockets==15.0.1
-xxhash==3.5.0
-yarl==1.20.1
+wheel==0.45.1
+wrapt==2.0.1
+xxhash==3.6.0
+yarl==1.22.0
+youtube-transcript-api==1.2.3
 zipp==3.23.0
-zstandard==0.24.0
+zstandard @ file:///croot/zstandard_1731356346222/work

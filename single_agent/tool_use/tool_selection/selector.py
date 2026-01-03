@@ -64,19 +64,25 @@ class ToolSelector:
     
     def _get_query_hash(self, query: str) -> str:
         """
-        Generate a hash for the query to use as cache key.
+        Generate a hash for the query + max_tools + model to use as cache key.
+        
+        This ensures cache is k-aware: different max_tools values produce different cache keys.
         
         Args:
             query: The query string
             
         Returns:
-            SHA256 hash of the query
+            SHA256 hash of (query, max_tools, model)
         """
-        return hashlib.sha256(query.encode('utf-8')).hexdigest()
+        # Include max_tools and model in hash to make cache k-aware
+        cache_key = f"{query}|max_tools={self.max_tools}|model={self.model}"
+        return hashlib.sha256(cache_key.encode('utf-8')).hexdigest()
     
     def _get_cache_path(self, query: str) -> str:
         """
         Get the cache file path for a query.
+        
+        Cache key includes max_tools and model, so different k values produce different cache files.
         
         Args:
             query: The query string
@@ -89,7 +95,7 @@ class ToolSelector:
     
     def _load_from_cache(self, query: str) -> Optional[List[str]]:
         """
-        Load tool selection from cache if it exists.
+        Load tool selection from cache if it exists and matches current max_tools.
         
         Args:
             query: The query string
@@ -103,16 +109,41 @@ class ToolSelector:
                 with open(cache_path, 'r', encoding='utf-8') as f:
                     cache_data = json.load(f)
                     # Verify query matches (safety check)
-                    if cache_data.get('query') == query:
-                        selected_tools = cache_data.get('selected_tools', [])
-                        # Don't use empty cache entries - treat as cache miss
-                        if len(selected_tools) == 0:
-                            if self.verbose:
-                                print(f"[ToolSelector] Cache contains empty selection, treating as cache miss")
-                            return None
+                    if cache_data.get('query') != query:
                         if self.verbose:
-                            print(f"[ToolSelector] Loaded {len(selected_tools)} tools from cache")
-                        return selected_tools
+                            print(f"[ToolSelector] Cache query mismatch, treating as cache miss")
+                        return None
+                    
+                    # CRITICAL: Verify max_tools matches (cache must be k-aware)
+                    cached_max_tools = cache_data.get('max_tools')
+                    if cached_max_tools != self.max_tools:
+                        if self.verbose:
+                            print(f"[ToolSelector] Cache max_tools mismatch (cached: {cached_max_tools}, current: {self.max_tools}), treating as cache miss")
+                        return None
+                    
+                    # Verify model matches (for consistency)
+                    cached_model = cache_data.get('model')
+                    if cached_model != self.model:
+                        if self.verbose:
+                            print(f"[ToolSelector] Cache model mismatch (cached: {cached_model}, current: {self.model}), treating as cache miss")
+                        return None
+                    
+                    selected_tools = cache_data.get('selected_tools', [])
+                    # Don't use empty cache entries - treat as cache miss
+                    if len(selected_tools) == 0:
+                        if self.verbose:
+                            print(f"[ToolSelector] Cache contains empty selection, treating as cache miss")
+                        return None
+                    
+                    # CRITICAL: Enforce max_tools even if cache has more (defensive programming)
+                    if len(selected_tools) > self.max_tools:
+                        if self.verbose:
+                            print(f"[ToolSelector] Cache has {len(selected_tools)} tools, truncating to max_tools={self.max_tools}")
+                        selected_tools = selected_tools[:self.max_tools]
+                    
+                    if self.verbose:
+                        print(f"[ToolSelector] Loaded {len(selected_tools)} tools from cache")
+                    return selected_tools
             except Exception as e:
                 if self.verbose:
                     print(f"[ToolSelector] Error loading cache: {e}")
@@ -334,6 +365,13 @@ Available tools (names only):
                 elif self.verbose:
                     print(f"[ToolSelector] Warning: Cached tool name '{cached_name}' not found in current tools")
             
+            # CRITICAL: Enforce max_tools limit even after loading from cache
+            # This is a defensive check in case cache validation missed something
+            if len(selected_tools) > self.max_tools:
+                if self.verbose:
+                    print(f"[ToolSelector] Truncating {len(selected_tools)} cached tools to max_tools={self.max_tools}")
+                selected_tools = selected_tools[:self.max_tools]
+            
             if self.verbose:
                 print(f"[ToolSelector] Using cached selection: {len(selected_tools)} tools (from {len(cached_tool_names)} cached names)")
             return selected_tools
@@ -357,6 +395,12 @@ Available tools (names only):
             tool_map[name] for name in selected_tool_names
             if name in tool_map
         ]
+        
+        # CRITICAL: Enforce max_tools limit (defensive check)
+        if len(selected_tools) > self.max_tools:
+            if self.verbose:
+                print(f"[ToolSelector] Truncating {len(selected_tools)} selected tools to max_tools={self.max_tools}")
+            selected_tools = selected_tools[:self.max_tools]
         
         return selected_tools
     

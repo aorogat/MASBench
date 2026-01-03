@@ -44,7 +44,12 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 config_file = os.path.join(SCRIPT_DIR, 'config.yml')
 CONFIG = yaml.load(open(config_file, 'r'), Loader=yaml.FullLoader)
 print(CONFIG)
-CACHE_FOLDER = CONFIG['cache_folder']
+# Resolve cache folder path relative to server directory
+cache_folder_path = CONFIG['cache_folder']
+if not os.path.isabs(cache_folder_path):
+    CACHE_FOLDER = os.path.normpath(os.path.join(SCRIPT_DIR, cache_folder_path))
+else:
+    CACHE_FOLDER = cache_folder_path
 LOG_FILE = CONFIG['log_file']
 # OpenAI API - Load from .env file, fallback to config
 from openai import OpenAI

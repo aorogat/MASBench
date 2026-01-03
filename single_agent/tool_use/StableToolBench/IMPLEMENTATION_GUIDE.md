@@ -118,7 +118,7 @@ API Call Request
    Return response
 ```
 
-**Cache location**: `StableToolBench/server/tool_response_cache/`  
+**Cache location**: `tool_response_cache/` (in `single_agent/tool_use/`)  
 **Cache structure**: `category/tool_name/api_name.json`
 
 ---

@@ -4,12 +4,14 @@ LangGraph Agent Implementation
 Implements BaseAgent interface using LangChain's create_agent for tool-calling agents.
 Uses the recommended create_agent API which automatically handles the ReAct loop.
 
-Note on Tool Filtering:
+Important: Tools are pre-selected by MASBench ToolSelector.
+LangGraph does not perform additional filtering - it uses whatever tools are provided.
+
+Note on Tool Limits:
 - OpenAI has a limit of 128 tools per request
-- We filter tools per query before creating the agent
-- This is necessary because LangGraph's create_agent sends ALL bound tools to the LLM
-- LangGraph doesn't automatically filter tools - you must do it manually
-- We use keyword-based filtering, but could be improved with embeddings
+- LangGraph's create_agent sends ALL bound tools to the LLM in each request
+- LangGraph has no built-in tool filtering mechanism
+- This is why centralized tool selection (ToolSelector) is essential for LangGraph
 """
 import os
 import json
@@ -66,9 +68,9 @@ class LangGraphAgent(BaseAgent):
         # Initialize LLM
         self.llm = ChatOpenAI(model=model, temperature=temperature)
         
-        # Tools and agent will be created in bind_tools()
-        self.all_tools: List[BaseTool] = []  # All loaded tools
-        self.tools: List[BaseTool] = []  # Currently active tools (filtered)
+        # Tools are pre-selected by ToolSelector and bound here
+        # LangGraph does not perform additional filtering
+        self.bound_tools: List[BaseTool] = []  # Pre-selected tools from ToolSelector
         self.agent = None
         self.tools_bound = False
     
@@ -90,20 +92,39 @@ class LangGraphAgent(BaseAgent):
         self.server_url = server_url
         
         if tools is not None:
-            # Use pre-selected tools (preferred approach)
+            # Use pre-selected tools (preferred approach - from ToolSelector)
             if isinstance(tools, list):
-                self.all_tools = tools
+                self.bound_tools = tools
+                
+                # Fail loudly if tool count exceeds max_tools (benchmark integrity)
+                if len(self.bound_tools) > self.max_tools:
+                    raise RuntimeError(
+                        f"ToolSelector returned {len(self.bound_tools)} tools, "
+                        f"exceeds max_tools={self.max_tools}. "
+                        f"This indicates a bug in tool selection or configuration."
+                    )
+                
                 if self.verbose:
-                    print(f"[LangGraphAgent] Bound {len(self.all_tools)} pre-selected tools")
+                    print(f"[LangGraphAgent] Bound {len(self.bound_tools)} pre-selected tools")
             else:
                 raise ValueError("tools must be a list of BaseTool objects")
         elif tools_dir is not None:
-            # Legacy mode: load all tools from directory
+            # Legacy mode: load all tools from directory (not recommended for benchmarks)
             if self.verbose:
                 print(f"[LangGraphAgent] Loading tools from {tools_dir}...")
-            self.all_tools = load_tools(tools_dir=tools_dir, server_url=server_url)
+            loaded_tools = load_tools(tools_dir=tools_dir, server_url=server_url)
+            
+            # In legacy mode, still enforce max_tools limit
+            if len(loaded_tools) > self.max_tools:
+                raise RuntimeError(
+                    f"Loaded {len(loaded_tools)} tools from {tools_dir}, "
+                    f"exceeds max_tools={self.max_tools}. "
+                    f"Use ToolSelector for proper tool filtering."
+                )
+            
+            self.bound_tools = loaded_tools
             if self.verbose:
-                print(f"[LangGraphAgent] Loaded {len(self.all_tools)} tools")
+                print(f"[LangGraphAgent] Loaded {len(self.bound_tools)} tools")
         else:
             raise ValueError("Either tools or tools_dir must be provided")
         
@@ -115,25 +136,18 @@ class LangGraphAgent(BaseAgent):
         """
         Get tools to use for a query.
         
-        If tools were pre-selected (via ToolSelector), use them directly.
-        Otherwise, filter tools based on query (legacy mode).
+        Tools are pre-selected by ToolSelector, so we simply return them.
+        LangGraph does not perform additional filtering.
         
         Args:
-            query: The query string
+            query: The query string (unused, kept for interface compatibility)
             
         Returns:
-            List of tools to use
+            List of pre-selected tools
         """
-        # If tools were pre-selected, they should already be filtered
-        # Just ensure we don't exceed max_tools
-        if len(self.all_tools) <= self.max_tools:
-            return self.all_tools
-        
-        # Legacy mode: filter tools if we have too many
-        # This shouldn't happen if ToolSelector is used, but kept for backward compatibility
-        if self.verbose:
-            print(f"[LangGraphAgent] Warning: {len(self.all_tools)} tools exceed limit, truncating to {self.max_tools}")
-        return self.all_tools[:self.max_tools]
+        # Tools are already pre-selected and validated in bind_tools()
+        # LangGraph uses all bound tools - no additional filtering
+        return self.bound_tools
     
     def answer(self, query: str) -> Dict[str, Any]:
         """
@@ -198,33 +212,36 @@ class LangGraphAgent(BaseAgent):
                             "args": tool_args
                         }
                         
-                        # Find the original tool name from our tools list
-                        # Tool names are sanitized for OpenAI, but we need the original for API tracking
-                        original_name = None
+                        # Extract tool_name and api_name from metadata
+                        # This avoids fragile string parsing and handles edge cases correctly
+                        tool_name_part = None
+                        api_name_part = None
+                        
                         for tool in tools_to_use:
                             if tool.name == tool_name:
-                                # Check if tool has metadata with original name
+                                # Check if tool has structured metadata (preferred)
                                 if hasattr(tool, 'metadata') and isinstance(tool.metadata, dict):
-                                    original_name = tool.metadata.get('original_name')
-                                break
+                                    # Use structured metadata if available (most reliable)
+                                    if 'tool_name' in tool.metadata and 'api_name' in tool.metadata:
+                                        tool_name_part = tool.metadata['tool_name']
+                                        api_name_part = tool.metadata['api_name']
+                                        break
+                                    # Fallback to original_name parsing (for backward compatibility)
+                                    elif 'original_name' in tool.metadata:
+                                        original_name = tool.metadata['original_name']
+                                        # Original name format: "tool_name_api_name"
+                                        if "_" in original_name:
+                                            parts = original_name.split("_", 1)
+                                            if len(parts) == 2:
+                                                tool_name_part, api_name_part = parts[0], parts[1]
+                                                break
                         
-                        # Use original name if available, otherwise try to parse sanitized name
-                        if original_name:
-                            # Original name format: "tool_name_api_name"
-                            if "_" in original_name:
-                                parts = original_name.split("_", 1)
-                                if len(parts) == 2:
-                                    tool_name_part, api_name_part = parts[0], parts[1]
-                                    called_apis.append([tool_name_part, api_name_part])
-                        elif "_" in tool_name:
-                            # Fallback: try to parse sanitized name
-                            # Sanitized names might have multiple underscores, try to split intelligently
-                            parts = tool_name.split("_")
-                            if len(parts) >= 2:
-                                # Take first part as tool name, rest as API name
-                                tool_name_part = parts[0]
-                                api_name_part = "_".join(parts[1:])
-                                called_apis.append([tool_name_part, api_name_part])
+                        # Only add if we successfully extracted both parts
+                        if tool_name_part and api_name_part:
+                            called_apis.append([tool_name_part, api_name_part])
+                        elif self.verbose:
+                            # Log warning if we couldn't extract API info
+                            print(f"[LangGraphAgent] Warning: Could not extract tool/api name for {tool_name}")
                 else:
                     # This is a final answer (no tool calls)
                     if msg.content:
@@ -242,6 +259,10 @@ class LangGraphAgent(BaseAgent):
                     tool_args = tool_call_info["args"]
                     
                     # Add to answer_details (ExecutionGraph format)
+                    # TODO: Current format is minimal - nodes are disconnected and ordering is implicit.
+                    # For basic tool-call counting this is sufficient, but for advanced analysis
+                    # (planning depth, branching, retries) we may need explicit graph structure with
+                    # node IDs and explicit sequencing links.
                     answer_detail = {
                         "role": "tool",
                         "message": json.dumps({

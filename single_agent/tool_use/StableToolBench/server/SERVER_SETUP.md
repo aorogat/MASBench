@@ -128,7 +128,7 @@ POST http://localhost:8080/virtual
 
 - **First run**: Cache is empty → GPT generates responses → Saves to cache
 - **Subsequent runs**: Cache has responses → Returns instantly (no GPT calls)
-- **Cache location**: `StableToolBench/server/tool_response_cache/`
+- **Cache location**: `tool_response_cache/` (in `single_agent/tool_use/`)
 - **Cache structure**: `category/tool_name/api_name.json`
 
 ### Benefits
@@ -184,7 +184,7 @@ The server will automatically be used by StableToolBench's inference pipeline wh
 ### Issue: "Cache not working"
 
 **Solution**:
-- Check cache folder exists: `ls StableToolBench/server/tool_response_cache/`
+- Check cache folder exists: `ls single_agent/tool_use/tool_response_cache/`
 - Verify `is_save: true` in `config.yml`
 - Check file permissions on cache folder
 

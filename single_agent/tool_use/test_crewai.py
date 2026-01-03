@@ -1,13 +1,13 @@
 """
-Test script for LangGraph agent on StableToolBench.
+Test script for CrewAI agent on StableToolBench.
 
 This script:
-1. Creates a LangGraphAgent
+1. Creates a CrewAIAgent
 2. Binds tools from StableToolBench
 3. Runs benchmark with 3 queries
 4. Saves results to results/tools/
 
-To run: python -m single_agent.tool_use.test_langgraph
+To run: python -m single_agent.tool_use.test_crewai
 """
 import os
 import sys
@@ -32,13 +32,13 @@ except ImportError:
     print("Warning: python-dotenv not installed. Using system environment variables.")
 
 from run_benchmark import run_benchmark
-from agents.langgraph import LangGraphAgent
+from agents.crewai import CrewAIAgent
 from utils.printer import print_header, print_info, print_success, print_warning
 
 
 def main():
     """Main test function."""
-    print_header("LangGraph Agent Test")
+    print_header("CrewAI Agent Test")
     
     # Check if server is running
     server_url = "http://localhost:8080/virtual"
@@ -59,8 +59,8 @@ def main():
         return
     
     # Create agent
-    print_info("[1/2] Creating LangGraphAgent...")
-    agent = LangGraphAgent(
+    print_info("[1/2] Creating CrewAIAgent...")
+    agent = CrewAIAgent(
         model="gpt-4o-mini",
         server_url=server_url,
         temperature=0.0,
@@ -79,7 +79,7 @@ def main():
             max_queries=3,
             server_url=server_url,
             evaluator_model="gpt-4o-mini",
-            agent_name="langgraph_agent",
+            agent_name="crewai_agent",
             use_tool_selector=True,  # Use centralized tool selection
             tool_selector_model="gpt-4o-mini",
             max_tools=20,

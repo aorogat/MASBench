@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "agent_name": "langgraph_agent",
+    "agent_name": "openai_sdk_agent",
     "test_set": "G1_instruction",
     "num_queries": 3,
     "evaluator_model": "gpt-4o-mini",
     "server_url": "http://localhost:8080/virtual",
-    "timestamp": "2026-01-03T17:55:11.664905",
-    "overall_time": 40.469802379608154
+    "timestamp": "2026-01-03T20:45:56.345445",
+    "overall_time": 36.48289179801941
   },
   "summary": {
     "total_queries": 3,
@@ -20,10 +20,10 @@
     "finish_percentage": 0.0,
     "average_sopr_score": 0.6666666666666666,
     "average_api_call_score": 0.0,
-    "average_gold_answer_time": 0.010889371236165365,
-    "average_system_answer_time": 11.306326389312744,
-    "average_evaluation_time": 2.1696075598398843,
-    "overall_time": 40.469802379608154
+    "average_gold_answer_time": 0.006931145985921224,
+    "average_system_answer_time": 10.355666796366373,
+    "average_evaluation_time": 1.7739824453989665,
+    "overall_time": 36.48289179801941
   },
   "results": [
     {
@@ -39,16 +39,16 @@
           "Transfermarkt details"
         ]
       ],
-      "gold_answer_time": 0.02089548110961914,
+      "gold_answer_time": 0.007712602615356445,
       "gold_api_responses": 2,
-      "selected_tools_count": 116,
-      "system_answer_time": 21.70114302635193,
+      "selected_tools_count": 20,
+      "system_answer_time": 10.507462501525879,
       "gold_answer": {
         "final_answer": "Lionel Messi, born June 24, 1987, is an Argentine professional footballer widely regarded as one of the greatest players of all time. He spent the majority of his career at FC Barcelona, where he won 10 La Liga titles, 7 Copa del Rey trophies, and 4 UEFA Champions League titles. Messi has earned seven Ballon d'Or awards, breaking the record for most wins. Known for his dribbling, vision, and goal\u2011scoring prowess, he has set numerous records, including most goals for a single club and most goals in a calendar year. In 2021, he transferred to Paris Saint\u2011Germain, continuing to showcase elite performance. Internationally, Messi led Argentina to victory in the 2021 Copa Am\u00e9rica and the 2022 FIFA World Cup, cementing his legacy as a national hero. His influence extends beyond the pitch, with philanthropic efforts through the Leo Messi Foundation.\nClub: FC Paris Saint\u2011Germain (PSG)\n\n- **Type**: Verein (Club)\n- **Slug**: fc-paris-saint-germain\n- **ID Talent**: 583 (used internally to reference the club\u2019s talent database)\n- **Founded**: 1970 (merger of Paris FC and Stade Saint\u2011Germain)\n- **Stadium**: Parc des Princes, Paris (capacity ~48,000)\n- **League**: Ligue 1 (France)\n- **Current Manager**: Christophe Galtier (as of 2024)\n- **Recent Achievements**: 7 Ligue 1 titles (2013\u201114, 2014\u201115, 2015\u201116, 2017\u201118, 2018\u201119, 2021\u201122, 2022\u201123), 10 Coupe de France titles, 6 Coupe de la Ligue titles, and 2 UEFA Champions League finals (2019, 2020).\n- **Notable Players**: Kylian Mbapp\u00e9, Neymar Jr., Angel Di Maria, Marco Verratti, and many national team stars.\n- **Youth Academy**: Known for producing talents like Kylian Mbapp\u00e9 and N'Golo Kant\u00e9.\n- **Financials**: One of the richest clubs in Europe, with a 2023 revenue of \u20ac200+ million.\n- **Fan Base**: Global following with millions of supporters and a strong presence on social media.\n\nThis summary provides a snapshot of PSG\u2019s history, structure, and recent success, useful for fans, analysts, and potential sponsors....",
         "has_finish": true
       },
       "system_answer": {
-        "final_answer": "Lionel Messi, widely regarded as one of the greatest football players of all time, has had a remarkable career characterized by numerous achievements, clubs, and notable transfers. Here\u2019s an overview of his career:\n\n### Clubs\n1. **FC Barcelona (2000-2021)**:\n   - Messi joined Barcelona's youth academy, La Masia, at the age of 13.\n   - He made his first-team debut in 2004 and spent 17 years at the club.\n   - During his time at Barcelona, Messi won numerous titles, including:\n     - 10 La Liga titles\n     - 7 Copa del Rey titles\n     - 4 UEFA Champions League titles\n   - He became Barcelona's all-time top scorer.\n\n2. **Paris Saint-Germain (2021-Present)**:\n   - In August 2021, Messi joined PSG after leaving Barcelona due to financial constraints faced by the club.\n   - He signed a two-year contract with an option for a third year.\n\n### Managers\n- **Frank Rijkaard**: Managed Messi during his early years at Barcelona.\n- **Pep Guardiola**: Oversaw Messi's peak years, leading to significant success.\n- **Luis Enrique**: Managed Messi during a highly successful period, including a treble-winning season.\n- **Ernesto Valverde**: Managed Messi during his later years at Barcelona.\n- **Ronald Koeman**: Managed Messi in his final season at Barcelona.\n- **Mauricio Pochettino**: Managed Messi at PSG.\n- **Christophe Galtier**: Current manager at PSG.\n\n### Teammates\n- **Barcelona**: Messi played alongside many legendary players, including:\n  - Xavi Hernandez\n  - Andres Iniesta\n  - Gerard Piqu\u00e9\n  - Neymar\n  - Luis Su\u00e1rez\n- **Argentina National Team**: Notable teammates include:\n  - Diego Maradona (as a mentor)\n  - Javier Mascherano\n  - \u00c1ngel Di Mar\u00eda\n  - Sergio Ag\u00fcero\n\n### Referees\n- Messi has played under various referees throughout his career, including:\n  - Pierluigi Collina\n  - Howard Webb\n  - Antonio Mateu Lahoz\n  - Mark Clattenburg\n\n### Notable Transfers\n- **From Barcelona to PSG (2021)**: This was one of the most significant transfers in football history, as Messi left the club where he had spent his entire professional career due to financial issues at Barcelona.\n\n### Achievements\n- Messi has won multiple Ballon d'Or awards, recognizing him as the best player in the world.\n- He is known for his incredible dribbling, playmaking, and goal-scoring abilities.\n\n### Summary\nLionel Messi's career is marked by extraordinary success, numerous records, and a legacy that has left an indelible mark on the world of football. His journey from a young boy in Rosario, Argentina, to a global football icon is a testament to his talent, hard work, and dedication to the sport....",
+        "final_answer": "Lionel Messi's career is one of the most celebrated in football history. Here's a summary covering his clubs, managers, teammates, referees, and notable transfers:\n\n### Clubs\n1. **FC Barcelona (2000-2021)**\n   - Messi joined Barcelona's youth academy, La Masia, in 2000.\n   - He made his first-team debut in 2004 and became the club's all-time leading scorer.\n\n2. **Paris Saint-Germain (2021-Present)**\n   - After leaving Barcelona due to financial issues, Messi signed with PSG in August 2021.\n\n### Managers\n- **Frank Rijkaard:** Under whom Messi developed as a player.\n- **Pep Guardiola:** Led Messi to numerous trophies, emphasizing his development into a world-class player.\n- **Luis Enrique:** Continued to build on Messi's successes, achieving a treble in 2015.\n- **Ernesto Valverde:** Managed during a period of inconsistent performances in Europe.\n- **Ronald Koeman:** Oversaw Messi's final season at Barcelona.\n- **Mauricio Pochettino:** Managed Messi during his initial time at PSG.\n\n### Teammates\n- **Barcelona:** Notable teammates include Xavi, Andr\u00e9s Iniesta, Neymar, Luis Su\u00e1rez, and Gerard Piqu\u00e9.\n- **PSG:** Currently plays alongside stars like Neymar and Kylian Mbapp\u00e9.\n- **Argentina National Team:** Includes teammates such as \u00c1ngel Di Mar\u00eda and Sergio Ag\u00fcero.\n\n### Referees\nThroughout his career, Messi has faced various referees. Specific names may vary per competition and season, but he has likely interacted with top referees like:\n- **Pierluigi Collina**\n- **Howard Webb**\n- **Damir Skomina**\n\n### Notable Transfers\n- **From Barcelona to PSG (2021):** This transfer was monumental, given Messi's lifetime association with Barcelona. It was driven by Barcelona's financial troubles.\n  \nMessi's underlined career has been marked by numerous records, including multiple Ballon d'Or wins, and he is widely regarded as one of the greatest football players of all time.\n\nIf you'd like detailed statistics or specific highlights, let me know!...",
         "has_finish": false
       },
       "scores": {
@@ -60,13 +60,13 @@
       "evaluation": {
         "has_finish": false,
         "evaluation_method": "official",
-        "reason": "The answer provides a comprehensive overview of Lionel Messi's career, including detailed information about his clubs, managers, teammates, referees, and notable transfers. It addresses all aspects of the query effectively."
+        "reason": "The answer provides a comprehensive overview of Lionel Messi's career, including details about his clubs, managers, teammates, referees, and notable transfers. It addresses all aspects of the query in a clear and informative manner."
       },
       "timing": {
-        "gold_answer_time": 0.02089548110961914,
-        "system_answer_time": 21.70114302635193,
-        "evaluation_time": 2.0571212768554688,
-        "total_time": 23.782156944274902
+        "gold_answer_time": 0.007712602615356445,
+        "system_answer_time": 10.507462501525879,
+        "evaluation_time": 1.9347028732299805,
+        "total_time": 12.476577758789062
       }
     },
     {
@@ -82,16 +82,16 @@
           "Get Channel Details"
         ]
       ],
-      "gold_answer_time": 0.00603938102722168,
+      "gold_answer_time": 0.007275819778442383,
       "gold_api_responses": 2,
-      "selected_tools_count": 97,
-      "system_answer_time": 2.463775157928467,
+      "selected_tools_count": 20,
+      "system_answer_time": 6.46269679069519,
       "gold_answer": {
         "final_answer": "Here is a simulated response for retrieving messages from the channel \"gmhikaru\" starting at cursor 0:\n\n{\n  \"channel_name\": \"gmhikaru\",\n  \"cursor\": \"0\",\n  \"messages\": [\n    {\n      \"id\": \"msg001\",\n      \"timestamp\": \"2024-01-01T12:00:00Z\",\n      \"user\": \"alice\",\n      \"content\": \"Welcome to the gmhikaru channel!\"\n    },\n    {\n      \"id\": \"msg002\",\n      \"timestamp\": \"2024-01-01T12:05:23Z\",\n      \"user\": \"bob\",\n      \"content\": \"Thanks, Alice! Happy to be here.\"\n    },\n    {\n      \"id\": \"msg003\",\n      \"timestamp\": \"2024-01-01T12:10:45Z\",\n      \"user\": \"carol\",\n      \"content\": \"Does anyone have updates on the project timeline?\"\n    }\n  ],\n  \"next_cursor\": \"3\",\n  \"has_more\": true\n}\n\nThis example shows three messages retrieved from the channel, along with a next_cursor value that can be used to fetch subsequent messages. The structure includes typical fields such as message id, timestamp, user, and content, and indicates whether more messages are available.\nThe API is intended to retrieve detailed information about a messaging or communication channel based on the provided channel name. In this case, the input specifies the channel name as \"gmhikaru\". The expected response would include key metadata such as the unique channel identifier, creation timestamp, current status (e.g., active, archived, or pending), the number of participants or members, and any associated tags or categories. Additionally, the response might provide configuration details like notification settings, privacy level, and integration endpoints. For example, a typical output could look like: \n\n- Channel ID: 987654321\n- Name: gmhikaru\n- Status: Active\n- Created At: 2023-07-15T08:23:45Z\n- Members: 42\n- Tags: \"team\u2011collaboration\", \"project\u2011alpha\"\n- Notification Settings: Email: enabled, Push: disabled\n- Privacy: Public\n- Integration Endpoints: Webhook URL, API token\n\nIf the channel does not exist or the user lacks permission, the API would return an appropriate error message or an empty result set. This structured information allows clients to programmatically manage and display channel details within their applications....",
         "has_finish": true
       },
       "system_answer": {
-        "final_answer": "I currently don't have direct access to external websites like Kick.com to fetch specific channel details or clips. However, you can easily explore the channel by visiting Kick.com and searching for 'gmhikaru'. \n\nOn their channel, you should be able to find clips, streams, and other content they have created. If you have any specific questions or need help with something else, feel free to ask!...",
+        "final_answer": "It seems I'm currently unable to access channel details or clips for \"gmhikaru\" on Kick.com. However, you can explore their content directly on the platform by visiting their channel.\n\nTo find clips and details:\n\n1. **Visit Kick.com**: Go to the website and use the search bar to find \"gmhikaru.\"\n2. **Browse Clips**: Click on their profile to see clips, past streams, and other content.\n\nIf you have specific content or features you want to know more about, feel free to ask!...",
         "has_finish": false
       },
       "scores": {
@@ -103,13 +103,13 @@
       "evaluation": {
         "has_finish": false,
         "evaluation_method": "official",
-        "reason": "The answer does not provide direct access to the requested channel clips or details, and instead suggests visiting the website, which does not fulfill the user's request."
+        "reason": "The answer does not provide direct access to the channel clips or details, and instead suggests visiting the platform, which does not fulfill the request."
       },
       "timing": {
-        "gold_answer_time": 0.00603938102722168,
-        "system_answer_time": 2.463775157928467,
-        "evaluation_time": 2.171480655670166,
-        "total_time": 4.644359827041626
+        "gold_answer_time": 0.007275819778442383,
+        "system_answer_time": 6.46269679069519,
+        "evaluation_time": 1.6549606323242188,
+        "total_time": 8.150032997131348
       }
     },
     {
@@ -125,16 +125,16 @@
           "QueryKeywords"
         ]
       ],
-      "gold_answer_time": 0.0057332515716552734,
+      "gold_answer_time": 0.005805015563964844,
       "gold_api_responses": 2,
-      "selected_tools_count": 45,
-      "system_answer_time": 9.754060983657837,
+      "selected_tools_count": 14,
+      "system_answer_time": 14.096841096878052,
       "gold_answer": {
         "final_answer": "Taylor\u202fSwift is an American singer\u2011songwriter who first rose to prominence in the mid\u20112000s as a country\u2011pop artist. Born in 1989 in Pennsylvania, she moved to Nashville at 14 to pursue music, releasing her self\u2011titled debut in 2006. Her breakthrough came with the 2008 single \u201cLove Story,\u201d which topped the Billboard Hot\u202f100 and cemented her status as a pop\u2011country crossover star. Over the years, Swift has released a string of critically acclaimed albums\u2014*Fearless* (2008), *Speak\u202fNow* (2010), *Red* (2012), *1989* (2014), *Reputation* (2017), *Lover* (2019), *Folklore* (2020), *Evermore* (2020), and *Midnights* (2022). She has earned numerous awards, including 11 Grammys, and is known for her candid songwriting, which often draws from personal experiences. Swift\u2019s influence extends beyond music; she is an advocate for artists\u2019 rights, gender equality, and LGBTQ+ causes, and she has a significant cultural impact worldwide. \nCyberia is a fast\u2011paced, action\u2011adventure game that blends classic arcade mechanics with modern storytelling. Players control a cyber\u2011net hacker navigating neon\u2011lit cityscapes, battling rogue AI and corrupt corporate drones. The game\u2019s pixel\u2011art aesthetic pays homage to 80s cyberpunk while offering fluid, responsive controls that feel satisfying on both keyboard and controller. Combat is varied, with a mix of melee, ranged, and hacking mini\u2011games that keep the pacing fresh. The narrative is delivered through witty dialogue and environmental storytelling, giving the player a sense of agency in a sprawling, open\u2011world metropolis. Sound design is a standout, featuring a synth\u2011heavy soundtrack that complements the high\u2011energy gameplay. Overall, Cyberia delivers a polished, nostalgic experience that will appeal to fans of retro\u2011style action titles and cyberpunk enthusiasts alike....",
         "has_finish": true
       },
       "system_answer": {
-        "final_answer": "It seems that I wasn't able to retrieve specific keyword suggestions or popular sites for the search query \"birthday party ideas.\" However, I can provide you with some general ideas and keywords that are commonly associated with birthday party planning:\n\n### Popular Keywords for \"Birthday Party Ideas\":\n1. **Themed Birthday Parties**\n2. **DIY Birthday Decorations**\n3. **Birthday Party Games**\n4. **Outdoor Birthday Party Ideas**\n5. **Birthday Party Food Ideas**\n6. **Kids Birthday Party Themes**\n7. **Adult Birthday Party Ideas**\n8. **Unique Birthday Party Venues**\n9. **Birthday Party Favors**\n10. **Birthday Party Planning Checklist**\n\n### Popular Sites for Birthday Party Ideas:\n1. **Pinterest** - A great platform for visual inspiration and DIY ideas.\n2. **Party City** - Offers a variety of party supplies and themed ideas.\n3. **Evite** - Provides invitation ideas and party planning tips.\n4. **The Spruce** - Features articles on party themes, decorations, and food.\n5. **Good Housekeeping** - Offers creative ideas for birthday celebrations.\n\nYou can use these keywords and sites to gather inspiration and plan a memorable birthday party for your friend! If you need more specific information or ideas, feel free to ask!...",
+        "final_answer": "Here are some popular websites where you can find great ideas for a birthday party:\n\n1. **Pinterest** - A visual discovery platform that\u2019s perfect for finding themed party ideas, decorations, and DIY projects.\n2. **Better Homes & Gardens (BHG)** - Offers a variety of party planning ideas including recipes, decorations, and tips.\n3. **The Knot** - While primarily focused on weddings, it also has sections dedicated to parties and celebrations.\n4. **Homemade Gifts Made Easy** - Provides creative DIY project ideas for party favors and decorations.\n5. **Momtastic** - Focuses on family and kids\u2019 parties with unique themes and activities.\n\n### Main Keywords\n- Birthday party ideas\n- Themed birthday parties\n- DIY party decorations\n- Birthday games\n- Party favor ideas\n- Outdoor birthday parties\n- Birthday recipes\n- Kids' birthday party ideas\n- Adult birthday themes\n\nThese resources and keywords should help you gather inspiration and plan a memorable birthday party for your friend! If you need specific themes or tips, let me know!...",
         "has_finish": false
       },
       "scores": {
@@ -142,26 +142,17 @@
         "api_call_score": 0.0,
         "answer_status": "Solved"
       },
-      "called_apis": [
-        [
-          "Google Keyword Insight",
-          "Global Results (By Keyword)"
-        ],
-        [
-          "Duck Duck Go Search API",
-          "Get Search Results"
-        ]
-      ],
+      "called_apis": [],
       "evaluation": {
         "has_finish": false,
         "evaluation_method": "official",
-        "reason": "The answer provides a comprehensive list of popular keywords and sites related to 'birthday party ideas,' which directly addresses the query. It offers sufficient information to help the user gather inspiration and plan a memorable event."
+        "reason": "The answer provides a comprehensive list of popular websites and relevant keywords for planning a birthday party. It directly addresses the query by offering specific resources and suggestions, which are sufficient to help the user gather inspiration and plan a memorable event."
       },
       "timing": {
-        "gold_answer_time": 0.0057332515716552734,
-        "system_answer_time": 9.754060983657837,
-        "evaluation_time": 2.2802207469940186,
-        "total_time": 12.042969703674316
+        "gold_answer_time": 0.005805015563964844,
+        "system_answer_time": 14.096841096878052,
+        "evaluation_time": 1.7322838306427002,
+        "total_time": 15.855855464935303
       }
     }
   ]

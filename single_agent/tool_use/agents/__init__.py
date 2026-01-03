@@ -16,4 +16,22 @@ try:
 except ImportError:
     pass  # LangGraph not available
 
+try:
+    from .crewai import CrewAIAgent
+    __all__.append('CrewAIAgent')
+except ImportError:
+    pass  # CrewAI not available
+
+try:
+    from .autogen import AutoGenAgent
+    __all__.append('AutoGenAgent')
+except ImportError:
+    pass  # AutoGen not available
+
+try:
+    from .openai_sdk import OpenAISDKAgent
+    __all__.append('OpenAISDKAgent')
+except ImportError:
+    pass  # OpenAI SDK not available
+
 

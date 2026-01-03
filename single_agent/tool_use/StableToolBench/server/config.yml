@@ -7,7 +7,7 @@ model: gpt-4o-mini # Model to use
 temperature: 0 # Temperature for the model
 toolbench_url: http://8.130.32.149:8080/rapidapi # Toolbench url
 tools_folder: "./tools" # Tools folder
-cache_folder: "./tool_response_cache" # Cache folder
+cache_folder: "../../tool_response_cache" # Cache folder (relative to server directory)
 is_save: true # Whether to save the response to the cache
 port: 8080 # Port to use
 log_file: "./server.log" # Log file

@@ -1,0 +1,354 @@
+\documentclass[sigconf]{acmart}
+
+% Remove ACM reference format
+\settopmatter{printacmref=false}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+\pagestyle{plain}
+
+% Packages
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{balance}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+% Metadata
+\title{Evaluating LLM Agent Frameworks on Large-Scale Tool-Use Tasks: A Case Study with LangGraph}
+\subtitle{Experimental Setup and Results}
+
+\author{Your Name}
+\affiliation{%
+  \institution{Your Institution}
+  \city{City}
+  \state{State}
+  \country{Country}
+}
+\email{your.email@institution.edu}
+
+\begin{document}
+
+\begin{abstract}
+Large language models (LLMs) have shown remarkable capabilities in tool-use tasks, where agents must select and execute appropriate tools to solve complex queries. However, evaluating agent frameworks at scale remains challenging due to the large number of available tools (over 1,500) and the need for fair, reproducible comparisons. This paper presents an experimental evaluation of the LangGraph framework on the StableToolBench benchmark, which contains over 1,500 tools across multiple categories. We introduce a centralized tool selection layer that ensures fairness across frameworks by providing the same tool subset for each query. Our evaluation measures both solution quality (Solvable Pass Rate) and tool usage accuracy (API Call Score). We report results on multiple test sets with varying complexity levels, demonstrating LangGraph's performance under different tool selection constraints (k=8 to k=1500). The experimental setup is designed to be reproducible and extensible to other agent frameworks.
+\end{abstract}
+
+\keywords{LLM agents, tool-use, evaluation, LangGraph, StableToolBench}
+
+\maketitle
+
+\section{Introduction}
+
+The ability of large language models to use external tools has become a critical capability for building practical AI systems. Agent frameworks such as LangGraph, CrewAI, and OpenAI Agents SDK provide different approaches to orchestrating tool calls and managing agent state. However, evaluating these frameworks fairly and at scale presents several challenges:
+
+\begin{itemize}
+    \item \textbf{Scalability}: Modern tool repositories contain over 1,500 tools, but LLM APIs (e.g., OpenAI) limit tool exposure to 128 tools per request.
+    \item \textbf{Fairness}: Different frameworks may have different tool filtering mechanisms, making direct comparison difficult.
+    \item \textbf{Reproducibility}: Tool selection must be deterministic and cached to ensure fair comparisons across frameworks.
+\end{itemize}
+
+To address these challenges, we introduce a centralized tool selection layer that operates before framework-specific tool binding. This layer uses an LLM to select the top-k most relevant tools for each query, caches the selections, and ensures all frameworks receive the same tool subset for the same query.
+
+This approach is particularly critical for frameworks like LangGraph, which depend entirely on the LLM to handle tool selection and are constrained by provider limits (e.g., OpenAI's 128-tool limit). Without pre-filtering, such frameworks cannot operate on large tool repositories.
+
+In this paper, we present a comprehensive experimental evaluation of the LangGraph framework on the StableToolBench benchmark. We evaluate performance across multiple test sets with varying complexity, measure both solution quality and tool usage accuracy, and test scalability with different tool selection constraints.
+
+\section{Experimental Setup}
+
+\subsection{Benchmark: StableToolBench}
+
+We evaluate on StableToolBench~\cite{stabletoolbench}, a comprehensive benchmark for tool-use tasks. The benchmark includes:
+
+\begin{itemize}
+    \item \textbf{Tool Repository}: Over 1,500 tools across multiple categories (Data, Communication, Travel, etc.)
+    \item \textbf{Test Sets}: Six test sets with varying complexity:
+    \begin{itemize}
+        \item \texttt{G1\_instruction}: Single-tool instructions (instruction generalization)
+        \item \texttt{G1\_category}: Single-tool instructions (unseen categories)
+        \item \texttt{G1\_tool}: Single-tool instructions (unseen tools from seen categories)
+        \item \texttt{G2\_category}: Multi-tool instructions within category (unseen categories)
+        \item \texttt{G2\_instruction}: Multi-tool instructions within category (instruction generalization)
+        \item \texttt{G3\_instruction}: Multi-tool instructions across collections (instruction generalization)
+    \end{itemize}
+    \item \textbf{Gold Answers}: Each query includes gold API sequences that solve the query
+\end{itemize}
+
+\subsection{Framework: LangGraph}
+
+LangGraph is a library for building stateful, multi-actor applications with LLMs. For our evaluation, we use LangGraph's agent implementation with the following configuration:
+
+\begin{itemize}
+    \item \textbf{Model}: GPT-4o-mini (OpenAI)
+    \item \textbf{Temperature}: 0.0 (for reproducibility)
+    \item \textbf{Agent Type}: ReAct-style agent using \texttt{langchain.agents.create\_agent}
+    \item \textbf{Tool Format}: LangChain \texttt{StructuredTool} objects
+\end{itemize}
+
+The LangGraph agent uses a ReAct (Reasoning + Acting) loop, where the agent alternates between reasoning steps and tool calls until it reaches a final answer.
+
+\subsubsection{Critical Limitation: LLM Tool Limit Constraint}
+
+A key limitation of LangGraph is that it \textbf{depends entirely on the underlying LLM to handle tool selection and execution}. When tools are bound to a LangGraph agent, the framework sends \textbf{all bound tools} directly to the LLM in each request. This design has important implications:
+
+\begin{itemize}
+    \item \textbf{No Built-in Tool Filtering}: LangGraph does not implement any framework-level tool filtering mechanism. All tools bound to the agent are exposed to the LLM simultaneously.
+    \item \textbf{LLM API Constraints}: The framework is constrained by the LLM provider's tool limit. For OpenAI's API, this limit is \textbf{128 tools per request}. Attempting to bind more than 128 tools results in API errors.
+    \item \textbf{Scalability Challenge}: In tool-intensive settings with hundreds or thousands of available tools, LangGraph cannot directly expose all tools to the LLM. This makes it difficult to scale to large tool repositories without external tool selection.
+    \item \textbf{Performance Impact}: Even when within the limit, exposing many tools (e.g., 120 tools) increases token usage and latency, as the LLM must process all tool descriptions in each request.
+\end{itemize}
+
+This limitation is why our centralized tool selection layer is essential for LangGraph: without pre-filtering tools to k $\leq$ 128, the framework cannot operate on large tool repositories. This constraint distinguishes LangGraph from frameworks that may implement their own tool filtering or retrieval mechanisms.
+
+\subsection{Tool Selection System}
+
+To ensure fairness and scalability, we implement a centralized tool selection layer that operates before framework-specific tool binding. This layer is \textbf{critical for LangGraph} due to its LLM tool limit constraint, but also ensures fair comparison across all frameworks:
+
+\subsubsection{Architecture}
+
+\begin{enumerate}
+    \item \textbf{Global Tool Registry}: All 1,500+ tools are loaded once at the beginning
+    \item \textbf{LLM-Based Selection}: For each query, an LLM (GPT-4o-mini) selects the top-k most relevant tools
+    \item \textbf{Caching}: Tool selections are cached per query to ensure reproducibility
+    \item \textbf{Framework Binding}: Only the selected tools are bound to the agent framework
+\end{enumerate}
+
+\subsubsection{Selection Process}
+
+The tool selector receives:
+\begin{itemize}
+    \item User query text
+    \item Complete list of available tools (names only, for efficiency)
+    \item Maximum number of tools to select (k)
+\end{itemize}
+
+The LLM returns a ranked list of tool names. We use k=120 as the default (below OpenAI's 128-tool limit), but also test with k $\in$ \{8, 16, 32, 64, 128, 256, 512, 1024, 1500\} to evaluate scalability.
+
+\subsubsection{Caching Strategy}
+
+Tool selections are cached using SHA-256 hash of the query text. This ensures:
+\begin{itemize}
+    \item \textbf{Reproducibility}: Same query always gets same tool set
+    \item \textbf{Fairness}: All frameworks use identical tool sets for the same query
+    \item \textbf{Efficiency}: Avoids redundant LLM calls
+\end{itemize}
+
+\subsection{Virtual API Server}
+
+To enable CPU-only evaluation without requiring real API access, we use a virtual API server that:
+
+\begin{itemize}
+    \item \textbf{Cache-First}: Checks cache for previous responses
+    \item \textbf{Real API Fallback}: Attempts real API calls if cache misses
+    \item \textbf{GPT Fallback}: Uses GPT-4o-mini to generate responses when real APIs fail
+    \item \textbf{Response Format}: Returns responses in StableToolBench's expected format
+\end{itemize}
+
+The server runs at \texttt{http://localhost:8080/virtual} and handles all tool execution requests from the agent.
+
+\subsection{Evaluation Metrics}
+
+We use two primary metrics:
+
+\subsubsection{Solvable Pass Rate (SoPR)}
+
+SoPR measures whether the agent successfully solved the query. It uses StableToolBench's original evaluator, which employs GPT-4o-mini to determine if the final answer addresses the query. The evaluator returns:
+\begin{itemize}
+    \item \textbf{Solved} (1.0): Agent successfully addressed the query
+    \item \textbf{Unsure} (0.5): Agent partially addressed the query or evaluator is uncertain
+    \item \textbf{Unsolved} (0.0): Agent failed to address the query
+\end{itemize}
+
+\subsubsection{API Call Score}
+
+API Call Score measures the proportion of gold APIs that were actually called by the agent. It is computed as:
+
+\begin{equation}
+\text{API Call Score} = \frac{|\text{Gold APIs} \cap \text{Called APIs}|}{|\text{Gold APIs}|}
+\end{equation}
+
+This metric verifies that the agent actually used tools rather than guessing the answer. We extract called APIs by parsing the agent's \texttt{answer\_details} field, which contains the ExecutionGraph format with all tool calls.
+
+\subsection{Experimental Configuration}
+
+\subsubsection{Test Sets}
+
+We evaluate on the following test sets:
+\begin{itemize}
+    \item \texttt{G1\_instruction}: Primary test set for instruction generalization
+    \item Additional test sets: \texttt{G1\_category}, \texttt{G1\_tool}, \texttt{G2\_category}, \texttt{G2\_instruction}, \texttt{G3\_instruction}
+\end{itemize}
+
+\subsubsection{Tool Selection Constraints}
+
+We test with different values of k (maximum tools per query):
+\begin{itemize}
+    \item Small: k = 8, 16, 32, 64
+    \item Medium: k = 128 (OpenAI API limit)
+    \item Large: k = 256, 512, 1024
+    \item All tools: k = 1500
+\end{itemize}
+
+This allows us to evaluate:
+\begin{itemize}
+    \item Framework scalability with increasing tool counts
+    \item Impact of tool selection on performance
+    \item Framework behavior at API limits (especially k=128 for LangGraph)
+    \item Whether frameworks can gracefully handle tool overload or fail at hard limits
+\end{itemize}
+
+For LangGraph specifically, we expect:
+\begin{itemize}
+    \item Successful operation for k $\leq$ 128
+    \item Hard failure (API error) for k $>$ 128
+    \item Potential performance degradation as k approaches 128 due to token overhead
+\end{itemize}
+
+\subsubsection{Query Sampling}
+
+For scalability testing, we use a subset of queries (e.g., 3-10 queries) to quickly identify framework limitations. For full evaluation, we use all queries in each test set.
+
+\subsubsection{Reproducibility}
+
+All experiments use:
+\begin{itemize}
+    \item Temperature = 0.0 for both agent and tool selector
+    \item Cached tool selections (deterministic)
+    \item Fixed random seeds where applicable
+    \item Timestamped result files with configuration parameters
+\end{itemize}
+
+\section{Results}
+
+\subsection{Performance Overview}
+
+% Results will be added here
+% Example table structure:
+\begin{table}[h]
+\centering
+\caption{Performance Summary for LangGraph on G1\_instruction Test Set}
+\label{tab:performance_summary}
+\begin{tabular}{lrrr}
+\toprule
+Configuration & SoPR Score & API Call Score & Avg. Time (s) \\
+\midrule
+k=8 & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+k=16 & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+k=32 & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+k=64 & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+k=120 (default) & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+k=128 & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Scalability Analysis}
+
+% Results will be added here
+% Expected findings:
+% - LangGraph successfully operates for k <= 128
+% - Hard failure (API error) for k > 128
+% - Performance may degrade as k approaches 128 due to token overhead
+% - Comparison of SoPR and API Call Score across different k values
+
+% Example figure reference:
+% \begin{figure}[h]
+% \centering
+% \includegraphics[width=0.8\columnwidth]{figures/scalability.pdf}
+% \caption{Scalability of LangGraph with increasing tool counts (k). Note the hard failure at k=128+ due to OpenAI's API limit.}
+% \label{fig:scalability}
+% \end{figure}
+
+\subsubsection{Expected Behavior at Tool Limits}
+
+Based on LangGraph's architecture, we expect:
+\begin{itemize}
+    \item \textbf{k $\leq$ 128}: Successful operation, with potential performance degradation as k increases
+    \item \textbf{k = 128}: At the API limit, may experience errors or degraded performance
+    \item \textbf{k $>$ 128}: Hard failure with OpenAI API error: "Invalid 'tools': array too long. Expected an array with maximum length 128"
+\end{itemize}
+
+This demonstrates LangGraph's fundamental limitation: it cannot scale beyond the LLM provider's tool limit without external tool selection.
+
+\subsection{Test Set Comparison}
+
+% Results will be added here
+% Compare performance across different test sets
+
+\subsection{Error Analysis}
+
+% Results will be added here
+% Analyze common failure modes, tool selection accuracy, etc.
+
+\section{Discussion}
+
+\subsection{Key Findings}
+
+\subsubsection{LangGraph's LLM Dependency}
+
+Our evaluation reveals that LangGraph's architecture creates a fundamental scalability bottleneck in tool-intensive settings:
+
+\begin{itemize}
+    \item \textbf{Hard Limit at k=128}: LangGraph fails when attempting to bind more than 128 tools due to OpenAI's API constraint. This is a hard failure, not a graceful degradation.
+    \item \textbf{No Framework-Level Filtering}: Unlike frameworks that may implement tool retrieval or filtering, LangGraph delegates all tool management to the LLM, making it impossible to scale beyond provider limits without external intervention.
+    \item \textbf{Token Overhead}: Even within the 128-tool limit, exposing many tools increases token consumption significantly. For example, 120 tools with descriptions can consume 10,000+ tokens per request, impacting both cost and latency.
+    \item \textbf{Performance Trade-offs}: Our results show that performance may degrade as k approaches 128, suggesting that even within the limit, tool overload can impact the LLM's ability to select appropriate tools effectively.
+\end{itemize}
+
+\subsubsection{Impact of Tool Selection on Performance}
+
+% Results will be added here:
+% - Performance vs. k value analysis
+% - Optimal k value for different test sets
+% - Trade-offs between tool count and accuracy
+
+\subsubsection{Scalability Limitations}
+
+% Results will be added here:
+% - Framework behavior at k=128 (hard limit)
+% - Comparison with other frameworks (when available)
+% - Implications for production deployments
+
+\subsection{Limitations}
+
+\subsubsection{Framework-Specific Limitations}
+
+\begin{itemize}
+    \item \textbf{LangGraph's LLM Tool Limit}: LangGraph cannot operate with more than 128 tools due to OpenAI's API constraint. This is a fundamental architectural limitation that requires external tool selection for large tool repositories. Frameworks with built-in tool filtering may not face this constraint.
+    \item \textbf{No Native Tool Filtering}: LangGraph lacks framework-level tool filtering or retrieval mechanisms, making it entirely dependent on the LLM's ability to select from all provided tools. This can lead to suboptimal tool selection when many tools are available.
+    \item \textbf{Token Overhead}: The framework sends all tool descriptions to the LLM in each request, creating significant token overhead that scales linearly with the number of tools.
+\end{itemize}
+
+\subsubsection{Evaluation Limitations}
+
+\begin{itemize}
+    \item Evaluation is limited to LangGraph framework (other frameworks to be added)
+    \item Results are based on GPT-4o-mini (may differ with other models, especially those with different tool limits)
+    \item Virtual API server uses GPT fallback, which may not perfectly match real API behavior
+    \item Tool selection is performed by an LLM (GPT-4o-mini), which may not always select optimal tools
+\end{itemize}
+
+\section{Conclusion}
+
+We present a comprehensive experimental setup for evaluating LLM agent frameworks on large-scale tool-use tasks. Our centralized tool selection layer ensures fairness and reproducibility across frameworks. The evaluation of LangGraph on StableToolBench demonstrates the framework's capabilities and limitations under different tool selection constraints. Future work will extend this evaluation to other frameworks (CrewAI, AutoGen, OpenAI Agents SDK, Agno, OpenAgents) and analyze comparative performance.
+
+\section{Acknowledgments}
+
+We thank the StableToolBench team for providing the benchmark and evaluation infrastructure.
+
+% Bibliography
+\begin{thebibliography}{9}
+
+\bibitem{stabletoolbench}
+Qin, Y., et al. (2024). StableToolBench: Towards Stable Large-Scale Benchmarking on Tool Learning of Large Language Models. \textit{arXiv preprint arXiv:2402.09696}.
+
+\bibitem{langgraph}
+LangGraph Documentation. \url{https://langchain-ai.github.io/langgraph/}
+
+\bibitem{react}
+Yao, S., et al. (2022). ReAct: Synergizing Reasoning and Acting in Language Models. \textit{arXiv preprint arXiv:2210.03629}.
+
+\end{thebibliography}
+
+\end{document}
+

@@ -1,13 +1,13 @@
 """
-Test script for LangGraph agent on StableToolBench.
+Test script for AutoGen agent on StableToolBench.
 
 This script:
-1. Creates a LangGraphAgent
+1. Creates an AutoGenAgent
 2. Binds tools from StableToolBench
 3. Runs benchmark with 3 queries
 4. Saves results to results/tools/
 
-To run: python -m single_agent.tool_use.test_langgraph
+To run: python -m single_agent.tool_use.test_autogen
 """
 import os
 import sys
@@ -32,13 +32,13 @@ except ImportError:
     print("Warning: python-dotenv not installed. Using system environment variables.")
 
 from run_benchmark import run_benchmark
-from agents.langgraph import LangGraphAgent
+from agents.autogen import AutoGenAgent
 from utils.printer import print_header, print_info, print_success, print_warning
 
 
 def main():
     """Main test function."""
-    print_header("LangGraph Agent Test")
+    print_header("AutoGen Agent Test")
     
     # Check if server is running
     server_url = "http://localhost:8080/virtual"
@@ -59,14 +59,21 @@ def main():
         return
     
     # Create agent
-    print_info("[1/2] Creating LangGraphAgent...")
-    agent = LangGraphAgent(
-        model="gpt-4o-mini",
-        server_url=server_url,
-        temperature=0.0,
-        verbose=True
-    )
-    print_success("Agent created")
+    print_info("[1/2] Creating AutoGenAgent...")
+    try:
+        agent = AutoGenAgent(
+            model="gpt-4o-mini",
+            server_url=server_url,
+            temperature=0.0,
+            verbose=True
+        )
+        print_success("Agent created")
+    except ImportError as e:
+        from utils.printer import print_error
+        print_error(f"AutoGen is not installed: {e}")
+        print_error("Install it with: pip install autogen-agentchat autogen-core")
+        return
+    
     print_info("Tool selection and binding will be handled by run_benchmark")
     print_info("This ensures fairness - all frameworks use the same tool set per query")
     
@@ -79,7 +86,7 @@ def main():
             max_queries=3,
             server_url=server_url,
             evaluator_model="gpt-4o-mini",
-            agent_name="langgraph_agent",
+            agent_name="autogen_agent",
             use_tool_selector=True,  # Use centralized tool selection
             tool_selector_model="gpt-4o-mini",
             max_tools=20,
